@@ -1,11 +1,13 @@
 ---
 name: create-eval
-description: Create repeatable evaluations from expert findings, real model outputs, or an explicit task contract. Use when authoring eval cases, binary rubrics, deterministic graders, or judge calibration; preserve source authority, independent splits, and the capability being measured.
+description: Create repeatable evaluations from expert findings, model traces, or a new feature's task contract. Use when bootstrapping traces before production, reviewing early runs, authoring cases and binary rubrics, or calibrating graders.
 ---
 
 # Create Eval
 
 Turn a concrete failure or capability into a repeatable decision. Start with the project's existing eval format and runner. A small local dataset and an inspectable grader are sufficient; a new service, database, container, or model-provider setup is conditional on the task.
+
+Reuse established eval skills rather than rebuilding their trace-analysis workflows. Read [existing eval skills](references/ecosystem.md) when choosing trace review, synthetic input generation, failure discovery, or evaluator calibration. If available, load the matching skill; otherwise use the linked upstream guidance and this pack's local fallback. These skills are references, not bundled dependencies.
 
 ## Establish what the eval decides
 
@@ -18,11 +20,13 @@ Choose the appropriate route:
 - A directly checkable property gets a deterministic predicate, including valid alternative representations where the contract permits them.
 - Open-ended quality gets separate binary questions with explicit applicability, passing answers, and expert-supported boundaries.
 - A stateful agent task gets a resettable environment and checks on the actual state change, including preservation requirements. Stored text alone does not exercise the agent's execution.
-- With no observed outputs, build a provisional development set from the contract and obtain a real run when authorized. Explicit invariants can support initial checks; mark hypothetical failure claims as unobserved.
+- With no relevant traces, including a new feature in an established product, follow [early development](references/early-development.md): plan realistic inputs, run the actual feature, inspect traces with the expert, and promote supported observations into evals. Existing production traffic may not exercise the new capability. Explicit invariants can support initial checks before observed failures; hypotheses remain unobserved.
 
 ## Recover evidence before inventing cases
 
 Read the relevant outputs, input context, expert statements, and existing cases. For Expert Mode or Distill Me data, resolve linked amendments, corrections, rubric versions, and retractions first. Preserve the original reviewed output rather than substituting a repaired result.
+
+Put a review surface in place before generating a large batch. Reuse the project's trace viewer, use `build-review-interface` for a domain-specific interface, or launch the bundled [local trace review tool](references/trace-review.md) for a small JSONL batch. Inspect outputs, tool interactions, retrieved evidence, and relevant resulting state—not just a final score. Free-text discovery notes need not start with a predefined failure taxonomy.
 
 Read [from findings to cases](references/from-findings.md) when importing captured records or an export bundle. The export's privacy review and eval-meaning review are separate from expert label authority and judge calibration. A redacted projection needs enough context to preserve the actual failure.
 

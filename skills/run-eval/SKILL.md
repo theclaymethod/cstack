@@ -13,6 +13,8 @@ Locate the user-specified package or the project's established eval folder. Insp
 
 Identify whether this run grades stored outputs, generates new product outputs, validates a judge against expert labels, or executes a stateful agent. State which one was actually run. Use only authorized systems, data, and budget. A stored-output review does not prove a product executed its workflow. Missing execution setup is an unrun task, not a zero product score.
 
+For new product executions, preserve trace records as the run happens: original input, actual output or error, available messages/tool interactions, retrieved evidence, relevant state changes, and feature/configuration identity. Use the project's telemetry export or the [local trace contract](../create-eval/references/trace-review.md). Do not invent missing internals or capture private chain-of-thought. A failed or incomplete run remains visible. For feature development without relevant traces, use [the early-development workflow](../create-eval/references/early-development.md).
+
 Select development, calibration, regression, or frontier cases as requested. Keep their roles and reported denominators separate. Open final-test semantics only on the user's explicit instruction and a frozen eval revision; record prior exposure and earlier runs. A changed result file or a new folder does not make an opened set unseen again.
 
 ## Prepare a blind view
@@ -50,6 +52,8 @@ For product results, report regression and frontier outcomes separately from jud
 ## Inspect and report
 
 Inspect a relevant permitted sample of actual outputs, traces, and resulting state for reward hacking, broken labels, contamination, refusals, and eval awareness. Respect the held-out boundary while doing so. Suspicious all-pass or all-fail results warrant investigation, not automatic celebration or rejection. Use [Cross-Examine](../cross-examine/SKILL.md) for an authorized bounded audit; do not claim it ran when only a checklist was read.
+
+Use an existing viewer or [local trace review](../create-eval/references/trace-review.md) for permitted development traces. Supply only the selected review set; the viewer is for discovery and annotation, not blind judge isolation. Preserve reviewer disagreements as new evidence rather than editing frozen results. Review annotations are candidates for Create Eval, not automatic changes to calibration gold.
 
 Lead with what ran, its result, and the evidence directory. Include the package revision, source and trial conditions, error/abstention counts, important mismatches available for inspection, privacy limits, and actual label isolation. Separate grader agreement, product performance, and unverified claims. A nonzero process exit may be infrastructure failure; an exit of zero alone is not eval success.
 

@@ -2,6 +2,12 @@
 
 These notes identify the source material used for C Stack. Source revisions describe the inspected inputs, not an automatic upstream synchronization mechanism. Some origin repositories are private and require their owner's access.
 
+## Existing trace-analysis workflows
+
+[AI Evals Course's Evals Skills](https://github.com/ai-evals-course/evals-skills/tree/80d5f7b0127c7572ed9e9339937adbfd7240ffeb), inspected at revision `80d5f7b0127c7572ed9e9339937adbfd7240ffeb`, is referenced for synthetic input generation, error discovery, custom review interfaces, deterministic checks, judge design and calibration, pipeline audits, and RAG evaluation. The upstream repository declares Apache-2.0. Its skills are not copied or bundled here.
+
+The early-development reference connects those workflows to actual feature execution before relevant production traffic exists. The local reviewer is original C Stack code informed by the upstream local-file/browser review approach. It deliberately starts with a small snapshot and scoped observations rather than requiring a hosted tracing product, embeddings, clustering, database, or fixed batch size. Domain-specific review UIs remain the upstream interface skill's role.
+
 ## Create Eval
 
 Adapted from [theclaymethod/eval-creator-skill](https://github.com/theclaymethod/eval-creator-skill/blob/de41e65d18187d039cd8fb9f38968d3120788406/SKILL.md), revision `de41e65d18187d039cd8fb9f38968d3120788406`. The original skill's declared name is `create-eval`; its frontmatter declares MIT.

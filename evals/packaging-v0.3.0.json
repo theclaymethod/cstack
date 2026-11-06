@@ -1,0 +1,70 @@
+{
+  "version": "0.3.0",
+  "sources": {
+    "evals_skills": "ai-evals-course/evals-skills@80d5f7b0127c7572ed9e9339937adbfd7240ffeb"
+  },
+  "validation": {
+    "skill_frontmatter": {
+      "passed": 5
+    },
+    "local_markdown_links": {
+      "resolved": 60
+    },
+    "plugin_manifest": "claude plugin validate . passed; optional icon warning",
+    "discovery": "Skills CLI lists exactly five skills",
+    "installation": [
+      "All five installed skill copies include matching references, script, and assets",
+      "Installed CLI launches, serves assets, and restores scoped annotations"
+    ],
+    "runtime_checks": [
+      "local assets served",
+      "unknown routes do not expose files",
+      "trace API requires launch token",
+      "selected trace preserved",
+      "uncertainty and null correction persist",
+      "separate scoped observations coexist",
+      "amendment preserves prior row and proposed rubric",
+      "stale tab update rejected",
+      "changed trace fingerprint rejected",
+      "missing judgment scope rejected",
+      "unsupported verdict rejected",
+      "missing reviewer rejected",
+      "non-text rubric question rejected",
+      "annotation writes require launch token",
+      "restart restores latest amendment and history",
+      "duplicate trace IDs rejected",
+      "missing output and error rejected"
+    ],
+    "syntax": [
+      "python3 -m py_compile skills/create-eval/scripts/review_traces.py",
+      "node --check skills/create-eval/assets/trace-review.js"
+    ],
+    "diff": "git diff --check passed"
+  },
+  "runtime_evidence": {
+    "source": "evals/expert-review/evidence/export-local/synthetic-bundle/findings.json",
+    "source_sha256": "cdbee6e012a8cb6c50cf0f321cc05a1e37e1244ada055c8b083e08c1f3c6d56a",
+    "trace_sha256": "19ceb79bd7986967f772c2d09218cd9ac9580aef3718184e33ccba3186f7438a",
+    "reviews_sha256": "6597b850e7739502bc6093910eb05eb9ade64ff00386fa014cb32508de79a785"
+  },
+  "limits": [
+    "No product/model run",
+    "Existing synthetic evidence; no clinician review claimed",
+    "Browser visual/interaction validation unavailable: local browser disabled and Mac locked",
+    "No fresh-agent skill behavior validation"
+  ],
+  "files": {
+    "skills/create-eval/SKILL.md": "01e9c65294a4cf7f9a455238f87e8bae88565d3d6e63225f7c88e073adfb0bc4",
+    "skills/create-eval/assets/trace-review.css": "ac1c1c03405014e601ae0e54e136db82f8eb90ec8f11c14d4eaa2e70a23daa44",
+    "skills/create-eval/assets/trace-review.html": "59f65ab5c77cee1bb1520409b561112104e01a1db364ebf721e8cf92446af440",
+    "skills/create-eval/assets/trace-review.js": "3a7ef12bbbb05600b0f81f28ae54987cf2c16ef1c31670908efdc30e1bb55307",
+    "skills/create-eval/references/early-development.md": "a6eb562e7dbacb78f6861809b626ab27cf862e0c74eb261df83b68f9e13fa4f2",
+    "skills/create-eval/references/ecosystem.md": "c766712ded9369958f61b08081bb9c131c76d9b206b90846d33d3e1323f025ce",
+    "skills/create-eval/references/from-findings.md": "c1704dc2f47cc25753d92af0a35d6c873405bad4bb3ae569545ec1a6a9a4e88b",
+    "skills/create-eval/references/judges.md": "16c979548368ec8f99574cbbb4dc57ddc2d8766d6d9d6093d153cf3118017f1f",
+    "skills/create-eval/references/trace-review.md": "90587661b5eefc2de56efc8680f7cd66871aff24fd5eb1c1acc9096ad46eb748",
+    "skills/create-eval/scripts/review_traces.py": "9abd20fcf096b8895c7d66dd8d76009ba2c12e5d7881b737e596af0a4e65ed41",
+    "skills/run-eval/SKILL.md": "a4ffe6bacca3295663eab6b3e0285fa3418966c7c1cd1277da27b5b653e4d358",
+    "skills/run-eval/references/package.md": "1a64242cc330fa535841cda62e9edff397aefbde696fec0f6e690b48a9081758"
+  }
+}

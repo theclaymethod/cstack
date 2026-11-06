@@ -16,3 +16,7 @@ Frozen evidence is retained as development provenance, not a current reliability
 OpenAI Privacy Filter is referenced as an optional external dependency. Its
 weights and source are not included; consult its own repository and model card
 for licensing and usage details.
+
+AI Evals Course's Evals Skills is referenced for established trace-analysis,
+synthetic-input, review-interface, and evaluator workflows. Its skills and code
+are not bundled here. See SOURCES.md for the inspected revision and links.

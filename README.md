@@ -8,7 +8,7 @@ C Stack is a portable skill pack for people working with Claude Code, Codex, Cur
 | --- | --- |
 | [Expert Mode](skills/expert-mode/SKILL.md) | Start a working session with `/expert-mode`. Keep replies short while quietly recording explicit errors, corrections, and yes/no rubric criteria. |
 | [Distill Me](skills/distill-me/SKILL.md) | Run `/distill-me` afterward to recover supported judgments from the session and merge them without duplicating live captures. |
-| [Create Eval](skills/create-eval/SKILL.md) | Turn supported findings or a task contract into cases, binary criteria, and a validated grader. |
+| [Create Eval](skills/create-eval/SKILL.md) | Bootstrap traces for a new feature, review early runs, and turn supported findings into cases and validated checks. |
 | [Run Eval](skills/run-eval/SKILL.md) | Execute the project's eval runner or review stored outputs locally; freeze judgments before comparing expert labels. |
 | [Cross-Examine](skills/cross-examine/SKILL.md) | Challenge eval tasks, environments, and graders with a bounded adversarial review. Preserve confirmed flaws and lessons in an evidence ledger. |
 
@@ -58,11 +58,27 @@ The root `plugin.json` follows the Agent Plugins standard, and `.cursor-plugin/p
 
 ## Work locally, export deliberately
 
-The workflow uses local JSONL and Markdown by default. It needs no database, Docker, background service, or model API. Python supports deterministic eval mechanics and the optional export helper. Cross-Examine adds isolation or SQLite only when the task requires it.
+The workflow uses local JSONL and Markdown by default. It needs no database, Docker, hosted service, or separate model API. Python supports deterministic eval mechanics, an optional localhost review UI, and the optional export helper. Cross-Examine adds isolation or SQLite only when the task requires it.
 
 Create Eval reuses an existing project harness or defines a [small local package](skills/run-eval/references/package.md). Run Eval uses that harness and the active agent for semantic judging, keeping expert labels out of the supplied judge payload. It distinguishes reviewing old outputs from running the product anew. Both preserve unknowns and execution errors, and keep judge calibration separate from product performance.
 
 Both capture skills support an [eval-author handoff](skills/expert-mode/references/export.md): selected findings, corrections, versioned rubric, replay context, and unresolved gaps. The [Privacy Filter reference](skills/expert-mode/references/privacy-filter.md) explains optional local setup for [OpenAI Privacy Filter](https://huggingface.co/openai/privacy-filter). Keep the original data private, review the exported bundle for remaining identifiers, and check that masking preserves the eval's meaning. Model filtering does not certify anonymization. Nothing uploads or publishes expert data automatically.
+
+## Before production traces
+
+For a new product or a feature without relevant traffic, use [the early-development workflow](skills/create-eval/references/early-development.md): define realistic scenarios from the feature contract, run the actual implementation, inspect the resulting traces with an expert, and promote supported findings into repeatable checks. Synthetic inputs can produce actual execution traces; mocked outputs remain marked as mocked. Keep old regression coverage while testing the new capability.
+
+Put a viewer in place before generating a large batch. Reuse your project's viewer or start the included [local trace reviewer](skills/create-eval/references/trace-review.md):
+
+```bash
+python3 /path/to/cstack/skills/create-eval/scripts/review_traces.py \
+  eval-runs/feature/traces.jsonl \
+  --reviews eval-runs/feature/reviews.jsonl
+```
+
+It supports expandable JSON and messages, scoped observations, pass/fail/defer, optional corrections, proposed rubric questions, and an append-only local history. It uses Python 3.10+ and the standard library. It reviews traces; it does not generate product runs, infer expert labels, or serve as a blind judge.
+
+For richer trace analysis, reference [AI Evals Course's Evals Skills](https://github.com/ai-evals-course/evals-skills), especially `generate-synthetic-data`, `error-discovery`, and `build-review-interface`. Its deterministic-check and judge-calibration skills also complement C Stack. See [the routing guide](skills/create-eval/references/ecosystem.md) for links and optional installation. These are external references, not vendored skills or mandatory dependencies. Use the same review workflow when relevant production data arrives, and use synthetic inputs to fill remaining gaps.
 
 ## Evals and evidence
 
@@ -78,7 +94,7 @@ The [Cross-Examine suite](evals/cross-examine/README.md) includes five audit cas
 python3 evals/cross-examine/calibration.py eval-runs/cross-calibration
 ```
 
-The export helper has been checked locally with synthetic data and a simulated model adapter. Actual Privacy Filter inference and PII-detection performance have not been verified here. The 30 existing calibration controls cover the original suites, not the newly adapted Create Eval and Run Eval skills. Those additions have installation, reference, and local workflow checks; fresh agent behavior remains unverified. No patient records or real expert-session datasets are bundled. Historical evidence retains its frozen versions and original provenance; old repository names do not change the current installation path.
+The export helper has been checked locally with synthetic data and a simulated model adapter. Actual Privacy Filter inference and PII-detection performance have not been verified here. The 30 existing calibration controls cover the original suites, not the newly adapted Create Eval and Run Eval skills. Those additions have installation, reference, and local workflow checks; fresh agent behavior remains unverified. The local trace reviewer passed 17 direct HTTP/persistence checks with existing synthetic evidence, plus Python and JavaScript syntax checks. Browser rendering and interaction remain unverified because browser access was disabled in the validation environment. No patient records or real expert-session datasets are bundled. Historical evidence retains its frozen versions and original provenance; old repository names do not change the current installation path.
 
 ## Credits and license
 

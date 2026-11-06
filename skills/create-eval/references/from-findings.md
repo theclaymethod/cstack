@@ -2,6 +2,8 @@
 
 Use a local Expert Mode/Distill Me dataset directly within its established private project. For a supplied export, inspect its manifest and review receipt against the current content hashes. Preserve missing or stale privacy and intent review as limitations; exporting a bundle does not settle either review automatically. Do not transmit or publish it merely because it can be opened locally.
 
+For [local trace-review annotations](trace-review.md), join the current amendment of each `review_id` to its trace ID and canonical hash. Resolve reviewer authority and assertion scope before treating a decided verdict as potential gold. `DEFER`, observation-only notes, and proposed rubric questions remain unresolved evidence. A later product run needs its own review; an old failure does not transfer to a new output. Preserve the original trace and review references when converting to the project's case format.
+
 Resolve the current state of each example from its history. A later correction, narrower criterion, or retraction amends the original judgment rather than adding another independent case. Two distinct assertions in one output can remain separate cases with a shared source family. Repeated transcript excerpts and reviewer extractions are not independent observations.
 
 Map fields by meaning:

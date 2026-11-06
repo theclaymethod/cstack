@@ -1,7 +1,7 @@
 {
   "name": "cstack",
   "displayName": "C Stack",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Capture expert feedback, create and run repeatable evals, and cross-examine their validity.",
   "author": {
     "name": "Clayton Kim"
