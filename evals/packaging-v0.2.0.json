@@ -1,0 +1,83 @@
+{
+  "package": "cstack",
+  "version": "0.2.0",
+  "checked_at": "2026-11-06T18:33:57.356207+00:00",
+  "included_skills": [
+    "create-eval",
+    "cross-examine",
+    "distill-me",
+    "expert-mode",
+    "run-eval"
+  ],
+  "added_skills": [
+    "create-eval",
+    "run-eval"
+  ],
+  "checks": {
+    "skill_creator_validation": "All five valid",
+    "skills_cli_discovery": "Exactly five skills discovered",
+    "skills_cli_install": "Five copied into an isolated project for codex, claude-code, cursor; contents match source",
+    "shared_reference_links": "Resolve for all five installed folders",
+    "claude_plugin_validation": "Passed; optional directory listing icon absent",
+    "existing_expert_review_controls": {
+      "passed": 19,
+      "total": 19
+    },
+    "existing_cross_examine_local_controls": {
+      "passed": 11,
+      "total": 11
+    },
+    "findings_to_case_development_check": {
+      "source_sha256": "cdbee6e012a8cb6c50cf0f321cc05a1e37e1244ada055c8b083e08c1f3c6d56a",
+      "eligible_examples": 1,
+      "incomplete_examples": 1,
+      "verdict_sha256": "c525094f5d383dcca1655441744c0335e7967cf5a7eaa7d4d7a68cf99f2349b4",
+      "confusion_counts": {
+        "tp": 1,
+        "fn": 0,
+        "tn": 0,
+        "fp": 0
+      },
+      "label_isolation": "contaminated development context",
+      "fresh_agent_run": false,
+      "limits": [
+        "One existing synthetic source-naming example",
+        "No gold PASS examples; acceptable-clear rate undefined",
+        "No complete grading harness implemented or tested for the new skills"
+      ]
+    }
+  },
+  "limits": [
+    "Existing calibration suites do not evaluate the two new skill adaptations",
+    "No fresh agent behavior run for Create Eval or Run Eval",
+    "Direct workflow check used existing synthetic findings in a context that had seen their labels",
+    "No actual Privacy Filter inference",
+    "No Cursor application runtime or marketplace import check",
+    "No private clinical cases, provider configuration, or course assets copied"
+  ],
+  "sha256": {
+    ".claude-plugin/marketplace.json": "9ad00659b3c7d24e8e24e30d9374b3167407e4f1b1453e23d22a08b8f58ec8f4",
+    ".claude-plugin/plugin.json": "db6a14d5568789d3d3a5dc8af0d3b9022c8bec7facf070258993d703c61803e4",
+    ".cursor-plugin/plugin.json": "9158a6f6b0de453705767c7bcb88309f86a07139cf20ab4386ae6e121fbb00df",
+    "README.md": "8f68d949ba1498e57556f4fe82b7e3ac1fd13c8c2108c8e6f4e2376e2f1aba4e",
+    "SOURCES.md": "26a88c5c995c17ea655e1665a3fcff4f5b4b42a3ef219533cbf004b541cee73f",
+    "plugin.json": "1628f0dd5f2a000c53699f7e16ed21e7a8c7a4a6fdb42623e3a5978de3cdf6c5",
+    "skills/create-eval/SKILL.md": "6d2e4583874a588dc84230788ba7e9f872b5686e6f318a606bf6808861735d79",
+    "skills/create-eval/references/from-findings.md": "151b39b23a6a29d90ed6d838ada61df0d8c23003bc91ea84627d0676a1886a1a",
+    "skills/create-eval/references/judges.md": "16c979548368ec8f99574cbbb4dc57ddc2d8766d6d9d6093d153cf3118017f1f",
+    "skills/cross-examine/SKILL.md": "c09b9b1074cacf7b84b9ce8765baacf0f57580fbb9e926cb6c94b011f4bae178",
+    "skills/cross-examine/references/ledger.md": "4c495c811f8b9714c556df021e6bfb9e906b362f7e583d2f369dca6e99c364a2",
+    "skills/cross-examine/references/lessons.md": "3213c990b2b0b930e39a8310ed170845fe1997f0086c9a3a8f6ee1752767bcfa",
+    "skills/distill-me/SKILL.md": "931d9cf433bd2853ecae24aa5feadd5e425d55a367d52e089ab6b302d7a7b229",
+    "skills/distill-me/agents/openai.yaml": "a1499d95abd8447558c535fe5554adcc3c9b988a0a39264a6283d430effe1e94",
+    "skills/distill-me/references/review-passes.md": "f9c7982d9bfb4d982d3ad7c42d060eb21b3e5474e64dd1f3894c0ea56112cfb1",
+    "skills/expert-mode/SKILL.md": "560db74cb4f64e567bdac9dfc445a66546aeb80a1485212fe4a24cd5a962d7e5",
+    "skills/expert-mode/agents/openai.yaml": "a1499d95abd8447558c535fe5554adcc3c9b988a0a39264a6283d430effe1e94",
+    "skills/expert-mode/references/export.md": "3750ef95f311fc140536c30ccba9af5394acc82f418283c1931af873fc094d9a",
+    "skills/expert-mode/references/privacy-filter.md": "0e8f0b80a94887654bd18e06f117e427ad9d64a2082e148a085567a5dba0aedd",
+    "skills/expert-mode/references/records.md": "a0f57f2d563e24e5db7801c96d24bbb1e3e46c76b652b95b809b31007550bdbb",
+    "skills/expert-mode/scripts/export_findings.py": "f289c2c6edcb40a4e492d92c4b107c50c1145896a36d4f9ad3026e8591689c15",
+    "skills/run-eval/SKILL.md": "b5b3076d3141397dcc78f10e03cde391ff3da1cb2f736c9d34f6fdbe57f22f70",
+    "skills/run-eval/references/package.md": "1a64242cc330fa535841cda62e9edff397aefbde696fec0f6e690b48a9081758"
+  }
+}

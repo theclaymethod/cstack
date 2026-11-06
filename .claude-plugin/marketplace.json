@@ -1,14 +1,16 @@
 {
   "name": "cstack",
-  "owner": { "name": "Clayton Kim" },
+  "owner": {
+    "name": "Clayton Kim"
+  },
   "metadata": {
-    "description": "C Stack: expert feedback capture, eval distillation, and eval validity review."
+    "description": "C Stack: expert feedback capture, eval creation and execution, and eval validity review."
   },
   "plugins": [
     {
       "name": "cstack",
       "source": "./",
-      "description": "Capture expert feedback, distill it into repeatable evals, and cross-examine their validity."
+      "description": "Capture expert feedback, create and run repeatable evals, and cross-examine their validity."
     }
   ]
 }

@@ -1,10 +1,16 @@
 {
   "name": "cstack",
-  "version": "0.1.0",
-  "description": "Capture expert feedback, distill it into repeatable evals, and cross-examine their validity.",
-  "author": { "name": "Clayton Kim" },
+  "version": "0.2.0",
+  "description": "Capture expert feedback, create and run repeatable evals, and cross-examine their validity.",
+  "author": {
+    "name": "Clayton Kim"
+  },
   "homepage": "https://github.com/theclaymethod/cstack",
   "repository": "https://github.com/theclaymethod/cstack",
   "license": "MIT",
-  "keywords": ["evals", "expert-feedback", "skills"]
+  "keywords": [
+    "evals",
+    "expert-feedback",
+    "skills"
+  ]
 }

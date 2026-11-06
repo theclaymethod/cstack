@@ -1,5 +1,9 @@
 C Stack is authored for Clayton Kim.
 
+Create Eval and Run Eval are portable adaptations of earlier skills in
+theclaymethod/eval-creator-skill and theclaymethod/f-explainer.
+Exact source paths, inspected revisions, and adaptations are in SOURCES.md.
+
 Expert Mode and Distill Me adapt working-mode and retrospective review patterns
 from Pstack by Lauren Tan, especially Poteto Mode, Automate Me, and Reflect.
 Pstack: https://github.com/cursor/plugins/tree/main/pstack
