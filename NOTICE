@@ -1,0 +1,14 @@
+C Stack is authored for Clayton Kim.
+
+Expert Mode and Distill Me adapt working-mode and retrospective review patterns
+from Pstack by Lauren Tan, especially Poteto Mode, Automate Me, and Reflect.
+Pstack: https://github.com/cursor/plugins/tree/main/pstack
+The upstream MIT license is preserved in licenses/pstack-MIT.txt.
+
+Cross-Examine and its historical evaluation evidence originated in
+https://github.com/theclaymethod/cross-examine.
+Frozen evidence is retained as development provenance, not a current reliability claim.
+
+OpenAI Privacy Filter is referenced as an optional external dependency. Its
+weights and source are not included; consult its own repository and model card
+for licensing and usage details.

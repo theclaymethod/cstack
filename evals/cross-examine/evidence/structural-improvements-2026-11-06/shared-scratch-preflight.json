@@ -1,0 +1,143 @@
+{
+  "execution_boundary": {
+    "executor": "docker",
+    "isolation": "container",
+    "permissions_enforced": true
+  },
+  "preflight": {
+    "status": "passed",
+    "probes": {
+      "bind-mount-read-write": {
+        "code": 0,
+        "stdout": "",
+        "stderr": "",
+        "cleanup": {
+          "container": "wargames-b677a0b4fcec4609a78b524e98b44b31",
+          "remove": {
+            "code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          "inspect": {
+            "code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          "status": "absent"
+        }
+      },
+      "sqlite-seed-read": {
+        "container": {
+          "code": 0,
+          "stdout": "[[1, \"Old Road\"], [2, \"Keep Street\"]]\n",
+          "stderr": "",
+          "cleanup": {
+            "container": "wargames-e759ceb04b6f49ffb6f35ce22d14b22e",
+            "remove": {
+              "code": 0,
+              "stdout": "",
+              "stderr": ""
+            },
+            "inspect": {
+              "code": 0,
+              "stdout": "",
+              "stderr": ""
+            },
+            "status": "absent"
+          }
+        },
+        "host_state": [
+          [
+            1,
+            "Old Road"
+          ],
+          [
+            2,
+            "Keep Street"
+          ]
+        ]
+      },
+      "sqlite-reseed-read": {
+        "container": {
+          "code": 0,
+          "stdout": "[[1, \"New Lane\"], [2, \"Keep Street\"]]\n",
+          "stderr": "",
+          "cleanup": {
+            "container": "wargames-b1c7a882f73d4c498e0f64ce0d80ef23",
+            "remove": {
+              "code": 0,
+              "stdout": "",
+              "stderr": ""
+            },
+            "inspect": {
+              "code": 0,
+              "stdout": "",
+              "stderr": ""
+            },
+            "status": "absent"
+          }
+        },
+        "host_state": [
+          [
+            1,
+            "New Lane"
+          ],
+          [
+            2,
+            "Keep Street"
+          ]
+        ]
+      },
+      "reset": {
+        "code": 0,
+        "stdout": "",
+        "stderr": "",
+        "cleanup": {
+          "container": "wargames-f590e54735c3487da50ea7bd39f92ada",
+          "remove": {
+            "code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          "inspect": {
+            "code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          "status": "absent"
+        }
+      },
+      "sqlite-reset-read": {
+        "container": {
+          "code": 0,
+          "stdout": "[[1, \"Old Road\"], [2, \"Keep Street\"]]\n",
+          "stderr": "",
+          "cleanup": {
+            "container": "wargames-626fb0a725e64f19a5126b569525fbbf",
+            "remove": {
+              "code": 0,
+              "stdout": "",
+              "stderr": ""
+            },
+            "inspect": {
+              "code": 0,
+              "stdout": "",
+              "stderr": ""
+            },
+            "status": "absent"
+          }
+        },
+        "host_state": [
+          [
+            1,
+            "Old Road"
+          ],
+          [
+            2,
+            "Keep Street"
+          ]
+        ]
+      }
+    }
+  }
+}

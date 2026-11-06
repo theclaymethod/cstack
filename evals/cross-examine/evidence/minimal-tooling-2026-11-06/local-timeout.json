@@ -1,0 +1,14 @@
+{
+  "result": {
+    "code": 124,
+    "stdout": "",
+    "stderr": "Execution timed out"
+  },
+  "elapsed_seconds": 0.31,
+  "live_processes_in_group": 0,
+  "execution_boundary": {
+    "executor": "local",
+    "isolation": "none",
+    "permissions_enforced": false
+  }
+}

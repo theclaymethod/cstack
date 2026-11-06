@@ -1,0 +1,16 @@
+{
+  "purpose": "Development verification of the three structural backlog improvements, not a model skill score.",
+  "grader_version": 5,
+  "fixture_version": 3,
+  "source_sha256": {
+    "evals/wargames/run.py": "287ff14d4f6596bd4c585e3a80efa8532ed5020be270320c0bc846af646cb374",
+    "evals/wargames/transfer.py": "8babd3630224defaa1d9513cf9310d81ec650ed15e90596f376c830b81f45921",
+    "evals/wargames/calibration.py": "54eb1b2fb415b4367719f45a6a91e596ce139f2099ff1c093ef17656cfc7dc64"
+  },
+  "limits": [
+    "Retrospective receipt, not a protected pre-run freeze.",
+    "Cleanup refusal was injected while a real timed-out container remained running; that exact container was then removed and verified absent.",
+    "The system temporary root failed on this Docker context; other contexts may share it.",
+    "Local execution still has no enforced sandbox."
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "failure": {
+    "execution_boundary": {
+      "executor": "docker",
+      "isolation": "container",
+      "permissions_enforced": true
+    },
+    "assessment": "infrastructure-error",
+    "executable_checks_passed": null,
+    "skill_evaluation_complete": false,
+    "error": "Docker replay failed or exact-container cleanup could not be verified. Check the Docker context/daemon and the named container before retrying.",
+    "evidence": {
+      "execution": {
+        "code": 124,
+        "stdout": "",
+        "stderr": "Execution timed out"
+      },
+      "cleanup": {
+        "container": "wargames-aebd356b2e224b19bf4f277bd06855ba",
+        "remove": {
+          "code": 1,
+          "stdout": "",
+          "stderr": "Injected cleanup refusal"
+        },
+        "inspect": {
+          "code": 0,
+          "stdout": "wargames-aebd356b2e224b19bf4f277bd06855ba\n",
+          "stderr": ""
+        },
+        "status": "present"
+      }
+    }
+  },
+  "recovery": {
+    "container": "wargames-aebd356b2e224b19bf4f277bd06855ba",
+    "remove": {
+      "code": 0,
+      "stdout": "wargames-aebd356b2e224b19bf4f277bd06855ba\n",
+      "stderr": ""
+    },
+    "inspect": {
+      "code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    "status": "absent"
+  }
+}

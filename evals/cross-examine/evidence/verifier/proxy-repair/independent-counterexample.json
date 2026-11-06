@@ -1,0 +1,17 @@
+{
+  "actual_state": [
+    [
+      1,
+      "Old Road"
+    ],
+    [
+      2,
+      "Keep Street"
+    ]
+  ],
+  "verifier": {
+    "code": 0,
+    "stdout": "{\"passed\": true}\n",
+    "stderr": ""
+  }
+}

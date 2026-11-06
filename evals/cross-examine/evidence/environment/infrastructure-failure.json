@@ -1,0 +1,8 @@
+{
+  "execution": {
+    "code": 125,
+    "stdout": "",
+    "stderr": "docker: Error response from daemon: invalid mount config for type \"bind\": bind source path does not exist: /var/folders/v4/k31444_11cl_0g9271ht2w5h0000gn/T/wargames-environment-harb8ifw/workspace\n\nRun 'docker run --help' for more information\n"
+  },
+  "trusted_assets_unchanged": true
+}

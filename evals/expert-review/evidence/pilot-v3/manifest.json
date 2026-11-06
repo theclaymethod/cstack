@@ -1,0 +1,12 @@
+{
+  "frozen/skills/distill-me/SKILL.md": "228a7a674db3a2abd71c9383351d8d0a83ae5136bde9ebd5114d91642c24f776",
+  "frozen/skills/expert-mode/SKILL.md": "6dd79ddfdd641315f7b329d5c2c75d546183609979bcff3073755b5c0ee1caca",
+  "frozen/skills/expert-mode/references/records.md": "c69a05d23723c61e9d2a40b229a7d6d0cfe94398b3fed20e1e196ab003c27f13",
+  "frozen/skills/expert-mode/agents/openai.yaml": "a1499d95abd8447558c535fe5554adcc3c9b988a0a39264a6283d430effe1e94",
+  "frozen/skills/distill-me/references/review-passes.md": "f9c7982d9bfb4d982d3ad7c42d060eb21b3e5474e64dd1f3894c0ea56112cfb1",
+  "frozen/skills/distill-me/agents/openai.yaml": "a1499d95abd8447558c535fe5554adcc3c9b988a0a39264a6283d430effe1e94",
+  "frozen/evals/expert-review/run.py": "cd9ede166fce86063dd1e602c8a9283896819052b2f99fa1845016d2570426f5",
+  "frozen/evals/expert-review/candidate.md": "dcbab217f0d46b2548fe9f4c999852e1a167dbd64f3af68ac4d05debe80a6c69",
+  "frozen/evals/expert-review/calibration.py": "f9eae65809bc443738b25630e133da31c85ab9ac8797af88eefa438209540fd8",
+  "frozen/evals/expert-review/fixtures.py": "0fd912a75f5f4be5ff58e06f338f8af97a2af68df1d920fa2178156b2cb3f784"
+}

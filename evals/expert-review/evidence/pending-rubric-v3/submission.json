@@ -1,0 +1,28 @@
+[
+  {
+    "name": "pending-rubric",
+    "case": "live-uncertainty",
+    "steps": [
+      {
+        "reviews.jsonl": "",
+        "rubric.jsonl": "",
+        "reply.md": "Recorded supported observations; unresolved context remains explicit.\n"
+      },
+      {
+        "reviews.jsonl": "{\"record_id\": \"r1\", \"example_id\": \"u2\", \"amends\": null, \"item_id\": \"b\", \"output_ref\": \"artifacts/b-v1.json\", \"label\": \"uncertain\", \"source_id\": \"u2\", \"quote\": \"Could this probability be too high? I am not calling it wrong yet.\", \"correction\": null, \"correction_source\": null, \"unresolved\": [\"Whether this probability is actually wrong\"], \"replay_ready\": false}\n",
+        "rubric.jsonl": "",
+        "reply.md": "Recorded supported observations; unresolved context remains explicit.\n"
+      },
+      {
+        "reviews.jsonl": "{\"record_id\": \"r1\", \"example_id\": \"u2\", \"amends\": null, \"item_id\": \"b\", \"output_ref\": \"artifacts/b-v1.json\", \"label\": \"uncertain\", \"source_id\": \"u2\", \"quote\": \"Could this probability be too high? I am not calling it wrong yet.\", \"correction\": null, \"correction_source\": null, \"unresolved\": [\"Whether this probability is actually wrong\"], \"replay_ready\": false}\n",
+        "rubric.jsonl": "{\"rubric_id\": \"source-named\", \"version\": 1, \"question\": \"Is the source named?\", \"passing_answer\": null, \"source_id\": \"u3\", \"quote\": \"I prefer short replies. For imported items only, I check whether the source is named.\", \"scope\": \"imported items only\", \"status\": \"proposed\", \"unresolved\": [\"Whether source naming is required to pass\"]}\n",
+        "reply.md": "Recorded supported observations; unresolved context remains explicit.\n"
+      },
+      {
+        "reviews.jsonl": "{\"record_id\": \"r1\", \"example_id\": \"u2\", \"amends\": null, \"item_id\": \"b\", \"output_ref\": \"artifacts/b-v1.json\", \"label\": \"uncertain\", \"source_id\": \"u2\", \"quote\": \"Could this probability be too high? I am not calling it wrong yet.\", \"correction\": null, \"correction_source\": null, \"unresolved\": [\"Whether this probability is actually wrong\"], \"replay_ready\": false}\n{\"record_id\": \"r2\", \"example_id\": \"u4\", \"amends\": null, \"item_id\": \"b\", \"output_ref\": \"artifacts/b-v1.json\", \"label\": \"incorrect\", \"source_id\": \"u4\", \"quote\": \"This imported b output is incorrect because its source is missing. I cannot provide a replacement probability.\", \"correction\": null, \"correction_source\": null, \"unresolved\": [\"No replacement probability supplied\"], \"replay_ready\": false}\n",
+        "rubric.jsonl": "{\"rubric_id\": \"source-named\", \"version\": 1, \"question\": \"Is the source named?\", \"passing_answer\": null, \"source_id\": \"u3\", \"quote\": \"I prefer short replies. For imported items only, I check whether the source is named.\", \"scope\": \"imported items only\", \"status\": \"proposed\", \"unresolved\": [\"Whether source naming is required to pass\"]}\n{\"rubric_id\": \"source-named\", \"version\": 2, \"question\": \"Is the source named?\", \"passing_answer\": \"yes\", \"source_id\": \"u4\", \"quote\": \"This imported b output is incorrect because its source is missing. I cannot provide a replacement probability.\", \"scope\": \"imported items only\", \"status\": \"confirmed\", \"unresolved\": [], \"origin_source_id\": \"u3\"}\n",
+        "reply.md": "Recorded supported observations; unresolved context remains explicit.\n"
+      }
+    ]
+  }
+]

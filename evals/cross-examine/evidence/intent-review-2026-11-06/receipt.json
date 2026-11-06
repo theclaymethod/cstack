@@ -1,0 +1,25 @@
+{
+  "run_kind": "development-intent-review",
+  "original_commit": "41a14e4eedf6c3fcf52837c68907dd28c2b581a1",
+  "grader_version": 3,
+  "receipt_boundary": "Retrospective local hashes; not a protected pre-run commitment. Before and after results replay the same candidate files.",
+  "source_sha256": {
+    "evals/wargames/run.py": "9bf8cc8cd7b45ff02a2fc96ddf23c92c93b2620e6b2c06cb76b4e77a6f139027",
+    "evals/wargames/fixtures.py": "e1249193e78d6b809ccdf128f10162d7b5d466767f86dc502b26b9907e1974e6",
+    "evals/wargames/transfer.py": "5b5d61374839e4df4d8864382d7140be55a15f1acc060e91119a8c9c26bcc220",
+    "evals/wargames/calibration.py": "1f98f2a43e7f5e562c8e065856a27fad621b39c6e085141b95813e288aa195d7",
+    "evals/wargames/candidate.md": "71a72d5ddc65029be308e8224b6fb0a059e8dc48b3205a666414f194bd32bbbd",
+    "evals/wargames/transfer-request.md": "05e8b4d84bcd685e9736990dc737e90c195cab7a02bfcc3df241960ac67faf01",
+    "skills/wargames/SKILL.md": "3a0d9375d353c96f3401d4df934fc7a8ac2a38341819521d0cb9c3457e6ab6e1",
+    "skills/wargames/references/ledger.md": "d739adcb070225693987dda743cec17adad348f0c5b33783ba8cc743cbf81b58"
+  },
+  "frozen_incomplete_submission_sha256": {
+    "finding.json": "685ff85f8eff7f3d9879de60ac9af4e2cbd33b84f9da7d70d76c76a25d467e4d",
+    "generator/SKILL.md": "09cee38fde6d28c68426bfdec4ed9ce9ff2be110a718beb5a5e8915a87f9c3e4",
+    "reset.py": "fd54b77f2ca6f0431a2e03d0e6b6d96ff441e9e4771fb53c343421c497dc3d74"
+  },
+  "pilot_guidance_sha256": {
+    "evals/wargames/evidence/model-audit-01/submission/generator/SKILL.md": "c18ec7f011dde64aa00f6f5c816f29420d5fc7df9bf7795ef3fdc0c5988e903f",
+    "evals/wargames/evidence/model-transfer-01/generator/SKILL.md": "c18ec7f011dde64aa00f6f5c816f29420d5fc7df9bf7795ef3fdc0c5988e903f"
+  }
+}

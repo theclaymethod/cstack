@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "examples": [
+    {
+      "record_id": "record-0001",
+      "example_id": "example-0001",
+      "amends": null,
+      "item_id": "item-0001",
+      "output_ref": "artifact-0001",
+      "label": "uncertain",
+      "source_id": "source-0001",
+      "quote": "Could this probability be too high? I am not calling it wrong yet.",
+      "correction": null,
+      "correction_source": null,
+      "unresolved": [
+        "The expert has not confirmed that probability 0.9 is too high or incorrect.",
+        "No expert-endorsed acceptable probability or acceptance criterion has been supplied."
+      ],
+      "replay_ready": false,
+      "capture_replay_ready": false
+    },
+    {
+      "record_id": "record-0002",
+      "example_id": "example-0002",
+      "amends": null,
+      "item_id": "item-0001",
+      "output_ref": "artifact-0001",
+      "label": "incorrect",
+      "source_id": "source-0003",
+      "quote": "This imported b output is incorrect because its source is missing. I cannot provide a replacement probability.",
+      "correction": null,
+      "correction_source": null,
+      "unresolved": [],
+      "replay_ready": false,
+      "rubric_answers": [
+        {
+          "rubric_id": "criterion-0002",
+          "version": 2,
+          "applicable": true,
+          "answer": "no",
+          "source_id": "source-0003"
+        }
+      ],
+      "capture_replay_ready": true
+    }
+  ],
+  "rubric": [
+    {
+      "rubric_id": "criterion-0001",
+      "version": 1,
+      "question": "Is the reply short?",
+      "passing_answer": "yes",
+      "source_id": "source-0002",
+      "quote": "I prefer short replies. For imported items only, I check whether the source is named.",
+      "scope": "assistant replies in this session",
+      "status": "confirmed"
+    },
+    {
+      "rubric_id": "criterion-0002",
+      "version": 1,
+      "question": "Is the source named?",
+      "passing_answer": null,
+      "source_id": "source-0002",
+      "quote": "I prefer short replies. For imported items only, I check whether the source is named.",
+      "scope": "imported items only",
+      "status": "proposed",
+      "unresolved": [
+        "The expert has not specified whether a named source is required to pass this check."
+      ]
+    },
+    {
+      "rubric_id": "criterion-0002",
+      "version": 2,
+      "question": "Is the source named?",
+      "passing_answer": "yes",
+      "source_id": "source-0003",
+      "quote": "This imported b output is incorrect because its source is missing. I cannot provide a replacement probability.",
+      "scope": "imported items only",
+      "status": "confirmed",
+      "origin_source_id": "source-0002",
+      "previous_version": 1
+    }
+  ],
+  "history": [],
+  "artifacts": [
+    {
+      "artifact_id": "artifact-0001",
+      "item_id": "item-0001",
+      "version": "synthetic-v1",
+      "input": {
+        "requested": "review this synthetic item"
+      },
+      "output": {
+        "probability": 0.9
+      }
+    }
+  ],
+  "limitations": [
+    "Synthetic development findings, not clinical ground truth or a held-out score.",
+    "The numerical probability concern remains unresolved.",
+    "Expert quotes in this synthetic packet contain no identifying source data."
+  ],
+  "source_scope": "Selected synthetic expert-review pilot findings; opaque export IDs.",
+  "export_review_required": true,
+  "source_representation": "Export projection; private originals are the authority for exact source text."
+}

@@ -1,0 +1,56 @@
+{
+  "system_temp_root": {
+    "exit_code": 2,
+    "result": {
+      "case": null,
+      "execution_boundary": {
+        "executor": "docker",
+        "isolation": "container",
+        "permissions_enforced": true
+      },
+      "assessment": "infrastructure-error",
+      "executable_checks_passed": null,
+      "skill_evaluation_complete": false,
+      "error": "Replay preflight failed at bind-mount-read-write. Check the Docker image/context and use WARGAMES_SCRATCH_ROOT for a writable directory shared with Docker. No candidate was scored.",
+      "evidence": {
+        "phase": "bind-mount-read-write",
+        "detail": "Docker reported a replay launch failure (exit 125).",
+        "probes": {},
+        "cause": {
+          "execution": {
+            "code": 125,
+            "stdout": "",
+            "stderr": "docker: Error response from daemon: invalid mount config for type \"bind\": bind source path does not exist: <system-temp-path> 'docker run --help' for more information\n"
+          },
+          "cleanup": {
+            "container": "wargames-7a9fa5211c9d4fd68a92d38db86fe107",
+            "remove": {
+              "code": 0,
+              "stdout": "",
+              "stderr": ""
+            },
+            "inspect": {
+              "code": 0,
+              "stdout": "",
+              "stderr": ""
+            },
+            "status": "absent"
+          }
+        }
+      }
+    }
+  },
+  "local_without_docker_on_path": {
+    "exit_code": 0,
+    "passed": true,
+    "preflight": {
+      "status": "not-required",
+      "reason": "Local executor does not use Docker mounts."
+    },
+    "execution_boundary": {
+      "executor": "local",
+      "isolation": "none",
+      "permissions_enforced": false
+    }
+  }
+}

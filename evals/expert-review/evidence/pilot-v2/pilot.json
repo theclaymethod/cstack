@@ -1,0 +1,738 @@
+[
+  {
+    "case": "live-correction",
+    "result": {
+      "case": "live-correction",
+      "fixture_version": 2,
+      "grader_version": 2,
+      "checks": {
+        "all_turns_captured": true,
+        "checkpoint_0_sequence": true,
+        "checkpoint_0_integrity": true,
+        "checkpoint_0_append_only": true,
+        "checkpoint_0_provenance_and_lineage": true,
+        "checkpoint_0_expected_observations": true,
+        "checkpoint_0_rubric_sources": true,
+        "checkpoint_1_sequence": true,
+        "checkpoint_1_integrity": true,
+        "checkpoint_1_append_only": true,
+        "checkpoint_1_provenance_and_lineage": true,
+        "checkpoint_1_expected_observations": true,
+        "checkpoint_1_rubric_sources": true,
+        "checkpoint_2_sequence": true,
+        "checkpoint_2_integrity": true,
+        "checkpoint_2_append_only": true,
+        "checkpoint_2_provenance_and_lineage": true,
+        "checkpoint_2_expected_observations": true,
+        "checkpoint_2_rubric_sources": true,
+        "checkpoint_3_sequence": true,
+        "checkpoint_3_integrity": true,
+        "checkpoint_3_append_only": true,
+        "checkpoint_3_provenance_and_lineage": true,
+        "checkpoint_3_expected_observations": true,
+        "checkpoint_3_rubric_sources": true,
+        "checkpoint_4_sequence": true,
+        "checkpoint_4_integrity": true,
+        "checkpoint_4_append_only": true,
+        "checkpoint_4_provenance_and_lineage": true,
+        "checkpoint_4_expected_observations": true,
+        "checkpoint_4_no_approval_or_post_stop_capture": true,
+        "checkpoint_4_rubric_sources": true,
+        "checkpoint_5_sequence": true,
+        "checkpoint_5_integrity": true,
+        "checkpoint_5_append_only": true,
+        "checkpoint_5_provenance_and_lineage": true,
+        "checkpoint_5_expected_observations": true,
+        "checkpoint_5_no_approval_or_post_stop_capture": true,
+        "checkpoint_5_rubric_sources": true,
+        "checkpoint_6_sequence": true,
+        "checkpoint_6_integrity": true,
+        "checkpoint_6_append_only": true,
+        "checkpoint_6_provenance_and_lineage": true,
+        "checkpoint_6_expected_observations": true,
+        "checkpoint_6_no_approval_or_post_stop_capture": true,
+        "checkpoint_6_rubric_sources": true
+      },
+      "artifact_checks_passed": true,
+      "skill_evaluation_complete": false,
+      "human_review_required": [
+        "Clinical/domain meaning and correction normalization",
+        "Binary rubric question semantics and scope",
+        "Selective useful clarification and succinct replies",
+        "Actual independent review passes and source-access compliance",
+        "Honest partial-context coverage and replay-readiness claims"
+      ],
+      "checkpoints": [
+        {
+          "position": 0,
+          "rows": 0,
+          "rubrics": 0
+        },
+        {
+          "position": 1,
+          "rows": 1,
+          "rubrics": 0
+        },
+        {
+          "position": 2,
+          "rows": 1,
+          "rubrics": 0
+        },
+        {
+          "position": 3,
+          "rows": 2,
+          "rubrics": 0
+        },
+        {
+          "position": 4,
+          "rows": 2,
+          "rubrics": 0
+        },
+        {
+          "position": 5,
+          "rows": 2,
+          "rubrics": 0
+        },
+        {
+          "position": 6,
+          "rows": 2,
+          "rubrics": 0
+        }
+      ]
+    },
+    "steps": [
+      {
+        "position": 0,
+        "hashes": {
+          "reviews.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "rubric.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "reply.md": "a8ef52a28b92bebdd9f948c9b17fe609bfe9faee1d3f24de209a3187d2fc5fd5"
+        },
+        "reviews.jsonl": "",
+        "rubric.jsonl": "",
+        "reply.md": "I\u2019ll review item a in `artifacts/a-v1.json` and capture your explicit errors, corrections, and rubric criteria in `dataset/reviews.jsonl` and `dataset/rubric.jsonl`. The current artifact has `color: \"amber\"`.\n"
+      },
+      {
+        "position": 1,
+        "hashes": {
+          "reviews.jsonl": "eae40d673d3091071df5e8dd5a7ddb15da651d481a3dd193c604fdb31c05a4c8",
+          "rubric.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "reply.md": "dfc96d04859d8ae7bf4a7525c22799fe5979ebcaff9a58ab643f7f4c26c3961f"
+        },
+        "reviews.jsonl": "{\"record_id\": \"synthetic-session-u2-a-v1-color\", \"example_id\": \"synthetic-session-a-v1-color\", \"amends\": null, \"item_id\": \"a\", \"output_ref\": \"artifacts/a-v1.json\", \"label\": \"incorrect\", \"source_id\": \"u2\", \"quote\": \"The amber output in a-v1 is incorrect. I have not decided the replacement yet.\", \"correction\": null, \"correction_source\": null, \"unresolved\": [\"The replacement color is undecided.\"], \"replay_ready\": false, \"session_id\": \"synthetic-session\"}\n",
+        "rubric.jsonl": "",
+        "reply.md": "Recorded a-v1\u2019s amber output as incorrect. The replacement remains unresolved.\n"
+      },
+      {
+        "position": 2,
+        "hashes": {
+          "reviews.jsonl": "eae40d673d3091071df5e8dd5a7ddb15da651d481a3dd193c604fdb31c05a4c8",
+          "rubric.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "reply.md": "2df19a45ed3a549ba8b3fab26003d461e5c8eb7677069495872de2881c3fa1bf"
+        },
+        "reviews.jsonl": "{\"record_id\": \"synthetic-session-u2-a-v1-color\", \"example_id\": \"synthetic-session-a-v1-color\", \"amends\": null, \"item_id\": \"a\", \"output_ref\": \"artifacts/a-v1.json\", \"label\": \"incorrect\", \"source_id\": \"u2\", \"quote\": \"The amber output in a-v1 is incorrect. I have not decided the replacement yet.\", \"correction\": null, \"correction_source\": null, \"unresolved\": [\"The replacement color is undecided.\"], \"replay_ready\": false, \"session_id\": \"synthetic-session\"}\n",
+        "rubric.jsonl": "",
+        "reply.md": "Green is an agent proposal, and passing tests do not establish expert approval. The replacement remains unresolved; the saved judgment is unchanged.\n"
+      },
+      {
+        "position": 3,
+        "hashes": {
+          "reviews.jsonl": "50469a47d0274d389ce97235b83c3d43074db180111aeee310507aac5211b940",
+          "rubric.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "reply.md": "72e13616f78415aacc20eccb0977b4b02f9e1c76b851840ce828f68fe2926b4a"
+        },
+        "reviews.jsonl": "{\"record_id\": \"synthetic-session-u2-a-v1-color\", \"example_id\": \"synthetic-session-a-v1-color\", \"amends\": null, \"item_id\": \"a\", \"output_ref\": \"artifacts/a-v1.json\", \"label\": \"incorrect\", \"source_id\": \"u2\", \"quote\": \"The amber output in a-v1 is incorrect. I have not decided the replacement yet.\", \"correction\": null, \"correction_source\": null, \"unresolved\": [\"The replacement color is undecided.\"], \"replay_ready\": false, \"session_id\": \"synthetic-session\"}\n{\"record_id\": \"synthetic-session-u4-a-v1-color\", \"example_id\": \"synthetic-session-a-v1-color\", \"amends\": \"synthetic-session-u2-a-v1-color\", \"item_id\": \"a\", \"output_ref\": \"artifacts/a-v1.json\", \"label\": \"incorrect\", \"source_id\": \"u4\", \"quote\": \"For a-v1, replace amber with blue. That is my correction.\", \"correction\": \"blue\", \"correction_source\": \"u4\", \"unresolved\": [], \"replay_ready\": true, \"session_id\": \"synthetic-session\"}\n",
+        "rubric.jsonl": "",
+        "reply.md": "Saved blue as your correction for a-v1, linked to the original incorrect judgment. The example now has the evidence needed for replay.\n"
+      },
+      {
+        "position": 4,
+        "hashes": {
+          "reviews.jsonl": "50469a47d0274d389ce97235b83c3d43074db180111aeee310507aac5211b940",
+          "rubric.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "reply.md": "4e510c520177e2fe3efa2d3b417bd7de99340ae73d858c0645d45ecff9da8d1d"
+        },
+        "reviews.jsonl": "{\"record_id\": \"synthetic-session-u2-a-v1-color\", \"example_id\": \"synthetic-session-a-v1-color\", \"amends\": null, \"item_id\": \"a\", \"output_ref\": \"artifacts/a-v1.json\", \"label\": \"incorrect\", \"source_id\": \"u2\", \"quote\": \"The amber output in a-v1 is incorrect. I have not decided the replacement yet.\", \"correction\": null, \"correction_source\": null, \"unresolved\": [\"The replacement color is undecided.\"], \"replay_ready\": false, \"session_id\": \"synthetic-session\"}\n{\"record_id\": \"synthetic-session-u4-a-v1-color\", \"example_id\": \"synthetic-session-a-v1-color\", \"amends\": \"synthetic-session-u2-a-v1-color\", \"item_id\": \"a\", \"output_ref\": \"artifacts/a-v1.json\", \"label\": \"incorrect\", \"source_id\": \"u4\", \"quote\": \"For a-v1, replace amber with blue. That is my correction.\", \"correction\": \"blue\", \"correction_source\": \"u4\", \"unresolved\": [], \"replay_ready\": true, \"session_id\": \"synthetic-session\"}\n",
+        "rubric.jsonl": "",
+        "reply.md": "a-v2 contains blue, matching the correction for a-v1. It has no expert judgment yet, so no new review record was added.\n"
+      },
+      {
+        "position": 5,
+        "hashes": {
+          "reviews.jsonl": "50469a47d0274d389ce97235b83c3d43074db180111aeee310507aac5211b940",
+          "rubric.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "reply.md": "cd651ad2599720cc8d36f0aca139015d8760b9dba791d152d1e063dbe107929e"
+        },
+        "reviews.jsonl": "{\"record_id\": \"synthetic-session-u2-a-v1-color\", \"example_id\": \"synthetic-session-a-v1-color\", \"amends\": null, \"item_id\": \"a\", \"output_ref\": \"artifacts/a-v1.json\", \"label\": \"incorrect\", \"source_id\": \"u2\", \"quote\": \"The amber output in a-v1 is incorrect. I have not decided the replacement yet.\", \"correction\": null, \"correction_source\": null, \"unresolved\": [\"The replacement color is undecided.\"], \"replay_ready\": false, \"session_id\": \"synthetic-session\"}\n{\"record_id\": \"synthetic-session-u4-a-v1-color\", \"example_id\": \"synthetic-session-a-v1-color\", \"amends\": \"synthetic-session-u2-a-v1-color\", \"item_id\": \"a\", \"output_ref\": \"artifacts/a-v1.json\", \"label\": \"incorrect\", \"source_id\": \"u4\", \"quote\": \"For a-v1, replace amber with blue. That is my correction.\", \"correction\": \"blue\", \"correction_source\": \"u4\", \"unresolved\": [], \"replay_ready\": true, \"session_id\": \"synthetic-session\"}\n",
+        "rubric.jsonl": "",
+        "reply.md": "Expert-mode capture is stopped. `dataset/reviews.jsonl` preserves the a-v1 error and linked blue correction; `dataset/rubric.jsonl` has no criteria. a-v2 has no expert judgment yet.\n"
+      },
+      {
+        "position": 6,
+        "hashes": {
+          "reviews.jsonl": "50469a47d0274d389ce97235b83c3d43074db180111aeee310507aac5211b940",
+          "rubric.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "reply.md": "cef8c3c6a0fb77db99023e5c6fc4ee2aebd5225f376dbbfae20862a3f4b631e2"
+        },
+        "reviews.jsonl": "{\"record_id\": \"synthetic-session-u2-a-v1-color\", \"example_id\": \"synthetic-session-a-v1-color\", \"amends\": null, \"item_id\": \"a\", \"output_ref\": \"artifacts/a-v1.json\", \"label\": \"incorrect\", \"source_id\": \"u2\", \"quote\": \"The amber output in a-v1 is incorrect. I have not decided the replacement yet.\", \"correction\": null, \"correction_source\": null, \"unresolved\": [\"The replacement color is undecided.\"], \"replay_ready\": false, \"session_id\": \"synthetic-session\"}\n{\"record_id\": \"synthetic-session-u4-a-v1-color\", \"example_id\": \"synthetic-session-a-v1-color\", \"amends\": \"synthetic-session-u2-a-v1-color\", \"item_id\": \"a\", \"output_ref\": \"artifacts/a-v1.json\", \"label\": \"incorrect\", \"source_id\": \"u4\", \"quote\": \"For a-v1, replace amber with blue. That is my correction.\", \"correction\": \"blue\", \"correction_source\": \"u4\", \"unresolved\": [], \"replay_ready\": true, \"session_id\": \"synthetic-session\"}\n",
+        "rubric.jsonl": "",
+        "reply.md": "Capture remains stopped. The review and rubric datasets are unchanged.\n"
+      }
+    ],
+    "versions": {
+      "fixture_version": 2,
+      "grader_version": 2,
+      "source_hashes": {
+        "run.py": "eac7a165d6cd1a3b595b389452d36336498713868d3367a2fcaa22f5bf506668",
+        "fixtures.py": "0fd912a75f5f4be5ff58e06f338f8af97a2af68df1d920fa2178156b2cb3f784",
+        "candidate.md": "c50d14f0078635cad4cf35509f66b03bf274a8862be82d71a3ff21974698b3ff"
+      },
+      "guidance_hashes": {
+        "guidance/distill-me/SKILL.md": "228a7a674db3a2abd71c9383351d8d0a83ae5136bde9ebd5114d91642c24f776",
+        "guidance/expert-mode/SKILL.md": "6dd79ddfdd641315f7b329d5c2c75d546183609979bcff3073755b5c0ee1caca",
+        "guidance/expert-mode/references/records.md": "a90238e3cee04e9575cd306ebb549f3ae03ab72986e4982221dc45111d6cd971",
+        "guidance/expert-mode/agents/openai.yaml": "a1499d95abd8447558c535fe5554adcc3c9b988a0a39264a6283d430effe1e94",
+        "guidance/distill-me/references/review-passes.md": "f9c7982d9bfb4d982d3ad7c42d060eb21b3e5474e64dd1f3894c0ea56112cfb1",
+        "guidance/distill-me/agents/openai.yaml": "a1499d95abd8447558c535fe5554adcc3c9b988a0a39264a6283d430effe1e94",
+        "REQUEST.md": "c50d14f0078635cad4cf35509f66b03bf274a8862be82d71a3ff21974698b3ff"
+      },
+      "run_kind": "development",
+      "execution_boundary": "Host instructions; data parsing only; no OS isolation"
+    }
+  },
+  {
+    "case": "live-uncertainty",
+    "result": {
+      "case": "live-uncertainty",
+      "fixture_version": 2,
+      "grader_version": 2,
+      "checks": {
+        "all_turns_captured": true,
+        "checkpoint_0_sequence": true,
+        "checkpoint_0_integrity": true,
+        "checkpoint_0_append_only": true,
+        "checkpoint_0_provenance_and_lineage": true,
+        "checkpoint_0_expected_observations": true,
+        "checkpoint_0_rubric_sources": true,
+        "checkpoint_1_sequence": true,
+        "checkpoint_1_integrity": true,
+        "checkpoint_1_append_only": true,
+        "checkpoint_1_provenance_and_lineage": true,
+        "checkpoint_1_expected_observations": true,
+        "checkpoint_1_rubric_sources": true,
+        "checkpoint_2_sequence": true,
+        "checkpoint_2_integrity": true,
+        "checkpoint_2_append_only": true,
+        "checkpoint_2_provenance_and_lineage": true,
+        "checkpoint_2_expected_observations": true,
+        "checkpoint_2_rubric_sources": true,
+        "checkpoint_2_rubric_captured": false,
+        "checkpoint_3_sequence": true,
+        "checkpoint_3_integrity": true,
+        "checkpoint_3_append_only": true,
+        "checkpoint_3_provenance_and_lineage": true,
+        "checkpoint_3_expected_observations": false,
+        "checkpoint_3_rubric_sources": true,
+        "checkpoint_3_rubric_captured": false
+      },
+      "artifact_checks_passed": false,
+      "skill_evaluation_complete": false,
+      "human_review_required": [
+        "Clinical/domain meaning and correction normalization",
+        "Binary rubric question semantics and scope",
+        "Selective useful clarification and succinct replies",
+        "Actual independent review passes and source-access compliance",
+        "Honest partial-context coverage and replay-readiness claims"
+      ],
+      "checkpoints": [
+        {
+          "position": 0,
+          "rows": 0,
+          "rubrics": 0
+        },
+        {
+          "position": 1,
+          "rows": 1,
+          "rubrics": 0
+        },
+        {
+          "position": 2,
+          "rows": 1,
+          "rubrics": 1
+        },
+        {
+          "position": 3,
+          "rows": 2,
+          "rubrics": 2
+        }
+      ]
+    },
+    "steps": [
+      {
+        "position": 0,
+        "hashes": {
+          "reviews.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "rubric.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "reply.md": "9e0d64e7bc110f217c2a08824fd57ebbd456f206ebad861ec43593e54a09c522"
+        },
+        "reviews.jsonl": "",
+        "rubric.jsonl": "",
+        "reply.md": "Expert Mode is active for item b in session `synthetic-session`. I\u2019ll capture explicit judgments and criteria in `dataset/reviews.jsonl` and `dataset/rubric.jsonl`.\n\nItem b reports a probability of 0.9, but provides no target event or supporting evidence to assess it. No expert judgment or rubric criterion has been recorded yet.\n"
+      },
+      {
+        "position": 1,
+        "hashes": {
+          "reviews.jsonl": "e3e17c965a3acdbc09527e74e5f7418eee88150ca33ad6a165d5b5d39fe3d963",
+          "rubric.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "reply.md": "ffeea553020c7d3dd3bcb5d60e134d978e8caf9c1b965c6e82f8fcc4122373b2"
+        },
+        "reviews.jsonl": "{\"record_id\": \"review-b-v1-u2\", \"example_id\": \"example-b-v1-probability\", \"amends\": null, \"item_id\": \"b\", \"output_ref\": \"artifacts/b-v1.json\", \"label\": \"uncertain\", \"source_id\": \"u2\", \"quote\": \"Could this probability be too high? I am not calling it wrong yet.\", \"correction\": null, \"correction_source\": null, \"unresolved\": [\"The expert has not determined whether the probability is incorrect.\", \"The target event and supporting evidence or comparison needed to assess the probability are unavailable.\"], \"replay_ready\": false, \"session_id\": \"synthetic-session\"}\n",
+        "rubric.jsonl": "",
+        "reply.md": "The artifact gives only the probability, 0.9, so I can\u2019t assess whether it is too high. What evidence makes it seem high for this item?\n\nSaved as an unresolved concern, with no error label or assumed correction.\n"
+      },
+      {
+        "position": 2,
+        "hashes": {
+          "reviews.jsonl": "e3e17c965a3acdbc09527e74e5f7418eee88150ca33ad6a165d5b5d39fe3d963",
+          "rubric.jsonl": "228fdfe41602e577a60bf802a4e7610742a2e6018c214a7d0a29fad7e79af876",
+          "reply.md": "06505c376e92ade6c122173036d5b03273b065c6019fdb6b4c22b2a6b7532a38"
+        },
+        "reviews.jsonl": "{\"record_id\": \"review-b-v1-u2\", \"example_id\": \"example-b-v1-probability\", \"amends\": null, \"item_id\": \"b\", \"output_ref\": \"artifacts/b-v1.json\", \"label\": \"uncertain\", \"source_id\": \"u2\", \"quote\": \"Could this probability be too high? I am not calling it wrong yet.\", \"correction\": null, \"correction_source\": null, \"unresolved\": [\"The expert has not determined whether the probability is incorrect.\", \"The target event and supporting evidence or comparison needed to assess the probability are unavailable.\"], \"replay_ready\": false, \"session_id\": \"synthetic-session\"}\n",
+        "rubric.jsonl": "{\"rubric_id\": \"short-replies\", \"version\": 1, \"question\": \"Is the reply short?\", \"passing_answer\": \"yes\", \"source_id\": \"u3\", \"quote\": \"I prefer short replies. For imported items only, I check whether the source is named.\", \"scope\": \"assistant replies in this session\", \"status\": \"confirmed\", \"kind\": \"preference\", \"session_id\": \"synthetic-session\"}\n",
+        "reply.md": "I\u2019ll keep replies short. For imported items only, must the source be named to pass the check?\n"
+      },
+      {
+        "position": 3,
+        "hashes": {
+          "reviews.jsonl": "39f2ea246f5da1e1484033426b001e24fe0dbbf2e6a0fcfb831a1e6a5557f192",
+          "rubric.jsonl": "89fa3346d1bdcc64cdec678f0ff807b242ba08759ee1329bc079c7e9a4e6a714",
+          "reply.md": "da4e22085d64f9ff36a1f3b2ee7afa279d3b2c7040ea28eb478c14b2944eddb1"
+        },
+        "reviews.jsonl": "{\"record_id\": \"review-b-v1-u2\", \"example_id\": \"example-b-v1-probability\", \"amends\": null, \"item_id\": \"b\", \"output_ref\": \"artifacts/b-v1.json\", \"label\": \"uncertain\", \"source_id\": \"u2\", \"quote\": \"Could this probability be too high? I am not calling it wrong yet.\", \"correction\": null, \"correction_source\": null, \"unresolved\": [\"The expert has not determined whether the probability is incorrect.\", \"The target event and supporting evidence or comparison needed to assess the probability are unavailable.\"], \"replay_ready\": false, \"session_id\": \"synthetic-session\"}\n{\"record_id\": \"review-b-v1-u4\", \"example_id\": \"example-b-v1-probability\", \"amends\": \"review-b-v1-u2\", \"item_id\": \"b\", \"output_ref\": \"artifacts/b-v1.json\", \"label\": \"incorrect\", \"source_id\": \"u4\", \"quote\": \"This imported b output is incorrect because its source is missing. I cannot provide a replacement probability.\", \"correction\": null, \"correction_source\": null, \"unresolved\": [\"Whether the probability 0.9 is too high remains unconfirmed.\", \"The target event and supporting evidence needed to assess the probability are unavailable.\"], \"replay_ready\": false, \"judgment_scope\": \"The imported output is incorrect because its source is missing; this does not establish a numerical probability error.\", \"rubric_answers\": [{\"rubric_id\": \"imported-source-named\", \"version\": 1, \"applicable\": true, \"answer\": \"no\", \"source_id\": \"u4\"}], \"session_id\": \"synthetic-session\"}\n",
+        "rubric.jsonl": "{\"rubric_id\": \"short-replies\", \"version\": 1, \"question\": \"Is the reply short?\", \"passing_answer\": \"yes\", \"source_id\": \"u3\", \"quote\": \"I prefer short replies. For imported items only, I check whether the source is named.\", \"scope\": \"assistant replies in this session\", \"status\": \"confirmed\", \"kind\": \"preference\", \"session_id\": \"synthetic-session\"}\n{\"rubric_id\": \"imported-source-named\", \"version\": 1, \"question\": \"Is the source named?\", \"passing_answer\": \"yes\", \"source_id\": \"u4\", \"quote\": \"This imported b output is incorrect because its source is missing. I cannot provide a replacement probability.\", \"scope\": \"imported items only\", \"status\": \"confirmed\", \"origin_source_id\": \"u3\", \"session_id\": \"synthetic-session\"}\n",
+        "reply.md": "Recorded b as incorrect for its missing source. Named sources are required for imported items. The probability remains unresolved; no replacement was inferred.\n"
+      }
+    ],
+    "versions": {
+      "fixture_version": 2,
+      "grader_version": 2,
+      "source_hashes": {
+        "run.py": "eac7a165d6cd1a3b595b389452d36336498713868d3367a2fcaa22f5bf506668",
+        "fixtures.py": "0fd912a75f5f4be5ff58e06f338f8af97a2af68df1d920fa2178156b2cb3f784",
+        "candidate.md": "c50d14f0078635cad4cf35509f66b03bf274a8862be82d71a3ff21974698b3ff"
+      },
+      "guidance_hashes": {
+        "guidance/distill-me/SKILL.md": "228a7a674db3a2abd71c9383351d8d0a83ae5136bde9ebd5114d91642c24f776",
+        "guidance/expert-mode/SKILL.md": "6dd79ddfdd641315f7b329d5c2c75d546183609979bcff3073755b5c0ee1caca",
+        "guidance/expert-mode/references/records.md": "a90238e3cee04e9575cd306ebb549f3ae03ab72986e4982221dc45111d6cd971",
+        "guidance/expert-mode/agents/openai.yaml": "a1499d95abd8447558c535fe5554adcc3c9b988a0a39264a6283d430effe1e94",
+        "guidance/distill-me/references/review-passes.md": "f9c7982d9bfb4d982d3ad7c42d060eb21b3e5474e64dd1f3894c0ea56112cfb1",
+        "guidance/distill-me/agents/openai.yaml": "a1499d95abd8447558c535fe5554adcc3c9b988a0a39264a6283d430effe1e94",
+        "REQUEST.md": "c50d14f0078635cad4cf35509f66b03bf274a8862be82d71a3ff21974698b3ff"
+      },
+      "run_kind": "development",
+      "execution_boundary": "Host instructions; data parsing only; no OS isolation"
+    }
+  },
+  {
+    "case": "distill-merge",
+    "result": {
+      "case": "distill-merge",
+      "fixture_version": 2,
+      "grader_version": 2,
+      "checks": {
+        "all_turns_captured": true,
+        "checkpoint_0_sequence": true,
+        "checkpoint_0_integrity": true,
+        "checkpoint_0_append_only": true,
+        "checkpoint_0_provenance_and_lineage": true,
+        "checkpoint_0_expected_observations": true,
+        "checkpoint_0_rubric_sources": true,
+        "checkpoint_1_sequence": true,
+        "checkpoint_1_integrity": true,
+        "checkpoint_1_append_only": true,
+        "checkpoint_1_provenance_and_lineage": true,
+        "checkpoint_1_expected_observations": true,
+        "repeat_invocation_idempotent": true,
+        "checkpoint_1_rubric_sources": true,
+        "checkpoint_2_sequence": true,
+        "checkpoint_2_integrity": true,
+        "checkpoint_2_append_only": true,
+        "checkpoint_2_provenance_and_lineage": true,
+        "checkpoint_2_expected_observations": true,
+        "checkpoint_2_inactive_capture_unchanged": true,
+        "checkpoint_2_rubric_sources": true,
+        "checkpoint_3_sequence": true,
+        "checkpoint_3_integrity": true,
+        "checkpoint_3_append_only": true,
+        "checkpoint_3_provenance_and_lineage": true,
+        "checkpoint_3_expected_observations": true,
+        "checkpoint_3_rubric_sources": true
+      },
+      "artifact_checks_passed": true,
+      "skill_evaluation_complete": false,
+      "human_review_required": [
+        "Clinical/domain meaning and correction normalization",
+        "Binary rubric question semantics and scope",
+        "Selective useful clarification and succinct replies",
+        "Actual independent review passes and source-access compliance",
+        "Honest partial-context coverage and replay-readiness claims"
+      ],
+      "checkpoints": [
+        {
+          "position": 3,
+          "rows": 2,
+          "rubrics": 0
+        },
+        {
+          "position": 4,
+          "rows": 2,
+          "rubrics": 0
+        },
+        {
+          "position": 5,
+          "rows": 2,
+          "rubrics": 0
+        },
+        {
+          "position": 6,
+          "rows": 3,
+          "rubrics": 0
+        }
+      ]
+    },
+    "steps": [
+      {
+        "position": 3,
+        "hashes": {
+          "reviews.jsonl": "8d4647eed1f331fe506ee5d525de97121d9bfd51b03e26e8786ff461aa493773",
+          "rubric.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "reply.md": "dda8d46b41d4308af88d5901c4fea791779bd82e5f6bf56f3036d5d4d85796eb"
+        },
+        "reviews.jsonl": "{\"record_id\": \"r1\", \"example_id\": \"u2\", \"amends\": null, \"item_id\": \"a\", \"output_ref\": \"artifacts/a-v1.json\", \"label\": \"incorrect\", \"source_id\": \"u2\", \"quote\": \"The amber output is incorrect.\", \"correction\": null, \"correction_source\": null, \"unresolved\": [], \"replay_ready\": false}\n{\"record_id\": \"r2\", \"example_id\": \"u2\", \"amends\": \"r1\", \"item_id\": \"a\", \"output_ref\": \"artifacts/a-v1.json\", \"label\": \"incorrect\", \"source_id\": \"u3\", \"quote\": \"Use blue instead of amber for a-v1.\", \"correction\": \"blue\", \"correction_source\": \"u3\", \"unresolved\": [], \"replay_ready\": true}\n",
+        "rubric.jsonl": "",
+        "reply.md": "Added the blue correction to the existing example in `dataset/reviews.jsonl`, preserving the original judgment. No new rubric criteria were supported.\n"
+      },
+      {
+        "position": 4,
+        "hashes": {
+          "reviews.jsonl": "8d4647eed1f331fe506ee5d525de97121d9bfd51b03e26e8786ff461aa493773",
+          "rubric.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "reply.md": "6cd86c2c61887c54982b2d3f31745304d2ffc8fd28bb7311349eabc9915fe63c"
+        },
+        "reviews.jsonl": "{\"record_id\": \"r1\", \"example_id\": \"u2\", \"amends\": null, \"item_id\": \"a\", \"output_ref\": \"artifacts/a-v1.json\", \"label\": \"incorrect\", \"source_id\": \"u2\", \"quote\": \"The amber output is incorrect.\", \"correction\": null, \"correction_source\": null, \"unresolved\": [], \"replay_ready\": false}\n{\"record_id\": \"r2\", \"example_id\": \"u2\", \"amends\": \"r1\", \"item_id\": \"a\", \"output_ref\": \"artifacts/a-v1.json\", \"label\": \"incorrect\", \"source_id\": \"u3\", \"quote\": \"Use blue instead of amber for a-v1.\", \"correction\": \"blue\", \"correction_source\": \"u3\", \"unresolved\": [], \"replay_ready\": true}\n",
+        "rubric.jsonl": "",
+        "reply.md": "The judgment and blue correction are already recorded. Both dataset files are unchanged; no duplicates were added.\n"
+      },
+      {
+        "position": 5,
+        "hashes": {
+          "reviews.jsonl": "8d4647eed1f331fe506ee5d525de97121d9bfd51b03e26e8786ff461aa493773",
+          "rubric.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "reply.md": "3c62616b8b49e5966961c4bb7d9ef3fe11a8254ea3c8738d445f326feaf9f4fc"
+        },
+        "reviews.jsonl": "{\"record_id\": \"r1\", \"example_id\": \"u2\", \"amends\": null, \"item_id\": \"a\", \"output_ref\": \"artifacts/a-v1.json\", \"label\": \"incorrect\", \"source_id\": \"u2\", \"quote\": \"The amber output is incorrect.\", \"correction\": null, \"correction_source\": null, \"unresolved\": [], \"replay_ready\": false}\n{\"record_id\": \"r2\", \"example_id\": \"u2\", \"amends\": \"r1\", \"item_id\": \"a\", \"output_ref\": \"artifacts/a-v1.json\", \"label\": \"incorrect\", \"source_id\": \"u3\", \"quote\": \"Use blue instead of amber for a-v1.\", \"correction\": \"blue\", \"correction_source\": \"u3\", \"unresolved\": [], \"replay_ready\": true}\n",
+        "rubric.jsonl": "",
+        "reply.md": "Understood: amber was acceptable for a-v1, and you retract the incorrect label. The dataset is unchanged because `/distill-me` was a one-shot pass, not ongoing capture.\n"
+      },
+      {
+        "position": 6,
+        "hashes": {
+          "reviews.jsonl": "cd856ca23d1227a4171200571e57320d042007a0813db65e4cd4d3ff791d2f21",
+          "rubric.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "reply.md": "0f70eb1da400c06292181c5079368c7337a40f5fd1578d01fe305c2c615f5a15"
+        },
+        "reviews.jsonl": "{\"record_id\": \"r1\", \"example_id\": \"u2\", \"amends\": null, \"item_id\": \"a\", \"output_ref\": \"artifacts/a-v1.json\", \"label\": \"incorrect\", \"source_id\": \"u2\", \"quote\": \"The amber output is incorrect.\", \"correction\": null, \"correction_source\": null, \"unresolved\": [], \"replay_ready\": false}\n{\"record_id\": \"r2\", \"example_id\": \"u2\", \"amends\": \"r1\", \"item_id\": \"a\", \"output_ref\": \"artifacts/a-v1.json\", \"label\": \"incorrect\", \"source_id\": \"u3\", \"quote\": \"Use blue instead of amber for a-v1.\", \"correction\": \"blue\", \"correction_source\": \"u3\", \"unresolved\": [], \"replay_ready\": true}\n{\"record_id\": \"r3\", \"example_id\": \"u2\", \"amends\": \"r2\", \"item_id\": \"a\", \"output_ref\": \"artifacts/a-v1.json\", \"label\": \"retracted\", \"source_id\": \"u6\", \"quote\": \"I retract my incorrect label for a-v1; amber was acceptable under the original requirement.\", \"correction\": null, \"correction_source\": null, \"unresolved\": [], \"replay_ready\": false}\n",
+        "rubric.jsonl": "",
+        "reply.md": "Saved your retraction as a linked amendment in `dataset/reviews.jsonl`. The earlier judgment and correction remain in the history; the example is now retracted and not ready for replay.\n"
+      }
+    ],
+    "versions": {
+      "fixture_version": 2,
+      "grader_version": 2,
+      "source_hashes": {
+        "run.py": "eac7a165d6cd1a3b595b389452d36336498713868d3367a2fcaa22f5bf506668",
+        "fixtures.py": "0fd912a75f5f4be5ff58e06f338f8af97a2af68df1d920fa2178156b2cb3f784",
+        "candidate.md": "c50d14f0078635cad4cf35509f66b03bf274a8862be82d71a3ff21974698b3ff"
+      },
+      "guidance_hashes": {
+        "guidance/distill-me/SKILL.md": "228a7a674db3a2abd71c9383351d8d0a83ae5136bde9ebd5114d91642c24f776",
+        "guidance/expert-mode/SKILL.md": "6dd79ddfdd641315f7b329d5c2c75d546183609979bcff3073755b5c0ee1caca",
+        "guidance/expert-mode/references/records.md": "a90238e3cee04e9575cd306ebb549f3ae03ab72986e4982221dc45111d6cd971",
+        "guidance/expert-mode/agents/openai.yaml": "a1499d95abd8447558c535fe5554adcc3c9b988a0a39264a6283d430effe1e94",
+        "guidance/distill-me/references/review-passes.md": "f9c7982d9bfb4d982d3ad7c42d060eb21b3e5474e64dd1f3894c0ea56112cfb1",
+        "guidance/distill-me/agents/openai.yaml": "a1499d95abd8447558c535fe5554adcc3c9b988a0a39264a6283d430effe1e94",
+        "REQUEST.md": "c50d14f0078635cad4cf35509f66b03bf274a8862be82d71a3ff21974698b3ff"
+      },
+      "run_kind": "development",
+      "execution_boundary": "Host instructions; data parsing only; no OS isolation"
+    }
+  },
+  {
+    "case": "activation",
+    "result": {
+      "case": "activation",
+      "fixture_version": 2,
+      "grader_version": 2,
+      "checks": {
+        "all_turns_captured": true,
+        "checkpoint_0_sequence": true,
+        "checkpoint_0_integrity": true,
+        "checkpoint_0_append_only": true,
+        "checkpoint_0_provenance_and_lineage": true,
+        "checkpoint_0_expected_observations": true,
+        "checkpoint_0_inactive_capture_unchanged": true,
+        "checkpoint_0_rubric_sources": true,
+        "checkpoint_1_sequence": true,
+        "checkpoint_1_integrity": true,
+        "checkpoint_1_append_only": true,
+        "checkpoint_1_provenance_and_lineage": true,
+        "checkpoint_1_expected_observations": true,
+        "checkpoint_1_inactive_capture_unchanged": true,
+        "checkpoint_1_rubric_sources": true,
+        "checkpoint_2_sequence": true,
+        "checkpoint_2_integrity": true,
+        "checkpoint_2_append_only": true,
+        "checkpoint_2_provenance_and_lineage": true,
+        "checkpoint_2_expected_observations": true,
+        "checkpoint_2_inactive_capture_unchanged": true,
+        "checkpoint_2_rubric_sources": true,
+        "checkpoint_3_sequence": true,
+        "checkpoint_3_integrity": true,
+        "checkpoint_3_append_only": true,
+        "checkpoint_3_provenance_and_lineage": true,
+        "checkpoint_3_expected_observations": true,
+        "checkpoint_3_rubric_sources": true
+      },
+      "artifact_checks_passed": true,
+      "skill_evaluation_complete": false,
+      "human_review_required": [
+        "Clinical/domain meaning and correction normalization",
+        "Binary rubric question semantics and scope",
+        "Selective useful clarification and succinct replies",
+        "Actual independent review passes and source-access compliance",
+        "Honest partial-context coverage and replay-readiness claims"
+      ],
+      "checkpoints": [
+        {
+          "position": 0,
+          "rows": 0,
+          "rubrics": 0
+        },
+        {
+          "position": 1,
+          "rows": 0,
+          "rubrics": 0
+        },
+        {
+          "position": 2,
+          "rows": 0,
+          "rubrics": 0
+        },
+        {
+          "position": 3,
+          "rows": 1,
+          "rubrics": 0
+        }
+      ]
+    },
+    "steps": [
+      {
+        "position": 0,
+        "hashes": {
+          "reviews.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "rubric.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "reply.md": "f3dfb54b3fe1d5591215250b01659c44e0523d5a518836e0a253b6e2dfaf52d6"
+        },
+        "reviews.jsonl": "",
+        "rubric.jsonl": "",
+        "reply.md": "Understood. `/expert-mode` remains inactive. If activated, I\u2019ll use `dataset/reviews.jsonl` and `dataset/rubric.jsonl`.\n"
+      },
+      {
+        "position": 1,
+        "hashes": {
+          "reviews.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "rubric.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "reply.md": "68fe2a75ab2b74356aaadab9cbcc2df3005b43b5090c77b7dcd08fb3476b54f7"
+        },
+        "reviews.jsonl": "",
+        "rubric.jsonl": "",
+        "reply.md": "Understood. Capture remains off, and no review records were added.\n"
+      },
+      {
+        "position": 2,
+        "hashes": {
+          "reviews.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "rubric.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "reply.md": "b9d6c890d2df88d44fc165f8fea888c22637d1fd1566e44b4bb21eefb0d6f4a8"
+        },
+        "reviews.jsonl": "",
+        "rubric.jsonl": "",
+        "reply.md": "Capture is active for `a-v1` in this session. I\u2019ll save explicit errors, corrections, and rubric criteria to `dataset/reviews.jsonl` and `dataset/rubric.jsonl`.\n"
+      },
+      {
+        "position": 3,
+        "hashes": {
+          "reviews.jsonl": "da7d2426c114e494524403531b031d47d551c6c99a755d85d71274fc4e376459",
+          "rubric.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "reply.md": "f3a315c5ce0db7918881b4c43f886a42d148451052d690a0ed0f3898d0db904f"
+        },
+        "reviews.jsonl": "{\"record_id\":\"review-u4-a-v1-color\",\"example_id\":\"a-v1-color\",\"amends\":null,\"item_id\":\"a\",\"output_ref\":\"artifacts/a-v1.json\",\"label\":\"incorrect\",\"source_id\":\"u4\",\"quote\":\"For a-v1, amber is incorrect; use blue instead.\",\"correction\":\"blue\",\"correction_source\":\"u4\",\"unresolved\":[],\"replay_ready\":true,\"session_id\":\"synthetic-session\"}\n",
+        "rubric.jsonl": "",
+        "reply.md": "Recorded the correction for `a-v1`: amber \u2192 blue.\n"
+      }
+    ],
+    "versions": {
+      "fixture_version": 2,
+      "grader_version": 2,
+      "source_hashes": {
+        "run.py": "eac7a165d6cd1a3b595b389452d36336498713868d3367a2fcaa22f5bf506668",
+        "fixtures.py": "0fd912a75f5f4be5ff58e06f338f8af97a2af68df1d920fa2178156b2cb3f784",
+        "candidate.md": "c50d14f0078635cad4cf35509f66b03bf274a8862be82d71a3ff21974698b3ff"
+      },
+      "guidance_hashes": {
+        "guidance/distill-me/SKILL.md": "228a7a674db3a2abd71c9383351d8d0a83ae5136bde9ebd5114d91642c24f776",
+        "guidance/expert-mode/SKILL.md": "6dd79ddfdd641315f7b329d5c2c75d546183609979bcff3073755b5c0ee1caca",
+        "guidance/expert-mode/references/records.md": "a90238e3cee04e9575cd306ebb549f3ae03ab72986e4982221dc45111d6cd971",
+        "guidance/expert-mode/agents/openai.yaml": "a1499d95abd8447558c535fe5554adcc3c9b988a0a39264a6283d430effe1e94",
+        "guidance/distill-me/references/review-passes.md": "f9c7982d9bfb4d982d3ad7c42d060eb21b3e5474e64dd1f3894c0ea56112cfb1",
+        "guidance/distill-me/agents/openai.yaml": "a1499d95abd8447558c535fe5554adcc3c9b988a0a39264a6283d430effe1e94",
+        "REQUEST.md": "c50d14f0078635cad4cf35509f66b03bf274a8862be82d71a3ff21974698b3ff"
+      },
+      "run_kind": "development",
+      "execution_boundary": "Host instructions; data parsing only; no OS isolation"
+    }
+  },
+  {
+    "case": "distill-source",
+    "result": {
+      "case": "distill-source",
+      "fixture_version": 2,
+      "grader_version": 2,
+      "checks": {
+        "all_turns_captured": true,
+        "checkpoint_0_sequence": true,
+        "checkpoint_0_integrity": true,
+        "checkpoint_0_append_only": true,
+        "checkpoint_0_provenance_and_lineage": true,
+        "checkpoint_0_expected_observations": true,
+        "checkpoint_0_rubric_sources": true
+      },
+      "artifact_checks_passed": true,
+      "skill_evaluation_complete": false,
+      "human_review_required": [
+        "Clinical/domain meaning and correction normalization",
+        "Binary rubric question semantics and scope",
+        "Selective useful clarification and succinct replies",
+        "Actual independent review passes and source-access compliance",
+        "Honest partial-context coverage and replay-readiness claims"
+      ],
+      "checkpoints": [
+        {
+          "position": 4,
+          "rows": 0,
+          "rubrics": 0
+        }
+      ]
+    },
+    "steps": [
+      {
+        "position": 4,
+        "hashes": {
+          "reviews.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "rubric.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "reply.md": "11d06bb4de30024cd84b0d74a56ffd1a0d0b312b5dbf6815425586151297db29"
+        },
+        "reviews.jsonl": "",
+        "rubric.jsonl": "",
+        "reply.md": "No supported errors or rubric criteria were found in the supplied session. `dataset/reviews.jsonl` and `dataset/rubric.jsonl` remain unchanged. The agent\u2019s self-correction and archived note do not establish expert judgment or approval.\n"
+      }
+    ],
+    "versions": {
+      "fixture_version": 2,
+      "grader_version": 2,
+      "source_hashes": {
+        "run.py": "eac7a165d6cd1a3b595b389452d36336498713868d3367a2fcaa22f5bf506668",
+        "fixtures.py": "0fd912a75f5f4be5ff58e06f338f8af97a2af68df1d920fa2178156b2cb3f784",
+        "candidate.md": "c50d14f0078635cad4cf35509f66b03bf274a8862be82d71a3ff21974698b3ff"
+      },
+      "guidance_hashes": {
+        "guidance/distill-me/SKILL.md": "228a7a674db3a2abd71c9383351d8d0a83ae5136bde9ebd5114d91642c24f776",
+        "guidance/expert-mode/SKILL.md": "6dd79ddfdd641315f7b329d5c2c75d546183609979bcff3073755b5c0ee1caca",
+        "guidance/expert-mode/references/records.md": "a90238e3cee04e9575cd306ebb549f3ae03ab72986e4982221dc45111d6cd971",
+        "guidance/expert-mode/agents/openai.yaml": "a1499d95abd8447558c535fe5554adcc3c9b988a0a39264a6283d430effe1e94",
+        "guidance/distill-me/references/review-passes.md": "f9c7982d9bfb4d982d3ad7c42d060eb21b3e5474e64dd1f3894c0ea56112cfb1",
+        "guidance/distill-me/agents/openai.yaml": "a1499d95abd8447558c535fe5554adcc3c9b988a0a39264a6283d430effe1e94",
+        "REQUEST.md": "c50d14f0078635cad4cf35509f66b03bf274a8862be82d71a3ff21974698b3ff"
+      },
+      "run_kind": "development",
+      "execution_boundary": "Host instructions; data parsing only; no OS isolation"
+    }
+  },
+  {
+    "case": "partial-context",
+    "result": {
+      "case": "partial-context",
+      "fixture_version": 2,
+      "grader_version": 2,
+      "checks": {
+        "all_turns_captured": true,
+        "checkpoint_0_sequence": true,
+        "checkpoint_0_integrity": true,
+        "checkpoint_0_append_only": true,
+        "checkpoint_0_provenance_and_lineage": true,
+        "checkpoint_0_expected_observations": true,
+        "checkpoint_0_rubric_sources": true
+      },
+      "artifact_checks_passed": true,
+      "skill_evaluation_complete": false,
+      "human_review_required": [
+        "Clinical/domain meaning and correction normalization",
+        "Binary rubric question semantics and scope",
+        "Selective useful clarification and succinct replies",
+        "Actual independent review passes and source-access compliance",
+        "Honest partial-context coverage and replay-readiness claims"
+      ],
+      "checkpoints": [
+        {
+          "position": 1,
+          "rows": 1,
+          "rubrics": 0
+        }
+      ]
+    },
+    "steps": [
+      {
+        "position": 1,
+        "hashes": {
+          "reviews.jsonl": "22f19ae8a4fb6be993cf049322f4abf7c89af194b791ca75c7a9460e250301c3",
+          "rubric.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "reply.md": "fe09180a3553dc609ca97db6267fd3694dbc3e95097d8f7125c857a7df36761e"
+        },
+        "reviews.jsonl": "{\"record_id\": \"synthetic-session-s1-c-observation\", \"example_id\": \"synthetic-session-s1-c\", \"amends\": null, \"item_id\": \"c\", \"output_ref\": null, \"label\": \"uncertain\", \"source_id\": \"s1\", \"quote\": \"Earlier discussion reportedly rejected item c. The original expert words, input, and output are unavailable.\", \"correction\": null, \"correction_source\": null, \"unresolved\": [\"Only a secondhand summary is available; the original expert judgment and exact wording cannot be verified.\", \"The reviewed input, output, and output version are unavailable.\", \"No expert-endorsed correction or observable rejection criterion is available.\"], \"replay_ready\": false, \"session_id\": \"synthetic-session\", \"capture_mode\": \"retrospective\", \"provenance\": \"summary only\"}\n",
+        "rubric.jsonl": "",
+        "reply.md": "Saved a provisional observation for item c in `dataset/reviews.jsonl`. Its label remains uncertain and it is not ready for replay: only a summary is available, without the original expert statement, input, or output/version. No rubric criterion was supported, so `dataset/rubric.jsonl` is unchanged.\n"
+      }
+    ],
+    "versions": {
+      "fixture_version": 2,
+      "grader_version": 2,
+      "source_hashes": {
+        "run.py": "eac7a165d6cd1a3b595b389452d36336498713868d3367a2fcaa22f5bf506668",
+        "fixtures.py": "0fd912a75f5f4be5ff58e06f338f8af97a2af68df1d920fa2178156b2cb3f784",
+        "candidate.md": "c50d14f0078635cad4cf35509f66b03bf274a8862be82d71a3ff21974698b3ff"
+      },
+      "guidance_hashes": {
+        "guidance/distill-me/SKILL.md": "228a7a674db3a2abd71c9383351d8d0a83ae5136bde9ebd5114d91642c24f776",
+        "guidance/expert-mode/SKILL.md": "6dd79ddfdd641315f7b329d5c2c75d546183609979bcff3073755b5c0ee1caca",
+        "guidance/expert-mode/references/records.md": "a90238e3cee04e9575cd306ebb549f3ae03ab72986e4982221dc45111d6cd971",
+        "guidance/expert-mode/agents/openai.yaml": "a1499d95abd8447558c535fe5554adcc3c9b988a0a39264a6283d430effe1e94",
+        "guidance/distill-me/references/review-passes.md": "f9c7982d9bfb4d982d3ad7c42d060eb21b3e5474e64dd1f3894c0ea56112cfb1",
+        "guidance/distill-me/agents/openai.yaml": "a1499d95abd8447558c535fe5554adcc3c9b988a0a39264a6283d430effe1e94",
+        "REQUEST.md": "c50d14f0078635cad4cf35509f66b03bf274a8862be82d71a3ff21974698b3ff"
+      },
+      "run_kind": "development",
+      "execution_boundary": "Host instructions; data parsing only; no OS isolation"
+    }
+  }
+]

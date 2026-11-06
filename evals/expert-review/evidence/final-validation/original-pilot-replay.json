@@ -1,0 +1,38 @@
+[
+  {
+    "name": "live-correction",
+    "artifact_checks_passed": true,
+    "grader_version": 4,
+    "exit_code": 0
+  },
+  {
+    "name": "live-uncertainty",
+    "artifact_checks_passed": false,
+    "grader_version": 4,
+    "exit_code": 1
+  },
+  {
+    "name": "distill-merge",
+    "artifact_checks_passed": true,
+    "grader_version": 4,
+    "exit_code": 0
+  },
+  {
+    "name": "activation",
+    "artifact_checks_passed": true,
+    "grader_version": 4,
+    "exit_code": 0
+  },
+  {
+    "name": "distill-source",
+    "artifact_checks_passed": true,
+    "grader_version": 4,
+    "exit_code": 0
+  },
+  {
+    "name": "partial-context",
+    "artifact_checks_passed": true,
+    "grader_version": 4,
+    "exit_code": 0
+  }
+]

@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-11-06T18:10:12.763969+00:00",
+  "files": {
+    "findings.json": "cdbee6e012a8cb6c50cf0f321cc05a1e37e1244ada055c8b083e08c1f3c6d56a",
+    "HANDOFF.md": "b9315cef729c07bfcb5b91f98b18c42660d819f97981d896aad676f122c53f37"
+  },
+  "examples": 2,
+  "rubric_definitions": 3,
+  "privacy_processing": {
+    "method": "operator_prepared",
+    "model_scan": false
+  },
+  "redaction": {
+    "values_processed": 56,
+    "values_changed": 0
+  },
+  "privacy_review": "required",
+  "intent_review": "required",
+  "shareability": "not_assessed"
+}

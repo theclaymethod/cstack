@@ -1,0 +1,18 @@
+{
+  "same_candidate_artifacts": true,
+  "original": {
+    "fixture_version": 2,
+    "grader_version": 3,
+    "passed": false,
+    "failed": [
+      "checkpoint_3_expected_observations"
+    ]
+  },
+  "repaired": {
+    "fixture_version": 3,
+    "grader_version": 4,
+    "passed": true,
+    "failed": []
+  },
+  "adjudication": "Confirmed source-naming rubric supplies observable rejection criterion; unrelated missing numerical replacement is not a blocker. Separate numerical concern remains uncertain."
+}

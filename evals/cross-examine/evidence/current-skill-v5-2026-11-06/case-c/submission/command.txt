@@ -1,0 +1,15 @@
+docker run --name wargames-contract-c-1106-r1 --network none --read-only --cap-drop ALL --security-opt no-new-privileges --pids-limit 64 --memory 128m --cpus 1 --workdir /workspace --mount type=bind,src=<repo>/eval-runs/current-skill-v5/contract/case-c/disposable,dst=/workspace --mount type=bind,src=<repo>/eval-runs/current-skill-v5/contract/case-c/workspace/reset.py,dst=/workspace/reset.py,readonly --mount type=bind,src=<repo>/eval-runs/current-skill-v5/contract/case-c/workspace/verify.py,dst=/workspace/verify.py,readonly --mount type=bind,src=<repo>/eval-runs/current-skill-v5/contract/case-c/workspace/solution.py,dst=/workspace/solution.py,readonly --mount type=bind,src=<repo>/eval-runs/current-skill-v5/contract/case-c/oracle,dst=/oracle,readonly --mount type=bind,src=<repo>/eval-runs/current-skill-v5/contract/case-c/submission/candidate.py,dst=/candidate.py,readonly wargames-evals:local python -I -B -c 
+import subprocess,sys,json,sqlite3
+def run(script):
+ p=subprocess.run([sys.executable,"-I","-B",script],capture_output=True,text=True)
+ return {"script":script,"returncode":p.returncode,"stdout":p.stdout,"stderr":p.stderr}
+def rows():
+ try:
+  with sqlite3.connect("state.sqlite") as db:return db.execute("SELECT id,address FROM customers ORDER BY id").fetchall()
+ except Exception as e:return {"error":str(e)}
+out={"initial_reset":run("reset.py")};out["initial_rows"]=rows()
+out["reference"]=run("solution.py");out["reference_verify"]=run("verify.py");out["reference_rows"]=rows()
+out["reset_after_reference"]=run("reset.py");out["reset_rows"]=rows();out["reset_verify"]=run("verify.py")
+out["candidate"]=run("/candidate.py");out["candidate_rows"]=rows();out["candidate_verify"]=run("verify.py")
+out["final_reset"]=run("reset.py");out["final_rows"]=rows()
+print(json.dumps(out,indent=2))

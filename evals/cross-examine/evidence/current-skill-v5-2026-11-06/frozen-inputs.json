@@ -1,0 +1,16 @@
+{
+  "commit": "3c4d8bf1c0f9a47245c15c524d8314b14be5bd4e",
+  "classification": "development; public cases, instruction-only discovery access boundary",
+  "budget": "One round, three adversarial lanes, at most two concrete attacks per lane per case; later grading and repair replay only.",
+  "hashes": {
+    "evals/wargames/run.py": "287ff14d4f6596bd4c585e3a80efa8532ed5020be270320c0bc846af646cb374",
+    "evals/wargames/fixtures.py": "0af6a9f737f363b9ffaa5f948197c9a5181ec7fae3ceb5ac59c252275cab1891",
+    "evals/wargames/calibration.py": "54eb1b2fb415b4367719f45a6a91e596ce139f2099ff1c093ef17656cfc7dc64",
+    "evals/wargames/transfer.py": "8babd3630224defaa1d9513cf9310d81ec650ed15e90596f376c830b81f45921",
+    "evals/wargames/candidate.md": "3b1f3c28cc999e05a2583bb4142e62f00a6b5a470eda984bc6682a5a1bd8ec0b",
+    "evals/wargames/transfer-request.md": "03fd667d7110324405a8a748a357a3bb8fb6f07a48ab4214946c3a9d7adf53f2",
+    "skills/wargames/SKILL.md": "9a2468b33790e247f22ec4b38fb6220f09ee3827c4512d05bc660fa23b2ec65c",
+    "skills/wargames/references/lessons.md": "8eb527b6cbe01deebc26827494071a6937502245165a43ffbe4d0bd33fedecc8",
+    "skills/wargames/references/ledger.md": "896b5e038f91a6b8ff2d7d2283219ad74f858222125b72d69dd9324d5e769b65"
+  }
+}

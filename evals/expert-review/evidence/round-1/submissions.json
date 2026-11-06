@@ -1,0 +1,106 @@
+[
+  {
+    "name": "seed-deletion",
+    "case": "distill-merge",
+    "steps": [
+      {
+        "reviews.jsonl": "{\"record_id\": \"replacement\", \"example_id\": \"u2\", \"amends\": null, \"item_id\": \"a\", \"output_ref\": \"artifacts/a-v1.json\", \"label\": \"incorrect\", \"source_id\": \"u2\", \"quote\": \"The amber output is incorrect.\", \"correction\": \"blue\", \"correction_source\": \"u3\", \"unresolved\": [], \"replay_ready\": false}\n",
+        "rubric.jsonl": "",
+        "reply.md": "Recorded the supplied correction.\n"
+      },
+      {
+        "reviews.jsonl": "{\"record_id\": \"replacement\", \"example_id\": \"u2\", \"amends\": null, \"item_id\": \"a\", \"output_ref\": \"artifacts/a-v1.json\", \"label\": \"incorrect\", \"source_id\": \"u2\", \"quote\": \"The amber output is incorrect.\", \"correction\": \"blue\", \"correction_source\": \"u3\", \"unresolved\": [], \"replay_ready\": false}\n",
+        "rubric.jsonl": "",
+        "reply.md": "Recorded the supplied correction.\n"
+      },
+      {
+        "reviews.jsonl": "{\"record_id\": \"replacement\", \"example_id\": \"u2\", \"amends\": null, \"item_id\": \"a\", \"output_ref\": \"artifacts/a-v1.json\", \"label\": \"incorrect\", \"source_id\": \"u2\", \"quote\": \"The amber output is incorrect.\", \"correction\": \"blue\", \"correction_source\": \"u3\", \"unresolved\": [], \"replay_ready\": false}\n",
+        "rubric.jsonl": "",
+        "reply.md": "Recorded the supplied correction.\n"
+      },
+      {
+        "reviews.jsonl": "{\"record_id\": \"replacement\", \"example_id\": \"u2\", \"amends\": null, \"item_id\": \"a\", \"output_ref\": \"artifacts/a-v1.json\", \"label\": \"incorrect\", \"source_id\": \"u2\", \"quote\": \"The amber output is incorrect.\", \"correction\": \"blue\", \"correction_source\": \"u3\", \"unresolved\": [], \"replay_ready\": false}\n{\"record_id\": \"retraction\", \"example_id\": \"u2\", \"amends\": \"replacement\", \"item_id\": \"a\", \"output_ref\": \"artifacts/a-v1.json\", \"label\": \"retracted\", \"source_id\": \"u6\", \"quote\": \"I retract my incorrect label for a-v1; amber was acceptable under the original requirement.\", \"correction\": null, \"correction_source\": null, \"unresolved\": [], \"replay_ready\": false}\n",
+        "rubric.jsonl": "",
+        "reply.md": "Recorded the retraction.\n"
+      }
+    ]
+  },
+  {
+    "name": "missing-rubric-identity",
+    "case": "live-uncertainty",
+    "steps": [
+      {
+        "reviews.jsonl": "",
+        "rubric.jsonl": "",
+        "reply.md": "Recorded the supported observation.\n"
+      },
+      {
+        "reviews.jsonl": "{\"record_id\": \"u2\", \"example_id\": \"u2\", \"amends\": null, \"item_id\": \"b\", \"output_ref\": \"artifacts/b-v1.json\", \"label\": \"uncertain\", \"source_id\": \"u2\", \"quote\": \"Could this probability be too high? I am not calling it wrong yet.\", \"correction\": null, \"correction_source\": null, \"unresolved\": [\"Whether this probability is wrong\"], \"replay_ready\": false}\n",
+        "rubric.jsonl": "",
+        "reply.md": "Recorded the supported observation.\n"
+      },
+      {
+        "reviews.jsonl": "{\"record_id\": \"u2\", \"example_id\": \"u2\", \"amends\": null, \"item_id\": \"b\", \"output_ref\": \"artifacts/b-v1.json\", \"label\": \"uncertain\", \"source_id\": \"u2\", \"quote\": \"Could this probability be too high? I am not calling it wrong yet.\", \"correction\": null, \"correction_source\": null, \"unresolved\": [\"Whether this probability is wrong\"], \"replay_ready\": false}\n",
+        "rubric.jsonl": "{\"question\": \"Is the source named?\", \"passing_answer\": \"yes\", \"source_id\": \"u3\", \"quote\": \"I prefer short replies. For imported items only, I check whether the source is named.\", \"scope\": \"imported items only\", \"status\": \"confirmed\"}\n",
+        "reply.md": "Recorded the supported observation.\n"
+      },
+      {
+        "reviews.jsonl": "{\"record_id\": \"u2\", \"example_id\": \"u2\", \"amends\": null, \"item_id\": \"b\", \"output_ref\": \"artifacts/b-v1.json\", \"label\": \"uncertain\", \"source_id\": \"u2\", \"quote\": \"Could this probability be too high? I am not calling it wrong yet.\", \"correction\": null, \"correction_source\": null, \"unresolved\": [\"Whether this probability is wrong\"], \"replay_ready\": false}\n{\"record_id\": \"u4\", \"example_id\": \"u4\", \"amends\": null, \"item_id\": \"b\", \"output_ref\": \"artifacts/b-v1.json\", \"label\": \"incorrect\", \"source_id\": \"u4\", \"quote\": \"This imported b output is incorrect because its source is missing. I cannot provide a replacement probability.\", \"correction\": null, \"correction_source\": null, \"unresolved\": [\"No replacement probability supplied\"], \"replay_ready\": false}\n",
+        "rubric.jsonl": "{\"question\": \"Is the source named?\", \"passing_answer\": \"yes\", \"source_id\": \"u3\", \"quote\": \"I prefer short replies. For imported items only, I check whether the source is named.\", \"scope\": \"imported items only\", \"status\": \"confirmed\"}\n",
+        "reply.md": "Recorded the supported observation.\n"
+      }
+    ]
+  },
+  {
+    "name": "provisional-summary",
+    "case": "partial-context",
+    "steps": [
+      {
+        "reviews.jsonl": "{\"record_id\": \"summary-observation-1\", \"example_id\": \"summary-item-c\", \"amends\": null, \"item_id\": \"c\", \"output_ref\": null, \"label\": \"uncertain\", \"source_id\": \"s1\", \"quote\": \"Earlier discussion reportedly rejected item c. The original expert words, input, and output are unavailable.\", \"correction\": null, \"correction_source\": null, \"unresolved\": [\"Second-hand summary only: no original expert quotation, input, reviewed output, version, or observable criterion is available; no confirmed error label can be recovered.\"], \"replay_ready\": false}\n",
+        "rubric.jsonl": "",
+        "reply.md": "Saved one provisional summary observation in dataset/reviews.jsonl. No confirmed error or correction is supported; the original expert words and reviewed artifact are unavailable.\n"
+      }
+    ]
+  },
+  {
+    "name": "correcting-turn-source",
+    "case": "live-correction",
+    "steps": [
+      {
+        "reviews.jsonl": "",
+        "rubric.jsonl": "",
+        "reply.md": "Expert-mode is active; I will save explicit judgments in the supplied dataset.\n"
+      },
+      {
+        "reviews.jsonl": "{\"record_id\": \"r1\", \"example_id\": \"u2\", \"amends\": null, \"item_id\": \"a\", \"output_ref\": \"artifacts/a-v1.json\", \"label\": \"incorrect\", \"source_id\": \"u2\", \"quote\": \"The amber output in a-v1 is incorrect. I have not decided the replacement yet.\", \"correction\": null, \"correction_source\": null, \"unresolved\": [\"Replacement not yet decided\"], \"replay_ready\": false}\n",
+        "rubric.jsonl": "",
+        "reply.md": "Saved the a-v1 error; its replacement remains undecided.\n"
+      },
+      {
+        "reviews.jsonl": "{\"record_id\": \"r1\", \"example_id\": \"u2\", \"amends\": null, \"item_id\": \"a\", \"output_ref\": \"artifacts/a-v1.json\", \"label\": \"incorrect\", \"source_id\": \"u2\", \"quote\": \"The amber output in a-v1 is incorrect. I have not decided the replacement yet.\", \"correction\": null, \"correction_source\": null, \"unresolved\": [\"Replacement not yet decided\"], \"replay_ready\": false}\n",
+        "rubric.jsonl": "",
+        "reply.md": "Green remains an agent proposal; no expert approval has been recorded.\n"
+      },
+      {
+        "reviews.jsonl": "{\"record_id\": \"r1\", \"example_id\": \"u2\", \"amends\": null, \"item_id\": \"a\", \"output_ref\": \"artifacts/a-v1.json\", \"label\": \"incorrect\", \"source_id\": \"u2\", \"quote\": \"The amber output in a-v1 is incorrect. I have not decided the replacement yet.\", \"correction\": null, \"correction_source\": null, \"unresolved\": [\"Replacement not yet decided\"], \"replay_ready\": false}\n{\"record_id\": \"r2\", \"example_id\": \"u2\", \"amends\": \"r1\", \"item_id\": \"a\", \"output_ref\": \"artifacts/a-v1.json\", \"label\": \"incorrect\", \"source_id\": \"u4\", \"quote\": \"For a-v1, replace amber with blue. That is my correction.\", \"correction\": \"blue\", \"correction_source\": \"u4\", \"unresolved\": [], \"replay_ready\": false}\n",
+        "rubric.jsonl": "",
+        "reply.md": "Saved your blue correction as an amendment to the a-v1 example.\n"
+      },
+      {
+        "reviews.jsonl": "{\"record_id\": \"r1\", \"example_id\": \"u2\", \"amends\": null, \"item_id\": \"a\", \"output_ref\": \"artifacts/a-v1.json\", \"label\": \"incorrect\", \"source_id\": \"u2\", \"quote\": \"The amber output in a-v1 is incorrect. I have not decided the replacement yet.\", \"correction\": null, \"correction_source\": null, \"unresolved\": [\"Replacement not yet decided\"], \"replay_ready\": false}\n{\"record_id\": \"r2\", \"example_id\": \"u2\", \"amends\": \"r1\", \"item_id\": \"a\", \"output_ref\": \"artifacts/a-v1.json\", \"label\": \"incorrect\", \"source_id\": \"u4\", \"quote\": \"For a-v1, replace amber with blue. That is my correction.\", \"correction\": \"blue\", \"correction_source\": \"u4\", \"unresolved\": [], \"replay_ready\": false}\n",
+        "rubric.jsonl": "",
+        "reply.md": "The regenerated a-v2 has no new expert assessment.\n"
+      },
+      {
+        "reviews.jsonl": "{\"record_id\": \"r1\", \"example_id\": \"u2\", \"amends\": null, \"item_id\": \"a\", \"output_ref\": \"artifacts/a-v1.json\", \"label\": \"incorrect\", \"source_id\": \"u2\", \"quote\": \"The amber output in a-v1 is incorrect. I have not decided the replacement yet.\", \"correction\": null, \"correction_source\": null, \"unresolved\": [\"Replacement not yet decided\"], \"replay_ready\": false}\n{\"record_id\": \"r2\", \"example_id\": \"u2\", \"amends\": \"r1\", \"item_id\": \"a\", \"output_ref\": \"artifacts/a-v1.json\", \"label\": \"incorrect\", \"source_id\": \"u4\", \"quote\": \"For a-v1, replace amber with blue. That is my correction.\", \"correction\": \"blue\", \"correction_source\": \"u4\", \"unresolved\": [], \"replay_ready\": false}\n",
+        "rubric.jsonl": "",
+        "reply.md": "Expert-mode capture is stopped.\n"
+      },
+      {
+        "reviews.jsonl": "{\"record_id\": \"r1\", \"example_id\": \"u2\", \"amends\": null, \"item_id\": \"a\", \"output_ref\": \"artifacts/a-v1.json\", \"label\": \"incorrect\", \"source_id\": \"u2\", \"quote\": \"The amber output in a-v1 is incorrect. I have not decided the replacement yet.\", \"correction\": null, \"correction_source\": null, \"unresolved\": [\"Replacement not yet decided\"], \"replay_ready\": false}\n{\"record_id\": \"r2\", \"example_id\": \"u2\", \"amends\": \"r1\", \"item_id\": \"a\", \"output_ref\": \"artifacts/a-v1.json\", \"label\": \"incorrect\", \"source_id\": \"u4\", \"quote\": \"For a-v1, replace amber with blue. That is my correction.\", \"correction\": \"blue\", \"correction_source\": \"u4\", \"unresolved\": [], \"replay_ready\": false}\n",
+        "rubric.jsonl": "",
+        "reply.md": "Expert-mode capture is stopped.\n"
+      }
+    ]
+  }
+]

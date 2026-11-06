@@ -1,0 +1,30 @@
+{
+  "case": "partial-context",
+  "fixture_version": 2,
+  "grader_version": 2,
+  "checks": {
+    "all_turns_captured": true,
+    "checkpoint_0_sequence": true,
+    "checkpoint_0_integrity": true,
+    "checkpoint_0_append_only": true,
+    "checkpoint_0_provenance_and_lineage": true,
+    "checkpoint_0_expected_observations": true,
+    "checkpoint_0_rubric_sources": true
+  },
+  "artifact_checks_passed": true,
+  "skill_evaluation_complete": false,
+  "human_review_required": [
+    "Clinical/domain meaning and correction normalization",
+    "Binary rubric question semantics and scope",
+    "Selective useful clarification and succinct replies",
+    "Actual independent review passes and source-access compliance",
+    "Honest partial-context coverage and replay-readiness claims"
+  ],
+  "checkpoints": [
+    {
+      "position": 1,
+      "rows": 1,
+      "rubrics": 0
+    }
+  ]
+}

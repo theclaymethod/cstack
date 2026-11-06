@@ -1,0 +1,13 @@
+{
+  "reset": {
+    "code": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  "execution": {
+    "code": 0,
+    "stdout": "{\"verify.py\": \"OSError: [Errno 30] Read-only file system: 'verify.py'\", \"reset.py\": \"OSError: [Errno 30] Read-only file system: 'reset.py'\", \"solution.py\": \"OSError: [Errno 30] Read-only file system: 'solution.py'\", \"/oracle/expected.json\": \"OSError: [Errno 30] Read-only file system: '/oracle/expected.json'\", \"rename verify.py\": \"OSError: [Errno 16] Device or resource busy: 'verify.py' -> 'verify.py.replaced'\", \"rename reset.py\": \"OSError: [Errno 16] Device or resource busy: 'reset.py' -> 'reset.py.replaced'\", \"rename solution.py\": \"OSError: [Errno 16] Device or resource busy: 'solution.py' -> 'solution.py.replaced'\"}\n",
+    "stderr": ""
+  },
+  "trusted_assets_unchanged": true
+}

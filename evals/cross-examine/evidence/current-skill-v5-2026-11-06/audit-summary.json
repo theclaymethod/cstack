@@ -1,0 +1,27 @@
+[
+  {
+    "case": "case-a",
+    "executable_checks_passed": true,
+    "skill_evaluation_complete": false
+  },
+  {
+    "case": "case-b",
+    "executable_checks_passed": true,
+    "skill_evaluation_complete": false
+  },
+  {
+    "case": "case-c",
+    "executable_checks_passed": true,
+    "skill_evaluation_complete": false
+  },
+  {
+    "case": "case-d",
+    "executable_checks_passed": true,
+    "skill_evaluation_complete": false
+  },
+  {
+    "case": "case-e",
+    "executable_checks_passed": true,
+    "skill_evaluation_complete": false
+  }
+]

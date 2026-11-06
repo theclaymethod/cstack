@@ -1,0 +1,51 @@
+{
+  "package": "cstack",
+  "version": "0.1.0",
+  "checked_at": "2026-11-06T18:22:05.034540+00:00",
+  "included_skills": [
+    "cross-examine",
+    "distill-me",
+    "expert-mode"
+  ],
+  "checks": {
+    "skill_creator_validation": "All three valid",
+    "skills_cli_discovery": "Exactly three skills discovered",
+    "skills_cli_local_install": "Passed with --copy for codex, claude-code, cursor in an isolated project",
+    "installed_content_and_shared_references": "Verified against package source",
+    "claude_plugin_validation": "Passed; optional marketplace listing icon absent",
+    "expert_review_calibration": {
+      "passed": 19,
+      "total": 19
+    },
+    "cross_examine_local_calibration": {
+      "passed": 11,
+      "total": 11
+    },
+    "machine_path_and_token_pattern_scan": "No matches in package text"
+  },
+  "limitations": [
+    "No new agent behavior run during packaging",
+    "No actual Privacy Filter inference",
+    "Cursor application runtime and marketplace import not exercised",
+    "No public marketplace submission",
+    "Only synthetic eval data included"
+  ],
+  "sha256": {
+    ".claude-plugin/marketplace.json": "2e52278c096a1cddc94672ba28424ddf16529868b867a5d54b9ea7612b2448e4",
+    ".claude-plugin/plugin.json": "9b4626e2df9075c46213ff3d4a11b3e1edca2c781dfbedd3d5bf05747336b4ba",
+    ".cursor-plugin/plugin.json": "59350766db076036d96d3d067518c9ac49f04b51e98ced26636fb1b18a6b8493",
+    "plugin.json": "83ff73447fed06aeee64d374eed918d45bd1a388c8f00345969ca0d0049a11d0",
+    "skills/cross-examine/SKILL.md": "c09b9b1074cacf7b84b9ce8765baacf0f57580fbb9e926cb6c94b011f4bae178",
+    "skills/cross-examine/references/ledger.md": "4c495c811f8b9714c556df021e6bfb9e906b362f7e583d2f369dca6e99c364a2",
+    "skills/cross-examine/references/lessons.md": "3213c990b2b0b930e39a8310ed170845fe1997f0086c9a3a8f6ee1752767bcfa",
+    "skills/distill-me/SKILL.md": "931d9cf433bd2853ecae24aa5feadd5e425d55a367d52e089ab6b302d7a7b229",
+    "skills/distill-me/agents/openai.yaml": "a1499d95abd8447558c535fe5554adcc3c9b988a0a39264a6283d430effe1e94",
+    "skills/distill-me/references/review-passes.md": "f9c7982d9bfb4d982d3ad7c42d060eb21b3e5474e64dd1f3894c0ea56112cfb1",
+    "skills/expert-mode/SKILL.md": "560db74cb4f64e567bdac9dfc445a66546aeb80a1485212fe4a24cd5a962d7e5",
+    "skills/expert-mode/agents/openai.yaml": "a1499d95abd8447558c535fe5554adcc3c9b988a0a39264a6283d430effe1e94",
+    "skills/expert-mode/references/export.md": "3750ef95f311fc140536c30ccba9af5394acc82f418283c1931af873fc094d9a",
+    "skills/expert-mode/references/privacy-filter.md": "0e8f0b80a94887654bd18e06f117e427ad9d64a2082e148a085567a5dba0aedd",
+    "skills/expert-mode/references/records.md": "a0f57f2d563e24e5db7801c96d24bbb1e3e46c76b652b95b809b31007550bdbb",
+    "skills/expert-mode/scripts/export_findings.py": "f289c2c6edcb40a4e492d92c4b107c50c1145896a36d4f9ad3026e8591689c15"
+  }
+}

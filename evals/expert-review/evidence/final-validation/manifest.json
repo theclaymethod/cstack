@@ -1,0 +1,13 @@
+{
+  "evals/expert-review/run.py": "9ba4898026e00b8d043907d9b6195560cb3215bc301485a2b73608e487a6179c",
+  "evals/expert-review/fixtures.py": "7bd4be3ae514da54cf174e25a4805a47b74a5d104373443d68d577379e5c4191",
+  "evals/expert-review/candidate.md": "4591d8522f00631d0651b3d30394096a5abd797bcb5f43234ae8e89725d43d28",
+  "evals/expert-review/calibration.py": "0078710f6e03f3d8d7d4de9a16b12634a6126c04c9dfd7effb13fc41d7658e42",
+  "evals/expert-review/replay.py": "b70be48315a0b533820d3e4364600cf6b628ac9e8361d18b0b157a059550b958",
+  "skills/expert-mode/SKILL.md": "6dd79ddfdd641315f7b329d5c2c75d546183609979bcff3073755b5c0ee1caca",
+  "skills/expert-mode/references/records.md": "c69a05d23723c61e9d2a40b229a7d6d0cfe94398b3fed20e1e196ab003c27f13",
+  "skills/expert-mode/agents/openai.yaml": "a1499d95abd8447558c535fe5554adcc3c9b988a0a39264a6283d430effe1e94",
+  "skills/distill-me/SKILL.md": "228a7a674db3a2abd71c9383351d8d0a83ae5136bde9ebd5114d91642c24f776",
+  "skills/distill-me/references/review-passes.md": "f9c7982d9bfb4d982d3ad7c42d060eb21b3e5474e64dd1f3894c0ea56112cfb1",
+  "skills/distill-me/agents/openai.yaml": "a1499d95abd8447558c535fe5554adcc3c9b988a0a39264a6283d430effe1e94"
+}

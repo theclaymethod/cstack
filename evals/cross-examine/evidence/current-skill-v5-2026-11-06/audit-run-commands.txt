@@ -1,0 +1,31 @@
+#!/bin/sh
+set -u
+root="$(cd "$(dirname "$0")" && pwd)"
+for case_id in a b c d e; do
+  case_root="$root/case-$case_id"
+  mkdir -p "$case_root/submission" "$case_root/disposable"
+  cp -R "$case_root/workspace/." "$case_root/disposable/"
+  name="wargames-contract-$case_id-1106-r1"
+  trap 'docker rm -f "$name" >/dev/null 2>&1 || true' EXIT HUP INT TERM
+  set -- docker run --name "$name" --network none --read-only --cap-drop ALL --security-opt no-new-privileges --pids-limit 64 --memory 128m --cpus 1 --workdir /workspace --mount "type=bind,src=$case_root/disposable,dst=/workspace" --mount "type=bind,src=$case_root/workspace/reset.py,dst=/workspace/reset.py,readonly" --mount "type=bind,src=$case_root/workspace/verify.py,dst=/workspace/verify.py,readonly" --mount "type=bind,src=$case_root/workspace/solution.py,dst=/workspace/solution.py,readonly" --mount "type=bind,src=$case_root/oracle,dst=/oracle,readonly" --mount "type=bind,src=$case_root/submission/candidate.py,dst=/candidate.py,readonly" wargames-evals:local python -I -B -c '
+import subprocess,sys,json,sqlite3
+def run(script):
+ p=subprocess.run([sys.executable,"-I","-B",script],capture_output=True,text=True)
+ return {"script":script,"returncode":p.returncode,"stdout":p.stdout,"stderr":p.stderr}
+def rows():
+ try:
+  with sqlite3.connect("state.sqlite") as db:return db.execute("SELECT id,address FROM customers ORDER BY id").fetchall()
+ except Exception as e:return {"error":str(e)}
+out={"initial_reset":run("reset.py")};out["initial_rows"]=rows()
+out["reference"]=run("solution.py");out["reference_verify"]=run("verify.py");out["reference_rows"]=rows()
+out["reset_after_reference"]=run("reset.py");out["reset_rows"]=rows();out["reset_verify"]=run("verify.py")
+out["candidate"]=run("/candidate.py");out["candidate_rows"]=rows();out["candidate_verify"]=run("verify.py")
+out["final_reset"]=run("reset.py");out["final_rows"]=rows()
+print(json.dumps(out,indent=2))'
+  printf '%s\n' "$*" > "$case_root/submission/command.txt"
+  perl -e 'alarm 20; exec @ARGV' "$@" > "$case_root/submission/run.json" 2> "$case_root/submission/docker.stderr"
+  printf '%s\n' "$?" > "$case_root/submission/docker.exit"
+  docker rm -f "$name" > "$case_root/submission/cleanup.txt" 2>&1 || true
+  docker ps -a --filter "name=^/$name$" --format '{{.Names}}' > "$case_root/submission/container-absence.txt"
+  trap - EXIT HUP INT TERM
+done

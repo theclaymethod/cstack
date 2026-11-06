@@ -1,0 +1,21 @@
+{
+  "export_structure": "passed",
+  "nested_text_and_numeric_masking": "passed",
+  "source_unchanged": "passed",
+  "readiness_reset": "passed",
+  "content_hashes": "passed",
+  "no_overwrite": "passed",
+  "identifier_and_key_integrity": "passed",
+  "opf_span_adapter_simulated": "passed",
+  "tokenizer_warning_stops_export": "passed",
+  "manual_cli_processing_label": "passed",
+  "missing_setup_no_raw_fallback": "passed",
+  "model_inference": "not run; no weights downloaded",
+  "existing_calibration": "19/19 passed after export additions",
+  "synthetic_bundle": "Examples, versioned rubric, null correction, uncertainty, and sanitized projection metadata verified through real CLI",
+  "source_hashes": {
+    "skills/expert-mode/scripts/export_findings.py": "f289c2c6edcb40a4e492d92c4b107c50c1145896a36d4f9ad3026e8591689c15",
+    "skills/expert-mode/references/export.md": "3750ef95f311fc140536c30ccba9af5394acc82f418283c1931af873fc094d9a",
+    "skills/expert-mode/references/privacy-filter.md": "0e8f0b80a94887654bd18e06f117e427ad9d64a2082e148a085567a5dba0aedd"
+  }
+}

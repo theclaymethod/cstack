@@ -1,0 +1,16 @@
+{
+  "purpose": "Development calibration of optional execution backends; not discovery or full skill evaluation.",
+  "grader_version": 4,
+  "fixture_version": 3,
+  "local_docker_available_on_path": false,
+  "local_permissions_enforced": false,
+  "docker_permissions_enforced": true,
+  "storage": "Local Markdown/JSON evidence; SQLite retained for database-specific example tasks.",
+  "files_sha256": {
+    "evals/wargames/run.py": "80a4beb3edf1dcd518ea4845561fb3f740391750742fcb069e600beb5a8c7640",
+    "evals/wargames/fixtures.py": "0af6a9f737f363b9ffaa5f948197c9a5181ec7fae3ceb5ac59c252275cab1891",
+    "evals/wargames/calibration.py": "c2f7ec76d4cd768b26278890db9c020ff467d5a19c319002f1835277cd0bdb2d",
+    "evals/wargames/transfer.py": "44dc3cb9e2ca503aead2df688275ec79433daeb02c31b3661e59a9098b91f9cc"
+  },
+  "receipt_scope": "Retrospective calibration receipt, not a protected pre-run freeze."
+}

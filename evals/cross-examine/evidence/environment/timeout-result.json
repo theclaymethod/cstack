@@ -1,0 +1,11 @@
+{
+  "execution": {
+    "code": 124,
+    "stdout": "",
+    "stderr": "Execution timed out"
+  },
+  "container_name": "wargames-2503f850b553452c8e49ac2801d832af",
+  "container_inspect_code": 1,
+  "container_inspect_stderr": "error: no such object: wargames-2503f850b553452c8e49ac2801d832af\n",
+  "cleanup_confirmed": true
+}

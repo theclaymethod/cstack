@@ -1,0 +1,7 @@
+{
+  "classification": "confirmed",
+  "requirement": "Update customer 1 to New Lane and preserve customer 2 at Keep Street; reset to initial state between attempts.",
+  "root_cause": "INSERT OR IGNORE leaves a prior successful address in place across resets.",
+  "why": "The observed database state is the independent outcome; credit and reset must agree with that outcome.",
+  "evidence": "Calibration artifact: replay attack.py, alternative.py, or two reset/solution cycles with run.py grade. This is an operator reference, not an agent audit."
+}

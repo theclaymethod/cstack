@@ -1,0 +1,7 @@
+{
+  "classification": "clean",
+  "requirement": "Update database customer 1 and preserve customer 2.",
+  "root_cause": "No confirmed defect in bounded audit.",
+  "why": "Observed verifier checks actual outcome.",
+  "evidence": "Baseline and independent outcome probes."
+}

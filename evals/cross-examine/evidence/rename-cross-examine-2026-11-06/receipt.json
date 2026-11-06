@@ -1,0 +1,29 @@
+{
+  "name": "Cross-Examine",
+  "skill_invocation": "$cross-examine",
+  "repository": "https://github.com/theclaymethod/cross-examine",
+  "grader_version": 6,
+  "fixture_version": 4,
+  "historical_evidence_files_preserved_byte_for_byte": 345,
+  "calibration": {
+    "local": "11/11",
+    "docker": "11/11"
+  },
+  "additional_checks": [
+    "Renamed executor/scratch/oracle settings work through Docker preflight.",
+    "Prepared requests name the new skill.",
+    "Installed directory is cross-examine; obsolete wargames entrypoint removed.",
+    "Current Markdown file links resolve.",
+    "Repository and installed skills pass quick_validate."
+  ],
+  "source_sha256": {
+    "skills/cross-examine/SKILL.md": "c09b9b1074cacf7b84b9ce8765baacf0f57580fbb9e926cb6c94b011f4bae178",
+    "skills/cross-examine/references/lessons.md": "2a3e8c299aedc8beab1a1af985c5cc425a18479b65e4f5ecf6ddd2de9d5099f2",
+    "skills/cross-examine/references/ledger.md": "4c495c811f8b9714c556df021e6bfb9e906b362f7e583d2f369dca6e99c364a2",
+    "evals/cross-examine/run.py": "e319f438eaf523952e87685cb48c2b786f74bd977f483b1dd33594c2ebaa9e27",
+    "evals/cross-examine/transfer.py": "8babd3630224defaa1d9513cf9310d81ec650ed15e90596f376c830b81f45921",
+    "evals/cross-examine/calibration.py": "54eb1b2fb415b4367719f45a6a91e596ce139f2099ff1c093ef17656cfc7dc64",
+    "evals/cross-examine/fixtures.py": "94c376d8f248baf2aed5bb1fa1078fa02fc6e9ba9246ec03c65aa6bbcc9f6a51"
+  },
+  "scope": "Naming and runtime configuration migration validation; no repeat of blocked audit lanes and no new skill-effectiveness claim."
+}

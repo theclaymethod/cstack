@@ -1,0 +1,114 @@
+{
+  "timeout": {
+    "code": 124,
+    "stdout": "",
+    "stderr": "Execution timed out",
+    "cleanup": {
+      "container": "wargames-818e24db89ea4b1dbc45a16f611d41d5",
+      "remove": {
+        "code": 0,
+        "stdout": "wargames-818e24db89ea4b1dbc45a16f611d41d5\n",
+        "stderr": ""
+      },
+      "inspect": {
+        "code": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      "status": "absent"
+    }
+  },
+  "normal_completion": {
+    "code": 0,
+    "stdout": "",
+    "stderr": "",
+    "cleanup": {
+      "container": "wargames-b5d1ff18fd6541d993ae99b0b046b1f8",
+      "remove": {
+        "code": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      "inspect": {
+        "code": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      "status": "absent"
+    }
+  },
+  "unreachable_daemon_cleanup": {
+    "container": "wargames-no-daemon-probe",
+    "remove": {
+      "code": 1,
+      "stdout": "",
+      "stderr": "failed to connect to the docker API at unix:///nonexistent-wargames-docker.sock; check if the path is correct and if the daemon is running: dial unix /nonexistent-wargames-docker.sock: connect: no such file or directory\n"
+    },
+    "inspect": {
+      "code": 1,
+      "stdout": "",
+      "stderr": "failed to connect to the docker API at unix:///nonexistent-wargames-docker.sock; check if the path is correct and if the daemon is running: dial unix /nonexistent-wargames-docker.sock: connect: no such file or directory\n"
+    },
+    "status": "unknown"
+  },
+  "unreachable_daemon_grade": {
+    "exit_code": 2,
+    "result": {
+      "case": "clean-control",
+      "execution_boundary": {
+        "executor": "docker",
+        "isolation": "container",
+        "permissions_enforced": true
+      },
+      "assessment": "infrastructure-error",
+      "executable_checks_passed": null,
+      "skill_evaluation_complete": false,
+      "error": "Replay preflight failed at bind-mount-read-write. Check the Docker image/context and use WARGAMES_SCRATCH_ROOT for a writable directory shared with Docker. No candidate was scored.",
+      "evidence": {
+        "phase": "bind-mount-read-write",
+        "detail": "Docker replay failed or exact-container cleanup could not be verified. Check the Docker context/daemon and the named container before retrying.",
+        "probes": {},
+        "cause": {
+          "execution": {
+            "code": 1,
+            "stdout": "",
+            "stderr": "failed to connect to the docker API at unix:///nonexistent-wargames-docker.sock; check if the path is correct and if the daemon is running: dial unix /nonexistent-wargames-docker.sock: connect: no such file or directory\n"
+          },
+          "cleanup": {
+            "container": "wargames-3898cff49b8349b9b2de9b3826af315b",
+            "remove": {
+              "code": 1,
+              "stdout": "",
+              "stderr": "failed to connect to the docker API at unix:///nonexistent-wargames-docker.sock; check if the path is correct and if the daemon is running: dial unix /nonexistent-wargames-docker.sock: connect: no such file or directory\n"
+            },
+            "inspect": {
+              "code": 1,
+              "stdout": "",
+              "stderr": "failed to connect to the docker API at unix:///nonexistent-wargames-docker.sock; check if the path is correct and if the daemon is running: dial unix /nonexistent-wargames-docker.sock: connect: no such file or directory\n"
+            },
+            "status": "unknown"
+          }
+        }
+      }
+    }
+  },
+  "invalid_scratch_root": {
+    "exit_code": 2,
+    "result": {
+      "case": null,
+      "execution_boundary": {
+        "executor": "docker",
+        "isolation": "container",
+        "permissions_enforced": true
+      },
+      "assessment": "infrastructure-error",
+      "executable_checks_passed": null,
+      "skill_evaluation_complete": false,
+      "error": "Cannot create replay scratch directory. Set WARGAMES_SCRATCH_ROOT to a writable directory shared with Docker when using that executor.",
+      "evidence": {
+        "scratch": "/dev/null/not-a-directory",
+        "detail": "[Errno 20] Not a directory: '/dev/null/not-a-directory'"
+      }
+    }
+  }
+}

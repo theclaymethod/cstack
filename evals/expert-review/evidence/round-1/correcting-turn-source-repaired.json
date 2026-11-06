@@ -1,0 +1,99 @@
+{
+  "case": "live-correction",
+  "fixture_version": 2,
+  "grader_version": 2,
+  "checks": {
+    "all_turns_captured": true,
+    "checkpoint_0_sequence": true,
+    "checkpoint_0_integrity": true,
+    "checkpoint_0_append_only": true,
+    "checkpoint_0_provenance_and_lineage": true,
+    "checkpoint_0_expected_observations": true,
+    "checkpoint_0_rubric_sources": true,
+    "checkpoint_1_sequence": true,
+    "checkpoint_1_integrity": true,
+    "checkpoint_1_append_only": true,
+    "checkpoint_1_provenance_and_lineage": true,
+    "checkpoint_1_expected_observations": true,
+    "checkpoint_1_rubric_sources": true,
+    "checkpoint_2_sequence": true,
+    "checkpoint_2_integrity": true,
+    "checkpoint_2_append_only": true,
+    "checkpoint_2_provenance_and_lineage": true,
+    "checkpoint_2_expected_observations": true,
+    "checkpoint_2_rubric_sources": true,
+    "checkpoint_3_sequence": true,
+    "checkpoint_3_integrity": true,
+    "checkpoint_3_append_only": true,
+    "checkpoint_3_provenance_and_lineage": true,
+    "checkpoint_3_expected_observations": true,
+    "checkpoint_3_rubric_sources": true,
+    "checkpoint_4_sequence": true,
+    "checkpoint_4_integrity": true,
+    "checkpoint_4_append_only": true,
+    "checkpoint_4_provenance_and_lineage": true,
+    "checkpoint_4_expected_observations": true,
+    "checkpoint_4_no_approval_or_post_stop_capture": true,
+    "checkpoint_4_rubric_sources": true,
+    "checkpoint_5_sequence": true,
+    "checkpoint_5_integrity": true,
+    "checkpoint_5_append_only": true,
+    "checkpoint_5_provenance_and_lineage": true,
+    "checkpoint_5_expected_observations": true,
+    "checkpoint_5_no_approval_or_post_stop_capture": true,
+    "checkpoint_5_rubric_sources": true,
+    "checkpoint_6_sequence": true,
+    "checkpoint_6_integrity": true,
+    "checkpoint_6_append_only": true,
+    "checkpoint_6_provenance_and_lineage": true,
+    "checkpoint_6_expected_observations": true,
+    "checkpoint_6_no_approval_or_post_stop_capture": true,
+    "checkpoint_6_rubric_sources": true
+  },
+  "artifact_checks_passed": true,
+  "skill_evaluation_complete": false,
+  "human_review_required": [
+    "Clinical/domain meaning and correction normalization",
+    "Binary rubric question semantics and scope",
+    "Selective useful clarification and succinct replies",
+    "Actual independent review passes and source-access compliance",
+    "Honest partial-context coverage and replay-readiness claims"
+  ],
+  "checkpoints": [
+    {
+      "position": 0,
+      "rows": 0,
+      "rubrics": 0
+    },
+    {
+      "position": 1,
+      "rows": 1,
+      "rubrics": 0
+    },
+    {
+      "position": 2,
+      "rows": 1,
+      "rubrics": 0
+    },
+    {
+      "position": 3,
+      "rows": 2,
+      "rubrics": 0
+    },
+    {
+      "position": 4,
+      "rows": 2,
+      "rubrics": 0
+    },
+    {
+      "position": 5,
+      "rows": 2,
+      "rubrics": 0
+    },
+    {
+      "position": 6,
+      "rows": 2,
+      "rubrics": 0
+    }
+  ]
+}

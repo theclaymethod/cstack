@@ -1,0 +1,58 @@
+{
+  "case": "false-rejection",
+  "fixture_version": 2,
+  "checks": {
+    "classification": true,
+    "report_present": true,
+    "original_initial_state": true,
+    "original_valid_baseline": true,
+    "reproduced_original_defect": true,
+    "accepts_valid_outcomes": true,
+    "rejects_invalid_outcomes_without_mutating_them": true,
+    "repaired_accepts_alternative": true,
+    "generator_artifact": true
+  },
+  "executable_checks_passed": true,
+  "human_review_required": [
+    "Evidence supports classification and actual swarm use",
+    "Root cause and lesson quality, scope, and provenance",
+    "Attack budget and honest coverage limitations"
+  ],
+  "evidence": {
+    "reset": {
+      "code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    "baseline": {
+      "code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    "original_verifier": {
+      "code": 0,
+      "stdout": "{\"passed\": true}\n",
+      "stderr": ""
+    },
+    "candidate": {
+      "code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    "candidate_state": [
+      [
+        1,
+        "New Lane"
+      ],
+      [
+        2,
+        "Keep Street"
+      ]
+    ],
+    "candidate_verifier": {
+      "code": 1,
+      "stdout": "{\"passed\": false}\n",
+      "stderr": ""
+    }
+  }
+}

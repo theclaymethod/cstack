@@ -1,0 +1,34 @@
+{
+  "tested_commit": "3c4d8bf1c0f9a47245c15c524d8314b14be5bd4e",
+  "grader_version": 5,
+  "fixture_version": 3,
+  "frozen_inputs_unchanged": true,
+  "calibration": {
+    "local": {
+      "passed": 11,
+      "total": 11
+    },
+    "docker": {
+      "passed": 11,
+      "total": 11
+    }
+  },
+  "audit": {
+    "lanes_dispatched": 3,
+    "lanes_completed": 1,
+    "lanes_blocked": 2,
+    "completed_lane": "task contract",
+    "case_submissions_passing_artifact_checks": 5,
+    "case_submissions_total": 5,
+    "repairs_and_lessons_author": "parent coordinator, informed by public-suite history",
+    "scope": "development; not a complete independent skill evaluation"
+  },
+  "transfer": {
+    "learned_guidance_passed": true,
+    "original_guidance_passed": true,
+    "trials_per_condition": 1,
+    "observed_advantage": false
+  },
+  "skill_evaluation_complete": false,
+  "blocker": "Verifier and environment lane agent calls were rejected by an automated cybersecurity-risk check; no retries or replacement lanes were run."
+}

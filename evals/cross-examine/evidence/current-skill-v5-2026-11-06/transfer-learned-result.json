@@ -1,0 +1,686 @@
+{
+  "stage": "fresh-agent-transfer",
+  "execution_boundary": {
+    "executor": "docker",
+    "isolation": "container",
+    "permissions_enforced": true
+  },
+  "checks": {
+    "reset_creates_initial_state": true,
+    "reset_probe_1": true,
+    "reset_probe_2": true,
+    "reset_probe_3": true,
+    "reset_recovers_corrupt_database": true,
+    "legitimate_solution_passes": true,
+    "accepts_valid_outcomes_independent_of_claims": true,
+    "rejects_forged_success_and_invalid_outcomes": true
+  },
+  "executable_checks_passed": true,
+  "skill_evaluation_complete": false,
+  "human_review_required": [
+    "Fresh generation agent received only the prepared directory and learned generator guidance.",
+    "TASK.md matches the order-cancellation contract and evaluated-agent access.",
+    "Generated evaluation applies the learned mechanism rather than a task-specific blacklist.",
+    "Generator guidance provenance matches the source audit's confirmed findings."
+  ],
+  "evidence": {
+    "preflight": {
+      "status": "passed",
+      "probes": {
+        "bind-mount-read-write": {
+          "code": 0,
+          "stdout": "",
+          "stderr": "",
+          "cleanup": {
+            "container": "wargames-8c3737ebae9049ce95dfb9bab0c150fa",
+            "remove": {
+              "code": 0,
+              "stdout": "",
+              "stderr": ""
+            },
+            "inspect": {
+              "code": 0,
+              "stdout": "",
+              "stderr": ""
+            },
+            "status": "absent"
+          }
+        },
+        "sqlite-seed-read": {
+          "container": {
+            "code": 0,
+            "stdout": "[[1, \"Old Road\"], [2, \"Keep Street\"]]\n",
+            "stderr": "",
+            "cleanup": {
+              "container": "wargames-ba00333a87b24b3da2fc4abe0beb9352",
+              "remove": {
+                "code": 0,
+                "stdout": "",
+                "stderr": ""
+              },
+              "inspect": {
+                "code": 0,
+                "stdout": "",
+                "stderr": ""
+              },
+              "status": "absent"
+            }
+          },
+          "host_state": [
+            [
+              1,
+              "Old Road"
+            ],
+            [
+              2,
+              "Keep Street"
+            ]
+          ]
+        },
+        "sqlite-reseed-read": {
+          "container": {
+            "code": 0,
+            "stdout": "[[1, \"New Lane\"], [2, \"Keep Street\"]]\n",
+            "stderr": "",
+            "cleanup": {
+              "container": "wargames-9a057dc4b70c41868badda9e7b0e0787",
+              "remove": {
+                "code": 0,
+                "stdout": "",
+                "stderr": ""
+              },
+              "inspect": {
+                "code": 0,
+                "stdout": "",
+                "stderr": ""
+              },
+              "status": "absent"
+            }
+          },
+          "host_state": [
+            [
+              1,
+              "New Lane"
+            ],
+            [
+              2,
+              "Keep Street"
+            ]
+          ]
+        },
+        "reset": {
+          "code": 0,
+          "stdout": "",
+          "stderr": "",
+          "cleanup": {
+            "container": "wargames-6e396556c2214263a1bfa77cb31010dd",
+            "remove": {
+              "code": 0,
+              "stdout": "",
+              "stderr": ""
+            },
+            "inspect": {
+              "code": 0,
+              "stdout": "",
+              "stderr": ""
+            },
+            "status": "absent"
+          }
+        },
+        "sqlite-reset-read": {
+          "container": {
+            "code": 0,
+            "stdout": "[[1, \"Old Road\"], [2, \"Keep Street\"]]\n",
+            "stderr": "",
+            "cleanup": {
+              "container": "wargames-7ded4c7a466a4443b7132b5942d52cf3",
+              "remove": {
+                "code": 0,
+                "stdout": "",
+                "stderr": ""
+              },
+              "inspect": {
+                "code": 0,
+                "stdout": "",
+                "stderr": ""
+              },
+              "status": "absent"
+            }
+          },
+          "host_state": [
+            [
+              1,
+              "Old Road"
+            ],
+            [
+              2,
+              "Keep Street"
+            ]
+          ]
+        }
+      }
+    },
+    "initial_reset": {
+      "code": 0,
+      "stdout": "",
+      "stderr": "",
+      "cleanup": {
+        "container": "wargames-e0ff20378eaa4e2fb3f29b450587e70b",
+        "remove": {
+          "code": 0,
+          "stdout": "",
+          "stderr": ""
+        },
+        "inspect": {
+          "code": 0,
+          "stdout": "",
+          "stderr": ""
+        },
+        "status": "absent"
+      }
+    },
+    "reset_probes": [
+      {
+        "before": [
+          [
+            1,
+            "cancelled"
+          ],
+          [
+            2,
+            "shipped"
+          ]
+        ],
+        "execution": {
+          "code": 0,
+          "stdout": "",
+          "stderr": "",
+          "cleanup": {
+            "container": "wargames-ae375f2cc9224efe8ef23996865c9805",
+            "remove": {
+              "code": 0,
+              "stdout": "",
+              "stderr": ""
+            },
+            "inspect": {
+              "code": 0,
+              "stdout": "",
+              "stderr": ""
+            },
+            "status": "absent"
+          }
+        },
+        "after": [
+          [
+            1,
+            "pending"
+          ],
+          [
+            2,
+            "shipped"
+          ]
+        ]
+      },
+      {
+        "before": [
+          [
+            1,
+            "other"
+          ],
+          [
+            2,
+            "damaged"
+          ]
+        ],
+        "execution": {
+          "code": 0,
+          "stdout": "",
+          "stderr": "",
+          "cleanup": {
+            "container": "wargames-510acd0916ef415d96e392c297594699",
+            "remove": {
+              "code": 0,
+              "stdout": "",
+              "stderr": ""
+            },
+            "inspect": {
+              "code": 0,
+              "stdout": "",
+              "stderr": ""
+            },
+            "status": "absent"
+          }
+        },
+        "after": [
+          [
+            1,
+            "pending"
+          ],
+          [
+            2,
+            "shipped"
+          ]
+        ]
+      },
+      {
+        "before": [],
+        "execution": {
+          "code": 0,
+          "stdout": "",
+          "stderr": "",
+          "cleanup": {
+            "container": "wargames-d5aec083e3f14d77a456e3b0c0af95d8",
+            "remove": {
+              "code": 0,
+              "stdout": "",
+              "stderr": ""
+            },
+            "inspect": {
+              "code": 0,
+              "stdout": "",
+              "stderr": ""
+            },
+            "status": "absent"
+          }
+        },
+        "after": [
+          [
+            1,
+            "pending"
+          ],
+          [
+            2,
+            "shipped"
+          ]
+        ]
+      }
+    ],
+    "corrupt_reset": {
+      "code": 0,
+      "stdout": "",
+      "stderr": "",
+      "cleanup": {
+        "container": "wargames-ee27f4206c8e427b98f8c0aece085590",
+        "remove": {
+          "code": 0,
+          "stdout": "",
+          "stderr": ""
+        },
+        "inspect": {
+          "code": 0,
+          "stdout": "",
+          "stderr": ""
+        },
+        "status": "absent"
+      }
+    },
+    "solution": {
+      "code": 0,
+      "stdout": "",
+      "stderr": "",
+      "cleanup": {
+        "container": "wargames-27b2ca76a1964277b8026ef32961aeee",
+        "remove": {
+          "code": 0,
+          "stdout": "",
+          "stderr": ""
+        },
+        "inspect": {
+          "code": 0,
+          "stdout": "",
+          "stderr": ""
+        },
+        "status": "absent"
+      }
+    },
+    "solution_state": [
+      [
+        1,
+        "cancelled"
+      ],
+      [
+        2,
+        "shipped"
+      ]
+    ],
+    "solution_verifier": {
+      "code": 0,
+      "stdout": "{\"passed\": true}\n",
+      "stderr": "",
+      "cleanup": {
+        "container": "wargames-b9227ba053aa474193e17e6fed35f772",
+        "remove": {
+          "code": 0,
+          "stdout": "",
+          "stderr": ""
+        },
+        "inspect": {
+          "code": 0,
+          "stdout": "",
+          "stderr": ""
+        },
+        "status": "absent"
+      }
+    },
+    "valid_outcomes": [
+      {
+        "claim": null,
+        "execution": {
+          "code": 0,
+          "stdout": "{\"passed\": true}\n",
+          "stderr": "",
+          "cleanup": {
+            "container": "wargames-d6c179cac2a34ba982efa739b572e12b",
+            "remove": {
+              "code": 0,
+              "stdout": "",
+              "stderr": ""
+            },
+            "inspect": {
+              "code": 0,
+              "stdout": "",
+              "stderr": ""
+            },
+            "status": "absent"
+          }
+        },
+        "after": [
+          [
+            1,
+            "cancelled"
+          ],
+          [
+            2,
+            "shipped"
+          ]
+        ]
+      },
+      {
+        "claim": true,
+        "execution": {
+          "code": 0,
+          "stdout": "{\"passed\": true}\n",
+          "stderr": "",
+          "cleanup": {
+            "container": "wargames-4685bb537d164f9bbdb702307b1be506",
+            "remove": {
+              "code": 0,
+              "stdout": "",
+              "stderr": ""
+            },
+            "inspect": {
+              "code": 0,
+              "stdout": "",
+              "stderr": ""
+            },
+            "status": "absent"
+          }
+        },
+        "after": [
+          [
+            1,
+            "cancelled"
+          ],
+          [
+            2,
+            "shipped"
+          ]
+        ]
+      },
+      {
+        "claim": false,
+        "execution": {
+          "code": 0,
+          "stdout": "{\"passed\": true}\n",
+          "stderr": "",
+          "cleanup": {
+            "container": "wargames-f56acf21011044af9e0296b7e412b2c4",
+            "remove": {
+              "code": 0,
+              "stdout": "",
+              "stderr": ""
+            },
+            "inspect": {
+              "code": 0,
+              "stdout": "",
+              "stderr": ""
+            },
+            "status": "absent"
+          }
+        },
+        "after": [
+          [
+            1,
+            "cancelled"
+          ],
+          [
+            2,
+            "shipped"
+          ]
+        ]
+      }
+    ],
+    "invalid_outcomes": [
+      {
+        "before": [
+          [
+            1,
+            "pending"
+          ],
+          [
+            2,
+            "shipped"
+          ]
+        ],
+        "execution": {
+          "code": 1,
+          "stdout": "{\"passed\": false}\n",
+          "stderr": "",
+          "cleanup": {
+            "container": "wargames-c7c5d205d4b4489e8939b242451a8e10",
+            "remove": {
+              "code": 0,
+              "stdout": "",
+              "stderr": ""
+            },
+            "inspect": {
+              "code": 0,
+              "stdout": "",
+              "stderr": ""
+            },
+            "status": "absent"
+          }
+        },
+        "after": [
+          [
+            1,
+            "pending"
+          ],
+          [
+            2,
+            "shipped"
+          ]
+        ]
+      },
+      {
+        "before": [
+          [
+            1,
+            "cancelled"
+          ],
+          [
+            2,
+            "changed"
+          ]
+        ],
+        "execution": {
+          "code": 1,
+          "stdout": "{\"passed\": false}\n",
+          "stderr": "",
+          "cleanup": {
+            "container": "wargames-c98d1963d483413a9fef55373d58c0a7",
+            "remove": {
+              "code": 0,
+              "stdout": "",
+              "stderr": ""
+            },
+            "inspect": {
+              "code": 0,
+              "stdout": "",
+              "stderr": ""
+            },
+            "status": "absent"
+          }
+        },
+        "after": [
+          [
+            1,
+            "cancelled"
+          ],
+          [
+            2,
+            "changed"
+          ]
+        ]
+      },
+      {
+        "before": [
+          [
+            1,
+            "cancelled"
+          ]
+        ],
+        "execution": {
+          "code": 1,
+          "stdout": "{\"passed\": false}\n",
+          "stderr": "",
+          "cleanup": {
+            "container": "wargames-13e8b918556644f88908617614f33d88",
+            "remove": {
+              "code": 0,
+              "stdout": "",
+              "stderr": ""
+            },
+            "inspect": {
+              "code": 0,
+              "stdout": "",
+              "stderr": ""
+            },
+            "status": "absent"
+          }
+        },
+        "after": [
+          [
+            1,
+            "cancelled"
+          ]
+        ]
+      },
+      {
+        "before": [
+          [
+            2,
+            "shipped"
+          ]
+        ],
+        "execution": {
+          "code": 1,
+          "stdout": "{\"passed\": false}\n",
+          "stderr": "",
+          "cleanup": {
+            "container": "wargames-33ef5d4174e2445abbf56968f8a5dc2c",
+            "remove": {
+              "code": 0,
+              "stdout": "",
+              "stderr": ""
+            },
+            "inspect": {
+              "code": 0,
+              "stdout": "",
+              "stderr": ""
+            },
+            "status": "absent"
+          }
+        },
+        "after": [
+          [
+            2,
+            "shipped"
+          ]
+        ]
+      },
+      {
+        "before": [],
+        "execution": {
+          "code": 1,
+          "stdout": "{\"passed\": false}\n",
+          "stderr": "",
+          "cleanup": {
+            "container": "wargames-618d5fd2a41b40baa7d5fd665d6153d9",
+            "remove": {
+              "code": 0,
+              "stdout": "",
+              "stderr": ""
+            },
+            "inspect": {
+              "code": 0,
+              "stdout": "",
+              "stderr": ""
+            },
+            "status": "absent"
+          }
+        },
+        "after": []
+      },
+      {
+        "before": [
+          [
+            1,
+            "cancelled"
+          ],
+          [
+            2,
+            "shipped"
+          ],
+          [
+            3,
+            "extra"
+          ]
+        ],
+        "execution": {
+          "code": 1,
+          "stdout": "{\"passed\": false}\n",
+          "stderr": "",
+          "cleanup": {
+            "container": "wargames-54e0b74531a846f699bb9f4381abfbbe",
+            "remove": {
+              "code": 0,
+              "stdout": "",
+              "stderr": ""
+            },
+            "inspect": {
+              "code": 0,
+              "stdout": "",
+              "stderr": ""
+            },
+            "status": "absent"
+          }
+        },
+        "after": [
+          [
+            1,
+            "cancelled"
+          ],
+          [
+            2,
+            "shipped"
+          ],
+          [
+            3,
+            "extra"
+          ]
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,136 @@
+[
+  {
+    "case": "live-uncertainty",
+    "result": {
+      "case": "live-uncertainty",
+      "fixture_version": 2,
+      "grader_version": 3,
+      "checks": {
+        "all_turns_captured": true,
+        "checkpoint_0_sequence": true,
+        "checkpoint_0_integrity": true,
+        "checkpoint_0_append_only": true,
+        "checkpoint_0_provenance_and_lineage": true,
+        "checkpoint_0_expected_observations": true,
+        "checkpoint_0_rubric_sources": true,
+        "checkpoint_1_sequence": true,
+        "checkpoint_1_integrity": true,
+        "checkpoint_1_append_only": true,
+        "checkpoint_1_provenance_and_lineage": true,
+        "checkpoint_1_expected_observations": true,
+        "checkpoint_1_rubric_sources": true,
+        "checkpoint_2_sequence": true,
+        "checkpoint_2_integrity": true,
+        "checkpoint_2_append_only": true,
+        "checkpoint_2_provenance_and_lineage": true,
+        "checkpoint_2_expected_observations": true,
+        "checkpoint_2_rubric_sources": true,
+        "checkpoint_2_rubric_captured": true,
+        "checkpoint_3_sequence": true,
+        "checkpoint_3_integrity": true,
+        "checkpoint_3_append_only": true,
+        "checkpoint_3_provenance_and_lineage": true,
+        "checkpoint_3_expected_observations": false,
+        "checkpoint_3_rubric_sources": true,
+        "checkpoint_3_rubric_captured": true
+      },
+      "artifact_checks_passed": false,
+      "skill_evaluation_complete": false,
+      "human_review_required": [
+        "Clinical/domain meaning and correction normalization",
+        "Binary rubric question semantics and scope",
+        "Selective useful clarification and succinct replies",
+        "Actual independent review passes and source-access compliance",
+        "Honest partial-context coverage and replay-readiness claims"
+      ],
+      "checkpoints": [
+        {
+          "position": 0,
+          "rows": 0,
+          "rubrics": 0
+        },
+        {
+          "position": 1,
+          "rows": 1,
+          "rubrics": 0
+        },
+        {
+          "position": 2,
+          "rows": 1,
+          "rubrics": 2
+        },
+        {
+          "position": 3,
+          "rows": 2,
+          "rubrics": 3
+        }
+      ]
+    },
+    "steps": [
+      {
+        "position": 0,
+        "hashes": {
+          "reviews.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "rubric.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "reply.md": "3b54db442769c5f8d791676f8fa12b6334fd4d9707b9d4c75cb90bd728b03d82"
+        },
+        "reviews.jsonl": "",
+        "rubric.jsonl": "",
+        "reply.md": "Expert mode is active for item b, whose output reports probability 0.9. I\u2019ll preserve your explicit judgments, corrections, and criteria in `dataset/reviews.jsonl` and `dataset/rubric.jsonl`.\n"
+      },
+      {
+        "position": 1,
+        "hashes": {
+          "reviews.jsonl": "3ab633a09658eea4327a91103c86b4a82d8d31d2de3237323f8660db395dc44c",
+          "rubric.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "reply.md": "d4eac07a3c914edef9faa8a8139413163f32d356b7da1f88d71c65914e309244"
+        },
+        "reviews.jsonl": "{\"record_id\": \"b_probability_high_u2\", \"example_id\": \"b_probability_high\", \"amends\": null, \"item_id\": \"b\", \"output_ref\": \"artifacts/b-v1.json\", \"label\": \"uncertain\", \"source_id\": \"u2\", \"quote\": \"Could this probability be too high? I am not calling it wrong yet.\", \"correction\": null, \"correction_source\": null, \"unresolved\": [\"The expert has not confirmed that probability 0.9 is too high or incorrect.\", \"No expert-endorsed acceptable probability or acceptance criterion has been supplied.\"], \"replay_ready\": false, \"session_id\": \"synthetic-session\"}\n",
+        "rubric.jsonl": "",
+        "reply.md": "The artifact reports 0.9 but provides no supporting evidence to assess whether that is too high. I\u2019ve saved your concern as uncertain, with no correction assigned.\n"
+      },
+      {
+        "position": 2,
+        "hashes": {
+          "reviews.jsonl": "3ab633a09658eea4327a91103c86b4a82d8d31d2de3237323f8660db395dc44c",
+          "rubric.jsonl": "5d635d0ebc015eb40b7076b95e656002b07af3b7fcba11bf8cbb20c0efe94e8e",
+          "reply.md": "452aa9329ed09833c81fcf3899643e6fd3050fa6920713b0fe0292f7a0f6ec42"
+        },
+        "reviews.jsonl": "{\"record_id\": \"b_probability_high_u2\", \"example_id\": \"b_probability_high\", \"amends\": null, \"item_id\": \"b\", \"output_ref\": \"artifacts/b-v1.json\", \"label\": \"uncertain\", \"source_id\": \"u2\", \"quote\": \"Could this probability be too high? I am not calling it wrong yet.\", \"correction\": null, \"correction_source\": null, \"unresolved\": [\"The expert has not confirmed that probability 0.9 is too high or incorrect.\", \"No expert-endorsed acceptable probability or acceptance criterion has been supplied.\"], \"replay_ready\": false, \"session_id\": \"synthetic-session\"}\n",
+        "rubric.jsonl": "{\"rubric_id\": \"reply_brevity\", \"version\": 1, \"question\": \"Is the reply short?\", \"passing_answer\": \"yes\", \"source_id\": \"u3\", \"quote\": \"I prefer short replies. For imported items only, I check whether the source is named.\", \"scope\": \"assistant replies in this session\", \"status\": \"confirmed\"}\n{\"rubric_id\": \"imported_source_named\", \"version\": 1, \"question\": \"Is the source named?\", \"passing_answer\": null, \"source_id\": \"u3\", \"quote\": \"I prefer short replies. For imported items only, I check whether the source is named.\", \"scope\": \"imported items only\", \"status\": \"proposed\", \"unresolved\": [\"The expert has not specified whether a named source is required to pass this check.\"]}\n",
+        "reply.md": "I\u2019ll keep replies short. For imported items, does passing require the source to be named?\n"
+      },
+      {
+        "position": 3,
+        "hashes": {
+          "reviews.jsonl": "57e145f4477f095765a118225ee94438b8b1ca012125bca1818c313d3027770b",
+          "rubric.jsonl": "82c6cf7e94bd2b5bd515da8e2fda603d0dbfa40ab362fcb4c2d9968d3aa6bd93",
+          "reply.md": "a739a7b570d5522194105e083902386f01b579b20ab6410d1606a2aa5f8dc978"
+        },
+        "reviews.jsonl": "{\"record_id\": \"b_probability_high_u2\", \"example_id\": \"b_probability_high\", \"amends\": null, \"item_id\": \"b\", \"output_ref\": \"artifacts/b-v1.json\", \"label\": \"uncertain\", \"source_id\": \"u2\", \"quote\": \"Could this probability be too high? I am not calling it wrong yet.\", \"correction\": null, \"correction_source\": null, \"unresolved\": [\"The expert has not confirmed that probability 0.9 is too high or incorrect.\", \"No expert-endorsed acceptable probability or acceptance criterion has been supplied.\"], \"replay_ready\": false, \"session_id\": \"synthetic-session\"}\n{\"record_id\": \"b_source_missing_u4\", \"example_id\": \"b_source_missing\", \"amends\": null, \"item_id\": \"b\", \"output_ref\": \"artifacts/b-v1.json\", \"label\": \"incorrect\", \"source_id\": \"u4\", \"quote\": \"This imported b output is incorrect because its source is missing. I cannot provide a replacement probability.\", \"correction\": null, \"correction_source\": null, \"unresolved\": [], \"replay_ready\": true, \"session_id\": \"synthetic-session\", \"rubric_answers\": [{\"rubric_id\": \"imported_source_named\", \"version\": 2, \"applicable\": true, \"answer\": \"no\", \"source_id\": \"u4\"}]}\n",
+        "rubric.jsonl": "{\"rubric_id\": \"reply_brevity\", \"version\": 1, \"question\": \"Is the reply short?\", \"passing_answer\": \"yes\", \"source_id\": \"u3\", \"quote\": \"I prefer short replies. For imported items only, I check whether the source is named.\", \"scope\": \"assistant replies in this session\", \"status\": \"confirmed\"}\n{\"rubric_id\": \"imported_source_named\", \"version\": 1, \"question\": \"Is the source named?\", \"passing_answer\": null, \"source_id\": \"u3\", \"quote\": \"I prefer short replies. For imported items only, I check whether the source is named.\", \"scope\": \"imported items only\", \"status\": \"proposed\", \"unresolved\": [\"The expert has not specified whether a named source is required to pass this check.\"]}\n{\"rubric_id\": \"imported_source_named\", \"version\": 2, \"question\": \"Is the source named?\", \"passing_answer\": \"yes\", \"source_id\": \"u4\", \"quote\": \"This imported b output is incorrect because its source is missing. I cannot provide a replacement probability.\", \"scope\": \"imported items only\", \"status\": \"confirmed\", \"origin_source_id\": \"u3\", \"previous_version\": 1}\n",
+        "reply.md": "Recorded the missing source as an error. Imported items must name their source; the probability concern remains unresolved, with no replacement assigned.\n"
+      }
+    ],
+    "versions": {
+      "fixture_version": 2,
+      "grader_version": 3,
+      "source_hashes": {
+        "run.py": "cd9ede166fce86063dd1e602c8a9283896819052b2f99fa1845016d2570426f5",
+        "fixtures.py": "0fd912a75f5f4be5ff58e06f338f8af97a2af68df1d920fa2178156b2cb3f784",
+        "candidate.md": "dcbab217f0d46b2548fe9f4c999852e1a167dbd64f3af68ac4d05debe80a6c69"
+      },
+      "guidance_hashes": {
+        "guidance/distill-me/SKILL.md": "228a7a674db3a2abd71c9383351d8d0a83ae5136bde9ebd5114d91642c24f776",
+        "guidance/expert-mode/SKILL.md": "6dd79ddfdd641315f7b329d5c2c75d546183609979bcff3073755b5c0ee1caca",
+        "guidance/expert-mode/references/records.md": "c69a05d23723c61e9d2a40b229a7d6d0cfe94398b3fed20e1e196ab003c27f13",
+        "guidance/expert-mode/agents/openai.yaml": "a1499d95abd8447558c535fe5554adcc3c9b988a0a39264a6283d430effe1e94",
+        "guidance/distill-me/references/review-passes.md": "f9c7982d9bfb4d982d3ad7c42d060eb21b3e5474e64dd1f3894c0ea56112cfb1",
+        "guidance/distill-me/agents/openai.yaml": "a1499d95abd8447558c535fe5554adcc3c9b988a0a39264a6283d430effe1e94",
+        "REQUEST.md": "dcbab217f0d46b2548fe9f4c999852e1a167dbd64f3af68ac4d05debe80a6c69"
+      },
+      "run_kind": "development",
+      "execution_boundary": "Host instructions; data parsing only; no OS isolation"
+    }
+  }
+]

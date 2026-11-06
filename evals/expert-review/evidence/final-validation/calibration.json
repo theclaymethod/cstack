@@ -1,0 +1,78 @@
+[
+  {
+    "case": "live-correction",
+    "passed": true
+  },
+  {
+    "case": "live-uncertainty",
+    "passed": true
+  },
+  {
+    "case": "distill-merge",
+    "passed": true
+  },
+  {
+    "case": "distill-source",
+    "passed": true
+  },
+  {
+    "case": "activation",
+    "passed": true
+  },
+  {
+    "case": "partial-context",
+    "passed": true
+  },
+  {
+    "case": "empty",
+    "passed": true
+  },
+  {
+    "case": "agent-correction",
+    "passed": true
+  },
+  {
+    "case": "rewrite",
+    "passed": true
+  },
+  {
+    "case": "duplicate",
+    "passed": true
+  },
+  {
+    "case": "false-source",
+    "passed": true
+  },
+  {
+    "case": "seed-deletion",
+    "passed": true
+  },
+  {
+    "case": "missing-rubric-identity",
+    "passed": true
+  },
+  {
+    "case": "provisional-summary",
+    "passed": true
+  },
+  {
+    "case": "correcting-turn-source",
+    "passed": true
+  },
+  {
+    "case": "pending-rubric",
+    "passed": true
+  },
+  {
+    "case": "confirmed-null",
+    "passed": true
+  },
+  {
+    "case": "pending-no-gap",
+    "passed": true
+  },
+  {
+    "case": "criterion-without-replacement",
+    "passed": true
+  }
+]

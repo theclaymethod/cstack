@@ -1,0 +1,23 @@
+{
+  "case": "clean-control",
+  "fixture_version": 2,
+  "grader_version": 3,
+  "assessment": "requires-independent-adjudication",
+  "checks": {
+    "report_present": true
+  },
+  "executable_checks_passed": null,
+  "skill_evaluation_complete": false,
+  "human_review_required": [
+    "Independently reproduce the unexpected finding before deciding whether the seeded control or submission is wrong."
+  ],
+  "evidence": {
+    "finding": {
+      "classification": "confirmed",
+      "requirement": "Update customer 1 to New Lane and preserve customer 2 at Keep Street; reset to initial state between attempts.",
+      "root_cause": "No defect confirmed in the bounded calibration control.",
+      "why": "The observed database state is the independent outcome; credit and reset must agree with that outcome.",
+      "evidence": "Synthetic routing check only; no unexpected defect is asserted by this calibration."
+    }
+  }
+}

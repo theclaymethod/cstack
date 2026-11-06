@@ -1,0 +1,320 @@
+{
+  "stage": "fresh-agent-transfer",
+  "checks": {
+    "reset_creates_initial_state": true,
+    "reset_probe_1": true,
+    "reset_probe_2": true,
+    "reset_probe_3": true,
+    "reset_recovers_corrupt_database": true,
+    "legitimate_solution_passes": true,
+    "accepts_valid_outcomes_independent_of_claims": true,
+    "rejects_forged_success_and_invalid_outcomes": true
+  },
+  "executable_checks_passed": true,
+  "human_review_required": [
+    "Fresh generation agent received only the prepared directory and learned generator guidance.",
+    "TASK.md matches the order-cancellation contract and evaluated-agent access.",
+    "Generated evaluation applies the learned mechanism rather than a task-specific blacklist.",
+    "Generator guidance provenance matches the source audit's confirmed findings."
+  ],
+  "evidence": {
+    "initial_reset": {
+      "code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    "reset_probes": [
+      {
+        "before": [
+          [
+            1,
+            "cancelled"
+          ],
+          [
+            2,
+            "shipped"
+          ]
+        ],
+        "execution": {
+          "code": 0,
+          "stdout": "",
+          "stderr": ""
+        },
+        "after": [
+          [
+            1,
+            "pending"
+          ],
+          [
+            2,
+            "shipped"
+          ]
+        ]
+      },
+      {
+        "before": [
+          [
+            1,
+            "other"
+          ],
+          [
+            2,
+            "damaged"
+          ]
+        ],
+        "execution": {
+          "code": 0,
+          "stdout": "",
+          "stderr": ""
+        },
+        "after": [
+          [
+            1,
+            "pending"
+          ],
+          [
+            2,
+            "shipped"
+          ]
+        ]
+      },
+      {
+        "before": [],
+        "execution": {
+          "code": 0,
+          "stdout": "",
+          "stderr": ""
+        },
+        "after": [
+          [
+            1,
+            "pending"
+          ],
+          [
+            2,
+            "shipped"
+          ]
+        ]
+      }
+    ],
+    "corrupt_reset": {
+      "code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    "solution": {
+      "code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    "solution_state": [
+      [
+        1,
+        "cancelled"
+      ],
+      [
+        2,
+        "shipped"
+      ]
+    ],
+    "solution_verifier": {
+      "code": 0,
+      "stdout": "{\"passed\": true}\n",
+      "stderr": ""
+    },
+    "valid_outcomes": [
+      {
+        "claim": null,
+        "execution": {
+          "code": 0,
+          "stdout": "{\"passed\": true}\n",
+          "stderr": ""
+        },
+        "after": [
+          [
+            1,
+            "cancelled"
+          ],
+          [
+            2,
+            "shipped"
+          ]
+        ]
+      },
+      {
+        "claim": true,
+        "execution": {
+          "code": 0,
+          "stdout": "{\"passed\": true}\n",
+          "stderr": ""
+        },
+        "after": [
+          [
+            1,
+            "cancelled"
+          ],
+          [
+            2,
+            "shipped"
+          ]
+        ]
+      },
+      {
+        "claim": false,
+        "execution": {
+          "code": 0,
+          "stdout": "{\"passed\": true}\n",
+          "stderr": ""
+        },
+        "after": [
+          [
+            1,
+            "cancelled"
+          ],
+          [
+            2,
+            "shipped"
+          ]
+        ]
+      }
+    ],
+    "invalid_outcomes": [
+      {
+        "before": [
+          [
+            1,
+            "pending"
+          ],
+          [
+            2,
+            "shipped"
+          ]
+        ],
+        "execution": {
+          "code": 1,
+          "stdout": "{\"passed\": false}\n",
+          "stderr": ""
+        },
+        "after": [
+          [
+            1,
+            "pending"
+          ],
+          [
+            2,
+            "shipped"
+          ]
+        ]
+      },
+      {
+        "before": [
+          [
+            1,
+            "cancelled"
+          ],
+          [
+            2,
+            "changed"
+          ]
+        ],
+        "execution": {
+          "code": 1,
+          "stdout": "{\"passed\": false}\n",
+          "stderr": ""
+        },
+        "after": [
+          [
+            1,
+            "cancelled"
+          ],
+          [
+            2,
+            "changed"
+          ]
+        ]
+      },
+      {
+        "before": [
+          [
+            1,
+            "cancelled"
+          ]
+        ],
+        "execution": {
+          "code": 1,
+          "stdout": "{\"passed\": false}\n",
+          "stderr": ""
+        },
+        "after": [
+          [
+            1,
+            "cancelled"
+          ]
+        ]
+      },
+      {
+        "before": [
+          [
+            2,
+            "shipped"
+          ]
+        ],
+        "execution": {
+          "code": 1,
+          "stdout": "{\"passed\": false}\n",
+          "stderr": ""
+        },
+        "after": [
+          [
+            2,
+            "shipped"
+          ]
+        ]
+      },
+      {
+        "before": [],
+        "execution": {
+          "code": 1,
+          "stdout": "{\"passed\": false}\n",
+          "stderr": ""
+        },
+        "after": []
+      },
+      {
+        "before": [
+          [
+            1,
+            "cancelled"
+          ],
+          [
+            2,
+            "shipped"
+          ],
+          [
+            3,
+            "extra"
+          ]
+        ],
+        "execution": {
+          "code": 1,
+          "stdout": "{\"passed\": false}\n",
+          "stderr": ""
+        },
+        "after": [
+          [
+            1,
+            "cancelled"
+          ],
+          [
+            2,
+            "shipped"
+          ],
+          [
+            3,
+            "extra"
+          ]
+        ]
+      }
+    ]
+  }
+}

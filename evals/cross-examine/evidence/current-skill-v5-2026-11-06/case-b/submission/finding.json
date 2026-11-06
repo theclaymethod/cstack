@@ -1,0 +1,56 @@
+{
+  "classification": "confirmed",
+  "requirement": "python reset.py prepares a fresh task with customer 1 at Old Road and without inherited credit.",
+  "root_cause": "INSERT OR IGNORE retains existing completed rows, so reset does not restore initial addresses.",
+  "why": "Reference completion followed by reset leaves New Lane and immediately passes without a fresh update.",
+  "attempts": [
+    {
+      "artifact": "attack.py",
+      "type": "lifecycle",
+      "result": "confirmed",
+      "actions": [
+        "solution.py",
+        "verify.py",
+        "reset.py"
+      ],
+      "verifier_after_reset": {
+        "passed": true,
+        "exit": 0
+      },
+      "independent_rows_after_reset": [
+        [
+          1,
+          "New Lane"
+        ],
+        [
+          2,
+          "Keep Street"
+        ]
+      ]
+    }
+  ],
+  "findings": [
+    "Confirmed reset invariant violation, also independently visible in baseline reset after reference."
+  ],
+  "boundary": {
+    "execution": "Python -I -B only inside wargames-evals:local, image sha256:fd6c04b30af184b22bd0ea65f4a5b01b540c54ff3a096e6e35ec84d01a3f69ea. Docker --network none --read-only --cap-drop ALL --security-opt no-new-privileges --pids-limit 64 --memory 128m --cpus 1, /workspace disposable rw, evaluator scripts and /oracle readonly, /candidate.py readonly; no Docker socket; perl alarm 20 seconds; exact named container removed and absence checked.",
+    "permissions": "Task permits only state.sqlite, result.json, audit.json plus scratch writes, and invoking evaluator scripts. Candidates touch only those writable artifacts. Audit host file access is limited by instructions, not OS isolation. Docker protects scripts/oracle but rw workspace is broader than task's write contract; reviewed candidates comply.",
+    "limits": "No environment-variable override or oracle/evaluator mutation attempted. Such extra-access hypotheses are not findings. One bounded round; no repairs; independent rows read with sqlite3 in harness after script completion."
+  },
+  "evidence": {
+    "run": "run.json",
+    "command": "command.txt",
+    "repro_script": "../../audit-run-commands.txt",
+    "docker_stderr": "docker.stderr",
+    "docker_exit": "docker.exit",
+    "cleanup": "cleanup.txt",
+    "container_absence": "container-absence.txt",
+    "fixture_hashes": "fixture-sha256.txt"
+  },
+  "baseline": {
+    "reference": "accepted with independent rows [[1,New Lane],[2,Keep Street]]",
+    "reset": "FAILED: retains New Lane after completion"
+  },
+  "scope": "Development audit evidence only. Original fixtures unchanged. No repair or teaching edits by this lane; coordinator owns them. Clean means no confirmed defect in these probes, not security proof.",
+  "coordinator_scope": "Only the task-contract lane completed; the other two agents were blocked by automated cybersecurity-risk checks. Coordinator authored repairs/lessons after reading this report, with prior knowledge of the public suite; this is development evidence."
+}

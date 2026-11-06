@@ -1,0 +1,79 @@
+[
+  {
+    "name": "seed-deletion",
+    "case": "distill-merge",
+    "original": {
+      "artifact_checks_passed": true,
+      "exit_code": 0,
+      "grader_version": 1,
+      "failed_checks": []
+    },
+    "repaired": {
+      "artifact_checks_passed": false,
+      "exit_code": 1,
+      "grader_version": 2,
+      "failed_checks": [
+        "checkpoint_0_append_only"
+      ]
+    }
+  },
+  {
+    "name": "missing-rubric-identity",
+    "case": "live-uncertainty",
+    "original": {
+      "artifact_checks_passed": true,
+      "exit_code": 0,
+      "grader_version": 1,
+      "failed_checks": []
+    },
+    "repaired": {
+      "artifact_checks_passed": false,
+      "exit_code": 1,
+      "grader_version": 2,
+      "failed_checks": [
+        "checkpoint_2_rubric_sources",
+        "checkpoint_3_rubric_sources"
+      ]
+    }
+  },
+  {
+    "name": "provisional-summary",
+    "case": "partial-context",
+    "original": {
+      "artifact_checks_passed": false,
+      "exit_code": 1,
+      "grader_version": 1,
+      "failed_checks": [
+        "checkpoint_0_provenance_and_lineage",
+        "checkpoint_0_expected_observations"
+      ]
+    },
+    "repaired": {
+      "artifact_checks_passed": true,
+      "exit_code": 0,
+      "grader_version": 2,
+      "failed_checks": []
+    }
+  },
+  {
+    "name": "correcting-turn-source",
+    "case": "live-correction",
+    "original": {
+      "artifact_checks_passed": false,
+      "exit_code": 1,
+      "grader_version": 1,
+      "failed_checks": [
+        "checkpoint_3_expected_observations",
+        "checkpoint_4_expected_observations",
+        "checkpoint_5_expected_observations",
+        "checkpoint_6_expected_observations"
+      ]
+    },
+    "repaired": {
+      "artifact_checks_passed": true,
+      "exit_code": 0,
+      "grader_version": 2,
+      "failed_checks": []
+    }
+  }
+]

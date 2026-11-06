@@ -1,0 +1,13 @@
+{
+  "v2": {
+    "passed": false,
+    "failed": [
+      "checkpoint_2_rubric_sources",
+      "checkpoint_3_rubric_sources"
+    ]
+  },
+  "v3": {
+    "passed": true,
+    "failed": []
+  }
+}

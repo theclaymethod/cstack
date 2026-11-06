@@ -1,0 +1,7 @@
+{
+  "classification": "confirmed",
+  "requirement": "Update database customer 1 and preserve customer 2.",
+  "root_cause": "Verifier trusts writable result.json.",
+  "why": "Writable claims do not establish outcome.",
+  "evidence": "Replay attack.py against pristine original."
+}

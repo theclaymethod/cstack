@@ -1,0 +1,7 @@
+{
+  "classification": "confirmed",
+  "requirement": "Update the address.",
+  "root_cause": "Something is wrong.",
+  "why": "It affects scoring.",
+  "evidence": "No executed candidate reproduction supplied."
+}

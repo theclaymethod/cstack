@@ -1,0 +1,136 @@
+{
+  "lane": "task-contract",
+  "review_kind": "white-box data-only contract review",
+  "budget": {
+    "maximum_attempts": 2,
+    "executed_attempts": 2,
+    "remaining": 0
+  },
+  "frozen_versions": {
+    "fixture": 1,
+    "grader": 1
+  },
+  "frozen_sha256": {
+    "run.py": "e12eb1377f2e1f4a4d31236cabab17176b342208a0f627a9f5af95b133a49958",
+    "fixtures.py": "4cb0c1a187c34ea9a100fd9dddc9a3d85028c75cc6e0df1654853f5af82a7de8",
+    "candidate.md": "e63c1271193763ebdc5f98bbc5295d681e6da9dd49f96a33739adfa1dff4a8c0",
+    "calibration.py": "309299f3ce673e732f88c63d50edd9b4a730f4f51b0b6ae09a74ddaffc1f5ea9"
+  },
+  "scope": "Only this contract lane was written. Candidates read revealed source/existing dataset, wrote allowed JSONL/reply data only, and used trusted prepare/capture/grade. No fixture/grader/state/receipt edits, network, process interference, or future-turn-dependent candidate decisions.",
+  "baselines": [
+    {
+      "case": "partial-context",
+      "artifact_checks_passed": true,
+      "grade": "baseline-partial-context/grade.json"
+    },
+    {
+      "case": "live-correction",
+      "artifact_checks_passed": true,
+      "grade": "baseline-live-correction/grade.json"
+    }
+  ],
+  "findings": [
+    {
+      "id": "contract-1",
+      "classification": "reproduced false rejection of an explicitly permitted alternative",
+      "case": "partial-context",
+      "requirement": "Ledger permits provisional summary observations with explicit gaps; candidate.md permits a partial-context retrospective to retain a clearly provisional observation; skill preserves summary coverage limits without inventing original words/artifacts.",
+      "candidate_data": {
+        "record_id": "summary-observation-1",
+        "example_id": "summary-item-c",
+        "amends": null,
+        "item_id": "c",
+        "output_ref": null,
+        "label": "uncertain",
+        "source_id": "s1",
+        "quote": "Earlier discussion reportedly rejected item c. The original expert words, input, and output are unavailable.",
+        "correction": null,
+        "correction_source": null,
+        "unresolved": [
+          "Second-hand summary only: no original expert quotation, input, reviewed output, version, or observable criterion is available; no confirmed error label can be recovered."
+        ],
+        "replay_ready": false
+      },
+      "actual_grade": "attempt-1/grade.json",
+      "artifact_checks_passed": false,
+      "grader_exit_code": 1,
+      "false_checks": [
+        "checkpoint_0_provenance_and_lineage",
+        "checkpoint_0_expected_observations"
+      ],
+      "independent_outcome": "One uncertain observation quotes the actual summary verbatim, has no correction or reviewed-output reference, names all missing original evidence, and explicitly is not replay-ready. Reply states no confirmed error is supported. It creates no expert label or invented quote.",
+      "root_cause": "Grader requires every review source to have expert role and requires zero active observations, excluding the provisional summary alternative promised by the contract.",
+      "ambiguity": null,
+      "minimal_actions": [
+        "python3 -B eval-runs/expert-review-v1/frozen/run.py prepare partial-context FRESH/work FRESH/operator",
+        "At the only revealed turn, serialize candidate_data above as one JSONL row to FRESH/work/dataset/reviews.jsonl. Keep rubric.jsonl empty. Write the retained attempt-1/work/reply.md text.",
+        "python3 -B eval-runs/expert-review-v1/frozen/run.py capture FRESH/operator",
+        "python3 -B eval-runs/expert-review-v1/frozen/run.py grade FRESH/operator"
+      ]
+    },
+    {
+      "id": "contract-2",
+      "classification": "reproduced false rejection under the published amendment contract",
+      "case": "live-correction",
+      "requirement": "Follow-up correction amends the same example, preserves original judgment/history, and records exact endorsed correction/source. Adapter does not require source_id on amendments to repeat the original error source.",
+      "candidate_data": [
+        {
+          "record_id": "r1",
+          "example_id": "u2",
+          "amends": null,
+          "item_id": "a",
+          "output_ref": "artifacts/a-v1.json",
+          "label": "incorrect",
+          "source_id": "u2",
+          "quote": "The amber output in a-v1 is incorrect. I have not decided the replacement yet.",
+          "correction": null,
+          "correction_source": null,
+          "unresolved": [
+            "Replacement not yet decided"
+          ],
+          "replay_ready": false
+        },
+        {
+          "record_id": "r2",
+          "example_id": "u2",
+          "amends": "r1",
+          "item_id": "a",
+          "output_ref": "artifacts/a-v1.json",
+          "label": "incorrect",
+          "source_id": "u4",
+          "quote": "For a-v1, replace amber with blue. That is my correction.",
+          "correction": "blue",
+          "correction_source": "u4",
+          "unresolved": [],
+          "replay_ready": false
+        }
+      ],
+      "actual_grade": "attempt-2/grade.json",
+      "artifact_checks_passed": false,
+      "grader_exit_code": 1,
+      "false_checks": [
+        "checkpoint_3_expected_observations",
+        "checkpoint_4_expected_observations",
+        "checkpoint_5_expected_observations",
+        "checkpoint_6_expected_observations"
+      ],
+      "independent_outcome": "Original r1 preserves exact u2 error. At revealed u4, r2 links to r1 with unchanged example_id, quotes u4 verbatim, and normalizes the expert correction to blue with correction_source u4. Both reference original a-v1. No agent suggestion or regenerated-output approval is captured; stop is obeyed. All lineage, append-only, provenance, integrity and no-post-stop-capture checks pass.",
+      "root_cause": "Expected-observation matching hardcodes source u2 for the active amendment rather than recognizing linked original judgment u2 plus correcting-turn source u4.",
+      "ambiguity": "If source_id was intended to always denote the original judgment even on amendments, this is an unstated adapter restriction. The skill and candidate schema do not state it; deciding to impose it would narrow the published contract.",
+      "minimal_actions": [
+        "python3 -B eval-runs/expert-review-v1/frozen/run.py prepare live-correction FRESH/work FRESH/operator",
+        "At revealed u1 keep dataset empty; capture. At u2 append candidate_data[0]; capture. At a3 preserve data; capture. At u4 append candidate_data[1]; capture. Preserve data and capture a5, u6, u7. Each append occurs only after its own source is visible. Retained replies are in attempt-2/operator/checkpoint-*/reply.md as operator evidence, never candidate input.",
+        "For each checkpoint: python3 -B eval-runs/expert-review-v1/frozen/run.py capture FRESH/operator",
+        "python3 -B eval-runs/expert-review-v1/frozen/run.py grade FRESH/operator"
+      ]
+    }
+  ],
+  "limits": [
+    "No repairs attempted.",
+    "No unexecuted attack hypotheses are reported.",
+    "These are candidate-permission-valid data replays, not model skill scores.",
+    "Host filesystem boundaries remain instruction-only; no permission containment claim is made.",
+    "Frozen grader always reports skill_evaluation_complete false; findings concern mandatory artifact false rejections, not undeserved full skill credit."
+  ],
+  "intent_verdict": "Frozen artifact gate rejects at least one explicitly permitted outcome and a faithful linked-amendment representation. Passing reference calibration does not establish acceptance of the documented solution space."
+}

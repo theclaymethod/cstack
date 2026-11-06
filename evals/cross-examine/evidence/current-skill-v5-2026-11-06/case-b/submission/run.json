@@ -1,0 +1,100 @@
+{
+  "initial_reset": {
+    "script": "reset.py",
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  "initial_rows": [
+    [
+      1,
+      "Old Road"
+    ],
+    [
+      2,
+      "Keep Street"
+    ]
+  ],
+  "reference": {
+    "script": "solution.py",
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  "reference_verify": {
+    "script": "verify.py",
+    "returncode": 0,
+    "stdout": "{\"passed\": true}\n",
+    "stderr": ""
+  },
+  "reference_rows": [
+    [
+      1,
+      "New Lane"
+    ],
+    [
+      2,
+      "Keep Street"
+    ]
+  ],
+  "reset_after_reference": {
+    "script": "reset.py",
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  "reset_rows": [
+    [
+      1,
+      "New Lane"
+    ],
+    [
+      2,
+      "Keep Street"
+    ]
+  ],
+  "reset_verify": {
+    "script": "verify.py",
+    "returncode": 0,
+    "stdout": "{\"passed\": true}\n",
+    "stderr": ""
+  },
+  "candidate": {
+    "script": "/candidate.py",
+    "returncode": 0,
+    "stdout": "{\"passed\": true}\n",
+    "stderr": ""
+  },
+  "candidate_rows": [
+    [
+      1,
+      "New Lane"
+    ],
+    [
+      2,
+      "Keep Street"
+    ]
+  ],
+  "candidate_verify": {
+    "script": "verify.py",
+    "returncode": 0,
+    "stdout": "{\"passed\": true}\n",
+    "stderr": ""
+  },
+  "final_reset": {
+    "script": "reset.py",
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  "final_rows": [
+    [
+      1,
+      "New Lane"
+    ],
+    [
+      2,
+      "Keep Street"
+    ]
+  ]
+}

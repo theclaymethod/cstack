@@ -1,0 +1,143 @@
+{
+  "execution_boundary": {
+    "executor": "docker",
+    "isolation": "container",
+    "permissions_enforced": true
+  },
+  "preflight": {
+    "status": "passed",
+    "probes": {
+      "bind-mount-read-write": {
+        "code": 0,
+        "stdout": "",
+        "stderr": "",
+        "cleanup": {
+          "container": "cross-examine-5235f67fdd7748ef9669ebbd305389ed",
+          "remove": {
+            "code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          "inspect": {
+            "code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          "status": "absent"
+        }
+      },
+      "sqlite-seed-read": {
+        "container": {
+          "code": 0,
+          "stdout": "[[1, \"Old Road\"], [2, \"Keep Street\"]]\n",
+          "stderr": "",
+          "cleanup": {
+            "container": "cross-examine-c72b4461e6ef44c9b9f0cf1f82272ec0",
+            "remove": {
+              "code": 0,
+              "stdout": "",
+              "stderr": ""
+            },
+            "inspect": {
+              "code": 0,
+              "stdout": "",
+              "stderr": ""
+            },
+            "status": "absent"
+          }
+        },
+        "host_state": [
+          [
+            1,
+            "Old Road"
+          ],
+          [
+            2,
+            "Keep Street"
+          ]
+        ]
+      },
+      "sqlite-reseed-read": {
+        "container": {
+          "code": 0,
+          "stdout": "[[1, \"New Lane\"], [2, \"Keep Street\"]]\n",
+          "stderr": "",
+          "cleanup": {
+            "container": "cross-examine-28ef8a8de3ef47ac9731508794f572c6",
+            "remove": {
+              "code": 0,
+              "stdout": "",
+              "stderr": ""
+            },
+            "inspect": {
+              "code": 0,
+              "stdout": "",
+              "stderr": ""
+            },
+            "status": "absent"
+          }
+        },
+        "host_state": [
+          [
+            1,
+            "New Lane"
+          ],
+          [
+            2,
+            "Keep Street"
+          ]
+        ]
+      },
+      "reset": {
+        "code": 0,
+        "stdout": "",
+        "stderr": "",
+        "cleanup": {
+          "container": "cross-examine-6469ab14cd26440385b142375d2ef7e7",
+          "remove": {
+            "code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          "inspect": {
+            "code": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          "status": "absent"
+        }
+      },
+      "sqlite-reset-read": {
+        "container": {
+          "code": 0,
+          "stdout": "[[1, \"Old Road\"], [2, \"Keep Street\"]]\n",
+          "stderr": "",
+          "cleanup": {
+            "container": "cross-examine-1f8df40eb60945639d1c6f3c0ce7673a",
+            "remove": {
+              "code": 0,
+              "stdout": "",
+              "stderr": ""
+            },
+            "inspect": {
+              "code": 0,
+              "stdout": "",
+              "stderr": ""
+            },
+            "status": "absent"
+          }
+        },
+        "host_state": [
+          [
+            1,
+            "Old Road"
+          ],
+          [
+            2,
+            "Keep Street"
+          ]
+        ]
+      }
+    }
+  }
+}

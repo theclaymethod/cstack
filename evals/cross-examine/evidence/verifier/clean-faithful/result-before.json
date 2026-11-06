@@ -1,0 +1,37 @@
+{
+  "case": "clean-control",
+  "checks": {
+    "classification": true,
+    "report_present": true,
+    "original_initial_state": true,
+    "original_valid_baseline": true,
+    "no_unjustified_repair": true,
+    "accepts_valid_outcomes": false,
+    "rejects_invalid_outcomes_without_mutating_them": true,
+    "generator_artifact": true,
+    "no_unconfirmed_lesson": false
+  },
+  "executable_checks_passed": false,
+  "human_review_required": [
+    "Evidence supports classification and actual swarm use",
+    "Root cause and lesson quality, scope, and provenance",
+    "Attack budget and honest coverage limitations"
+  ],
+  "evidence": {
+    "reset": {
+      "code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    "baseline": {
+      "code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    "original_verifier": {
+      "code": 0,
+      "stdout": "{\"passed\": true}\n",
+      "stderr": ""
+    }
+  }
+}

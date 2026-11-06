@@ -1,0 +1,6 @@
+3b1f3c28cc999e05a2583bb4142e62f00a6b5a470eda984bc6682a5a1bd8ec0b  eval-runs/current-skill-v5/contract/case-a/REQUEST.md
+5239f1da5b160ee06369a765e5b4c851c7671355dc13fb4028508665d60379cd  eval-runs/current-skill-v5/contract/case-a/workspace/TASK.md
+fd54b77f2ca6f0431a2e03d0e6b6d96ff441e9e4771fb53c343421c497dc3d74  eval-runs/current-skill-v5/contract/case-a/workspace/reset.py
+cd2e01ec3d4c187352231d335c68ad5e7c7e0c8a6cac39ad66511c2ec0189c2a  eval-runs/current-skill-v5/contract/case-a/workspace/verify.py
+120d78bf6c03feef29bb582c310de9f70c3eec5fb9c6f6cc78eda4205d582a4a  eval-runs/current-skill-v5/contract/case-a/workspace/solution.py
+09cee38fde6d28c68426bfdec4ed9ce9ff2be110a718beb5a5e8915a87f9c3e4  eval-runs/current-skill-v5/contract/case-a/workspace/generator/SKILL.md

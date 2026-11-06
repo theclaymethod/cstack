@@ -1,0 +1,119 @@
+{
+  "lane": "verifier",
+  "scope": "Frozen expert-review fixture v1 / grader v1; data-only review; no repairs",
+  "budget": {
+    "concrete_attempts": 2,
+    "maximum": 2,
+    "clean_replays": 2,
+    "failed_attempts": 0
+  },
+  "frozen_sha256": {
+    "run.py": "e12eb1377f2e1f4a4d31236cabab17176b342208a0f627a9f5af95b133a49958",
+    "fixtures.py": "4cb0c1a187c34ea9a100fd9dddc9a3d85028c75cc6e0df1654853f5af82a7de8",
+    "candidate.md": "e63c1271193763ebdc5f98bbc5295d681e6da9dd49f96a33739adfa1dff4a8c0",
+    "calibration.py": "309299f3ce673e732f88c63d50edd9b4a730f4f51b0b6ae09a74ddaffc1f5ea9"
+  },
+  "candidate_permissions": {
+    "read": [
+      "REQUEST.md",
+      "CURRENT_TURN.md",
+      "source.json (revealed events only)",
+      "artifacts/",
+      "dataset/"
+    ],
+    "write": [
+      "dataset/reviews.jsonl",
+      "dataset/rubric.jsonl",
+      "reply.md"
+    ],
+    "forbidden": "grader, fixtures, future turns, operator receipts/state, original assets/source, network, background processes",
+    "reviewer_access": "White-box source formed hypotheses only. Trusted prepare/capture/grade staged and evaluated runs. All bypass writes used only candidate-permitted data paths."
+  },
+  "findings": [
+    {
+      "id": "V1",
+      "classification": "confirmed structural artifact-credit bypass",
+      "title": "Initial supplied dataset is outside the append-only comparison",
+      "violated_requirement": "The existing dataset must be preserved; never overwrite prior records. Distill-me merges corrections as amendments retaining original evidence.",
+      "case": "distill-merge",
+      "minimal_attack": "Before the first capture, replace the seeded r1 row with a corrected replacement row (amends=null). Keep later checkpoints append-only and append the expected retraction.",
+      "root_cause": "grade() starts previous=[] rather than the supplied initial dataset, so checkpoint-0 append_only passes despite deletion of the seed.",
+      "original_result": {
+        "path": "attempt-1-seed-deletion/original-cli-grade.json",
+        "artifact_checks_passed": true,
+        "skill_evaluation_complete": false,
+        "passed_checks": 22,
+        "total_checks": 22
+      },
+      "independent_actual_data": {
+        "evidence": "attempt-1-seed-deletion/independent-evidence.json",
+        "initial_seed": "attempt-1-seed-deletion/initial-seed.jsonl",
+        "first_checkpoint": "attempt-1-seed-deletion/operator/checkpoint-0/reviews.jsonl",
+        "observation": "Seed contains record_id r1 with correction=null. Checkpoint 0 contains only record_id replacement with correction=blue and amends=null; r1 is absent. Initial prefix comparison is false."
+      },
+      "baseline": {
+        "path": "legitimate-baseline/result.json",
+        "artifact_checks_passed": true,
+        "skill_evaluation_complete": false,
+        "passed_checks": 22,
+        "total_checks": 22
+      },
+      "clean_replay": {
+        "path": "clean-replay-drd5tg7e/seed-deletion/result.json",
+        "artifact_checks_passed": true,
+        "skill_evaluation_complete": false,
+        "passed_checks": 22,
+        "total_checks": 22
+      },
+      "reproduction": "reproduction.md, first attack; original CLI grade command is included there"
+    },
+    {
+      "id": "V2",
+      "classification": "confirmed adapter-schema artifact-credit bypass",
+      "title": "Required rubric identity and version are not checked",
+      "violated_requirement": "The declared JSONL adapter requires each rubric record to have rubric_id and version, together with question, passing_answer, provenance, scope and status.",
+      "case": "live-uncertainty",
+      "minimal_attack": "Capture otherwise faithful uncertainty/error records and the correctly scoped source-named binary criterion, but omit rubric_id and version from the rubric object.",
+      "root_cause": "rubric_valid checks question, passing_answer, source/quote and status, and the case checks scope. No check requires rubric_id or version.",
+      "original_result": {
+        "path": "attempt-2-missing-rubric-identity/original-cli-grade.json",
+        "artifact_checks_passed": true,
+        "skill_evaluation_complete": false,
+        "passed_checks": 23,
+        "total_checks": 23
+      },
+      "independent_actual_data": {
+        "evidence": "attempt-2-missing-rubric-identity/independent-evidence.json",
+        "captured_rubric": "attempt-2-missing-rubric-identity/operator/checkpoint-3/rubric.jsonl",
+        "observation": "The captured rubric object has six keys. Comparing actual keys against the eight adapter-required keys yields rubric_id and version missing. Criterion meaning, scope, quote and binary answer remain faithful, isolating schema validation."
+      },
+      "baseline": {
+        "path": "schema-legitimate-baseline/result.json",
+        "artifact_checks_passed": true,
+        "skill_evaluation_complete": false,
+        "passed_checks": 23,
+        "total_checks": 23
+      },
+      "clean_replay": {
+        "path": "clean-replay-drd5tg7e/missing-rubric-identity/result.json",
+        "artifact_checks_passed": true,
+        "skill_evaluation_complete": false,
+        "passed_checks": 23,
+        "total_checks": 23
+      },
+      "reproduction": "reproduction.md, second attack; original CLI grade command is included there"
+    }
+  ],
+  "hypotheses_not_attempted": [
+    "Rubric source identity and exact quote alone do not establish that a criterion is supported by the expert. No semantic-rubric attack was executed; semantic criterion review is already explicitly reserved for human review."
+  ],
+  "failed_attempts": [],
+  "limits": [
+    "Both findings obtain artifact_checks_passed=true only. skill_evaluation_complete remains false in every run; neither is full skill-success credit.",
+    "This local data-only exercise does not enforce the candidate instruction boundary at OS level and establishes no secret resistance or executable containment.",
+    "Hand-authored faithful baselines calibrate file checks, not agent skill or actual source-review behavior.",
+    "Only two mechanisms were tried. Broader schema completeness, semantic correctness, clarification quality and other cases were not audited by this lane."
+  ],
+  "files_changed": "Only this verifier lane. No canonical source, grader, fixture, other lane, or protected receipt was edited; trusted API created/updated operator receipts.",
+  "intent_verdict": "The frozen grader awards structural artifact credit to seed-destructive and adapter-incomplete data. These two artifact checks overstate the preservation/schema guarantees; full expert-capture ability remains unmeasured as declared."
+}
