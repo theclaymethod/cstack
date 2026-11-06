@@ -1,61 +1,54 @@
 ---
 name: create-eval
-description: Create repeatable evaluations from expert findings, model traces, or a new feature's task contract. Use when bootstrapping traces before production, reviewing early runs, authoring cases and binary rubrics, or calibrating graders.
+description: Create repeatable evals from expert findings, model traces, or a new feature's task contract. Use for early trace collection, case and rubric authoring, or grader calibration.
 ---
 
 # Create Eval
 
-Turn a concrete failure or capability into a repeatable decision. Start with the project's existing eval format and runner. A small local dataset and an inspectable grader are sufficient; a new service, database, container, or model-provider setup is conditional on the task.
+Build an eval that measures a stated capability and supports a concrete decision. Reuse the project's format, runner, and tools. Local files and an inspectable grader are enough unless the task needs more.
 
-Reuse established eval skills rather than rebuilding their trace-analysis workflows. Read [existing eval skills](references/ecosystem.md) when choosing trace review, synthetic input generation, failure discovery, or evaluator calibration. If available, load the matching skill; otherwise use the linked upstream guidance and this pack's local fallback. These skills are references, not bundled dependencies.
+For trace analysis, synthetic inputs, failure discovery, or calibration, consult [existing eval skills](references/ecosystem.md). Use the relevant skill when available or its upstream guidance. These are optional references, not bundled dependencies.
 
-## Establish what the eval decides
+## Define the decision
 
-Recover the intended capability, downstream decision, source of expert judgments, allowed alternatives, and observable success from the request and project. Ask only for information that changes the task or pass condition and cannot be found locally. Continue independent work while a material ambiguity is unresolved; keep the affected case provisional.
+Establish the intended capability, observable success, expert authority, and acceptable alternatives. Identify what each case judges, such as an assertion, whole output, or environment outcome. One wrong assertion does not label its neighbors. Keep factual correctness, preferences, process requirements, and missing evidence distinct.
 
-State the unit being judged: a specific assertion, output, or environment outcome. Two errors in one output are not necessarily one example. A negative judgment about one assertion does not establish that every neighboring assertion is wrong. Distinguish factual correctness, preferences, process requirements, and missing evidence.
+Use deterministic checks for directly observable properties. Use independent binary questions for open-ended criteria, with passing answers and applicability. Stateful tasks need actual execution, reset, and resulting-state checks, including what must remain unchanged. Stored text alone does not test execution.
 
-Choose the appropriate route:
+Resolve material ambiguity from local evidence first. Ask only for missing judgments that change the task or pass condition. Keep affected cases provisional while continuing independent work.
 
-- A directly checkable property gets a deterministic predicate, including valid alternative representations where the contract permits them.
-- Open-ended quality gets separate binary questions with explicit applicability, passing answers, and expert-supported boundaries.
-- A stateful agent task gets a resettable environment and checks on the actual state change, including preservation requirements. Stored text alone does not exercise the agent's execution.
-- With no relevant traces, including a new feature in an established product, follow [early development](references/early-development.md): plan realistic inputs, run the actual feature, inspect traces with the expert, and promote supported observations into evals. Existing production traffic may not exercise the new capability. Explicit invariants can support initial checks before observed failures; hypotheses remain unobserved.
+## Gather evidence and make it reviewable
 
-## Recover evidence before inventing cases
+Inspect original inputs, outputs, and expert statements. Resolve amendments, retractions, and rubric versions before importing captures through [from findings to cases](references/from-findings.md). Preserve the reviewed output rather than replacing it with a repaired result. Export privacy and meaning reviews do not establish expert label authority or judge calibration.
 
-Read the relevant outputs, input context, expert statements, and existing cases. For Expert Mode or Distill Me data, resolve linked amendments, corrections, rubric versions, and retractions first. Preserve the original reviewed output rather than substituting a repaired result.
+For a new product or feature without relevant traces, follow [early development](references/early-development.md). Run realistic inputs through the actual feature and review the traces with the expert. Explicit task invariants can support initial checks. Keep hypothetical failures, synthetic examples, and mocked outputs labeled as such. Missing execution setup remains unrun.
 
-Put a review surface in place before generating a large batch. Reuse the project's trace viewer, use `build-review-interface` for a domain-specific interface, or launch the bundled [local trace review tool](references/trace-review.md) for a small JSONL batch. Inspect outputs, tool interactions, retrieved evidence, and relevant resulting state—not just a final score. Free-text discovery notes need not start with a predefined failure taxonomy.
+Provide a viewer before producing a large batch. Reuse the project's viewer, `build-review-interface`, or the bundled [local trace review tool](references/trace-review.md). Review outputs, tool interactions, retrieved evidence, and resulting state. Let observed failures inform the taxonomy; keep hypotheses separate.
 
-Read [from findings to cases](references/from-findings.md) when importing captured records or an export bundle. The export's privacy review and eval-meaning review are separate from expert label authority and judge calibration. A redacted projection needs enough context to preserve the actual failure.
+Include legitimate passes and realistic boundary failures. Agent agreement does not create expert gold. A supported negative can be useful without a replacement answer if its rejection criterion is observable. Keep unreplayable annotations in an incomplete queue, outside scored denominators, and report exclusions.
 
-Group demonstrated errors into a compact failure taxonomy with source examples. Keep hypotheses separate. Include legitimate should-pass controls and realistic near-boundary negatives; a judge that fails everything must not look successful. Synthetic cases remain synthetic until assessed; agent agreement cannot manufacture expert gold.
+## Package the cases
 
-Preserve a supported negative example even without a replacement answer when its scoped rejection criterion is observable. Keep missing input, unendorsed corrections, unresolved criteria, and source gaps explicit. Useful annotations that cannot yet be replayed belong in the incomplete queue, outside scored denominators with their exclusion counts reported.
+Use project conventions or [the local package contract](../run-eval/references/package.md). Its fallback is `rubric.md`, `cases.jsonl`, and `config.json`. Keep data and run evidence outside skill installations.
 
-## Build the smallest useful package
+Retain replay inputs, the reviewed output or execution entrypoint, applicable checks, source authority, construction family, and intended use. Write one binary question per independent requirement. Preserve supported alternatives, conditions, and passing direction. Insufficient evidence stays unknown; execution errors are distinct from domain failures.
 
-Reuse project conventions. If none exist, follow [the local package contract](../run-eval/references/package.md): `rubric.md`, `cases.jsonl`, and `config.json`. Store outputs and run evidence separately from skill installations. JSON avoids adding a YAML dependency; use an existing YAML config when the project already supports it.
+Keep expert labels and rationales separate from judge inputs. Build blind payloads with an allowlist that excludes label-bearing names, source notes, and prior verdicts too. Reference answers belong in the payload only when the grading task legitimately uses them.
 
-For each case, retain its input/context, reviewed output or execution entrypoint, applicable checks, source authority, construction family, and intended use. Keep expected task content separate from expert PASS/FAIL calibration labels. Label-bearing IDs, source notes, old verdicts, and gold rationales stay outside the blind judge payload. Approved reference answers may be supplied when the production grading task legitimately needs them.
+Split by source or construction family. Keep development, calibration, final test, regression, and frontier roles explicit. Exposed cases remain development evidence regardless of renaming. Open final-test semantics only on explicit instruction.
 
-Split by source record or construction family, not by cosmetic variants. Keep development, calibration, final test, regression, and frontier roles explicit. Cases inspected while fitting the rubric are development evidence; a case does not become unseen again by renaming its partition. Do not inspect final-test semantics while authoring unless the user requests opening that set.
+## Check the grader
 
-Write one question per independent requirement. Record applicability and the passing direction instead of assuming every yes is good. Apply only criteria supported by the task or expert. Use a typed unknown or execution error when evidence is insufficient; neither silently becomes a correct answer or a domain failure.
+Exercise clear passes, failures, and boundary cases through the real grading path. A grader that rejects everything must fail legitimate controls. Use existing checks or direct replays, respecting project rules on new test files. Report what those controls establish without generalizing beyond them.
 
-## Validate the grader and its intent
+For semantic judges, read [judge calibration](references/judges.md). Use separate expert-labeled development and calibration examples from both classes. Freeze the rubric, prompt, parser, model/configuration, runner version, sampling, and budget before comparison. Changes create a new revision; preserve earlier results.
 
-Exercise clear passes, clear failures, and relevant boundary cases through the real grading path. A passing reference and a deliberately wrong control provide different evidence. Run existing checks or direct local replays; respect project rules on creating new test files. A small control set establishes those observations, not general correctness.
+Use [Cross-Examine](../cross-examine/SKILL.md) when requested or when adversarial hardening is needed before a score drives decisions. Supply original intent, permitted shortcuts, access limits, the frozen grading path, and a bounded budget. Record untested risks honestly; reading a checklist is not an audit.
 
-For a semantic judge, use separate expert-labeled development and calibration examples from both classes. Read [judge calibration](references/judges.md) before fitting or reporting a judge. Freeze the rubric, judge identity, prompt, parser, harness version, sampling, and budget before interpreting a comparison. Treat changes as a new eval revision and preserve earlier results.
+Use [Run Eval](../run-eval/SKILL.md) when execution is requested and authorized. Compare meaningful baselines when available, with costs and trial conditions. Regression coverage and model discrimination are separate claims.
 
-Use [Cross-Examine](../cross-examine/SKILL.md) when adversarial hardening is requested or needed for a score that will drive decisions. Give it the intended capability, permitted shortcuts, access boundary, and frozen grading path. Keep any attack budget bounded. Its ledger should explain both reward-hacking flaws and valid solutions the grader rejects. In an ordinary drafting pass, record untested risks without claiming an adversarial audit occurred.
+## Hand off
 
-Run the resulting package through [Run Eval](../run-eval/SKILL.md) when execution is requested and within the authorized environment and budget. Contrast meaningful baselines when available, reporting cost and trial conditions. A saturated regression set can be useful; model discrimination is a separate claim.
+Report the package path, measured capability, evidence sources, replayable cases, unresolved cases, and actual validation limits. Separate grader calibration from product performance and development results from held-out evidence. A small perfect run establishes no production-trust threshold.
 
-## Finish with a reviewable result
-
-Report the package path, measured capability, evidence sources, cases ready for replay, unresolved examples, actual validation, and limits. Distinguish grader calibration from product performance and development evidence from held-out evidence. Do not infer a release threshold or production-trust verdict from a small all-pass run.
-
-Creating an eval does not authorize product fixes, paid campaigns, opening a sealed test set, publication, or uploading expert data. For a requested shareable handoff, use [the export workflow](../expert-mode/references/export.md).
+Authoring adds no authority for product fixes, paid campaigns, opening reserved cases, publication, or uploads. For requested sharing, follow [the export workflow](../expert-mode/references/export.md).
