@@ -19,7 +19,7 @@ A disposable directory and subprocess timeout provide repeatability, not contain
 
 ## Establish the game
 
-Read the task, environment setup and reset path, verifier, scoring rules, and any eval-generator instructions. State the intended capability and observable success independently of the verifier's implementation. If the intended outcome is ambiguous, resolve that ambiguity before declaring a shortcut illegitimate.
+Start with the original eval row or task request and its source context, including the expert judgment when available. State the intended capability, scope, observable success, and acceptable alternatives before reading the environment, verifier, scoring rules, and generator instructions. Resolve ambiguity in the original intent before declaring a shortcut illegitimate.
 
 Record the intended capability, permitted shortcuts, and out-of-scope claims in the ledger before attacking. Freeze the eval/grader version and the inputs for scored runs. If candidate output motivates changes, preserve the old result and label that run as development evidence; use a fresh candidate on the frozen revision for a held-out claim.
 
@@ -28,6 +28,12 @@ Map what the evaluated agent can actually read, write, execute, and influence, i
 Use disposable copies or isolated runs. Establish that reset works and that a known legitimate outcome receives the expected result. Use an existing reference solution when available; report missing baseline evidence rather than inventing it. A broken baseline is itself a finding and limits conclusions from later attacks.
 
 Choose a bounded attack budget before dispatch, using the user's budget when provided; otherwise default to one parallel round with three attackers and at most two concrete attempts per attacker. Verification and reporting still follow when the attack budget ends. Scope all attempts to the authorized eval sandbox.
+
+## Keep intent review independent
+
+Use a fresh, non-forked agent that has not authored or repaired this eval, hill-climbed candidates or graders, or attempted reward hacking. This reviewer is separate from the attack lanes and the coordinator making those changes. Give it the original row and source context first, then the frozen eval and observed replay evidence, without the others' verdicts or optimization history.
+
+Have it check whether incorrect results can pass, legitimate alternatives face added requirements, or the eval has drifted from the original row's meaning and scope. Seek its verdict before accepting findings and after repairs. It adjudicates evidence; keep it out of candidate tuning and iterative reward feedback. If an independent agent is unavailable, record intent review as unreviewed while continuing other authorized work.
 
 ## Dispatch the adversaries
 
@@ -56,7 +62,7 @@ Require each attacker to return:
 
 Replay candidate findings from a clean reset against the original eval. Preserve the relevant eval/verifier version and exploit artifact. Confirm the result through the actual scoring path; a locally forged success message alone is insufficient.
 
-Judge the candidate outcome against the task contract independently of the verifier. For environment failures, reproduce the broken invariant or legitimate outcome that was mismeasured. Distinguish:
+Have the independent intent reviewer judge the candidate outcome against the original row and task contract. For environment failures, reproduce the broken invariant or legitimate outcome that was mismeasured. Distinguish:
 
 - A confirmed scoring bypass or environment defect.
 - A specification ambiguity that needs an explicit contract decision.
@@ -64,7 +70,7 @@ Judge the candidate outcome against the task contract independently of the verif
 
 Merge duplicate findings by root cause. Explain the trust boundary or invalid assumption that made each confirmed flaw possible and what it does to score interpretation. A bounded search without findings establishes only what was attempted, not that the eval is secure.
 
-Audit the outer grader's intent too: can a candidate earn credit without supplying its own reproducer or promised learning artifact? Does a repair weaken the task or reject valid alternatives? Are seed labels overriding a genuine new defect? Distinguish artifact validation from discovery, swarm use, and learning; credit only what the evidence establishes. Route unforeseen confirmed findings to independent adjudication.
+Include the outer grader in that review: can a candidate earn credit without supplying its own reproducer or promised learning artifact? Does a repair weaken the task or reject valid alternatives? Are seed labels overriding a genuine new defect? Distinguish artifact validation from discovery, swarm use, and learning; credit only what the evidence establishes.
 
 ## Harden within scope
 
