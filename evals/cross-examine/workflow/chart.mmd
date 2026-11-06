@@ -1,0 +1,23 @@
+---
+title: "Cross-Examine: attack, defense, independent judgment"
+---
+stateDiagram-v2
+  s0: Anchor the original eval
+  s1: Attacker seeks a loophole
+  s2: Replay the attack
+  s3: Independent review of finding
+  s4: Defender proposes a repair
+  s5: Record evidence and lessons
+  s6: Report result and limits
+  s7: Replay exploit and valid alternatives
+  s8: Independent review of repair
+  [*] --> s0
+  s0 --> s1: Freeze intent, scope and access
+  s1 --> s2: Submit candidate and claim
+  s2 --> s3: Observe actual outcome and score
+  s3 --> s5: Save finding verdict and limits
+  s3 --> s4: Finding accepted [repair authorized]
+  s4 --> s7: Freeze proposed repair
+  s5 --> s6: Preserve history and bounded claims
+  s7 --> s8: Collect observed results
+  s8 --> s5: Record repair verdict and limits

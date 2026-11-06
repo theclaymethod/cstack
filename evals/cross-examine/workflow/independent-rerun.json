@@ -1,0 +1,58 @@
+{
+  "method": "Fresh non-forked review agent; original user instructions supplied before frozen artifacts; existing statechart runner rerun outside the repo",
+  "source_sha256": {
+    "CrossExamine.tla": "38232d77f8bf5b526b6dea4e27a3fa817b341d2196638ffca36a40eae3260f7c",
+    "CrossExamine.cfg": "702b0bdbbae5287376b07c49eb4275360abc65223188c5cf96012016b1843255",
+    "view.mjs": "c8337b2995fd930ab1523bed645eab227b7a8ef2e96f293bd0c748211d0d0b66"
+  },
+  "runs": [
+    {
+      "name": "main",
+      "distinct_states": 131,
+      "transitions": 151,
+      "broken_rules": []
+    },
+    {
+      "name": "self-review",
+      "distinct_states": 188,
+      "transitions": 220,
+      "broken_rules": [
+        "ReviewIsIndependent"
+      ]
+    },
+    {
+      "name": "trust-claims",
+      "distinct_states": 121,
+      "transitions": 137,
+      "broken_rules": [
+        "FindingNeedsReplay",
+        "RepairNeedsObservedRejection"
+      ]
+    },
+    {
+      "name": "reject-all",
+      "distinct_states": 115,
+      "transitions": 131,
+      "broken_rules": [
+        "ValidAlternativesRemain"
+      ]
+    },
+    {
+      "name": "exact-match",
+      "distinct_states": 115,
+      "transitions": 131,
+      "broken_rules": [
+        "ValidAlternativesRemain"
+      ]
+    },
+    {
+      "name": "rewrite-intent",
+      "distinct_states": 115,
+      "transitions": 131,
+      "broken_rules": [
+        "OriginalIntentPreserved"
+      ]
+    }
+  ],
+  "scope": "Independent finite-model rerun and read-only intent review, not live attacker/defender behavior"
+}

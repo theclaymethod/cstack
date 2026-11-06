@@ -5,7 +5,7 @@ description: Proactively red-team generated agent evaluations with a small adver
 
 # Cross-Examine
 
-Attack an evaluation before trusting its scores. Seek a concrete counterexample: an agent receives credit without achieving the intended outcome, or the environment prevents or mismeasures a legitimate solution. Feed confirmed design flaws back into the instructions that generate future evaluations.
+Pair an attacker seeking undeserved credit with a defender closing the gap, and let an independent reviewer judge both against the original eval's intent. Seek a concrete counterexample: an agent receives credit without achieving the intended outcome, or the environment prevents or mismeasures a legitimate solution. Feed confirmed design flaws back into the instructions that generate future evaluations.
 
 Before generating or reviewing an eval, read [confirmed design lessons](references/lessons.md) and apply those whose conditions match the task.
 
@@ -27,17 +27,17 @@ Map what the evaluated agent can actually read, write, execute, and influence, i
 
 Use disposable copies or isolated runs. Establish that reset works and that a known legitimate outcome receives the expected result. Use an existing reference solution when available; report missing baseline evidence rather than inventing it. A broken baseline is itself a finding and limits conclusions from later attacks.
 
-Choose a bounded attack budget before dispatch, using the user's budget when provided; otherwise default to one parallel round with three attackers and at most two concrete attempts per attacker. Verification and reporting still follow when the attack budget ends. Scope all attempts to the authorized eval sandbox.
+Choose a bounded attack and repair budget before dispatch, using the user's budget when provided. Start with an attacker, a defender, and a separate intent reviewer; add attackers when broader coverage warrants it. Verification and reporting still follow when the search budget ends. Scope all attempts to the authorized eval sandbox.
 
 ## Keep intent review independent
 
 Use a fresh, non-forked agent that has not authored or repaired this eval, hill-climbed candidates or graders, or attempted reward hacking. This reviewer is separate from the attack lanes and the coordinator making those changes. Give it the original row and source context first, then the frozen eval and observed replay evidence, without the others' verdicts or optimization history.
 
-Have it check whether incorrect results can pass, legitimate alternatives face added requirements, or the eval has drifted from the original row's meaning and scope. Seek its verdict before accepting findings and after repairs. It adjudicates evidence; keep it out of candidate tuning and iterative reward feedback. If an independent agent is unavailable, record intent review as unreviewed while continuing other authorized work.
+Have it check whether incorrect results can pass, legitimate alternatives face added requirements, or the eval has drifted from the original row's meaning and scope. Seek its verdict before accepting findings and after a proposed repair is frozen. It can give the defender actionable explanations at bounded checkpoints while staying outside implementation and repeated tuning against its scores. If an independent agent is unavailable, record intent review as unreviewed while continuing other authorized work.
 
 ## Dispatch the adversaries
 
-Launch a mini-swarm with separate ownership and environments. Three complementary lanes are a useful default; adapt them to the eval:
+Give the attacker its own scratch environment. These complementary angles guide coverage; they need not be separate agents:
 
 - **Verifier:** Obtain credit with a wrong or incomplete result. Probe what the verifier trusts: self-reported success, editable expected answers, forged artifacts, partial matches, empty cases, skipped checks, errors, and score aggregation.
 - **Environment:** Exploit lifecycle and isolation. Probe stale state, answer leakage, writable evaluator assets, process interference, reset failures, and contamination between runs.
@@ -45,9 +45,9 @@ Launch a mini-swarm with separate ownership and environments. Three complementar
 
 Each attacker receives the task, success contract, access boundary, runnable environment and verifier, budget, and this objective:
 
-> Find the cheapest reproducible way to earn credit without achieving the intended outcome, or demonstrate an environment/verifier defect that invalidates the evaluation. Produce the exploit and observed result. Attack the evaluation; repairing it is the coordinator's job.
+> Find the cheapest reproducible way to earn credit without achieving the intended outcome, or demonstrate an environment/verifier defect that invalidates the evaluation. Produce the exploit and observed result. The defender owns repairs; independent replay and intent review determine whether your finding holds.
 
-Keep their hypotheses independent during the first round. Give each agent its own scratch space and reset state; serialize runs if the infrastructure cannot isolate them. Attackers may alter only their assigned sandbox and return findings; the coordinator owns canonical eval and skill edits. If delegation is unavailable, run the lanes sequentially and disclose that limitation.
+With several attackers, keep their initial hypotheses independent and give each its own reset state; serialize runs if the infrastructure cannot isolate them. Attackers may alter only their assigned sandbox and return findings. The defender owns canonical eval edits and may be the coordinator, but must be separate from the attackers and intent reviewer. If delegation is unavailable, cover the attack angles sequentially and disclose the missing role separation.
 
 White-box inspection can expose hypotheses, but a valid exploit must execute with the evaluated agent's actual access. Mark attacks requiring extra access separately. Avoid counting an intended efficient solution as an exploit merely because it differs from a reference trajectory.
 
@@ -62,6 +62,8 @@ Require each attacker to return:
 
 Replay candidate findings from a clean reset against the original eval. Preserve the relevant eval/verifier version and exploit artifact. Confirm the result through the actual scoring path; a locally forged success message alone is insufficient.
 
+Keep the eval's score separate from the audit's acceptance decision. An attacker claiming a win, a defender reporting a fix, or a higher score is not enough: retain the independently observed task state and scoring result. Protect those audit receipts from both competitors. A bounded search with no confirmed flaw is a valid result.
+
 Have the independent intent reviewer judge the candidate outcome against the original row and task contract. For environment failures, reproduce the broken invariant or legitimate outcome that was mismeasured. Distinguish:
 
 - A confirmed scoring bypass or environment defect.
@@ -72,11 +74,11 @@ Merge duplicate findings by root cause. Explain the trust boundary or invalid as
 
 Include the outer grader in that review: can a candidate earn credit without supplying its own reproducer or promised learning artifact? Does a repair weaken the task or reject valid alternatives? Are seed labels overriding a genuine new defect? Distinguish artifact validation from discovery, swarm use, and learning; credit only what the evidence establishes.
 
-## Harden within scope
+## Defend without changing the target
 
-When eval changes are authorized, fix the faulty assumption at its source. Prefer checking independently observable outcomes, protecting evaluator-owned state, isolating runs, and restoring reliable reset behavior over blacklisting one exploit's spelling.
+When eval changes are authorized, have the defender fix the faulty assumption at its source. Preserve the original row and source judgment; changes to their meaning need an explicit contract decision. Prefer checking independently observable outcomes, protecting evaluator-owned state, isolating runs, and restoring reliable reset behavior over blacklisting one exploit's spelling.
 
-Replay the confirmed exploit after the fix: it should lose undeserved credit or the environment defect should disappear. Rerun the legitimate baseline and relevant existing checks to show that valid solutions still work. Respect the repository's rules for creating test files; direct replays and existing checks can provide evidence without adding new tests.
+Replay the confirmed exploit after the fix: it should lose undeserved credit or the environment defect should disappear. Rerun the legitimate baseline and relevant existing checks, including supported alternatives, then return the frozen repair and evidence to the independent reviewer. Accept a repair only when it addresses the flaw, preserves legitimate outcomes, and still measures the original intent. Rejecting everything, matching only one reference answer, or rewriting the target cannot establish that. Respect the repository's rules for creating test files; direct replays and existing checks can provide evidence without adding new tests.
 
 If the scope is review-only, deliver the reproducer and proposed correction without modifying the eval. Preserve unresolved findings when repairs or validation cannot be completed. Additional attack rounds require remaining budget or a newly agreed budget.
 

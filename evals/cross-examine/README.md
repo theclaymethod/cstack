@@ -4,6 +4,8 @@ This suite checks whether an audit can reproduce an evaluation defect, repair it
 
 The runnable checks grade submitted artifacts. A reviewer must also assess the audit reasoning and lesson quality. Passing the executable checks alone is not a complete skill-evaluation result.
 
+The current [workflow chart and bounded model checks](workflow/README.md) cover the separate attacker, defender, and intent-reviewer roles. They check the acceptance rules and deliberate guard-removal controls, not live-agent effectiveness. Historical runs below retain their original provenance and do not retroactively establish this role separation.
+
 Historical evidence preserves the original `wargames` names and settings. Replay a historical run from its recorded commit. The rename introduces grader version 6 and fixture version 4; current commands use the names below.
 
 ## Setup and calibration

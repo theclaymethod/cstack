@@ -1,0 +1,167 @@
+{
+  "kind": "bounded-workflow-model-check",
+  "tool": "TLA+ tools release 1.7.4; TLC2 Version 2.19 of 08 August 2024 (rev: 5a47802)",
+  "main_distinct_states": 131,
+  "main_transitions": 151,
+  "main_declared_invariants": 9,
+  "deadlock_check": "passed",
+  "eventual_report": "passed under weak fairness",
+  "runs": [
+    {
+      "name": "main",
+      "config": "CrossExamine.cfg",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "matched_expectation": true,
+      "broken_rules": [],
+      "report": "evidence/main/report.md"
+    },
+    {
+      "name": "self-review",
+      "config": "controls/self-review.cfg",
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "matched_expectation": true,
+      "broken_rules": [
+        "ReviewIsIndependent"
+      ],
+      "report": "evidence/self-review/report.md"
+    },
+    {
+      "name": "trust-claims",
+      "config": "controls/trust-claims.cfg",
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "matched_expectation": true,
+      "broken_rules": [
+        "FindingNeedsReplay",
+        "RepairNeedsObservedRejection"
+      ],
+      "report": "evidence/trust-claims/report.md"
+    },
+    {
+      "name": "reject-all",
+      "config": "controls/reject-all.cfg",
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "matched_expectation": true,
+      "broken_rules": [
+        "ValidAlternativesRemain"
+      ],
+      "report": "evidence/reject-all/report.md"
+    },
+    {
+      "name": "exact-match",
+      "config": "controls/exact-match.cfg",
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "matched_expectation": true,
+      "broken_rules": [
+        "ValidAlternativesRemain"
+      ],
+      "report": "evidence/exact-match/report.md"
+    },
+    {
+      "name": "rewrite-intent",
+      "config": "controls/rewrite-intent.cfg",
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "matched_expectation": true,
+      "broken_rules": [
+        "OriginalIntentPreserved"
+      ],
+      "report": "evidence/rewrite-intent/report.md"
+    }
+  ],
+  "calibration": {
+    "command": "python3 evals/cross-examine/calibration.py eval-runs/cross-examine-role-calibration --executor local",
+    "passed": 11,
+    "total": 11,
+    "scope": "existing artifact machinery, not revised agent behavior"
+  },
+  "sha256": {
+    "evals/cross-examine/workflow/CrossExamine.cfg": "702b0bdbbae5287376b07c49eb4275360abc65223188c5cf96012016b1843255",
+    "evals/cross-examine/workflow/CrossExamine.tla": "38232d77f8bf5b526b6dea4e27a3fa817b341d2196638ffca36a40eae3260f7c",
+    "evals/cross-examine/workflow/README.md": "9216488300c1e85278f9d491ebf534616b57a504b9eee9188eab438ff9ac06a9",
+    "evals/cross-examine/workflow/calibration-summary.json": "7391b1408e9f0b1cd0049dff83395bf911e7c09e6dbef3dc322ec40d2ebca860",
+    "evals/cross-examine/workflow/chart.mmd": "fb4ca9df7d13230e35434a1238fa254fc34403e997fecbf76bc3b842e9c7b491",
+    "evals/cross-examine/workflow/controls/exact-match.cfg": "0c275afc3db9a1613d645196bd6a63d8e5ed15528662f565bb5d29fcbf8e64b0",
+    "evals/cross-examine/workflow/controls/reject-all.cfg": "0890eaed98dcdf8ca940e5b6c493d35810c1b8ce3f7f4daff843f47069d1ccec",
+    "evals/cross-examine/workflow/controls/rewrite-intent.cfg": "f6611f4267dd2fbf7fea01dd436ceca0273152d767b0d699e151dd9f2fb23f11",
+    "evals/cross-examine/workflow/controls/self-review.cfg": "36c484530185db7746cbdb146b9bc6a1beae9477cb05c31ae58b50a48376c57a",
+    "evals/cross-examine/workflow/controls/trust-claims.cfg": "b63405f8f292af7f69f367eaa58f8c9bfa108d17f39e237a20ed5e864f5255d1",
+    "evals/cross-examine/workflow/evidence/exact-match/report.md": "f9f04f71e73588b307a4e72841cf3b4b9644f1c41f8c2049330142555fd0d0ce",
+    "evals/cross-examine/workflow/evidence/exact-match/tlc.out": "7da36ec9918aad0c2252c43f32e743490e277a9bba4fdab9e8b83f896d98e100",
+    "evals/cross-examine/workflow/evidence/main/report.md": "08a16cabd0c5eb56b4c5f2ee7c265d637abc6dd63949e6a91635b39aa631dcf4",
+    "evals/cross-examine/workflow/evidence/main/tlc.out": "5706fafe775e1ae21c4560a3de433fbc965434ed5ab39cc93c0f7b2e2581eae4",
+    "evals/cross-examine/workflow/evidence/reject-all/report.md": "f9f04f71e73588b307a4e72841cf3b4b9644f1c41f8c2049330142555fd0d0ce",
+    "evals/cross-examine/workflow/evidence/reject-all/tlc.out": "f837a4108e5beabf1cbe57fc9f88da34adb48eb7596e20146bda525ce1baffd7",
+    "evals/cross-examine/workflow/evidence/rewrite-intent/report.md": "de4a1b91534564ba6ce4be89a390920c25e37c98556f50d599f58e9156fc8f4d",
+    "evals/cross-examine/workflow/evidence/rewrite-intent/tlc.out": "318f9f543ec814e7da84c6c3ad268c5a0bc4b1113de1d8200b88c44b802e2940",
+    "evals/cross-examine/workflow/evidence/self-review/report.md": "4f2b7b06c84c32ccec0861eccd73b79c945e66589ba1ec1fbf3a4f7dbaf9ef91",
+    "evals/cross-examine/workflow/evidence/self-review/tlc.out": "85e0d19da63be6d2302d42667e5e9e7a501aaa82a74931df1cd8265754aacae5",
+    "evals/cross-examine/workflow/evidence/trust-claims/report.md": "551c7615b3e5e0b473bf6bf1da321a94b2f9ca906d8c6b7e8f317030acb5fc63",
+    "evals/cross-examine/workflow/evidence/trust-claims/tlc.out": "449b8ba642253a2590f8d29d483cf7fb6bd5f7d17e8f1ea63d0345b1d6bee2e3",
+    "evals/cross-examine/workflow/view.mjs": "c8337b2995fd930ab1523bed645eab227b7a8ef2e96f293bd0c748211d0d0b66",
+    "skills/cross-examine/SKILL.md": "3922957c2a62349abaff077735e7bda0bcf74a417908c85246dd4e04b3ea905f",
+    "skills/cross-examine/references/ledger.md": "68c17680bef75b3e3225d7495ecf20882f8485ae19d2e4cd98d5b402d8970c95",
+    "evals/cross-examine/run.py": "e319f438eaf523952e87685cb48c2b786f74bd977f483b1dd33594c2ebaa9e27",
+    "evals/cross-examine/calibration.py": "54eb1b2fb415b4367719f45a6a91e596ce139f2099ff1c093ef17656cfc7dc64",
+    "evals/cross-examine/fixtures.py": "94c376d8f248baf2aed5bb1fa1078fa02fc6e9ba9246ec03c65aa6bbcc9f6a51",
+    "evals/cross-examine/transfer.py": "8babd3630224defaa1d9513cf9310d81ec650ed15e90596f376c830b81f45921",
+    "evals/cross-examine/workflow/independent-rerun.json": "a4fa3e37b34b66986693fc7807df82fa3efe56a067e4d3bb9a8cea3e7f38e6b4",
+    "evals/cross-examine/workflow/independent-review.md": "f34e759ab9af571b9bd2f3f370bf2ccf458ec59360c4b920e1d44cb0aec7ee7e"
+  },
+  "limits": [
+    "finite model, not live-agent effectiveness",
+    "truthful role identity and trusted replay observations assumed",
+    "original-row interpretation assumed correct",
+    "local host permissions are not enforced by fresh contexts"
+  ],
+  "format_projections": [
+    {
+      "file": "evals/cross-examine/workflow/evidence/exact-match/tlc.out",
+      "original_sha256": "45035df9bf800d44f9c1a9b182259762b5e2eeea2fc5457756e1342664f3b3f3",
+      "published_sha256": "7da36ec9918aad0c2252c43f32e743490e277a9bba4fdab9e8b83f896d98e100",
+      "projection": "Removed only trailing blank lines at EOF; retained one final newline."
+    },
+    {
+      "file": "evals/cross-examine/workflow/evidence/main/tlc.out",
+      "original_sha256": "7b01d2b3fffdaacaf83c4702930147e97e403bfbc7ea83579d299e98a0d9ca19",
+      "published_sha256": "5706fafe775e1ae21c4560a3de433fbc965434ed5ab39cc93c0f7b2e2581eae4",
+      "projection": "Removed only trailing blank lines at EOF; retained one final newline."
+    },
+    {
+      "file": "evals/cross-examine/workflow/evidence/reject-all/tlc.out",
+      "original_sha256": "4ece42b9fb5d7dc08bdb4be1c29d221f19c69d1f0222a4ba432c931393fee724",
+      "published_sha256": "f837a4108e5beabf1cbe57fc9f88da34adb48eb7596e20146bda525ce1baffd7",
+      "projection": "Removed only trailing blank lines at EOF; retained one final newline."
+    },
+    {
+      "file": "evals/cross-examine/workflow/evidence/rewrite-intent/tlc.out",
+      "original_sha256": "a3e44ce7c0e5fdcdc7405ae83093633e5b554b3b90a68cda73400f58f061ea7c",
+      "published_sha256": "318f9f543ec814e7da84c6c3ad268c5a0bc4b1113de1d8200b88c44b802e2940",
+      "projection": "Removed only trailing blank lines at EOF; retained one final newline."
+    },
+    {
+      "file": "evals/cross-examine/workflow/evidence/self-review/tlc.out",
+      "original_sha256": "521d58a59802f7ff76583808510fca30f21cc092d56427f685488f830ce9e5b7",
+      "published_sha256": "85e0d19da63be6d2302d42667e5e9e7a501aaa82a74931df1cd8265754aacae5",
+      "projection": "Removed only trailing blank lines at EOF; retained one final newline."
+    },
+    {
+      "file": "evals/cross-examine/workflow/evidence/trust-claims/tlc.out",
+      "original_sha256": "03a52669dc2b66386faa7733ddb26aaef24559dd5121832da68956f0c73a08db",
+      "published_sha256": "449b8ba642253a2590f8d29d483cf7fb6bd5f7d17e8f1ea63d0345b1d6bee2e3",
+      "projection": "Removed only trailing blank lines at EOF; retained one final newline."
+    }
+  ],
+  "independent_review": {
+    "report": "independent-review.md",
+    "rerun": "independent-rerun.json",
+    "blocking_gaps": 0,
+    "reviewed_skill_sha256": "3922957c2a62349abaff077735e7bda0bcf74a417908c85246dd4e04b3ea905f",
+    "reviewed_ledger_sha256": "68c17680bef75b3e3225d7495ecf20882f8485ae19d2e4cd98d5b402d8970c95",
+    "skill_model_config_or_view_changes_after_review": false
+  }
+}

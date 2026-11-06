@@ -1,0 +1,148 @@
+TLC2 Version 2.19 of 08 August 2024 (rev: 5a47802)
+Warning: Please run the Java VM which executes TLC with a throughput optimized garbage collector by passing the "-XX:+UseParallelGC" property.
+(Use the -nowarning option to disable this warning.)
+Running breadth-first search Model-Checking with fp 0 and seed -472933528733111846 with 1 worker on 10 cores with 16384MB heap and 64MB offheap memory [pid: 75101] (Mac OS X 27.0.1 aarch64, Eclipse Adoptium 25.0.5 x86_64, MSBDiskFPSet, DiskStateQueue).
+Parsing file /private/var/folders/v4/k31444_11cl_0g9271ht2w5h0000gn/T/cross-examine-roles-bti06vxg/CrossExamine.tla
+Parsing file /private/var/folders/v4/k31444_11cl_0g9271ht2w5h0000gn/T/statechart-pYnElR/statechart-TmP8iO/tmp-verdict-1/Naturals.tla
+Semantic processing of module Naturals
+Semantic processing of module CrossExamine
+Starting... (2026-11-06 12:28:32)
+Implied-temporal checking--satisfiability problem has 1 branches.
+Computing initial states...
+Computed 2 initial states...
+Computed 4 initial states...
+Finished computing initial states: 8 distinct states generated at 2026-11-06 12:28:32.
+Error: Invariant ValidAlternativesRemain is violated.
+Error: The behavior up to this point is:
+State 1: <Initial predicate>
+/\ repair = "UNREVIEWED"
+/\ observedCredit = FALSE
+/\ repairKind = "None"
+/\ repairReplayed = FALSE
+/\ reviewer = "independent"
+/\ lesson = FALSE
+/\ authorized = TRUE
+/\ policy = {"answer-A", "answer-B", "unsupported"}
+/\ finding = "UNREVIEWED"
+/\ phase = "Frame"
+/\ ledger = FALSE
+/\ replayed = FALSE
+/\ intent = {"answer-A", "answer-B"}
+/\ candidate = "unsupported"
+
+State 2: <Frame line 34, col 10 to line 36, col 97 of module CrossExamine>
+/\ repair = "UNREVIEWED"
+/\ observedCredit = FALSE
+/\ repairKind = "None"
+/\ repairReplayed = FALSE
+/\ reviewer = "independent"
+/\ lesson = FALSE
+/\ authorized = TRUE
+/\ policy = {"answer-A", "answer-B", "unsupported"}
+/\ finding = "UNREVIEWED"
+/\ phase = "Attack"
+/\ ledger = FALSE
+/\ replayed = FALSE
+/\ intent = {"answer-A", "answer-B"}
+/\ candidate = "unsupported"
+
+State 3: <Attack line 38, col 11 to line 41, col 86 of module CrossExamine>
+/\ repair = "UNREVIEWED"
+/\ observedCredit = FALSE
+/\ repairKind = "None"
+/\ repairReplayed = FALSE
+/\ reviewer = "independent"
+/\ lesson = FALSE
+/\ authorized = TRUE
+/\ policy = {"answer-A", "answer-B", "unsupported"}
+/\ finding = "UNREVIEWED"
+/\ phase = "ReplayAttack"
+/\ ledger = FALSE
+/\ replayed = FALSE
+/\ intent = {"answer-A", "answer-B"}
+/\ candidate = "unsupported"
+
+State 4: <ReplayAttack line 42, col 17 to line 45, col 83 of module CrossExamine>
+/\ repair = "UNREVIEWED"
+/\ observedCredit = TRUE
+/\ repairKind = "None"
+/\ repairReplayed = FALSE
+/\ reviewer = "independent"
+/\ lesson = FALSE
+/\ authorized = TRUE
+/\ policy = {"answer-A", "answer-B", "unsupported"}
+/\ finding = "UNREVIEWED"
+/\ phase = "ReviewFinding"
+/\ ledger = FALSE
+/\ replayed = TRUE
+/\ intent = {"answer-A", "answer-B"}
+/\ candidate = "unsupported"
+
+State 5: <ReviewFinding line 46, col 18 to line 51, col 96 of module CrossExamine>
+/\ repair = "UNREVIEWED"
+/\ observedCredit = TRUE
+/\ repairKind = "None"
+/\ repairReplayed = FALSE
+/\ reviewer = "independent"
+/\ lesson = FALSE
+/\ authorized = TRUE
+/\ policy = {"answer-A", "answer-B", "unsupported"}
+/\ finding = "CONFIRMED"
+/\ phase = "Defend"
+/\ ledger = FALSE
+/\ replayed = TRUE
+/\ intent = {"answer-A", "answer-B"}
+/\ candidate = "unsupported"
+
+State 6: <Defend line 54, col 11 to line 61, col 74 of module CrossExamine>
+/\ repair = "UNREVIEWED"
+/\ observedCredit = TRUE
+/\ repairKind = "RejectAll"
+/\ repairReplayed = FALSE
+/\ reviewer = "independent"
+/\ lesson = FALSE
+/\ authorized = TRUE
+/\ policy = {}
+/\ finding = "CONFIRMED"
+/\ phase = "ReplayRepair"
+/\ ledger = FALSE
+/\ replayed = TRUE
+/\ intent = {"answer-A", "answer-B"}
+/\ candidate = "unsupported"
+
+State 7: <ReplayRepair line 63, col 17 to line 66, col 88 of module CrossExamine>
+/\ repair = "UNREVIEWED"
+/\ observedCredit = TRUE
+/\ repairKind = "RejectAll"
+/\ repairReplayed = TRUE
+/\ reviewer = "independent"
+/\ lesson = FALSE
+/\ authorized = TRUE
+/\ policy = {}
+/\ finding = "CONFIRMED"
+/\ phase = "ReviewRepair"
+/\ ledger = FALSE
+/\ replayed = TRUE
+/\ intent = {"answer-A", "answer-B"}
+/\ candidate = "unsupported"
+
+State 8: <ReviewRepair line 67, col 17 to line 71, col 96 of module CrossExamine>
+/\ repair = "ACCEPTED"
+/\ observedCredit = TRUE
+/\ repairKind = "RejectAll"
+/\ repairReplayed = TRUE
+/\ reviewer = "independent"
+/\ lesson = FALSE
+/\ authorized = TRUE
+/\ policy = {}
+/\ finding = "CONFIRMED"
+/\ phase = "Record"
+/\ ledger = FALSE
+/\ replayed = TRUE
+/\ intent = {"answer-A", "answer-B"}
+/\ candidate = "unsupported"
+
+137 states generated, 114 distinct states found, 0 states left on queue.
+The depth of the complete state graph search is 8.
+The average outdegree of the complete state graph is 1 (minimum is 0, the maximum 3 and the 95th percentile is 3).
+Finished in 00s at (2026-11-06 12:28:32)

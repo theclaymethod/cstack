@@ -92,6 +92,8 @@ python3 evals/expert-review/calibration.py eval-runs/expert-calibration
 
 The [Cross-Examine suite](evals/cross-examine/README.md) includes five audit cases, calibration controls, lesson-transfer exercises, and preserved historical evidence. Its local calibration needs Python 3.11+ with standard-library SQLite serialization support. Local execution shares host permissions; Docker is an optional isolation boundary, not a capture-workflow dependency.
 
+Its [workflow chart and bounded model checks](evals/cross-examine/workflow/README.md) show the attacker, defender, and independent intent reviewer. Five weakened-model controls demonstrate why independent judgment, observed replay, valid alternatives, and original intent matter. These checks model the playbook; they do not prove agent compliance.
+
 ```bash
 python3 evals/cross-examine/calibration.py eval-runs/cross-calibration
 ```

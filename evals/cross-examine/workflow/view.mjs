@@ -1,0 +1,4 @@
+export const title = 'Cross-Examine: attack, defense, independent judgment';
+const labels = {Frame:'Anchor the original eval', Attack:'Attacker seeks a loophole', ReplayAttack:'Replay the attack', ReviewFinding:'Independent review of finding', Defend:'Defender proposes a repair', ReplayRepair:'Replay exploit and valid alternatives', ReviewRepair:'Independent review of repair', Record:'Record evidence and lessons', Done:'Report result and limits'};
+export const state = v => labels[v.phase];
+export const step = (action, from, to) => ({Frame:'Freeze intent, scope and access', Attack:'Submit candidate and claim', ReplayAttack:'Observe actual outcome and score', ReviewFinding:to.phase === 'Defend' ? 'Finding accepted [repair authorized]' : 'Save finding verdict and limits', Defend:'Freeze proposed repair', ReplayRepair:'Collect observed results', ReviewRepair:'Record repair verdict and limits', Record:'Preserve history and bounded claims', Done:null})[action] ?? null;
