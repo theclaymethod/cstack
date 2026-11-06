@@ -4,6 +4,8 @@ Turn expert feedback into evals you can trust.
 
 C Stack is a portable skill pack for people working with Claude Code, Codex, Cursor, or another coding agent. Capture expert judgments, distill a session, build and run repeatable evals, then challenge whether they measure what you intended.
 
+C Stack replaces the standalone [Cross-Examine](https://github.com/theclaymethod/cross-examine) and [Eval Creator](https://github.com/theclaymethod/eval-creator-skill) skill repositories. Both are archived with migration links here; their history remains available. See [SOURCES.md](SOURCES.md) for what moved and which project-specific tools remain in the archives.
+
 | Skill | When to use it |
 | --- | --- |
 | [Expert Mode](skills/expert-mode/SKILL.md) | Start a working session with `/expert-mode`. Keep replies short while quietly recording explicit errors, corrections, and yes/no rubric criteria. |

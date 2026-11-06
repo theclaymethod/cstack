@@ -2,6 +2,19 @@
 
 These notes identify the source material used for C Stack. Source revisions describe the inspected inputs, not an automatic upstream synchronization mechanism. Some origin repositories are private and require their owner's access.
 
+## Retired standalone repositories
+
+C Stack is the maintained home for the following skills. Their former repositories were archived on 2026-11-06 after adding migration notices and linking their repository homepages here. Original documentation, branches, and Git history remain in the archives; visibility is unchanged.
+
+| Archived repository | Maintained replacement | Preservation |
+| --- | --- | --- |
+| [theclaymethod/cross-examine](https://github.com/theclaymethod/cross-examine) | [Cross-Examine](skills/cross-examine/SKILL.md) and its [eval suite](evals/cross-examine/README.md) | All 359 unchanged source/eval files were verified against the standalone revision below. C Stack expands its lessons; packaging docs differ. The original local capture skills and expert-review suite also match their C Stack copies. |
+| [theclaymethod/eval-creator-skill](https://github.com/theclaymethod/eval-creator-skill) | [Create Eval](skills/create-eval/SKILL.md) and [Run Eval](skills/run-eval/SKILL.md) | The general workflow is adapted here. Original `benchmarks-mono` adapters, scripts, templates, and methodology remain available in the private archive. They are not bundled into C Stack, and its portable workflow is not a drop-in replacement for those adapter commands. |
+
+The standalone source revisions below remain the provenance anchors; later archive commits change only the README by prepending migration instructions. Neither repository had open issues or pull requests. Cross-Examine had only its main branch; Eval Creator's other branches had no commits ahead of main.
+
+`f-explainer` remains active as a broader course/project repository. Reusing its Run Eval skill does not subsume its other material. Other proposed skills remain outside this pack until selected.
+
 ## Existing trace-analysis workflows
 
 [AI Evals Course's Evals Skills](https://github.com/ai-evals-course/evals-skills/tree/80d5f7b0127c7572ed9e9339937adbfd7240ffeb), inspected at revision `80d5f7b0127c7572ed9e9339937adbfd7240ffeb`, is referenced for synthetic input generation, error discovery, custom review interfaces, deterministic checks, judge design and calibration, pipeline audits, and RAG evaluation. The upstream repository declares Apache-2.0. Its skills are not copied or bundled here.
