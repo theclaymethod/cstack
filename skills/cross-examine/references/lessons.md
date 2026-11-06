@@ -28,6 +28,8 @@ Why: Both grading rules imposed requirements outside the candidate's contract. C
 
 Generate instead: Derive preservation checks from the exact supplied artifact. For negative controls, accept justified bounded conclusions and review access assumptions rather than requiring an invented defect.
 
+For state-update evals, say whether collection membership may change; do not infer an exact row count from the reference state. The [fixture-v5 contract resolution](../../../evals/cross-examine/evidence/contract-v5/REPORT.md) makes the customer and order membership rules explicit and preserves the earlier ambiguous results.
+
 Evidence: `evidence/contract/report.md` in the same suite records the mismatched documents and classification predicate. The current `run.py` compares against the materialized source and accepts either clean or access-limited conclusions for the protected-oracle control.
 
 ## Require the candidate's work before crediting the capability

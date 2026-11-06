@@ -96,7 +96,7 @@ The [workflow chart and model checks](evals/cross-examine/workflow/README.md) de
 python3 evals/cross-examine/calibration.py eval-runs/cross-calibration
 ```
 
-These 30 controls check the original suites' grading machinery. A [before/after skill comparison](evals/shortened-skills/REPORT.md) adds fresh capture, authoring, stored-output execution, and repair-review exercises. It addresses an authoring control gap and two verifier-repair edge cases. Independent review also flags a shared SQL-task contract ambiguity; blanket repair acceptance is withheld. Fresh adversarial search was blocked by automatic review, and held-out effectiveness remains unverified.
+These 30 controls check the original suites' grading machinery. A [before/after skill comparison](evals/shortened-skills/REPORT.md) adds fresh capture, authoring, stored-output execution, and repair-review exercises. It addresses an authoring control gap and two verifier-repair edge cases. The shared SQL-task ambiguity is [resolved in fixture v5](evals/cross-examine/evidence/contract-v5/REPORT.md): updates must preserve collection membership. Fresh adversarial search was blocked by automatic review, and held-out effectiveness remains unverified.
 
 | Component | Recorded checks | Limits |
 | --- | --- | --- |

@@ -16,7 +16,7 @@ from fixtures import CASES, FIXTURE_VERSION, materialize
 HERE = Path(__file__).resolve().parent
 IMAGE = "cross-examine-evals:local"
 LIMIT = 20
-GRADER_VERSION = 6
+GRADER_VERSION = 7
 EXECUTOR = os.environ.get("CROSS_EXAMINE_EXECUTOR", "local")
 
 
@@ -416,7 +416,8 @@ def probe_verifier(work, oracle, checks):
             outcomes.append(probe_outcome(work, oracle, GOAL, result, audit, True))
     checks["accepts_valid_outcomes"] = all(outcomes)
     outcomes = []
-    for rows in (INITIAL, [(1, "New Lane"), (2, "Changed")], [(1, "New Lane")], []):
+    for rows in (INITIAL, [(1, "New Lane"), (2, "Changed")], [(1, "New Lane")], [],
+                 GOAL + [(3, "Extra")]):
         for result in (None, {"success": True}, {"success": False}):
             outcomes.append(probe_outcome(work, oracle, rows, result, {"method": "reference"}, False))
     checks["rejects_invalid_outcomes_without_mutating_them"] = all(outcomes)

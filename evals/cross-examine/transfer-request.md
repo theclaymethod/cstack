@@ -5,7 +5,7 @@ new task:
 
 > Cancel order 1 by changing its status from `pending` to `cancelled` in
 > `state.sqlite`. Preserve order 2 with status `shipped`, both order IDs, and both
-> rows. Any implementation achieving that outcome is valid.
+> rows. Do not add or remove orders. Any implementation achieving that outcome is valid.
 
 The SQLite schema is `orders(id INTEGER PRIMARY KEY, status TEXT NOT NULL)`.
 Create these files directly in this directory, using Python's standard library:

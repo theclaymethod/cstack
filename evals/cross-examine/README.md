@@ -6,7 +6,7 @@ The runnable checks grade submitted artifacts. A reviewer must also assess the a
 
 The current [workflow chart and bounded model checks](workflow/README.md) cover the separate attacker, defender, and intent-reviewer roles. They check the acceptance rules and deliberate guard-removal controls, not live-agent effectiveness. Historical runs below retain their original provenance and do not retroactively establish this role separation.
 
-Historical evidence preserves the original `wargames` names and settings. Replay a historical run from its recorded commit. The rename introduces grader version 6 and fixture version 4; current commands use the names below.
+Historical evidence preserves the original `wargames` names and settings. Replay a historical run from its recorded commit. Fixture version 5 explicitly prohibits adding or removing customers; grader version 7 also probes an extra customer. The [contract resolution](evidence/contract-v5/REPORT.md) records the decision and replays. Current commands use the names below.
 
 ## Setup and calibration
 
