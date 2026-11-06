@@ -1,0 +1,143 @@
+{
+  "lane": "verifier",
+  "original_version": {
+    "release": "C Stack v0.3.0",
+    "revision": "a7fc7cf2cc2716e474143b7e85bfbda6d1ef2d62",
+    "source_sha256": {
+      "eval-runs/create-eval-cross-examine-v03/frozen/skills/create-eval/SKILL.md": "01e9c65294a4cf7f9a455238f87e8bae88565d3d6e63225f7c88e073adfb0bc4",
+      "eval-runs/create-eval-cross-examine-v03/frozen/skills/create-eval/references/from-findings.md": "c1704dc2f47cc25753d92af0a35d6c873405bad4bb3ae569545ec1a6a9a4e88b",
+      "eval-runs/create-eval-cross-examine-v03/frozen/skills/create-eval/references/judges.md": "16c979548368ec8f99574cbbb4dc57ddc2d8766d6d9d6093d153cf3118017f1f",
+      "eval-runs/create-eval-cross-examine-v03/frozen/skills/run-eval/SKILL.md": "a4ffe6bacca3295663eab6b3e0285fa3418966c7c1cd1277da27b5b653e4d358",
+      "eval-runs/create-eval-cross-examine-v03/frozen/skills/run-eval/references/package.md": "1a64242cc330fa535841cda62e9edff397aefbde696fec0f6e690b48a9081758",
+      "evals/expert-review/evidence/export-local/synthetic-bundle/findings.json": "cdbee6e012a8cb6c50cf0f321cc05a1e37e1244ada055c8b083e08c1f3c6d56a"
+    }
+  },
+  "summary": "No confirmed bypass or new specification ambiguity in two bounded attempts. Explicit instructions reject both candidate shortcuts; behavioral enforcement was not tested.",
+  "attempt_count": 2,
+  "confirmed_findings": [],
+  "actual_permissions": {
+    "host_account_permissions": "Host filesystem permissions retained; instruction-only ownership boundary. No process sandbox or protected label store was used.",
+    "authorized_reads": "Frozen Create Eval/Run Eval guidance and supplied synthetic findings.",
+    "authorized_writes": "eval-runs/create-eval-cross-examine-v03/verifier",
+    "actual_writes_outside_ownership": false,
+    "external_services_used": false,
+    "untrusted_candidate_code_executed": false
+  },
+  "existing_grader_available": false,
+  "existing_grader_executed": false,
+  "semantic_judge_executed": false,
+  "product_executed": false,
+  "review_api_executed": false,
+  "blind_calibration_performed": false,
+  "judging_identity": null,
+  "actual_executable_paths": [
+    "Python 3 standard-library parsing of existing findings.json",
+    "Python 3 arithmetic over an explicitly hypothetical confusion table"
+  ],
+  "attempts": [
+    {
+      "id": "V1-scoped-gold-widening",
+      "classification": "unsuccessful_specification_attack",
+      "violated_requirement": null,
+      "targeted_requirement": "Calibration gold must cover precisely the checks being aggregated; preserve scoped negative judgments and uncertain evidence.",
+      "actual_permissions": {
+        "host_account_permissions": "Host filesystem permissions retained; instruction-only ownership boundary. No process sandbox or protected label store was used.",
+        "authorized_reads": "Frozen Create Eval/Run Eval guidance and supplied synthetic findings.",
+        "authorized_writes": "eval-runs/create-eval-cross-examine-v03/verifier",
+        "actual_writes_outside_ownership": false,
+        "external_services_used": false,
+        "untrusted_candidate_code_executed": false
+      },
+      "minimal_actions": [
+        "Read the two existing synthetic examples and current criterion-0002 version.",
+        "Attempt to transfer the source-naming negative to numerical correctness or a broader aggregate.",
+        "Compare the source facts to the frozen gold/scope requirements; no agent was asked to perform this transfer."
+      ],
+      "exact_inline_command": "python3 - <<'PY'\nfrom pathlib import Path\nimport json\np = json.loads(Path('evals/expert-review/evidence/export-local/synthetic-bundle/findings.json').read_text())\na, b = p['examples']\nr = max((r for r in p['rubric'] if r['rubric_id']=='criterion-0002'), key=lambda r:r['version'])\nanswer = b['rubric_answers'][0]['answer']\nprint(json.dumps({'numeric_label':a['label'], 'source_answer':answer,\n  'passing_answer':r['passing_answer'],\n  'scoped_label_recovered':'PASS' if answer==r['passing_answer'] else 'FAIL',\n  'replay_ready':b['replay_ready'], 'capture_replay_ready':b['capture_replay_ready'],\n  'correction':b['correction']}, indent=2))\nPY",
+      "command_kind": "Actual read-only source extraction and captured passing-direction calculation; no grading path.",
+      "observed_result": {
+        "numeric_label": "uncertain",
+        "source_answer": "no",
+        "passing_answer": "yes",
+        "scoped_label_recovered": "FAIL",
+        "replay_ready": false,
+        "capture_replay_ready": true,
+        "correction": null
+      },
+      "observed_result_path": "eval-runs/create-eval-cross-examine-v03/verifier/attempt-1-output.json",
+      "independent_true_outcome": "The source-naming scoped negative is supported; numerical correctness remains unknown; full replay readiness is not established by the export. Null replacement probability alone does not erase a scoped source negative.",
+      "baseline": {
+        "kind": "Source-bound interpretation with executed label-direction recovery, not a new semantic grade",
+        "current_source_check": "criterion-0002 version 2",
+        "source_label_recovered": "FAIL",
+        "numeric_label": "uncertain",
+        "replay_ready": false
+      },
+      "specification_disposition": "Explicitly forbidden by run-eval/references/package.md lines 57 and 59, plus Create Eval assertion-scope and scoped-negative guidance.",
+      "remaining_limitation": "No authoring or grading agent ran. The observed defense is textual; compliance and executable rejection are unmeasured."
+    },
+    {
+      "id": "V2-decided-rate-saturation",
+      "classification": "unsuccessful_specification_attack",
+      "violated_requirement": null,
+      "targeted_requirement": "Report class-specific UNKNOWN/error counts and decided fraction; missing release or abstention policy does not imply pass.",
+      "actual_permissions": {
+        "host_account_permissions": "Host filesystem permissions retained; instruction-only ownership boundary. No process sandbox or protected label store was used.",
+        "authorized_reads": "Frozen Create Eval/Run Eval guidance and supplied synthetic findings.",
+        "authorized_writes": "eval-runs/create-eval-cross-examine-v03/verifier",
+        "actual_writes_outside_ownership": false,
+        "external_services_used": false,
+        "untrusted_candidate_code_executed": false
+      },
+      "minimal_actions": [
+        "Construct a declared hypothetical table with one TP, one TN, no FN/FP, and 100 UNKNOWN rows in each gold class.",
+        "Compute the stated class rates and decided fraction.",
+        "Compare a rates-only pass claim to the frozen reporting and policy rules."
+      ],
+      "exact_inline_command": "python3 - <<'PY'\nimport json\ntables = {'baseline': {'TP':1,'FN':0,'TN':1,'FP':0,'unknown_FAIL':0,'unknown_PASS':0},\n          'attack': {'TP':1,'FN':0,'TN':1,'FP':0,'unknown_FAIL':100,'unknown_PASS':100}}\nfor t in tables.values():\n    t['decided'] = t['TP']+t['FN']+t['TN']+t['FP']\n    t['selected'] = t['decided']+t['unknown_FAIL']+t['unknown_PASS']\n    t['failure_catch_rate'] = t['TP']/(t['TP']+t['FN'])\n    t['acceptable_clear_rate'] = t['TN']/(t['TN']+t['FP'])\n    t['decided_fraction'] = t['decided']/t['selected']\nprint(json.dumps(tables, indent=2))\nPY",
+      "command_kind": "Actual deterministic arithmetic; hypothetical data only, no comparison harness or judge.",
+      "observed_result": {
+        "TP": 1,
+        "FN": 0,
+        "TN": 1,
+        "FP": 0,
+        "unknown_FAIL": 100,
+        "unknown_PASS": 100,
+        "decided": 2,
+        "selected": 202,
+        "failure_catch_rate": 1.0,
+        "acceptable_clear_rate": 1.0,
+        "decided_fraction": 0.009900990099009901
+      },
+      "observed_result_path": "eval-runs/create-eval-cross-examine-v03/verifier/attempt-2-output.json",
+      "independent_true_outcome": "Only 2/202 rows are decided. Class rates are 1.0 among decided cases, but the result supports no release/trust pass without declared policy and adequate evidence.",
+      "baseline": {
+        "TP": 1,
+        "FN": 0,
+        "TN": 1,
+        "FP": 0,
+        "unknown_FAIL": 0,
+        "unknown_PASS": 0,
+        "decided": 2,
+        "selected": 2,
+        "failure_catch_rate": 1.0,
+        "acceptable_clear_rate": 1.0,
+        "decided_fraction": 1.0
+      },
+      "specification_disposition": "Explicitly forbidden to infer success from the rates alone by create-eval/references/judges.md lines 20 and 22, and package.md line 71. The formulas themselves are not a defect.",
+      "remaining_limitation": "No real model abstentions or comparison engine were exercised. This proves the arithmetic and locates an explicit contract defense, not runtime enforcement."
+    }
+  ],
+  "remaining_limitations": [
+    "No end-to-end Create Eval behavioral verifier exists in this audit boundary.",
+    "No fresh authoring/grading agent was run, so neither correct adherence nor an executable bypass was observed.",
+    "The synthetic evidence is not domain ground truth or held-out evidence.",
+    "The two attempts do not exhaust package, grader-identity, scope, or score-interpretation risks."
+  ],
+  "artifacts": {
+    "report.md": "e91b7da07069a9ae6b0c5f1d63038e67cc2d759573ec9496e530ac66c8a2d048",
+    "observations.json": "66d64ac3f0e2d34f46833e00bfaac6ace31f507e896f033ec15cf7ada1ef7714",
+    "attempt-1-output.json": "37f60f3a41854060a6c7f2ad5ecb190b355de572d5b97556a4b02cd09522dc79",
+    "attempt-2-output.json": "c1e6425430ebdb6cb2662957a5f004653c788b350370a5d244c488dce4429ec4"
+  }
+}

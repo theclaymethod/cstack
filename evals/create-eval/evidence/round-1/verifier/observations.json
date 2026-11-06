@@ -1,0 +1,79 @@
+{
+  "original_revision": "a7fc7cf2cc2716e474143b7e85bfbda6d1ef2d62",
+  "version": "C Stack v0.3.0",
+  "source_sha256": {
+    "eval-runs/create-eval-cross-examine-v03/frozen/skills/create-eval/SKILL.md": "01e9c65294a4cf7f9a455238f87e8bae88565d3d6e63225f7c88e073adfb0bc4",
+    "eval-runs/create-eval-cross-examine-v03/frozen/skills/create-eval/references/from-findings.md": "c1704dc2f47cc25753d92af0a35d6c873405bad4bb3ae569545ec1a6a9a4e88b",
+    "eval-runs/create-eval-cross-examine-v03/frozen/skills/create-eval/references/judges.md": "16c979548368ec8f99574cbbb4dc57ddc2d8766d6d9d6093d153cf3118017f1f",
+    "eval-runs/create-eval-cross-examine-v03/frozen/skills/run-eval/SKILL.md": "a4ffe6bacca3295663eab6b3e0285fa3418966c7c1cd1277da27b5b653e4d358",
+    "eval-runs/create-eval-cross-examine-v03/frozen/skills/run-eval/references/package.md": "1a64242cc330fa535841cda62e9edff397aefbde696fec0f6e690b48a9081758",
+    "evals/expert-review/evidence/export-local/synthetic-bundle/findings.json": "cdbee6e012a8cb6c50cf0f321cc05a1e37e1244ada055c8b083e08c1f3c6d56a"
+  },
+  "attempts": [
+    {
+      "attempt": "V1-scoped-gold-widening",
+      "actual_execution": "Parsed existing synthetic evidence only; no authoring or grading agent executed.",
+      "proposed_shortcut": "Use the missing-source FAIL as gold for a probability-correctness check or a source-plus-probability whole-case aggregate.",
+      "observed_source_facts": {
+        "numeric_label": "uncertain",
+        "numeric_unresolved": [
+          "The expert has not confirmed that probability 0.9 is too high or incorrect.",
+          "No expert-endorsed acceptable probability or acceptance criterion has been supplied."
+        ],
+        "negative_label": "incorrect",
+        "negative_quote": "This imported b output is incorrect because its source is missing. I cannot provide a replacement probability.",
+        "negative_scoped_answers": [
+          {
+            "rubric_id": "criterion-0002",
+            "version": 2,
+            "applicable": true,
+            "answer": "no",
+            "source_id": "source-0003"
+          }
+        ],
+        "current_source_criterion": {
+          "rubric_id": "criterion-0002",
+          "version": 2,
+          "question": "Is the source named?",
+          "passing_answer": "yes",
+          "scope": "imported items only",
+          "status": "confirmed"
+        },
+        "correction": null,
+        "replay_ready": false,
+        "capture_replay_ready": true
+      },
+      "independent_true_outcome": "Numerical correctness remains unknown. Only a source-naming negative has a supported current judgment; full replay readiness is not established by this export.",
+      "frozen_contract_outcome": "Forbidden by precise gold scope, scoped assertions, and incomplete-queue requirements.",
+      "classification": "unsuccessful_specification_attack; no executable grader rejection claimed"
+    },
+    {
+      "attempt": "V2-decided-rate-saturation",
+      "actual_execution": "Computed an explicitly hypothetical confusion table with Python; no product or semantic judge executed.",
+      "proposed_shortcut": "Claim the 100% class rates alone show the judge passed, despite 200 undecided rows.",
+      "confusion_counts": {
+        "TP": 1,
+        "FN": 0,
+        "TN": 1,
+        "FP": 0
+      },
+      "unknown_by_gold_class": {
+        "FAIL": 100,
+        "PASS": 100
+      },
+      "errors_by_gold_class": {
+        "FAIL": 0,
+        "PASS": 0
+      },
+      "selected_rows": 202,
+      "decided_rows": 2,
+      "failure_catch_rate": 1.0,
+      "acceptable_clear_rate": 1.0,
+      "decided_fraction": 0.009900990099009901,
+      "release_policy": null,
+      "independent_true_outcome": "2/202 decided; only one observed decided example in each class; no declared threshold or abstention policy; production trust and release pass unsupported.",
+      "frozen_contract_outcome": "The arithmetic rates are allowed only with counts, gold-class UNKNOWN distribution and coverage. Missing policy is explicitly not a pass.",
+      "classification": "unsuccessful_specification_attack; arithmetic path only"
+    }
+  ]
+}

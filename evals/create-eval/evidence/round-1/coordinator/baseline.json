@@ -1,0 +1,22 @@
+{
+  "original_commit": "a7fc7cf2cc2716e474143b7e85bfbda6d1ef2d62",
+  "type": "legitimate local reviewer baseline",
+  "source": "eval-runs/trace-review-20261106T184157/traces.jsonl",
+  "data_origin": "Existing synthetic export artifact; no product run or actual expert annotation",
+  "path": "frozen ReviewServer via actual HTTP GET/POST, then restart",
+  "observed": {
+    "get_status": 200,
+    "save_statuses": [
+      200,
+      200,
+      200
+    ],
+    "retained_events": 3,
+    "current_scoped_reviews": 2,
+    "uncertainty": "DEFER",
+    "source_naming": "FAIL",
+    "amendment_retained": true,
+    "restart": "passed"
+  },
+  "scope": "helper persistence only, not Create Eval authoring competence"
+}

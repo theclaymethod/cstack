@@ -1,0 +1,84 @@
+{
+  "lane": "environment",
+  "original_version": "C Stack Create Eval v0.3.0",
+  "original_commit": "a7fc7cf2cc2716e474143b7e85bfbda6d1ef2d62",
+  "frozen_reviewer_sha256": "9abd20fcf096b8895c7d66dd8d76009ba2c12e5d7881b737e596af0a4e65ed41",
+  "rounds": 1,
+  "concrete_attempts": 2,
+  "reproduced_findings": 0,
+  "outcome": "bounded-clean",
+  "violated_requirement": null,
+  "actual_access": "Host account filesystem and localhost access; lane-only writes instructionally constrained, not OS-contained.",
+  "independent_desired_outcome": [
+    "Old reviews match only their trace ID and canonical hash.",
+    "Independent same-scope reviewer disagreements remain separate observations.",
+    "Latest amendment supersedes a decided verdict while original event and correction provenance remain durable.",
+    "Stale amendments fail without persistence; unchanged restart preserves current state."
+  ],
+  "attempts": [
+    {
+      "id": 1,
+      "hypothesis": "Carry an old review into a changed output across restart.",
+      "result": "failed-attack",
+      "violated_requirement": null,
+      "baseline": "HTTP 200 legitimate save and unchanged restart restored matching original.",
+      "actions": "Save original synthetic diagnostic review; change copied probability 0.9 to 0.91; restart; POST old hash; POST existing review ID with new hash; save distinct new observation; restore original bytes; restart.",
+      "observed_response": {
+        "old_hash": {
+          "status": 400,
+          "error": "Trace changed or is outside this review snapshot"
+        },
+        "reassignment": {
+          "status": 400,
+          "error": "An existing review cannot be reassigned to another trace version"
+        },
+        "new_observation_status": 200
+      },
+      "persisted_state": "Two separate version-bound review events; original-only matching state after reset.",
+      "reset_evidence": "Scratch source restored byte-identically; external source hash unchanged.",
+      "transcript": "attempt-1.json",
+      "history": "attempt-1-reviews.jsonl",
+      "exact_inline_command": "report.md"
+    },
+    {
+      "id": 2,
+      "hypothesis": "Collapse reviewer disagreement or leave a superseded FAIL current across amendments/restart.",
+      "result": "failed-attack",
+      "violated_requirement": null,
+      "baseline": "Zero observations initially; legitimate A FAIL/B PASS saves both HTTP 200 and both current.",
+      "actions": "Save separate same-scope synthetic FAIL/PASS observations; amend FAIL to DEFER; attempt stale save; restart unchanged paths.",
+      "observed_response": {
+        "legitimate_save_statuses": [
+          200,
+          200,
+          200
+        ],
+        "stale_amendment": {
+          "status": 409,
+          "error": "Review changed in another tab; reload before saving"
+        }
+      },
+      "persisted_state": "Three append-only records; original prefix and correction supplier retained; two latest observations DEFER/PASS after restart.",
+      "reset_evidence": "Source copy unchanged; restart current records equal; external source hash unchanged.",
+      "transcript": "attempt-2.json",
+      "history": "attempt-2-reviews.jsonl",
+      "exact_inline_command": "report.md"
+    }
+  ],
+  "failed_attempts": [
+    1,
+    2
+  ],
+  "limitations": [
+    "Direct trusted ReviewServer HTTP/persistence path; CLI startup and browser rendering unverified.",
+    "Current GET excludes amendment history; full provenance inspection requires JSONL history as documented.",
+    "Trace snapshots are hashed, not archived by the helper; original retained in this run, so no irreversible loss reproduced.",
+    "Reviewer identities and labels are synthetic/self-reported; no domain truth, expert authority, product performance, semantic calibration, or full-skill pass-rate conclusion.",
+    "No end-to-end Create Eval authoring grader exists; helper acceptance is not full skill credit."
+  ],
+  "canonical_writes": false,
+  "repairs": false,
+  "external_services": false,
+  "untrusted_programs_executed": false,
+  "new_test_files_helpers_fixtures": false
+}

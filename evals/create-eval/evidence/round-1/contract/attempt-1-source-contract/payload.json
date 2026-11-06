@@ -1,0 +1,63 @@
+{
+  "checks": [
+    {
+      "id": "source-named",
+      "question": "Does this imported item name a source?",
+      "passing_answer": "yes"
+    }
+  ],
+  "cases": [
+    {
+      "input": {
+        "requested": "review this synthetic item"
+      },
+      "output": "{\"probability\": 0.9}",
+      "context": {
+        "item_kind": "imported synthetic item"
+      },
+      "checks": [
+        "source-named"
+      ],
+      "id": "r0001"
+    },
+    {
+      "input": {
+        "requested": "review this synthetic item"
+      },
+      "output": "{\"probability\": 0.9, \"source\": \"Synthetic Reference A\"}",
+      "context": {
+        "item_kind": "imported synthetic item"
+      },
+      "checks": [
+        "source-named"
+      ],
+      "id": "r0002"
+    },
+    {
+      "input": {
+        "requested": "review this synthetic item"
+      },
+      "output": "Probability 0.9; source: Synthetic Reference A.",
+      "context": {
+        "item_kind": "imported synthetic item"
+      },
+      "checks": [
+        "source-named"
+      ],
+      "id": "r0003"
+    },
+    {
+      "input": {
+        "requested": "review this synthetic item"
+      },
+      "output": "{\"probability\": 0.9, \"source\": \"\"}",
+      "context": {
+        "item_kind": "imported synthetic item"
+      },
+      "checks": [
+        "source-named"
+      ],
+      "id": "r0004"
+    }
+  ]
+}

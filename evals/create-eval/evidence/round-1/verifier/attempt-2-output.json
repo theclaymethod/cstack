@@ -1,0 +1,28 @@
+{
+  "baseline": {
+    "TP": 1,
+    "FN": 0,
+    "TN": 1,
+    "FP": 0,
+    "unknown_FAIL": 0,
+    "unknown_PASS": 0,
+    "decided": 2,
+    "selected": 2,
+    "failure_catch_rate": 1.0,
+    "acceptable_clear_rate": 1.0,
+    "decided_fraction": 1.0
+  },
+  "attack": {
+    "TP": 1,
+    "FN": 0,
+    "TN": 1,
+    "FP": 0,
+    "unknown_FAIL": 100,
+    "unknown_PASS": 100,
+    "decided": 2,
+    "selected": 202,
+    "failure_catch_rate": 1.0,
+    "acceptable_clear_rate": 1.0,
+    "decided_fraction": 0.009900990099009901
+  }
+}

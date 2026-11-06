@@ -1,0 +1,53 @@
+{
+  "reviewed_inline_replay": true,
+  "original_source_unchanged": true,
+  "replays": [
+    {
+      "attempt": 1,
+      "process_exit": 0,
+      "same_observed_outcomes": true,
+      "observed": {
+        "legitimate_save_status": 200,
+        "unchanged_restart_matches_original": true,
+        "changed_restart_does_not_match_old_review": true,
+        "old_hash_status": 400,
+        "reassignment_status": 400,
+        "restored_original_matches_old_only": true,
+        "history_records": 2
+      }
+    },
+    {
+      "attempt": 2,
+      "process_exit": 0,
+      "same_observed_outcomes": true,
+      "observed": {
+        "baseline_review_count": 0,
+        "all_legitimate_save_statuses": [
+          200,
+          200,
+          200
+        ],
+        "independent_disagreement_preserved_before_amendment": true,
+        "stale_amendment_status": 409,
+        "stale_amendment_no_disk_change": true,
+        "append_only_original_prefix_preserved": true,
+        "history_records": 3,
+        "latest_count_after_restart": 2,
+        "latest_verdicts_after_restart": [
+          "DEFER",
+          "PASS"
+        ],
+        "amendment_links_original": true,
+        "original_correction_supplier_in_history": true,
+        "current_correction_remains_proposed": true,
+        "deferred_review_has_no_current_fail": true,
+        "restart_preserves_current_records": true
+      }
+    }
+  ],
+  "limits": [
+    "HTTP/persistence only",
+    "No new discovery attempts or browser validation",
+    "No end-to-end authoring score"
+  ]
+}

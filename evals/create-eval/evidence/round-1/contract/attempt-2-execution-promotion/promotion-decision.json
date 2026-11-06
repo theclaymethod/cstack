@@ -1,0 +1,81 @@
+{
+  "source_trace_path": "eval-runs/trace-review-20261106T184157/traces.jsonl",
+  "trace_file_sha256": "19ceb79bd7986967f772c2d09218cd9ac9580aef3718184e33ccba3186f7438a",
+  "canonical_trace_sha256": "bee4bbf538c3a5866fab3bb1cf56a40c31a89db5faa60c5f4aec311ae7460e69",
+  "source_reviews_path": "eval-runs/trace-review-20261106T184157/reviews.jsonl",
+  "reviews_file_sha256": "6597b850e7739502bc6093910eb05eb9ade64ff00386fa014cb32508de79a785",
+  "trace_identity": {
+    "id": "artifact-0001",
+    "revision": "synthetic-v1",
+    "input_origin": "synthetic",
+    "execution_kind": "handwritten"
+  },
+  "history_events": 3,
+  "current_review_count": 2,
+  "current_reviews": [
+    {
+      "amends": null,
+      "correction": null,
+      "notes": "Could this probability be too high? I am not calling it wrong yet.",
+      "record_id": "85a9d32f-a0ae-4638-802e-8db922146e5a",
+      "recorded_at": "2026-11-06T18:41:57.160778+00:00",
+      "review_id": "source-observation-1",
+      "reviewer": "Runtime check, synthetic source",
+      "rubric_questions": [],
+      "rubric_status": null,
+      "schema_version": 1,
+      "scope": "Probability estimate",
+      "snapshot_sha256": "19ceb79bd7986967f772c2d09218cd9ac9580aef3718184e33ccba3186f7438a",
+      "trace_id": "artifact-0001",
+      "trace_sha256": "bee4bbf538c3a5866fab3bb1cf56a40c31a89db5faa60c5f4aec311ae7460e69",
+      "verdict": "DEFER"
+    },
+    {
+      "amends": "25f6f355-6902-4da1-b772-c0549fa63a5c",
+      "correction": null,
+      "notes": "This imported b output is incorrect because its source is missing. I cannot provide a replacement probability.",
+      "record_id": "8a5e2d69-e466-4ad9-962d-42a7b4a5f026",
+      "recorded_at": "2026-11-06T18:41:57.162478+00:00",
+      "review_id": "source-observation-2",
+      "reviewer": "Runtime check, synthetic source",
+      "rubric_questions": [
+        "Does the output identify a supporting source?"
+      ],
+      "rubric_status": "proposed",
+      "schema_version": 1,
+      "scope": "Missing source",
+      "snapshot_sha256": "19ceb79bd7986967f772c2d09218cd9ac9580aef3718184e33ccba3186f7438a",
+      "trace_id": "artifact-0001",
+      "trace_sha256": "bee4bbf538c3a5866fab3bb1cf56a40c31a89db5faa60c5f4aec311ae7460e69",
+      "verdict": "FAIL"
+    }
+  ],
+  "review_join_by_id_and_hash": true,
+  "run_kind_decision": "handwritten synthetic stored-output evidence only",
+  "actual_product_runs": 0,
+  "promotion": [
+    {
+      "review_id": "source-observation-1",
+      "disposition": "incomplete; not scored",
+      "reason": "DEFER on probability; neither supported negative nor accepted numerical answer"
+    },
+    {
+      "review_id": "source-observation-2",
+      "disposition": "scoped synthetic source-naming development observation only",
+      "reason": "Current matching FAIL covers Missing source only; self-reported runtime-check reviewer is not verified expert authority; proposed question is not automatically confirmed gold"
+    }
+  ],
+  "unrun_feature": {
+    "entrypoint": "unavailable in supplied evidence",
+    "status": "unrun",
+    "smallest_missing_stage": "An identified actual feature entrypoint/configuration that accepts the retained input and yields an observable output or error",
+    "reason": "A handwritten artifact cannot exercise an actual feature; no product or paid run authorized or attempted"
+  },
+  "prohibited_claims": [
+    "Actual product execution",
+    "Probability 0.9 is incorrect",
+    "Clinician endorsement",
+    "Calibrated semantic judge",
+    "Two independent failures from one amended source-naming observation"
+  ]
+}

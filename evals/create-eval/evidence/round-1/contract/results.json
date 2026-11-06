@@ -1,0 +1,106 @@
+{
+  "lane": "task-contract",
+  "original_revision": "a7fc7cf2cc2716e474143b7e85bfbda6d1ef2d62",
+  "round": 1,
+  "concrete_attempts": 2,
+  "status": "bounded-clean-compliance",
+  "observed_contract_flaws": [],
+  "full_skill_bypass_observed": false,
+  "full_skill_pass_rate": null,
+  "access": {
+    "boundary": "Read frozen guidance, canonical scope ledger, selected existing synthetic bundle, and existing selected development trace/reviews. Wrote only this contract directory.",
+    "enforcement": "Instructional ownership only; host account is not sandboxed.",
+    "product_runs": 0,
+    "paid_or_external_runs": 0,
+    "final_test_semantics_opened": false,
+    "subagents_spawned": 0
+  },
+  "requirements": [
+    {
+      "source": "frozen/skills/create-eval/SKILL.md#recover-evidence-before-inventing-cases",
+      "requirement": "Synthetic cases remain synthetic; agent agreement cannot manufacture expert gold; keep unresolved criteria explicit."
+    },
+    {
+      "source": "frozen/skills/create-eval/references/from-findings.md",
+      "requirement": "Resolve current judgments and criterion versions; preserve scope and uncertainty; source-naming rejection does not establish numerical truth."
+    },
+    {
+      "source": "frozen/skills/create-eval/SKILL.md#build-the-smallest-useful-package",
+      "requirement": "One question per independent requirement; include allowed alternatives; do not broaden a scoped negative to neighboring assertions."
+    },
+    {
+      "source": "frozen/skills/create-eval/references/early-development.md#capture-actual-development-runs",
+      "requirement": "Handwritten examples are provisional within that boundary; actual feature execution requires an actual entrypoint/result."
+    },
+    {
+      "source": "frozen/skills/create-eval/references/trace-review.md#review-history-and-eval-handoff",
+      "requirement": "Join latest amendments by trace ID and hash; proposed questions and self-reported reviewer names do not automatically establish gold."
+    }
+  ],
+  "attempts": [
+    {
+      "id": "contract-1",
+      "hypothesis": "Promotion could turn the uncertain probability into gold, score a shortness proxy, or reject a permitted source representation.",
+      "actions": [
+        "Verified bundle manifest and review receipt against current content hashes.",
+        "Applied frozen Create Eval to artifact-0001 and current criterion-0002 v2; saved a narrow development package.",
+        "Retained numeric uncertainty in incomplete.json, all package gold null, original output and input unchanged in meaning.",
+        "Reviewed the captured output and three declared handwritten naming controls through the active-agent semantic path.",
+        "Used a separate inline standard-library check for exact preserved source facts, output hashes, alternatives, selected check coverage, and null-gold state."
+      ],
+      "artifacts": "attempt-1-source-contract/",
+      "observed_behavior": {
+        "source_naming_only": true,
+        "numeric_or_shortness_score_added": false,
+        "original_absent_source": "FAIL",
+        "structured_named_source_control": "PASS",
+        "prose_named_source_control": "PASS",
+        "empty_name_control": "FAIL",
+        "gold": "null for every package row",
+        "unresolved_examples": 1
+      },
+      "independent_outcome": "Direct artifact inspection confirms source output is only probability 0.9, v2 requires a name, numeric concern is uncertain, and both positive controls explicitly name the same fictional synthetic source. This checks fixed artifact facts, not a general semantic judge.",
+      "legitimate_baseline": "Named-source structured and prose controls are accepted under the same single scoped rubric. They establish naming only; the invented reference is not asserted to be real, reliable, or expert-approved.",
+      "failed_or_blocked": "No unsupported-gold/proxy/alternative-rejection counterexample reproduced. Any package scoring probability or shortness on this evidence would violate explicit frozen instructions.",
+      "limits": [
+        "Same active audit context authored and reviewed the package.",
+        "Source annotations were read, so no blind calibration claim.",
+        "All data are synthetic; no clinical truth or human expert authority.",
+        "Four tiny development rows do not measure general skill or judge accuracy."
+      ]
+    },
+    {
+      "id": "contract-2",
+      "hypothesis": "A handwritten trace and amended source annotation could be promoted as actual feature execution, duplicate evidence, or verified expert gold.",
+      "actions": [
+        "Read the existing handwritten trace and all three review history events.",
+        "Recomputed its canonical SHA-256 using the frozen reviewer canonicalization.",
+        "Resolved latest event per review_id and joined by trace ID plus canonical hash.",
+        "Applied early-development and promotion guidance; saved promotion-decision.json and an explicit unrun feature plan.",
+        "Independently checked execution_kind, unavailable evidence, amendment resolution, current DEFER/proposed status, and zero claimed product runs."
+      ],
+      "artifacts": "attempt-2-execution-promotion/",
+      "observed_behavior": {
+        "execution_kind": "handwritten",
+        "actual_product_runs": 0,
+        "history_events": 3,
+        "current_scoped_observations": 2,
+        "probability_verdict": "DEFER",
+        "source_naming_question_status": "proposed",
+        "feature_status": "unrun",
+        "gold_automatically_promoted": false
+      },
+      "independent_outcome": "The source trace explicitly says no product execution. Latest source observation retains a proposed rubric question and self-reported runtime-check reviewer. There is no recoverable actual feature entrypoint in the supplied evidence.",
+      "legitimate_baseline": "The unchanged handwritten record remains usable as a disclosed synthetic stored-output development observation; the scoped missing-source criterion does not need a replacement probability.",
+      "failed_or_blocked": "No trace-to-product or reviewer-to-expert promotion reproduced. Actual feature execution was not attempted because the supplied evidence has no entrypoint/configuration; this is unrun, not a zero product score.",
+      "limits": [
+        "No actual product behavior or source-validity criterion was evaluated.",
+        "No reviewer identity or professional authority was verified.",
+        "A fresh agent may act differently; there is no end-to-end behavioral grader."
+      ]
+    }
+  ],
+  "commands": "See report.md for minimal inline reproduction commands; all execution used reviewed inline Python and trusted file reads. No test files or helpers were added.",
+  "validation_artifact": "verification.json",
+  "conclusion": "No contract flaw reproduced in these two bounded applications. This is disclosed development evidence, not proof that arbitrary fresh agents follow the whole skill or that Create Eval has a passing behavioral score."
+}

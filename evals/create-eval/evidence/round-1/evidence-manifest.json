@@ -1,0 +1,211 @@
+{
+  "original_revision": "a7fc7cf2cc2716e474143b7e85bfbda6d1ef2d62",
+  "guidance_hashes": {
+    "skills/run-eval/SKILL.md": "a4ffe6bacca3295663eab6b3e0285fa3418966c7c1cd1277da27b5b653e4d358",
+    "skills/create-eval/SKILL.md": "01e9c65294a4cf7f9a455238f87e8bae88565d3d6e63225f7c88e073adfb0bc4",
+    "skills/create-eval/references/early-development.md": "a6eb562e7dbacb78f6861809b626ab27cf862e0c74eb261df83b68f9e13fa4f2",
+    "skills/create-eval/references/judges.md": "16c979548368ec8f99574cbbb4dc57ddc2d8766d6d9d6093d153cf3118017f1f",
+    "skills/create-eval/references/ecosystem.md": "c766712ded9369958f61b08081bb9c131c76d9b206b90846d33d3e1323f025ce",
+    "skills/create-eval/references/from-findings.md": "c1704dc2f47cc25753d92af0a35d6c873405bad4bb3ae569545ec1a6a9a4e88b",
+    "skills/create-eval/references/trace-review.md": "90587661b5eefc2de56efc8680f7cd66871aff24fd5eb1c1acc9096ad46eb748",
+    "skills/create-eval/scripts/review_traces.py": "9abd20fcf096b8895c7d66dd8d76009ba2c12e5d7881b737e596af0a4e65ed41",
+    "skills/create-eval/assets/trace-review.js": "3a7ef12bbbb05600b0f81f28ae54987cf2c16ef1c31670908efdc30e1bb55307",
+    "skills/create-eval/assets/trace-review.css": "ac1c1c03405014e601ae0e54e136db82f8eb90ec8f11c14d4eaa2e70a23daa44",
+    "skills/create-eval/assets/trace-review.html": "59f65ab5c77cee1bb1520409b561112104e01a1db364ebf721e8cf92446af440",
+    "skills/expert-mode/references/export.md": "3750ef95f311fc140536c30ccba9af5394acc82f418283c1931af873fc094d9a",
+    "skills/expert-mode/references/privacy-filter.md": "0e8f0b80a94887654bd18e06f117e427ad9d64a2082e148a085567a5dba0aedd",
+    "skills/expert-mode/references/records.md": "a0f57f2d563e24e5db7801c96d24bbb1e3e46c76b652b95b809b31007550bdbb",
+    "skills/run-eval/references/package.md": "1a64242cc330fa535841cda62e9edff397aefbde696fec0f6e690b48a9081758"
+  },
+  "projection": "Local checkout prefixes removed for portable relative paths; Markdown frozen-source links point to the original commit. Original raw lane artifacts remain local. No source labels, outputs, verdicts, or execution results were edited. Trailing empty lines in two environment documents were normalized; their per-file entries identify that formatting change.",
+  "files": [
+    {
+      "path": "verifier/report.md",
+      "original_sha256": "e91b7da07069a9ae6b0c5f1d63038e67cc2d759573ec9496e530ac66c8a2d048",
+      "published_sha256": "a0cc12eb13eac119fb0baaf834932d9ff076e19fb4137c278fd2cbbd83d42592",
+      "path_projection": true
+    },
+    {
+      "path": "verifier/results.json",
+      "original_sha256": "c4d99767024953afcd45cfdb062b6ed6f4edd25d90f833281628e4c234d5e49b",
+      "published_sha256": "5535a4e1f0847d3d0ab26dfe8e45f46290da69d463e5759fadbc5b95f9578a49",
+      "path_projection": true
+    },
+    {
+      "path": "verifier/attempt-1-output.json",
+      "original_sha256": "37f60f3a41854060a6c7f2ad5ecb190b355de572d5b97556a4b02cd09522dc79",
+      "published_sha256": "37f60f3a41854060a6c7f2ad5ecb190b355de572d5b97556a4b02cd09522dc79",
+      "path_projection": false
+    },
+    {
+      "path": "verifier/observations.json",
+      "original_sha256": "66d64ac3f0e2d34f46833e00bfaac6ace31f507e896f033ec15cf7ada1ef7714",
+      "published_sha256": "2be0cc7848fec2d424c09ef5718ebcfb68fbe504fad1addace1c8d003a5cef4b",
+      "path_projection": true
+    },
+    {
+      "path": "verifier/attempt-2-output.json",
+      "original_sha256": "c1e6425430ebdb6cb2662957a5f004653c788b350370a5d244c488dce4429ec4",
+      "published_sha256": "c1e6425430ebdb6cb2662957a5f004653c788b350370a5d244c488dce4429ec4",
+      "path_projection": false
+    },
+    {
+      "path": "environment/attempt-2-traces.jsonl",
+      "original_sha256": "19ceb79bd7986967f772c2d09218cd9ac9580aef3718184e33ccba3186f7438a",
+      "published_sha256": "19ceb79bd7986967f772c2d09218cd9ac9580aef3718184e33ccba3186f7438a",
+      "path_projection": false
+    },
+    {
+      "path": "environment/report.md",
+      "original_sha256": "55a7b0be1b5d0f47f2a7cd5d03b2ae6b615ca796c20d0c78ce745d5090925b4b",
+      "published_sha256": "afc0a6ba9a3d508bfbb2d34006f8d14cc7e26e36239e68ed333a6d0d51bf2d19",
+      "path_projection": true,
+      "format_projection": "Trailing empty lines normalized; content unchanged."
+    },
+    {
+      "path": "environment/attempt-2.json",
+      "original_sha256": "911494fdbf982575d76974198a0c96da1ab9f0279e777a377fda6a44a4636fc0",
+      "published_sha256": "911494fdbf982575d76974198a0c96da1ab9f0279e777a377fda6a44a4636fc0",
+      "path_projection": false
+    },
+    {
+      "path": "environment/results.json",
+      "original_sha256": "053a9140d1da7970e8975b79f9df399419a45c99f0bce6094500aea8fd6eba2f",
+      "published_sha256": "502f4c7df1d0d113c4cd499d9d41a67d055d07a5c77b97036fef45310b26aaa9",
+      "path_projection": false,
+      "format_projection": "Trailing empty lines normalized; content unchanged."
+    },
+    {
+      "path": "environment/attempt-2-reviews.jsonl",
+      "original_sha256": "57c4076e5d6a48e3004ffa20970c47005cfc615333c76283cf32b3a67f017727",
+      "published_sha256": "57c4076e5d6a48e3004ffa20970c47005cfc615333c76283cf32b3a67f017727",
+      "path_projection": false
+    },
+    {
+      "path": "environment/attempt-1.json",
+      "original_sha256": "4b9b6559e9c0c73f25aae3667c14e65b466488c797c158eab6a5c973b633fcb8",
+      "published_sha256": "4b9b6559e9c0c73f25aae3667c14e65b466488c797c158eab6a5c973b633fcb8",
+      "path_projection": false
+    },
+    {
+      "path": "environment/attempt-1-reviews.jsonl",
+      "original_sha256": "e7f84b41dff33d4b8a2edec193fa43743c82a0a5a73aec2f06794eefbb409ce7",
+      "published_sha256": "e7f84b41dff33d4b8a2edec193fa43743c82a0a5a73aec2f06794eefbb409ce7",
+      "path_projection": false
+    },
+    {
+      "path": "environment/attempt-1-traces.jsonl",
+      "original_sha256": "19ceb79bd7986967f772c2d09218cd9ac9580aef3718184e33ccba3186f7438a",
+      "published_sha256": "19ceb79bd7986967f772c2d09218cd9ac9580aef3718184e33ccba3186f7438a",
+      "path_projection": false
+    },
+    {
+      "path": "contract/report.md",
+      "original_sha256": "78949504daa2bd025a4aaf09eddd565368c7e7cf62601c032bf91e93c2c92ee1",
+      "published_sha256": "78949504daa2bd025a4aaf09eddd565368c7e7cf62601c032bf91e93c2c92ee1",
+      "path_projection": false
+    },
+    {
+      "path": "contract/results.json",
+      "original_sha256": "f19de1cd7ad2745093a34cefa17639409b5dd543f44705bd2769692027b21db6",
+      "published_sha256": "f19de1cd7ad2745093a34cefa17639409b5dd543f44705bd2769692027b21db6",
+      "path_projection": false
+    },
+    {
+      "path": "contract/verification.json",
+      "original_sha256": "8df74f83cbdc0c6c1f29303568135355ce6294423ae8dc94f9462bef27c6a2e1",
+      "published_sha256": "8df74f83cbdc0c6c1f29303568135355ce6294423ae8dc94f9462bef27c6a2e1",
+      "path_projection": false
+    },
+    {
+      "path": "contract/attempt-1-source-contract/incomplete.json",
+      "original_sha256": "bd5dc76648d032d8c6d3d05e2b94a5074c81115239fe3aec82c89ef9b2690f15",
+      "published_sha256": "bd5dc76648d032d8c6d3d05e2b94a5074c81115239fe3aec82c89ef9b2690f15",
+      "path_projection": false
+    },
+    {
+      "path": "contract/attempt-1-source-contract/config.json",
+      "original_sha256": "2e3501a4e129b89b996e8eb649c8644c41828d4f4fe5acdd50262ed95bf8cf7b",
+      "published_sha256": "2e3501a4e129b89b996e8eb649c8644c41828d4f4fe5acdd50262ed95bf8cf7b",
+      "path_projection": false
+    },
+    {
+      "path": "contract/attempt-1-source-contract/cases.jsonl",
+      "original_sha256": "a5b4d79c26d8817abd1d7b0eafc4f79d1255394fed8538f822254f487a7af530",
+      "published_sha256": "a5b4d79c26d8817abd1d7b0eafc4f79d1255394fed8538f822254f487a7af530",
+      "path_projection": false
+    },
+    {
+      "path": "contract/attempt-1-source-contract/verdicts.json",
+      "original_sha256": "465f3efa474ef75f0f9db047faf972825ffa0c46e41b75200c7450dec4a55bf3",
+      "published_sha256": "465f3efa474ef75f0f9db047faf972825ffa0c46e41b75200c7450dec4a55bf3",
+      "path_projection": false
+    },
+    {
+      "path": "contract/attempt-1-source-contract/rubric.md",
+      "original_sha256": "24281c791d4453bcf0e51b719433b26a92ec1fe7c668dc0c956c48afcba4fd51",
+      "published_sha256": "24281c791d4453bcf0e51b719433b26a92ec1fe7c668dc0c956c48afcba4fd51",
+      "path_projection": false
+    },
+    {
+      "path": "contract/attempt-1-source-contract/payload.json",
+      "original_sha256": "fb2a837b6ed1ea89171a8cb96fdd9da754f4b6e096fe61befa6e2f2a3abb6d52",
+      "published_sha256": "fb2a837b6ed1ea89171a8cb96fdd9da754f4b6e096fe61befa6e2f2a3abb6d52",
+      "path_projection": false
+    },
+    {
+      "path": "contract/attempt-1-source-contract/source-receipt.json",
+      "original_sha256": "da3bc7472bce18c1258081f4d5c1ff2918c19fec9a97e69acb5719ebe5e6657a",
+      "published_sha256": "da3bc7472bce18c1258081f4d5c1ff2918c19fec9a97e69acb5719ebe5e6657a",
+      "path_projection": false
+    },
+    {
+      "path": "contract/attempt-1-source-contract/run-manifest.json",
+      "original_sha256": "d4295aa63846096403707fb6a9e5a9d1b9fb82afe402fc19067f41528b96500f",
+      "published_sha256": "d4295aa63846096403707fb6a9e5a9d1b9fb82afe402fc19067f41528b96500f",
+      "path_projection": false
+    },
+    {
+      "path": "contract/attempt-2-execution-promotion/early-development-plan.md",
+      "original_sha256": "c560aaaa1d04ed07e857993c1a9c04281765ea5b1ffc140606daf4ebb02ad764",
+      "published_sha256": "c560aaaa1d04ed07e857993c1a9c04281765ea5b1ffc140606daf4ebb02ad764",
+      "path_projection": false
+    },
+    {
+      "path": "contract/attempt-2-execution-promotion/promotion-decision.json",
+      "original_sha256": "1244b8934b2cb722fbee85eb32bbf87a9554b521565aefc94143c116e7cf9ac8",
+      "published_sha256": "ba2a020f7b7fdf9a9cb80dea80525a44244bd829a573fd9dd0db1c01236de7cd",
+      "path_projection": true
+    },
+    {
+      "path": "manifest.json",
+      "original_sha256": "08c9b3fce74fc8a62e611f610d22a1db0565183e5a35287fb4fad4ee5da1714a",
+      "published_sha256": "08c9b3fce74fc8a62e611f610d22a1db0565183e5a35287fb4fad4ee5da1714a",
+      "path_projection": false
+    },
+    {
+      "path": "coordinator/baseline.json",
+      "original_sha256": "c4133d9925d79634438f645e5c237438ae3d32a94363dd0a59667512840cee46",
+      "published_sha256": "c4133d9925d79634438f645e5c237438ae3d32a94363dd0a59667512840cee46",
+      "path_projection": false
+    },
+    {
+      "path": "coordinator/replay.json",
+      "original_sha256": "0d4c740ca2112df707d1d2b6bcbd7e46a66f2eab0698cf3c4828a63adb9108ea",
+      "published_sha256": "0d4c740ca2112df707d1d2b6bcbd7e46a66f2eab0698cf3c4828a63adb9108ea",
+      "path_projection": false
+    },
+    {
+      "path": "inputs/trace-projection.jsonl",
+      "original_sha256": "19ceb79bd7986967f772c2d09218cd9ac9580aef3718184e33ccba3186f7438a",
+      "published_sha256": "19ceb79bd7986967f772c2d09218cd9ac9580aef3718184e33ccba3186f7438a",
+      "path_projection": false
+    },
+    {
+      "path": "inputs/review-history.jsonl",
+      "original_sha256": "6597b850e7739502bc6093910eb05eb9ade64ff00386fa014cb32508de79a785",
+      "published_sha256": "6597b850e7739502bc6093910eb05eb9ade64ff00386fa014cb32508de79a785",
+      "path_projection": false
+    }
+  ]
+}

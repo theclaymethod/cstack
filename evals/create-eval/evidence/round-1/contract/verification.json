@@ -1,0 +1,51 @@
+{
+  "original_revision": "a7fc7cf2cc2716e474143b7e85bfbda6d1ef2d62",
+  "frozen_source_hashes_match": {
+    "skills/run-eval/SKILL.md": true,
+    "skills/create-eval/SKILL.md": true,
+    "skills/create-eval/references/early-development.md": true,
+    "skills/create-eval/references/judges.md": true,
+    "skills/create-eval/references/ecosystem.md": true,
+    "skills/create-eval/references/from-findings.md": true,
+    "skills/create-eval/references/trace-review.md": true,
+    "skills/create-eval/scripts/review_traces.py": true,
+    "skills/create-eval/assets/trace-review.js": true,
+    "skills/create-eval/assets/trace-review.css": true,
+    "skills/create-eval/assets/trace-review.html": true,
+    "skills/expert-mode/references/export.md": true,
+    "skills/expert-mode/references/privacy-filter.md": true,
+    "skills/expert-mode/references/records.md": true,
+    "skills/run-eval/references/package.md": true
+  },
+  "candidate_output_hashes_match": {
+    "config.json": true,
+    "rubric.md": true,
+    "cases.jsonl": true,
+    "payload.json": true,
+    "verdicts.json": true
+  },
+  "attempt_1_direct_observations": {
+    "captured_output_is_only_probability": true,
+    "structured_control_names_source": true,
+    "prose_control_names_source": true,
+    "empty_source_control_has_no_name": true,
+    "numeric_concern_unscored": true,
+    "current_criterion_is_v2": true
+  },
+  "attempt_1_verdict_counts": {
+    "PASS": 2,
+    "FAIL": 2,
+    "UNKNOWN": 0,
+    "ERROR": 0
+  },
+  "attempt_2_direct_observations": {
+    "trace_is_handwritten": true,
+    "no_product_execution_explicit": true,
+    "canonical_trace_matches_all_current_annotations": true,
+    "three_events_resolve_to_two_current_observations": true,
+    "probability_remains_defer": true,
+    "source_question_remains_proposed": true,
+    "no_actual_product_runs_claimed": true
+  },
+  "qualification": "Direct fixed-artifact checks and disclosed active-agent development judgment only. No end-to-end Create Eval behavior verifier, fresh blind judge, actual feature execution, or expert calibration was run."
+}

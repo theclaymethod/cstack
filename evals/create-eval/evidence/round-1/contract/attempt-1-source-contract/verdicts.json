@@ -1,0 +1,34 @@
+[
+  {
+    "id": "r0001",
+    "check_id": "source-named",
+    "route": "semantic-active-agent",
+    "observation": "The full output is {\"probability\": 0.9}; it identifies no source.",
+    "rationale": "Source naming is absent; probability correctness is unassessed.",
+    "verdict": "FAIL"
+  },
+  {
+    "id": "r0002",
+    "check_id": "source-named",
+    "route": "semantic-active-agent",
+    "observation": "The structured source field contains the nonempty name Synthetic Reference A.",
+    "rationale": "The scoped naming requirement is met.",
+    "verdict": "PASS"
+  },
+  {
+    "id": "r0003",
+    "check_id": "source-named",
+    "route": "semantic-active-agent",
+    "observation": "The prose explicitly names Synthetic Reference A as its source.",
+    "rationale": "A structured source key is not required by the criterion.",
+    "verdict": "PASS"
+  },
+  {
+    "id": "r0004",
+    "check_id": "source-named",
+    "route": "semantic-active-agent",
+    "observation": "The source field is empty and no other name appears.",
+    "rationale": "An empty field does not identify a source.",
+    "verdict": "FAIL"
+  }
+]

@@ -1,0 +1,1 @@
+{"id": "artifact-0001", "input": {"requested": "review this synthetic item"}, "output": {"probability": 0.9}, "revision": "synthetic-v1", "input_origin": "synthetic", "execution_kind": "handwritten", "unavailable": ["No product execution; existing synthetic export artifact only."]}

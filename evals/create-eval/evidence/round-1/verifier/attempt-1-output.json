@@ -1,0 +1,9 @@
+{
+  "numeric_label": "uncertain",
+  "source_answer": "no",
+  "passing_answer": "yes",
+  "scoped_label_recovered": "FAIL",
+  "replay_ready": false,
+  "capture_replay_ready": true,
+  "correction": null
+}

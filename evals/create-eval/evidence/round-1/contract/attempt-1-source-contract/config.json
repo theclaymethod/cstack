@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "system": "Stored synthetic output; no product execution",
+  "eval_version": "contract-lane-development-1",
+  "frozen": true,
+  "checks": {
+    "code": [],
+    "judge": [
+      {
+        "id": "source-named",
+        "question": "Does this imported item name a source?",
+        "passing_answer": "yes"
+      }
+    ]
+  },
+  "validation": {
+    "min_failure_catch": null,
+    "min_acceptable_clear": null,
+    "min_cases": null
+  }
+}

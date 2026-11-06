@@ -1,0 +1,30 @@
+{
+  "original_commit": "a7fc7cf2cc2716e474143b7e85bfbda6d1ef2d62",
+  "attack_budget": {
+    "parallel_rounds": 1,
+    "lanes": 3,
+    "max_concrete_attempts_per_lane": 2
+  },
+  "review_type": "development audit, not held-out skill effectiveness",
+  "original_files": {
+    "skills/run-eval/SKILL.md": "a4ffe6bacca3295663eab6b3e0285fa3418966c7c1cd1277da27b5b653e4d358",
+    "skills/create-eval/SKILL.md": "01e9c65294a4cf7f9a455238f87e8bae88565d3d6e63225f7c88e073adfb0bc4",
+    "skills/create-eval/references/early-development.md": "a6eb562e7dbacb78f6861809b626ab27cf862e0c74eb261df83b68f9e13fa4f2",
+    "skills/create-eval/references/judges.md": "16c979548368ec8f99574cbbb4dc57ddc2d8766d6d9d6093d153cf3118017f1f",
+    "skills/create-eval/references/ecosystem.md": "c766712ded9369958f61b08081bb9c131c76d9b206b90846d33d3e1323f025ce",
+    "skills/create-eval/references/from-findings.md": "c1704dc2f47cc25753d92af0a35d6c873405bad4bb3ae569545ec1a6a9a4e88b",
+    "skills/create-eval/references/trace-review.md": "90587661b5eefc2de56efc8680f7cd66871aff24fd5eb1c1acc9096ad46eb748",
+    "skills/create-eval/scripts/review_traces.py": "9abd20fcf096b8895c7d66dd8d76009ba2c12e5d7881b737e596af0a4e65ed41",
+    "skills/create-eval/assets/trace-review.js": "3a7ef12bbbb05600b0f81f28ae54987cf2c16ef1c31670908efdc30e1bb55307",
+    "skills/create-eval/assets/trace-review.css": "ac1c1c03405014e601ae0e54e136db82f8eb90ec8f11c14d4eaa2e70a23daa44",
+    "skills/create-eval/assets/trace-review.html": "59f65ab5c77cee1bb1520409b561112104e01a1db364ebf721e8cf92446af440",
+    "skills/expert-mode/references/export.md": "3750ef95f311fc140536c30ccba9af5394acc82f418283c1931af873fc094d9a",
+    "skills/expert-mode/references/privacy-filter.md": "0e8f0b80a94887654bd18e06f117e427ad9d64a2082e148a085567a5dba0aedd",
+    "skills/expert-mode/references/records.md": "a0f57f2d563e24e5db7801c96d24bbb1e3e46c76b652b95b809b31007550bdbb",
+    "skills/run-eval/references/package.md": "1a64242cc330fa535841cda62e9edff397aefbde696fec0f6e690b48a9081758"
+  },
+  "access": "Shared host access exists. Lane ownership is instructional, not OS-enforced. Trusted source inspection and reviewed inline Python only; no untrusted candidate programs or permission-boundary claims.",
+  "existing_data": "evals/expert-review/evidence/export-local/synthetic-bundle/findings.json",
+  "existing_trace_projection": "eval-runs/trace-review-20261106T184157/traces.jsonl",
+  "scoring": "No end-to-end Create Eval behavioral verifier currently exists. Inspect authoring contracts and exercise real local review API. Packaging/HTTP acceptance is not authoring-skill credit."
+}

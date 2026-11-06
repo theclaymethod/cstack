@@ -1,0 +1,38 @@
+{
+  "findings_sha256": "cdbee6e012a8cb6c50cf0f321cc05a1e37e1244ada055c8b083e08c1f3c6d56a",
+  "bundle_manifest_hashes_match": {
+    "findings.json": true,
+    "HANDOFF.md": true
+  },
+  "review_hash_matches": true,
+  "privacy_review": {
+    "verdict": "passed_for_synthetic_scope",
+    "basis": "Selected synthetic pilot records inspected; no real identifying source data or identity lookup included."
+  },
+  "intent_review": {
+    "verdict": "passed_for_scoped_handoff",
+    "replay_candidates": [
+      "example-0002"
+    ],
+    "incomplete_examples": [
+      {
+        "example_id": "example-0001",
+        "reason": "The numerical concern remains uncertain; no numerical golden answer is supplied."
+      }
+    ],
+    "scope": "Source-naming criterion only; no clinical or numerical correctness claim."
+  },
+  "limits": [
+    "Synthetic evidence only",
+    "Not clinical or numerical truth",
+    "No publication or sharing approval inferred",
+    "Capture flags do not automatically authorize post-export replay"
+  ],
+  "original_structured_output": {
+    "probability": 0.9
+  },
+  "original_input": {
+    "requested": "review this synthetic item"
+  },
+  "original_case_gold": null
+}

@@ -1,0 +1,23 @@
+{
+  "count": 1,
+  "examples": [
+    {
+      "record_id": "record-0001",
+      "artifact_id": "artifact-0001",
+      "reason": "Probability concern explicitly uncertain; no accepted probability or acceptance boundary",
+      "gold": null,
+      "scored": false
+    }
+  ],
+  "not_scored": [
+    {
+      "criterion_id": "criterion-0001",
+      "reason": "Shortness preference; no numerical or task-specific acceptance boundary"
+    },
+    {
+      "criterion_id": "criterion-0002",
+      "version": 1,
+      "reason": "Superseded by version 2"
+    }
+  ]
+}

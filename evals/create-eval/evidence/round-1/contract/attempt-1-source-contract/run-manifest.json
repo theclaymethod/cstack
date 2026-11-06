@@ -1,0 +1,28 @@
+{
+  "mode": "development stored-output review",
+  "host": "Codex active audit context",
+  "exact_model_version": "unknown",
+  "isolation": "Contaminated for blind calibration; source annotations were read before judging. All generated package gold is null.",
+  "selected_suite": "development",
+  "selected_ids": [
+    "captured-0002",
+    "control-structured",
+    "control-prose",
+    "control-empty"
+  ],
+  "product_executions": 0,
+  "calibration_executions": 0,
+  "frozen_hashes": {
+    "config.json": "2e3501a4e129b89b996e8eb649c8644c41828d4f4fe5acdd50262ed95bf8cf7b",
+    "rubric.md": "24281c791d4453bcf0e51b719433b26a92ec1fe7c668dc0c956c48afcba4fd51",
+    "cases.jsonl": "a5b4d79c26d8817abd1d7b0eafc4f79d1255394fed8538f822254f487a7af530",
+    "payload.json": "fb2a837b6ed1ea89171a8cb96fdd9da754f4b6e096fe61befa6e2f2a3abb6d52",
+    "verdicts.json": "465f3efa474ef75f0f9db047faf972825ffa0c46e41b75200c7450dec4a55bf3"
+  },
+  "private_id_mapping": {
+    "r0001": "captured-0002",
+    "r0002": "control-structured",
+    "r0003": "control-prose",
+    "r0004": "control-empty"
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "scope": "Seven published inline blocks reproduced in a fresh local clone; this checks documented helper mechanics and archived artifacts, not fresh model behavior.",
+  "original_revision": "a7fc7cf2cc2716e474143b7e85bfbda6d1ef2d62",
+  "blocks": [
+    {
+      "document": "REPORT.md",
+      "block": 1,
+      "command_sha256": "fbad1f7aa1ed84c741a3245163fc6339cda07106230be686a8efaef5c24895be",
+      "exit": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout": ""
+    },
+    {
+      "document": "evidence/round-1/environment/report.md",
+      "block": 1,
+      "command_sha256": "eb4712408716312a77feb9f63bd0c94e55a35c87d2dab59f5f89e28331716283",
+      "exit": 0,
+      "stdout_sha256": "d466c369d855db16578ae308abf2a04910183ea6b0ff5a1708ace53f723e5043",
+      "stdout": "{\n  \"legitimate_save_status\": 200,\n  \"unchanged_restart_matches_original\": true,\n  \"changed_restart_does_not_match_old_review\": true,\n  \"old_hash_status\": 400,\n  \"reassignment_status\": 400,\n  \"restored_original_matches_old_only\": true,\n  \"history_records\": 2\n}"
+    },
+    {
+      "document": "evidence/round-1/environment/report.md",
+      "block": 2,
+      "command_sha256": "527b48699008f341779c51cb64b7de151764c90f93f5d765c3da52fd1fe1af6b",
+      "exit": 0,
+      "stdout_sha256": "6fe4a61d44f970b74f3d4fc9835b308ac0007911177dcdc82c5337e1d453cf35",
+      "stdout": "{\n  \"baseline_review_count\": 0,\n  \"all_legitimate_save_statuses\": [\n    200,\n    200,\n    200\n  ],\n  \"independent_disagreement_preserved_before_amendment\": true,\n  \"stale_amendment_status\": 409,\n  \"stale_amendment_no_disk_change\": true,\n  \"append_only_original_prefix_preserved\": true,\n  \"history_records\": 3,\n  \"latest_count_after_restart\": 2,\n  \"latest_verdicts_after_restart\": [\n    \"DEFER\",\n    \"PASS\"\n  ],\n  \"amendment_links_original\": true,\n  \"original_correction_supplier_in_history\": true,\n  \"current_correction_remains_proposed\": true,\n  \"deferred_review_has_no_current_fail\": true,\n  \"restart_preserves_current_records\": true\n}"
+    },
+    {
+      "document": "evidence/round-1/contract/report.md",
+      "block": 1,
+      "command_sha256": "a28f7660ac1a8781488d508828d2df7f1063a1041fcc9274b90742a7561c33de",
+      "exit": 0,
+      "stdout_sha256": "76d851ef5e96ed40114ef241752fbf6a2b89aaab819ec45f0d726a99d3914ead",
+      "stdout": "Source facts and narrow generated package preserved; no numeric gold."
+    },
+    {
+      "document": "evidence/round-1/contract/report.md",
+      "block": 2,
+      "command_sha256": "a416528fbe94149300fcdbc4157743f85acd8699a2199fcd4254d70669fcfd89",
+      "exit": 0,
+      "stdout_sha256": "33aaecfc2784ee50a2ad79d7f7c9aebbb3eb50fc89df4c02264d4f0eecb12ea9",
+      "stdout": "Handwritten boundary and current scoped review history preserved."
+    },
+    {
+      "document": "evidence/round-1/verifier/report.md",
+      "block": 1,
+      "command_sha256": "6fa3ebd42aed5819fc98ee2f8852c87c9219de053a53aa4164382948ee5583b0",
+      "exit": 0,
+      "stdout_sha256": "37f60f3a41854060a6c7f2ad5ecb190b355de572d5b97556a4b02cd09522dc79",
+      "stdout": "{\n  \"numeric_label\": \"uncertain\",\n  \"source_answer\": \"no\",\n  \"passing_answer\": \"yes\",\n  \"scoped_label_recovered\": \"FAIL\",\n  \"replay_ready\": false,\n  \"capture_replay_ready\": true,\n  \"correction\": null\n}"
+    },
+    {
+      "document": "evidence/round-1/verifier/report.md",
+      "block": 2,
+      "command_sha256": "8e4833b461535596cedf3e710f8d9259308d6edfdedfbbf3252515879c138006",
+      "exit": 0,
+      "stdout_sha256": "c1e6425430ebdb6cb2662957a5f004653c788b350370a5d244c488dce4429ec4",
+      "stdout": "{\n  \"baseline\": {\n    \"TP\": 1,\n    \"FN\": 0,\n    \"TN\": 1,\n    \"FP\": 0,\n    \"unknown_FAIL\": 0,\n    \"unknown_PASS\": 0,\n    \"decided\": 2,\n    \"selected\": 2,\n    \"failure_catch_rate\": 1.0,\n    \"acceptable_clear_rate\": 1.0,\n    \"decided_fraction\": 1.0\n  },\n  \"attack\": {\n    \"TP\": 1,\n    \"FN\": 0,\n    \"TN\": 1,\n    \"FP\": 0,\n    \"unknown_FAIL\": 100,\n    \"unknown_PASS\": 100,\n    \"decided\": 2,\n    \"selected\": 202,\n    \"failure_catch_rate\": 1.0,\n    \"acceptable_clear_rate\": 1.0,\n    \"decided_fraction\": 0.009900990099009901\n  }\n}"
+    }
+  ],
+  "browser_checked": false,
+  "product_runs": 0,
+  "new_model_runs": 0
+}

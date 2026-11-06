@@ -1,0 +1,462 @@
+{
+  "hypothesis": "Reviewer disagreement or a superseded negative can collapse into misleading current review state after amendments/restart.",
+  "steps": [
+    {
+      "action": "GET pristine review file; legitimate baseline",
+      "response": {
+        "status": 200,
+        "body": {
+          "reviewer": "Lifecycle control",
+          "reviews": [],
+          "rows": [
+            {
+              "sha256": "bee4bbf538c3a5866fab3bb1cf56a40c31a89db5faa60c5f4aec311ae7460e69",
+              "trace": {
+                "execution_kind": "handwritten",
+                "id": "artifact-0001",
+                "input": {
+                  "requested": "review this synthetic item"
+                },
+                "input_origin": "synthetic",
+                "output": {
+                  "probability": 0.9
+                },
+                "revision": "synthetic-v1",
+                "unavailable": [
+                  "No product execution; existing synthetic export artifact only."
+                ]
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "action": "POST Reviewer A FAIL with proposed correction/question",
+      "request": {
+        "trace_id": "artifact-0001",
+        "trace_sha256": "bee4bbf538c3a5866fab3bb1cf56a40c31a89db5faa60c5f4aec311ae7460e69",
+        "review_id": "environment-reviewer-a",
+        "amends": null,
+        "reviewer": "Synthetic Reviewer A",
+        "scope": "Synthetic diagnostic assertion",
+        "verdict": "FAIL",
+        "notes": "Synthetic lifecycle control only; no expert or domain judgment.",
+        "correction": "Diagnostic proposed correction supplied by synthetic Reviewer A.",
+        "rubric_questions": [
+          "Does this synthetic diagnostic assertion meet its task contract?"
+        ]
+      },
+      "response": {
+        "status": 200,
+        "body": {
+          "amends": null,
+          "correction": "Diagnostic proposed correction supplied by synthetic Reviewer A.",
+          "notes": "Synthetic lifecycle control only; no expert or domain judgment.",
+          "record_id": "8c6a025b-ac69-4961-aa7e-9966d0ffa958",
+          "recorded_at": "2026-11-06T18:49:46.807881+00:00",
+          "review_id": "environment-reviewer-a",
+          "reviewer": "Synthetic Reviewer A",
+          "rubric_questions": [
+            "Does this synthetic diagnostic assertion meet its task contract?"
+          ],
+          "rubric_status": "proposed",
+          "schema_version": 1,
+          "scope": "Synthetic diagnostic assertion",
+          "snapshot_sha256": "19ceb79bd7986967f772c2d09218cd9ac9580aef3718184e33ccba3186f7438a",
+          "trace_id": "artifact-0001",
+          "trace_sha256": "bee4bbf538c3a5866fab3bb1cf56a40c31a89db5faa60c5f4aec311ae7460e69",
+          "verdict": "FAIL"
+        }
+      }
+    },
+    {
+      "action": "POST independent Reviewer B PASS on same scope",
+      "request": {
+        "trace_id": "artifact-0001",
+        "trace_sha256": "bee4bbf538c3a5866fab3bb1cf56a40c31a89db5faa60c5f4aec311ae7460e69",
+        "review_id": "environment-reviewer-b",
+        "amends": null,
+        "reviewer": "Synthetic Reviewer B",
+        "scope": "Synthetic diagnostic assertion",
+        "verdict": "PASS",
+        "notes": "Independent synthetic dissent on the same scope.",
+        "correction": "",
+        "rubric_questions": []
+      },
+      "response": {
+        "status": 200,
+        "body": {
+          "amends": null,
+          "correction": null,
+          "notes": "Independent synthetic dissent on the same scope.",
+          "record_id": "f88dac45-bd35-4607-b27a-0857030a7a5e",
+          "recorded_at": "2026-11-06T18:49:46.808919+00:00",
+          "review_id": "environment-reviewer-b",
+          "reviewer": "Synthetic Reviewer B",
+          "rubric_questions": [],
+          "rubric_status": null,
+          "schema_version": 1,
+          "scope": "Synthetic diagnostic assertion",
+          "snapshot_sha256": "19ceb79bd7986967f772c2d09218cd9ac9580aef3718184e33ccba3186f7438a",
+          "trace_id": "artifact-0001",
+          "trace_sha256": "bee4bbf538c3a5866fab3bb1cf56a40c31a89db5faa60c5f4aec311ae7460e69",
+          "verdict": "PASS"
+        }
+      }
+    },
+    {
+      "action": "GET both decided observations",
+      "response": {
+        "status": 200,
+        "body": {
+          "reviewer": "Lifecycle control",
+          "reviews": [
+            {
+              "amends": null,
+              "correction": "Diagnostic proposed correction supplied by synthetic Reviewer A.",
+              "notes": "Synthetic lifecycle control only; no expert or domain judgment.",
+              "record_id": "8c6a025b-ac69-4961-aa7e-9966d0ffa958",
+              "recorded_at": "2026-11-06T18:49:46.807881+00:00",
+              "review_id": "environment-reviewer-a",
+              "reviewer": "Synthetic Reviewer A",
+              "rubric_questions": [
+                "Does this synthetic diagnostic assertion meet its task contract?"
+              ],
+              "rubric_status": "proposed",
+              "schema_version": 1,
+              "scope": "Synthetic diagnostic assertion",
+              "snapshot_sha256": "19ceb79bd7986967f772c2d09218cd9ac9580aef3718184e33ccba3186f7438a",
+              "trace_id": "artifact-0001",
+              "trace_sha256": "bee4bbf538c3a5866fab3bb1cf56a40c31a89db5faa60c5f4aec311ae7460e69",
+              "verdict": "FAIL"
+            },
+            {
+              "amends": null,
+              "correction": null,
+              "notes": "Independent synthetic dissent on the same scope.",
+              "record_id": "f88dac45-bd35-4607-b27a-0857030a7a5e",
+              "recorded_at": "2026-11-06T18:49:46.808919+00:00",
+              "review_id": "environment-reviewer-b",
+              "reviewer": "Synthetic Reviewer B",
+              "rubric_questions": [],
+              "rubric_status": null,
+              "schema_version": 1,
+              "scope": "Synthetic diagnostic assertion",
+              "snapshot_sha256": "19ceb79bd7986967f772c2d09218cd9ac9580aef3718184e33ccba3186f7438a",
+              "trace_id": "artifact-0001",
+              "trace_sha256": "bee4bbf538c3a5866fab3bb1cf56a40c31a89db5faa60c5f4aec311ae7460e69",
+              "verdict": "PASS"
+            }
+          ],
+          "rows": [
+            {
+              "sha256": "bee4bbf538c3a5866fab3bb1cf56a40c31a89db5faa60c5f4aec311ae7460e69",
+              "trace": {
+                "execution_kind": "handwritten",
+                "id": "artifact-0001",
+                "input": {
+                  "requested": "review this synthetic item"
+                },
+                "input_origin": "synthetic",
+                "output": {
+                  "probability": 0.9
+                },
+                "revision": "synthetic-v1",
+                "unavailable": [
+                  "No product execution; existing synthetic export artifact only."
+                ]
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "action": "POST Reviewer A amendment FAIL to DEFER",
+      "request": {
+        "trace_id": "artifact-0001",
+        "trace_sha256": "bee4bbf538c3a5866fab3bb1cf56a40c31a89db5faa60c5f4aec311ae7460e69",
+        "review_id": "environment-reviewer-a",
+        "amends": "8c6a025b-ac69-4961-aa7e-9966d0ffa958",
+        "reviewer": "Synthetic Reviewer A",
+        "scope": "Synthetic diagnostic assertion",
+        "verdict": "DEFER",
+        "notes": "Withdraw the decided negative pending evidence; correction remains a proposal.",
+        "correction": "Diagnostic proposed correction supplied by synthetic Reviewer A.",
+        "rubric_questions": [
+          "Does this synthetic diagnostic assertion meet its task contract?"
+        ]
+      },
+      "response": {
+        "status": 200,
+        "body": {
+          "amends": "8c6a025b-ac69-4961-aa7e-9966d0ffa958",
+          "correction": "Diagnostic proposed correction supplied by synthetic Reviewer A.",
+          "notes": "Withdraw the decided negative pending evidence; correction remains a proposal.",
+          "record_id": "2a9c8131-9910-4c1c-9e2d-d6646a3981c0",
+          "recorded_at": "2026-11-06T18:49:46.810305+00:00",
+          "review_id": "environment-reviewer-a",
+          "reviewer": "Synthetic Reviewer A",
+          "rubric_questions": [
+            "Does this synthetic diagnostic assertion meet its task contract?"
+          ],
+          "rubric_status": "proposed",
+          "schema_version": 1,
+          "scope": "Synthetic diagnostic assertion",
+          "snapshot_sha256": "19ceb79bd7986967f772c2d09218cd9ac9580aef3718184e33ccba3186f7438a",
+          "trace_id": "artifact-0001",
+          "trace_sha256": "bee4bbf538c3a5866fab3bb1cf56a40c31a89db5faa60c5f4aec311ae7460e69",
+          "verdict": "DEFER"
+        }
+      }
+    },
+    {
+      "action": "POST stale amendment from old record",
+      "request": {
+        "trace_id": "artifact-0001",
+        "trace_sha256": "bee4bbf538c3a5866fab3bb1cf56a40c31a89db5faa60c5f4aec311ae7460e69",
+        "review_id": "environment-reviewer-a",
+        "amends": "8c6a025b-ac69-4961-aa7e-9966d0ffa958",
+        "reviewer": "Synthetic Reviewer A",
+        "scope": "Synthetic diagnostic assertion",
+        "verdict": "FAIL",
+        "notes": "Stale tab's attempted overwrite.",
+        "correction": "Diagnostic proposed correction supplied by synthetic Reviewer A.",
+        "rubric_questions": [
+          "Does this synthetic diagnostic assertion meet its task contract?"
+        ]
+      },
+      "response": {
+        "status": 409,
+        "body": {
+          "error": "Review changed in another tab; reload before saving"
+        }
+      },
+      "disk_unchanged": true
+    },
+    {
+      "action": "GET latest state before restart",
+      "response": {
+        "status": 200,
+        "body": {
+          "reviewer": "Lifecycle control",
+          "reviews": [
+            {
+              "amends": "8c6a025b-ac69-4961-aa7e-9966d0ffa958",
+              "correction": "Diagnostic proposed correction supplied by synthetic Reviewer A.",
+              "notes": "Withdraw the decided negative pending evidence; correction remains a proposal.",
+              "record_id": "2a9c8131-9910-4c1c-9e2d-d6646a3981c0",
+              "recorded_at": "2026-11-06T18:49:46.810305+00:00",
+              "review_id": "environment-reviewer-a",
+              "reviewer": "Synthetic Reviewer A",
+              "rubric_questions": [
+                "Does this synthetic diagnostic assertion meet its task contract?"
+              ],
+              "rubric_status": "proposed",
+              "schema_version": 1,
+              "scope": "Synthetic diagnostic assertion",
+              "snapshot_sha256": "19ceb79bd7986967f772c2d09218cd9ac9580aef3718184e33ccba3186f7438a",
+              "trace_id": "artifact-0001",
+              "trace_sha256": "bee4bbf538c3a5866fab3bb1cf56a40c31a89db5faa60c5f4aec311ae7460e69",
+              "verdict": "DEFER"
+            },
+            {
+              "amends": null,
+              "correction": null,
+              "notes": "Independent synthetic dissent on the same scope.",
+              "record_id": "f88dac45-bd35-4607-b27a-0857030a7a5e",
+              "recorded_at": "2026-11-06T18:49:46.808919+00:00",
+              "review_id": "environment-reviewer-b",
+              "reviewer": "Synthetic Reviewer B",
+              "rubric_questions": [],
+              "rubric_status": null,
+              "schema_version": 1,
+              "scope": "Synthetic diagnostic assertion",
+              "snapshot_sha256": "19ceb79bd7986967f772c2d09218cd9ac9580aef3718184e33ccba3186f7438a",
+              "trace_id": "artifact-0001",
+              "trace_sha256": "bee4bbf538c3a5866fab3bb1cf56a40c31a89db5faa60c5f4aec311ae7460e69",
+              "verdict": "PASS"
+            }
+          ],
+          "rows": [
+            {
+              "sha256": "bee4bbf538c3a5866fab3bb1cf56a40c31a89db5faa60c5f4aec311ae7460e69",
+              "trace": {
+                "execution_kind": "handwritten",
+                "id": "artifact-0001",
+                "input": {
+                  "requested": "review this synthetic item"
+                },
+                "input_origin": "synthetic",
+                "output": {
+                  "probability": 0.9
+                },
+                "revision": "synthetic-v1",
+                "unavailable": [
+                  "No product execution; existing synthetic export artifact only."
+                ]
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "action": "Restart unchanged paths",
+      "response": {
+        "status": 200,
+        "body": {
+          "reviewer": "Lifecycle control",
+          "reviews": [
+            {
+              "amends": "8c6a025b-ac69-4961-aa7e-9966d0ffa958",
+              "correction": "Diagnostic proposed correction supplied by synthetic Reviewer A.",
+              "notes": "Withdraw the decided negative pending evidence; correction remains a proposal.",
+              "record_id": "2a9c8131-9910-4c1c-9e2d-d6646a3981c0",
+              "recorded_at": "2026-11-06T18:49:46.810305+00:00",
+              "review_id": "environment-reviewer-a",
+              "reviewer": "Synthetic Reviewer A",
+              "rubric_questions": [
+                "Does this synthetic diagnostic assertion meet its task contract?"
+              ],
+              "rubric_status": "proposed",
+              "schema_version": 1,
+              "scope": "Synthetic diagnostic assertion",
+              "snapshot_sha256": "19ceb79bd7986967f772c2d09218cd9ac9580aef3718184e33ccba3186f7438a",
+              "trace_id": "artifact-0001",
+              "trace_sha256": "bee4bbf538c3a5866fab3bb1cf56a40c31a89db5faa60c5f4aec311ae7460e69",
+              "verdict": "DEFER"
+            },
+            {
+              "amends": null,
+              "correction": null,
+              "notes": "Independent synthetic dissent on the same scope.",
+              "record_id": "f88dac45-bd35-4607-b27a-0857030a7a5e",
+              "recorded_at": "2026-11-06T18:49:46.808919+00:00",
+              "review_id": "environment-reviewer-b",
+              "reviewer": "Synthetic Reviewer B",
+              "rubric_questions": [],
+              "rubric_status": null,
+              "schema_version": 1,
+              "scope": "Synthetic diagnostic assertion",
+              "snapshot_sha256": "19ceb79bd7986967f772c2d09218cd9ac9580aef3718184e33ccba3186f7438a",
+              "trace_id": "artifact-0001",
+              "trace_sha256": "bee4bbf538c3a5866fab3bb1cf56a40c31a89db5faa60c5f4aec311ae7460e69",
+              "verdict": "PASS"
+            }
+          ],
+          "rows": [
+            {
+              "sha256": "bee4bbf538c3a5866fab3bb1cf56a40c31a89db5faa60c5f4aec311ae7460e69",
+              "trace": {
+                "execution_kind": "handwritten",
+                "id": "artifact-0001",
+                "input": {
+                  "requested": "review this synthetic item"
+                },
+                "input_origin": "synthetic",
+                "output": {
+                  "probability": 0.9
+                },
+                "revision": "synthetic-v1",
+                "unavailable": [
+                  "No product execution; existing synthetic export artifact only."
+                ]
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "original_source_sha256_before": "19ceb79bd7986967f772c2d09218cd9ac9580aef3718184e33ccba3186f7438a",
+  "original_source_sha256_after": "19ceb79bd7986967f772c2d09218cd9ac9580aef3718184e33ccba3186f7438a",
+  "scratch_trace_unchanged": true,
+  "persisted_history": [
+    {
+      "amends": null,
+      "correction": "Diagnostic proposed correction supplied by synthetic Reviewer A.",
+      "notes": "Synthetic lifecycle control only; no expert or domain judgment.",
+      "record_id": "8c6a025b-ac69-4961-aa7e-9966d0ffa958",
+      "recorded_at": "2026-11-06T18:49:46.807881+00:00",
+      "review_id": "environment-reviewer-a",
+      "reviewer": "Synthetic Reviewer A",
+      "rubric_questions": [
+        "Does this synthetic diagnostic assertion meet its task contract?"
+      ],
+      "rubric_status": "proposed",
+      "schema_version": 1,
+      "scope": "Synthetic diagnostic assertion",
+      "snapshot_sha256": "19ceb79bd7986967f772c2d09218cd9ac9580aef3718184e33ccba3186f7438a",
+      "trace_id": "artifact-0001",
+      "trace_sha256": "bee4bbf538c3a5866fab3bb1cf56a40c31a89db5faa60c5f4aec311ae7460e69",
+      "verdict": "FAIL"
+    },
+    {
+      "amends": null,
+      "correction": null,
+      "notes": "Independent synthetic dissent on the same scope.",
+      "record_id": "f88dac45-bd35-4607-b27a-0857030a7a5e",
+      "recorded_at": "2026-11-06T18:49:46.808919+00:00",
+      "review_id": "environment-reviewer-b",
+      "reviewer": "Synthetic Reviewer B",
+      "rubric_questions": [],
+      "rubric_status": null,
+      "schema_version": 1,
+      "scope": "Synthetic diagnostic assertion",
+      "snapshot_sha256": "19ceb79bd7986967f772c2d09218cd9ac9580aef3718184e33ccba3186f7438a",
+      "trace_id": "artifact-0001",
+      "trace_sha256": "bee4bbf538c3a5866fab3bb1cf56a40c31a89db5faa60c5f4aec311ae7460e69",
+      "verdict": "PASS"
+    },
+    {
+      "amends": "8c6a025b-ac69-4961-aa7e-9966d0ffa958",
+      "correction": "Diagnostic proposed correction supplied by synthetic Reviewer A.",
+      "notes": "Withdraw the decided negative pending evidence; correction remains a proposal.",
+      "record_id": "2a9c8131-9910-4c1c-9e2d-d6646a3981c0",
+      "recorded_at": "2026-11-06T18:49:46.810305+00:00",
+      "review_id": "environment-reviewer-a",
+      "reviewer": "Synthetic Reviewer A",
+      "rubric_questions": [
+        "Does this synthetic diagnostic assertion meet its task contract?"
+      ],
+      "rubric_status": "proposed",
+      "schema_version": 1,
+      "scope": "Synthetic diagnostic assertion",
+      "snapshot_sha256": "19ceb79bd7986967f772c2d09218cd9ac9580aef3718184e33ccba3186f7438a",
+      "trace_id": "artifact-0001",
+      "trace_sha256": "bee4bbf538c3a5866fab3bb1cf56a40c31a89db5faa60c5f4aec311ae7460e69",
+      "verdict": "DEFER"
+    }
+  ],
+  "observed": {
+    "baseline_review_count": 0,
+    "all_legitimate_save_statuses": [
+      200,
+      200,
+      200
+    ],
+    "independent_disagreement_preserved_before_amendment": true,
+    "stale_amendment_status": 409,
+    "stale_amendment_no_disk_change": true,
+    "append_only_original_prefix_preserved": true,
+    "history_records": 3,
+    "latest_count_after_restart": 2,
+    "latest_verdicts_after_restart": [
+      "DEFER",
+      "PASS"
+    ],
+    "amendment_links_original": true,
+    "original_correction_supplier_in_history": true,
+    "current_correction_remains_proposed": true,
+    "deferred_review_has_no_current_fail": true,
+    "restart_preserves_current_records": true
+  },
+  "result": "No bypass reproduced: separate review IDs preserve dissent; amendment supersedes rather than duplicates the negative; stale writes are rejected; disk retains original provenance and amendment chain.",
+  "limitations": [
+    "Current GET returns latest records, not amendment history. Complete provenance inspection requires direct JSONL history, which the guidance explicitly permits.",
+    "Reviewer names are self-reported. No reviewer-authority verification, browser rendering, semantic judge, or full authoring-skill grader was exercised.",
+    "Synthetic lifecycle labels and corrections do not establish domain truth."
+  ]
+}
