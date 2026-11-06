@@ -1,0 +1,39 @@
+# Shortened skills comparison
+
+Capture and stored-output behavior survived this bounded comparison. Authoring and repair exercises exposed gaps addressed with narrow clarifications to Create Eval and Cross-Examine. Independent review also found an unresolved SQL-task contract ambiguity shared by both versions. This is not a full-skill certification; fresh Cross-Examine search was blocked and remains unverified.
+
+Compared the original entrypoints at `b6f7a4078a23be016240bdd0c0d0d2ddc41bcb3e` with the shortened entrypoints at `455e8fe8c29e934c21b57f529260eecfc95e09d7`. Create Eval now makes the existing control requirement a condition for completing the package; Cross-Examine explicitly keeps verification observational and complete. [Results and primary artifacts](results.json) preserve both initial outcomes and focused replays, source hashes, actual records, verdicts, proposed repairs, and independent reviews.
+
+| Skill | What ran | Result and limit |
+| --- | --- | --- |
+| Expert Mode | Three incremental conversation cases per version, with operator-captured files between turns. | Corrections, uncertain labels, scoped rubric questions, original outputs, activation, and stop behavior survived. The clarified uncertainty replay passes for both versions. |
+| Distill Me | Three conversation cases per version. | Deduplication, linked corrections/retractions, one-shot activation, archived-instruction handling, and summary-only provenance survived. All three artifact graders pass in both versions. |
+| Create Eval | Paired authoring from the same synthetic findings/history, followed by a focused replay with four existing development examples. | The initial shortened run left legitimate-pass and boundary controls unrun. The completion wording now keeps the package a draft until those checks run. The focused replay records 2 PASS and 2 FAIL. Its source-presence predicate remains draft; broader source identification, calibration, and real feature execution remain unverified. |
+| Run Eval | The same four stored development outputs in separate fresh contexts. | Both record 2 PASS, 2 FAIL, no UNKNOWN/errors, unchanged inputs, and frozen verdict evidence. Null labels correctly leave expert-agreement rates undefined. Neither claims product execution or blind calibration. |
+| Cross-Examine | Five existing cases per version, fixed reviewed probes, separate repair editors, and fresh intent reviewers before and after frozen repairs. | Both initially pass 5/5 executable graders. Two verifier edge cases are repaired; the follow-up passes both affected graders and 18 direct runtime checks. The final reviewer disputes one grader expectation: the original row does not clearly prohibit extra customers. Blanket repair acceptance is withheld. Fresh discovery, full swarm behavior, permission resistance, and learning transfer remain unestablished. |
+
+## Initial misses and corrections
+
+The original conversation run passed 4/6 artifact graders; the shortened run passed 5/6. Both serialized a rubric's passing answer as Boolean `true`, while the grader requires the string `"yes"`. Independent review found their meaning and scope intact. The adapter now states the JSON type. Fresh uncertainty replays pass with unchanged skill guidance and grader logic. The original version also used a versioned item alias where the grader expects the artifact's item ID; its exact output reference still identified the reviewed artifact. These original misses remain in the results.
+
+The shortened Create Eval author saved the supported negative but left positive and boundary controls unrun. The instruction was present, so this is an observed execution omission, not evidence of a deleted rule or a systematic effect of shortening. The focused replay changes both the completion wording and the available examples. It closes the four-example execution gap without establishing that wording alone caused the improvement. Unresolved numerical and preference records remain outside the scored rows; no expert gold was invented.
+
+Direct checks found two gaps in the shortened-version SQL repair despite its passing the existing graders: opening a missing database created a file, and dictionary conversion discarded duplicate IDs. The latter check changes the declared primary-key schema, so it establishes malformed-input robustness rather than an observed in-contract exploit. The original-version repair avoids both. These initial proposals and reviewer verdicts remain preserved; the follow-up is evidence-informed repair, not fresh discovery or an isolated test of wording.
+
+The follow-up opens SQLite read-only and compares the full ordered row list. Both affected executable graders pass again. Eighteen direct executions across the two verifiers accept correct report-free outcomes and reject missing, corrupt, incorrect, incomplete, extra-row, and duplicate-ID states. File names and content hashes remain unchanged in those checks; this does not establish all SQLite sidecar or concurrent behavior. These decisions match the runtime checks' expected labels, whose authority is a separate question.
+
+The final independent checkpoint withholds blanket preservation acceptance: the original row requires retaining the two named customers but does not expressly forbid adding a third. Both versions' proposed verifiers impose an exact row count by source inspection. The extra-customer rejection therefore exposes an unsupported restriction or a contract ambiguity, rather than proving a successful prevention. The reviewer rejects the operator's expected label as sufficient authority. This shared issue remains unresolved; no contract change or further tuning against the reviewer was made.
+
+One operator error advanced a rerun checkpoint before the agent processed it. That run is preserved, excluded, and replaced by a fresh session. It is not counted as a skill failure or pass.
+
+## What the checks establish
+
+The existing grader controls pass 30/30: 19 expert-review and 11 Cross-Examine controls. All 19 expert-review controls also pass after the adapter clarification. These are machinery checks, not agent success rates.
+
+Reviewers established original intent before implementation evidence. They did not author attacks, repairs, graders, or candidate outputs, and received raw replay evidence without aggregate grader verdicts. Their acceptance is limited to the observed mechanisms and source inspection. Some invalid-state, cleanup, and corruption paths were exercised by the automated grader but not supplied as raw replay evidence to these reviewers; the reviews preserve that distinction.
+
+The baseline authoring runner omitted its implementation file from its frozen source list. The initial shortened authoring package preserved an earlier defective development revision before correcting it. The results retain those limitations and histories. Hash matches establish represented integrity, not protected storage or chronological blinding.
+
+All cases are public and synthetic. Local host execution does not enforce access restrictions. SQLite is part of the supplied database task; no Docker, external installs, paid API, real patient data, or new test definitions were needed. Browser rendering and Privacy Filter inference were not tested. The five entrypoints remain about 42% shorter overall.
+
+Automatic review rejected the original-version delegated search as possible cybersecurity risk. It was not retried. The remaining Cross-Examine exercises use existing reviewed probes and provide no fresh-discovery credit.

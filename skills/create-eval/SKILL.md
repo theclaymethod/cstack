@@ -39,7 +39,7 @@ Split by source or construction family. Keep development, calibration, final tes
 
 ## Check the grader
 
-Exercise clear passes, failures, and boundary cases through the real grading path. A grader that rejects everything must fail legitimate controls. Use existing checks or direct replays, respecting project rules on new test files. Report what those controls establish without generalizing beyond them.
+Keep the package a draft until legitimate passes, clear failures, and relevant boundaries run through the real grading path. Check supported alternatives too. Use existing checks or direct replays, respecting project rules on new test files. Report what those controls establish without generalizing beyond them.
 
 For semantic judges, read [judge calibration](references/judges.md). Use separate expert-labeled development and calibration examples from both classes. Freeze the rubric, prompt, parser, model/configuration, runner version, sampling, and budget before comparison. Changes create a new revision; preserve earlier results.
 

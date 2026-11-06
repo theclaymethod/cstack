@@ -45,7 +45,7 @@ The eval score and audit acceptance are separate decisions. An attacker claiming
 
 Check the audit's own grader too. Credit for discovery, reproduction, collaboration, or learning needs evidence of that behavior. Artifact checks alone do not establish it, and seed labels must not override a genuine new defect.
 
-When repairs are authorized, fix the underlying assumption while preserving the original row and expert judgment. Changing their meaning needs an explicit contract decision. Verify that the exploit loses undeserved credit or the environment defect disappears. Replay legitimate baselines, including supported alternatives. Accept only a repair that preserves valid outcomes and passes independent intent review. Rejecting everything or accepting only one reference answer does not establish a fix.
+When repairs are authorized, fix the underlying assumption while preserving the original row and expert judgment. Changing their meaning needs an explicit contract decision. Keep verification observational and compare the complete required state. Verify that the exploit loses undeserved credit or the environment defect disappears. Replay legitimate baselines, including supported alternatives. Accept only a repair that preserves valid outcomes and passes independent intent review. Rejecting everything or accepting only one reference answer does not establish a fix.
 
 Use existing checks and direct replays within project rules on new test files. For review-only work, deliver the reproducer and proposed repair. Leave unvalidated repairs unresolved. Further attack rounds need remaining or newly agreed budget.
 

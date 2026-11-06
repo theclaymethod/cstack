@@ -96,7 +96,7 @@ The [workflow chart and model checks](evals/cross-examine/workflow/README.md) de
 python3 evals/cross-examine/calibration.py eval-runs/cross-calibration
 ```
 
-These 30 controls check the original suites' grading machinery. They do not evaluate Create Eval or Run Eval. Installation, reference, and local workflow checks passed for both skills. Fresh end-to-end agent behavior remains unverified.
+These 30 controls check the original suites' grading machinery. A [before/after skill comparison](evals/shortened-skills/REPORT.md) adds fresh capture, authoring, stored-output execution, and repair-review exercises. It addresses an authoring control gap and two verifier-repair edge cases. Independent review also flags a shared SQL-task contract ambiguity; blanket repair acceptance is withheld. Fresh adversarial search was blocked by automatic review, and held-out effectiveness remains unverified.
 
 | Component | Recorded checks | Limits |
 | --- | --- | --- |
