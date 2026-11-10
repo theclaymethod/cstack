@@ -7,7 +7,7 @@ description: Bootstrap evaluators through an intent interview, parallel scenario
 
 Turn the user's intent into a small, reviewed set of scenarios and runnable evaluators. The user decides what behavior is acceptable; agents propose scenarios and implement checks. Work on one behavior at a time, including adjacent behavior that must keep working.
 
-Bootstrap owns the interview, scenario review, and orchestration. [Create Eval](../create-eval/SKILL.md) owns evaluator authoring and calibration; [Run Eval](../run-eval/SKILL.md) owns execution; [Cross-Examine](../cross-examine/SKILL.md) owns optional adversarial review. Keep these sibling skills together.
+Bootstrap owns the interview, scenario review, and orchestration. [Create Eval](../create-eval/SKILL.md) owns evaluator authoring and calibration; [Run Eval](../run-eval/SKILL.md) owns execution; [Cross-Examine](../cross-examine/SKILL.md) owns optional adversarial review.
 
 For deeper generated coverage, use the shared [synthetic methods](../adversarial-cases/references/synthetic-methods.md). Prefer Harbor for new executable agent evals while preserving existing/owner-selected formats; see [format selection](../create-eval/references/formats.md). Generators and adapters belong in the project, not this skill.
 
@@ -15,7 +15,7 @@ For deeper generated coverage, use the shared [synthetic methods](../adversarial
 
 Read project instructions, existing eval examples, schemas, runner commands, and any relevant intent already supplied in this session. Map where cases, checks, fixtures, and private labels belong. Reuse the project's runner and format; use [the local package contract](../run-eval/references/package.md) only if it has none.
 
-Evidence gathering is project specific. Identify available requirements, user examples, authorized traces, fixtures, or domain documents and the project's way to access them. Use those sources when relevant; a trace integration, production corpus, or running implementation is not an entry requirement. Mark unavailable sources and continue with explicit requirements and synthetic proposals. Keep data and run artifacts in the project's eval workspace, outside the skill installation.
+Evidence gathering is project specific. Identify available requirements, user examples, authorized traces, fixtures, or domain documents and the project's way to access them. Use those sources when relevant; a trace integration, production corpus, or running implementation is not an entry requirement. Mark unavailable sources and continue with explicit requirements and synthetic proposals.
 
 Interview in short rounds about missing decisions that change a scenario or its expected result:
 
@@ -23,9 +23,9 @@ Interview in short rounds about missing decisions that change a scenario or its 
 - What plausible response or action would be unacceptable? Which alternatives are acceptable?
 - What nearby behavior must remain intact? Where should the system ask, abstain, or defer?
 
-Use concrete situations to resolve vague terms. Keep questions about desired behavior; infer technical choices from the project. Propose a reviewable first batch and execution scope using the user's time and budget. Leave coverage priorities, review volume, trust thresholds, and optional hardening with the user. Reuse answers already supplied.
+Keep questions about desired behavior; infer technical choices from the project. Propose a reviewable first batch and execution scope using the user's time and budget. Leave coverage priorities, review volume, trust thresholds, and optional hardening with the user.
 
-Record a short intent contract with the trigger, success, failures, alternatives, preserved behavior, and unresolved boundaries. Confirm missing product judgments before treating them as settled. Independent preparation can continue while questions are pending.
+Record a short intent contract with the trigger, success, failures, alternatives, preserved behavior, and unresolved boundaries. Confirm missing product judgments before treating them as settled.
 
 ## Generate scenarios with subagents
 
@@ -36,8 +36,6 @@ For adversarial boundaries and injected-failure slices, have the scenario author
 Dispatch independent scenario authors with distinct coverage assignments: ordinary successes and valid alternatives; boundaries and minimal contrast pairs; plausible failures and adjacent regressions. Combine assignments to fit available capacity. Give each author the same intent revision, relevant project facts, allowed fixtures, and a bounded output budget. Keep initial proposals independent and writes in separate scratch files. Authors return scenarios and proposed expectations, not approved labels or evaluator code.
 
 Merge proposals by behavioral distinction, remove duplicates, and check feasibility against actual tools, data, and permissions. Preserve source and construction families across paraphrases and related variants. Show coverage gaps and unsupported assumptions. If delegation is unavailable, generate a bounded local draft and disclose that independent scenario coverage was not performed.
-
-The first batch is ready when each review card describes a feasible situation, a proposed expected behavior, the contract boundary it exercises, and any unresolved facts. A large scenario count is not evidence of coverage.
 
 ## Ask for intent labels
 
@@ -58,9 +56,7 @@ Freeze a handoff containing the intent revision, approved scenario revisions and
 
 Dispatch evaluator authors for independent approved groups using [Create Eval](../create-eval/SKILL.md). Give each a separate scratch output and ownership scope; the coordinator integrates into the canonical package. Authors receive the contract and permitted task evidence. Reserve calibration examples and their human outcome labels from authors; give the validator only the judge's permitted payload.
 
-Each evaluator must point back to an approved requirement and check the observable evidence that establishes it. Use deterministic checks for objective properties and narrow binary judges for interpretive criteria. Preserve legitimate alternative solutions. Stateful actions need resulting-state and preservation checks plus reset when executed; a claim of success or a tool name alone may be insufficient.
-
-Reuse the target project's schema and runner without introducing a second harness. When implementation or execution setup is missing, produce contract-based cases and checks where possible, record the execution gap, and leave product execution unrun. Keep mocked outputs and environments explicit. Synthetic scenario origin and actual product execution are separate facts.
+When implementation or execution setup is missing, produce contract-based cases and checks where possible, record the execution gap, and leave product execution unrun. Keep mocked outputs and environments explicit. Synthetic scenario origin and actual product execution are separate facts.
 
 Before integration, validate the authored cases against the project's required schema and compare their inputs, context, initial state, families, and checks with the current approved scenarios. Matching IDs and expected labels alone does not establish fidelity. Preserve meaning across format conversion; return material changes for review and record any accepted alternative representation. Keep approved source records outside the author's changes so an edited case cannot redefine its own acceptance condition.
 

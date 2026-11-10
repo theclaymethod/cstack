@@ -1,0 +1,21 @@
+{
+  "actual_completed": 8,
+  "calls": [
+    {
+      "candidate": "work/skill-audit-ablation/defender-after/experiment/candidates/original.py",
+      "cases": "work/skill-audit-ablation/defender-after/experiment/native/original.jsonl",
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 8,
+        "UNKNOWN": 0
+      },
+      "executed": 8,
+      "label": "original",
+      "reserved": 8,
+      "status": "complete"
+    }
+  ],
+  "limit": 8,
+  "reserved": 8
+}

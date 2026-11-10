@@ -1,0 +1,91 @@
+{
+  "actual_completed": 36,
+  "calls": [
+    {
+      "candidate": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/skill-audit-ablation/reviewer/clean-controls/candidates/old-existing.py",
+      "cases": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/skill-audit-ablation/reviewer/clean-controls/native/old-existing.jsonl",
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 8,
+        "UNKNOWN": 0
+      },
+      "executed": 8,
+      "label": "old-existing",
+      "reserved": 8,
+      "status": "complete"
+    },
+    {
+      "candidate": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/skill-audit-ablation/reviewer/clean-controls/candidates/old-reduced.py",
+      "cases": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/skill-audit-ablation/reviewer/clean-controls/native/old-reduced.jsonl",
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 8,
+        "UNKNOWN": 0
+      },
+      "executed": 8,
+      "label": "old-reduced",
+      "reserved": 8,
+      "status": "complete"
+    },
+    {
+      "candidate": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/skill-audit-ablation/reviewer/clean-controls/candidates/new-simplified.py",
+      "cases": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/skill-audit-ablation/reviewer/clean-controls/native/new-simplified.jsonl",
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 8,
+        "UNKNOWN": 0
+      },
+      "executed": 8,
+      "label": "new-simplified",
+      "reserved": 8,
+      "status": "complete"
+    },
+    {
+      "candidate": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/skill-audit-ablation/reviewer/clean-controls/candidates/final-old-existing.py",
+      "cases": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/skill-audit-ablation/reviewer/clean-controls/native/final-old-existing.jsonl",
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 4,
+        "UNKNOWN": 0
+      },
+      "executed": 4,
+      "label": "final-old-existing",
+      "reserved": 4,
+      "status": "complete"
+    },
+    {
+      "candidate": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/skill-audit-ablation/reviewer/clean-controls/candidates/final-old-reduced.py",
+      "cases": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/skill-audit-ablation/reviewer/clean-controls/native/final-old-reduced.jsonl",
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 4,
+        "UNKNOWN": 0
+      },
+      "executed": 4,
+      "label": "final-old-reduced",
+      "reserved": 4,
+      "status": "complete"
+    },
+    {
+      "candidate": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/skill-audit-ablation/reviewer/clean-controls/candidates/final-new-simplified.py",
+      "cases": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/skill-audit-ablation/reviewer/clean-controls/native/final-new-simplified.jsonl",
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 4,
+        "UNKNOWN": 0
+      },
+      "executed": 4,
+      "label": "final-new-simplified",
+      "reserved": 4,
+      "status": "complete"
+    }
+  ],
+  "limit": 36,
+  "reserved": 36
+}

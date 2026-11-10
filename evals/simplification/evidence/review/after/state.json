@@ -1,0 +1,23 @@
+{
+  "contract_hash": "d91cdd8e2a8820a5dc12b6850438466a379a0cd972f820ab9f9d94b4485f7ed1",
+  "plan": {
+    "final": {
+      "model": "old-fixture",
+      "retained": [
+        "conflict-a",
+        "conflict-b",
+        "contract",
+        "duplicate-a",
+        "duplicate-b",
+        "example",
+        "legacy-auth",
+        "plan",
+        "plan-detail"
+      ]
+    }
+  },
+  "records": {},
+  "remaining_confirmation_reserve": 4,
+  "reserved_case_executions": 0,
+  "status": "frozen"
+}

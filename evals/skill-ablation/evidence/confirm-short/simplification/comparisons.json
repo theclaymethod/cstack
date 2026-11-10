@@ -1,0 +1,126 @@
+{
+  "confirmation": {
+    "admissible": true,
+    "baseline_score": 1.0,
+    "candidate_score": 1.0,
+    "difference": 0.0,
+    "errors_or_unknown": 0,
+    "max_loss": 0.0,
+    "regressions": [],
+    "scope": "Exact outcomes on the declared finite synthetic cases only"
+  },
+  "contract-only": {
+    "admissible": false,
+    "baseline_score": 1.0,
+    "candidate_score": 0.875,
+    "difference": -0.125,
+    "errors_or_unknown": 0,
+    "max_loss": 0.0,
+    "regressions": [
+      "dev-duplicate"
+    ],
+    "scope": "Exact outcomes on the declared finite synthetic cases only"
+  },
+  "no-conflict-a": {
+    "admissible": false,
+    "baseline_score": 1.0,
+    "candidate_score": 0.5,
+    "difference": -0.5,
+    "errors_or_unknown": 0,
+    "max_loss": 0.0,
+    "regressions": [
+      "dev-explicit",
+      "dev-ambiguous",
+      "dev-closed",
+      "dev-unrelated"
+    ],
+    "scope": "Exact outcomes on the declared finite synthetic cases only"
+  },
+  "no-conflict-b": {
+    "admissible": false,
+    "baseline_score": 1.0,
+    "candidate_score": 0.5,
+    "difference": -0.5,
+    "errors_or_unknown": 0,
+    "max_loss": 0.0,
+    "regressions": [
+      "dev-explicit",
+      "dev-ambiguous",
+      "dev-closed",
+      "dev-unrelated"
+    ],
+    "scope": "Exact outcomes on the declared finite synthetic cases only"
+  },
+  "no-conflicts": {
+    "admissible": true,
+    "baseline_score": 1.0,
+    "candidate_score": 1.0,
+    "difference": 0.0,
+    "errors_or_unknown": 0,
+    "max_loss": 0.0,
+    "regressions": [],
+    "scope": "Exact outcomes on the declared finite synthetic cases only"
+  },
+  "no-duplicate-a": {
+    "admissible": true,
+    "baseline_score": 1.0,
+    "candidate_score": 1.0,
+    "difference": 0.0,
+    "errors_or_unknown": 0,
+    "max_loss": 0.0,
+    "regressions": [],
+    "scope": "Exact outcomes on the declared finite synthetic cases only"
+  },
+  "no-duplicate-b": {
+    "admissible": true,
+    "baseline_score": 1.0,
+    "candidate_score": 1.0,
+    "difference": 0.0,
+    "errors_or_unknown": 0,
+    "max_loss": 0.0,
+    "regressions": [],
+    "scope": "Exact outcomes on the declared finite synthetic cases only"
+  },
+  "no-duplicates": {
+    "admissible": false,
+    "baseline_score": 1.0,
+    "candidate_score": 0.875,
+    "difference": -0.125,
+    "errors_or_unknown": 0,
+    "max_loss": 0.0,
+    "regressions": [
+      "dev-duplicate"
+    ],
+    "scope": "Exact outcomes on the declared finite synthetic cases only"
+  },
+  "no-legacy": {
+    "admissible": true,
+    "baseline_score": 1.0,
+    "candidate_score": 1.0,
+    "difference": 0.0,
+    "errors_or_unknown": 0,
+    "max_loss": 0.0,
+    "regressions": [],
+    "scope": "Exact outcomes on the declared finite synthetic cases only"
+  },
+  "no-noise": {
+    "admissible": true,
+    "baseline_score": 1.0,
+    "candidate_score": 1.0,
+    "difference": 0.0,
+    "errors_or_unknown": 0,
+    "max_loss": 0.0,
+    "regressions": [],
+    "scope": "Exact outcomes on the declared finite synthetic cases only"
+  },
+  "selected": {
+    "admissible": true,
+    "baseline_score": 1.0,
+    "candidate_score": 1.0,
+    "difference": 0.0,
+    "errors_or_unknown": 0,
+    "max_loss": 0.0,
+    "regressions": [],
+    "scope": "Exact outcomes on the declared finite synthetic cases only"
+  }
+}

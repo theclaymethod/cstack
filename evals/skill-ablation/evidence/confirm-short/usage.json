@@ -1,0 +1,19 @@
+{
+  "ablation_development": 88,
+  "approved_case_controls": 3,
+  "input_output_reasoning_tokens": null,
+  "judge_normalizer_calls": 2,
+  "judge_pairs": 4,
+  "judge_provider_calls": 0,
+  "malformed_controls": 1,
+  "model_cost": null,
+  "model_latency": null,
+  "native_case_attempts": 99,
+  "native_completed": 99,
+  "native_limit": 120,
+  "old_backend_executions": 0,
+  "prompt_byte_savings": 522,
+  "proxy_subprocess_calls": 3,
+  "remaining": 21,
+  "reserved_confirmation_completed": 8
+}

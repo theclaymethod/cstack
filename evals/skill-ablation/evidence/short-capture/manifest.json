@@ -1,0 +1,105 @@
+{
+  "authority": "scripted synthetic observations; native synthetic grading; no human endorsement",
+  "capture_checkpoints": [
+    "first",
+    "merge1",
+    "merge2"
+  ],
+  "commands": "commands.log",
+  "driver": "capture_driver.py",
+  "exercise": "controlled capture and retrospective merge",
+  "files": {
+    "REPORT.md": "259523221b9945f8f2c9131eb2d77816b25131958546d6b36724e74677f82cef",
+    "capture_driver.py": "4e2c6912daf13c3d6a86b4f8be90c6bf0c394ef827aed47c731c9c9c70382539",
+    "commands.log": "cac9f8aad88f503bf26808d0fd6c2c16047d921d71b2b3ef8a8f6f5ed45c34e9",
+    "first-case.jsonl": "cee33edbc1ef6478060a9359d216325b762bf75c4145f25b376f8d99590a43ab",
+    "first/merge-receipt.json": "345192de4e5cfa8cbe3250bc66e95902b1201dca59ce90d6a594bc243b6219c9",
+    "first/reviews.jsonl": "bc8673278ca1a0c5df5f03b7121d0358a0dc25212c179addbcba62ef398750ca",
+    "first/rubric.jsonl": "f08b154d9f187d8a10e59f74561dc3f3a3d2719f5adcc0138f879e2af7ca3a08",
+    "first/state.json": "bc75de35109a236654167457d5e4b3b264454f08503b521da86f0feb32a8f4ba",
+    "guidance/distill-me/SKILL.md": "6f515b138f76d39d66998d6ce4d29a8029761aa0226f9d6dec01c3d2832e7186",
+    "guidance/expert-mode/SKILL.md": "d0dbcc5e1fa457a7e4164454e8910fcb1e7ea5bf77c73ea31aabaebca72b2d02",
+    "guidance/expert-mode/references/records.md": "a0f57f2d563e24e5db7801c96d24bbb1e3e46c76b652b95b809b31007550bdbb",
+    "guidance/installed-skills.lock.json": "888af03c2ce4e86fbce2aeb618d790f428a337a8acdf943c81f0b31d1a2b08d8",
+    "merge1/merge-receipt.json": "11736472ff1724ddb40d09c38da95e4e52176fc1404a9bec65cfdd0b08f400ab",
+    "merge1/reviews.jsonl": "6878a4f3118eae8e1d3767c6e66dd91eba1ad80ac14b3fbd8dc78d47c9ce8bf1",
+    "merge1/rubric.jsonl": "3f6772b04c9ecefc4cbac46ecd0e3ccec0a86b635ae7658aba1c0006fdf03038",
+    "merge1/state.json": "6bdb32eba9e715fc8f6c80fdb13deb31630a8737317517720b04044e5e88f604",
+    "merge2/merge-receipt.json": "f0e62d4d63c6fa1b71c9ba238000231a6b55d59673c87ec41f111ca3c0cd9a83",
+    "merge2/reviews.jsonl": "6878a4f3118eae8e1d3767c6e66dd91eba1ad80ac14b3fbd8dc78d47c9ce8bf1",
+    "merge2/rubric.jsonl": "3f6772b04c9ecefc4cbac46ecd0e3ccec0a86b635ae7658aba1c0006fdf03038",
+    "merge2/state.json": "6bdb32eba9e715fc8f6c80fdb13deb31630a8737317517720b04044e5e88f604",
+    "native-baseline/candidate.py": "0720b56482a445967ff2a98ec5cfa668c858b8a6f662da74a55c21b257393efc",
+    "native-baseline/cases.jsonl": "cee33edbc1ef6478060a9359d216325b762bf75c4145f25b376f8d99590a43ab",
+    "native-baseline/manifest.json": "9af5081c4c0ab41a4781cb939da49e47d01438ceab8525801ed96428a9a54b7e",
+    "native-baseline/summary.json": "72e39ca66603c17acb05d90e5fc0a461b5f783e52c0b2de4910d65edaa59cd38",
+    "native-baseline/traces.jsonl": "a515f767f753101a1913d559fc5171b64dae5345dc4fd77ff515371e0a124c15",
+    "native-evaluator.py": "fd1fdaa4b090852f8d0a6462303411bea5488dcc7f7a08895146e32d52b0430d",
+    "native-regenerated/candidate.py": "a657fd68ec5bd339a1540046ca05ebf4fc3df57100871b8d820f46a90c02654d",
+    "native-regenerated/cases.jsonl": "cee33edbc1ef6478060a9359d216325b762bf75c4145f25b376f8d99590a43ab",
+    "native-regenerated/manifest.json": "ac16a0794e32571c5ebc4fcc868dca48fd0b18005febfbb50bb9e65fc7847020",
+    "native-regenerated/summary.json": "93f27c83434af0a6bc5ca1638d8a713df04ea64f2eafd6b76f80b3aaac2368dc",
+    "native-regenerated/traces.jsonl": "33d5a9ddfe4fa74780e9fe222e3d570e28200eb8b92f32622f60c7ac0b7a9791",
+    "output-versions.jsonl": "0f5ab1534159a4ea524b0a6fb894378dd00c6fb0596c7fa35728dc24a02cb7c0",
+    "regenerated.py": "a657fd68ec5bd339a1540046ca05ebf4fc3df57100871b8d820f46a90c02654d",
+    "reviews.jsonl": "6878a4f3118eae8e1d3767c6e66dd91eba1ad80ac14b3fbd8dc78d47c9ce8bf1",
+    "rubric.jsonl": "3f6772b04c9ecefc4cbac46ecd0e3ccec0a86b635ae7658aba1c0006fdf03038",
+    "source.md": "ccfb4e35afe2317701d09d010ee52c13e3088cc22fccd5ce2c98a98d5344769d",
+    "state.json": "6bdb32eba9e715fc8f6c80fdb13deb31630a8737317517720b04044e5e88f604",
+    "stopped-state.json": "0d916e5e3ee6d2f376199f57925af2dc5f1f9f3dfdfcf774ee8b32912cf10a43",
+    "verification.json": "b76e8f97f51fc5ebcd820789b6c91ceefa6762bddc0225dfce26ccc30f6b62e5"
+  },
+  "native_case_usage": {
+    "capture_merge_executions": 0,
+    "confirmation": 0,
+    "development": 2,
+    "errors": 0,
+    "total": 2
+  },
+  "native_runs": [
+    {
+      "candidate": "native-baseline/candidate.py",
+      "case_ids": [
+        "dev-howto"
+      ],
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 1,
+        "PASS": 0,
+        "UNKNOWN": 0
+      },
+      "directory": "native-baseline",
+      "executed_count": 1,
+      "identity": "native-baseline/manifest.json",
+      "receipt": "native-baseline/summary.json",
+      "traces": "native-baseline/traces.jsonl"
+    },
+    {
+      "candidate": "native-regenerated/candidate.py",
+      "case_ids": [
+        "dev-howto"
+      ],
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 1,
+        "UNKNOWN": 0
+      },
+      "directory": "native-regenerated",
+      "executed_count": 1,
+      "identity": "native-regenerated/manifest.json",
+      "receipt": "native-regenerated/summary.json",
+      "traces": "native-regenerated/traces.jsonl"
+    }
+  ],
+  "output_versions": "output-versions.jsonl",
+  "raw_source": "source.md",
+  "report": "REPORT.md",
+  "reviews": "reviews.jsonl",
+  "rubric": "rubric.jsonl",
+  "schema_version": 1,
+  "source_checkout": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/skill-audit-ablation/shortened-candidate",
+  "state": "state.json",
+  "stop_checkpoint": "stopped-state.json",
+  "workspace": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/skill-audit-ablation/runs/short-capture"
+}

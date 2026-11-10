@@ -1,0 +1,14 @@
+{
+  "actual_native_cases": 25,
+  "attempts": [
+    "clean 24-case legitimate workflow",
+    "ledger operator perturbation (0 additional cases)",
+    "summary operator perturbation (0 additional cases)",
+    "live plan operator perturbation (0 additional cases)",
+    "source identity operator perturbation (0 additional cases)",
+    "targeted operator interruption after first of 8 reserved cases (1 actual case)"
+  ],
+  "case_budget": 200,
+  "native_reservations": 32,
+  "provider_calls": 0
+}

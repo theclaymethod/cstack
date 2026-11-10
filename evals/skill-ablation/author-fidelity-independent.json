@@ -1,0 +1,12 @@
+[
+  {
+    "variant": "full",
+    "approved_rows": 2,
+    "input_state_expectation_fidelity": "exact typed JSON match"
+  },
+  {
+    "variant": "short",
+    "approved_rows": 2,
+    "input_state_expectation_fidelity": "exact typed JSON match"
+  }
+]

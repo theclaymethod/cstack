@@ -1,0 +1,25 @@
+{
+  "native_cases": {
+    "run_eval": 16,
+    "hill_climb": 32,
+    "judge_source": 24,
+    "simplification": 164,
+    "cross_examine": 16,
+    "total": 252,
+    "limit": 300,
+    "remaining": 48
+  },
+  "fixture_judge_processes": 102,
+  "fixture_repeatability_processes_included": 6,
+  "fixture_judge_process_limit": 200,
+  "actual_provider_calls": 0,
+  "paid_calls": 0,
+  "native_case_errors": 0,
+  "native_unknowns": 0,
+  "incomplete": 0,
+  "additional_direct_native_schema_grade_controls": 3,
+  "additional_direct_normalization_controls": 3,
+  "repaired_verifier_processes": 2,
+  "defective_verifier_processes": 1,
+  "note": "Direct evidence revalidation and grading do not execute candidate processes. The 102 worker calls are deterministic local processes, not model calls."
+}

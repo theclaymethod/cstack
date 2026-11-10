@@ -1,0 +1,11 @@
+{
+  "configuration": {
+    "model": "new-fixture",
+    "retained": [
+      "contract",
+      "duplicate-a"
+    ]
+  },
+  "execution": "Standalone deterministic local Python model stand-in; fresh native subprocess per case; no inference sampling, external tools, provider parser or fallback",
+  "prompt_utf8_bytes": 3671
+}

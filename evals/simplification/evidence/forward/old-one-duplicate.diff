@@ -1,0 +1,23 @@
+--- original-full
++++ old-one-duplicate
+@@ -29,20 +29,8 @@
+ There are eight development cases and four confirmation cases. Every family names its actual scenario construction; these were separately hand-authored synthetic situations sharing the same contract, not independent sampled production traffic. Confirmation changes account identities, phrasing, and ticket mixtures. All inputs and expectations are available in the repository, so reserved confirmation execution establishes a workflow check rather than unseen-data generalization. No semantic judge, calibration, production trust, or access isolation is claimed.
+ 
+ 
+-### duplicate-a
+-DUPLICATE CHECK A: inspect open VPN tickets for the selected account.
+-
+ ### duplicate-b
+ DUPLICATE CHECK B: reuse an open VPN ticket for the same account.
+ 
+-### example
+-EXAMPLE: a how-to question receives guidance without changing state.
+-
+ ### legacy-auth
+ LEGACY STEP: explicitly check authorization before answering.
+-
+-### plan
+-PLAN HEADER: organize a preliminary answer plan.
+-
+-### plan-detail
+-PLAN DETAIL: elaborate the preliminary plan.

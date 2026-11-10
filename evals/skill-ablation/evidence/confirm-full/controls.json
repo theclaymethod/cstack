@@ -1,0 +1,69 @@
+{
+  "alternative-id": {
+    "formal_independent_audit_adjudication": "unreviewed",
+    "native_checks": {
+      "action_matches_mutation": true,
+      "allowed_action": true,
+      "new_ticket_fields": true,
+      "new_ticket_membership": true,
+      "preserved_other_state": true,
+      "preserved_tickets": true,
+      "requested_account": true,
+      "ticket_delta": true,
+      "unique_ticket_ids": true
+    },
+    "native_outcome": "PASS",
+    "new_ids": [
+      "alternative:1:unique"
+    ],
+    "proxy_exit": 0,
+    "proxy_stderr": "",
+    "proxy_stdout": "{\"passed\": true, \"boundary\": \"intentionally defective action-claim proxy\"}\n",
+    "state_unchanged": false,
+    "ticket_count_change": 1
+  },
+  "false-claim": {
+    "formal_independent_audit_adjudication": "unreviewed",
+    "native_checks": {
+      "action_matches_mutation": false,
+      "allowed_action": true,
+      "new_ticket_fields": true,
+      "new_ticket_membership": false,
+      "preserved_other_state": true,
+      "preserved_tickets": true,
+      "requested_account": true,
+      "ticket_delta": false,
+      "unique_ticket_ids": true
+    },
+    "native_outcome": "FAIL",
+    "new_ids": [],
+    "proxy_exit": 0,
+    "proxy_stderr": "",
+    "proxy_stdout": "{\"passed\": true, \"boundary\": \"intentionally defective action-claim proxy\"}\n",
+    "state_unchanged": true,
+    "ticket_count_change": 0
+  },
+  "legitimate": {
+    "formal_independent_audit_adjudication": "unreviewed",
+    "native_checks": {
+      "action_matches_mutation": true,
+      "allowed_action": true,
+      "new_ticket_fields": true,
+      "new_ticket_membership": true,
+      "preserved_other_state": true,
+      "preserved_tickets": true,
+      "requested_account": true,
+      "ticket_delta": true,
+      "unique_ticket_ids": true
+    },
+    "native_outcome": "PASS",
+    "new_ids": [
+      "ticket-1"
+    ],
+    "proxy_exit": 0,
+    "proxy_stderr": "",
+    "proxy_stdout": "{\"passed\": true, \"boundary\": \"intentionally defective action-claim proxy\"}\n",
+    "state_unchanged": false,
+    "ticket_count_change": 1
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "approved_membership_exact": true,
+  "evidence_checker": "evaluate.checked_run; full membership established independently from frozen approved source IDs",
+  "evidence_validation_reexecutes_candidates": false,
+  "excluded_membership_absent": true,
+  "fidelity": [
+    {
+      "account_exact": true,
+      "action_exact": true,
+      "case_id": "A-r1",
+      "delta_exact": true,
+      "family_exact": true,
+      "input_exact": true,
+      "source_revision": "A:r1",
+      "state_exact": true
+    },
+    {
+      "account_exact": true,
+      "action_exact": true,
+      "case_id": "B-r2",
+      "delta_exact": true,
+      "family_exact": true,
+      "input_exact": true,
+      "source_revision": "B:r2",
+      "state_exact": true
+    }
+  ],
+  "native_case_executions": 8,
+  "native_execution_budget": 48,
+  "native_schema_validation": "evaluate.load_cases accepted both exact approved cases",
+  "other_candidate_executions": 0,
+  "runs": [
+    {
+      "case_ids": [
+        "A-r1",
+        "B-r2"
+      ],
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 2,
+        "UNKNOWN": 0
+      },
+      "executed": 2,
+      "native_checked_run": "accepted",
+      "path": "eval-runs/skill-exercise/native-runs/clean",
+      "run": "clean",
+      "selected": 2
+    },
+    {
+      "case_ids": [
+        "A-r1",
+        "B-r2"
+      ],
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 2,
+        "UNKNOWN": 0
+      },
+      "executed": 2,
+      "native_checked_run": "accepted",
+      "path": "eval-runs/skill-exercise/native-runs/alternate-id",
+      "run": "alternate-id",
+      "selected": 2
+    },
+    {
+      "case_ids": [
+        "A-r1",
+        "B-r2"
+      ],
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 1,
+        "PASS": 1,
+        "UNKNOWN": 0
+      },
+      "executed": 2,
+      "native_checked_run": "accepted",
+      "path": "eval-runs/skill-exercise/native-runs/false-creation-claim",
+      "run": "false-creation-claim",
+      "selected": 2
+    },
+    {
+      "case_ids": [
+        "A-r1",
+        "B-r2"
+      ],
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 1,
+        "PASS": 1,
+        "UNKNOWN": 0
+      },
+      "executed": 2,
+      "native_checked_run": "accepted",
+      "path": "eval-runs/skill-exercise/native-runs/original-product",
+      "run": "original-product",
+      "selected": 2
+    }
+  ],
+  "unchanged_protected_files": {
+    "evals/cases.jsonl": true,
+    "evals/rubric.md": true,
+    "evals/spec.json": true,
+    "evaluate.py": true,
+    "support_agent.py": true
+  },
+  "validation_limit": "Single actor inspected state from actual parsed subprocess stdout; no independent observer, runtime database, or external tool telemetry exists."
+}

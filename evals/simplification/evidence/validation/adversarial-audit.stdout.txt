@@ -1,0 +1,135 @@
+{
+  "status": "passed",
+  "scope": "Synthetic development replay; operator evidence calibration, not candidate access, trusted attestation, fresh skill execution, or generalization",
+  "native_contrast": [
+    {
+      "version": "original",
+      "candidate": "four-fields",
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 1,
+        "UNKNOWN": 0
+      }
+    },
+    {
+      "version": "original",
+      "candidate": "five-fields",
+      "counts": {
+        "ERROR": 1,
+        "FAIL": 0,
+        "PASS": 0,
+        "UNKNOWN": 0
+      }
+    },
+    {
+      "version": "repaired",
+      "candidate": "four-fields",
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 1,
+        "UNKNOWN": 0
+      }
+    },
+    {
+      "version": "repaired",
+      "candidate": "five-fields",
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 1,
+        "UNKNOWN": 0
+      }
+    }
+  ],
+  "evidence_probes": [
+    {
+      "probe": "clean",
+      "access": "Operator-owned copies of current synthetic development evidence",
+      "original_validator": {
+        "accepted": true,
+        "checks": 71
+      },
+      "repaired_validator": {
+        "accepted": true,
+        "checks": 103
+      },
+      "new_candidate_executions": 0,
+      "new_interruptions": 0
+    },
+    {
+      "probe": "stdout-output-conflict",
+      "access": "Operator-owned copies of current synthetic development evidence",
+      "original_validator": {
+        "accepted": true,
+        "checks": 71
+      },
+      "repaired_validator": {
+        "accepted": false,
+        "error": "retained output differs from subprocess stdout"
+      },
+      "new_candidate_executions": 0,
+      "new_interruptions": 0
+    },
+    {
+      "probe": "empty-source-inventory",
+      "access": "Operator-owned copies of current synthetic development evidence",
+      "original_validator": {
+        "accepted": true,
+        "checks": 71
+      },
+      "repaired_validator": {
+        "accepted": false,
+        "error": "Complete expected protected source inventory is present"
+      },
+      "new_candidate_executions": 0,
+      "new_interruptions": 0
+    },
+    {
+      "probe": "missing-lifecycle-observation",
+      "access": "Operator-owned copies of current synthetic development evidence",
+      "original_validator": {
+        "accepted": true,
+        "checks": 64
+      },
+      "repaired_validator": {
+        "accepted": false,
+        "error": "All required lifecycle observations are present exactly once"
+      },
+      "new_candidate_executions": 0,
+      "new_interruptions": 0
+    },
+    {
+      "probe": "empty-lifecycle-observations",
+      "access": "Operator-owned copies of current synthetic development evidence",
+      "original_validator": {
+        "accepted": true,
+        "checks": 46
+      },
+      "repaired_validator": {
+        "accepted": false,
+        "error": "All required lifecycle observations are present exactly once"
+      },
+      "new_candidate_executions": 0,
+      "new_interruptions": 0
+    },
+    {
+      "probe": "missing-native-command",
+      "access": "Operator-owned copies of current synthetic development evidence",
+      "original_validator": {
+        "accepted": true,
+        "checks": 70
+      },
+      "repaired_validator": {
+        "accepted": false,
+        "error": "Every required command has exactly one recorded receipt"
+      },
+      "new_candidate_executions": 0,
+      "new_interruptions": 0
+    }
+  ],
+  "actual_native_case_executions": 42,
+  "owned_process_interruptions": 3,
+  "source_versions": "Original source snapshots retained beside the audit; current checkout for repair"
+}

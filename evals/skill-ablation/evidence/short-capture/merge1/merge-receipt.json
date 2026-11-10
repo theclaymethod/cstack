@@ -1,0 +1,19 @@
+{
+  "stage": "merge1",
+  "review_records_added": [
+    "howto-scope-amendment-v2",
+    "explicit-ticket-rule-v1",
+    "duplicate-scope-amendment-v2",
+    "urgency-proposal-exclusion"
+  ],
+  "criterion_records_added": [
+    "rubric-ticket-v1",
+    "rubric-ticket-v2",
+    "rubric-same-account-duplicate-v1",
+    "rubric-unrelated-account-v1"
+  ],
+  "review_count": 7,
+  "rubric_count": 6,
+  "ongoing_capture": "inactive",
+  "native_cases_executed": 0
+}

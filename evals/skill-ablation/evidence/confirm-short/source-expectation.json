@@ -1,0 +1,51 @@
+{
+  "acceptable_alternative": "Any unique nonempty string ticket ID",
+  "expected": {
+    "account": "team-red",
+    "allowed_actions": [
+      "create_ticket"
+    ],
+    "ticket_delta": 1
+  },
+  "independent_intent_review": false,
+  "independent_scenario_review": false,
+  "kind": "explicit scripted synthetic expectation",
+  "outcome_labels": null,
+  "preservation": "Entire original state including ticket metadata, order, counter and settings",
+  "request": {
+    "account": "team-red",
+    "accounts": [
+      "team-red",
+      "team-blue"
+    ],
+    "text": "Please submit a VPN support request."
+  },
+  "revision": 1,
+  "state": {
+    "counter": 31,
+    "settings": {
+      "keep": false
+    },
+    "tickets": [
+      {
+        "account": "team-blue",
+        "id": "old-blue",
+        "issue": "vpn",
+        "metadata": {
+          "active": true,
+          "tags": [
+            "keep"
+          ]
+        },
+        "status": "open"
+      },
+      {
+        "account": "team-red",
+        "id": "old-red",
+        "issue": "vpn",
+        "status": "closed"
+      }
+    ]
+  },
+  "urgency_policy": null
+}

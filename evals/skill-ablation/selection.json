@@ -1,0 +1,13 @@
+{
+  "selection": "retain shortened combined candidate",
+  "full_checks": 28,
+  "candidate_checks": 28,
+  "matched_confirmation_checks": 6,
+  "observed_check_regressions": 0,
+  "literal_deletion_units": 59,
+  "original_words": 9486,
+  "selected_words": 8722,
+  "original_bytes": 72346,
+  "selected_bytes": 67031,
+  "evidence": "Exposed synthetic matched tasks; no population non-inferiority or causal inference about individual removals"
+}

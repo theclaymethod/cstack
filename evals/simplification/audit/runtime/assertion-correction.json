@@ -1,0 +1,15 @@
+{
+  "original_check_error": "Compared frozen plan with caller-owned lean object which had been intentionally modified; false did not indicate a product defect.",
+  "expected_frozen_retained": [
+    "contract",
+    "duplicate-b",
+    "legacy-auth"
+  ],
+  "observed_frozen_retained": [
+    "contract",
+    "duplicate-b",
+    "legacy-auth"
+  ],
+  "caller_plan_edit_isolated": true,
+  "additional_native_cases": 0
+}

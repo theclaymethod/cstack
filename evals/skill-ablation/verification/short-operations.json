@@ -1,0 +1,963 @@
+{
+  "workspace": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/skill-audit-ablation/runs/short-operations",
+  "source": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/skill-audit-ablation/shortened-candidate",
+  "evidence": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/skill-audit-ablation/runs/short-operations/eval-runs/skill-exercise",
+  "protected_files_unchanged": [
+    "evaluate.py",
+    "evals/spec.json",
+    "evals/rubric.md",
+    "evals/cases.jsonl",
+    "support_agent.py"
+  ],
+  "installed_skill_files_matched": [
+    "ablation/SKILL.md",
+    "ablation/references/quality.md",
+    "ablation/references/removal.md",
+    "adversarial-cases/SKILL.md",
+    "adversarial-cases/references/case-contract.md",
+    "adversarial-cases/references/failure-methods.md",
+    "adversarial-cases/references/injection.md",
+    "adversarial-cases/references/synthetic-methods.md",
+    "bitter-lesson/SKILL.md",
+    "bitter-lesson/references/migration.md",
+    "bootstrap/SKILL.md",
+    "bootstrap/references/labeling.md",
+    "bootstrap/references/research.md",
+    "bootstrap/references/scenarios.md",
+    "calibrate-judge/SKILL.md",
+    "calibrate-judge/references/backends.md",
+    "calibrate-judge/references/measurement.md",
+    "calibrate-judge/references/protocol.md",
+    "create-eval/SKILL.md",
+    "create-eval/assets/trace-review.css",
+    "create-eval/assets/trace-review.html",
+    "create-eval/assets/trace-review.js",
+    "create-eval/references/early-development.md",
+    "create-eval/references/ecosystem.md",
+    "create-eval/references/formats.md",
+    "create-eval/references/from-findings.md",
+    "create-eval/references/judges.md",
+    "create-eval/references/trace-review.md",
+    "create-eval/scripts/review_traces.py",
+    "cross-examine/SKILL.md",
+    "cross-examine/references/ledger.md",
+    "cross-examine/references/lessons.md",
+    "distill-me/SKILL.md",
+    "distill-me/agents/openai.yaml",
+    "distill-me/references/review-passes.md",
+    "expert-mode/SKILL.md",
+    "expert-mode/agents/openai.yaml",
+    "expert-mode/references/export.md",
+    "expert-mode/references/privacy-filter.md",
+    "expert-mode/references/records.md",
+    "expert-mode/scripts/export_findings.py",
+    "hill-climb/SKILL.md",
+    "hill-climb/references/campaign.md",
+    "hill-climb/references/data-handoff.md",
+    "hill-climb/references/optimizers.md",
+    "run-eval/SKILL.md",
+    "run-eval/references/package.md"
+  ],
+  "native_runs": [
+    {
+      "path": "campaign/attempts/000-baseline",
+      "case_ids": [
+        "dev-howto",
+        "dev-generic",
+        "dev-explicit",
+        "dev-duplicate",
+        "dev-ambiguous",
+        "dev-password",
+        "dev-closed",
+        "dev-unrelated"
+      ],
+      "executed": 8,
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 4,
+        "PASS": 4,
+        "UNKNOWN": 0
+      },
+      "sha256": {
+        "manifest.json": "621f163626b6585731f801757369cce9b89a896cf00f53a3601211ec969510e3",
+        "summary.json": "3390dbc4e2513936656669116274c3c0f3faad0611e3ee934169d5c450a3d536",
+        "traces.jsonl": "1e26368899fb4fb83ebaa147662ea87f19bdf185aa3f9390c50b832e9bb89fac",
+        "candidate.py": "0720b56482a445967ff2a98ec5cfa668c858b8a6f662da74a55c21b257393efc",
+        "cases.jsonl": "71f1d8c50f7ce2b3ca512c6f2703faa4e30d5c63237824e3a73e7a573cf4f7b2"
+      }
+    },
+    {
+      "path": "campaign/attempts/001-proposal",
+      "case_ids": [
+        "dev-howto",
+        "dev-generic",
+        "dev-explicit",
+        "dev-duplicate",
+        "dev-ambiguous",
+        "dev-password",
+        "dev-closed",
+        "dev-unrelated"
+      ],
+      "executed": 8,
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 2,
+        "PASS": 6,
+        "UNKNOWN": 0
+      },
+      "sha256": {
+        "manifest.json": "31e650894a83217f66d7ed738edf18180195466df022f3c9395d9be07a093524",
+        "summary.json": "1d59c50d2fafb9137d53a321b0650b00094839cfd889d837bf547ea9f35055bf",
+        "traces.jsonl": "1ea8012463b77775ddd00acbafde7659f138a394bf4dbf47df7dc0c9dd1e81dc",
+        "candidate.py": "5fff29e7ea1a726cc9a4a74376ea5b93662fd81269e7497d9f5aa63a0684b230",
+        "cases.jsonl": "71f1d8c50f7ce2b3ca512c6f2703faa4e30d5c63237824e3a73e7a573cf4f7b2"
+      }
+    },
+    {
+      "path": "campaign/attempts/002-proposal",
+      "case_ids": [
+        "dev-howto",
+        "dev-generic",
+        "dev-explicit",
+        "dev-duplicate",
+        "dev-ambiguous",
+        "dev-password",
+        "dev-closed",
+        "dev-unrelated"
+      ],
+      "executed": 8,
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 8,
+        "UNKNOWN": 0
+      },
+      "sha256": {
+        "manifest.json": "129be72a3b1a5ad3988d7e46700363a05be67697ab0804add0752f4a09bf961f",
+        "summary.json": "0662c57be1cd1fca692f4a0e86c074e0a7b94526605e3163de23c5491db15ecf",
+        "traces.jsonl": "8079f7279f3a3c89c7ea024a5c049cffc8762c8093f6b731adc45c143914cc9f",
+        "candidate.py": "d8cc818e83af4453a44e9025484ae6e23ecc7cbcf8c9e621efa56c21a179a1c3",
+        "cases.jsonl": "71f1d8c50f7ce2b3ca512c6f2703faa4e30d5c63237824e3a73e7a573cf4f7b2"
+      }
+    },
+    {
+      "path": "campaign/attempts/003-confirm-baseline",
+      "case_ids": [
+        "conf-howto",
+        "conf-targeted",
+        "conf-duplicate",
+        "conf-preservation"
+      ],
+      "executed": 4,
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 2,
+        "PASS": 2,
+        "UNKNOWN": 0
+      },
+      "sha256": {
+        "manifest.json": "32e0fe8240962e67f1032ccc74fc2fa47aad6de5e57c6644222586997ce628fc",
+        "summary.json": "c1cd1168fdef493694ff6e8abbf795b32ca8c3db271ece86e0a0945961b5888f",
+        "traces.jsonl": "6890994256c0c4f1ff861452b57a2f52b7dd944ff36c61beebe1488adfb96df6",
+        "candidate.py": "0720b56482a445967ff2a98ec5cfa668c858b8a6f662da74a55c21b257393efc",
+        "cases.jsonl": "71f1d8c50f7ce2b3ca512c6f2703faa4e30d5c63237824e3a73e7a573cf4f7b2"
+      }
+    },
+    {
+      "path": "campaign/attempts/004-confirm-incumbent",
+      "case_ids": [
+        "conf-howto",
+        "conf-targeted",
+        "conf-duplicate",
+        "conf-preservation"
+      ],
+      "executed": 4,
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 4,
+        "UNKNOWN": 0
+      },
+      "sha256": {
+        "manifest.json": "b63469c88b7167335a80d86cea74d1b9c90e6f1603b9d934488297932ed5b901",
+        "summary.json": "238b9b82856e7b64011ea2a2b28dd0c6cd4055900dec255933fb349b2c9c48a6",
+        "traces.jsonl": "f851f7dffbc40120751625210c382d4f9e435df2ff12497349dfad2ccdfbfd91",
+        "candidate.py": "d8cc818e83af4453a44e9025484ae6e23ecc7cbcf8c9e621efa56c21a179a1c3",
+        "cases.jsonl": "71f1d8c50f7ce2b3ca512c6f2703faa4e30d5c63237824e3a73e7a573cf4f7b2"
+      }
+    },
+    {
+      "path": "claim-audit/alternative-native",
+      "case_ids": [
+        "dev-howto",
+        "dev-generic",
+        "dev-explicit",
+        "dev-duplicate",
+        "dev-ambiguous",
+        "dev-password",
+        "dev-closed",
+        "dev-unrelated"
+      ],
+      "executed": 8,
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 8,
+        "UNKNOWN": 0
+      },
+      "sha256": {
+        "manifest.json": "5c128b99461f77355dfba61814c806f2f134f1d84a136937aab66634e33caad7",
+        "summary.json": "fe8018fd3b0daa387f729667dee3a879ed9b8c71b49ca9f5671f6321be2c61c2",
+        "traces.jsonl": "05c036b33752de8feb65197837732c3ad9ff519df3804a0ab8f6571c1c381442",
+        "candidate.py": "1f8609454b600bb7525786b78b4e2202c0024cc40a7655d957c53fbdc5da4092",
+        "cases.jsonl": "71f1d8c50f7ce2b3ca512c6f2703faa4e30d5c63237824e3a73e7a573cf4f7b2"
+      }
+    },
+    {
+      "path": "claim-audit/forged-native",
+      "case_ids": [
+        "dev-howto",
+        "dev-generic",
+        "dev-explicit",
+        "dev-duplicate",
+        "dev-ambiguous",
+        "dev-password",
+        "dev-closed",
+        "dev-unrelated"
+      ],
+      "executed": 8,
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 8,
+        "PASS": 0,
+        "UNKNOWN": 0
+      },
+      "sha256": {
+        "manifest.json": "270685301a3848d6dc5425ca8e30aaefa6c67c837d6dc4c9442d6fdcf85fc821",
+        "summary.json": "64842342965c9879d22db6fe923996250207e21a584869e5753fe12204260d07",
+        "traces.jsonl": "01d1a890d9215883e8c55611eed68f0c46fbfaab5dea66921347de31464cf4d2",
+        "candidate.py": "73b64fb040b2d1b4f9479c904a9ef2109bdd0ae0bac366b104da4562c4958d6e",
+        "cases.jsonl": "71f1d8c50f7ce2b3ca512c6f2703faa4e30d5c63237824e3a73e7a573cf4f7b2"
+      }
+    },
+    {
+      "path": "judge/dataset/native-source/improved",
+      "case_ids": [
+        "dev-howto",
+        "dev-generic",
+        "dev-explicit",
+        "dev-duplicate",
+        "dev-ambiguous",
+        "dev-password",
+        "dev-closed",
+        "dev-unrelated",
+        "conf-howto",
+        "conf-targeted",
+        "conf-duplicate",
+        "conf-preservation"
+      ],
+      "executed": 12,
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 12,
+        "UNKNOWN": 0
+      },
+      "sha256": {
+        "manifest.json": "ca42b62b2b5f91731116ba9a76e3aa4c81fac74576e1c86580019b1de6f7e675",
+        "summary.json": "88527eb0b6f0af1b4ea69172324758ccda8691e5d253abc5951687428a2b7dcc",
+        "traces.jsonl": "b9b72859d2c163ff2615ac154ce5c75684a333b98486aefebec7d0fb024a40b9",
+        "candidate.py": "d8cc818e83af4453a44e9025484ae6e23ecc7cbcf8c9e621efa56c21a179a1c3",
+        "cases.jsonl": "26c058edfa0e24b1daff73c8944d6f8171ed2e4a561b8b0b4cf32b3fb07fd13b"
+      }
+    },
+    {
+      "path": "judge/dataset/native-source/support_agent",
+      "case_ids": [
+        "dev-howto",
+        "dev-generic",
+        "dev-explicit",
+        "dev-duplicate",
+        "dev-ambiguous",
+        "dev-password",
+        "dev-closed",
+        "dev-unrelated",
+        "conf-howto",
+        "conf-targeted",
+        "conf-duplicate",
+        "conf-preservation"
+      ],
+      "executed": 12,
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 6,
+        "PASS": 6,
+        "UNKNOWN": 0
+      },
+      "sha256": {
+        "manifest.json": "58d3f73c77fed3b4a4d0aa32dbffcc5c71f3d05e4c035d29398fa47bcbe1f9ad",
+        "summary.json": "168ed4476333ae902726b6aeaecbc63eb8aa2cadbc686a7caed98400071a2093",
+        "traces.jsonl": "4b9e3c843fd64a10ebdbafbca471749de93fe17afac80cee0acba0faa7c5adfc",
+        "candidate.py": "0720b56482a445967ff2a98ec5cfa668c858b8a6f662da74a55c21b257393efc",
+        "cases.jsonl": "26c058edfa0e24b1daff73c8944d6f8171ed2e4a561b8b0b4cf32b3fb07fd13b"
+      }
+    },
+    {
+      "path": "run-baseline",
+      "case_ids": [
+        "dev-howto",
+        "dev-generic",
+        "dev-explicit",
+        "dev-duplicate",
+        "dev-ambiguous",
+        "dev-password",
+        "dev-closed",
+        "dev-unrelated"
+      ],
+      "executed": 8,
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 4,
+        "PASS": 4,
+        "UNKNOWN": 0
+      },
+      "sha256": {
+        "manifest.json": "621f163626b6585731f801757369cce9b89a896cf00f53a3601211ec969510e3",
+        "summary.json": "3390dbc4e2513936656669116274c3c0f3faad0611e3ee934169d5c450a3d536",
+        "traces.jsonl": "1e26368899fb4fb83ebaa147662ea87f19bdf185aa3f9390c50b832e9bb89fac",
+        "candidate.py": "0720b56482a445967ff2a98ec5cfa668c858b8a6f662da74a55c21b257393efc",
+        "cases.jsonl": "71f1d8c50f7ce2b3ca512c6f2703faa4e30d5c63237824e3a73e7a573cf4f7b2"
+      }
+    },
+    {
+      "path": "run-conforming",
+      "case_ids": [
+        "dev-howto",
+        "dev-generic",
+        "dev-explicit",
+        "dev-duplicate",
+        "dev-ambiguous",
+        "dev-password",
+        "dev-closed",
+        "dev-unrelated"
+      ],
+      "executed": 8,
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 8,
+        "UNKNOWN": 0
+      },
+      "sha256": {
+        "manifest.json": "129be72a3b1a5ad3988d7e46700363a05be67697ab0804add0752f4a09bf961f",
+        "summary.json": "0662c57be1cd1fca692f4a0e86c074e0a7b94526605e3163de23c5491db15ecf",
+        "traces.jsonl": "8079f7279f3a3c89c7ea024a5c049cffc8762c8093f6b731adc45c143914cc9f",
+        "candidate.py": "d8cc818e83af4453a44e9025484ae6e23ecc7cbcf8c9e621efa56c21a179a1c3",
+        "cases.jsonl": "71f1d8c50f7ce2b3ca512c6f2703faa4e30d5c63237824e3a73e7a573cf4f7b2"
+      }
+    },
+    {
+      "path": "simplification/native/drop-conflict-a",
+      "case_ids": [
+        "dev-howto",
+        "dev-generic",
+        "dev-explicit",
+        "dev-duplicate",
+        "dev-ambiguous",
+        "dev-password",
+        "dev-closed",
+        "dev-unrelated"
+      ],
+      "executed": 8,
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 4,
+        "PASS": 4,
+        "UNKNOWN": 0
+      },
+      "sha256": {
+        "manifest.json": "8eebcb459b728d068521ac78ad261a9a817125f6a1617a940b4eda9218d773de",
+        "summary.json": "b1ad73ebaa40f181c7731d40ba2de98ad58d29411afdc409213416646b43ba71",
+        "traces.jsonl": "b76ef96a6c86fda48a4320654b3d6cd42d76d3a77bfbc367b5544b9a41a29700",
+        "candidate.py": "ff1398a9bf4e7266f4253f12afc5a75852e97991e88aa742cf957de30f449adb",
+        "cases.jsonl": "e26339de4786d747ff0e1f235a2fa74df7a6245075178cfb5bf01e9538fc8ec0"
+      }
+    },
+    {
+      "path": "simplification/native/drop-conflict-b",
+      "case_ids": [
+        "dev-howto",
+        "dev-generic",
+        "dev-explicit",
+        "dev-duplicate",
+        "dev-ambiguous",
+        "dev-password",
+        "dev-closed",
+        "dev-unrelated"
+      ],
+      "executed": 8,
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 4,
+        "PASS": 4,
+        "UNKNOWN": 0
+      },
+      "sha256": {
+        "manifest.json": "fc25e489185bd92bc3c35c1c394f15f0e04d398d6314d9963f0081097f937b70",
+        "summary.json": "5b48239d915db975abc50f95f2b8fc222f16dae328434b79df9bbed0776be580",
+        "traces.jsonl": "b76ef96a6c86fda48a4320654b3d6cd42d76d3a77bfbc367b5544b9a41a29700",
+        "candidate.py": "9c071428acb1d134061d3ecfae9ee3d06dcc0fce716f9f29028610b04f214cc8",
+        "cases.jsonl": "e26339de4786d747ff0e1f235a2fa74df7a6245075178cfb5bf01e9538fc8ec0"
+      }
+    },
+    {
+      "path": "simplification/native/drop-conflict-pair",
+      "case_ids": [
+        "dev-howto",
+        "dev-generic",
+        "dev-explicit",
+        "dev-duplicate",
+        "dev-ambiguous",
+        "dev-password",
+        "dev-closed",
+        "dev-unrelated"
+      ],
+      "executed": 8,
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 8,
+        "UNKNOWN": 0
+      },
+      "sha256": {
+        "manifest.json": "4c2aeb276c70a1c5d1bb349594a8393e07e27753b0b4749bfd30a640a0fba228",
+        "summary.json": "2d850cf18b7462d5556993c1b3232bda41d496d2dd01088bca4261019e04386a",
+        "traces.jsonl": "8079f7279f3a3c89c7ea024a5c049cffc8762c8093f6b731adc45c143914cc9f",
+        "candidate.py": "872a804ac71748d8bdae154522713a31a109c9c0d7f004d321b35a1546f0ab6b",
+        "cases.jsonl": "e26339de4786d747ff0e1f235a2fa74df7a6245075178cfb5bf01e9538fc8ec0"
+      }
+    },
+    {
+      "path": "simplification/native/drop-duplicate-a",
+      "case_ids": [
+        "dev-howto",
+        "dev-generic",
+        "dev-explicit",
+        "dev-duplicate",
+        "dev-ambiguous",
+        "dev-password",
+        "dev-closed",
+        "dev-unrelated"
+      ],
+      "executed": 8,
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 8,
+        "UNKNOWN": 0
+      },
+      "sha256": {
+        "manifest.json": "a90ef61c245a9b796811110afaeaff3d0125f5c9f18afc8194c829be4321392f",
+        "summary.json": "54115617e7081e826d66d1ff8dacab3b1f34a46f19a99f5c0efdbcbd31226cef",
+        "traces.jsonl": "8079f7279f3a3c89c7ea024a5c049cffc8762c8093f6b731adc45c143914cc9f",
+        "candidate.py": "6c183962f27c6ff769a1a127f92412f27b22e8cf49b4299573b6d8719a732cc3",
+        "cases.jsonl": "e26339de4786d747ff0e1f235a2fa74df7a6245075178cfb5bf01e9538fc8ec0"
+      }
+    },
+    {
+      "path": "simplification/native/drop-duplicate-b",
+      "case_ids": [
+        "dev-howto",
+        "dev-generic",
+        "dev-explicit",
+        "dev-duplicate",
+        "dev-ambiguous",
+        "dev-password",
+        "dev-closed",
+        "dev-unrelated"
+      ],
+      "executed": 8,
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 1,
+        "PASS": 7,
+        "UNKNOWN": 0
+      },
+      "sha256": {
+        "manifest.json": "a293cdde7d6eddf71719fcd2553d4810a6afe37a5e4d880e4f4fa0611ecef927",
+        "summary.json": "cf301e8076bd7606340d7a957c4f35ceee1332d1203643499ee5ed2ff7f1cbd3",
+        "traces.jsonl": "e23bfc9b1fc39bcaf268c3857897e1a2e6ca066ce59362333fe9bf2e5cfb6dbe",
+        "candidate.py": "45a2486069fbfefe7a08b9dedf4be490fe3f3ac0527ca45d3a6d3563957de6ed",
+        "cases.jsonl": "e26339de4786d747ff0e1f235a2fa74df7a6245075178cfb5bf01e9538fc8ec0"
+      }
+    },
+    {
+      "path": "simplification/native/drop-noise",
+      "case_ids": [
+        "dev-howto",
+        "dev-generic",
+        "dev-explicit",
+        "dev-duplicate",
+        "dev-ambiguous",
+        "dev-password",
+        "dev-closed",
+        "dev-unrelated"
+      ],
+      "executed": 8,
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 8,
+        "UNKNOWN": 0
+      },
+      "sha256": {
+        "manifest.json": "e6297e1b636bd573b2fba07635ef8613ce3ea3d016cfcdc744223e398f772fc6",
+        "summary.json": "f19f14c6a727875d1ed3ebfa363908223bd531191779a20b708a45162deca2da",
+        "traces.jsonl": "8079f7279f3a3c89c7ea024a5c049cffc8762c8093f6b731adc45c143914cc9f",
+        "candidate.py": "9da54f3355108076f583afb8196c36bd371f80bdaad5bc25100e2e915bab8bab",
+        "cases.jsonl": "e26339de4786d747ff0e1f235a2fa74df7a6245075178cfb5bf01e9538fc8ec0"
+      }
+    },
+    {
+      "path": "simplification/native/final-new-existing",
+      "case_ids": [
+        "conf-howto",
+        "conf-targeted",
+        "conf-duplicate",
+        "conf-preservation"
+      ],
+      "executed": 4,
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 4,
+        "UNKNOWN": 0
+      },
+      "sha256": {
+        "manifest.json": "3d304dbb1eedc0155af910108789e88bf756226144a92a95092491cf48420127",
+        "summary.json": "51f8048fc846ae513d541fa74e6964f38977f61795274e9e5feb84c4b8932144",
+        "traces.jsonl": "f851f7dffbc40120751625210c382d4f9e435df2ff12497349dfad2ccdfbfd91",
+        "candidate.py": "cfd3290663da1d5980890d655f5e00cf294c989134bea9b94eae5d4bc12c1fb1",
+        "cases.jsonl": "f0e900c7f3fb1a1a1ddf94941b92ee0ee1dc8232930c00cd24a810b2b7f23a30"
+      }
+    },
+    {
+      "path": "simplification/native/final-new-simplified",
+      "case_ids": [
+        "conf-howto",
+        "conf-targeted",
+        "conf-duplicate",
+        "conf-preservation"
+      ],
+      "executed": 4,
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 4,
+        "UNKNOWN": 0
+      },
+      "sha256": {
+        "manifest.json": "f3212683784dedb5b5354fd89ea941183571aeea122270e02f8ed57347eed104",
+        "summary.json": "cefcb6ea4d0a1b730377b8b7f33bcab79c7ff4f6d039415a643bf041c12d7eb9",
+        "traces.jsonl": "f851f7dffbc40120751625210c382d4f9e435df2ff12497349dfad2ccdfbfd91",
+        "candidate.py": "c1a85f6bd9c8c5d53d51d44220eacde87043630d7dceb5b8e4625b2cbb37e570",
+        "cases.jsonl": "f0e900c7f3fb1a1a1ddf94941b92ee0ee1dc8232930c00cd24a810b2b7f23a30"
+      }
+    },
+    {
+      "path": "simplification/native/final-old-existing",
+      "case_ids": [
+        "conf-howto",
+        "conf-targeted",
+        "conf-duplicate",
+        "conf-preservation"
+      ],
+      "executed": 4,
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 4,
+        "UNKNOWN": 0
+      },
+      "sha256": {
+        "manifest.json": "f8aa8564e50a7700cfee7af053985c261be4be08b2e03b5e5639b901e39b83aa",
+        "summary.json": "00007953e5a011154b72a7a0fb0678ec3e507042a35d80a9e0ea070f9f8276f4",
+        "traces.jsonl": "f851f7dffbc40120751625210c382d4f9e435df2ff12497349dfad2ccdfbfd91",
+        "candidate.py": "8bd79ed28276f336f5f4727a603900ab194c4e7c456ed736eff81e34acd802b2",
+        "cases.jsonl": "f0e900c7f3fb1a1a1ddf94941b92ee0ee1dc8232930c00cd24a810b2b7f23a30"
+      }
+    },
+    {
+      "path": "simplification/native/final-old-reduced",
+      "case_ids": [
+        "conf-howto",
+        "conf-targeted",
+        "conf-duplicate",
+        "conf-preservation"
+      ],
+      "executed": 4,
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 4,
+        "UNKNOWN": 0
+      },
+      "sha256": {
+        "manifest.json": "da299dd828f6591201e653fd8bb2758c44dabdbc04b60b2ab8ad35cc2c39feba",
+        "summary.json": "8dce88948b8674d279ded2513ec2eaf3200eeea31f9c5141ba37ca8ffa5d0cf5",
+        "traces.jsonl": "f851f7dffbc40120751625210c382d4f9e435df2ff12497349dfad2ccdfbfd91",
+        "candidate.py": "872a804ac71748d8bdae154522713a31a109c9c0d7f004d321b35a1546f0ab6b",
+        "cases.jsonl": "f0e900c7f3fb1a1a1ddf94941b92ee0ee1dc8232930c00cd24a810b2b7f23a30"
+      }
+    },
+    {
+      "path": "simplification/native/final-old-simplified",
+      "case_ids": [
+        "conf-howto",
+        "conf-targeted",
+        "conf-duplicate",
+        "conf-preservation"
+      ],
+      "executed": 4,
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 2,
+        "PASS": 2,
+        "UNKNOWN": 0
+      },
+      "sha256": {
+        "manifest.json": "c5f4952ad220e257b4e0d9b2fc3e5220478e4acefdcd6d81f9b75739f4b38c8f",
+        "summary.json": "f812d0e150b9e81502a990d7a938656167f5e8f1a5c0bdebfb79e6b8790ecb9e",
+        "traces.jsonl": "3efa885ee50b923b627f9a0ee0457fd296cb8ecace50a4afa5ca43caaa19674f",
+        "candidate.py": "ce35c8b8640da60a0f6141f24256e888ee056941e39ccfef6f9ef7661facd55f",
+        "cases.jsonl": "f0e900c7f3fb1a1a1ddf94941b92ee0ee1dc8232930c00cd24a810b2b7f23a30"
+      }
+    },
+    {
+      "path": "simplification/native/leave-out-conflict-a",
+      "case_ids": [
+        "dev-howto",
+        "dev-generic",
+        "dev-explicit",
+        "dev-duplicate",
+        "dev-ambiguous",
+        "dev-password",
+        "dev-closed",
+        "dev-unrelated"
+      ],
+      "executed": 8,
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 4,
+        "PASS": 4,
+        "UNKNOWN": 0
+      },
+      "sha256": {
+        "manifest.json": "6e166747930103a9d75d206be4e6408b4e7d3e1a89dfa3eea7fc23cdba307aea",
+        "summary.json": "f5bc2f58484f0b89f0935ae2516f22a602f04c8adb8e59baf40d5b5ad2a96b09",
+        "traces.jsonl": "b76ef96a6c86fda48a4320654b3d6cd42d76d3a77bfbc367b5544b9a41a29700",
+        "candidate.py": "75e47033a7a5f2c028e9133dbdddf11f388c714b298349650e7736bb63f84abf",
+        "cases.jsonl": "e26339de4786d747ff0e1f235a2fa74df7a6245075178cfb5bf01e9538fc8ec0"
+      }
+    },
+    {
+      "path": "simplification/native/leave-out-conflict-b",
+      "case_ids": [
+        "dev-howto",
+        "dev-generic",
+        "dev-explicit",
+        "dev-duplicate",
+        "dev-ambiguous",
+        "dev-password",
+        "dev-closed",
+        "dev-unrelated"
+      ],
+      "executed": 8,
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 4,
+        "PASS": 4,
+        "UNKNOWN": 0
+      },
+      "sha256": {
+        "manifest.json": "f96c2e5fa31d55ddec502db549b47cbca0e2878c5da661b9114abbeab5616104",
+        "summary.json": "0d260777df8a13a2de8e732c71bb24c18f010a9f809bf987f21d0ffd1d8acc12",
+        "traces.jsonl": "b76ef96a6c86fda48a4320654b3d6cd42d76d3a77bfbc367b5544b9a41a29700",
+        "candidate.py": "9f06aa482cc34f1295ecdfd3644d39f81e102069ff60033ee7ef234fb9623b85",
+        "cases.jsonl": "e26339de4786d747ff0e1f235a2fa74df7a6245075178cfb5bf01e9538fc8ec0"
+      }
+    },
+    {
+      "path": "simplification/native/leave-out-duplicate-a",
+      "case_ids": [
+        "dev-howto",
+        "dev-generic",
+        "dev-explicit",
+        "dev-duplicate",
+        "dev-ambiguous",
+        "dev-password",
+        "dev-closed",
+        "dev-unrelated"
+      ],
+      "executed": 8,
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 8,
+        "UNKNOWN": 0
+      },
+      "sha256": {
+        "manifest.json": "c1990f226c54821ee30ae606242ca1b7fadb917669cb0ad566bce1acdc3de816",
+        "summary.json": "912dc5eba7fda23e077631bdfa014eb707d987389a6d3768969a7b146727da04",
+        "traces.jsonl": "8079f7279f3a3c89c7ea024a5c049cffc8762c8093f6b731adc45c143914cc9f",
+        "candidate.py": "b1aa3a808fcc0aebad717f7b4d466586270599cb3267942000efbf43bebeccd3",
+        "cases.jsonl": "e26339de4786d747ff0e1f235a2fa74df7a6245075178cfb5bf01e9538fc8ec0"
+      }
+    },
+    {
+      "path": "simplification/native/leave-out-duplicate-b",
+      "case_ids": [
+        "dev-howto",
+        "dev-generic",
+        "dev-explicit",
+        "dev-duplicate",
+        "dev-ambiguous",
+        "dev-password",
+        "dev-closed",
+        "dev-unrelated"
+      ],
+      "executed": 8,
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 8,
+        "UNKNOWN": 0
+      },
+      "sha256": {
+        "manifest.json": "8cedd002d73b2f8906ec797425b9fbf7a67507b064da234a794fc6683587c123",
+        "summary.json": "3f171b5ef84bfe402f057c42199fe998cddaa1306ff42b940e049c195b01db2f",
+        "traces.jsonl": "8079f7279f3a3c89c7ea024a5c049cffc8762c8093f6b731adc45c143914cc9f",
+        "candidate.py": "fdac78193083ab38918c032fb4a1737288407b942b07062172eecc1c12d3b449",
+        "cases.jsonl": "e26339de4786d747ff0e1f235a2fa74df7a6245075178cfb5bf01e9538fc8ec0"
+      }
+    },
+    {
+      "path": "simplification/native/leave-out-example",
+      "case_ids": [
+        "dev-howto",
+        "dev-generic",
+        "dev-explicit",
+        "dev-duplicate",
+        "dev-ambiguous",
+        "dev-password",
+        "dev-closed",
+        "dev-unrelated"
+      ],
+      "executed": 8,
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 8,
+        "UNKNOWN": 0
+      },
+      "sha256": {
+        "manifest.json": "418d83945c4c0a99b95db5c19d3261032ea0fbd6cd82942c48126171e45857d0",
+        "summary.json": "af0a2af8468093012718b2a7722e403880cddb4f39fadc969153d19ccb2de316",
+        "traces.jsonl": "8079f7279f3a3c89c7ea024a5c049cffc8762c8093f6b731adc45c143914cc9f",
+        "candidate.py": "655c2ab994091fb0c6b2ce57c214a71b3dd6c9a84d04baf5be9103b8e39b1df8",
+        "cases.jsonl": "e26339de4786d747ff0e1f235a2fa74df7a6245075178cfb5bf01e9538fc8ec0"
+      }
+    },
+    {
+      "path": "simplification/native/leave-out-legacy-auth",
+      "case_ids": [
+        "dev-howto",
+        "dev-generic",
+        "dev-explicit",
+        "dev-duplicate",
+        "dev-ambiguous",
+        "dev-password",
+        "dev-closed",
+        "dev-unrelated"
+      ],
+      "executed": 8,
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 4,
+        "PASS": 4,
+        "UNKNOWN": 0
+      },
+      "sha256": {
+        "manifest.json": "1d6b89270b7d35732d575a26cbb9e6ea4889f1da2b8b00f582172f4e4e908474",
+        "summary.json": "f02ddcdaaa0aa63d5e8238979c5cc59a9ab14fbf304677bdffe4a09b971cbb1d",
+        "traces.jsonl": "b76ef96a6c86fda48a4320654b3d6cd42d76d3a77bfbc367b5544b9a41a29700",
+        "candidate.py": "dc388a5df2acf48e82dd9a7e2887cfa06c8b214b8be0a16f9ea898c851d61007",
+        "cases.jsonl": "e26339de4786d747ff0e1f235a2fa74df7a6245075178cfb5bf01e9538fc8ec0"
+      }
+    },
+    {
+      "path": "simplification/native/leave-out-plan-detail",
+      "case_ids": [
+        "dev-howto",
+        "dev-generic",
+        "dev-explicit",
+        "dev-duplicate",
+        "dev-ambiguous",
+        "dev-password",
+        "dev-closed",
+        "dev-unrelated"
+      ],
+      "executed": 8,
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 8,
+        "UNKNOWN": 0
+      },
+      "sha256": {
+        "manifest.json": "f503e1c7753b74368a3e5e493cbc23d60e83ccdf02d5ec9e7d36cb91e8bf4d73",
+        "summary.json": "bc8bb5334b446361d7ca39a6bf868c9c57eda3e8dc92b15d15d579f0e1553324",
+        "traces.jsonl": "8079f7279f3a3c89c7ea024a5c049cffc8762c8093f6b731adc45c143914cc9f",
+        "candidate.py": "12b65c25f024476597f85a470e7a6605f5928bb13e6def2bccdcd5d02cb7d9cd",
+        "cases.jsonl": "e26339de4786d747ff0e1f235a2fa74df7a6245075178cfb5bf01e9538fc8ec0"
+      }
+    },
+    {
+      "path": "simplification/native/naive-union",
+      "case_ids": [
+        "dev-howto",
+        "dev-generic",
+        "dev-explicit",
+        "dev-duplicate",
+        "dev-ambiguous",
+        "dev-password",
+        "dev-closed",
+        "dev-unrelated"
+      ],
+      "executed": 8,
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 1,
+        "PASS": 7,
+        "UNKNOWN": 0
+      },
+      "sha256": {
+        "manifest.json": "c53ed857006eba8e5d4e5471f7418eaadc6bfe00a590988632238563bef7cb4a",
+        "summary.json": "c691675e0bf2da9194f589ae9814ef5232979105dba80f977a41d1320868437a",
+        "traces.jsonl": "e23bfc9b1fc39bcaf268c3857897e1a2e6ca066ce59362333fe9bf2e5cfb6dbe",
+        "candidate.py": "5194eb646f8c819f699eb8285af8d82d980932b86cdaf6f122ef1ab99bb73b4f",
+        "cases.jsonl": "e26339de4786d747ff0e1f235a2fa74df7a6245075178cfb5bf01e9538fc8ec0"
+      }
+    },
+    {
+      "path": "simplification/native/new-existing",
+      "case_ids": [
+        "dev-howto",
+        "dev-generic",
+        "dev-explicit",
+        "dev-duplicate",
+        "dev-ambiguous",
+        "dev-password",
+        "dev-closed",
+        "dev-unrelated"
+      ],
+      "executed": 8,
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 8,
+        "UNKNOWN": 0
+      },
+      "sha256": {
+        "manifest.json": "0f557ca432637dd7200549ec7a74b143819d6941a28dbab18d2687ecc4b460a2",
+        "summary.json": "c8648139a9f2fe0da81a97202fb5f529aa52ba5da586e406ac61c91a60b24953",
+        "traces.jsonl": "8079f7279f3a3c89c7ea024a5c049cffc8762c8093f6b731adc45c143914cc9f",
+        "candidate.py": "cfd3290663da1d5980890d655f5e00cf294c989134bea9b94eae5d4bc12c1fb1",
+        "cases.jsonl": "e26339de4786d747ff0e1f235a2fa74df7a6245075178cfb5bf01e9538fc8ec0"
+      }
+    },
+    {
+      "path": "simplification/native/new-simplified",
+      "case_ids": [
+        "dev-howto",
+        "dev-generic",
+        "dev-explicit",
+        "dev-duplicate",
+        "dev-ambiguous",
+        "dev-password",
+        "dev-closed",
+        "dev-unrelated"
+      ],
+      "executed": 8,
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 8,
+        "UNKNOWN": 0
+      },
+      "sha256": {
+        "manifest.json": "bc125017482b103d42bd15f5e8ba89c794af2021411b781964123c648fab5c1d",
+        "summary.json": "6115b9ab69b381975111d98a002e150ddad7660fcd9ede60b7ffa66d2b87e2c8",
+        "traces.jsonl": "8079f7279f3a3c89c7ea024a5c049cffc8762c8093f6b731adc45c143914cc9f",
+        "candidate.py": "c1a85f6bd9c8c5d53d51d44220eacde87043630d7dceb5b8e4625b2cbb37e570",
+        "cases.jsonl": "e26339de4786d747ff0e1f235a2fa74df7a6245075178cfb5bf01e9538fc8ec0"
+      }
+    },
+    {
+      "path": "simplification/native/old-simplified",
+      "case_ids": [
+        "dev-howto",
+        "dev-generic",
+        "dev-explicit",
+        "dev-duplicate",
+        "dev-ambiguous",
+        "dev-password",
+        "dev-closed",
+        "dev-unrelated"
+      ],
+      "executed": 8,
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 4,
+        "PASS": 4,
+        "UNKNOWN": 0
+      },
+      "sha256": {
+        "manifest.json": "22627201c4a66c678e2c369953d6cf52fe4387e5812f271a71f050937edfb443",
+        "summary.json": "f1fc9a7233240f293c3d852ae29d7a21224f4ddd206b7d7c95d2d96a40833f84",
+        "traces.jsonl": "b76ef96a6c86fda48a4320654b3d6cd42d76d3a77bfbc367b5544b9a41a29700",
+        "candidate.py": "ce35c8b8640da60a0f6141f24256e888ee056941e39ccfef6f9ef7661facd55f",
+        "cases.jsonl": "e26339de4786d747ff0e1f235a2fa74df7a6245075178cfb5bf01e9538fc8ec0"
+      }
+    },
+    {
+      "path": "simplification/native/original",
+      "case_ids": [
+        "dev-howto",
+        "dev-generic",
+        "dev-explicit",
+        "dev-duplicate",
+        "dev-ambiguous",
+        "dev-password",
+        "dev-closed",
+        "dev-unrelated"
+      ],
+      "executed": 8,
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 8,
+        "UNKNOWN": 0
+      },
+      "sha256": {
+        "manifest.json": "0a0b99c7371b694f57cfaa4edab220b1a1a62c8eb7b9abf6a461adf08cba72b4",
+        "summary.json": "28bd90208b0965e4d03cbadc1dd43ff4bf90bd033c10bb249b61990e0f63a4f3",
+        "traces.jsonl": "8079f7279f3a3c89c7ea024a5c049cffc8762c8093f6b731adc45c143914cc9f",
+        "candidate.py": "8bd79ed28276f336f5f4727a603900ab194c4e7c456ed736eff81e34acd802b2",
+        "cases.jsonl": "e26339de4786d747ff0e1f235a2fa74df7a6245075178cfb5bf01e9538fc8ec0"
+      }
+    }
+  ],
+  "native_case_executions": 252,
+  "scope": "Source fidelity and native artifact validation; not a semantic or generalization verdict"
+}

@@ -1,0 +1,30 @@
+[
+  {
+    "error": "Expected finite probability in [0,1]",
+    "failure_probability": null,
+    "id": "m1",
+    "rationale": null,
+    "verdict": "ERROR"
+  },
+  {
+    "error": null,
+    "failure_probability": 0.2,
+    "id": "p0",
+    "rationale": null,
+    "verdict": "PASS"
+  },
+  {
+    "error": null,
+    "failure_probability": 0.2,
+    "id": "p1",
+    "rationale": null,
+    "verdict": "PASS"
+  },
+  {
+    "error": null,
+    "failure_probability": 0.2,
+    "id": "p2",
+    "rationale": null,
+    "verdict": "PASS"
+  }
+]

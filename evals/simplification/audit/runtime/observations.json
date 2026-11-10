@@ -1,0 +1,108 @@
+{
+  "caller_plan_edit_isolated": false,
+  "in_memory_charge_after_ledger_edit": 24,
+  "late_fit": {
+    "accepted": false,
+    "message": "Fitting is closed after confirmation freeze",
+    "type": "ValueError"
+  },
+  "legitimate_confirmation": {
+    "admissible": true,
+    "baseline_score": 1.0,
+    "candidate_score": 1.0,
+    "difference": 0.0,
+    "errors_or_unknown": 0,
+    "max_loss": 0.0,
+    "regressions": [],
+    "scope": "Exact outcomes on the declared finite synthetic cases only"
+  },
+  "legitimate_development": {
+    "admissible": true,
+    "baseline_score": 1.0,
+    "candidate_score": 1.0,
+    "difference": 0.0,
+    "errors_or_unknown": 0,
+    "max_loss": 0.0,
+    "regressions": [],
+    "scope": "Exact outcomes on the declared finite synthetic cases only"
+  },
+  "operator_ledger_zeroed_then_checked": {
+    "accepted": true,
+    "result": {
+      "candidate_sha256": "872a804ac71748d8bdae154522713a31a109c9c0d7f004d321b35a1546f0ab6b",
+      "config": {
+        "model": "old-fixture",
+        "retained": [
+          "contract",
+          "duplicate-b",
+          "legacy-auth"
+        ]
+      },
+      "evidence": {
+        "candidate.py": "872a804ac71748d8bdae154522713a31a109c9c0d7f004d321b35a1546f0ab6b",
+        "cases.jsonl": "f0e900c7f3fb1a1a1ddf94941b92ee0ee1dc8232930c00cd24a810b2b7f23a30",
+        "manifest.json": "f92e9192e677ef759f4e00b6b60e5ce7bbbfcbad4487060736b8951dfea6569d",
+        "summary.json": "8dce88948b8674d279ded2513ec2eaf3200eeea31f9c5141ba37ca8ffa5d0cf5",
+        "traces.jsonl": "f851f7dffbc40120751625210c382d4f9e435df2ff12497349dfad2ccdfbfd91"
+      },
+      "native_wall_seconds": 0.0635619160020724,
+      "outcomes": {
+        "conf-duplicate": "PASS",
+        "conf-howto": "PASS",
+        "conf-preservation": "PASS",
+        "conf-targeted": "PASS"
+      },
+      "prompt_utf8_bytes": 3746,
+      "status": "complete",
+      "suite": "confirmation",
+      "unit_count": 3
+    }
+  },
+  "operator_ledger_zeroed_then_compared": {
+    "accepted": true,
+    "result": {
+      "admissible": true,
+      "baseline_score": 1.0,
+      "candidate_score": 1.0,
+      "difference": 0.0,
+      "errors_or_unknown": 0,
+      "max_loss": 0.0,
+      "regressions": [],
+      "scope": "Exact outcomes on the declared finite synthetic cases only"
+    }
+  },
+  "operator_live_plan_changed": {
+    "accepted": false,
+    "message": "Experiment contract, state, or source changed",
+    "type": "ValueError"
+  },
+  "operator_source_changed": {
+    "accepted": false,
+    "message": "Experiment contract, state, or source changed",
+    "type": "ValueError"
+  },
+  "operator_summary_changed": {
+    "accepted": false,
+    "message": "Completed native evidence changed",
+    "type": "ValueError"
+  },
+  "post_restoration": {
+    "accepted": true,
+    "result": {
+      "admissible": true,
+      "baseline_score": 1.0,
+      "candidate_score": 1.0,
+      "difference": 0.0,
+      "errors_or_unknown": 0,
+      "max_loss": 0.0,
+      "regressions": [],
+      "scope": "Exact outcomes on the declared finite synthetic cases only"
+    }
+  },
+  "repeat_final": {
+    "accepted": false,
+    "message": "Confirmation requires an exact frozen plan entry",
+    "type": "ValueError"
+  },
+  "reserved": 24
+}

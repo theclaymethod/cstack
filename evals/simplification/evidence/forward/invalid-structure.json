@@ -1,0 +1,4 @@
+{
+  "error": "Surviving dependent requires its parent: plan-detail",
+  "status": "invalid intervention; not executed"
+}

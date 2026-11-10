@@ -1,0 +1,49 @@
+{
+  "contract_hash": "ed362c60c5e5e6048b04536029aa361bfb394f65739f44260d6e8a24ae51122b",
+  "native_receipt_sha256": "4f32d99fcbb8fdff2cdf8e0fd1f6faf89cf4825e574a549c51a5cb20896954a1",
+  "plan": {},
+  "records": {
+    "original": {
+      "candidate_sha256": "8bd79ed28276f336f5f4727a603900ab194c4e7c456ed736eff81e34acd802b2",
+      "config": {
+        "model": "old-fixture",
+        "retained": [
+          "conflict-a",
+          "conflict-b",
+          "contract",
+          "duplicate-a",
+          "duplicate-b",
+          "example",
+          "legacy-auth",
+          "plan",
+          "plan-detail"
+        ]
+      },
+      "evidence": {
+        "candidate.py": "8bd79ed28276f336f5f4727a603900ab194c4e7c456ed736eff81e34acd802b2",
+        "cases.jsonl": "e26339de4786d747ff0e1f235a2fa74df7a6245075178cfb5bf01e9538fc8ec0",
+        "manifest.json": "32a4ab96581a113d3bdcd4a8a0d09fe8fda43308727325f2f3f498184d7ceed9",
+        "summary.json": "28bd90208b0965e4d03cbadc1dd43ff4bf90bd033c10bb249b61990e0f63a4f3",
+        "traces.jsonl": "8079f7279f3a3c89c7ea024a5c049cffc8762c8093f6b731adc45c143914cc9f"
+      },
+      "native_wall_seconds": 0.14238870800181758,
+      "outcomes": {
+        "dev-ambiguous": "PASS",
+        "dev-closed": "PASS",
+        "dev-duplicate": "PASS",
+        "dev-explicit": "PASS",
+        "dev-generic": "PASS",
+        "dev-howto": "PASS",
+        "dev-password": "PASS",
+        "dev-unrelated": "PASS"
+      },
+      "prompt_utf8_bytes": 4193,
+      "status": "complete",
+      "suite": "development",
+      "unit_count": 9
+    }
+  },
+  "remaining_confirmation_reserve": 0,
+  "reserved_case_executions": 8,
+  "status": "search"
+}

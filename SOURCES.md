@@ -68,3 +68,9 @@ LangChain's [eval-engineering](https://github.com/langchain-ai/langchain-skills/
 ## Calibrate Judge
 
 The reference-only Calibrate Judge skill and project-local offline controls are original work informed by [judge-calibration research](research/judge-calibration.md). References cover typed Jev-style decisions and traditional LLM judges without bundling model clients. Playground labels are native code-derived synthetic outcomes; its judge processes are deterministic response-shape fixtures. No provider model call or human-gold calibration was performed. [The development report](evals/calibrate-judge/REPORT.md) records baseline/selection mechanics, kappa/error/probability diagnostics, independent use, confirmed review repairs and limits.
+
+## Ablation and Bitter Lesson
+
+The reference-only skills and project-local deterministic simplification controls are original C Stack work informed by [primary-source research](research/ablation-and-bitter-lesson.md). Delta debugging and hierarchical reduction inform deletion search; statistical guidance informs quality-preservation claims. Sutton's essay motivates revisiting inherited complexity, while provider guidance supplies model-specific hypotheses. No upstream algorithm implementation is copied or required. The fixture explicitly programs model differences and prompt interactions; it validates mechanics without provider calls or production prompt-quality claims. [The report](evals/simplification/REPORT.md) records actual evidence and limits.
+
+The [skill-pack ablation](evals/skill-ablation/REPORT.md) preserves original instructions, literal deletion units, matched host-agent executions and native evidence. This is a local exposed-fixture comparison; no general performance or runtime-cost reduction is claimed. The [Ablation/Bitter Lesson audit](evals/simplification/CROSS_EXAMINE_LEDGER.md) records the independently reviewed accounting correction applied before that comparison.

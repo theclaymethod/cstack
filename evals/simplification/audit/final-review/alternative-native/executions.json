@@ -1,0 +1,21 @@
+{
+  "actual_completed": 8,
+  "calls": [
+    {
+      "candidate": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/skill-audit-ablation/final-reviewer/legitimate_alternative.py",
+      "cases": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/skill-audit-ablation/final-reviewer/alternative-native/alternative.jsonl",
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 8,
+        "UNKNOWN": 0
+      },
+      "executed": 8,
+      "label": "alternative",
+      "reserved": 8,
+      "status": "complete"
+    }
+  ],
+  "limit": 8,
+  "reserved": 8
+}

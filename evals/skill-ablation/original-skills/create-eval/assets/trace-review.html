@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Trace review</title><link rel="stylesheet" href="/style.css"><script src="/app.js" defer></script>
+</head>
+<body>
+  <header><h1>Trace review</h1><p id="progress" aria-live="polite"></p></header>
+  <nav aria-label="Trace navigation">
+    <button id="previous">Previous</button><button id="next">Next</button>
+    <label for="trace-select">Trace</label><select id="trace-select"></select>
+  </nav>
+  <main>
+    <article aria-label="Trace content"><h2 id="trace-title"></h2><div id="trace-content"></div></article>
+    <aside aria-label="Review">
+      <h2>Review</h2>
+      <label for="review-select">Saved observations</label><select id="review-select"></select>
+      <button id="new-review">Add another observation</button>
+      <form id="review-form">
+        <label for="reviewer">Reviewer</label><input id="reviewer" required autocomplete="name">
+        <label for="scope">Judgment scope</label><input id="scope" required placeholder="Whole output, edge ID, claim, or tool step">
+        <label for="verdict">Verdict for this scope</label>
+        <select id="verdict"><option value="UNREVIEWED">Observation only</option><option value="PASS">Pass</option><option value="FAIL">Fail</option><option value="DEFER">Defer / uncertain</option></select>
+        <label for="notes">Observation</label><textarea id="notes" rows="5" placeholder="What did you find? Include the relevant evidence."></textarea>
+        <label for="correction">Correction, if supplied</label><textarea id="correction" rows="3"></textarea>
+        <details><summary>Proposed rubric questions</summary><label for="rubric">One yes/no question per line; passing answers and applicability need confirmation.</label><textarea id="rubric" rows="4"></textarea></details>
+        <div class="actions"><button type="submit">Save review</button><button type="button" id="save-next">Save and next</button></div>
+        <p id="save-status" role="status">No changes saved yet.</p>
+      </form>
+      <p class="help">⌘/Ctrl+Enter saves and advances. Alt+←/→ navigates. Saved revisions preserve earlier reviews. These notes do not automatically become eval gold.</p>
+    </aside>
+  </main>
+</body>
+</html>

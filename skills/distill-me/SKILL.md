@@ -5,7 +5,7 @@ description: On explicit /distill-me invocation, recover expert judgments, corre
 
 # Distill Me
 
-Review the current session once and save supported expert judgments as eval data. Discussing the skill does not invoke it. Leave [Expert Mode](../expert-mode/SKILL.md) active or inactive as it was; this pass does not start ongoing capture.
+Discussing the skill does not invoke it. Leave [Expert Mode](../expert-mode/SKILL.md) active or inactive as it was; this pass does not start ongoing capture.
 
 ## Bound the source
 
@@ -17,7 +17,7 @@ Reuse the project's dataset, including prior Expert Mode records. Otherwise foll
 
 ## Find the useful judgments
 
-Review corrections, rubric criteria, and evidence quality. For substantial sessions, independent reviewers can use [the review prompts](references/review-passes.md) within the authorized budget. Short sessions or hosts without delegation can cover those questions sequentially. Each reviewer uses the original source and returns candidates; the coordinator writes the dataset. Reviewer agreement supplies no expert authority.
+For substantial sessions, independent reviewers can use [the review prompts](references/review-passes.md) within the authorized budget. Each reviewer uses the original source and returns candidates; the coordinator writes the dataset. Reviewer agreement supplies no expert authority.
 
 Follow the conversation chronologically, pairing each judgment with the output the expert actually saw and any later clarification or retraction. Capture explicit errors without waiting for a replacement. Preserve partial corrections, rationale, scope, and alternatives. Keep expert wording separate from your interpretation.
 
@@ -39,8 +39,8 @@ Replay readiness needs recoverable inputs, the original output/version, an expli
 
 ## Report and hand off
 
-Lead with what was saved and where. Mention meaningful rubric changes, unresolved questions, source limits, and write failures. Keep replies short; show individual rows when an expert decision needs them.
+Lead with what was saved and where. Mention meaningful rubric changes, unresolved questions, source limits, and write failures.
 
 For requested sharing, follow [the export workflow](../expert-mode/references/export.md), including its local Privacy Filter setup and review of redaction's effect on eval meaning. Preserve private originals. A local export does not send data or activate capture.
 
-This pass adds no authority to fix products, create test files, run eval campaigns, commit, upload, publish, or change standing working rules. Use ordinary local files and available agent tools.
+This pass adds no authority to fix products, create test files, run eval campaigns, commit, upload, publish, or change standing working rules.

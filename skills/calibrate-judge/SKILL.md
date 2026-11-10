@@ -5,13 +5,13 @@ description: Fit and validate an automated judge against authoritative labeled e
 
 # Calibrate Judge
 
-Turn the project's grading standard into a reusable judge and measure how well it reproduces authoritative outcomes. Keep agreement, decision thresholds, probability calibration and repeated-input stability separate. A fitting score or typed output alone does not establish a calibrated judge.
+Turn the project's grading standard into a reusable judge and measure how well it reproduces authoritative outcomes. Keep agreement, decision thresholds, probability calibration and repeated-input stability separate.
 
-This skill supplies instructions and references. Write judge code, native adapters, datasets and run artifacts in the consuming project. Reuse its format and runner. Missing gold or execution setup leaves the corresponding calibration unrun; a disclosed synthetic mechanics demonstration is still useful.
+Write judge code, native adapters, datasets and run artifacts in the consuming project. Reuse its format and runner. Missing gold or execution setup leaves the corresponding calibration unrun; a disclosed synthetic mechanics demonstration is still useful.
 
 ## Establish the contract
 
-Recover original inputs, evaluated outputs/versions, allowed task references, labels, criterion scope, authority and source families. Read [the calibration protocol](references/protocol.md) for label auditing, data separation, freezing and handoff. Resolve project facts before asking the owner for missing judgments.
+Recover original inputs, evaluated outputs/versions, allowed task references, labels, criterion scope, authority and source families. Read [the calibration protocol](references/protocol.md) for label auditing, data separation, freezing and handoff.
 
 Establish the target decision and costly errors, supported label types, allowed abstention/fallback, backend/model, mutable judge components, budget and acceptance targets. Preserve choices the owner has not made. A missing release policy is not a pass. Do not infer permission for paid model calls, uploads, weight training or opening reserved labels from a request to write a skill or validate mechanics.
 
@@ -19,7 +19,7 @@ Freeze intended criteria and gold meaning. Wording, examples and input represent
 
 ## Execute the untuned judge
 
-Map actual backend capabilities using [backend guidance](references/backends.md). Use the project's native request and response format. A Jev-style model may return typed probabilities without an explanation; a generative judge may return a structured verdict and optional concise evidence summary. Preserve native responses, unavailable fields, parsing/transport errors, model identity and costs.
+Map actual backend capabilities using [backend guidance](references/backends.md). Use the project's native request and response format. Preserve native responses, unavailable fields, parsing/transport errors, model identity and costs.
 
 Run the initial configuration before edits on declared development membership. Keep gold verdicts, annotation rationales, label-bearing names and selection metadata out of current judge inputs. Approved reference answers or expected task behavior may be legitimate inputs when the real judge is allowed to use them. Fitting feedback may expose development labels to a proposer; that does not make them runtime evidence.
 
@@ -35,7 +35,7 @@ When genuine probabilities exist, assess their reliability and fit a supported m
 
 ## Confirm and decide
 
-Read [measurement guidance](references/measurement.md). Report raw counts and class consequences alongside kappa and uncertainty. Use ordinal weighting only for a declared ordered scale. Preserve undefined statistics, UNKNOWN/errors, all-selected denominators and coverage. Report probability diagnostics, stability, latency and cost separately where measurable.
+Read [measurement guidance](references/measurement.md). Report raw counts and class consequences alongside kappa and uncertainty. Preserve undefined statistics, UNKNOWN/errors, all-selected denominators and coverage. Report probability diagnostics, stability, latency and cost separately where measurable.
 
 Freeze the selected judge, mappings and confirmation plan before final execution. Compare baseline and candidate on the same reserved cases under the declared trial policy. Freeze all planned predictions before opening final labels. Final disagreements used for edits become development exposure; preserve the result and obtain fresh evidence for a new independent claim.
 

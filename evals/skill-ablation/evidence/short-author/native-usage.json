@@ -1,0 +1,22 @@
+{
+  "approved_cases": 2,
+  "case_usage": {
+    "alternative_unique_id": 2,
+    "false_creation_claim": 2,
+    "guidance_only": 2,
+    "legitimate": 2,
+    "original_support_agent": 2
+  },
+  "ceiling": 48,
+  "checker_regrades_execute_candidates": false,
+  "control_implementations": 5,
+  "errors": 0,
+  "fault_injection_executions": 0,
+  "native_checker_regrades": 10,
+  "other_product_executions": 0,
+  "proposed_boundary_executions": 0,
+  "remaining": 38,
+  "trials_per_case_per_control": 1,
+  "unknowns": 0,
+  "used": 10
+}

@@ -1,0 +1,16 @@
+{
+  "stage": "first",
+  "review_records_added": [
+    "prior-local-note",
+    "howto-negative-v1",
+    "urgency-pending-v1"
+  ],
+  "criterion_records_added": [
+    "rubric-howto-v1",
+    "rubric-urgency-v1"
+  ],
+  "review_count": 3,
+  "rubric_count": 2,
+  "ongoing_capture": "active",
+  "native_cases_executed": 0
+}

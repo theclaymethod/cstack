@@ -1,0 +1,79 @@
+{
+  "commands": [
+    {
+      "argv": [
+        "python3",
+        "evaluate.py",
+        "run",
+        "--candidate",
+        "eval-runs/skill-exercise/controls/clean.py",
+        "--cases",
+        "eval-runs/skill-exercise/author/approved.jsonl",
+        "--suite",
+        "development",
+        "--out",
+        "eval-runs/skill-exercise/native-runs/clean"
+      ],
+      "exit_code": 0,
+      "selected_cases": 2,
+      "executed_cases": 2
+    },
+    {
+      "argv": [
+        "python3",
+        "evaluate.py",
+        "run",
+        "--candidate",
+        "eval-runs/skill-exercise/controls/alternate-id.py",
+        "--cases",
+        "eval-runs/skill-exercise/author/approved.jsonl",
+        "--suite",
+        "development",
+        "--out",
+        "eval-runs/skill-exercise/native-runs/alternate-id"
+      ],
+      "exit_code": 0,
+      "selected_cases": 2,
+      "executed_cases": 2
+    },
+    {
+      "argv": [
+        "python3",
+        "evaluate.py",
+        "run",
+        "--candidate",
+        "eval-runs/skill-exercise/controls/false-creation-claim.py",
+        "--cases",
+        "eval-runs/skill-exercise/author/approved.jsonl",
+        "--suite",
+        "development",
+        "--out",
+        "eval-runs/skill-exercise/native-runs/false-creation-claim"
+      ],
+      "exit_code": 0,
+      "selected_cases": 2,
+      "executed_cases": 2
+    },
+    {
+      "argv": [
+        "python3",
+        "evaluate.py",
+        "run",
+        "--candidate",
+        "eval-runs/skill-exercise/controls/original-product.py",
+        "--cases",
+        "eval-runs/skill-exercise/author/approved.jsonl",
+        "--suite",
+        "development",
+        "--out",
+        "eval-runs/skill-exercise/native-runs/original-product"
+      ],
+      "exit_code": 0,
+      "selected_cases": 2,
+      "executed_cases": 2
+    }
+  ],
+  "evidence_check": "evaluate.load_cases and evaluate.checked_run executed directly; no candidate executions from evidence checking",
+  "native_case_total": 8,
+  "budget": 48
+}

@@ -1,0 +1,27 @@
+{
+  "native_case_executions": 2,
+  "budget": 48,
+  "receipts": [
+    {
+      "directory": "native-baseline",
+      "case": "dev-howto",
+      "executed": 1,
+      "outcome": "FAIL",
+      "candidate_sha256": "0720b56482a445967ff2a98ec5cfa668c858b8a6f662da74a55c21b257393efc",
+      "expert_judgment": null,
+      "source_judgment_association": "unproven"
+    },
+    {
+      "directory": "native-regenerated",
+      "case": "dev-howto",
+      "executed": 1,
+      "outcome": "PASS",
+      "candidate_sha256": "f21f23269367808783cbda18c0971f7353bf649b93681b8fab15b7c6fdbc94af",
+      "expert_judgment": null,
+      "source_judgment_association": "unproven"
+    }
+  ],
+  "provider_calls": 0,
+  "confirmation_case_executions": 0,
+  "verification": "passed; no native reruns"
+}

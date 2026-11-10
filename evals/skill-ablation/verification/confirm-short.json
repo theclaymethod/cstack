@@ -1,0 +1,468 @@
+{
+  "workspace": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/skill-audit-ablation/runs/confirm-short",
+  "source": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/skill-audit-ablation/shortened-candidate",
+  "evidence": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/skill-audit-ablation/runs/confirm-short/eval-runs/skill-exercise",
+  "protected_files_unchanged": [
+    "evaluate.py",
+    "evals/spec.json",
+    "evals/rubric.md",
+    "evals/cases.jsonl",
+    "support_agent.py"
+  ],
+  "installed_skill_files_matched": [
+    "ablation/SKILL.md",
+    "ablation/references/quality.md",
+    "ablation/references/removal.md",
+    "adversarial-cases/SKILL.md",
+    "adversarial-cases/references/case-contract.md",
+    "adversarial-cases/references/failure-methods.md",
+    "adversarial-cases/references/injection.md",
+    "adversarial-cases/references/synthetic-methods.md",
+    "bitter-lesson/SKILL.md",
+    "bitter-lesson/references/migration.md",
+    "bootstrap/SKILL.md",
+    "bootstrap/references/labeling.md",
+    "bootstrap/references/research.md",
+    "bootstrap/references/scenarios.md",
+    "calibrate-judge/SKILL.md",
+    "calibrate-judge/references/backends.md",
+    "calibrate-judge/references/measurement.md",
+    "calibrate-judge/references/protocol.md",
+    "create-eval/SKILL.md",
+    "create-eval/assets/trace-review.css",
+    "create-eval/assets/trace-review.html",
+    "create-eval/assets/trace-review.js",
+    "create-eval/references/early-development.md",
+    "create-eval/references/ecosystem.md",
+    "create-eval/references/formats.md",
+    "create-eval/references/from-findings.md",
+    "create-eval/references/judges.md",
+    "create-eval/references/trace-review.md",
+    "create-eval/scripts/review_traces.py",
+    "cross-examine/SKILL.md",
+    "cross-examine/references/ledger.md",
+    "cross-examine/references/lessons.md",
+    "distill-me/SKILL.md",
+    "distill-me/agents/openai.yaml",
+    "distill-me/references/review-passes.md",
+    "expert-mode/SKILL.md",
+    "expert-mode/agents/openai.yaml",
+    "expert-mode/references/export.md",
+    "expert-mode/references/privacy-filter.md",
+    "expert-mode/references/records.md",
+    "expert-mode/scripts/export_findings.py",
+    "hill-climb/SKILL.md",
+    "hill-climb/references/campaign.md",
+    "hill-climb/references/data-handoff.md",
+    "hill-climb/references/optimizers.md",
+    "run-eval/SKILL.md",
+    "run-eval/references/package.md"
+  ],
+  "native_runs": [
+    {
+      "path": "native-controls/alternative",
+      "case_ids": [
+        "approved-vpn-rich-state-v1"
+      ],
+      "executed": 1,
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 1,
+        "UNKNOWN": 0
+      },
+      "sha256": {
+        "manifest.json": "59ffed08a4178345f8290ab93e685d9441ad9bc5cc2c86ac4afdaa37f5a0783a",
+        "summary.json": "79429c06586b1bc3430ccc637a614eb0b4efd300eb77996a9f96f1c046edcfe4",
+        "traces.jsonl": "7afb0ff454048979df92ecace7bd983d2f6a8d70c6eb45011c24eccc5e74dd64",
+        "candidate.py": "0d87333f88d31af95d2a2bd9277678349c5db48a50af8910930d07273b2c3022",
+        "cases.jsonl": "35bd97fdb0047278f62c3741fc7889ed366734aec1795e011094912ffc557530"
+      }
+    },
+    {
+      "path": "native-controls/false-claim",
+      "case_ids": [
+        "approved-vpn-rich-state-v1"
+      ],
+      "executed": 1,
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 1,
+        "PASS": 0,
+        "UNKNOWN": 0
+      },
+      "sha256": {
+        "manifest.json": "c78e3e50cf2ad6cb37f7c369a62e2c4a32c94f6574be0e9e65c75637a998a22f",
+        "summary.json": "8cdc41d2ef99b2fa97a08aa562ac70bb56edc8d93a6ad53ea9f64cd0837af069",
+        "traces.jsonl": "1f43050bb299710492c0d43d623554be4c85d56a869b0ee50e7062062458bbd8",
+        "candidate.py": "b7ac7e0701edec84bf0f7c3c1b797349dbf723b0454ded3eb1857705bdb221ab",
+        "cases.jsonl": "35bd97fdb0047278f62c3741fc7889ed366734aec1795e011094912ffc557530"
+      }
+    },
+    {
+      "path": "native-controls/legitimate",
+      "case_ids": [
+        "approved-vpn-rich-state-v1"
+      ],
+      "executed": 1,
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 1,
+        "UNKNOWN": 0
+      },
+      "sha256": {
+        "manifest.json": "37593a711577fa8edd424e3531732fabb4af0ec8e469d771bb208ee0eb0a77aa",
+        "summary.json": "210e9340de24498ca0f0dd8526938c842cf755759a1965becd62595d0c6e607b",
+        "traces.jsonl": "77e7b1a7166c7ee6f7ff9a22efa50481fc2e6f264e3a8d8605b230ed755d5a80",
+        "candidate.py": "d8cc818e83af4453a44e9025484ae6e23ecc7cbcf8c9e621efa56c21a179a1c3",
+        "cases.jsonl": "35bd97fdb0047278f62c3741fc7889ed366734aec1795e011094912ffc557530"
+      }
+    },
+    {
+      "path": "simplification/native/baseline-confirm",
+      "case_ids": [
+        "conf-howto",
+        "conf-targeted",
+        "conf-duplicate",
+        "conf-preservation"
+      ],
+      "executed": 4,
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 4,
+        "UNKNOWN": 0
+      },
+      "sha256": {
+        "manifest.json": "5e54b8684b7e141de92805288709be65c7361113da7653b0848eb2b3795c8ba5",
+        "summary.json": "51f8048fc846ae513d541fa74e6964f38977f61795274e9e5feb84c4b8932144",
+        "traces.jsonl": "f851f7dffbc40120751625210c382d4f9e435df2ff12497349dfad2ccdfbfd91",
+        "candidate.py": "cfd3290663da1d5980890d655f5e00cf294c989134bea9b94eae5d4bc12c1fb1",
+        "cases.jsonl": "f0e900c7f3fb1a1a1ddf94941b92ee0ee1dc8232930c00cd24a810b2b7f23a30"
+      }
+    },
+    {
+      "path": "simplification/native/contract-only",
+      "case_ids": [
+        "dev-howto",
+        "dev-generic",
+        "dev-explicit",
+        "dev-duplicate",
+        "dev-ambiguous",
+        "dev-password",
+        "dev-closed",
+        "dev-unrelated"
+      ],
+      "executed": 8,
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 1,
+        "PASS": 7,
+        "UNKNOWN": 0
+      },
+      "sha256": {
+        "manifest.json": "2df1e12b6cbf23728ef28468ec6942ea61a2aff4c05247af5c2f8c93c3775143",
+        "summary.json": "542c20aeb8c42ce6220e1c463faf02666022c880d02f948a007a76cdc0652e8b",
+        "traces.jsonl": "e23bfc9b1fc39bcaf268c3857897e1a2e6ca066ce59362333fe9bf2e5cfb6dbe",
+        "candidate.py": "6d0e6ef055d3be732bc58c45a650c976045c6f3b9cda6f0616241de9fc09c69b",
+        "cases.jsonl": "e26339de4786d747ff0e1f235a2fa74df7a6245075178cfb5bf01e9538fc8ec0"
+      }
+    },
+    {
+      "path": "simplification/native/full",
+      "case_ids": [
+        "dev-howto",
+        "dev-generic",
+        "dev-explicit",
+        "dev-duplicate",
+        "dev-ambiguous",
+        "dev-password",
+        "dev-closed",
+        "dev-unrelated"
+      ],
+      "executed": 8,
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 8,
+        "UNKNOWN": 0
+      },
+      "sha256": {
+        "manifest.json": "ab2c19fbcf6fb470c0186bfd9bcf12c512035dd0bfede2a34889492542e2a208",
+        "summary.json": "c8648139a9f2fe0da81a97202fb5f529aa52ba5da586e406ac61c91a60b24953",
+        "traces.jsonl": "8079f7279f3a3c89c7ea024a5c049cffc8762c8093f6b731adc45c143914cc9f",
+        "candidate.py": "cfd3290663da1d5980890d655f5e00cf294c989134bea9b94eae5d4bc12c1fb1",
+        "cases.jsonl": "e26339de4786d747ff0e1f235a2fa74df7a6245075178cfb5bf01e9538fc8ec0"
+      }
+    },
+    {
+      "path": "simplification/native/no-conflict-a",
+      "case_ids": [
+        "dev-howto",
+        "dev-generic",
+        "dev-explicit",
+        "dev-duplicate",
+        "dev-ambiguous",
+        "dev-password",
+        "dev-closed",
+        "dev-unrelated"
+      ],
+      "executed": 8,
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 4,
+        "PASS": 4,
+        "UNKNOWN": 0
+      },
+      "sha256": {
+        "manifest.json": "f6dfb4bbeaeab43f3074ba576f1ee5a787b10fa71575baf7a61ab986c70f6baf",
+        "summary.json": "63e858dcad8f1afa2ac3ba6ece08850eedc61d243aca63a5b756990da587088a",
+        "traces.jsonl": "b76ef96a6c86fda48a4320654b3d6cd42d76d3a77bfbc367b5544b9a41a29700",
+        "candidate.py": "98cdfc6d7bcea04f2a9353bc720ee7845b2371ce926129ecf7552b5363328d75",
+        "cases.jsonl": "e26339de4786d747ff0e1f235a2fa74df7a6245075178cfb5bf01e9538fc8ec0"
+      }
+    },
+    {
+      "path": "simplification/native/no-conflict-b",
+      "case_ids": [
+        "dev-howto",
+        "dev-generic",
+        "dev-explicit",
+        "dev-duplicate",
+        "dev-ambiguous",
+        "dev-password",
+        "dev-closed",
+        "dev-unrelated"
+      ],
+      "executed": 8,
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 4,
+        "PASS": 4,
+        "UNKNOWN": 0
+      },
+      "sha256": {
+        "manifest.json": "208c9cb167760bb2ef684614f7052a08fb1a92862288dcd9406e1935e6cbe1ab",
+        "summary.json": "becfa8dd924556fb74ed5a093ec3fac62ff9ee1df1e4382d6ed21f1724c9f6d5",
+        "traces.jsonl": "b76ef96a6c86fda48a4320654b3d6cd42d76d3a77bfbc367b5544b9a41a29700",
+        "candidate.py": "a73eac02cdac8e4fbc141abeccd7f27c07564619d536847cbacb51b9cc6d8fe4",
+        "cases.jsonl": "e26339de4786d747ff0e1f235a2fa74df7a6245075178cfb5bf01e9538fc8ec0"
+      }
+    },
+    {
+      "path": "simplification/native/no-conflicts",
+      "case_ids": [
+        "dev-howto",
+        "dev-generic",
+        "dev-explicit",
+        "dev-duplicate",
+        "dev-ambiguous",
+        "dev-password",
+        "dev-closed",
+        "dev-unrelated"
+      ],
+      "executed": 8,
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 8,
+        "UNKNOWN": 0
+      },
+      "sha256": {
+        "manifest.json": "b98e6873176a8707d4f4cd38f044d2f1cc84e940de8f77530717f03e46a4a565",
+        "summary.json": "a570f9136087ac899f8a6630e3da41194dddf34efd6fa9fd159978b6ba1639ea",
+        "traces.jsonl": "8079f7279f3a3c89c7ea024a5c049cffc8762c8093f6b731adc45c143914cc9f",
+        "candidate.py": "a1fc9f8fbd7be464712eb87455a6366a307e775d5cfc912b2edfc498f0e4d3e9",
+        "cases.jsonl": "e26339de4786d747ff0e1f235a2fa74df7a6245075178cfb5bf01e9538fc8ec0"
+      }
+    },
+    {
+      "path": "simplification/native/no-duplicate-a",
+      "case_ids": [
+        "dev-howto",
+        "dev-generic",
+        "dev-explicit",
+        "dev-duplicate",
+        "dev-ambiguous",
+        "dev-password",
+        "dev-closed",
+        "dev-unrelated"
+      ],
+      "executed": 8,
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 8,
+        "UNKNOWN": 0
+      },
+      "sha256": {
+        "manifest.json": "293fa83b98f98fb99246186ce7968c40dab5278ced62ef638d2b6f335c6eb029",
+        "summary.json": "f82f301a2794579f25437f0a27e93562cdf453e05faf569ce407e480730e9f98",
+        "traces.jsonl": "8079f7279f3a3c89c7ea024a5c049cffc8762c8093f6b731adc45c143914cc9f",
+        "candidate.py": "3aecba8819c2a70fda0319dafa8550d689dfb25634b7f5dc404b48dcae76e218",
+        "cases.jsonl": "e26339de4786d747ff0e1f235a2fa74df7a6245075178cfb5bf01e9538fc8ec0"
+      }
+    },
+    {
+      "path": "simplification/native/no-duplicate-b",
+      "case_ids": [
+        "dev-howto",
+        "dev-generic",
+        "dev-explicit",
+        "dev-duplicate",
+        "dev-ambiguous",
+        "dev-password",
+        "dev-closed",
+        "dev-unrelated"
+      ],
+      "executed": 8,
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 8,
+        "UNKNOWN": 0
+      },
+      "sha256": {
+        "manifest.json": "48194ada72160ed73c32634f7c80cfe7198cab4e479ad000025efc863cb2f165",
+        "summary.json": "840b540e1fdaa68053fadc80eda59e81f27d59ab8dd238a9e43b137d01b4a4ab",
+        "traces.jsonl": "8079f7279f3a3c89c7ea024a5c049cffc8762c8093f6b731adc45c143914cc9f",
+        "candidate.py": "254dbb8d8957a9f61cd00634b71648055e9dcd14d088f006b5a21524e89cdc96",
+        "cases.jsonl": "e26339de4786d747ff0e1f235a2fa74df7a6245075178cfb5bf01e9538fc8ec0"
+      }
+    },
+    {
+      "path": "simplification/native/no-duplicates",
+      "case_ids": [
+        "dev-howto",
+        "dev-generic",
+        "dev-explicit",
+        "dev-duplicate",
+        "dev-ambiguous",
+        "dev-password",
+        "dev-closed",
+        "dev-unrelated"
+      ],
+      "executed": 8,
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 1,
+        "PASS": 7,
+        "UNKNOWN": 0
+      },
+      "sha256": {
+        "manifest.json": "a4f4a0998780a0201388069e47752b0ab55b7b256558e321a8fb9ca8aa3a0a8f",
+        "summary.json": "b3ed5c72792a17214ca4078a437cf2b2865b9f8bcc0cd82531cf30c415cd1056",
+        "traces.jsonl": "e23bfc9b1fc39bcaf268c3857897e1a2e6ca066ce59362333fe9bf2e5cfb6dbe",
+        "candidate.py": "15aa368dd3680af4a8a9008a55bccb8d3e4f61b5cf3d5059c4899e04f8d45481",
+        "cases.jsonl": "e26339de4786d747ff0e1f235a2fa74df7a6245075178cfb5bf01e9538fc8ec0"
+      }
+    },
+    {
+      "path": "simplification/native/no-legacy",
+      "case_ids": [
+        "dev-howto",
+        "dev-generic",
+        "dev-explicit",
+        "dev-duplicate",
+        "dev-ambiguous",
+        "dev-password",
+        "dev-closed",
+        "dev-unrelated"
+      ],
+      "executed": 8,
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 8,
+        "UNKNOWN": 0
+      },
+      "sha256": {
+        "manifest.json": "74fb26629d351e202810d9a7d8d1ed69733718414bc3cdf5ed1bbfe0d107e785",
+        "summary.json": "3005258134614977b4ab45ce80e715e2d774823061993e032195c3fc720c497a",
+        "traces.jsonl": "8079f7279f3a3c89c7ea024a5c049cffc8762c8093f6b731adc45c143914cc9f",
+        "candidate.py": "c8d283e7be5b7694ac8187f50bd1dd0a28daa85f77abb48e8e46da2dffc2d473",
+        "cases.jsonl": "e26339de4786d747ff0e1f235a2fa74df7a6245075178cfb5bf01e9538fc8ec0"
+      }
+    },
+    {
+      "path": "simplification/native/no-noise",
+      "case_ids": [
+        "dev-howto",
+        "dev-generic",
+        "dev-explicit",
+        "dev-duplicate",
+        "dev-ambiguous",
+        "dev-password",
+        "dev-closed",
+        "dev-unrelated"
+      ],
+      "executed": 8,
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 8,
+        "UNKNOWN": 0
+      },
+      "sha256": {
+        "manifest.json": "d61e479ebad171c339730174c0a7f4ed4b36487a85bb003a37caaede039049b4",
+        "summary.json": "a2f7d0273703a3f4b878e97a0691d364e22691906383e5d42801d5af8fded64c",
+        "traces.jsonl": "8079f7279f3a3c89c7ea024a5c049cffc8762c8093f6b731adc45c143914cc9f",
+        "candidate.py": "3274d47a27baf09894cb8abacf4a13acfb375d5e047a6283927785849e2e4ab8",
+        "cases.jsonl": "e26339de4786d747ff0e1f235a2fa74df7a6245075178cfb5bf01e9538fc8ec0"
+      }
+    },
+    {
+      "path": "simplification/native/selected",
+      "case_ids": [
+        "dev-howto",
+        "dev-generic",
+        "dev-explicit",
+        "dev-duplicate",
+        "dev-ambiguous",
+        "dev-password",
+        "dev-closed",
+        "dev-unrelated"
+      ],
+      "executed": 8,
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 8,
+        "UNKNOWN": 0
+      },
+      "sha256": {
+        "manifest.json": "65d42a4bd3fd58d729522127d52ec13082691e56c02a72e29a7863144cab0bc7",
+        "summary.json": "7e5e9a4cf87bc67064596809418c0c7b541efe6ad53090196bd78ad464e9753a",
+        "traces.jsonl": "8079f7279f3a3c89c7ea024a5c049cffc8762c8093f6b731adc45c143914cc9f",
+        "candidate.py": "31bff7b18f6aea80a3a6aae8fd1dfb530567edc516509b97080f0b5097b375a8",
+        "cases.jsonl": "e26339de4786d747ff0e1f235a2fa74df7a6245075178cfb5bf01e9538fc8ec0"
+      }
+    },
+    {
+      "path": "simplification/native/selected-confirm",
+      "case_ids": [
+        "conf-howto",
+        "conf-targeted",
+        "conf-duplicate",
+        "conf-preservation"
+      ],
+      "executed": 4,
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 4,
+        "UNKNOWN": 0
+      },
+      "sha256": {
+        "manifest.json": "dd2a5fe3eaa861977681b3949512401026b01d09b1fba3bccaf98b0f5f88e551",
+        "summary.json": "4a7f4b06b7976c834ba430c409fd5eb99c4d02a8153489a82c0f7ad3be9f9ff1",
+        "traces.jsonl": "f851f7dffbc40120751625210c382d4f9e435df2ff12497349dfad2ccdfbfd91",
+        "candidate.py": "31bff7b18f6aea80a3a6aae8fd1dfb530567edc516509b97080f0b5097b375a8",
+        "cases.jsonl": "f0e900c7f3fb1a1a1ddf94941b92ee0ee1dc8232930c00cd24a810b2b7f23a30"
+      }
+    }
+  ],
+  "native_case_executions": 99,
+  "scope": "Source fidelity and native artifact validation; not a semantic or generalization verdict"
+}

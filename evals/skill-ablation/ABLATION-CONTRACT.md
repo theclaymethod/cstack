@@ -1,0 +1,13 @@
+# Skill-pack removal experiment
+
+The audit is complete before this experiment. Original baseline: `post-audit-baseline/skills`, including the confirmed accounting-reference correction. Mutable target: only prose in the eleven `SKILL.md` bodies. Frontmatter, file names, all supporting references/scripts/assets, task/eval source, native graders and approved semantics remain fixed. New implementation or wording is outside this literal-deletion candidate.
+
+Objective: fewer total entrypoint UTF-8 bytes and words. Quality rule: zero observed regression on the declared matched skill exercises and all existing control groups. No acceptable task-quality loss is assumed. Scope is synthetic exposed development evidence, not statistical non-inferiority or production performance. Token/cost/latency savings are unmeasured.
+
+Search: one combined deletion candidate, grouped by redundant explanations and procedural material already supplied by retained instructions/references. No leave-one-out attribution or global minimality claim. At most one targeted restoration if a concrete omission appears. Restore any failed component rather than changing the grader to accept it.
+
+Evidence: three fresh full-guidance agents and three fresh candidate-guidance agents receive identical capture, authoring and execution exercises with separate workspaces. Same inherited host model/tool environment; exact hosted model revision unavailable. Each agent records artifacts and actual execution. Grading inspects delivered records, native cases, retained native execution and source/claim limits; static instruction presence and scripted machinery passes alone are insufficient. Two additional fresh agents are reserved for a matched combined confirmation exercise after selection. Cases are readable and exposed; confirmation denotes workflow role only.
+
+Budgets: eight skill-execution agents maximum plus one focused restoration replay if needed; capture/author agents <=48 native cases each, operations agents <=300 native cases plus the documented offline judge processes, confirmation agents <=120 native cases. No paid/provider calls, new dependencies, remote/production writes or nested delegation. Missing role separation or calibration must be disclosed, never invented. Full project control runs are separate verification work.
+
+Selection compares every candidate with the repaired full baseline. Freeze the combined candidate before confirmation. Preserve deletion units, exact diffs/hashes, all failed attempts and per-check outcomes. Keep required references reachable. If no shortening meets the rule, retain full guidance and report no confirmed reduction.

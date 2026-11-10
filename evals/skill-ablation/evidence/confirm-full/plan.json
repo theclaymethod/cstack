@@ -1,0 +1,20 @@
+{
+  "authoring_budget": 3,
+  "burden": "Rendered UTF-8 bytes and retained unit count; provider cost, tokens and model latency unmeasured",
+  "confirmation": [
+    "full original",
+    "selected reduced"
+  ],
+  "confirmation_reserve": 8,
+  "exposure": "All cases exposed synthetic controls, confirmation is workflow reservation only",
+  "model": "new-fixture",
+  "old_backend": "unavailable and unauthorized; no execution",
+  "quality_policy": "Project finite policy: zero observed loss and zero pass regressions versus the fixed original full new-model baseline; errors count in denominator.",
+  "search": [
+    "full original",
+    "contract plus duplicate-a reduced candidate",
+    "contract-only diagnostic"
+  ],
+  "simplification_budget": 32,
+  "total_native_case_ceiling": 120
+}

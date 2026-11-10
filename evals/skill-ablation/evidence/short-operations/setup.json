@@ -1,0 +1,21 @@
+{
+  "initial_attempt": {
+    "argv": [
+      "python3",
+      "scripts/new_workspace.py",
+      "--source",
+      "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/skill-audit-ablation/shortened-candidate",
+      "--out",
+      "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/skill-audit-ablation/runs/short-operations"
+    ],
+    "exit_code": 2,
+    "error": "No such file or directory; no case usage"
+  },
+  "successful_materialization": {
+    "script": "fixtures/playground/scripts/new_workspace.py",
+    "source": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/skill-audit-ablation/shortened-candidate",
+    "out": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/skill-audit-ablation/runs/short-operations",
+    "exit_code": 0
+  },
+  "discovery_limit": "A broad filename-only rg accidentally listed other shared-worktree paths. No other-version, test or prior-report contents were opened or used."
+}

@@ -1,0 +1,21 @@
+{
+  "actual_completed": 4,
+  "calls": [
+    {
+      "candidate": "work/simplification-build/reproduction-before/candidates/final.py",
+      "cases": "work/simplification-build/reproduction-before/native/final.jsonl",
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 4,
+        "UNKNOWN": 0
+      },
+      "executed": 4,
+      "label": "final",
+      "reserved": 4,
+      "status": "complete"
+    }
+  ],
+  "limit": 4,
+  "reserved": 4
+}

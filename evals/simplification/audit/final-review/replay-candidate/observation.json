@@ -1,0 +1,54 @@
+{
+  "access": "operator fault injection; ledger outside candidate payload",
+  "clean": {
+    "config": {
+      "model": "old-fixture",
+      "retained": [
+        "conflict-a",
+        "conflict-b",
+        "contract",
+        "duplicate-a",
+        "duplicate-b",
+        "example",
+        "legacy-auth",
+        "plan",
+        "plan-detail"
+      ]
+    },
+    "suite": "development",
+    "status": "complete",
+    "prompt_utf8_bytes": 4193,
+    "unit_count": 9,
+    "candidate_sha256": "8bd79ed28276f336f5f4727a603900ab194c4e7c456ed736eff81e34acd802b2",
+    "outcomes": {
+      "dev-howto": "PASS",
+      "dev-generic": "PASS",
+      "dev-explicit": "PASS",
+      "dev-duplicate": "PASS",
+      "dev-ambiguous": "PASS",
+      "dev-password": "PASS",
+      "dev-closed": "PASS",
+      "dev-unrelated": "PASS"
+    },
+    "native_wall_seconds": 0.127760458010016,
+    "evidence": {
+      "manifest.json": "b8980234550e1d7cd0ee0306341cf75cdc5b7b6ff03f8ace20e5fe422657f696",
+      "summary.json": "28bd90208b0965e4d03cbadc1dd43ff4bf90bd033c10bb249b61990e0f63a4f3",
+      "traces.jsonl": "8079f7279f3a3c89c7ea024a5c049cffc8762c8093f6b731adc45c143914cc9f",
+      "candidate.py": "8bd79ed28276f336f5f4727a603900ab194c4e7c456ed736eff81e34acd802b2",
+      "cases.jsonl": "e26339de4786d747ff0e1f235a2fa74df7a6245075178cfb5bf01e9538fc8ec0"
+    }
+  },
+  "after_perturbation": {
+    "rejected": true,
+    "reason": "Native execution ledger differs from reserved attempts"
+  },
+  "actual_native_case_executions": 8,
+  "in_memory_reservation": 8,
+  "durable_ledger_after": {
+    "limit": 0,
+    "reserved": 0,
+    "actual_completed": 0,
+    "calls": []
+  }
+}

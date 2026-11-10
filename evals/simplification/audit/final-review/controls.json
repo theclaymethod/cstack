@@ -1,0 +1,30 @@
+{
+  "development_gate": {
+    "admissible": true,
+    "baseline_score": 1.0,
+    "candidate_score": 1.0,
+    "difference": 0.0,
+    "regressions": [],
+    "errors_or_unknown": 0,
+    "max_loss": 0.0,
+    "scope": "Exact outcomes on the declared finite synthetic cases only"
+  },
+  "confirmation_gate": {
+    "admissible": true,
+    "baseline_score": 1.0,
+    "candidate_score": 1.0,
+    "difference": 0.0,
+    "regressions": [],
+    "errors_or_unknown": 0,
+    "max_loss": 0.0,
+    "scope": "Exact outcomes on the declared finite synthetic cases only"
+  },
+  "clean_reservations": 24,
+  "alternative_counts": {
+    "PASS": 8,
+    "FAIL": 0,
+    "ERROR": 0,
+    "UNKNOWN": 0
+  },
+  "native_cases": 32
+}

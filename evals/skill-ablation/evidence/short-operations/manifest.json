@@ -1,0 +1,1153 @@
+{
+  "root": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/skill-audit-ablation/runs/short-operations/eval-runs/skill-exercise",
+  "source_checkout": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/skill-audit-ablation/shortened-candidate",
+  "native_runs": [
+    {
+      "directory": "campaign/attempts/000-baseline",
+      "selected": 8,
+      "executed": 8,
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 4,
+        "PASS": 4,
+        "UNKNOWN": 0
+      },
+      "case_ids": [
+        "dev-howto",
+        "dev-generic",
+        "dev-explicit",
+        "dev-duplicate",
+        "dev-ambiguous",
+        "dev-password",
+        "dev-closed",
+        "dev-unrelated"
+      ],
+      "candidate_sha256": "0720b56482a445967ff2a98ec5cfa668c858b8a6f662da74a55c21b257393efc",
+      "identity_hash": "89a96d226443d97b3a269934961259e3fc32de1ab2358841c738e964bc6c829c",
+      "complete": true
+    },
+    {
+      "directory": "campaign/attempts/001-proposal",
+      "selected": 8,
+      "executed": 8,
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 2,
+        "PASS": 6,
+        "UNKNOWN": 0
+      },
+      "case_ids": [
+        "dev-howto",
+        "dev-generic",
+        "dev-explicit",
+        "dev-duplicate",
+        "dev-ambiguous",
+        "dev-password",
+        "dev-closed",
+        "dev-unrelated"
+      ],
+      "candidate_sha256": "5fff29e7ea1a726cc9a4a74376ea5b93662fd81269e7497d9f5aa63a0684b230",
+      "identity_hash": "89a96d226443d97b3a269934961259e3fc32de1ab2358841c738e964bc6c829c",
+      "complete": true
+    },
+    {
+      "directory": "campaign/attempts/002-proposal",
+      "selected": 8,
+      "executed": 8,
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 8,
+        "UNKNOWN": 0
+      },
+      "case_ids": [
+        "dev-howto",
+        "dev-generic",
+        "dev-explicit",
+        "dev-duplicate",
+        "dev-ambiguous",
+        "dev-password",
+        "dev-closed",
+        "dev-unrelated"
+      ],
+      "candidate_sha256": "d8cc818e83af4453a44e9025484ae6e23ecc7cbcf8c9e621efa56c21a179a1c3",
+      "identity_hash": "89a96d226443d97b3a269934961259e3fc32de1ab2358841c738e964bc6c829c",
+      "complete": true
+    },
+    {
+      "directory": "campaign/attempts/003-confirm-baseline",
+      "selected": 4,
+      "executed": 4,
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 2,
+        "PASS": 2,
+        "UNKNOWN": 0
+      },
+      "case_ids": [
+        "conf-howto",
+        "conf-targeted",
+        "conf-duplicate",
+        "conf-preservation"
+      ],
+      "candidate_sha256": "0720b56482a445967ff2a98ec5cfa668c858b8a6f662da74a55c21b257393efc",
+      "identity_hash": "89a96d226443d97b3a269934961259e3fc32de1ab2358841c738e964bc6c829c",
+      "complete": true
+    },
+    {
+      "directory": "campaign/attempts/004-confirm-incumbent",
+      "selected": 4,
+      "executed": 4,
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 4,
+        "UNKNOWN": 0
+      },
+      "case_ids": [
+        "conf-howto",
+        "conf-targeted",
+        "conf-duplicate",
+        "conf-preservation"
+      ],
+      "candidate_sha256": "d8cc818e83af4453a44e9025484ae6e23ecc7cbcf8c9e621efa56c21a179a1c3",
+      "identity_hash": "89a96d226443d97b3a269934961259e3fc32de1ab2358841c738e964bc6c829c",
+      "complete": true
+    },
+    {
+      "directory": "claim-audit/alternative-native",
+      "selected": 8,
+      "executed": 8,
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 8,
+        "UNKNOWN": 0
+      },
+      "case_ids": [
+        "dev-howto",
+        "dev-generic",
+        "dev-explicit",
+        "dev-duplicate",
+        "dev-ambiguous",
+        "dev-password",
+        "dev-closed",
+        "dev-unrelated"
+      ],
+      "candidate_sha256": "1f8609454b600bb7525786b78b4e2202c0024cc40a7655d957c53fbdc5da4092",
+      "identity_hash": "89a96d226443d97b3a269934961259e3fc32de1ab2358841c738e964bc6c829c",
+      "complete": true
+    },
+    {
+      "directory": "claim-audit/forged-native",
+      "selected": 8,
+      "executed": 8,
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 8,
+        "PASS": 0,
+        "UNKNOWN": 0
+      },
+      "case_ids": [
+        "dev-howto",
+        "dev-generic",
+        "dev-explicit",
+        "dev-duplicate",
+        "dev-ambiguous",
+        "dev-password",
+        "dev-closed",
+        "dev-unrelated"
+      ],
+      "candidate_sha256": "73b64fb040b2d1b4f9479c904a9ef2109bdd0ae0bac366b104da4562c4958d6e",
+      "identity_hash": "89a96d226443d97b3a269934961259e3fc32de1ab2358841c738e964bc6c829c",
+      "complete": true
+    },
+    {
+      "directory": "judge/dataset/native-source/improved",
+      "selected": 12,
+      "executed": 12,
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 12,
+        "UNKNOWN": 0
+      },
+      "case_ids": [
+        "dev-howto",
+        "dev-generic",
+        "dev-explicit",
+        "dev-duplicate",
+        "dev-ambiguous",
+        "dev-password",
+        "dev-closed",
+        "dev-unrelated",
+        "conf-howto",
+        "conf-targeted",
+        "conf-duplicate",
+        "conf-preservation"
+      ],
+      "candidate_sha256": "d8cc818e83af4453a44e9025484ae6e23ecc7cbcf8c9e621efa56c21a179a1c3",
+      "identity_hash": "89a96d226443d97b3a269934961259e3fc32de1ab2358841c738e964bc6c829c",
+      "complete": true
+    },
+    {
+      "directory": "judge/dataset/native-source/support_agent",
+      "selected": 12,
+      "executed": 12,
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 6,
+        "PASS": 6,
+        "UNKNOWN": 0
+      },
+      "case_ids": [
+        "dev-howto",
+        "dev-generic",
+        "dev-explicit",
+        "dev-duplicate",
+        "dev-ambiguous",
+        "dev-password",
+        "dev-closed",
+        "dev-unrelated",
+        "conf-howto",
+        "conf-targeted",
+        "conf-duplicate",
+        "conf-preservation"
+      ],
+      "candidate_sha256": "0720b56482a445967ff2a98ec5cfa668c858b8a6f662da74a55c21b257393efc",
+      "identity_hash": "89a96d226443d97b3a269934961259e3fc32de1ab2358841c738e964bc6c829c",
+      "complete": true
+    },
+    {
+      "directory": "run-baseline",
+      "selected": 8,
+      "executed": 8,
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 4,
+        "PASS": 4,
+        "UNKNOWN": 0
+      },
+      "case_ids": [
+        "dev-howto",
+        "dev-generic",
+        "dev-explicit",
+        "dev-duplicate",
+        "dev-ambiguous",
+        "dev-password",
+        "dev-closed",
+        "dev-unrelated"
+      ],
+      "candidate_sha256": "0720b56482a445967ff2a98ec5cfa668c858b8a6f662da74a55c21b257393efc",
+      "identity_hash": "89a96d226443d97b3a269934961259e3fc32de1ab2358841c738e964bc6c829c",
+      "complete": true
+    },
+    {
+      "directory": "run-conforming",
+      "selected": 8,
+      "executed": 8,
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 8,
+        "UNKNOWN": 0
+      },
+      "case_ids": [
+        "dev-howto",
+        "dev-generic",
+        "dev-explicit",
+        "dev-duplicate",
+        "dev-ambiguous",
+        "dev-password",
+        "dev-closed",
+        "dev-unrelated"
+      ],
+      "candidate_sha256": "d8cc818e83af4453a44e9025484ae6e23ecc7cbcf8c9e621efa56c21a179a1c3",
+      "identity_hash": "89a96d226443d97b3a269934961259e3fc32de1ab2358841c738e964bc6c829c",
+      "complete": true
+    },
+    {
+      "directory": "simplification/native/drop-conflict-a",
+      "selected": 8,
+      "executed": 8,
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 4,
+        "PASS": 4,
+        "UNKNOWN": 0
+      },
+      "case_ids": [
+        "dev-howto",
+        "dev-generic",
+        "dev-explicit",
+        "dev-duplicate",
+        "dev-ambiguous",
+        "dev-password",
+        "dev-closed",
+        "dev-unrelated"
+      ],
+      "candidate_sha256": "ff1398a9bf4e7266f4253f12afc5a75852e97991e88aa742cf957de30f449adb",
+      "identity_hash": "89a96d226443d97b3a269934961259e3fc32de1ab2358841c738e964bc6c829c",
+      "complete": true
+    },
+    {
+      "directory": "simplification/native/drop-conflict-b",
+      "selected": 8,
+      "executed": 8,
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 4,
+        "PASS": 4,
+        "UNKNOWN": 0
+      },
+      "case_ids": [
+        "dev-howto",
+        "dev-generic",
+        "dev-explicit",
+        "dev-duplicate",
+        "dev-ambiguous",
+        "dev-password",
+        "dev-closed",
+        "dev-unrelated"
+      ],
+      "candidate_sha256": "9c071428acb1d134061d3ecfae9ee3d06dcc0fce716f9f29028610b04f214cc8",
+      "identity_hash": "89a96d226443d97b3a269934961259e3fc32de1ab2358841c738e964bc6c829c",
+      "complete": true
+    },
+    {
+      "directory": "simplification/native/drop-conflict-pair",
+      "selected": 8,
+      "executed": 8,
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 8,
+        "UNKNOWN": 0
+      },
+      "case_ids": [
+        "dev-howto",
+        "dev-generic",
+        "dev-explicit",
+        "dev-duplicate",
+        "dev-ambiguous",
+        "dev-password",
+        "dev-closed",
+        "dev-unrelated"
+      ],
+      "candidate_sha256": "872a804ac71748d8bdae154522713a31a109c9c0d7f004d321b35a1546f0ab6b",
+      "identity_hash": "89a96d226443d97b3a269934961259e3fc32de1ab2358841c738e964bc6c829c",
+      "complete": true
+    },
+    {
+      "directory": "simplification/native/drop-duplicate-a",
+      "selected": 8,
+      "executed": 8,
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 8,
+        "UNKNOWN": 0
+      },
+      "case_ids": [
+        "dev-howto",
+        "dev-generic",
+        "dev-explicit",
+        "dev-duplicate",
+        "dev-ambiguous",
+        "dev-password",
+        "dev-closed",
+        "dev-unrelated"
+      ],
+      "candidate_sha256": "6c183962f27c6ff769a1a127f92412f27b22e8cf49b4299573b6d8719a732cc3",
+      "identity_hash": "89a96d226443d97b3a269934961259e3fc32de1ab2358841c738e964bc6c829c",
+      "complete": true
+    },
+    {
+      "directory": "simplification/native/drop-duplicate-b",
+      "selected": 8,
+      "executed": 8,
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 1,
+        "PASS": 7,
+        "UNKNOWN": 0
+      },
+      "case_ids": [
+        "dev-howto",
+        "dev-generic",
+        "dev-explicit",
+        "dev-duplicate",
+        "dev-ambiguous",
+        "dev-password",
+        "dev-closed",
+        "dev-unrelated"
+      ],
+      "candidate_sha256": "45a2486069fbfefe7a08b9dedf4be490fe3f3ac0527ca45d3a6d3563957de6ed",
+      "identity_hash": "89a96d226443d97b3a269934961259e3fc32de1ab2358841c738e964bc6c829c",
+      "complete": true
+    },
+    {
+      "directory": "simplification/native/drop-noise",
+      "selected": 8,
+      "executed": 8,
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 8,
+        "UNKNOWN": 0
+      },
+      "case_ids": [
+        "dev-howto",
+        "dev-generic",
+        "dev-explicit",
+        "dev-duplicate",
+        "dev-ambiguous",
+        "dev-password",
+        "dev-closed",
+        "dev-unrelated"
+      ],
+      "candidate_sha256": "9da54f3355108076f583afb8196c36bd371f80bdaad5bc25100e2e915bab8bab",
+      "identity_hash": "89a96d226443d97b3a269934961259e3fc32de1ab2358841c738e964bc6c829c",
+      "complete": true
+    },
+    {
+      "directory": "simplification/native/final-new-existing",
+      "selected": 4,
+      "executed": 4,
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 4,
+        "UNKNOWN": 0
+      },
+      "case_ids": [
+        "conf-howto",
+        "conf-targeted",
+        "conf-duplicate",
+        "conf-preservation"
+      ],
+      "candidate_sha256": "cfd3290663da1d5980890d655f5e00cf294c989134bea9b94eae5d4bc12c1fb1",
+      "identity_hash": "89a96d226443d97b3a269934961259e3fc32de1ab2358841c738e964bc6c829c",
+      "complete": true
+    },
+    {
+      "directory": "simplification/native/final-new-simplified",
+      "selected": 4,
+      "executed": 4,
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 4,
+        "UNKNOWN": 0
+      },
+      "case_ids": [
+        "conf-howto",
+        "conf-targeted",
+        "conf-duplicate",
+        "conf-preservation"
+      ],
+      "candidate_sha256": "c1a85f6bd9c8c5d53d51d44220eacde87043630d7dceb5b8e4625b2cbb37e570",
+      "identity_hash": "89a96d226443d97b3a269934961259e3fc32de1ab2358841c738e964bc6c829c",
+      "complete": true
+    },
+    {
+      "directory": "simplification/native/final-old-existing",
+      "selected": 4,
+      "executed": 4,
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 4,
+        "UNKNOWN": 0
+      },
+      "case_ids": [
+        "conf-howto",
+        "conf-targeted",
+        "conf-duplicate",
+        "conf-preservation"
+      ],
+      "candidate_sha256": "8bd79ed28276f336f5f4727a603900ab194c4e7c456ed736eff81e34acd802b2",
+      "identity_hash": "89a96d226443d97b3a269934961259e3fc32de1ab2358841c738e964bc6c829c",
+      "complete": true
+    },
+    {
+      "directory": "simplification/native/final-old-reduced",
+      "selected": 4,
+      "executed": 4,
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 4,
+        "UNKNOWN": 0
+      },
+      "case_ids": [
+        "conf-howto",
+        "conf-targeted",
+        "conf-duplicate",
+        "conf-preservation"
+      ],
+      "candidate_sha256": "872a804ac71748d8bdae154522713a31a109c9c0d7f004d321b35a1546f0ab6b",
+      "identity_hash": "89a96d226443d97b3a269934961259e3fc32de1ab2358841c738e964bc6c829c",
+      "complete": true
+    },
+    {
+      "directory": "simplification/native/final-old-simplified",
+      "selected": 4,
+      "executed": 4,
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 2,
+        "PASS": 2,
+        "UNKNOWN": 0
+      },
+      "case_ids": [
+        "conf-howto",
+        "conf-targeted",
+        "conf-duplicate",
+        "conf-preservation"
+      ],
+      "candidate_sha256": "ce35c8b8640da60a0f6141f24256e888ee056941e39ccfef6f9ef7661facd55f",
+      "identity_hash": "89a96d226443d97b3a269934961259e3fc32de1ab2358841c738e964bc6c829c",
+      "complete": true
+    },
+    {
+      "directory": "simplification/native/leave-out-conflict-a",
+      "selected": 8,
+      "executed": 8,
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 4,
+        "PASS": 4,
+        "UNKNOWN": 0
+      },
+      "case_ids": [
+        "dev-howto",
+        "dev-generic",
+        "dev-explicit",
+        "dev-duplicate",
+        "dev-ambiguous",
+        "dev-password",
+        "dev-closed",
+        "dev-unrelated"
+      ],
+      "candidate_sha256": "75e47033a7a5f2c028e9133dbdddf11f388c714b298349650e7736bb63f84abf",
+      "identity_hash": "89a96d226443d97b3a269934961259e3fc32de1ab2358841c738e964bc6c829c",
+      "complete": true
+    },
+    {
+      "directory": "simplification/native/leave-out-conflict-b",
+      "selected": 8,
+      "executed": 8,
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 4,
+        "PASS": 4,
+        "UNKNOWN": 0
+      },
+      "case_ids": [
+        "dev-howto",
+        "dev-generic",
+        "dev-explicit",
+        "dev-duplicate",
+        "dev-ambiguous",
+        "dev-password",
+        "dev-closed",
+        "dev-unrelated"
+      ],
+      "candidate_sha256": "9f06aa482cc34f1295ecdfd3644d39f81e102069ff60033ee7ef234fb9623b85",
+      "identity_hash": "89a96d226443d97b3a269934961259e3fc32de1ab2358841c738e964bc6c829c",
+      "complete": true
+    },
+    {
+      "directory": "simplification/native/leave-out-duplicate-a",
+      "selected": 8,
+      "executed": 8,
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 8,
+        "UNKNOWN": 0
+      },
+      "case_ids": [
+        "dev-howto",
+        "dev-generic",
+        "dev-explicit",
+        "dev-duplicate",
+        "dev-ambiguous",
+        "dev-password",
+        "dev-closed",
+        "dev-unrelated"
+      ],
+      "candidate_sha256": "b1aa3a808fcc0aebad717f7b4d466586270599cb3267942000efbf43bebeccd3",
+      "identity_hash": "89a96d226443d97b3a269934961259e3fc32de1ab2358841c738e964bc6c829c",
+      "complete": true
+    },
+    {
+      "directory": "simplification/native/leave-out-duplicate-b",
+      "selected": 8,
+      "executed": 8,
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 8,
+        "UNKNOWN": 0
+      },
+      "case_ids": [
+        "dev-howto",
+        "dev-generic",
+        "dev-explicit",
+        "dev-duplicate",
+        "dev-ambiguous",
+        "dev-password",
+        "dev-closed",
+        "dev-unrelated"
+      ],
+      "candidate_sha256": "fdac78193083ab38918c032fb4a1737288407b942b07062172eecc1c12d3b449",
+      "identity_hash": "89a96d226443d97b3a269934961259e3fc32de1ab2358841c738e964bc6c829c",
+      "complete": true
+    },
+    {
+      "directory": "simplification/native/leave-out-example",
+      "selected": 8,
+      "executed": 8,
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 8,
+        "UNKNOWN": 0
+      },
+      "case_ids": [
+        "dev-howto",
+        "dev-generic",
+        "dev-explicit",
+        "dev-duplicate",
+        "dev-ambiguous",
+        "dev-password",
+        "dev-closed",
+        "dev-unrelated"
+      ],
+      "candidate_sha256": "655c2ab994091fb0c6b2ce57c214a71b3dd6c9a84d04baf5be9103b8e39b1df8",
+      "identity_hash": "89a96d226443d97b3a269934961259e3fc32de1ab2358841c738e964bc6c829c",
+      "complete": true
+    },
+    {
+      "directory": "simplification/native/leave-out-legacy-auth",
+      "selected": 8,
+      "executed": 8,
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 4,
+        "PASS": 4,
+        "UNKNOWN": 0
+      },
+      "case_ids": [
+        "dev-howto",
+        "dev-generic",
+        "dev-explicit",
+        "dev-duplicate",
+        "dev-ambiguous",
+        "dev-password",
+        "dev-closed",
+        "dev-unrelated"
+      ],
+      "candidate_sha256": "dc388a5df2acf48e82dd9a7e2887cfa06c8b214b8be0a16f9ea898c851d61007",
+      "identity_hash": "89a96d226443d97b3a269934961259e3fc32de1ab2358841c738e964bc6c829c",
+      "complete": true
+    },
+    {
+      "directory": "simplification/native/leave-out-plan-detail",
+      "selected": 8,
+      "executed": 8,
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 8,
+        "UNKNOWN": 0
+      },
+      "case_ids": [
+        "dev-howto",
+        "dev-generic",
+        "dev-explicit",
+        "dev-duplicate",
+        "dev-ambiguous",
+        "dev-password",
+        "dev-closed",
+        "dev-unrelated"
+      ],
+      "candidate_sha256": "12b65c25f024476597f85a470e7a6605f5928bb13e6def2bccdcd5d02cb7d9cd",
+      "identity_hash": "89a96d226443d97b3a269934961259e3fc32de1ab2358841c738e964bc6c829c",
+      "complete": true
+    },
+    {
+      "directory": "simplification/native/naive-union",
+      "selected": 8,
+      "executed": 8,
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 1,
+        "PASS": 7,
+        "UNKNOWN": 0
+      },
+      "case_ids": [
+        "dev-howto",
+        "dev-generic",
+        "dev-explicit",
+        "dev-duplicate",
+        "dev-ambiguous",
+        "dev-password",
+        "dev-closed",
+        "dev-unrelated"
+      ],
+      "candidate_sha256": "5194eb646f8c819f699eb8285af8d82d980932b86cdaf6f122ef1ab99bb73b4f",
+      "identity_hash": "89a96d226443d97b3a269934961259e3fc32de1ab2358841c738e964bc6c829c",
+      "complete": true
+    },
+    {
+      "directory": "simplification/native/new-existing",
+      "selected": 8,
+      "executed": 8,
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 8,
+        "UNKNOWN": 0
+      },
+      "case_ids": [
+        "dev-howto",
+        "dev-generic",
+        "dev-explicit",
+        "dev-duplicate",
+        "dev-ambiguous",
+        "dev-password",
+        "dev-closed",
+        "dev-unrelated"
+      ],
+      "candidate_sha256": "cfd3290663da1d5980890d655f5e00cf294c989134bea9b94eae5d4bc12c1fb1",
+      "identity_hash": "89a96d226443d97b3a269934961259e3fc32de1ab2358841c738e964bc6c829c",
+      "complete": true
+    },
+    {
+      "directory": "simplification/native/new-simplified",
+      "selected": 8,
+      "executed": 8,
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 8,
+        "UNKNOWN": 0
+      },
+      "case_ids": [
+        "dev-howto",
+        "dev-generic",
+        "dev-explicit",
+        "dev-duplicate",
+        "dev-ambiguous",
+        "dev-password",
+        "dev-closed",
+        "dev-unrelated"
+      ],
+      "candidate_sha256": "c1a85f6bd9c8c5d53d51d44220eacde87043630d7dceb5b8e4625b2cbb37e570",
+      "identity_hash": "89a96d226443d97b3a269934961259e3fc32de1ab2358841c738e964bc6c829c",
+      "complete": true
+    },
+    {
+      "directory": "simplification/native/old-simplified",
+      "selected": 8,
+      "executed": 8,
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 4,
+        "PASS": 4,
+        "UNKNOWN": 0
+      },
+      "case_ids": [
+        "dev-howto",
+        "dev-generic",
+        "dev-explicit",
+        "dev-duplicate",
+        "dev-ambiguous",
+        "dev-password",
+        "dev-closed",
+        "dev-unrelated"
+      ],
+      "candidate_sha256": "ce35c8b8640da60a0f6141f24256e888ee056941e39ccfef6f9ef7661facd55f",
+      "identity_hash": "89a96d226443d97b3a269934961259e3fc32de1ab2358841c738e964bc6c829c",
+      "complete": true
+    },
+    {
+      "directory": "simplification/native/original",
+      "selected": 8,
+      "executed": 8,
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 8,
+        "UNKNOWN": 0
+      },
+      "case_ids": [
+        "dev-howto",
+        "dev-generic",
+        "dev-explicit",
+        "dev-duplicate",
+        "dev-ambiguous",
+        "dev-password",
+        "dev-closed",
+        "dev-unrelated"
+      ],
+      "candidate_sha256": "8bd79ed28276f336f5f4727a603900ab194c4e7c456ed736eff81e34acd802b2",
+      "identity_hash": "89a96d226443d97b3a269934961259e3fc32de1ab2358841c738e964bc6c829c",
+      "complete": true
+    }
+  ],
+  "candidate_and_configuration_artifacts": [
+    {
+      "path": "campaign/attempts/000-baseline/candidate.py",
+      "sha256": "0720b56482a445967ff2a98ec5cfa668c858b8a6f662da74a55c21b257393efc"
+    },
+    {
+      "path": "campaign/attempts/001-proposal/candidate.py",
+      "sha256": "5fff29e7ea1a726cc9a4a74376ea5b93662fd81269e7497d9f5aa63a0684b230"
+    },
+    {
+      "path": "campaign/attempts/002-proposal/candidate.py",
+      "sha256": "d8cc818e83af4453a44e9025484ae6e23ecc7cbcf8c9e621efa56c21a179a1c3"
+    },
+    {
+      "path": "campaign/attempts/003-confirm-baseline/candidate.py",
+      "sha256": "0720b56482a445967ff2a98ec5cfa668c858b8a6f662da74a55c21b257393efc"
+    },
+    {
+      "path": "campaign/attempts/004-confirm-incumbent/candidate.py",
+      "sha256": "d8cc818e83af4453a44e9025484ae6e23ecc7cbcf8c9e621efa56c21a179a1c3"
+    },
+    {
+      "path": "campaign/best.diff",
+      "sha256": "64c7fe69132e8165d68631639ab7414a1acc4ef4e912b8f8e04d0bce47168891"
+    },
+    {
+      "path": "campaign/best.py",
+      "sha256": "d8cc818e83af4453a44e9025484ae6e23ecc7cbcf8c9e621efa56c21a179a1c3"
+    },
+    {
+      "path": "claim-audit/alternative-native/candidate.py",
+      "sha256": "1f8609454b600bb7525786b78b4e2202c0024cc40a7655d957c53fbdc5da4092"
+    },
+    {
+      "path": "claim-audit/forged-native/candidate.py",
+      "sha256": "73b64fb040b2d1b4f9479c904a9ef2109bdd0ae0bac366b104da4562c4958d6e"
+    },
+    {
+      "path": "claim-audit/forged.py",
+      "sha256": "73b64fb040b2d1b4f9479c904a9ef2109bdd0ae0bac366b104da4562c4958d6e"
+    },
+    {
+      "path": "claim-audit/legitimate-alternative.py",
+      "sha256": "1f8609454b600bb7525786b78b4e2202c0024cc40a7655d957c53fbdc5da4092"
+    },
+    {
+      "path": "claim-audit/repaired-verifier.py",
+      "sha256": "7711a62548a2081c30f47a1d7413bc9ed1cbe1f8b331b97d489c4f7da05ff179"
+    },
+    {
+      "path": "judge/campaign/jev-baseline-final/config.json",
+      "sha256": "bdb2594f4cad178e59f2ca320f2eeb5de52c6b467c64fb05a5488aa32a77f316"
+    },
+    {
+      "path": "judge/campaign/jev-baseline-train/config.json",
+      "sha256": "bdb2594f4cad178e59f2ca320f2eeb5de52c6b467c64fb05a5488aa32a77f316"
+    },
+    {
+      "path": "judge/campaign/jev-selected-final/config.json",
+      "sha256": "37b805849e0b583b146b04d3ed0daa9b76d53694c2ee5d27e9d9f515e0c6c8ec"
+    },
+    {
+      "path": "judge/campaign/jev-validation-0/config.json",
+      "sha256": "2a8f1555611d6e7e4edfc169516cdce54852021f4f10a5c696b95ca2c9774a08"
+    },
+    {
+      "path": "judge/campaign/jev-validation-1/config.json",
+      "sha256": "bdb2594f4cad178e59f2ca320f2eeb5de52c6b467c64fb05a5488aa32a77f316"
+    },
+    {
+      "path": "judge/campaign/jev-validation-2/config.json",
+      "sha256": "37b805849e0b583b146b04d3ed0daa9b76d53694c2ee5d27e9d9f515e0c6c8ec"
+    },
+    {
+      "path": "judge/campaign/jev-validation-3/config.json",
+      "sha256": "57c7a3994e1634e20c443136c0d9e99c01daf6fc6a97b5681884c5dfd88c84f8"
+    },
+    {
+      "path": "judge/campaign/llm-baseline-final/config.json",
+      "sha256": "6ab4673ea0c595a75594285699cb239b595bd0b77c18610bdb1817c2d18e4900"
+    },
+    {
+      "path": "judge/campaign/llm-baseline-train/config.json",
+      "sha256": "6ab4673ea0c595a75594285699cb239b595bd0b77c18610bdb1817c2d18e4900"
+    },
+    {
+      "path": "judge/campaign/llm-selected-final/config.json",
+      "sha256": "42e7bb06ad1a3ed3c2c4ef79f790630b627567b9ff07c93e49f76d4fac5b813f"
+    },
+    {
+      "path": "judge/campaign/llm-validation-0/config.json",
+      "sha256": "452b48f5eb1cf125772a75d0bda8eae1a52ed34e2b6c7cc3c1ffc2077f1ae504"
+    },
+    {
+      "path": "judge/campaign/llm-validation-1/config.json",
+      "sha256": "42e7bb06ad1a3ed3c2c4ef79f790630b627567b9ff07c93e49f76d4fac5b813f"
+    },
+    {
+      "path": "judge/dataset/native-source/improved/candidate.py",
+      "sha256": "d8cc818e83af4453a44e9025484ae6e23ecc7cbcf8c9e621efa56c21a179a1c3"
+    },
+    {
+      "path": "judge/dataset/native-source/support_agent/candidate.py",
+      "sha256": "0720b56482a445967ff2a98ec5cfa668c858b8a6f662da74a55c21b257393efc"
+    },
+    {
+      "path": "judge/selected-judge.fixture.json",
+      "sha256": "c9e392e725d412f81c03abc609a8fd60a66c2981db98aac073c9285895e07883"
+    },
+    {
+      "path": "run-baseline/candidate.py",
+      "sha256": "0720b56482a445967ff2a98ec5cfa668c858b8a6f662da74a55c21b257393efc"
+    },
+    {
+      "path": "run-conforming/candidate.py",
+      "sha256": "d8cc818e83af4453a44e9025484ae6e23ecc7cbcf8c9e621efa56c21a179a1c3"
+    },
+    {
+      "path": "simplification/candidates/drop-conflict-a.py",
+      "sha256": "ff1398a9bf4e7266f4253f12afc5a75852e97991e88aa742cf957de30f449adb"
+    },
+    {
+      "path": "simplification/candidates/drop-conflict-b.py",
+      "sha256": "9c071428acb1d134061d3ecfae9ee3d06dcc0fce716f9f29028610b04f214cc8"
+    },
+    {
+      "path": "simplification/candidates/drop-conflict-pair.py",
+      "sha256": "872a804ac71748d8bdae154522713a31a109c9c0d7f004d321b35a1546f0ab6b"
+    },
+    {
+      "path": "simplification/candidates/drop-duplicate-a.py",
+      "sha256": "6c183962f27c6ff769a1a127f92412f27b22e8cf49b4299573b6d8719a732cc3"
+    },
+    {
+      "path": "simplification/candidates/drop-duplicate-b.py",
+      "sha256": "45a2486069fbfefe7a08b9dedf4be490fe3f3ac0527ca45d3a6d3563957de6ed"
+    },
+    {
+      "path": "simplification/candidates/drop-noise.py",
+      "sha256": "9da54f3355108076f583afb8196c36bd371f80bdaad5bc25100e2e915bab8bab"
+    },
+    {
+      "path": "simplification/candidates/final-new-existing.py",
+      "sha256": "cfd3290663da1d5980890d655f5e00cf294c989134bea9b94eae5d4bc12c1fb1"
+    },
+    {
+      "path": "simplification/candidates/final-new-simplified.py",
+      "sha256": "c1a85f6bd9c8c5d53d51d44220eacde87043630d7dceb5b8e4625b2cbb37e570"
+    },
+    {
+      "path": "simplification/candidates/final-old-existing.py",
+      "sha256": "8bd79ed28276f336f5f4727a603900ab194c4e7c456ed736eff81e34acd802b2"
+    },
+    {
+      "path": "simplification/candidates/final-old-reduced.py",
+      "sha256": "872a804ac71748d8bdae154522713a31a109c9c0d7f004d321b35a1546f0ab6b"
+    },
+    {
+      "path": "simplification/candidates/final-old-simplified.py",
+      "sha256": "ce35c8b8640da60a0f6141f24256e888ee056941e39ccfef6f9ef7661facd55f"
+    },
+    {
+      "path": "simplification/candidates/leave-out-conflict-a.py",
+      "sha256": "75e47033a7a5f2c028e9133dbdddf11f388c714b298349650e7736bb63f84abf"
+    },
+    {
+      "path": "simplification/candidates/leave-out-conflict-b.py",
+      "sha256": "9f06aa482cc34f1295ecdfd3644d39f81e102069ff60033ee7ef234fb9623b85"
+    },
+    {
+      "path": "simplification/candidates/leave-out-duplicate-a.py",
+      "sha256": "b1aa3a808fcc0aebad717f7b4d466586270599cb3267942000efbf43bebeccd3"
+    },
+    {
+      "path": "simplification/candidates/leave-out-duplicate-b.py",
+      "sha256": "fdac78193083ab38918c032fb4a1737288407b942b07062172eecc1c12d3b449"
+    },
+    {
+      "path": "simplification/candidates/leave-out-example.py",
+      "sha256": "655c2ab994091fb0c6b2ce57c214a71b3dd6c9a84d04baf5be9103b8e39b1df8"
+    },
+    {
+      "path": "simplification/candidates/leave-out-legacy-auth.py",
+      "sha256": "dc388a5df2acf48e82dd9a7e2887cfa06c8b214b8be0a16f9ea898c851d61007"
+    },
+    {
+      "path": "simplification/candidates/leave-out-plan-detail.py",
+      "sha256": "12b65c25f024476597f85a470e7a6605f5928bb13e6def2bccdcd5d02cb7d9cd"
+    },
+    {
+      "path": "simplification/candidates/naive-union.py",
+      "sha256": "5194eb646f8c819f699eb8285af8d82d980932b86cdaf6f122ef1ab99bb73b4f"
+    },
+    {
+      "path": "simplification/candidates/new-existing.py",
+      "sha256": "cfd3290663da1d5980890d655f5e00cf294c989134bea9b94eae5d4bc12c1fb1"
+    },
+    {
+      "path": "simplification/candidates/new-simplified.py",
+      "sha256": "c1a85f6bd9c8c5d53d51d44220eacde87043630d7dceb5b8e4625b2cbb37e570"
+    },
+    {
+      "path": "simplification/candidates/old-simplified.py",
+      "sha256": "ce35c8b8640da60a0f6141f24256e888ee056941e39ccfef6f9ef7661facd55f"
+    },
+    {
+      "path": "simplification/candidates/original.py",
+      "sha256": "8bd79ed28276f336f5f4727a603900ab194c4e7c456ed736eff81e34acd802b2"
+    },
+    {
+      "path": "simplification/native/drop-conflict-a/candidate.py",
+      "sha256": "ff1398a9bf4e7266f4253f12afc5a75852e97991e88aa742cf957de30f449adb"
+    },
+    {
+      "path": "simplification/native/drop-conflict-b/candidate.py",
+      "sha256": "9c071428acb1d134061d3ecfae9ee3d06dcc0fce716f9f29028610b04f214cc8"
+    },
+    {
+      "path": "simplification/native/drop-conflict-pair/candidate.py",
+      "sha256": "872a804ac71748d8bdae154522713a31a109c9c0d7f004d321b35a1546f0ab6b"
+    },
+    {
+      "path": "simplification/native/drop-duplicate-a/candidate.py",
+      "sha256": "6c183962f27c6ff769a1a127f92412f27b22e8cf49b4299573b6d8719a732cc3"
+    },
+    {
+      "path": "simplification/native/drop-duplicate-b/candidate.py",
+      "sha256": "45a2486069fbfefe7a08b9dedf4be490fe3f3ac0527ca45d3a6d3563957de6ed"
+    },
+    {
+      "path": "simplification/native/drop-noise/candidate.py",
+      "sha256": "9da54f3355108076f583afb8196c36bd371f80bdaad5bc25100e2e915bab8bab"
+    },
+    {
+      "path": "simplification/native/final-new-existing/candidate.py",
+      "sha256": "cfd3290663da1d5980890d655f5e00cf294c989134bea9b94eae5d4bc12c1fb1"
+    },
+    {
+      "path": "simplification/native/final-new-simplified/candidate.py",
+      "sha256": "c1a85f6bd9c8c5d53d51d44220eacde87043630d7dceb5b8e4625b2cbb37e570"
+    },
+    {
+      "path": "simplification/native/final-old-existing/candidate.py",
+      "sha256": "8bd79ed28276f336f5f4727a603900ab194c4e7c456ed736eff81e34acd802b2"
+    },
+    {
+      "path": "simplification/native/final-old-reduced/candidate.py",
+      "sha256": "872a804ac71748d8bdae154522713a31a109c9c0d7f004d321b35a1546f0ab6b"
+    },
+    {
+      "path": "simplification/native/final-old-simplified/candidate.py",
+      "sha256": "ce35c8b8640da60a0f6141f24256e888ee056941e39ccfef6f9ef7661facd55f"
+    },
+    {
+      "path": "simplification/native/leave-out-conflict-a/candidate.py",
+      "sha256": "75e47033a7a5f2c028e9133dbdddf11f388c714b298349650e7736bb63f84abf"
+    },
+    {
+      "path": "simplification/native/leave-out-conflict-b/candidate.py",
+      "sha256": "9f06aa482cc34f1295ecdfd3644d39f81e102069ff60033ee7ef234fb9623b85"
+    },
+    {
+      "path": "simplification/native/leave-out-duplicate-a/candidate.py",
+      "sha256": "b1aa3a808fcc0aebad717f7b4d466586270599cb3267942000efbf43bebeccd3"
+    },
+    {
+      "path": "simplification/native/leave-out-duplicate-b/candidate.py",
+      "sha256": "fdac78193083ab38918c032fb4a1737288407b942b07062172eecc1c12d3b449"
+    },
+    {
+      "path": "simplification/native/leave-out-example/candidate.py",
+      "sha256": "655c2ab994091fb0c6b2ce57c214a71b3dd6c9a84d04baf5be9103b8e39b1df8"
+    },
+    {
+      "path": "simplification/native/leave-out-legacy-auth/candidate.py",
+      "sha256": "dc388a5df2acf48e82dd9a7e2887cfa06c8b214b8be0a16f9ea898c851d61007"
+    },
+    {
+      "path": "simplification/native/leave-out-plan-detail/candidate.py",
+      "sha256": "12b65c25f024476597f85a470e7a6605f5928bb13e6def2bccdcd5d02cb7d9cd"
+    },
+    {
+      "path": "simplification/native/naive-union/candidate.py",
+      "sha256": "5194eb646f8c819f699eb8285af8d82d980932b86cdaf6f122ef1ab99bb73b4f"
+    },
+    {
+      "path": "simplification/native/new-existing/candidate.py",
+      "sha256": "cfd3290663da1d5980890d655f5e00cf294c989134bea9b94eae5d4bc12c1fb1"
+    },
+    {
+      "path": "simplification/native/new-simplified/candidate.py",
+      "sha256": "c1a85f6bd9c8c5d53d51d44220eacde87043630d7dceb5b8e4625b2cbb37e570"
+    },
+    {
+      "path": "simplification/native/old-simplified/candidate.py",
+      "sha256": "ce35c8b8640da60a0f6141f24256e888ee056941e39ccfef6f9ef7661facd55f"
+    },
+    {
+      "path": "simplification/native/original/candidate.py",
+      "sha256": "8bd79ed28276f336f5f4727a603900ab194c4e7c456ed736eff81e34acd802b2"
+    },
+    {
+      "path": "simplification/selected-offline-fixture.py",
+      "sha256": "c1a85f6bd9c8c5d53d51d44220eacde87043630d7dceb5b8e4625b2cbb37e570"
+    },
+    {
+      "path": "simplification/selected.diff",
+      "sha256": "1940aed9a0966bbf792264bc9a46aab4523534efbe39b43fe394c30d0a127b65"
+    }
+  ],
+  "command_records": "commands.jsonl",
+  "usage": "usage.json",
+  "results": "results.json",
+  "report": "REPORT.md",
+  "native_identity": {
+    "files": {
+      "evaluate.py": "fd1fdaa4b090852f8d0a6462303411bea5488dcc7f7a08895146e32d52b0430d",
+      "evals/spec.json": "eb6f21266223c16708a4ed3bb4f401f3a2adb3355b9e176152665d70a665d8f6",
+      "evals/cases.jsonl": "71f1d8c50f7ce2b3ca512c6f2703faa4e30d5c63237824e3a73e7a573cf4f7b2",
+      "evals/rubric.md": "cb133b50752a48098d463a562d7553ec5a5b29bfef1825b4e393e7de33d66dd8"
+    },
+    "python": {
+      "executable": "/Users/clayton/.local/share/uv/python/cpython-3.12.16-macos-aarch64-none/bin/python3.12",
+      "version": "3.12.16 (main, Oct 26 2026, 13:59:40) [Clang 23.1.3 ]",
+      "implementation": "CPython",
+      "platform": "macOS-27.2-arm64-arm-64bit"
+    },
+    "protocol": {
+      "name": "deterministic-local-support-v1",
+      "trials_per_case": 1,
+      "timeout_seconds": 3,
+      "python_flags": [
+        "-I"
+      ],
+      "new_ticket_issue": "vpn",
+      "new_ticket_status": "open",
+      "selection": "strict development improvement; preserve every incumbent PASS",
+      "confirmation": "baseline and incumbent; preserve baseline PASS; no lower score",
+      "execution_boundary": "trusted local subprocess; not a security sandbox"
+    }
+  },
+  "skill_identities": {
+    "run-eval": "02779435237bd4c3501ac8f307f42bb825a7d782032c7ffb940d8b483f97237a",
+    "hill-climb": "94519c298d98ee63f800633ff2f36df2472bd3f930adb6d974e24d02bbb1dc22",
+    "calibrate-judge": "3d048ca9465782a504cf02b5b3c8191bacfbb841d548c69b35acc3507c9003d9",
+    "ablation": "a43baebc4431a6fed89a7e27d2d294bced21ca23c6e6813f262a4ce79a906c48",
+    "bitter-lesson": "3b4b3bb99c43b319d41d7dfe00da28bfc8ab04eb89ca56030107444b56c98848",
+    "cross-examine": "0ae687b4ae33f99a4fd5233b486aa3ee642b4f71ba6ad07f7aebde43b7098697"
+  },
+  "setup": "setup.json",
+  "ledger": "CROSS_EXAMINE_LEDGER.md"
+}

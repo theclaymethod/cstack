@@ -1,0 +1,37 @@
+{
+  "adapter_normalizations_additional_control_calls": 16,
+  "adapter_normalizations_distinct_controls": 8,
+  "by_workflow": {
+    "cross_examine": 16,
+    "hill_climb": 32,
+    "judge_source": 24,
+    "run_eval": 16,
+    "simplification": 164
+  },
+  "dependencies_installed": 0,
+  "fixture_judge_families": 12,
+  "fixture_judge_response_processes": 102,
+  "fixture_judge_unique_source_rows": 24,
+  "fixture_predictions": 96,
+  "fixture_repeatability_processes": 6,
+  "model_cost": null,
+  "native_case_budget": 300,
+  "native_case_processes": 252,
+  "native_counts": {
+    "ERROR": 0,
+    "FAIL": 54,
+    "PASS": 198,
+    "UNKNOWN": 0
+  },
+  "native_incomplete": 0,
+  "native_remaining": 48,
+  "network_calls": 0,
+  "original_claim_proxy_processes": 3,
+  "paid_calls": 0,
+  "production_latency": null,
+  "provider_calls": 0,
+  "repaired_verifier_processes": 2,
+  "stored_output_native_regrades": 12,
+  "stored_prediction_normalizations": 192,
+  "subagents": 0
+}

@@ -1,0 +1,169 @@
+{
+  "budget": {
+    "confirmation_reserve": 24,
+    "planned_development": 112,
+    "planned_total": 137,
+    "schema_control": 1,
+    "total_native_case_executions": 160
+  },
+  "comparison": "Compare both simplified designs identically on both models, and to both existing-design controls",
+  "confirmation_plan": {
+    "confirm-new-full": {
+      "model": "new-fixture",
+      "retained": [
+        "conflict-a",
+        "conflict-b",
+        "contract",
+        "duplicate-a",
+        "duplicate-b",
+        "example",
+        "legacy-auth",
+        "plan",
+        "plan-detail"
+      ]
+    },
+    "confirm-new-migration-simple": {
+      "model": "new-fixture",
+      "retained": [
+        "contract",
+        "duplicate-b"
+      ]
+    },
+    "confirm-new-old-simple": {
+      "model": "new-fixture",
+      "retained": [
+        "contract",
+        "duplicate-b",
+        "legacy-auth"
+      ]
+    },
+    "confirm-old-full": {
+      "model": "old-fixture",
+      "retained": [
+        "conflict-a",
+        "conflict-b",
+        "contract",
+        "duplicate-a",
+        "duplicate-b",
+        "example",
+        "legacy-auth",
+        "plan",
+        "plan-detail"
+      ]
+    },
+    "confirm-old-migration-simple": {
+      "model": "old-fixture",
+      "retained": [
+        "contract",
+        "duplicate-b"
+      ]
+    },
+    "confirm-old-simple": {
+      "model": "old-fixture",
+      "retained": [
+        "contract",
+        "duplicate-b",
+        "legacy-auth"
+      ]
+    }
+  },
+  "costs": "No actual provider/model/network/paid calls or dependencies; token costs unavailable",
+  "driver_sha256": "de40e81a39eb07422fddcdc486344d862505766269b5f71ebc0f0b77b23929b0",
+  "exposure": "All synthetic cases explicitly read; final execution is reserved workflow confirmation only",
+  "frozen": {
+    "catalog": "dc332e7a108b52e03789f1185e88e02d405bbbe906a6ef030a74d0b7b9d34b73",
+    "files": {
+      "examples/candidates/improved.py": "d8cc818e83af4453a44e9025484ae6e23ecc7cbcf8c9e621efa56c21a179a1c3",
+      "methods/native.py": "df83d4b57df0ac2dc0ac6cd5b94136082c02d486478c98334a6273cb623e86bd",
+      "simplification/__init__.py": "9b265b7e39fe1ee3767d60306a74857d6429d3c352df97497cceaadf42e9d336",
+      "simplification/demo.py": "2e682951a122ac9ee9a709b2d04a3038b9330cf1df46ee7deec38d73f34d6c76",
+      "simplification/protocol.py": "8d0abc3274b62c93d753728c09a29de1dfee54bef12d80f1b50b9edaa644cd15",
+      "simplification/run.py": "d6689ea5937679837104b3e006ef5447234cecaedfc408116f066559f41ace30"
+    },
+    "native": {
+      "files": {
+        "evals/cases.jsonl": "71f1d8c50f7ce2b3ca512c6f2703faa4e30d5c63237824e3a73e7a573cf4f7b2",
+        "evals/rubric.md": "cb133b50752a48098d463a562d7553ec5a5b29bfef1825b4e393e7de33d66dd8",
+        "evals/spec.json": "eb6f21266223c16708a4ed3bb4f401f3a2adb3355b9e176152665d70a665d8f6",
+        "evaluate.py": "fd1fdaa4b090852f8d0a6462303411bea5488dcc7f7a08895146e32d52b0430d"
+      },
+      "protocol": {
+        "confirmation": "baseline and incumbent; preserve baseline PASS; no lower score",
+        "execution_boundary": "trusted local subprocess; not a security sandbox",
+        "name": "deterministic-local-support-v1",
+        "new_ticket_issue": "vpn",
+        "new_ticket_status": "open",
+        "python_flags": [
+          "-I"
+        ],
+        "selection": "strict development improvement; preserve every incumbent PASS",
+        "timeout_seconds": 3,
+        "trials_per_case": 1
+      },
+      "python": {
+        "executable": "/Users/clayton/.local/share/uv/python/cpython-3.12.16-macos-aarch64-none/bin/python3.12",
+        "implementation": "CPython",
+        "platform": "macOS-27.2-arm64-arm-64bit",
+        "version": "3.12.16 (main, Oct 26 2026, 13:59:40) [Clang 23.1.3 ]"
+      }
+    }
+  },
+  "mutable": "Only rendered prompt unit membership and explicitly simulated model identity; standalone snapshots",
+  "objective": [
+    "minimize retained units",
+    "minimize rendered UTF-8 bytes"
+  ],
+  "promotion": "Local exposed-fixture selection only, under exact zero-loss quality gates; no real model conclusion",
+  "protected": [
+    "contract and embedded unchanged rubric",
+    "dependency plan-detail requires plan"
+  ],
+  "quality": {
+    "allowed_observed_pass_regressions": 0,
+    "errors_unknown": "never admissible; keep in denominator",
+    "maximum_loss": 0,
+    "metric": "native fraction passing all checks",
+    "original": "old-full",
+    "slices": "every individual case/family"
+  },
+  "rationale": "Known synthetic cue design from project adapter; no production workaround history available",
+  "stop": "Execute the declared bounded deletion probes and six frozen confirmation cells; no production edits",
+  "trial": {
+    "deterministic": true,
+    "repeats": 1,
+    "reset": "fresh native subprocess per case"
+  },
+  "unit_catalog": {
+    "conflict-a": {
+      "text": "CONFLICT A: apply the first synthetic steering convention."
+    },
+    "conflict-b": {
+      "text": "CONFLICT B: apply the compensating synthetic steering convention."
+    },
+    "contract": {
+      "protected": true,
+      "text": "Apply the complete support-ticket task contract below."
+    },
+    "duplicate-a": {
+      "text": "DUPLICATE CHECK A: inspect open VPN tickets for the selected account."
+    },
+    "duplicate-b": {
+      "text": "DUPLICATE CHECK B: reuse an open VPN ticket for the same account."
+    },
+    "example": {
+      "text": "EXAMPLE: a how-to question receives guidance without changing state."
+    },
+    "legacy-auth": {
+      "text": "LEGACY STEP: explicitly check authorization before answering."
+    },
+    "plan": {
+      "text": "PLAN HEADER: organize a preliminary answer plan."
+    },
+    "plan-detail": {
+      "requires": [
+        "plan"
+      ],
+      "text": "PLAN DETAIL: elaborate the preliminary plan."
+    }
+  }
+}

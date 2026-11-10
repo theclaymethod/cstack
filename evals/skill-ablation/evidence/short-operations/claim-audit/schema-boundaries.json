@@ -1,0 +1,17 @@
+{
+  "missing-note": {
+    "outcome": "ERROR",
+    "checks": {},
+    "error": "malformed candidate JSON schema"
+  },
+  "extra-field": {
+    "outcome": "ERROR",
+    "checks": {},
+    "error": "malformed candidate JSON schema"
+  },
+  "blank-note": {
+    "outcome": "ERROR",
+    "checks": {},
+    "error": "malformed candidate JSON schema"
+  }
+}

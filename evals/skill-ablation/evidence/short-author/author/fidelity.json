@@ -1,0 +1,28 @@
+[
+  {
+    "card": "A/revision1",
+    "exact_fields_preserved": [
+      "request.text",
+      "request.account",
+      "request.accounts",
+      "state",
+      "expected",
+      "family"
+    ],
+    "id": "approved-A-r1",
+    "status": "MATCH"
+  },
+  {
+    "card": "B/revision2",
+    "exact_fields_preserved": [
+      "request.text",
+      "request.account",
+      "request.accounts",
+      "state",
+      "expected",
+      "family"
+    ],
+    "id": "approved-B-r2",
+    "status": "MATCH"
+  }
+]

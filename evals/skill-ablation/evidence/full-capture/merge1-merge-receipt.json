@@ -1,0 +1,24 @@
+{
+  "mode_before": false,
+  "mode_after": false,
+  "source_sha256": "ccfb4e35afe2317701d09d010ee52c13e3088cc22fccd5ce2c98a98d5344769d",
+  "counts_before": {
+    "reviews.jsonl": 2,
+    "rubric.jsonl": 2,
+    "observations.jsonl": 1,
+    "exclusions.jsonl": 0
+  },
+  "counts_after": {
+    "reviews.jsonl": 3,
+    "rubric.jsonl": 4,
+    "observations.jsonl": 1,
+    "exclusions.jsonl": 2
+  },
+  "added": {
+    "reviews.jsonl": 1,
+    "rubric.jsonl": 2,
+    "observations.jsonl": 0,
+    "exclusions.jsonl": 2
+  },
+  "dedup_key": "stable record IDs for source identity, output version, and specific assertion"
+}

@@ -1,0 +1,13 @@
+# All paths below are relative to the materialized short-capture workspace unless noted.
+# Materialize, from the parent work area:
+python3 work/skill-audit-ablation/shortened-candidate/fixtures/playground/scripts/new_workspace.py --source work/skill-audit-ablation/shortened-candidate --out work/skill-audit-ablation/runs/short-capture
+# Raw source copied byte for byte from exercises/fixtures/review-session.md to eval-runs/skill-exercise/source.md.
+# first-case.jsonl serialized the first nonempty row of evals/cases.jsonl with json.loads/json.dumps; asserted suite development.
+python3 evaluate.py run --candidate support_agent.py --cases eval-runs/skill-exercise/first-case.jsonl --suite development --out eval-runs/skill-exercise/native-baseline
+python3 eval-runs/skill-exercise/capture_driver.py first
+# Explicitly stopped Expert Mode; state.json ongoing_capture became inactive, last_operation stop-expert-mode; saved stopped-state.json.
+python3 eval-runs/skill-exercise/capture_driver.py merge1
+python3 eval-runs/skill-exercise/capture_driver.py merge2
+python3 evaluate.py run --candidate eval-runs/skill-exercise/regenerated.py --cases eval-runs/skill-exercise/first-case.jsonl --suite development --out eval-runs/skill-exercise/native-regenerated
+# Read-back verification: JSONL parsing, exact source quotations, record-ID uniqueness; merge1/merge2 reviews+rubric byte equality; same native input and distinct output versions; original product hash unchanged; regeneration state preserved.
+# Actual candidate executions: baseline 1 + regenerated 1 = 2; no hidden retries or other native case invocations.

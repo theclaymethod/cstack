@@ -1,0 +1,15 @@
+# Original intent and audit boundary
+
+The user requested `/ablation` to remove components while keeping required eval performance, and `/bitter-lesson` to revisit production prompts/context as models improve. Both are reference-only skills, with executable implementations in the consuming project. They were to be validated through the playground fixture without paid model calls. The current request is to cross-examine both using that fixture, fix confirmed issues, and only then ablate the skill pack.
+
+Required behavior: keep task meaning, approved evaluator, original quality baseline, required regression constraints and necessary task information fixed. Diagnose conditional contribution separately from selecting a combined deletion. Execute changed artifacts, preserve errors and selected denominators, reserve final resources, freeze final configurations, retain evidence, and limit quality/minimality claims to what was actually tested.
+
+For a model migration, compare the proposed bundle against original production and the new model's existing design; use a shared simplified design across model rows when claiming an interaction. Missing comparisons stay missing. Stronger models, fewer prompt bytes and a passing offline mock do not independently establish production quality or efficiency.
+
+Playground intent: the existing native grader owns support-task correctness. A conforming solution must preserve prior state, respect ticket authorization and account/duplicate scope, and emit the declared output schema. Any valid unique ticket ID and allowed action is legitimate. The simplification adapter supplies bounded, deterministic model/prompt controls, not a second grader, live client, resumable optimizer, or security sandbox.
+
+Audit scope: the two skills and their local simplification adapter, demo, tests and exercise handoffs. Evaluate public API workflows and actual candidate execution. An attacker may inspect source and create candidates within its own disposable workspace. Operator faults or direct mutation of experiment objects must be labeled separately from candidate-access exploits. Candidate subprocesses receive request/state and compiled prompt/model code; they do not receive final labels as runtime inputs. Local processes have host permissions; do not claim filesystem containment.
+
+Budgets: each attacker at most 200 native case executions, reviewer at most 96, defender at most 300 targeted replay cases. Record actual usage, including unsuccessful attempts. Existing full control runs are separate verification work. No paid/provider calls, dependency installation, remote writes, production access or broad process termination. Keep role scratch directories disjoint. Original artifacts and audit receipts are preserved outside attacker copies.
+
+Original request supplies intent, not human labels or a real production dataset. Confirmation cases are synthetic, readable and exposed. A clean bounded audit is valid; unsupported hypotheses and infrastructure limits remain separate from findings.

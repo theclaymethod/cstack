@@ -1,0 +1,12 @@
+{
+  "best_attempt": 2,
+  "campaign": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/skill-audit-ablation/runs/full-operations/eval-runs/skill-exercise/hill-climb",
+  "last_decision": "verified development improvement; confirmation checks passed",
+  "max_case_runs": 48,
+  "pending_attempts": [],
+  "protected_confirmation_case_runs": 0,
+  "search_case_runs_remaining": 16,
+  "status": "finished",
+  "used_case_runs": 32,
+  "verification": "record and completed evidence verified"
+}

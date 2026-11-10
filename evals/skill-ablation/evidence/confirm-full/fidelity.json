@@ -1,0 +1,6 @@
+{
+  "exact_request_state_expectation": true,
+  "native_cases_sha256": "5e4813d5efed26afc2628f2bc31ebf19e859b15d013b42db7a50bb235c92bc3f",
+  "source_sha256": "69a6e43cbb360591fb04314868922bd45cbd0d1fed36e943ce5597647b3ace69",
+  "task_sha256": "167ca308b86356380f50f8839485b2dfa2acfa1fa82f9eb24256c277f3bc69a3"
+}

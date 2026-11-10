@@ -1,0 +1,254 @@
+{
+  "all_pass": {
+    "attempted": 4,
+    "confusion": {
+      "FAIL": {
+        "FAIL": 0,
+        "PASS": 0
+      },
+      "PASS": {
+        "FAIL": 0,
+        "PASS": 4
+      }
+    },
+    "coverage": 1.0,
+    "decided": 4,
+    "failure_positive_rates_decided": {
+      "FN": 0,
+      "FP": 0,
+      "TN": 4,
+      "TP": 0,
+      "failure_catch": null,
+      "false_outcomes_among_judge_passes": 0.0,
+      "false_pass_among_gold_failures": null,
+      "false_rejection_among_gold_passes": 0.0
+    },
+    "gold_prevalence_all_attempted": {
+      "FAIL": 0.0,
+      "PASS": 1.0
+    },
+    "kappa_decided": null,
+    "kappa_expected_disagreement": 0.0,
+    "kappa_observed_disagreement": 0.0,
+    "kappa_undefined_reason": "expected_disagreement_is_zero",
+    "labels": [
+      "PASS",
+      "FAIL"
+    ],
+    "marginal_gold_decided": {
+      "FAIL": 0.0,
+      "PASS": 1.0
+    },
+    "marginal_prediction_decided": {
+      "FAIL": 0.0,
+      "PASS": 1.0
+    },
+    "nominal_expected_agreement_decided": 1.0,
+    "observed_agreement_decided": 1.0,
+    "other_by_gold": {
+      "FAIL": {
+        "ERROR": 0,
+        "UNKNOWN": 0
+      },
+      "PASS": {
+        "ERROR": 0,
+        "UNKNOWN": 0
+      }
+    },
+    "weighting": null
+  },
+  "all_pass_uncertainty": {
+    "confidence_level": 0.95,
+    "draws": 100,
+    "families": 4,
+    "intervals": {
+      "coverage": {
+        "bounds": [
+          1.0,
+          1.0
+        ],
+        "undefined_replicates": 0
+      },
+      "failure_catch": {
+        "bounds": null,
+        "undefined_replicates": 100
+      },
+      "false_pass_among_gold_failures": {
+        "bounds": null,
+        "undefined_replicates": 100
+      },
+      "false_rejection_among_gold_passes": {
+        "bounds": [
+          0.0,
+          0.0
+        ],
+        "undefined_replicates": 0
+      },
+      "kappa_decided": {
+        "bounds": null,
+        "undefined_replicates": 100
+      }
+    },
+    "limits": "Assumes independent declared families and an appropriate sampling model; few families/rare classes limit inference. Undefined replicates suppress that interval rather than being discarded.",
+    "method": "paired whole-family percentile bootstrap, row-weighted within sampled families",
+    "seed": 17
+  },
+  "combined_all_attempted": {
+    "attempted": 5,
+    "confusion": {
+      "FAIL": {
+        "FAIL": 0,
+        "PASS": 0
+      },
+      "PASS": {
+        "FAIL": 0,
+        "PASS": 4
+      }
+    },
+    "coverage": 0.8,
+    "decided": 4,
+    "failure_positive_rates_decided": {
+      "FN": 0,
+      "FP": 0,
+      "TN": 4,
+      "TP": 0,
+      "failure_catch": null,
+      "false_outcomes_among_judge_passes": 0.0,
+      "false_pass_among_gold_failures": null,
+      "false_rejection_among_gold_passes": 0.0
+    },
+    "gold_prevalence_all_attempted": {
+      "FAIL": 0.0,
+      "PASS": 1.0
+    },
+    "kappa_decided": null,
+    "kappa_expected_disagreement": 0.0,
+    "kappa_observed_disagreement": 0.0,
+    "kappa_undefined_reason": "expected_disagreement_is_zero",
+    "labels": [
+      "PASS",
+      "FAIL"
+    ],
+    "marginal_gold_decided": {
+      "FAIL": 0.0,
+      "PASS": 1.0
+    },
+    "marginal_prediction_decided": {
+      "FAIL": 0.0,
+      "PASS": 1.0
+    },
+    "nominal_expected_agreement_decided": 1.0,
+    "observed_agreement_decided": 1.0,
+    "other_by_gold": {
+      "FAIL": {
+        "ERROR": 0,
+        "UNKNOWN": 0
+      },
+      "PASS": {
+        "ERROR": 1,
+        "UNKNOWN": 0
+      }
+    },
+    "weighting": null
+  },
+  "confidence": "Concentration confidence is not event probability or probability of correctness. Typed schema validity does not establish accuracy/robustness/calibration. Synthetic probabilities and labels establish arithmetic controls only.",
+  "live_judge_fitting": "unrun and unauthorized",
+  "malformed_only": {
+    "attempted": 1,
+    "confusion": {
+      "FAIL": {
+        "FAIL": 0,
+        "PASS": 0
+      },
+      "PASS": {
+        "FAIL": 0,
+        "PASS": 0
+      }
+    },
+    "coverage": 0.0,
+    "decided": 0,
+    "failure_positive_rates_decided": {
+      "FN": 0,
+      "FP": 0,
+      "TN": 0,
+      "TP": 0,
+      "failure_catch": null,
+      "false_outcomes_among_judge_passes": null,
+      "false_pass_among_gold_failures": null,
+      "false_rejection_among_gold_passes": null
+    },
+    "gold_prevalence_all_attempted": {
+      "FAIL": 0.0,
+      "PASS": 1.0
+    },
+    "kappa_decided": null,
+    "kappa_expected_disagreement": null,
+    "kappa_observed_disagreement": null,
+    "kappa_undefined_reason": "no_decided_pairs",
+    "labels": [
+      "PASS",
+      "FAIL"
+    ],
+    "marginal_gold_decided": {},
+    "marginal_prediction_decided": {},
+    "nominal_expected_agreement_decided": null,
+    "observed_agreement_decided": null,
+    "other_by_gold": {
+      "FAIL": {
+        "ERROR": 0,
+        "UNKNOWN": 0
+      },
+      "PASS": {
+        "ERROR": 1,
+        "UNKNOWN": 0
+      }
+    },
+    "weighting": null
+  },
+  "probabilities": {
+    "attempted": 5,
+    "brier": 0.010000000000000002,
+    "limits": "Brier/log loss include discrimination and uncertainty; these do not alone isolate calibration.",
+    "log_loss": 0.10536051565782628,
+    "log_loss_infinite": false,
+    "probability_pairs": 4,
+    "reliability_bins": [
+      {
+        "count": 4,
+        "empirical_failure_rate": 0.0,
+        "lower": 0.0,
+        "mean_probability": 0.1,
+        "upper": 0.2
+      },
+      {
+        "count": 0,
+        "empirical_failure_rate": null,
+        "lower": 0.2,
+        "mean_probability": null,
+        "upper": 0.4
+      },
+      {
+        "count": 0,
+        "empirical_failure_rate": null,
+        "lower": 0.4,
+        "mean_probability": null,
+        "upper": 0.6
+      },
+      {
+        "count": 0,
+        "empirical_failure_rate": null,
+        "lower": 0.6,
+        "mean_probability": null,
+        "upper": 0.8
+      },
+      {
+        "count": 0,
+        "empirical_failure_rate": null,
+        "lower": 0.8,
+        "mean_probability": null,
+        "upper": 1.0
+      }
+    ]
+  },
+  "release_threshold": null
+}

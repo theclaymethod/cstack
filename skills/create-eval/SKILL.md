@@ -5,8 +5,6 @@ description: Create repeatable evals from expert findings, model traces, or a ne
 
 # Create Eval
 
-Build an eval that measures a stated capability and supports a concrete decision. Reuse the project's format, runner, and tools. Local files and an inspectable grader are enough unless the task needs more.
-
 For trace analysis, synthetic inputs, failure discovery, or calibration, consult [existing eval skills](references/ecosystem.md). Use the relevant skill when available or its upstream guidance. These are optional references, not bundled dependencies.
 
 For an intent interview and human approval of generated scenarios before authoring, use [Bootstrap](../bootstrap/SKILL.md). Continue here when the behavior and reviewed cases are already established.
@@ -41,7 +39,7 @@ Split by source or construction family. Keep development, calibration, final tes
 
 ## Check the grader
 
-Keep the package a draft until legitimate passes, clear failures, and relevant boundaries run through the real grading path. Check supported alternatives too. Use existing checks or direct replays, respecting project rules on new test files. Report what those controls establish without generalizing beyond them.
+Keep the package a draft until legitimate passes, clear failures, and relevant boundaries run through the real grading path. Check supported alternatives too.
 
 For semantic judges, read [judge calibration](references/judges.md). Use [Calibrate Judge](../calibrate-judge/SKILL.md) to fit a judge to authoritative labels before freezing it for product evaluation. Use separate expert-labeled development and calibration examples from both classes. Freeze the rubric, prompt, parser, model/configuration, runner version, sampling, and budget before comparison. Changes create a new revision; preserve earlier results.
 
@@ -51,6 +49,6 @@ Use [Run Eval](../run-eval/SKILL.md) when execution is requested and authorized.
 
 ## Hand off
 
-Report the package path, measured capability, evidence sources, replayable cases, unresolved cases, and actual validation limits. Separate grader calibration from product performance and development results from held-out evidence. A small perfect run establishes no production-trust threshold.
+Report the package path, measured capability, evidence sources, replayable cases, unresolved cases, and actual validation limits. Separate grader calibration from product performance and development results from held-out evidence.
 
 Authoring adds no authority for product fixes, paid campaigns, opening reserved cases, publication, or uploads. For requested sharing, follow [the export workflow](../expert-mode/references/export.md).

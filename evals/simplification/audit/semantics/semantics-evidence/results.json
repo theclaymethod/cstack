@@ -1,0 +1,314 @@
+{
+  "access": "public adapter APIs plus standalone candidate variants; no object/source mutation or operator fault injection",
+  "adapter_case_executions": 120,
+  "all_attempts": 25,
+  "development_comparisons": {
+    "new-full": {
+      "admissible": true,
+      "baseline_score": 1.0,
+      "candidate_score": 1.0,
+      "difference": 0.0,
+      "errors_or_unknown": 0,
+      "max_loss": 0.0,
+      "regressions": [],
+      "scope": "Exact outcomes on the declared finite synthetic cases only"
+    },
+    "new-shared": {
+      "admissible": true,
+      "baseline_score": 1.0,
+      "candidate_score": 1.0,
+      "difference": 0.0,
+      "errors_or_unknown": 0,
+      "max_loss": 0.0,
+      "regressions": [],
+      "scope": "Exact outcomes on the declared finite synthetic cases only"
+    },
+    "old-conflict-a": {
+      "admissible": false,
+      "baseline_score": 1.0,
+      "candidate_score": 0.5,
+      "difference": -0.5,
+      "errors_or_unknown": 0,
+      "max_loss": 0.0,
+      "regressions": [
+        "dev-explicit",
+        "dev-ambiguous",
+        "dev-closed",
+        "dev-unrelated"
+      ],
+      "scope": "Exact outcomes on the declared finite synthetic cases only"
+    },
+    "old-conflict-b": {
+      "admissible": false,
+      "baseline_score": 1.0,
+      "candidate_score": 0.5,
+      "difference": -0.5,
+      "errors_or_unknown": 0,
+      "max_loss": 0.0,
+      "regressions": [
+        "dev-explicit",
+        "dev-ambiguous",
+        "dev-closed",
+        "dev-unrelated"
+      ],
+      "scope": "Exact outcomes on the declared finite synthetic cases only"
+    },
+    "old-conflict-pair": {
+      "admissible": true,
+      "baseline_score": 1.0,
+      "candidate_score": 1.0,
+      "difference": 0.0,
+      "errors_or_unknown": 0,
+      "max_loss": 0.0,
+      "regressions": [],
+      "scope": "Exact outcomes on the declared finite synthetic cases only"
+    },
+    "old-full": {
+      "admissible": true,
+      "baseline_score": 1.0,
+      "candidate_score": 1.0,
+      "difference": 0.0,
+      "errors_or_unknown": 0,
+      "max_loss": 0.0,
+      "regressions": [],
+      "scope": "Exact outcomes on the declared finite synthetic cases only"
+    },
+    "old-lean-a": {
+      "admissible": true,
+      "baseline_score": 1.0,
+      "candidate_score": 1.0,
+      "difference": 0.0,
+      "errors_or_unknown": 0,
+      "max_loss": 0.0,
+      "regressions": [],
+      "scope": "Exact outcomes on the declared finite synthetic cases only"
+    },
+    "old-lean-b": {
+      "admissible": true,
+      "baseline_score": 1.0,
+      "candidate_score": 1.0,
+      "difference": 0.0,
+      "errors_or_unknown": 0,
+      "max_loss": 0.0,
+      "regressions": [],
+      "scope": "Exact outcomes on the declared finite synthetic cases only"
+    },
+    "old-no-a": {
+      "admissible": true,
+      "baseline_score": 1.0,
+      "candidate_score": 1.0,
+      "difference": 0.0,
+      "errors_or_unknown": 0,
+      "max_loss": 0.0,
+      "regressions": [],
+      "scope": "Exact outcomes on the declared finite synthetic cases only"
+    },
+    "old-no-b": {
+      "admissible": true,
+      "baseline_score": 1.0,
+      "candidate_score": 1.0,
+      "difference": 0.0,
+      "errors_or_unknown": 0,
+      "max_loss": 0.0,
+      "regressions": [],
+      "scope": "Exact outcomes on the declared finite synthetic cases only"
+    },
+    "old-no-duplicates": {
+      "admissible": false,
+      "baseline_score": 1.0,
+      "candidate_score": 0.875,
+      "difference": -0.125,
+      "errors_or_unknown": 0,
+      "max_loss": 0.0,
+      "regressions": [
+        "dev-duplicate"
+      ],
+      "scope": "Exact outcomes on the declared finite synthetic cases only"
+    },
+    "old-shared": {
+      "admissible": false,
+      "baseline_score": 1.0,
+      "candidate_score": 0.5,
+      "difference": -0.5,
+      "errors_or_unknown": 0,
+      "max_loss": 0.0,
+      "regressions": [
+        "dev-explicit",
+        "dev-ambiguous",
+        "dev-closed",
+        "dev-unrelated"
+      ],
+      "scope": "Exact outcomes on the declared finite synthetic cases only"
+    }
+  },
+  "final_comparisons": {
+    "new-full": {
+      "admissible": true,
+      "baseline_score": 1.0,
+      "candidate_score": 1.0,
+      "difference": 0.0,
+      "errors_or_unknown": 0,
+      "max_loss": 0.0,
+      "regressions": [],
+      "scope": "Exact outcomes on the declared finite synthetic cases only"
+    },
+    "new-shared": {
+      "admissible": true,
+      "baseline_score": 1.0,
+      "candidate_score": 1.0,
+      "difference": 0.0,
+      "errors_or_unknown": 0,
+      "max_loss": 0.0,
+      "regressions": [],
+      "scope": "Exact outcomes on the declared finite synthetic cases only"
+    },
+    "old-full": {
+      "admissible": true,
+      "baseline_score": 1.0,
+      "candidate_score": 1.0,
+      "difference": 0.0,
+      "errors_or_unknown": 0,
+      "max_loss": 0.0,
+      "regressions": [],
+      "scope": "Exact outcomes on the declared finite synthetic cases only"
+    },
+    "old-lean-a": {
+      "admissible": true,
+      "baseline_score": 1.0,
+      "candidate_score": 1.0,
+      "difference": 0.0,
+      "errors_or_unknown": 0,
+      "max_loss": 0.0,
+      "regressions": [],
+      "scope": "Exact outcomes on the declared finite synthetic cases only"
+    },
+    "old-lean-b": {
+      "admissible": true,
+      "baseline_score": 1.0,
+      "candidate_score": 1.0,
+      "difference": 0.0,
+      "errors_or_unknown": 0,
+      "max_loss": 0.0,
+      "regressions": [],
+      "scope": "Exact outcomes on the declared finite synthetic cases only"
+    },
+    "old-shared": {
+      "admissible": false,
+      "baseline_score": 1.0,
+      "candidate_score": 0.5,
+      "difference": -0.5,
+      "errors_or_unknown": 0,
+      "max_loss": 0.0,
+      "regressions": [
+        "conf-targeted",
+        "conf-preservation"
+      ],
+      "scope": "Exact outcomes on the declared finite synthetic cases only"
+    },
+    "simplification-vs-new-existing": {
+      "admissible": true,
+      "baseline_score": 1.0,
+      "candidate_score": 1.0,
+      "difference": 0.0,
+      "errors_or_unknown": 0,
+      "max_loss": 0.0,
+      "regressions": [],
+      "scope": "Exact outcomes on the declared finite synthetic cases only"
+    }
+  },
+  "interaction": 0.5,
+  "limits": [
+    "Finite readable synthetic cases; no human labels or population claim.",
+    "Cases with metadata are separate attacker-authored probes.",
+    "Fixed model stand-ins, not real model migrations.",
+    "No adversarial host containment or resume guarantee tested."
+  ],
+  "matrix_scores": {
+    "new-full": 1.0,
+    "new-shared": 1.0,
+    "old-full": 1.0,
+    "old-shared": 0.5
+  },
+  "native_case_executions": 180,
+  "network_calls": 0,
+  "provider_calls": 0,
+  "representation_case_executions": 60,
+  "representation_outcomes": {
+    "metadata-control": {
+      "extra-conf-preservation": "PASS",
+      "extra-dev-closed": "PASS",
+      "extra-dev-duplicate": "PASS",
+      "extra-dev-explicit": "PASS"
+    },
+    "metadata-valid-alternate": {
+      "extra-conf-preservation": "PASS",
+      "extra-dev-closed": "PASS",
+      "extra-dev-duplicate": "PASS",
+      "extra-dev-explicit": "PASS"
+    },
+    "valid-alternate": {
+      "conf-duplicate": "PASS",
+      "conf-howto": "PASS",
+      "conf-preservation": "PASS",
+      "conf-targeted": "PASS",
+      "dev-ambiguous": "PASS",
+      "dev-closed": "PASS",
+      "dev-duplicate": "PASS",
+      "dev-explicit": "PASS",
+      "dev-generic": "PASS",
+      "dev-howto": "PASS",
+      "dev-password": "PASS",
+      "dev-unrelated": "PASS"
+    },
+    "wrong-id-collision": {
+      "conf-duplicate": "PASS",
+      "conf-howto": "PASS",
+      "conf-preservation": "FAIL",
+      "conf-targeted": "PASS",
+      "dev-ambiguous": "PASS",
+      "dev-closed": "FAIL",
+      "dev-duplicate": "PASS",
+      "dev-explicit": "PASS",
+      "dev-generic": "PASS",
+      "dev-howto": "PASS",
+      "dev-password": "PASS",
+      "dev-unrelated": "PASS"
+    },
+    "wrong-json-type": {
+      "extra-conf-preservation": "FAIL",
+      "extra-dev-closed": "FAIL",
+      "extra-dev-duplicate": "FAIL",
+      "extra-dev-explicit": "FAIL"
+    },
+    "wrong-output-shape": {
+      "conf-duplicate": "ERROR",
+      "conf-howto": "ERROR",
+      "conf-preservation": "ERROR",
+      "conf-targeted": "ERROR",
+      "dev-ambiguous": "ERROR",
+      "dev-closed": "ERROR",
+      "dev-duplicate": "ERROR",
+      "dev-explicit": "ERROR",
+      "dev-generic": "ERROR",
+      "dev-howto": "ERROR",
+      "dev-password": "ERROR",
+      "dev-unrelated": "ERROR"
+    },
+    "wrong-preservation": {
+      "conf-duplicate": "FAIL",
+      "conf-howto": "FAIL",
+      "conf-preservation": "FAIL",
+      "conf-targeted": "FAIL",
+      "dev-ambiguous": "FAIL",
+      "dev-closed": "FAIL",
+      "dev-duplicate": "FAIL",
+      "dev-explicit": "FAIL",
+      "dev-generic": "FAIL",
+      "dev-howto": "FAIL",
+      "dev-password": "FAIL",
+      "dev-unrelated": "FAIL"
+    }
+  },
+  "source_hashes_unchanged": true,
+  "status": "bounded audit; no confirmed discrepancy"
+}

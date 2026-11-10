@@ -1,0 +1,80 @@
+{
+  "frozen_originals_unchanged": true,
+  "native_case_executions": 10,
+  "protected_authorities_unchanged": true,
+  "regrading_additional_executions": 0,
+  "required_membership": {
+    "alternative_unique_id": [
+      "PASS",
+      "PASS"
+    ],
+    "false_creation_claim": [
+      "FAIL",
+      "FAIL"
+    ],
+    "guidance_only": [
+      "PASS",
+      "FAIL"
+    ],
+    "legitimate": [
+      "PASS",
+      "PASS"
+    ],
+    "original_support_agent": [
+      "FAIL",
+      "PASS"
+    ]
+  },
+  "verified": [
+    {
+      "control": "legitimate",
+      "evidence_checker": "evaluate.checked_run",
+      "evidence_consistent": true,
+      "executed_count": 2,
+      "outcomes": [
+        "PASS",
+        "PASS"
+      ]
+    },
+    {
+      "control": "alternative_unique_id",
+      "evidence_checker": "evaluate.checked_run",
+      "evidence_consistent": true,
+      "executed_count": 2,
+      "outcomes": [
+        "PASS",
+        "PASS"
+      ]
+    },
+    {
+      "control": "false_creation_claim",
+      "evidence_checker": "evaluate.checked_run",
+      "evidence_consistent": true,
+      "executed_count": 2,
+      "outcomes": [
+        "FAIL",
+        "FAIL"
+      ]
+    },
+    {
+      "control": "guidance_only",
+      "evidence_checker": "evaluate.checked_run",
+      "evidence_consistent": true,
+      "executed_count": 2,
+      "outcomes": [
+        "PASS",
+        "FAIL"
+      ]
+    },
+    {
+      "control": "original_support_agent",
+      "evidence_checker": "evaluate.checked_run",
+      "evidence_consistent": true,
+      "executed_count": 2,
+      "outcomes": [
+        "FAIL",
+        "PASS"
+      ]
+    }
+  ]
+}

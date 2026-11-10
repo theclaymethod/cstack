@@ -1,0 +1,24 @@
+{
+  "approved-A-r1": {
+    "authority": {
+      "human_outcome_label": false,
+      "kind": "scripted-synthetic-owner-expectation",
+      "source": "source/scripted-decisions.md"
+    },
+    "card_id": "A",
+    "partition": "development",
+    "revision": 1,
+    "source": "handoff/current-approved.jsonl"
+  },
+  "approved-B-r2": {
+    "authority": {
+      "human_outcome_label": false,
+      "kind": "scripted-synthetic-owner-expectation",
+      "source": "source/scripted-decisions.md"
+    },
+    "card_id": "B",
+    "partition": "development",
+    "revision": 2,
+    "source": "handoff/current-approved.jsonl"
+  }
+}

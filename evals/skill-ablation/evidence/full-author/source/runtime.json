@@ -1,0 +1,7 @@
+{
+  "dependencies": "Python standard library only",
+  "network_provider_calls": 0,
+  "new_tests": 0,
+  "platform": "macOS-27.2-arm64-arm-64bit",
+  "python": "3.12.16 (main, Oct 26 2026, 13:59:40) [Clang 23.1.3 ]"
+}

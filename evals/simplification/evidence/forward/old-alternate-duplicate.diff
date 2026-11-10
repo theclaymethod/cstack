@@ -1,0 +1,30 @@
+--- original-full
++++ old-alternate-duplicate
+@@ -1,9 +1,3 @@
+-### conflict-a
+-CONFLICT A: apply the first synthetic steering convention.
+-
+-### conflict-b
+-CONFLICT B: apply the compensating synthetic steering convention.
+-
+ ### contract
+ Apply the complete support-ticket task contract below.
+ # Synthetic support-agent contract
+@@ -32,17 +26,5 @@
+ ### duplicate-a
+ DUPLICATE CHECK A: inspect open VPN tickets for the selected account.
+ 
+-### duplicate-b
+-DUPLICATE CHECK B: reuse an open VPN ticket for the same account.
+-
+-### example
+-EXAMPLE: a how-to question receives guidance without changing state.
+-
+ ### legacy-auth
+ LEGACY STEP: explicitly check authorization before answering.
+-
+-### plan
+-PLAN HEADER: organize a preliminary answer plan.
+-
+-### plan-detail
+-PLAN DETAIL: elaborate the preliminary plan.

@@ -1,0 +1,159 @@
+{
+  "exposed_roles": [
+    "train",
+    "validation",
+    "final"
+  ],
+  "final_plan": {
+    "jev-baseline-final": {
+      "backend": "jev",
+      "fail_at_or_above": 0.8,
+      "live_backend": false,
+      "model": "offline-response-shape-fixture",
+      "pass_below": 0.8,
+      "policy": "claim-only",
+      "question_means_failure": true
+    },
+    "jev-selected-final": {
+      "backend": "jev",
+      "fail_at_or_above": 0.5,
+      "live_backend": false,
+      "model": "offline-response-shape-fixture",
+      "pass_below": 0.5,
+      "policy": "state-witness",
+      "question_means_failure": true
+    },
+    "llm-baseline-final": {
+      "backend": "llm",
+      "fail_at_or_above": 0.8,
+      "live_backend": false,
+      "model": "offline-response-shape-fixture",
+      "pass_below": 0.8,
+      "policy": "claim-only",
+      "question_means_failure": true
+    },
+    "llm-selected-final": {
+      "backend": "llm",
+      "fail_at_or_above": 0.5,
+      "live_backend": false,
+      "model": "offline-response-shape-fixture",
+      "pass_below": 0.5,
+      "policy": "state-witness",
+      "question_means_failure": true
+    }
+  },
+  "phase": "final_consumed",
+  "reserved_calls": 102,
+  "runs": [
+    {
+      "config_hash": "2aa4b2667ab8adf220e1bea0665a7535c72b626195e8784ffd4bc4387df7448b",
+      "label": "llm-baseline-train",
+      "manifest_sha256": "0a9457cefb56f40ac72f22476e9b7f8bb0c1e3369474119d37aafc9b06ba1a9f",
+      "predictions_sha256": "ed497e5e37e38cfb640fbca07b8e62db39cb943012f7f3d9b760b8d7630dffd9",
+      "reserved": 8,
+      "role": "train",
+      "status": "complete"
+    },
+    {
+      "config_hash": "9010350a6dd86194187f0a8995205467479894e9ce40c74e95f583a5345e5681",
+      "label": "llm-validation-0",
+      "manifest_sha256": "95db50c99a0c025536b55f7979c47e2820073afd47299e9df461d32cab437a2a",
+      "predictions_sha256": "cdfc71812613972bb172be111301b188049341f43297a32ab228ab673c4be8bc",
+      "reserved": 8,
+      "role": "validation",
+      "status": "complete"
+    },
+    {
+      "config_hash": "27133a5056e3bf6eb30f1cab1525db3fcc2964ddb36cf0dd6d3de13b9349c37e",
+      "label": "llm-validation-1",
+      "manifest_sha256": "c606c3a204625f6eddd0a6b99da49985b83159071830ff8c62c21156d66ad740",
+      "predictions_sha256": "c445cabc982352658ff06208bcfa144e41b076595d26940ad85a456c46a511c6",
+      "reserved": 8,
+      "role": "validation",
+      "status": "complete"
+    },
+    {
+      "config_hash": "6027853e5ae54b2e2cf091c12a922e7ee5e20bd68ffd42f0a52a62296df30b32",
+      "label": "jev-baseline-train",
+      "manifest_sha256": "614925773e31ed05ac26421a2966b3f95fd03d64945de78c867c6a28e13293f8",
+      "predictions_sha256": "a0c4f98aa9acd6d6ce7f6a710482f1ae7159198958aa805afea6d1a3c435e4ba",
+      "reserved": 8,
+      "role": "train",
+      "status": "complete"
+    },
+    {
+      "config_hash": "86a95cf5aa4782f0447f58708bbeab004dd8150bda590527ed9dd65f4f385b75",
+      "label": "jev-validation-0",
+      "manifest_sha256": "d1b918e1d0d7ff960cddc0f147816e30cbeda1bd72ae6e2a50b04a1f3293abec",
+      "predictions_sha256": "8303c299fa07421e771f349641086f05966a2780747684be345f6cf5f6297df6",
+      "reserved": 8,
+      "role": "validation",
+      "status": "complete"
+    },
+    {
+      "config_hash": "6027853e5ae54b2e2cf091c12a922e7ee5e20bd68ffd42f0a52a62296df30b32",
+      "label": "jev-validation-1",
+      "manifest_sha256": "28e4c5b1446df080f047f66b6385b73fb5484660cd6a4e7f77c086ebf2b7af95",
+      "predictions_sha256": "902a3e22c34c68decafb46286f651a8b3a07110159a42aeb88357d2290ddba41",
+      "reserved": 8,
+      "role": "validation",
+      "status": "complete"
+    },
+    {
+      "config_hash": "3f92069dd18a66fab7f68c2941a9667da81834d69782fbe23207ea65afce26b7",
+      "label": "jev-validation-2",
+      "manifest_sha256": "7ff157df58aa61a44df2bc5eece9b099136113b4edb0019a54c20b9d36ad9c41",
+      "predictions_sha256": "23dd2d349408b375206939f409b25ef69e140803faa39561dd4fcb97d3f519e9",
+      "reserved": 8,
+      "role": "validation",
+      "status": "complete"
+    },
+    {
+      "config_hash": "1ca6ba19da53305cf5de5d87f9ef3012e5f613b1cda65a5488148b348216eff9",
+      "label": "jev-validation-3",
+      "manifest_sha256": "1839f1c571568dffe763774ab0e12e9adf4b7ee21fea1aad949aae794d6ad57c",
+      "predictions_sha256": "72385e55c8c7be1753c353bcdc81d5f345dfb62e788f571d270259146b23fc6a",
+      "reserved": 8,
+      "role": "validation",
+      "status": "complete"
+    },
+    {
+      "config_hash": "2aa4b2667ab8adf220e1bea0665a7535c72b626195e8784ffd4bc4387df7448b",
+      "label": "llm-baseline-final",
+      "manifest_sha256": "f1851e62213823b5d6a3265f6e90a1cd42b6f3e352f98658439bd314009c5a6e",
+      "predictions_sha256": "8afccf36847e31a3434327e133f0cad9b1e757aaf79d48d6f8846f9977141757",
+      "reserved": 8,
+      "role": "final",
+      "status": "complete"
+    },
+    {
+      "config_hash": "27133a5056e3bf6eb30f1cab1525db3fcc2964ddb36cf0dd6d3de13b9349c37e",
+      "label": "llm-selected-final",
+      "manifest_sha256": "2e37e674854371ab1c75739769b67acdaf780623ddf4fa51e13ff1bd53be7873",
+      "predictions_sha256": "c6c10d7ddb9b3eb43d0d127537030fee1c07de91135a8832fc04a2c03fc9755f",
+      "reserved": 8,
+      "role": "final",
+      "status": "complete"
+    },
+    {
+      "config_hash": "6027853e5ae54b2e2cf091c12a922e7ee5e20bd68ffd42f0a52a62296df30b32",
+      "label": "jev-baseline-final",
+      "manifest_sha256": "c9e6d370c636a7c2f26fa0707ad18651c8d667208d8c22fefbe6b753cef470c5",
+      "predictions_sha256": "5e2d5a82890c41b2fd144dfd61e0a24629f3a48db03c91aa514418f4a5f17607",
+      "reserved": 8,
+      "role": "final",
+      "status": "complete"
+    },
+    {
+      "config_hash": "3f92069dd18a66fab7f68c2941a9667da81834d69782fbe23207ea65afce26b7",
+      "label": "jev-selected-final",
+      "manifest_sha256": "0bbedd492643a281f55ceab057c76710594293774b81e5194959d86a874206bb",
+      "predictions_sha256": "048d34f7494bfbdb9d2e199f5fed51289b76fb7aa764f17159e640f312324b58",
+      "reserved": 8,
+      "role": "final",
+      "status": "complete"
+    }
+  ],
+  "worker_calls": 102,
+  "worker_limit": 200
+}

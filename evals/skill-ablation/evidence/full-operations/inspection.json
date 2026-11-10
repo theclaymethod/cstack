@@ -1,0 +1,280 @@
+{
+  "input_projection_separate_from_gold": true,
+  "inspection_incidents": [
+    {
+      "command": "inspect-evidence",
+      "error": "Inspector compared JSON canonical receipt hash to pretty-printed file hash; corrected inspector to protocol canonical JSON semantics. No source or run evidence changed.",
+      "exit_code": 1,
+      "native_cases_or_worker_calls_consumed": 0
+    },
+    {
+      "command": "inline read-only inspection of state.runs as a dictionary",
+      "error": "AttributeError: list has no items; subsequent inspection used its actual list schema",
+      "exit_code": 1,
+      "native_cases_or_worker_calls_consumed": 0
+    }
+  ],
+  "judge_final_phase": "final_consumed",
+  "judge_final_plan_labels": [
+    "jev-baseline-final",
+    "jev-selected-final",
+    "llm-baseline-final",
+    "llm-selected-final"
+  ],
+  "judge_prediction_records": 96,
+  "judge_raw_normalization_consistent": true,
+  "native_all_complete": true,
+  "native_case_processes": 252,
+  "native_runs": 34,
+  "normalization_controls": [
+    {
+      "config": {
+        "backend": "jev",
+        "fail_at_or_above": 0.5,
+        "pass_below": 0.5,
+        "question_means_failure": true
+      },
+      "decision": {
+        "error": null,
+        "failure_probability": 0.2,
+        "rationale": null,
+        "verdict": "PASS"
+      },
+      "label": "confidence-is-not-event-probability",
+      "raw": {
+        "answers": {
+          "criterion": {
+            "confidence": 0.99,
+            "noul": 0.2,
+            "type": "noul"
+          }
+        }
+      }
+    },
+    {
+      "config": {
+        "backend": "jev",
+        "fail_at_or_above": 0.5,
+        "pass_below": 0.5,
+        "question_means_failure": false
+      },
+      "decision": {
+        "error": null,
+        "failure_probability": 0.19999999999999996,
+        "rationale": null,
+        "verdict": "PASS"
+      },
+      "label": "yes-means-acceptable",
+      "raw": {
+        "answers": {
+          "criterion": {
+            "noul": 0.8,
+            "type": "noul"
+          }
+        }
+      }
+    },
+    {
+      "config": {
+        "backend": "jev",
+        "fail_at_or_above": 0.5,
+        "pass_below": 0.5,
+        "question_means_failure": true
+      },
+      "decision": {
+        "error": null,
+        "failure_probability": 0.8,
+        "rationale": null,
+        "verdict": "FAIL"
+      },
+      "label": "choice-failure-probability",
+      "raw": {
+        "answers": {
+          "criterion": {
+            "choice": "FAIL",
+            "confidence": 0.11,
+            "probabilities": {
+              "FAIL": 0.8,
+              "PASS": 0.2
+            },
+            "type": "choice"
+          }
+        }
+      }
+    },
+    {
+      "config": {
+        "backend": "jev",
+        "fail_at_or_above": 0.5,
+        "pass_below": 0.5,
+        "question_means_failure": true
+      },
+      "decision": {
+        "error": "Expected finite probability in [0,1]",
+        "failure_probability": null,
+        "rationale": null,
+        "verdict": "ERROR"
+      },
+      "label": "invalid-probability",
+      "raw": {
+        "answers": {
+          "criterion": {
+            "noul": 2,
+            "type": "noul"
+          }
+        }
+      }
+    },
+    {
+      "config": {
+        "backend": "jev",
+        "fail_at_or_above": 0.5,
+        "pass_below": 0.5,
+        "question_means_failure": true
+      },
+      "decision": {
+        "error": "'criterion'",
+        "failure_probability": null,
+        "rationale": null,
+        "verdict": "ERROR"
+      },
+      "label": "missing-evidence-shape",
+      "raw": {
+        "answers": {}
+      }
+    },
+    {
+      "config": {
+        "backend": "llm"
+      },
+      "decision": {
+        "error": null,
+        "failure_probability": null,
+        "rationale": null,
+        "verdict": "PASS"
+      },
+      "label": "optional-explanation-absent",
+      "raw": {
+        "text": "{\"verdict\":\"PASS\"}"
+      }
+    },
+    {
+      "config": {
+        "backend": "llm"
+      },
+      "decision": {
+        "error": "Unsupported LLM verdict",
+        "failure_probability": null,
+        "rationale": null,
+        "verdict": "ERROR"
+      },
+      "label": "malformed-verdict",
+      "raw": {
+        "text": "{\"verdict\":\"APPROVE\"}"
+      }
+    },
+    {
+      "config": {
+        "backend": "llm"
+      },
+      "decision": {
+        "error": "Duplicate JSON field",
+        "failure_probability": null,
+        "rationale": null,
+        "verdict": "ERROR"
+      },
+      "label": "duplicate-response-field",
+      "raw": {
+        "text": "{\"verdict\":\"FAIL\",\"verdict\":\"PASS\"}"
+      }
+    }
+  ],
+  "prompt_measurements": {
+    "final-new-existing": {
+      "model": "new-fixture",
+      "prompt": "### conflict-a\nCONFLICT A: apply the first synthetic steering convention.\n\n### conflict-b\nCONFLICT B: apply the compensating synthetic steering convention.\n\n### contract\nApply the complete support-ticket task contract below.\n# Synthetic support-agent contract\n\nThese deterministic requirements define a local exercise. They are agent-authored synthetic expectations, not captured expert labels or human-approved bootstrap outcomes. `spec.json` provides the contract and authority declaration; `cases.jsonl` provides exact inputs and expected observable outcomes. Preserve these files during a campaign. A defect in this evaluator starts separately authorized evaluator work and a new comparable baseline.\n\nThe product receives one JSON object containing `request` and `state`. A request contains text, an optional account ID, and available account IDs. State contains a list of ticket records with `id`, `account`, `status`, and `issue`. It returns exactly `action`, `account`, `state`, and a nonempty explanatory `note`. Explanatory wording is not scored for semantic helpfulness.\n\nFor this bounded exercise, a VPN trouble report or question requests guidance rather than permission to create a ticket. A positive command using open, create, file, submit, or raise and naming a ticket or support request authorizes creation. A do-not/don't/never prohibition overrides creation. This is a deterministic command fixture, not a general natural-language authorization parser.\n\nCreation requires a selected account. An explicit account must belong to the available accounts. Otherwise use the sole account; if zero or several remain possible, clarify. Existing open VPN tickets prevent duplicates only for that account. Closed tickets and tickets for other accounts or other issues remain untouched and must not block authorized creation.\n\nEach selected case receives all of these observable checks:\n\n1. The subprocess emits valid JSON with the declared output shape and field types. Missing/malformed output, crashes, and timeouts are execution errors, recorded separately from behavior failures.\n2. `action` belongs to the case's `allowed_actions`, and `account` equals its expected account. All noncreation actions use null, including guidance about a known account.\n3. Original tickets remain intact and in their original order. Preserve other supplied state exactly. No deletion, mutation, reordering, or replacement can earn credit.\n4. The ticket-count change equals `ticket_delta`. For zero delta, the entire output state must equal the original state.\n5. For creation, append exactly one ticket. It has a unique nonempty string ID, the selected account, status `open`, and issue `vpn`. Any unique ID is acceptable; the grader must not require the reference candidate's naming pattern.\n\nA case passes only if every required check passes. The score is the fraction of all selected cases passing, retaining execution errors in the denominator. A higher development score alone does not permit promotion: any formerly passing case that becomes failing or errored is a regression. Compare baseline and shortlisted candidates on the same confirmation protocol before selection.\n\nThere are eight development cases and four confirmation cases. Every family names its actual scenario construction; these were separately hand-authored synthetic situations sharing the same contract, not independent sampled production traffic. Confirmation changes account identities, phrasing, and ticket mixtures. All inputs and expectations are available in the repository, so reserved confirmation execution establishes a workflow check rather than unseen-data generalization. No semantic judge, calibration, production trust, or access isolation is claimed.\n\n\n### duplicate-a\nDUPLICATE CHECK A: inspect open VPN tickets for the selected account.\n\n### duplicate-b\nDUPLICATE CHECK B: reuse an open VPN ticket for the same account.\n\n### example\nEXAMPLE: a how-to question receives guidance without changing state.\n\n### legacy-auth\nLEGACY STEP: explicitly check authorization before answering.\n\n### plan\nPLAN HEADER: organize a preliminary answer plan.\n\n### plan-detail\nPLAN DETAIL: elaborate the preliminary plan.\n",
+      "prompt_utf8_bytes": 4193
+    },
+    "final-new-simplified": {
+      "model": "new-fixture",
+      "prompt": "### contract\nApply the complete support-ticket task contract below.\n# Synthetic support-agent contract\n\nThese deterministic requirements define a local exercise. They are agent-authored synthetic expectations, not captured expert labels or human-approved bootstrap outcomes. `spec.json` provides the contract and authority declaration; `cases.jsonl` provides exact inputs and expected observable outcomes. Preserve these files during a campaign. A defect in this evaluator starts separately authorized evaluator work and a new comparable baseline.\n\nThe product receives one JSON object containing `request` and `state`. A request contains text, an optional account ID, and available account IDs. State contains a list of ticket records with `id`, `account`, `status`, and `issue`. It returns exactly `action`, `account`, `state`, and a nonempty explanatory `note`. Explanatory wording is not scored for semantic helpfulness.\n\nFor this bounded exercise, a VPN trouble report or question requests guidance rather than permission to create a ticket. A positive command using open, create, file, submit, or raise and naming a ticket or support request authorizes creation. A do-not/don't/never prohibition overrides creation. This is a deterministic command fixture, not a general natural-language authorization parser.\n\nCreation requires a selected account. An explicit account must belong to the available accounts. Otherwise use the sole account; if zero or several remain possible, clarify. Existing open VPN tickets prevent duplicates only for that account. Closed tickets and tickets for other accounts or other issues remain untouched and must not block authorized creation.\n\nEach selected case receives all of these observable checks:\n\n1. The subprocess emits valid JSON with the declared output shape and field types. Missing/malformed output, crashes, and timeouts are execution errors, recorded separately from behavior failures.\n2. `action` belongs to the case's `allowed_actions`, and `account` equals its expected account. All noncreation actions use null, including guidance about a known account.\n3. Original tickets remain intact and in their original order. Preserve other supplied state exactly. No deletion, mutation, reordering, or replacement can earn credit.\n4. The ticket-count change equals `ticket_delta`. For zero delta, the entire output state must equal the original state.\n5. For creation, append exactly one ticket. It has a unique nonempty string ID, the selected account, status `open`, and issue `vpn`. Any unique ID is acceptable; the grader must not require the reference candidate's naming pattern.\n\nA case passes only if every required check passes. The score is the fraction of all selected cases passing, retaining execution errors in the denominator. A higher development score alone does not permit promotion: any formerly passing case that becomes failing or errored is a regression. Compare baseline and shortlisted candidates on the same confirmation protocol before selection.\n\nThere are eight development cases and four confirmation cases. Every family names its actual scenario construction; these were separately hand-authored synthetic situations sharing the same contract, not independent sampled production traffic. Confirmation changes account identities, phrasing, and ticket mixtures. All inputs and expectations are available in the repository, so reserved confirmation execution establishes a workflow check rather than unseen-data generalization. No semantic judge, calibration, production trust, or access isolation is claimed.\n\n\n### duplicate-b\nDUPLICATE CHECK B: reuse an open VPN ticket for the same account.\n",
+      "prompt_utf8_bytes": 3667
+    },
+    "final-old-existing": {
+      "model": "old-fixture",
+      "prompt": "### conflict-a\nCONFLICT A: apply the first synthetic steering convention.\n\n### conflict-b\nCONFLICT B: apply the compensating synthetic steering convention.\n\n### contract\nApply the complete support-ticket task contract below.\n# Synthetic support-agent contract\n\nThese deterministic requirements define a local exercise. They are agent-authored synthetic expectations, not captured expert labels or human-approved bootstrap outcomes. `spec.json` provides the contract and authority declaration; `cases.jsonl` provides exact inputs and expected observable outcomes. Preserve these files during a campaign. A defect in this evaluator starts separately authorized evaluator work and a new comparable baseline.\n\nThe product receives one JSON object containing `request` and `state`. A request contains text, an optional account ID, and available account IDs. State contains a list of ticket records with `id`, `account`, `status`, and `issue`. It returns exactly `action`, `account`, `state`, and a nonempty explanatory `note`. Explanatory wording is not scored for semantic helpfulness.\n\nFor this bounded exercise, a VPN trouble report or question requests guidance rather than permission to create a ticket. A positive command using open, create, file, submit, or raise and naming a ticket or support request authorizes creation. A do-not/don't/never prohibition overrides creation. This is a deterministic command fixture, not a general natural-language authorization parser.\n\nCreation requires a selected account. An explicit account must belong to the available accounts. Otherwise use the sole account; if zero or several remain possible, clarify. Existing open VPN tickets prevent duplicates only for that account. Closed tickets and tickets for other accounts or other issues remain untouched and must not block authorized creation.\n\nEach selected case receives all of these observable checks:\n\n1. The subprocess emits valid JSON with the declared output shape and field types. Missing/malformed output, crashes, and timeouts are execution errors, recorded separately from behavior failures.\n2. `action` belongs to the case's `allowed_actions`, and `account` equals its expected account. All noncreation actions use null, including guidance about a known account.\n3. Original tickets remain intact and in their original order. Preserve other supplied state exactly. No deletion, mutation, reordering, or replacement can earn credit.\n4. The ticket-count change equals `ticket_delta`. For zero delta, the entire output state must equal the original state.\n5. For creation, append exactly one ticket. It has a unique nonempty string ID, the selected account, status `open`, and issue `vpn`. Any unique ID is acceptable; the grader must not require the reference candidate's naming pattern.\n\nA case passes only if every required check passes. The score is the fraction of all selected cases passing, retaining execution errors in the denominator. A higher development score alone does not permit promotion: any formerly passing case that becomes failing or errored is a regression. Compare baseline and shortlisted candidates on the same confirmation protocol before selection.\n\nThere are eight development cases and four confirmation cases. Every family names its actual scenario construction; these were separately hand-authored synthetic situations sharing the same contract, not independent sampled production traffic. Confirmation changes account identities, phrasing, and ticket mixtures. All inputs and expectations are available in the repository, so reserved confirmation execution establishes a workflow check rather than unseen-data generalization. No semantic judge, calibration, production trust, or access isolation is claimed.\n\n\n### duplicate-a\nDUPLICATE CHECK A: inspect open VPN tickets for the selected account.\n\n### duplicate-b\nDUPLICATE CHECK B: reuse an open VPN ticket for the same account.\n\n### example\nEXAMPLE: a how-to question receives guidance without changing state.\n\n### legacy-auth\nLEGACY STEP: explicitly check authorization before answering.\n\n### plan\nPLAN HEADER: organize a preliminary answer plan.\n\n### plan-detail\nPLAN DETAIL: elaborate the preliminary plan.\n",
+      "prompt_utf8_bytes": 4193
+    },
+    "final-old-reduced": {
+      "model": "old-fixture",
+      "prompt": "### contract\nApply the complete support-ticket task contract below.\n# Synthetic support-agent contract\n\nThese deterministic requirements define a local exercise. They are agent-authored synthetic expectations, not captured expert labels or human-approved bootstrap outcomes. `spec.json` provides the contract and authority declaration; `cases.jsonl` provides exact inputs and expected observable outcomes. Preserve these files during a campaign. A defect in this evaluator starts separately authorized evaluator work and a new comparable baseline.\n\nThe product receives one JSON object containing `request` and `state`. A request contains text, an optional account ID, and available account IDs. State contains a list of ticket records with `id`, `account`, `status`, and `issue`. It returns exactly `action`, `account`, `state`, and a nonempty explanatory `note`. Explanatory wording is not scored for semantic helpfulness.\n\nFor this bounded exercise, a VPN trouble report or question requests guidance rather than permission to create a ticket. A positive command using open, create, file, submit, or raise and naming a ticket or support request authorizes creation. A do-not/don't/never prohibition overrides creation. This is a deterministic command fixture, not a general natural-language authorization parser.\n\nCreation requires a selected account. An explicit account must belong to the available accounts. Otherwise use the sole account; if zero or several remain possible, clarify. Existing open VPN tickets prevent duplicates only for that account. Closed tickets and tickets for other accounts or other issues remain untouched and must not block authorized creation.\n\nEach selected case receives all of these observable checks:\n\n1. The subprocess emits valid JSON with the declared output shape and field types. Missing/malformed output, crashes, and timeouts are execution errors, recorded separately from behavior failures.\n2. `action` belongs to the case's `allowed_actions`, and `account` equals its expected account. All noncreation actions use null, including guidance about a known account.\n3. Original tickets remain intact and in their original order. Preserve other supplied state exactly. No deletion, mutation, reordering, or replacement can earn credit.\n4. The ticket-count change equals `ticket_delta`. For zero delta, the entire output state must equal the original state.\n5. For creation, append exactly one ticket. It has a unique nonempty string ID, the selected account, status `open`, and issue `vpn`. Any unique ID is acceptable; the grader must not require the reference candidate's naming pattern.\n\nA case passes only if every required check passes. The score is the fraction of all selected cases passing, retaining execution errors in the denominator. A higher development score alone does not permit promotion: any formerly passing case that becomes failing or errored is a regression. Compare baseline and shortlisted candidates on the same confirmation protocol before selection.\n\nThere are eight development cases and four confirmation cases. Every family names its actual scenario construction; these were separately hand-authored synthetic situations sharing the same contract, not independent sampled production traffic. Confirmation changes account identities, phrasing, and ticket mixtures. All inputs and expectations are available in the repository, so reserved confirmation execution establishes a workflow check rather than unseen-data generalization. No semantic judge, calibration, production trust, or access isolation is claimed.\n\n\n### duplicate-b\nDUPLICATE CHECK B: reuse an open VPN ticket for the same account.\n\n### legacy-auth\nLEGACY STEP: explicitly check authorization before answering.\n",
+      "prompt_utf8_bytes": 3746
+    },
+    "final-old-simplified": {
+      "model": "old-fixture",
+      "prompt": "### contract\nApply the complete support-ticket task contract below.\n# Synthetic support-agent contract\n\nThese deterministic requirements define a local exercise. They are agent-authored synthetic expectations, not captured expert labels or human-approved bootstrap outcomes. `spec.json` provides the contract and authority declaration; `cases.jsonl` provides exact inputs and expected observable outcomes. Preserve these files during a campaign. A defect in this evaluator starts separately authorized evaluator work and a new comparable baseline.\n\nThe product receives one JSON object containing `request` and `state`. A request contains text, an optional account ID, and available account IDs. State contains a list of ticket records with `id`, `account`, `status`, and `issue`. It returns exactly `action`, `account`, `state`, and a nonempty explanatory `note`. Explanatory wording is not scored for semantic helpfulness.\n\nFor this bounded exercise, a VPN trouble report or question requests guidance rather than permission to create a ticket. A positive command using open, create, file, submit, or raise and naming a ticket or support request authorizes creation. A do-not/don't/never prohibition overrides creation. This is a deterministic command fixture, not a general natural-language authorization parser.\n\nCreation requires a selected account. An explicit account must belong to the available accounts. Otherwise use the sole account; if zero or several remain possible, clarify. Existing open VPN tickets prevent duplicates only for that account. Closed tickets and tickets for other accounts or other issues remain untouched and must not block authorized creation.\n\nEach selected case receives all of these observable checks:\n\n1. The subprocess emits valid JSON with the declared output shape and field types. Missing/malformed output, crashes, and timeouts are execution errors, recorded separately from behavior failures.\n2. `action` belongs to the case's `allowed_actions`, and `account` equals its expected account. All noncreation actions use null, including guidance about a known account.\n3. Original tickets remain intact and in their original order. Preserve other supplied state exactly. No deletion, mutation, reordering, or replacement can earn credit.\n4. The ticket-count change equals `ticket_delta`. For zero delta, the entire output state must equal the original state.\n5. For creation, append exactly one ticket. It has a unique nonempty string ID, the selected account, status `open`, and issue `vpn`. Any unique ID is acceptable; the grader must not require the reference candidate's naming pattern.\n\nA case passes only if every required check passes. The score is the fraction of all selected cases passing, retaining execution errors in the denominator. A higher development score alone does not permit promotion: any formerly passing case that becomes failing or errored is a regression. Compare baseline and shortlisted candidates on the same confirmation protocol before selection.\n\nThere are eight development cases and four confirmation cases. Every family names its actual scenario construction; these were separately hand-authored synthetic situations sharing the same contract, not independent sampled production traffic. Confirmation changes account identities, phrasing, and ticket mixtures. All inputs and expectations are available in the repository, so reserved confirmation execution establishes a workflow check rather than unseen-data generalization. No semantic judge, calibration, production trust, or access isolation is claimed.\n\n\n### duplicate-b\nDUPLICATE CHECK B: reuse an open VPN ticket for the same account.\n",
+      "prompt_utf8_bytes": 3667
+    }
+  },
+  "repeatability_processes": 6,
+  "source_families_partitioned": true,
+  "source_frozen_checks": true,
+  "undefined_kappa_control": {
+    "attempted": 1,
+    "confusion": {
+      "FAIL": {
+        "FAIL": 0,
+        "PASS": 0
+      },
+      "PASS": {
+        "FAIL": 0,
+        "PASS": 1
+      }
+    },
+    "coverage": 1.0,
+    "decided": 1,
+    "failure_positive_rates_decided": {
+      "FN": 0,
+      "FP": 0,
+      "TN": 1,
+      "TP": 0,
+      "failure_catch": null,
+      "false_outcomes_among_judge_passes": 0.0,
+      "false_pass_among_gold_failures": null,
+      "false_rejection_among_gold_passes": 0.0
+    },
+    "gold_prevalence_all_attempted": {
+      "FAIL": 0.0,
+      "PASS": 1.0
+    },
+    "kappa_decided": null,
+    "kappa_expected_disagreement": 0.0,
+    "kappa_observed_disagreement": 0.0,
+    "kappa_undefined_reason": "expected_disagreement_is_zero",
+    "labels": [
+      "PASS",
+      "FAIL"
+    ],
+    "marginal_gold_decided": {
+      "FAIL": 0.0,
+      "PASS": 1.0
+    },
+    "marginal_prediction_decided": {
+      "FAIL": 0.0,
+      "PASS": 1.0
+    },
+    "nominal_expected_agreement_decided": 1.0,
+    "observed_agreement_decided": 1.0,
+    "other_by_gold": {
+      "FAIL": {
+        "ERROR": 0,
+        "UNKNOWN": 0
+      },
+      "PASS": {
+        "ERROR": 0,
+        "UNKNOWN": 0
+      }
+    },
+    "weighting": null
+  }
+}

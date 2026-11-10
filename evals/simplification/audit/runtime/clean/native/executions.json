@@ -1,0 +1,63 @@
+{
+  "actual_completed": 24,
+  "calls": [
+    {
+      "candidate": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/skill-audit-ablation/attacker-runtime/eval-runs/runtime-audit/clean/candidates/original.py",
+      "cases": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/skill-audit-ablation/attacker-runtime/eval-runs/runtime-audit/clean/native/original.jsonl",
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 8,
+        "UNKNOWN": 0
+      },
+      "executed": 8,
+      "label": "original",
+      "reserved": 8,
+      "status": "complete"
+    },
+    {
+      "candidate": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/skill-audit-ablation/attacker-runtime/eval-runs/runtime-audit/clean/candidates/reduced.py",
+      "cases": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/skill-audit-ablation/attacker-runtime/eval-runs/runtime-audit/clean/native/reduced.jsonl",
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 8,
+        "UNKNOWN": 0
+      },
+      "executed": 8,
+      "label": "reduced",
+      "reserved": 8,
+      "status": "complete"
+    },
+    {
+      "candidate": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/skill-audit-ablation/attacker-runtime/eval-runs/runtime-audit/clean/candidates/final-original.py",
+      "cases": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/skill-audit-ablation/attacker-runtime/eval-runs/runtime-audit/clean/native/final-original.jsonl",
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 4,
+        "UNKNOWN": 0
+      },
+      "executed": 4,
+      "label": "final-original",
+      "reserved": 4,
+      "status": "complete"
+    },
+    {
+      "candidate": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/skill-audit-ablation/attacker-runtime/eval-runs/runtime-audit/clean/candidates/final-reduced.py",
+      "cases": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/skill-audit-ablation/attacker-runtime/eval-runs/runtime-audit/clean/native/final-reduced.jsonl",
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 4,
+        "UNKNOWN": 0
+      },
+      "executed": 4,
+      "label": "final-reduced",
+      "reserved": 4,
+      "status": "complete"
+    }
+  ],
+  "limit": 24,
+  "reserved": 24
+}

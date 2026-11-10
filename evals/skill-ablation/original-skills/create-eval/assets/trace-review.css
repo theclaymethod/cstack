@@ -1,0 +1,38 @@
+:root { font: 17px/1.55 system-ui, sans-serif; color: #202c35; background: #f7f8fa; }
+* { box-sizing: border-box; }
+body { margin: 0 auto; max-width: 1500px; padding: 28px 40px; }
+header { display: flex; align-items: baseline; gap: 24px; flex-wrap: wrap; }
+h1 { font-size: 1.9rem; letter-spacing: -.035em; margin: 0; }
+h2 { font-size: 1.35rem; margin: 0 0 18px; overflow-wrap: anywhere; }
+h3 { font-size: 1rem; margin: 28px 0 8px; }
+p { margin: 8px 0; }
+nav { display: flex; align-items: center; gap: 10px; margin: 24px 0 32px; flex-wrap: wrap; }
+nav select { max-width: 540px; min-width: 180px; }
+main { display: grid; grid-template-columns: minmax(0, 1fr) 370px; gap: 48px; align-items: start; }
+article { background: white; padding: 28px; border: 1px solid #d9dfe5; border-radius: 8px; }
+aside { min-width: 0; }
+label { display: block; font-size: .9rem; margin: 18px 0 6px; }
+nav label { margin: 0 0 0 12px; }
+input, textarea, select, button { font: inherit; border: 1px solid #aebac5; border-radius: 5px; padding: 9px 11px; color: inherit; background: white; }
+input, textarea, aside select { width: 100%; }
+textarea { resize: vertical; }
+button { cursor: pointer; font-size: .9rem; }
+button:hover { background: #edf2f7; }
+button:disabled { cursor: default; opacity: .5; }
+button[type=submit] { color: white; background: #244f77; border-color: #244f77; }
+:focus-visible { outline: 3px solid #5e91ba; outline-offset: 3px; }
+details { margin: 16px 0; }
+summary { cursor: pointer; overflow-wrap: anywhere; }
+.text { white-space: pre-wrap; overflow-wrap: anywhere; }
+.value { margin: 8px 0 12px 18px; }
+.key { font-weight: 600; overflow-wrap: anywhere; }
+pre { white-space: pre-wrap; overflow-wrap: anywhere; font-size: .85rem; }
+.message { border-left: 3px solid #bacbd9; padding: 0 0 0 16px; margin: 22px 0; }
+.message h3 { margin: 0 0 8px; }
+.actions { display: flex; gap: 8px; margin-top: 20px; }
+.help, #progress { color: #536271; font-size: .85rem; }
+.help { margin-top: 24px; }
+#save-status { font-size: .9rem; min-height: 1.6em; }
+#new-review { margin: 10px 0 4px; }
+@media (max-width: 950px) { body { padding: 24px; } main { grid-template-columns: 1fr; gap: 32px; } aside { max-width: 700px; } }
+@media (max-width: 500px) { body { padding: 16px; } article { padding: 18px; } nav select { width: 100%; max-width: 100%; } }

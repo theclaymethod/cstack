@@ -1,0 +1,21 @@
+{
+  "account": "acct-a",
+  "action": "create_ticket",
+  "note": "Recorded the requested support issue for your selected account.",
+  "state": {
+    "tickets": [
+      {
+        "account": "acct-b",
+        "id": "ticket-2",
+        "issue": "vpn",
+        "status": "open"
+      },
+      {
+        "account": "acct-a",
+        "id": "alternative-1",
+        "issue": "vpn",
+        "status": "open"
+      }
+    ]
+  }
+}

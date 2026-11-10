@@ -16,7 +16,7 @@ ROOT = Path(__file__).resolve().parents[1]
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--source', type=Path)
-    parser.add_argument('--suite', choices=['all', 'expert-review', 'cross-examine', 'bootstrap', 'bootstrap-audit', 'hill-climb-audit', 'adversarial-cases', 'adversarial-audit', 'methods', 'judge-calibration', 'playground'], default='all')
+    parser.add_argument('--suite', choices=['all', 'expert-review', 'cross-examine', 'bootstrap', 'bootstrap-audit', 'hill-climb-audit', 'adversarial-cases', 'adversarial-audit', 'methods', 'judge-calibration', 'simplification', 'playground'], default='all')
     parser.add_argument('--dspy-check', action='store_true', help='Require optional DSPy SDK compatibility in the methods group')
     parser.add_argument('--out', type=Path, required=True)
     args = parser.parse_args()
@@ -36,6 +36,7 @@ def main():
         'methods': ([sys.executable, '-m', 'methods.run', '--out', str(output / 'methods')]
                     + (['--dspy-check'] if args.dspy_check else []), ROOT),
         'judge-calibration': ([sys.executable, '-m', 'judge_calibration.run', '--out', str(output / 'judge-calibration')], ROOT),
+        'simplification': ([sys.executable, '-m', 'simplification.run', '--out', str(output / 'simplification')], ROOT),
         'playground': ([sys.executable, '-m', 'unittest', 'discover', '-s', 'tests', '-v'], ROOT),
     }
     selected = commands if args.suite == 'all' else {args.suite: commands[args.suite]}

@@ -1,0 +1,27 @@
+{
+  "alternatives": [
+    "Any unique nonempty string ticket ID",
+    "Any explanatory note wording with required nonempty note schema"
+  ],
+  "authority": {
+    "human_outcome_label": false,
+    "kind": "scripted-synthetic-owner-expectation",
+    "source": "source/scripted-decisions.md"
+  },
+  "revision": 1,
+  "semantic_limit": "Native grader checks action and note presence, not guidance usefulness",
+  "success": [
+    "A: guidance with account null and exact preserved state",
+    "B: append one open VPN ticket for acct-a with any unique nonempty ID; preserve all prior state"
+  ],
+  "trigger": "Existing VPN guidance versus explicitly authorized ticket creation",
+  "unacceptable": [
+    "A creates a ticket",
+    "B guidance only",
+    "claiming creation without a new ticket",
+    "modifying counter or unrelated ticket metadata"
+  ],
+  "unresolved": [
+    "C urgency/escalation policy"
+  ]
+}

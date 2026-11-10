@@ -1,0 +1,14 @@
+{
+  "malformed": {
+    "error": "Fixture Choice needs a complete PASS/FAIL distribution",
+    "failure_probability": null,
+    "rationale": null,
+    "verdict": "ERROR"
+  },
+  "valid": {
+    "error": null,
+    "failure_probability": 0.1,
+    "rationale": null,
+    "verdict": "PASS"
+  }
+}

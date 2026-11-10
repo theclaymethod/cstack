@@ -1,0 +1,32 @@
+{
+  "input": {
+    "answers": {
+      "criterion": {
+        "type": "noul",
+        "noul": 0.2,
+        "confidence": 0.99
+      }
+    }
+  },
+  "results": {
+    "failure_question": {
+      "verdict": "PASS",
+      "failure_probability": 0.2,
+      "rationale": null,
+      "error": null
+    },
+    "acceptable_question": {
+      "verdict": "FAIL",
+      "failure_probability": 0.8,
+      "rationale": null,
+      "error": null
+    },
+    "optional_llm_explanation_absent": {
+      "verdict": "PASS",
+      "failure_probability": null,
+      "rationale": null,
+      "error": null
+    }
+  },
+  "scope": "Direct local normalization calls, no model or fixture worker processes"
+}

@@ -1,0 +1,9 @@
+{
+  "formal_independent_audit_adjudication": "unreviewed; no independent intent reviewer available",
+  "human_output_labels": "unavailable",
+  "speculative_urgency_variant": {
+    "executed": false,
+    "reason": "No urgency policy or expectation approval",
+    "status": "outside approved/scored cases"
+  }
+}

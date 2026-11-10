@@ -1,0 +1,105 @@
+{
+  "actual_completed": 60,
+  "calls": [
+    {
+      "candidate": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/skill-audit-ablation/attacker-semantics/eval-runs/semantics-evidence/valid-alternate.py",
+      "cases": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/skill-audit-ablation/attacker-semantics/eval-runs/semantics-evidence/native-representation-controls/valid-alternate.jsonl",
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 12,
+        "UNKNOWN": 0
+      },
+      "executed": 12,
+      "label": "valid-alternate",
+      "reserved": 12,
+      "status": "complete"
+    },
+    {
+      "candidate": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/skill-audit-ablation/attacker-semantics/eval-runs/semantics-evidence/wrong-preservation.py",
+      "cases": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/skill-audit-ablation/attacker-semantics/eval-runs/semantics-evidence/native-representation-controls/wrong-preservation.jsonl",
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 12,
+        "PASS": 0,
+        "UNKNOWN": 0
+      },
+      "executed": 12,
+      "label": "wrong-preservation",
+      "reserved": 12,
+      "status": "complete"
+    },
+    {
+      "candidate": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/skill-audit-ablation/attacker-semantics/eval-runs/semantics-evidence/wrong-id-collision.py",
+      "cases": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/skill-audit-ablation/attacker-semantics/eval-runs/semantics-evidence/native-representation-controls/wrong-id-collision.jsonl",
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 2,
+        "PASS": 10,
+        "UNKNOWN": 0
+      },
+      "executed": 12,
+      "label": "wrong-id-collision",
+      "reserved": 12,
+      "status": "complete"
+    },
+    {
+      "candidate": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/skill-audit-ablation/attacker-semantics/eval-runs/semantics-evidence/wrong-output-shape.py",
+      "cases": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/skill-audit-ablation/attacker-semantics/eval-runs/semantics-evidence/native-representation-controls/wrong-output-shape.jsonl",
+      "counts": {
+        "ERROR": 12,
+        "FAIL": 0,
+        "PASS": 0,
+        "UNKNOWN": 0
+      },
+      "executed": 12,
+      "label": "wrong-output-shape",
+      "reserved": 12,
+      "status": "complete"
+    },
+    {
+      "candidate": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/skill-audit-ablation/attacker-semantics/eval-runs/semantics-evidence/metadata-control.py",
+      "cases": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/skill-audit-ablation/attacker-semantics/eval-runs/semantics-evidence/native-representation-controls/metadata-control.jsonl",
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 4,
+        "UNKNOWN": 0
+      },
+      "executed": 4,
+      "label": "metadata-control",
+      "reserved": 4,
+      "status": "complete"
+    },
+    {
+      "candidate": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/skill-audit-ablation/attacker-semantics/eval-runs/semantics-evidence/metadata-valid-alternate.py",
+      "cases": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/skill-audit-ablation/attacker-semantics/eval-runs/semantics-evidence/native-representation-controls/metadata-valid-alternate.jsonl",
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 4,
+        "UNKNOWN": 0
+      },
+      "executed": 4,
+      "label": "metadata-valid-alternate",
+      "reserved": 4,
+      "status": "complete"
+    },
+    {
+      "candidate": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/skill-audit-ablation/attacker-semantics/eval-runs/semantics-evidence/wrong-json-type.py",
+      "cases": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/skill-audit-ablation/attacker-semantics/eval-runs/semantics-evidence/native-representation-controls/wrong-json-type.jsonl",
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 4,
+        "PASS": 0,
+        "UNKNOWN": 0
+      },
+      "executed": 4,
+      "label": "wrong-json-type",
+      "reserved": 4,
+      "status": "complete"
+    }
+  ],
+  "limit": 60,
+  "reserved": 60
+}

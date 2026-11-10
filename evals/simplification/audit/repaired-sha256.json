@@ -1,0 +1,14 @@
+{
+  "skills/ablation/SKILL.md": "5b5a0ca5b1897a44e2ec1874676430b63a99862caad508c78cc28c133e0dadcb",
+  "skills/ablation/references/quality.md": "a429eb02278ab27a3d13f29713a71caa6573c5e2d5472984b1c39b156f988bf9",
+  "skills/ablation/references/removal.md": "f48ceb1889dee82a4af09d35a4cc62f07e1c3632b38514c9a158b5818dc2d955",
+  "skills/bitter-lesson/SKILL.md": "7ea7926e2f5330dbd48247351b16cdbf5b40bc8117bfe7c5853b00270debdf2b",
+  "skills/bitter-lesson/references/migration.md": "1bd87521d907a46d73284630696dc9378243957f00233a36f64842bdac17c343",
+  "fixtures/playground/simplification/run.py": "d6689ea5937679837104b3e006ef5447234cecaedfc408116f066559f41ace30",
+  "fixtures/playground/simplification/protocol.py": "95b5c8121d3b5d81b1ece8bed046dcac1ceba9daa15a6ebf223a4421e3f82e32",
+  "fixtures/playground/simplification/__init__.py": "9b265b7e39fe1ee3767d60306a74857d6429d3c352df97497cceaadf42e9d336",
+  "fixtures/playground/simplification/README.md": "6bb38c032944b4165058b2135476795152d8a04c4e2cc35aace1ff47be8f0bf0",
+  "fixtures/playground/simplification/demo.py": "2e682951a122ac9ee9a709b2d04a3038b9330cf1df46ee7deec38d73f34d6c76",
+  "fixtures/playground/simplification/__pycache__/protocol.cpython-312.pyc": "cd45d939d3052e8966c4ff02250754fa226a2412c90e6f5dcd51006e06c3c18c",
+  "fixtures/playground/simplification/__pycache__/__init__.cpython-312.pyc": "e6cc705884693df8f2ebe6627deab41766928be90d9e05bf81a22c18cdbf7e5c"
+}

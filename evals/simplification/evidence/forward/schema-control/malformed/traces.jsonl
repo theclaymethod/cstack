@@ -1,0 +1,1 @@
+{"checks": {}, "error": "malformed candidate JSON schema", "exit_code": 0, "family": "dev-vpn-howto", "id": "dev-howto", "input": {"request": {"account": null, "accounts": ["acct-a"], "text": "How do I connect to the VPN?"}, "state": {"tickets": []}}, "outcome": "ERROR", "output": {}, "stderr": "", "stdout": "{}\n", "suite": "development"}

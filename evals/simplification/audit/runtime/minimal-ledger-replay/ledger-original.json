@@ -1,0 +1,21 @@
+{
+  "actual_completed": 8,
+  "calls": [
+    {
+      "candidate": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/skill-audit-ablation/attacker-runtime/eval-runs/runtime-audit/minimal-ledger-replay/experiment/candidates/original.py",
+      "cases": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/skill-audit-ablation/attacker-runtime/eval-runs/runtime-audit/minimal-ledger-replay/experiment/native/original.jsonl",
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 8,
+        "UNKNOWN": 0
+      },
+      "executed": 8,
+      "label": "original",
+      "reserved": 8,
+      "status": "complete"
+    }
+  ],
+  "limit": 8,
+  "reserved": 8
+}

@@ -1,0 +1,17 @@
+{
+  "status": "frozen initial review; no repair assessment",
+  "native_case_executions": 48,
+  "native_case_limit": 96,
+  "failed_execution_attempts": 0,
+  "provider_calls": 0,
+  "paid_calls": 0,
+  "network_calls": 0,
+  "files": {
+    "initial-verdict.md": "5ee97834aeb048c563e03877020fdd6cfe3c08895c24796769239c50a8f6dd65",
+    "clean_controls.py": "5a76a35f14afeadc610e9990d2c90d4fc59c7abd97fe4a5495dffc06a351f236",
+    "clean-controls-receipt.json": "0c0ed52a45f70d686101dfb28ce94f4f05ca3a3b0a65bcdebbfee5f14b60907d",
+    "native-valid-unique-id.py": "ebe07529380622b2c4e70255451e1aad62673a84f7b2c384d48ebde6acf8b481",
+    "native-valid-unique-id-receipt.json": "845d86c98084cb3f212699f856c1cbd23cf8b03603ab236c9d9eeadf7a5bfe78"
+  },
+  "independence_note": "After initial verdict and compatibility control, list_agents unexpectedly exposed completed attacker summaries; reports were not opened. Parent assigned repair review to a fresh reviewer."
+}

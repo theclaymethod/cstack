@@ -18,6 +18,10 @@ flowchart TD
     J --> R
     R --> H["Improve the target<br/>/hill-climb"]
     H --> R
+    R --> L["Remove complexity<br/>/ablation"]
+    L --> R
+    M["Upgrading a production model"] --> BL["Revisit prompts and context<br/>/bitter-lesson"]
+    BL --> L
     R --> X["Challenge the scoring<br/>/cross-examine"]
     X --> C
     A["Construct hard cases<br/>/adversarial-cases"] -.-> B
@@ -36,6 +40,8 @@ With useful production traces, use LangChain's [eval-engineering](https://github
 | [run-eval](skills/run-eval/SKILL.md) | Execute and report evals. |
 | [cross-examine](skills/cross-examine/SKILL.md) | Reproduce scoring gaps and check repairs independently. |
 | [hill-climb](skills/hill-climb/SKILL.md) | Improve a target within an eval budget. |
+| [ablation](skills/ablation/SKILL.md) | Remove complexity while preserving required performance. |
+| [bitter-lesson](skills/bitter-lesson/SKILL.md) | Retest inherited prompt complexity when upgrading models. |
 | [adversarial-cases](skills/adversarial-cases/SKILL.md) | Construct targeted cases, failures and controls. |
 
 ## Formats and methods
@@ -61,7 +67,7 @@ Playground checks use synthetic and adversarial evidence. They do not establish 
 
 ```bash
 npx skills add theclaymethod/cstack \
-  --skill expert-mode distill-me bootstrap create-eval run-eval cross-examine hill-climb adversarial-cases calibrate-judge \
+  --skill expert-mode distill-me bootstrap create-eval run-eval cross-examine hill-climb adversarial-cases calibrate-judge ablation bitter-lesson \
   -a codex -a claude-code -a cursor --copy
 ```
 

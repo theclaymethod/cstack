@@ -1,0 +1,149 @@
+{
+  "workspace": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/skill-audit-ablation/runs/full-author",
+  "source": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/skill-audit-ablation/post-audit-baseline",
+  "evidence": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/skill-audit-ablation/runs/full-author/eval-runs/skill-exercise",
+  "protected_files_unchanged": [
+    "evaluate.py",
+    "evals/spec.json",
+    "evals/rubric.md",
+    "evals/cases.jsonl",
+    "support_agent.py"
+  ],
+  "installed_skill_files_matched": [
+    "ablation/SKILL.md",
+    "ablation/references/quality.md",
+    "ablation/references/removal.md",
+    "adversarial-cases/SKILL.md",
+    "adversarial-cases/references/case-contract.md",
+    "adversarial-cases/references/failure-methods.md",
+    "adversarial-cases/references/injection.md",
+    "adversarial-cases/references/synthetic-methods.md",
+    "bitter-lesson/SKILL.md",
+    "bitter-lesson/references/migration.md",
+    "bootstrap/SKILL.md",
+    "bootstrap/references/labeling.md",
+    "bootstrap/references/research.md",
+    "bootstrap/references/scenarios.md",
+    "calibrate-judge/SKILL.md",
+    "calibrate-judge/references/backends.md",
+    "calibrate-judge/references/measurement.md",
+    "calibrate-judge/references/protocol.md",
+    "create-eval/SKILL.md",
+    "create-eval/assets/trace-review.css",
+    "create-eval/assets/trace-review.html",
+    "create-eval/assets/trace-review.js",
+    "create-eval/references/early-development.md",
+    "create-eval/references/ecosystem.md",
+    "create-eval/references/formats.md",
+    "create-eval/references/from-findings.md",
+    "create-eval/references/judges.md",
+    "create-eval/references/trace-review.md",
+    "create-eval/scripts/review_traces.py",
+    "cross-examine/SKILL.md",
+    "cross-examine/references/ledger.md",
+    "cross-examine/references/lessons.md",
+    "distill-me/SKILL.md",
+    "distill-me/agents/openai.yaml",
+    "distill-me/references/review-passes.md",
+    "expert-mode/SKILL.md",
+    "expert-mode/agents/openai.yaml",
+    "expert-mode/references/export.md",
+    "expert-mode/references/privacy-filter.md",
+    "expert-mode/references/records.md",
+    "expert-mode/scripts/export_findings.py",
+    "hill-climb/SKILL.md",
+    "hill-climb/references/campaign.md",
+    "hill-climb/references/data-handoff.md",
+    "hill-climb/references/optimizers.md",
+    "run-eval/SKILL.md",
+    "run-eval/references/package.md"
+  ],
+  "native_runs": [
+    {
+      "path": "native-runs/alternate-id",
+      "case_ids": [
+        "A-r1",
+        "B-r2"
+      ],
+      "executed": 2,
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 2,
+        "UNKNOWN": 0
+      },
+      "sha256": {
+        "manifest.json": "a4c43fb10288b93c1ff1ba3578eb9261bddb2c9d1b573c253ac1d229b0a0c7b0",
+        "summary.json": "6c1d430baf4660d574cd5ef503432c2805898dfb3be36b251c1ffc4b0261acaf",
+        "traces.jsonl": "1c99f348b7c28b2482f706dd3eaa000a9669fffaabb8365a1daeea015d7f4640",
+        "candidate.py": "36fdfcbed27c77ec78c4fb57e62e072b45d8d88e606baeb1c8ebf6b7eacb1504",
+        "cases.jsonl": "0138e8e41869b6916a827f20e907f93449ee0c7a5a831cd6e820fb36d96957ff"
+      }
+    },
+    {
+      "path": "native-runs/clean",
+      "case_ids": [
+        "A-r1",
+        "B-r2"
+      ],
+      "executed": 2,
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 2,
+        "UNKNOWN": 0
+      },
+      "sha256": {
+        "manifest.json": "268714b0dc90d37c0c926432f43430da0b365cb5f354c60b26ff937a632e2d2f",
+        "summary.json": "dfa8b6e064c60d69edd13cd3e5da970f964d15b3f82e7ff1deb6ac0f328fad6e",
+        "traces.jsonl": "c86d02d4694605158a5418cf59b5473a4b44d035a671021223b0d712b9e235a1",
+        "candidate.py": "d8cc818e83af4453a44e9025484ae6e23ecc7cbcf8c9e621efa56c21a179a1c3",
+        "cases.jsonl": "0138e8e41869b6916a827f20e907f93449ee0c7a5a831cd6e820fb36d96957ff"
+      }
+    },
+    {
+      "path": "native-runs/false-creation-claim",
+      "case_ids": [
+        "A-r1",
+        "B-r2"
+      ],
+      "executed": 2,
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 1,
+        "PASS": 1,
+        "UNKNOWN": 0
+      },
+      "sha256": {
+        "manifest.json": "9bec855d7bccc517008cecdb915f50f92491f41a513b9cdb4ccb6715a818024b",
+        "summary.json": "931879107079248d87cb2f904ad80e459d5fe561133b4d1285298546e232c700",
+        "traces.jsonl": "5636c8d993d12fae61d471bf59b9a576930513ae0fa149a2fdebee68b41a4d07",
+        "candidate.py": "6d45542201714fab4c748861289cfef8b6e85e2c9df43d1f0811cb1bad186edd",
+        "cases.jsonl": "0138e8e41869b6916a827f20e907f93449ee0c7a5a831cd6e820fb36d96957ff"
+      }
+    },
+    {
+      "path": "native-runs/original-product",
+      "case_ids": [
+        "A-r1",
+        "B-r2"
+      ],
+      "executed": 2,
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 1,
+        "PASS": 1,
+        "UNKNOWN": 0
+      },
+      "sha256": {
+        "manifest.json": "3c2f0ce35d38935b97fa5636c4dd526ef0e8a077dda6e9ff4c451e1d258f0503",
+        "summary.json": "65b171f469ad31d675e30ad09fcebe6338baf494ca6acf9608c1f9779342280c",
+        "traces.jsonl": "98db3181fd731e0c9a2390092605a46c0f1933b4ab95ef2c06d4c68d6457c423",
+        "candidate.py": "0720b56482a445967ff2a98ec5cfa668c858b8a6f662da74a55c21b257393efc",
+        "cases.jsonl": "0138e8e41869b6916a827f20e907f93449ee0c7a5a831cd6e820fb36d96957ff"
+      }
+    }
+  ],
+  "native_case_executions": 8,
+  "scope": "Source fidelity and native artifact validation; not a semantic or generalization verdict"
+}

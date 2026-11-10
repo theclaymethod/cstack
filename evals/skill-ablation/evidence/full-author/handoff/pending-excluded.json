@@ -1,0 +1,26 @@
+[
+  {
+    "id": "C",
+    "reason": "Urgency and escalation policy unresolved; not inverted or authored. Native action vocabulary also has no escalation action.",
+    "revision": 1,
+    "status": "deferred"
+  },
+  {
+    "id": "contrast-account-selection",
+    "reason": "New contrast not covered by scripted exact-card approvals; excluded from native approved set.",
+    "revision": 1,
+    "status": "unapproved proposal"
+  },
+  {
+    "id": "B",
+    "reason": "Replaced by exact approved revision2.",
+    "revision": 1,
+    "status": "superseded"
+  },
+  {
+    "id": "A",
+    "reason": "Ticket creation proposal rejected; source does not number that earlier proposal.",
+    "revision": null,
+    "status": "rejected proposal"
+  }
+]

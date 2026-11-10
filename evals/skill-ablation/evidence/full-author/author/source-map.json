@@ -1,0 +1,22 @@
+[
+  {
+    "case_id": "A-r1",
+    "approved_card": "A:r1",
+    "source": "source/current-approved-cards.json",
+    "intent_revision": 1,
+    "fidelity": "exact request, account, account list, complete state, family and approved expected action/account/delta",
+    "preservation_and_new_ticket_checks": "existing evaluate.py grade; no grader modifications",
+    "authority": "scripted synthetic expectation requirement, no concrete human outcome label",
+    "partition": "development"
+  },
+  {
+    "case_id": "B-r2",
+    "approved_card": "B:r2",
+    "source": "source/current-approved-cards.json",
+    "intent_revision": 1,
+    "fidelity": "exact request, account, account list, complete state, family and approved expected action/account/delta",
+    "preservation_and_new_ticket_checks": "existing evaluate.py grade; no grader modifications",
+    "authority": "scripted synthetic expectation requirement, no concrete human outcome label",
+    "partition": "development"
+  }
+]

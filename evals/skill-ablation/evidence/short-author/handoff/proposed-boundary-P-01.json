@@ -1,0 +1,61 @@
+{
+  "access": "Candidate receives request/state in fresh trusted local subprocess. Operator writes only local scratch artifacts; no containment claim.",
+  "authority": "proposal based on spec rule3; no owner approval for this new card",
+  "changed_condition": "request.account changes acct-a to null; two available accounts retained",
+  "construction_controls": [
+    "B as approved selected-account contrast",
+    "legitimate unique-ID alternative on B"
+  ],
+  "execution_command_if_approved": "Materialize a separate proposed JSONL file after approval, then use evaluate.py run --cases that-file",
+  "family": "approved-create-B",
+  "feasibility": "Native schema permits null account and multiple available accounts; no new operation is required",
+  "hypothesis": "A candidate may guess the first account rather than clarify",
+  "id": "P-01",
+  "injection": {
+    "activated": false,
+    "activation_witness": null,
+    "armed": false,
+    "classification": "No injection attempted; activation not applicable",
+    "outcome_witness": null
+  },
+  "intent_revision": 1,
+  "limits": "No native execution of proposal, no independent generation or finding adjudication",
+  "method": "minimal factual contrast",
+  "native_score": null,
+  "origin": "local synthetic proposal derived from B",
+  "parent": "B/revision2",
+  "proposed_expectation": {
+    "account": null,
+    "allowed_actions": [
+      "clarify"
+    ],
+    "ticket_delta": 0
+  },
+  "reason": "Existing fixture policy requires selection among two accounts before authorized creation",
+  "reduction": "One account field changed; no executed minimization or activated fault claim",
+  "request": {
+    "account": null,
+    "accounts": [
+      "acct-a",
+      "acct-b"
+    ],
+    "text": "Please create a VPN support ticket."
+  },
+  "reset": "Fresh input state per native case execution if later authorized",
+  "revision": 1,
+  "state": {
+    "counter": 7,
+    "tickets": [
+      {
+        "account": "acct-b",
+        "id": "old",
+        "issue": "vpn",
+        "metadata": {
+          "keep": true
+        },
+        "status": "open"
+      }
+    ]
+  },
+  "status": "construction proposal only; unapproved, unexecuted"
+}

@@ -1,0 +1,385 @@
+[
+  {
+    "added_to_parent": [],
+    "hypothesis": "Measure actual original full design",
+    "label": "old-full",
+    "model": "old-fixture",
+    "parent": null,
+    "quality_vs_original": {
+      "admissible": true,
+      "baseline_score": 1.0,
+      "candidate_score": 1.0,
+      "difference": 0.0,
+      "errors_or_unknown": 0,
+      "max_loss": 0.0,
+      "regressions": [],
+      "scope": "Exact outcomes on the declared finite synthetic cases only"
+    },
+    "removed_from_parent": [],
+    "retained": [
+      "conflict-a",
+      "conflict-b",
+      "contract",
+      "duplicate-a",
+      "duplicate-b",
+      "example",
+      "legacy-auth",
+      "plan",
+      "plan-detail"
+    ]
+  },
+  {
+    "added_to_parent": [],
+    "hypothesis": "Remove plan and dependent together",
+    "label": "old-no-plan",
+    "model": "old-fixture",
+    "parent": "old-full",
+    "quality_vs_original": {
+      "admissible": true,
+      "baseline_score": 1.0,
+      "candidate_score": 1.0,
+      "difference": 0.0,
+      "errors_or_unknown": 0,
+      "max_loss": 0.0,
+      "regressions": [],
+      "scope": "Exact outcomes on the declared finite synthetic cases only"
+    },
+    "removed_from_parent": [
+      "plan",
+      "plan-detail"
+    ],
+    "retained": [
+      "conflict-a",
+      "conflict-b",
+      "contract",
+      "duplicate-a",
+      "duplicate-b",
+      "example",
+      "legacy-auth"
+    ]
+  },
+  {
+    "added_to_parent": [],
+    "hypothesis": "Contract supplies guidance semantics without example",
+    "label": "old-no-example",
+    "model": "old-fixture",
+    "parent": "old-no-plan",
+    "quality_vs_original": {
+      "admissible": true,
+      "baseline_score": 1.0,
+      "candidate_score": 1.0,
+      "difference": 0.0,
+      "errors_or_unknown": 0,
+      "max_loss": 0.0,
+      "regressions": [],
+      "scope": "Exact outcomes on the declared finite synthetic cases only"
+    },
+    "removed_from_parent": [
+      "example"
+    ],
+    "retained": [
+      "conflict-a",
+      "conflict-b",
+      "contract",
+      "duplicate-a",
+      "duplicate-b",
+      "legacy-auth"
+    ]
+  },
+  {
+    "added_to_parent": [],
+    "hypothesis": "Retain one of two duplicate cues",
+    "label": "old-one-duplicate",
+    "model": "old-fixture",
+    "parent": "old-no-example",
+    "quality_vs_original": {
+      "admissible": true,
+      "baseline_score": 1.0,
+      "candidate_score": 1.0,
+      "difference": 0.0,
+      "errors_or_unknown": 0,
+      "max_loss": 0.0,
+      "regressions": [],
+      "scope": "Exact outcomes on the declared finite synthetic cases only"
+    },
+    "removed_from_parent": [
+      "duplicate-a"
+    ],
+    "retained": [
+      "conflict-a",
+      "conflict-b",
+      "contract",
+      "duplicate-b",
+      "legacy-auth"
+    ]
+  },
+  {
+    "added_to_parent": [],
+    "hypothesis": "Measure first conflict cue deletion conditionally",
+    "label": "old-no-conflict-a",
+    "model": "old-fixture",
+    "parent": "old-one-duplicate",
+    "quality_vs_original": {
+      "admissible": false,
+      "baseline_score": 1.0,
+      "candidate_score": 0.5,
+      "difference": -0.5,
+      "errors_or_unknown": 0,
+      "max_loss": 0.0,
+      "regressions": [
+        "dev-explicit",
+        "dev-ambiguous",
+        "dev-closed",
+        "dev-unrelated"
+      ],
+      "scope": "Exact outcomes on the declared finite synthetic cases only"
+    },
+    "removed_from_parent": [
+      "conflict-a"
+    ],
+    "retained": [
+      "conflict-b",
+      "contract",
+      "duplicate-b",
+      "legacy-auth"
+    ]
+  },
+  {
+    "added_to_parent": [],
+    "hypothesis": "Measure second conflict cue deletion from same parent",
+    "label": "old-no-conflict-b",
+    "model": "old-fixture",
+    "parent": "old-one-duplicate",
+    "quality_vs_original": {
+      "admissible": false,
+      "baseline_score": 1.0,
+      "candidate_score": 0.5,
+      "difference": -0.5,
+      "errors_or_unknown": 0,
+      "max_loss": 0.0,
+      "regressions": [
+        "dev-explicit",
+        "dev-ambiguous",
+        "dev-closed",
+        "dev-unrelated"
+      ],
+      "scope": "Exact outcomes on the declared finite synthetic cases only"
+    },
+    "removed_from_parent": [
+      "conflict-b"
+    ],
+    "retained": [
+      "conflict-a",
+      "contract",
+      "duplicate-b",
+      "legacy-auth"
+    ]
+  },
+  {
+    "added_to_parent": [],
+    "hypothesis": "Delete interacting conflict pair as a new combined candidate",
+    "label": "old-simple",
+    "model": "old-fixture",
+    "parent": "old-one-duplicate",
+    "quality_vs_original": {
+      "admissible": true,
+      "baseline_score": 1.0,
+      "candidate_score": 1.0,
+      "difference": 0.0,
+      "errors_or_unknown": 0,
+      "max_loss": 0.0,
+      "regressions": [],
+      "scope": "Exact outcomes on the declared finite synthetic cases only"
+    },
+    "removed_from_parent": [
+      "conflict-a",
+      "conflict-b"
+    ],
+    "retained": [
+      "contract",
+      "duplicate-b",
+      "legacy-auth"
+    ]
+  },
+  {
+    "added_to_parent": [],
+    "hypothesis": "Probe whether authorization workaround remains necessary",
+    "label": "old-no-legacy",
+    "model": "old-fixture",
+    "parent": "old-simple",
+    "quality_vs_original": {
+      "admissible": false,
+      "baseline_score": 1.0,
+      "candidate_score": 0.5,
+      "difference": -0.5,
+      "errors_or_unknown": 0,
+      "max_loss": 0.0,
+      "regressions": [
+        "dev-explicit",
+        "dev-ambiguous",
+        "dev-closed",
+        "dev-unrelated"
+      ],
+      "scope": "Exact outcomes on the declared finite synthetic cases only"
+    },
+    "removed_from_parent": [
+      "legacy-auth"
+    ],
+    "retained": [
+      "contract",
+      "duplicate-b"
+    ]
+  },
+  {
+    "added_to_parent": [],
+    "hypothesis": "Probe whether remaining duplicate cue can go",
+    "label": "old-no-duplicate",
+    "model": "old-fixture",
+    "parent": "old-simple",
+    "quality_vs_original": {
+      "admissible": false,
+      "baseline_score": 1.0,
+      "candidate_score": 0.875,
+      "difference": -0.125,
+      "errors_or_unknown": 0,
+      "max_loss": 0.0,
+      "regressions": [
+        "dev-duplicate"
+      ],
+      "scope": "Exact outcomes on the declared finite synthetic cases only"
+    },
+    "removed_from_parent": [
+      "duplicate-b"
+    ],
+    "retained": [
+      "contract",
+      "legacy-auth"
+    ]
+  },
+  {
+    "added_to_parent": [
+      "duplicate-a"
+    ],
+    "hypothesis": "Compare equal-unit alternative by actual rendered bytes",
+    "label": "old-alternate-duplicate",
+    "model": "old-fixture",
+    "parent": "old-simple",
+    "quality_vs_original": {
+      "admissible": true,
+      "baseline_score": 1.0,
+      "candidate_score": 1.0,
+      "difference": 0.0,
+      "errors_or_unknown": 0,
+      "max_loss": 0.0,
+      "regressions": [],
+      "scope": "Exact outcomes on the declared finite synthetic cases only"
+    },
+    "removed_from_parent": [
+      "duplicate-b"
+    ],
+    "retained": [
+      "contract",
+      "duplicate-a",
+      "legacy-auth"
+    ]
+  },
+  {
+    "added_to_parent": [],
+    "hypothesis": "Hold full design fixed for model comparison",
+    "label": "new-full",
+    "model": "new-fixture",
+    "parent": "old-full",
+    "quality_vs_original": {
+      "admissible": true,
+      "baseline_score": 1.0,
+      "candidate_score": 1.0,
+      "difference": 0.0,
+      "errors_or_unknown": 0,
+      "max_loss": 0.0,
+      "regressions": [],
+      "scope": "Exact outcomes on the declared finite synthetic cases only"
+    },
+    "removed_from_parent": [],
+    "retained": [
+      "conflict-a",
+      "conflict-b",
+      "contract",
+      "duplicate-a",
+      "duplicate-b",
+      "example",
+      "legacy-auth",
+      "plan",
+      "plan-detail"
+    ]
+  },
+  {
+    "added_to_parent": [],
+    "hypothesis": "Use identical old reduced design on new fixture",
+    "label": "new-old-simple",
+    "model": "new-fixture",
+    "parent": "old-simple",
+    "quality_vs_original": {
+      "admissible": true,
+      "baseline_score": 1.0,
+      "candidate_score": 1.0,
+      "difference": 0.0,
+      "errors_or_unknown": 0,
+      "max_loss": 0.0,
+      "regressions": [],
+      "scope": "Exact outcomes on the declared finite synthetic cases only"
+    },
+    "removed_from_parent": [],
+    "retained": [
+      "contract",
+      "duplicate-b",
+      "legacy-auth"
+    ]
+  },
+  {
+    "added_to_parent": [],
+    "hypothesis": "Use identical legacy-free design on new fixture",
+    "label": "new-migration-simple",
+    "model": "new-fixture",
+    "parent": "old-no-legacy",
+    "quality_vs_original": {
+      "admissible": true,
+      "baseline_score": 1.0,
+      "candidate_score": 1.0,
+      "difference": 0.0,
+      "errors_or_unknown": 0,
+      "max_loss": 0.0,
+      "regressions": [],
+      "scope": "Exact outcomes on the declared finite synthetic cases only"
+    },
+    "removed_from_parent": [],
+    "retained": [
+      "contract",
+      "duplicate-b"
+    ]
+  },
+  {
+    "added_to_parent": [],
+    "hypothesis": "Probe removal of final duplicate steering",
+    "label": "new-contract-only",
+    "model": "new-fixture",
+    "parent": "new-migration-simple",
+    "quality_vs_original": {
+      "admissible": false,
+      "baseline_score": 1.0,
+      "candidate_score": 0.875,
+      "difference": -0.125,
+      "errors_or_unknown": 0,
+      "max_loss": 0.0,
+      "regressions": [
+        "dev-duplicate"
+      ],
+      "scope": "Exact outcomes on the declared finite synthetic cases only"
+    },
+    "removed_from_parent": [
+      "duplicate-b"
+    ],
+    "retained": [
+      "contract"
+    ]
+  }
+]

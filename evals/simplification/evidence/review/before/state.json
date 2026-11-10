@@ -1,0 +1,45 @@
+{
+  "contract_hash": "d91cdd8e2a8820a5dc12b6850438466a379a0cd972f820ab9f9d94b4485f7ed1",
+  "plan": {
+    "final": {
+      "model": "new-fixture",
+      "retained": [
+        "contract",
+        "duplicate-b"
+      ]
+    }
+  },
+  "records": {
+    "final": {
+      "candidate_sha256": "c1a85f6bd9c8c5d53d51d44220eacde87043630d7dceb5b8e4625b2cbb37e570",
+      "config": {
+        "model": "new-fixture",
+        "retained": [
+          "contract",
+          "duplicate-b"
+        ]
+      },
+      "evidence": {
+        "candidate.py": "c1a85f6bd9c8c5d53d51d44220eacde87043630d7dceb5b8e4625b2cbb37e570",
+        "cases.jsonl": "f0e900c7f3fb1a1a1ddf94941b92ee0ee1dc8232930c00cd24a810b2b7f23a30",
+        "manifest.json": "3cf30dc3bf7a7729791fa94034317ca3f3325f637f0b607a9d42687f29ab47e1",
+        "summary.json": "cefcb6ea4d0a1b730377b8b7f33bcab79c7ff4f6d039415a643bf041c12d7eb9",
+        "traces.jsonl": "f851f7dffbc40120751625210c382d4f9e435df2ff12497349dfad2ccdfbfd91"
+      },
+      "native_wall_seconds": 0.07181550000677817,
+      "outcomes": {
+        "conf-duplicate": "PASS",
+        "conf-howto": "PASS",
+        "conf-preservation": "PASS",
+        "conf-targeted": "PASS"
+      },
+      "prompt_utf8_bytes": 3667,
+      "status": "complete",
+      "suite": "confirmation",
+      "unit_count": 2
+    }
+  },
+  "remaining_confirmation_reserve": 0,
+  "reserved_case_executions": 4,
+  "status": "frozen"
+}

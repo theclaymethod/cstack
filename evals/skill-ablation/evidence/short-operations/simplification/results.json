@@ -1,0 +1,421 @@
+{
+  "burden": {
+    "model_cost_or_latency_savings": "not measured",
+    "original_prompt_utf8_bytes": 4193,
+    "original_units": 9,
+    "selected_prompt_utf8_bytes": 3667,
+    "selected_units": 2,
+    "token_count": null
+  },
+  "closed_controls": {
+    "duplicate-final": true,
+    "refitting-after-final": true,
+    "unplanned-final": true
+  },
+  "confirmation_case_executions": 20,
+  "diagnostics": {
+    "conflict-a": {
+      "admissible": false,
+      "baseline_score": 1.0,
+      "candidate_score": 0.5,
+      "difference": -0.5,
+      "errors_or_unknown": 0,
+      "max_loss": 0.0,
+      "regressions": [
+        "dev-explicit",
+        "dev-ambiguous",
+        "dev-closed",
+        "dev-unrelated"
+      ],
+      "run": "leave-out-conflict-a",
+      "scope": "Exact outcomes on the declared finite synthetic cases only",
+      "score": 0.5,
+      "status": "measured"
+    },
+    "conflict-b": {
+      "admissible": false,
+      "baseline_score": 1.0,
+      "candidate_score": 0.5,
+      "difference": -0.5,
+      "errors_or_unknown": 0,
+      "max_loss": 0.0,
+      "regressions": [
+        "dev-explicit",
+        "dev-ambiguous",
+        "dev-closed",
+        "dev-unrelated"
+      ],
+      "run": "leave-out-conflict-b",
+      "scope": "Exact outcomes on the declared finite synthetic cases only",
+      "score": 0.5,
+      "status": "measured"
+    },
+    "contract": {
+      "reason": "Protected task contract must remain",
+      "status": "invalid-before-execution"
+    },
+    "duplicate-a": {
+      "admissible": true,
+      "baseline_score": 1.0,
+      "candidate_score": 1.0,
+      "difference": 0.0,
+      "errors_or_unknown": 0,
+      "max_loss": 0.0,
+      "regressions": [],
+      "run": "leave-out-duplicate-a",
+      "scope": "Exact outcomes on the declared finite synthetic cases only",
+      "score": 1.0,
+      "status": "measured"
+    },
+    "duplicate-b": {
+      "admissible": true,
+      "baseline_score": 1.0,
+      "candidate_score": 1.0,
+      "difference": 0.0,
+      "errors_or_unknown": 0,
+      "max_loss": 0.0,
+      "regressions": [],
+      "run": "leave-out-duplicate-b",
+      "scope": "Exact outcomes on the declared finite synthetic cases only",
+      "score": 1.0,
+      "status": "measured"
+    },
+    "example": {
+      "admissible": true,
+      "baseline_score": 1.0,
+      "candidate_score": 1.0,
+      "difference": 0.0,
+      "errors_or_unknown": 0,
+      "max_loss": 0.0,
+      "regressions": [],
+      "run": "leave-out-example",
+      "scope": "Exact outcomes on the declared finite synthetic cases only",
+      "score": 1.0,
+      "status": "measured"
+    },
+    "legacy-auth": {
+      "admissible": false,
+      "baseline_score": 1.0,
+      "candidate_score": 0.5,
+      "difference": -0.5,
+      "errors_or_unknown": 0,
+      "max_loss": 0.0,
+      "regressions": [
+        "dev-explicit",
+        "dev-ambiguous",
+        "dev-closed",
+        "dev-unrelated"
+      ],
+      "run": "leave-out-legacy-auth",
+      "scope": "Exact outcomes on the declared finite synthetic cases only",
+      "score": 0.5,
+      "status": "measured"
+    },
+    "plan": {
+      "reason": "Surviving dependent requires its parent: plan-detail",
+      "status": "invalid-before-execution"
+    },
+    "plan-detail": {
+      "admissible": true,
+      "baseline_score": 1.0,
+      "candidate_score": 1.0,
+      "difference": 0.0,
+      "errors_or_unknown": 0,
+      "max_loss": 0.0,
+      "regressions": [],
+      "run": "leave-out-plan-detail",
+      "scope": "Exact outcomes on the declared finite synthetic cases only",
+      "score": 1.0,
+      "status": "measured"
+    }
+  },
+  "limit": 200,
+  "limits": [
+    "All task cases and expected outcomes are synthetic and readable.",
+    "Model capability and prompt interactions are explicitly programmed stand-ins.",
+    "No model inference, human labels, statistical non-inferiority or production rollout tested.",
+    "One-shot protocol; no resume loader or adversarial host/filesystem isolation."
+  ],
+  "migration": {
+    "interaction": 0.5,
+    "matrix": {
+      "new-existing": {
+        "config": {
+          "model": "new-fixture",
+          "retained": [
+            "conflict-a",
+            "conflict-b",
+            "contract",
+            "duplicate-a",
+            "duplicate-b",
+            "example",
+            "legacy-auth",
+            "plan",
+            "plan-detail"
+          ]
+        },
+        "run": "final-new-existing",
+        "score": 1.0
+      },
+      "new-simplified": {
+        "config": {
+          "model": "new-fixture",
+          "retained": [
+            "contract",
+            "duplicate-b"
+          ]
+        },
+        "run": "final-new-simplified",
+        "score": 1.0
+      },
+      "old-existing": {
+        "config": {
+          "model": "old-fixture",
+          "retained": [
+            "conflict-a",
+            "conflict-b",
+            "contract",
+            "duplicate-a",
+            "duplicate-b",
+            "example",
+            "legacy-auth",
+            "plan",
+            "plan-detail"
+          ]
+        },
+        "run": "final-old-existing",
+        "score": 1.0
+      },
+      "old-simplified": {
+        "config": {
+          "model": "old-fixture",
+          "retained": [
+            "contract",
+            "duplicate-b"
+          ]
+        },
+        "run": "final-old-simplified",
+        "score": 0.5
+      }
+    },
+    "model_effect_existing_design": 0.0,
+    "release_vs_original": {
+      "admissible": true,
+      "baseline_score": 1.0,
+      "candidate_score": 1.0,
+      "difference": 0.0,
+      "errors_or_unknown": 0,
+      "max_loss": 0.0,
+      "regressions": [],
+      "scope": "Exact outcomes on the declared finite synthetic cases only"
+    },
+    "simplification_effect_new": 0.0,
+    "simplification_effect_old": -0.5,
+    "simplification_vs_new_existing": {
+      "admissible": true,
+      "baseline_score": 1.0,
+      "candidate_score": 1.0,
+      "difference": 0.0,
+      "errors_or_unknown": 0,
+      "max_loss": 0.0,
+      "regressions": [],
+      "scope": "Exact outcomes on the declared finite synthetic cases only"
+    }
+  },
+  "minimality": "Smallest feasible candidate in this scripted search; no minimality sweep or global claim",
+  "naive_union": {
+    "admissible": false,
+    "baseline_score": 1.0,
+    "candidate_score": 0.875,
+    "difference": -0.125,
+    "errors_or_unknown": 0,
+    "max_loss": 0.0,
+    "regressions": [
+      "dev-duplicate"
+    ],
+    "scope": "Exact outcomes on the declared finite synthetic cases only"
+  },
+  "native_case_executions": 164,
+  "old_model_reduction": {
+    "config": {
+      "model": "old-fixture",
+      "retained": [
+        "contract",
+        "duplicate-b",
+        "legacy-auth"
+      ]
+    },
+    "confirmation": {
+      "admissible": true,
+      "baseline_score": 1.0,
+      "candidate_score": 1.0,
+      "difference": 0.0,
+      "errors_or_unknown": 0,
+      "max_loss": 0.0,
+      "regressions": [],
+      "scope": "Exact outcomes on the declared finite synthetic cases only"
+    }
+  },
+  "paid_calls": 0,
+  "policy": {
+    "objective": "fewer retained units and fewer rendered prompt UTF-8 bytes",
+    "observed_pass_regressions": 0,
+    "quality_loss": 0
+  },
+  "promotion": "Offline fixture artifact only; no deployable production prompt or real model validation",
+  "provider_calls": 0,
+  "reduction_history": [
+    {
+      "accepted": true,
+      "admissible": true,
+      "baseline_score": 1.0,
+      "candidate_score": 1.0,
+      "difference": 0.0,
+      "errors_or_unknown": 0,
+      "max_loss": 0.0,
+      "parent": "original",
+      "regressions": [],
+      "removed": [
+        "example",
+        "plan",
+        "plan-detail"
+      ],
+      "run": "drop-noise",
+      "scope": "Exact outcomes on the declared finite synthetic cases only"
+    },
+    {
+      "accepted": true,
+      "admissible": true,
+      "baseline_score": 1.0,
+      "candidate_score": 1.0,
+      "difference": 0.0,
+      "errors_or_unknown": 0,
+      "max_loss": 0.0,
+      "parent": "drop-noise",
+      "regressions": [],
+      "removed": [
+        "duplicate-a"
+      ],
+      "run": "drop-duplicate-a",
+      "scope": "Exact outcomes on the declared finite synthetic cases only"
+    },
+    {
+      "accepted": false,
+      "admissible": false,
+      "baseline_score": 1.0,
+      "candidate_score": 0.875,
+      "difference": -0.125,
+      "errors_or_unknown": 0,
+      "max_loss": 0.0,
+      "parent": "drop-duplicate-a",
+      "regressions": [
+        "dev-duplicate"
+      ],
+      "removed": [
+        "duplicate-b"
+      ],
+      "run": "drop-duplicate-b",
+      "scope": "Exact outcomes on the declared finite synthetic cases only"
+    },
+    {
+      "accepted": false,
+      "admissible": false,
+      "baseline_score": 1.0,
+      "candidate_score": 0.5,
+      "difference": -0.5,
+      "errors_or_unknown": 0,
+      "max_loss": 0.0,
+      "parent": "drop-duplicate-a",
+      "regressions": [
+        "dev-explicit",
+        "dev-ambiguous",
+        "dev-closed",
+        "dev-unrelated"
+      ],
+      "removed": [
+        "conflict-a"
+      ],
+      "run": "drop-conflict-a",
+      "scope": "Exact outcomes on the declared finite synthetic cases only"
+    },
+    {
+      "accepted": false,
+      "admissible": false,
+      "baseline_score": 1.0,
+      "candidate_score": 0.5,
+      "difference": -0.5,
+      "errors_or_unknown": 0,
+      "max_loss": 0.0,
+      "parent": "drop-duplicate-a",
+      "regressions": [
+        "dev-explicit",
+        "dev-ambiguous",
+        "dev-closed",
+        "dev-unrelated"
+      ],
+      "removed": [
+        "conflict-b"
+      ],
+      "run": "drop-conflict-b",
+      "scope": "Exact outcomes on the declared finite synthetic cases only"
+    },
+    {
+      "accepted": true,
+      "admissible": true,
+      "baseline_score": 1.0,
+      "candidate_score": 1.0,
+      "difference": 0.0,
+      "errors_or_unknown": 0,
+      "max_loss": 0.0,
+      "parent": "drop-duplicate-a",
+      "regressions": [],
+      "removed": [
+        "conflict-a",
+        "conflict-b"
+      ],
+      "run": "drop-conflict-pair",
+      "scope": "Exact outcomes on the declared finite synthetic cases only"
+    }
+  ],
+  "selected_artifact": "selected-offline-fixture.py",
+  "selected_sha256": "c1a85f6bd9c8c5d53d51d44220eacde87043630d7dceb5b8e4625b2cbb37e570",
+  "source_identity": {
+    "catalog": "dc332e7a108b52e03789f1185e88e02d405bbbe906a6ef030a74d0b7b9d34b73",
+    "files": {
+      "examples/candidates/improved.py": "d8cc818e83af4453a44e9025484ae6e23ecc7cbcf8c9e621efa56c21a179a1c3",
+      "methods/native.py": "df83d4b57df0ac2dc0ac6cd5b94136082c02d486478c98334a6273cb623e86bd",
+      "simplification/__init__.py": "9b265b7e39fe1ee3767d60306a74857d6429d3c352df97497cceaadf42e9d336",
+      "simplification/demo.py": "2e682951a122ac9ee9a709b2d04a3038b9330cf1df46ee7deec38d73f34d6c76",
+      "simplification/protocol.py": "95b5c8121d3b5d81b1ece8bed046dcac1ceba9daa15a6ebf223a4421e3f82e32",
+      "simplification/run.py": "d6689ea5937679837104b3e006ef5447234cecaedfc408116f066559f41ace30"
+    },
+    "native": {
+      "files": {
+        "evals/cases.jsonl": "71f1d8c50f7ce2b3ca512c6f2703faa4e30d5c63237824e3a73e7a573cf4f7b2",
+        "evals/rubric.md": "cb133b50752a48098d463a562d7553ec5a5b29bfef1825b4e393e7de33d66dd8",
+        "evals/spec.json": "eb6f21266223c16708a4ed3bb4f401f3a2adb3355b9e176152665d70a665d8f6",
+        "evaluate.py": "fd1fdaa4b090852f8d0a6462303411bea5488dcc7f7a08895146e32d52b0430d"
+      },
+      "protocol": {
+        "confirmation": "baseline and incumbent; preserve baseline PASS; no lower score",
+        "execution_boundary": "trusted local subprocess; not a security sandbox",
+        "name": "deterministic-local-support-v1",
+        "new_ticket_issue": "vpn",
+        "new_ticket_status": "open",
+        "python_flags": [
+          "-I"
+        ],
+        "selection": "strict development improvement; preserve every incumbent PASS",
+        "timeout_seconds": 3,
+        "trials_per_case": 1
+      },
+      "python": {
+        "executable": "/Users/clayton/.local/share/uv/python/cpython-3.12.16-macos-aarch64-none/bin/python3.12",
+        "implementation": "CPython",
+        "platform": "macOS-27.2-arm64-arm-64bit",
+        "version": "3.12.16 (main, Oct 26 2026, 13:59:40) [Clang 23.1.3 ]"
+      }
+    }
+  },
+  "status": "passed"
+}

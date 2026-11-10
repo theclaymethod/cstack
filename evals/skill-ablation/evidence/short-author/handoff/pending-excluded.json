@@ -1,0 +1,20 @@
+{
+  "approved_count": 2,
+  "excluded_stale": [
+    "A rejected earlier creation proposal",
+    "B revision1 guidance-only proposal"
+  ],
+  "pending": [
+    {
+      "id": "C",
+      "reason": "deferred; no urgency/escalation policy; neither proposed behavior nor its inverse approved",
+      "revision": 1
+    },
+    {
+      "id": "P-01",
+      "reason": "new boundary contrast not owner reviewed",
+      "revision": 1
+    }
+  ],
+  "scored_count": 2
+}

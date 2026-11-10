@@ -1,0 +1,1 @@
+{"checks": {"action_matches_mutation": false, "allowed_action": true, "new_ticket_fields": true, "new_ticket_membership": false, "preserved_other_state": true, "preserved_tickets": true, "requested_account": true, "ticket_delta": false, "unique_ticket_ids": true}, "error": null, "outcome": "FAIL"}

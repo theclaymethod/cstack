@@ -1,0 +1,105 @@
+{
+  "workspace": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/skill-audit-ablation/runs/short-capture",
+  "source": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/skill-audit-ablation/shortened-candidate",
+  "evidence": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/skill-audit-ablation/runs/short-capture/eval-runs/skill-exercise",
+  "protected_files_unchanged": [
+    "evaluate.py",
+    "evals/spec.json",
+    "evals/rubric.md",
+    "evals/cases.jsonl",
+    "support_agent.py"
+  ],
+  "installed_skill_files_matched": [
+    "ablation/SKILL.md",
+    "ablation/references/quality.md",
+    "ablation/references/removal.md",
+    "adversarial-cases/SKILL.md",
+    "adversarial-cases/references/case-contract.md",
+    "adversarial-cases/references/failure-methods.md",
+    "adversarial-cases/references/injection.md",
+    "adversarial-cases/references/synthetic-methods.md",
+    "bitter-lesson/SKILL.md",
+    "bitter-lesson/references/migration.md",
+    "bootstrap/SKILL.md",
+    "bootstrap/references/labeling.md",
+    "bootstrap/references/research.md",
+    "bootstrap/references/scenarios.md",
+    "calibrate-judge/SKILL.md",
+    "calibrate-judge/references/backends.md",
+    "calibrate-judge/references/measurement.md",
+    "calibrate-judge/references/protocol.md",
+    "create-eval/SKILL.md",
+    "create-eval/assets/trace-review.css",
+    "create-eval/assets/trace-review.html",
+    "create-eval/assets/trace-review.js",
+    "create-eval/references/early-development.md",
+    "create-eval/references/ecosystem.md",
+    "create-eval/references/formats.md",
+    "create-eval/references/from-findings.md",
+    "create-eval/references/judges.md",
+    "create-eval/references/trace-review.md",
+    "create-eval/scripts/review_traces.py",
+    "cross-examine/SKILL.md",
+    "cross-examine/references/ledger.md",
+    "cross-examine/references/lessons.md",
+    "distill-me/SKILL.md",
+    "distill-me/agents/openai.yaml",
+    "distill-me/references/review-passes.md",
+    "expert-mode/SKILL.md",
+    "expert-mode/agents/openai.yaml",
+    "expert-mode/references/export.md",
+    "expert-mode/references/privacy-filter.md",
+    "expert-mode/references/records.md",
+    "expert-mode/scripts/export_findings.py",
+    "hill-climb/SKILL.md",
+    "hill-climb/references/campaign.md",
+    "hill-climb/references/data-handoff.md",
+    "hill-climb/references/optimizers.md",
+    "run-eval/SKILL.md",
+    "run-eval/references/package.md"
+  ],
+  "native_runs": [
+    {
+      "path": "native-baseline",
+      "case_ids": [
+        "dev-howto"
+      ],
+      "executed": 1,
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 1,
+        "PASS": 0,
+        "UNKNOWN": 0
+      },
+      "sha256": {
+        "manifest.json": "9af5081c4c0ab41a4781cb939da49e47d01438ceab8525801ed96428a9a54b7e",
+        "summary.json": "72e39ca66603c17acb05d90e5fc0a461b5f783e52c0b2de4910d65edaa59cd38",
+        "traces.jsonl": "a515f767f753101a1913d559fc5171b64dae5345dc4fd77ff515371e0a124c15",
+        "candidate.py": "0720b56482a445967ff2a98ec5cfa668c858b8a6f662da74a55c21b257393efc",
+        "cases.jsonl": "cee33edbc1ef6478060a9359d216325b762bf75c4145f25b376f8d99590a43ab"
+      }
+    },
+    {
+      "path": "native-regenerated",
+      "case_ids": [
+        "dev-howto"
+      ],
+      "executed": 1,
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 1,
+        "UNKNOWN": 0
+      },
+      "sha256": {
+        "manifest.json": "ac16a0794e32571c5ebc4fcc868dca48fd0b18005febfbb50bb9e65fc7847020",
+        "summary.json": "93f27c83434af0a6bc5ca1638d8a713df04ea64f2eafd6b76f80b3aaac2368dc",
+        "traces.jsonl": "33d5a9ddfe4fa74780e9fe222e3d570e28200eb8b92f32622f60c7ac0b7a9791",
+        "candidate.py": "a657fd68ec5bd339a1540046ca05ebf4fc3df57100871b8d820f46a90c02654d",
+        "cases.jsonl": "cee33edbc1ef6478060a9359d216325b762bf75c4145f25b376f8d99590a43ab"
+      }
+    }
+  ],
+  "native_case_executions": 2,
+  "scope": "Source fidelity and native artifact validation; not a semantic or generalization verdict"
+}

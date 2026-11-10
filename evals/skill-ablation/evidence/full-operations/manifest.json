@@ -1,0 +1,1966 @@
+{
+  "artifacts": {
+    "claim_artifacts": [
+      "claim-audit/forged-result.json",
+      "claim-audit/forged.py",
+      "claim-audit/intent.json",
+      "claim-audit/legitimate-alternative.py",
+      "claim-audit/legitimate-result.json",
+      "claim-audit/matched-forged-result.json",
+      "claim-audit/prepare.py",
+      "claim-audit/replay-results.json",
+      "claim-audit/replay.py",
+      "claim-audit/verify_claim.original.py",
+      "claim-audit/verify_claim.repaired.py"
+    ],
+    "cross_examine_ledger": "claim-audit/CROSS_EXAMINE_LEDGER.md",
+    "generator_lesson": "claim-audit/GENERATOR_LESSON.md",
+    "hill_climb_diff": "hill-climb/best.diff",
+    "hill_climb_selected": "hill-climb/best.py",
+    "judge_selected": "judge-calibration/selected-judge.fixture.json",
+    "simplification_candidates": [
+      "simplification/candidates/drop-conflict-a.py",
+      "simplification/candidates/drop-conflict-b.py",
+      "simplification/candidates/drop-conflict-pair.py",
+      "simplification/candidates/drop-duplicate-a.py",
+      "simplification/candidates/drop-duplicate-b.py",
+      "simplification/candidates/drop-noise.py",
+      "simplification/candidates/final-new-existing.py",
+      "simplification/candidates/final-new-simplified.py",
+      "simplification/candidates/final-old-existing.py",
+      "simplification/candidates/final-old-reduced.py",
+      "simplification/candidates/final-old-simplified.py",
+      "simplification/candidates/leave-out-conflict-a.py",
+      "simplification/candidates/leave-out-conflict-b.py",
+      "simplification/candidates/leave-out-duplicate-a.py",
+      "simplification/candidates/leave-out-duplicate-b.py",
+      "simplification/candidates/leave-out-example.py",
+      "simplification/candidates/leave-out-legacy-auth.py",
+      "simplification/candidates/leave-out-plan-detail.py",
+      "simplification/candidates/naive-union.py",
+      "simplification/candidates/new-existing.py",
+      "simplification/candidates/new-simplified.py",
+      "simplification/candidates/old-simplified.py",
+      "simplification/candidates/original.py"
+    ],
+    "simplification_diff": "simplification/selected.diff",
+    "simplification_selected": "simplification/selected-offline-fixture.py"
+  },
+  "commands": "commands.jsonl",
+  "deployment": "unperformed",
+  "evidence_root": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/skill-audit-ablation/runs/full-operations/eval-runs/skill-exercise",
+  "independent_review": "unreviewed",
+  "inspection": "inspection.json",
+  "installed_skills": {
+    "ablation": {
+      "path": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/skill-audit-ablation/runs/full-operations/.agents/skills/ablation/SKILL.md",
+      "sha256": "5b5a0ca5b1897a44e2ec1874676430b63a99862caad508c78cc28c133e0dadcb"
+    },
+    "bitter-lesson": {
+      "path": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/skill-audit-ablation/runs/full-operations/.agents/skills/bitter-lesson/SKILL.md",
+      "sha256": "7ea7926e2f5330dbd48247351b16cdbf5b40bc8117bfe7c5853b00270debdf2b"
+    },
+    "calibrate-judge": {
+      "path": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/skill-audit-ablation/runs/full-operations/.agents/skills/calibrate-judge/SKILL.md",
+      "sha256": "e51a883d207eea17a561cf12f1a03265c26ce8d026e15878b83c68b64f7a5adb"
+    },
+    "cross-examine": {
+      "path": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/skill-audit-ablation/runs/full-operations/.agents/skills/cross-examine/SKILL.md",
+      "sha256": "12e245342d7defd6ba7031e473e5fd85f1706354434ca12eea6819fb43d3fe3d"
+    },
+    "hill-climb": {
+      "path": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/skill-audit-ablation/runs/full-operations/.agents/skills/hill-climb/SKILL.md",
+      "sha256": "39f87db302d3e8bbef90df20e5c673958b93bb1f0fef1e811854bcc4283ac16e"
+    },
+    "run-eval": {
+      "path": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/skill-audit-ablation/runs/full-operations/.agents/skills/run-eval/SKILL.md",
+      "sha256": "7c7107775107b4a3cfeb547ce8197042f1f63e1ffc293387efd33ea9f329ffbe"
+    }
+  },
+  "judge_runs": [
+    {
+      "config_hash": "2aa4b2667ab8adf220e1bea0665a7535c72b626195e8784ffd4bc4387df7448b",
+      "directory": "judge-calibration/campaign/llm-baseline-train",
+      "label": "llm-baseline-train",
+      "manifest_sha256": "2651ddb1d91ac43fd4ac9696bba3a2a63f114417fb67e8b3f12c87aac557a976",
+      "predictions_sha256": "77ddeaeaa413401b38dc4848d5c1bb616c38b934c8721b2609849e5b2ce1d3f6",
+      "reserved": 8,
+      "role": "train",
+      "status": "complete"
+    },
+    {
+      "config_hash": "9010350a6dd86194187f0a8995205467479894e9ce40c74e95f583a5345e5681",
+      "directory": "judge-calibration/campaign/llm-validation-0",
+      "label": "llm-validation-0",
+      "manifest_sha256": "d6b5fedef45752379d125e65378d2866265b1f153673ffd4aacae1b98230a1ec",
+      "predictions_sha256": "fa9f1acf07bc929608be765eea1510847c4a61516a66ba8ae42fdeef3b6cef8e",
+      "reserved": 8,
+      "role": "validation",
+      "status": "complete"
+    },
+    {
+      "config_hash": "27133a5056e3bf6eb30f1cab1525db3fcc2964ddb36cf0dd6d3de13b9349c37e",
+      "directory": "judge-calibration/campaign/llm-validation-1",
+      "label": "llm-validation-1",
+      "manifest_sha256": "6d0d5d2f4b385f6c755ef0b20afdd7d43bea5bb83180cd2f7abe3146d4155ebc",
+      "predictions_sha256": "9ac4b78e2021e61e285a30d4ba2a0b4ce8bd762152766c26c84ce8664711a532",
+      "reserved": 8,
+      "role": "validation",
+      "status": "complete"
+    },
+    {
+      "config_hash": "6027853e5ae54b2e2cf091c12a922e7ee5e20bd68ffd42f0a52a62296df30b32",
+      "directory": "judge-calibration/campaign/jev-baseline-train",
+      "label": "jev-baseline-train",
+      "manifest_sha256": "4fbaaa038eeb5859245130c55154af93df5d484be083faaa8ad486a5c0649767",
+      "predictions_sha256": "4a9b5524b1de6b4707ef81bcd554d1ca91e29fc97c02346855f8d8e7dd089545",
+      "reserved": 8,
+      "role": "train",
+      "status": "complete"
+    },
+    {
+      "config_hash": "86a95cf5aa4782f0447f58708bbeab004dd8150bda590527ed9dd65f4f385b75",
+      "directory": "judge-calibration/campaign/jev-validation-0",
+      "label": "jev-validation-0",
+      "manifest_sha256": "d810a446e46704a37aa507b8eb5a21a821bf0e774ab77fe14eef102fa4a465b8",
+      "predictions_sha256": "691ce50e4f568887aaf301b05354226f996e0c669003c16f78e46706caf375aa",
+      "reserved": 8,
+      "role": "validation",
+      "status": "complete"
+    },
+    {
+      "config_hash": "6027853e5ae54b2e2cf091c12a922e7ee5e20bd68ffd42f0a52a62296df30b32",
+      "directory": "judge-calibration/campaign/jev-validation-1",
+      "label": "jev-validation-1",
+      "manifest_sha256": "e710b66a2909eb29caf1dbcbbe1cd4bd7768b7d3de2bffabbe3d863f31e71610",
+      "predictions_sha256": "0778a49c3a246988ae8509df30302b41675cbf3ec91a0ef578bb460b5bb83e0f",
+      "reserved": 8,
+      "role": "validation",
+      "status": "complete"
+    },
+    {
+      "config_hash": "3f92069dd18a66fab7f68c2941a9667da81834d69782fbe23207ea65afce26b7",
+      "directory": "judge-calibration/campaign/jev-validation-2",
+      "label": "jev-validation-2",
+      "manifest_sha256": "242976bb154b118ffbafdfaeb6eafc4e32fcc1f1a4bc677f08b39b74093abc25",
+      "predictions_sha256": "81e7b29f326792edf457b38fe105e4ea3ea07c5ef707152f6782f49413297e7f",
+      "reserved": 8,
+      "role": "validation",
+      "status": "complete"
+    },
+    {
+      "config_hash": "1ca6ba19da53305cf5de5d87f9ef3012e5f613b1cda65a5488148b348216eff9",
+      "directory": "judge-calibration/campaign/jev-validation-3",
+      "label": "jev-validation-3",
+      "manifest_sha256": "870cf2c57de63667913137c5df4c445f04a1ba413f258b44fd762b6569752dda",
+      "predictions_sha256": "467898451ce5ca8a58a1976b26711586b8bccdad9e6857abc600f08a3161dbb1",
+      "reserved": 8,
+      "role": "validation",
+      "status": "complete"
+    },
+    {
+      "config_hash": "2aa4b2667ab8adf220e1bea0665a7535c72b626195e8784ffd4bc4387df7448b",
+      "directory": "judge-calibration/campaign/llm-baseline-final",
+      "label": "llm-baseline-final",
+      "manifest_sha256": "d0e9454147154a3b78b6603865b1220689774d0b1d6040fa83d68a4edb787cd1",
+      "predictions_sha256": "4a6906116968422063b6995c3b84ee659dfb0a7bb7a52aeb7b9d8e1edc9a4a13",
+      "reserved": 8,
+      "role": "final",
+      "status": "complete"
+    },
+    {
+      "config_hash": "27133a5056e3bf6eb30f1cab1525db3fcc2964ddb36cf0dd6d3de13b9349c37e",
+      "directory": "judge-calibration/campaign/llm-selected-final",
+      "label": "llm-selected-final",
+      "manifest_sha256": "0d9edbcab80a371a37d9a0188bd9f91cb27727f4540eb4f5b25c7a46ad692bc4",
+      "predictions_sha256": "88f9d0a9a3e543e0ad7c7e368e1d30a16f4e21ad6a0aea336f35f0bb5b2e09c1",
+      "reserved": 8,
+      "role": "final",
+      "status": "complete"
+    },
+    {
+      "config_hash": "6027853e5ae54b2e2cf091c12a922e7ee5e20bd68ffd42f0a52a62296df30b32",
+      "directory": "judge-calibration/campaign/jev-baseline-final",
+      "label": "jev-baseline-final",
+      "manifest_sha256": "1ff8bb623e72fb0e905317e7784e8f6b8b3b8fd3d33a71a40072ba6dd0392577",
+      "predictions_sha256": "d97d11592ed05a266f28da575245aec42ac480facce5b7e912ecfba1a26e90d1",
+      "reserved": 8,
+      "role": "final",
+      "status": "complete"
+    },
+    {
+      "config_hash": "3f92069dd18a66fab7f68c2941a9667da81834d69782fbe23207ea65afce26b7",
+      "directory": "judge-calibration/campaign/jev-selected-final",
+      "label": "jev-selected-final",
+      "manifest_sha256": "8b4497c15742bd7b457c0d9eae9bdfeee39355f62c8496ad9245b31a81ff8cb8",
+      "predictions_sha256": "5e01ce5e545dc8d78b99903adcd7ed9960ab2a20e8edaa120954e579911c19ee",
+      "reserved": 8,
+      "role": "final",
+      "status": "complete"
+    }
+  ],
+  "materialization_argv": [
+    "python3",
+    "fixtures/playground/scripts/new_workspace.py",
+    "--source",
+    "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/skill-audit-ablation/post-audit-baseline",
+    "--out",
+    "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/skill-audit-ablation/runs/full-operations"
+  ],
+  "native_runs": [
+    {
+      "candidate": "claim-audit/native-alternative/candidate.py",
+      "candidate_sha256": "fe93b66cf27369fcbb4ce580eeb5f902f829d05b14ea36a2d64a83ef71378243",
+      "case_ids": [
+        "dev-howto",
+        "dev-generic",
+        "dev-explicit",
+        "dev-duplicate",
+        "dev-ambiguous",
+        "dev-password",
+        "dev-closed",
+        "dev-unrelated"
+      ],
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 8,
+        "UNKNOWN": 0
+      },
+      "directory": "claim-audit/native-alternative",
+      "executed": 8,
+      "identity": {
+        "files": {
+          "evals/cases.jsonl": "71f1d8c50f7ce2b3ca512c6f2703faa4e30d5c63237824e3a73e7a573cf4f7b2",
+          "evals/rubric.md": "cb133b50752a48098d463a562d7553ec5a5b29bfef1825b4e393e7de33d66dd8",
+          "evals/spec.json": "eb6f21266223c16708a4ed3bb4f401f3a2adb3355b9e176152665d70a665d8f6",
+          "evaluate.py": "fd1fdaa4b090852f8d0a6462303411bea5488dcc7f7a08895146e32d52b0430d"
+        },
+        "protocol": {
+          "confirmation": "baseline and incumbent; preserve baseline PASS; no lower score",
+          "execution_boundary": "trusted local subprocess; not a security sandbox",
+          "name": "deterministic-local-support-v1",
+          "new_ticket_issue": "vpn",
+          "new_ticket_status": "open",
+          "python_flags": [
+            "-I"
+          ],
+          "selection": "strict development improvement; preserve every incumbent PASS",
+          "timeout_seconds": 3,
+          "trials_per_case": 1
+        },
+        "python": {
+          "executable": "/Users/clayton/.local/share/uv/python/cpython-3.12.16-macos-aarch64-none/bin/python3.12",
+          "implementation": "CPython",
+          "platform": "macOS-27.2-arm64-arm-64bit",
+          "version": "3.12.16 (main, Oct 26 2026, 13:59:40) [Clang 23.1.3 ]"
+        }
+      },
+      "score": 1.0,
+      "selected": 8,
+      "suite": "development"
+    },
+    {
+      "candidate": "claim-audit/native-forged/candidate.py",
+      "candidate_sha256": "e7cbe13bddc7f60c5997df94ed9dfc46bc3b07aa1eacedd801e0ffba386f12e3",
+      "case_ids": [
+        "dev-howto",
+        "dev-generic",
+        "dev-explicit",
+        "dev-duplicate",
+        "dev-ambiguous",
+        "dev-password",
+        "dev-closed",
+        "dev-unrelated"
+      ],
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 8,
+        "PASS": 0,
+        "UNKNOWN": 0
+      },
+      "directory": "claim-audit/native-forged",
+      "executed": 8,
+      "identity": {
+        "files": {
+          "evals/cases.jsonl": "71f1d8c50f7ce2b3ca512c6f2703faa4e30d5c63237824e3a73e7a573cf4f7b2",
+          "evals/rubric.md": "cb133b50752a48098d463a562d7553ec5a5b29bfef1825b4e393e7de33d66dd8",
+          "evals/spec.json": "eb6f21266223c16708a4ed3bb4f401f3a2adb3355b9e176152665d70a665d8f6",
+          "evaluate.py": "fd1fdaa4b090852f8d0a6462303411bea5488dcc7f7a08895146e32d52b0430d"
+        },
+        "protocol": {
+          "confirmation": "baseline and incumbent; preserve baseline PASS; no lower score",
+          "execution_boundary": "trusted local subprocess; not a security sandbox",
+          "name": "deterministic-local-support-v1",
+          "new_ticket_issue": "vpn",
+          "new_ticket_status": "open",
+          "python_flags": [
+            "-I"
+          ],
+          "selection": "strict development improvement; preserve every incumbent PASS",
+          "timeout_seconds": 3,
+          "trials_per_case": 1
+        },
+        "python": {
+          "executable": "/Users/clayton/.local/share/uv/python/cpython-3.12.16-macos-aarch64-none/bin/python3.12",
+          "implementation": "CPython",
+          "platform": "macOS-27.2-arm64-arm-64bit",
+          "version": "3.12.16 (main, Oct 26 2026, 13:59:40) [Clang 23.1.3 ]"
+        }
+      },
+      "score": 0.0,
+      "selected": 8,
+      "suite": "development"
+    },
+    {
+      "candidate": "hill-climb/attempts/000-baseline/candidate.py",
+      "candidate_sha256": "0720b56482a445967ff2a98ec5cfa668c858b8a6f662da74a55c21b257393efc",
+      "case_ids": [
+        "dev-howto",
+        "dev-generic",
+        "dev-explicit",
+        "dev-duplicate",
+        "dev-ambiguous",
+        "dev-password",
+        "dev-closed",
+        "dev-unrelated"
+      ],
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 4,
+        "PASS": 4,
+        "UNKNOWN": 0
+      },
+      "directory": "hill-climb/attempts/000-baseline",
+      "executed": 8,
+      "identity": {
+        "files": {
+          "evals/cases.jsonl": "71f1d8c50f7ce2b3ca512c6f2703faa4e30d5c63237824e3a73e7a573cf4f7b2",
+          "evals/rubric.md": "cb133b50752a48098d463a562d7553ec5a5b29bfef1825b4e393e7de33d66dd8",
+          "evals/spec.json": "eb6f21266223c16708a4ed3bb4f401f3a2adb3355b9e176152665d70a665d8f6",
+          "evaluate.py": "fd1fdaa4b090852f8d0a6462303411bea5488dcc7f7a08895146e32d52b0430d"
+        },
+        "protocol": {
+          "confirmation": "baseline and incumbent; preserve baseline PASS; no lower score",
+          "execution_boundary": "trusted local subprocess; not a security sandbox",
+          "name": "deterministic-local-support-v1",
+          "new_ticket_issue": "vpn",
+          "new_ticket_status": "open",
+          "python_flags": [
+            "-I"
+          ],
+          "selection": "strict development improvement; preserve every incumbent PASS",
+          "timeout_seconds": 3,
+          "trials_per_case": 1
+        },
+        "python": {
+          "executable": "/Users/clayton/.local/share/uv/python/cpython-3.12.16-macos-aarch64-none/bin/python3.12",
+          "implementation": "CPython",
+          "platform": "macOS-27.2-arm64-arm-64bit",
+          "version": "3.12.16 (main, Oct 26 2026, 13:59:40) [Clang 23.1.3 ]"
+        }
+      },
+      "score": 0.5,
+      "selected": 8,
+      "suite": "development"
+    },
+    {
+      "candidate": "hill-climb/attempts/001-proposal/candidate.py",
+      "candidate_sha256": "5fff29e7ea1a726cc9a4a74376ea5b93662fd81269e7497d9f5aa63a0684b230",
+      "case_ids": [
+        "dev-howto",
+        "dev-generic",
+        "dev-explicit",
+        "dev-duplicate",
+        "dev-ambiguous",
+        "dev-password",
+        "dev-closed",
+        "dev-unrelated"
+      ],
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 2,
+        "PASS": 6,
+        "UNKNOWN": 0
+      },
+      "directory": "hill-climb/attempts/001-proposal",
+      "executed": 8,
+      "identity": {
+        "files": {
+          "evals/cases.jsonl": "71f1d8c50f7ce2b3ca512c6f2703faa4e30d5c63237824e3a73e7a573cf4f7b2",
+          "evals/rubric.md": "cb133b50752a48098d463a562d7553ec5a5b29bfef1825b4e393e7de33d66dd8",
+          "evals/spec.json": "eb6f21266223c16708a4ed3bb4f401f3a2adb3355b9e176152665d70a665d8f6",
+          "evaluate.py": "fd1fdaa4b090852f8d0a6462303411bea5488dcc7f7a08895146e32d52b0430d"
+        },
+        "protocol": {
+          "confirmation": "baseline and incumbent; preserve baseline PASS; no lower score",
+          "execution_boundary": "trusted local subprocess; not a security sandbox",
+          "name": "deterministic-local-support-v1",
+          "new_ticket_issue": "vpn",
+          "new_ticket_status": "open",
+          "python_flags": [
+            "-I"
+          ],
+          "selection": "strict development improvement; preserve every incumbent PASS",
+          "timeout_seconds": 3,
+          "trials_per_case": 1
+        },
+        "python": {
+          "executable": "/Users/clayton/.local/share/uv/python/cpython-3.12.16-macos-aarch64-none/bin/python3.12",
+          "implementation": "CPython",
+          "platform": "macOS-27.2-arm64-arm-64bit",
+          "version": "3.12.16 (main, Oct 26 2026, 13:59:40) [Clang 23.1.3 ]"
+        }
+      },
+      "score": 0.75,
+      "selected": 8,
+      "suite": "development"
+    },
+    {
+      "candidate": "hill-climb/attempts/002-proposal/candidate.py",
+      "candidate_sha256": "d8cc818e83af4453a44e9025484ae6e23ecc7cbcf8c9e621efa56c21a179a1c3",
+      "case_ids": [
+        "dev-howto",
+        "dev-generic",
+        "dev-explicit",
+        "dev-duplicate",
+        "dev-ambiguous",
+        "dev-password",
+        "dev-closed",
+        "dev-unrelated"
+      ],
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 8,
+        "UNKNOWN": 0
+      },
+      "directory": "hill-climb/attempts/002-proposal",
+      "executed": 8,
+      "identity": {
+        "files": {
+          "evals/cases.jsonl": "71f1d8c50f7ce2b3ca512c6f2703faa4e30d5c63237824e3a73e7a573cf4f7b2",
+          "evals/rubric.md": "cb133b50752a48098d463a562d7553ec5a5b29bfef1825b4e393e7de33d66dd8",
+          "evals/spec.json": "eb6f21266223c16708a4ed3bb4f401f3a2adb3355b9e176152665d70a665d8f6",
+          "evaluate.py": "fd1fdaa4b090852f8d0a6462303411bea5488dcc7f7a08895146e32d52b0430d"
+        },
+        "protocol": {
+          "confirmation": "baseline and incumbent; preserve baseline PASS; no lower score",
+          "execution_boundary": "trusted local subprocess; not a security sandbox",
+          "name": "deterministic-local-support-v1",
+          "new_ticket_issue": "vpn",
+          "new_ticket_status": "open",
+          "python_flags": [
+            "-I"
+          ],
+          "selection": "strict development improvement; preserve every incumbent PASS",
+          "timeout_seconds": 3,
+          "trials_per_case": 1
+        },
+        "python": {
+          "executable": "/Users/clayton/.local/share/uv/python/cpython-3.12.16-macos-aarch64-none/bin/python3.12",
+          "implementation": "CPython",
+          "platform": "macOS-27.2-arm64-arm-64bit",
+          "version": "3.12.16 (main, Oct 26 2026, 13:59:40) [Clang 23.1.3 ]"
+        }
+      },
+      "score": 1.0,
+      "selected": 8,
+      "suite": "development"
+    },
+    {
+      "candidate": "hill-climb/attempts/003-confirm-baseline/candidate.py",
+      "candidate_sha256": "0720b56482a445967ff2a98ec5cfa668c858b8a6f662da74a55c21b257393efc",
+      "case_ids": [
+        "conf-howto",
+        "conf-targeted",
+        "conf-duplicate",
+        "conf-preservation"
+      ],
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 2,
+        "PASS": 2,
+        "UNKNOWN": 0
+      },
+      "directory": "hill-climb/attempts/003-confirm-baseline",
+      "executed": 4,
+      "identity": {
+        "files": {
+          "evals/cases.jsonl": "71f1d8c50f7ce2b3ca512c6f2703faa4e30d5c63237824e3a73e7a573cf4f7b2",
+          "evals/rubric.md": "cb133b50752a48098d463a562d7553ec5a5b29bfef1825b4e393e7de33d66dd8",
+          "evals/spec.json": "eb6f21266223c16708a4ed3bb4f401f3a2adb3355b9e176152665d70a665d8f6",
+          "evaluate.py": "fd1fdaa4b090852f8d0a6462303411bea5488dcc7f7a08895146e32d52b0430d"
+        },
+        "protocol": {
+          "confirmation": "baseline and incumbent; preserve baseline PASS; no lower score",
+          "execution_boundary": "trusted local subprocess; not a security sandbox",
+          "name": "deterministic-local-support-v1",
+          "new_ticket_issue": "vpn",
+          "new_ticket_status": "open",
+          "python_flags": [
+            "-I"
+          ],
+          "selection": "strict development improvement; preserve every incumbent PASS",
+          "timeout_seconds": 3,
+          "trials_per_case": 1
+        },
+        "python": {
+          "executable": "/Users/clayton/.local/share/uv/python/cpython-3.12.16-macos-aarch64-none/bin/python3.12",
+          "implementation": "CPython",
+          "platform": "macOS-27.2-arm64-arm-64bit",
+          "version": "3.12.16 (main, Oct 26 2026, 13:59:40) [Clang 23.1.3 ]"
+        }
+      },
+      "score": 0.5,
+      "selected": 4,
+      "suite": "confirmation"
+    },
+    {
+      "candidate": "hill-climb/attempts/004-confirm-incumbent/candidate.py",
+      "candidate_sha256": "d8cc818e83af4453a44e9025484ae6e23ecc7cbcf8c9e621efa56c21a179a1c3",
+      "case_ids": [
+        "conf-howto",
+        "conf-targeted",
+        "conf-duplicate",
+        "conf-preservation"
+      ],
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 4,
+        "UNKNOWN": 0
+      },
+      "directory": "hill-climb/attempts/004-confirm-incumbent",
+      "executed": 4,
+      "identity": {
+        "files": {
+          "evals/cases.jsonl": "71f1d8c50f7ce2b3ca512c6f2703faa4e30d5c63237824e3a73e7a573cf4f7b2",
+          "evals/rubric.md": "cb133b50752a48098d463a562d7553ec5a5b29bfef1825b4e393e7de33d66dd8",
+          "evals/spec.json": "eb6f21266223c16708a4ed3bb4f401f3a2adb3355b9e176152665d70a665d8f6",
+          "evaluate.py": "fd1fdaa4b090852f8d0a6462303411bea5488dcc7f7a08895146e32d52b0430d"
+        },
+        "protocol": {
+          "confirmation": "baseline and incumbent; preserve baseline PASS; no lower score",
+          "execution_boundary": "trusted local subprocess; not a security sandbox",
+          "name": "deterministic-local-support-v1",
+          "new_ticket_issue": "vpn",
+          "new_ticket_status": "open",
+          "python_flags": [
+            "-I"
+          ],
+          "selection": "strict development improvement; preserve every incumbent PASS",
+          "timeout_seconds": 3,
+          "trials_per_case": 1
+        },
+        "python": {
+          "executable": "/Users/clayton/.local/share/uv/python/cpython-3.12.16-macos-aarch64-none/bin/python3.12",
+          "implementation": "CPython",
+          "platform": "macOS-27.2-arm64-arm-64bit",
+          "version": "3.12.16 (main, Oct 26 2026, 13:59:40) [Clang 23.1.3 ]"
+        }
+      },
+      "score": 1.0,
+      "selected": 4,
+      "suite": "confirmation"
+    },
+    {
+      "candidate": "judge-calibration/dataset/native-source/improved/candidate.py",
+      "candidate_sha256": "d8cc818e83af4453a44e9025484ae6e23ecc7cbcf8c9e621efa56c21a179a1c3",
+      "case_ids": [
+        "dev-howto",
+        "dev-generic",
+        "dev-explicit",
+        "dev-duplicate",
+        "dev-ambiguous",
+        "dev-password",
+        "dev-closed",
+        "dev-unrelated",
+        "conf-howto",
+        "conf-targeted",
+        "conf-duplicate",
+        "conf-preservation"
+      ],
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 12,
+        "UNKNOWN": 0
+      },
+      "directory": "judge-calibration/dataset/native-source/improved",
+      "executed": 12,
+      "identity": {
+        "files": {
+          "evals/cases.jsonl": "71f1d8c50f7ce2b3ca512c6f2703faa4e30d5c63237824e3a73e7a573cf4f7b2",
+          "evals/rubric.md": "cb133b50752a48098d463a562d7553ec5a5b29bfef1825b4e393e7de33d66dd8",
+          "evals/spec.json": "eb6f21266223c16708a4ed3bb4f401f3a2adb3355b9e176152665d70a665d8f6",
+          "evaluate.py": "fd1fdaa4b090852f8d0a6462303411bea5488dcc7f7a08895146e32d52b0430d"
+        },
+        "protocol": {
+          "confirmation": "baseline and incumbent; preserve baseline PASS; no lower score",
+          "execution_boundary": "trusted local subprocess; not a security sandbox",
+          "name": "deterministic-local-support-v1",
+          "new_ticket_issue": "vpn",
+          "new_ticket_status": "open",
+          "python_flags": [
+            "-I"
+          ],
+          "selection": "strict development improvement; preserve every incumbent PASS",
+          "timeout_seconds": 3,
+          "trials_per_case": 1
+        },
+        "python": {
+          "executable": "/Users/clayton/.local/share/uv/python/cpython-3.12.16-macos-aarch64-none/bin/python3.12",
+          "implementation": "CPython",
+          "platform": "macOS-27.2-arm64-arm-64bit",
+          "version": "3.12.16 (main, Oct 26 2026, 13:59:40) [Clang 23.1.3 ]"
+        }
+      },
+      "score": 1.0,
+      "selected": 12,
+      "suite": "all"
+    },
+    {
+      "candidate": "judge-calibration/dataset/native-source/support_agent/candidate.py",
+      "candidate_sha256": "0720b56482a445967ff2a98ec5cfa668c858b8a6f662da74a55c21b257393efc",
+      "case_ids": [
+        "dev-howto",
+        "dev-generic",
+        "dev-explicit",
+        "dev-duplicate",
+        "dev-ambiguous",
+        "dev-password",
+        "dev-closed",
+        "dev-unrelated",
+        "conf-howto",
+        "conf-targeted",
+        "conf-duplicate",
+        "conf-preservation"
+      ],
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 6,
+        "PASS": 6,
+        "UNKNOWN": 0
+      },
+      "directory": "judge-calibration/dataset/native-source/support_agent",
+      "executed": 12,
+      "identity": {
+        "files": {
+          "evals/cases.jsonl": "71f1d8c50f7ce2b3ca512c6f2703faa4e30d5c63237824e3a73e7a573cf4f7b2",
+          "evals/rubric.md": "cb133b50752a48098d463a562d7553ec5a5b29bfef1825b4e393e7de33d66dd8",
+          "evals/spec.json": "eb6f21266223c16708a4ed3bb4f401f3a2adb3355b9e176152665d70a665d8f6",
+          "evaluate.py": "fd1fdaa4b090852f8d0a6462303411bea5488dcc7f7a08895146e32d52b0430d"
+        },
+        "protocol": {
+          "confirmation": "baseline and incumbent; preserve baseline PASS; no lower score",
+          "execution_boundary": "trusted local subprocess; not a security sandbox",
+          "name": "deterministic-local-support-v1",
+          "new_ticket_issue": "vpn",
+          "new_ticket_status": "open",
+          "python_flags": [
+            "-I"
+          ],
+          "selection": "strict development improvement; preserve every incumbent PASS",
+          "timeout_seconds": 3,
+          "trials_per_case": 1
+        },
+        "python": {
+          "executable": "/Users/clayton/.local/share/uv/python/cpython-3.12.16-macos-aarch64-none/bin/python3.12",
+          "implementation": "CPython",
+          "platform": "macOS-27.2-arm64-arm-64bit",
+          "version": "3.12.16 (main, Oct 26 2026, 13:59:40) [Clang 23.1.3 ]"
+        }
+      },
+      "score": 0.5,
+      "selected": 12,
+      "suite": "all"
+    },
+    {
+      "candidate": "run-conforming/candidate.py",
+      "candidate_sha256": "d8cc818e83af4453a44e9025484ae6e23ecc7cbcf8c9e621efa56c21a179a1c3",
+      "case_ids": [
+        "dev-howto",
+        "dev-generic",
+        "dev-explicit",
+        "dev-duplicate",
+        "dev-ambiguous",
+        "dev-password",
+        "dev-closed",
+        "dev-unrelated"
+      ],
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 8,
+        "UNKNOWN": 0
+      },
+      "directory": "run-conforming",
+      "executed": 8,
+      "identity": {
+        "files": {
+          "evals/cases.jsonl": "71f1d8c50f7ce2b3ca512c6f2703faa4e30d5c63237824e3a73e7a573cf4f7b2",
+          "evals/rubric.md": "cb133b50752a48098d463a562d7553ec5a5b29bfef1825b4e393e7de33d66dd8",
+          "evals/spec.json": "eb6f21266223c16708a4ed3bb4f401f3a2adb3355b9e176152665d70a665d8f6",
+          "evaluate.py": "fd1fdaa4b090852f8d0a6462303411bea5488dcc7f7a08895146e32d52b0430d"
+        },
+        "protocol": {
+          "confirmation": "baseline and incumbent; preserve baseline PASS; no lower score",
+          "execution_boundary": "trusted local subprocess; not a security sandbox",
+          "name": "deterministic-local-support-v1",
+          "new_ticket_issue": "vpn",
+          "new_ticket_status": "open",
+          "python_flags": [
+            "-I"
+          ],
+          "selection": "strict development improvement; preserve every incumbent PASS",
+          "timeout_seconds": 3,
+          "trials_per_case": 1
+        },
+        "python": {
+          "executable": "/Users/clayton/.local/share/uv/python/cpython-3.12.16-macos-aarch64-none/bin/python3.12",
+          "implementation": "CPython",
+          "platform": "macOS-27.2-arm64-arm-64bit",
+          "version": "3.12.16 (main, Oct 26 2026, 13:59:40) [Clang 23.1.3 ]"
+        }
+      },
+      "score": 1.0,
+      "selected": 8,
+      "suite": "development"
+    },
+    {
+      "candidate": "run-original/candidate.py",
+      "candidate_sha256": "0720b56482a445967ff2a98ec5cfa668c858b8a6f662da74a55c21b257393efc",
+      "case_ids": [
+        "dev-howto",
+        "dev-generic",
+        "dev-explicit",
+        "dev-duplicate",
+        "dev-ambiguous",
+        "dev-password",
+        "dev-closed",
+        "dev-unrelated"
+      ],
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 4,
+        "PASS": 4,
+        "UNKNOWN": 0
+      },
+      "directory": "run-original",
+      "executed": 8,
+      "identity": {
+        "files": {
+          "evals/cases.jsonl": "71f1d8c50f7ce2b3ca512c6f2703faa4e30d5c63237824e3a73e7a573cf4f7b2",
+          "evals/rubric.md": "cb133b50752a48098d463a562d7553ec5a5b29bfef1825b4e393e7de33d66dd8",
+          "evals/spec.json": "eb6f21266223c16708a4ed3bb4f401f3a2adb3355b9e176152665d70a665d8f6",
+          "evaluate.py": "fd1fdaa4b090852f8d0a6462303411bea5488dcc7f7a08895146e32d52b0430d"
+        },
+        "protocol": {
+          "confirmation": "baseline and incumbent; preserve baseline PASS; no lower score",
+          "execution_boundary": "trusted local subprocess; not a security sandbox",
+          "name": "deterministic-local-support-v1",
+          "new_ticket_issue": "vpn",
+          "new_ticket_status": "open",
+          "python_flags": [
+            "-I"
+          ],
+          "selection": "strict development improvement; preserve every incumbent PASS",
+          "timeout_seconds": 3,
+          "trials_per_case": 1
+        },
+        "python": {
+          "executable": "/Users/clayton/.local/share/uv/python/cpython-3.12.16-macos-aarch64-none/bin/python3.12",
+          "implementation": "CPython",
+          "platform": "macOS-27.2-arm64-arm-64bit",
+          "version": "3.12.16 (main, Oct 26 2026, 13:59:40) [Clang 23.1.3 ]"
+        }
+      },
+      "score": 0.5,
+      "selected": 8,
+      "suite": "development"
+    },
+    {
+      "candidate": "simplification/native/drop-conflict-a/candidate.py",
+      "candidate_sha256": "ff1398a9bf4e7266f4253f12afc5a75852e97991e88aa742cf957de30f449adb",
+      "case_ids": [
+        "dev-howto",
+        "dev-generic",
+        "dev-explicit",
+        "dev-duplicate",
+        "dev-ambiguous",
+        "dev-password",
+        "dev-closed",
+        "dev-unrelated"
+      ],
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 4,
+        "PASS": 4,
+        "UNKNOWN": 0
+      },
+      "directory": "simplification/native/drop-conflict-a",
+      "executed": 8,
+      "identity": {
+        "files": {
+          "evals/cases.jsonl": "71f1d8c50f7ce2b3ca512c6f2703faa4e30d5c63237824e3a73e7a573cf4f7b2",
+          "evals/rubric.md": "cb133b50752a48098d463a562d7553ec5a5b29bfef1825b4e393e7de33d66dd8",
+          "evals/spec.json": "eb6f21266223c16708a4ed3bb4f401f3a2adb3355b9e176152665d70a665d8f6",
+          "evaluate.py": "fd1fdaa4b090852f8d0a6462303411bea5488dcc7f7a08895146e32d52b0430d"
+        },
+        "protocol": {
+          "confirmation": "baseline and incumbent; preserve baseline PASS; no lower score",
+          "execution_boundary": "trusted local subprocess; not a security sandbox",
+          "name": "deterministic-local-support-v1",
+          "new_ticket_issue": "vpn",
+          "new_ticket_status": "open",
+          "python_flags": [
+            "-I"
+          ],
+          "selection": "strict development improvement; preserve every incumbent PASS",
+          "timeout_seconds": 3,
+          "trials_per_case": 1
+        },
+        "python": {
+          "executable": "/Users/clayton/.local/share/uv/python/cpython-3.12.16-macos-aarch64-none/bin/python3.12",
+          "implementation": "CPython",
+          "platform": "macOS-27.2-arm64-arm-64bit",
+          "version": "3.12.16 (main, Oct 26 2026, 13:59:40) [Clang 23.1.3 ]"
+        }
+      },
+      "score": 0.5,
+      "selected": 8,
+      "suite": "all"
+    },
+    {
+      "candidate": "simplification/native/drop-conflict-b/candidate.py",
+      "candidate_sha256": "9c071428acb1d134061d3ecfae9ee3d06dcc0fce716f9f29028610b04f214cc8",
+      "case_ids": [
+        "dev-howto",
+        "dev-generic",
+        "dev-explicit",
+        "dev-duplicate",
+        "dev-ambiguous",
+        "dev-password",
+        "dev-closed",
+        "dev-unrelated"
+      ],
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 4,
+        "PASS": 4,
+        "UNKNOWN": 0
+      },
+      "directory": "simplification/native/drop-conflict-b",
+      "executed": 8,
+      "identity": {
+        "files": {
+          "evals/cases.jsonl": "71f1d8c50f7ce2b3ca512c6f2703faa4e30d5c63237824e3a73e7a573cf4f7b2",
+          "evals/rubric.md": "cb133b50752a48098d463a562d7553ec5a5b29bfef1825b4e393e7de33d66dd8",
+          "evals/spec.json": "eb6f21266223c16708a4ed3bb4f401f3a2adb3355b9e176152665d70a665d8f6",
+          "evaluate.py": "fd1fdaa4b090852f8d0a6462303411bea5488dcc7f7a08895146e32d52b0430d"
+        },
+        "protocol": {
+          "confirmation": "baseline and incumbent; preserve baseline PASS; no lower score",
+          "execution_boundary": "trusted local subprocess; not a security sandbox",
+          "name": "deterministic-local-support-v1",
+          "new_ticket_issue": "vpn",
+          "new_ticket_status": "open",
+          "python_flags": [
+            "-I"
+          ],
+          "selection": "strict development improvement; preserve every incumbent PASS",
+          "timeout_seconds": 3,
+          "trials_per_case": 1
+        },
+        "python": {
+          "executable": "/Users/clayton/.local/share/uv/python/cpython-3.12.16-macos-aarch64-none/bin/python3.12",
+          "implementation": "CPython",
+          "platform": "macOS-27.2-arm64-arm-64bit",
+          "version": "3.12.16 (main, Oct 26 2026, 13:59:40) [Clang 23.1.3 ]"
+        }
+      },
+      "score": 0.5,
+      "selected": 8,
+      "suite": "all"
+    },
+    {
+      "candidate": "simplification/native/drop-conflict-pair/candidate.py",
+      "candidate_sha256": "872a804ac71748d8bdae154522713a31a109c9c0d7f004d321b35a1546f0ab6b",
+      "case_ids": [
+        "dev-howto",
+        "dev-generic",
+        "dev-explicit",
+        "dev-duplicate",
+        "dev-ambiguous",
+        "dev-password",
+        "dev-closed",
+        "dev-unrelated"
+      ],
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 8,
+        "UNKNOWN": 0
+      },
+      "directory": "simplification/native/drop-conflict-pair",
+      "executed": 8,
+      "identity": {
+        "files": {
+          "evals/cases.jsonl": "71f1d8c50f7ce2b3ca512c6f2703faa4e30d5c63237824e3a73e7a573cf4f7b2",
+          "evals/rubric.md": "cb133b50752a48098d463a562d7553ec5a5b29bfef1825b4e393e7de33d66dd8",
+          "evals/spec.json": "eb6f21266223c16708a4ed3bb4f401f3a2adb3355b9e176152665d70a665d8f6",
+          "evaluate.py": "fd1fdaa4b090852f8d0a6462303411bea5488dcc7f7a08895146e32d52b0430d"
+        },
+        "protocol": {
+          "confirmation": "baseline and incumbent; preserve baseline PASS; no lower score",
+          "execution_boundary": "trusted local subprocess; not a security sandbox",
+          "name": "deterministic-local-support-v1",
+          "new_ticket_issue": "vpn",
+          "new_ticket_status": "open",
+          "python_flags": [
+            "-I"
+          ],
+          "selection": "strict development improvement; preserve every incumbent PASS",
+          "timeout_seconds": 3,
+          "trials_per_case": 1
+        },
+        "python": {
+          "executable": "/Users/clayton/.local/share/uv/python/cpython-3.12.16-macos-aarch64-none/bin/python3.12",
+          "implementation": "CPython",
+          "platform": "macOS-27.2-arm64-arm-64bit",
+          "version": "3.12.16 (main, Oct 26 2026, 13:59:40) [Clang 23.1.3 ]"
+        }
+      },
+      "score": 1.0,
+      "selected": 8,
+      "suite": "all"
+    },
+    {
+      "candidate": "simplification/native/drop-duplicate-a/candidate.py",
+      "candidate_sha256": "6c183962f27c6ff769a1a127f92412f27b22e8cf49b4299573b6d8719a732cc3",
+      "case_ids": [
+        "dev-howto",
+        "dev-generic",
+        "dev-explicit",
+        "dev-duplicate",
+        "dev-ambiguous",
+        "dev-password",
+        "dev-closed",
+        "dev-unrelated"
+      ],
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 8,
+        "UNKNOWN": 0
+      },
+      "directory": "simplification/native/drop-duplicate-a",
+      "executed": 8,
+      "identity": {
+        "files": {
+          "evals/cases.jsonl": "71f1d8c50f7ce2b3ca512c6f2703faa4e30d5c63237824e3a73e7a573cf4f7b2",
+          "evals/rubric.md": "cb133b50752a48098d463a562d7553ec5a5b29bfef1825b4e393e7de33d66dd8",
+          "evals/spec.json": "eb6f21266223c16708a4ed3bb4f401f3a2adb3355b9e176152665d70a665d8f6",
+          "evaluate.py": "fd1fdaa4b090852f8d0a6462303411bea5488dcc7f7a08895146e32d52b0430d"
+        },
+        "protocol": {
+          "confirmation": "baseline and incumbent; preserve baseline PASS; no lower score",
+          "execution_boundary": "trusted local subprocess; not a security sandbox",
+          "name": "deterministic-local-support-v1",
+          "new_ticket_issue": "vpn",
+          "new_ticket_status": "open",
+          "python_flags": [
+            "-I"
+          ],
+          "selection": "strict development improvement; preserve every incumbent PASS",
+          "timeout_seconds": 3,
+          "trials_per_case": 1
+        },
+        "python": {
+          "executable": "/Users/clayton/.local/share/uv/python/cpython-3.12.16-macos-aarch64-none/bin/python3.12",
+          "implementation": "CPython",
+          "platform": "macOS-27.2-arm64-arm-64bit",
+          "version": "3.12.16 (main, Oct 26 2026, 13:59:40) [Clang 23.1.3 ]"
+        }
+      },
+      "score": 1.0,
+      "selected": 8,
+      "suite": "all"
+    },
+    {
+      "candidate": "simplification/native/drop-duplicate-b/candidate.py",
+      "candidate_sha256": "45a2486069fbfefe7a08b9dedf4be490fe3f3ac0527ca45d3a6d3563957de6ed",
+      "case_ids": [
+        "dev-howto",
+        "dev-generic",
+        "dev-explicit",
+        "dev-duplicate",
+        "dev-ambiguous",
+        "dev-password",
+        "dev-closed",
+        "dev-unrelated"
+      ],
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 1,
+        "PASS": 7,
+        "UNKNOWN": 0
+      },
+      "directory": "simplification/native/drop-duplicate-b",
+      "executed": 8,
+      "identity": {
+        "files": {
+          "evals/cases.jsonl": "71f1d8c50f7ce2b3ca512c6f2703faa4e30d5c63237824e3a73e7a573cf4f7b2",
+          "evals/rubric.md": "cb133b50752a48098d463a562d7553ec5a5b29bfef1825b4e393e7de33d66dd8",
+          "evals/spec.json": "eb6f21266223c16708a4ed3bb4f401f3a2adb3355b9e176152665d70a665d8f6",
+          "evaluate.py": "fd1fdaa4b090852f8d0a6462303411bea5488dcc7f7a08895146e32d52b0430d"
+        },
+        "protocol": {
+          "confirmation": "baseline and incumbent; preserve baseline PASS; no lower score",
+          "execution_boundary": "trusted local subprocess; not a security sandbox",
+          "name": "deterministic-local-support-v1",
+          "new_ticket_issue": "vpn",
+          "new_ticket_status": "open",
+          "python_flags": [
+            "-I"
+          ],
+          "selection": "strict development improvement; preserve every incumbent PASS",
+          "timeout_seconds": 3,
+          "trials_per_case": 1
+        },
+        "python": {
+          "executable": "/Users/clayton/.local/share/uv/python/cpython-3.12.16-macos-aarch64-none/bin/python3.12",
+          "implementation": "CPython",
+          "platform": "macOS-27.2-arm64-arm-64bit",
+          "version": "3.12.16 (main, Oct 26 2026, 13:59:40) [Clang 23.1.3 ]"
+        }
+      },
+      "score": 0.875,
+      "selected": 8,
+      "suite": "all"
+    },
+    {
+      "candidate": "simplification/native/drop-noise/candidate.py",
+      "candidate_sha256": "9da54f3355108076f583afb8196c36bd371f80bdaad5bc25100e2e915bab8bab",
+      "case_ids": [
+        "dev-howto",
+        "dev-generic",
+        "dev-explicit",
+        "dev-duplicate",
+        "dev-ambiguous",
+        "dev-password",
+        "dev-closed",
+        "dev-unrelated"
+      ],
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 8,
+        "UNKNOWN": 0
+      },
+      "directory": "simplification/native/drop-noise",
+      "executed": 8,
+      "identity": {
+        "files": {
+          "evals/cases.jsonl": "71f1d8c50f7ce2b3ca512c6f2703faa4e30d5c63237824e3a73e7a573cf4f7b2",
+          "evals/rubric.md": "cb133b50752a48098d463a562d7553ec5a5b29bfef1825b4e393e7de33d66dd8",
+          "evals/spec.json": "eb6f21266223c16708a4ed3bb4f401f3a2adb3355b9e176152665d70a665d8f6",
+          "evaluate.py": "fd1fdaa4b090852f8d0a6462303411bea5488dcc7f7a08895146e32d52b0430d"
+        },
+        "protocol": {
+          "confirmation": "baseline and incumbent; preserve baseline PASS; no lower score",
+          "execution_boundary": "trusted local subprocess; not a security sandbox",
+          "name": "deterministic-local-support-v1",
+          "new_ticket_issue": "vpn",
+          "new_ticket_status": "open",
+          "python_flags": [
+            "-I"
+          ],
+          "selection": "strict development improvement; preserve every incumbent PASS",
+          "timeout_seconds": 3,
+          "trials_per_case": 1
+        },
+        "python": {
+          "executable": "/Users/clayton/.local/share/uv/python/cpython-3.12.16-macos-aarch64-none/bin/python3.12",
+          "implementation": "CPython",
+          "platform": "macOS-27.2-arm64-arm-64bit",
+          "version": "3.12.16 (main, Oct 26 2026, 13:59:40) [Clang 23.1.3 ]"
+        }
+      },
+      "score": 1.0,
+      "selected": 8,
+      "suite": "all"
+    },
+    {
+      "candidate": "simplification/native/final-new-existing/candidate.py",
+      "candidate_sha256": "cfd3290663da1d5980890d655f5e00cf294c989134bea9b94eae5d4bc12c1fb1",
+      "case_ids": [
+        "conf-howto",
+        "conf-targeted",
+        "conf-duplicate",
+        "conf-preservation"
+      ],
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 4,
+        "UNKNOWN": 0
+      },
+      "directory": "simplification/native/final-new-existing",
+      "executed": 4,
+      "identity": {
+        "files": {
+          "evals/cases.jsonl": "71f1d8c50f7ce2b3ca512c6f2703faa4e30d5c63237824e3a73e7a573cf4f7b2",
+          "evals/rubric.md": "cb133b50752a48098d463a562d7553ec5a5b29bfef1825b4e393e7de33d66dd8",
+          "evals/spec.json": "eb6f21266223c16708a4ed3bb4f401f3a2adb3355b9e176152665d70a665d8f6",
+          "evaluate.py": "fd1fdaa4b090852f8d0a6462303411bea5488dcc7f7a08895146e32d52b0430d"
+        },
+        "protocol": {
+          "confirmation": "baseline and incumbent; preserve baseline PASS; no lower score",
+          "execution_boundary": "trusted local subprocess; not a security sandbox",
+          "name": "deterministic-local-support-v1",
+          "new_ticket_issue": "vpn",
+          "new_ticket_status": "open",
+          "python_flags": [
+            "-I"
+          ],
+          "selection": "strict development improvement; preserve every incumbent PASS",
+          "timeout_seconds": 3,
+          "trials_per_case": 1
+        },
+        "python": {
+          "executable": "/Users/clayton/.local/share/uv/python/cpython-3.12.16-macos-aarch64-none/bin/python3.12",
+          "implementation": "CPython",
+          "platform": "macOS-27.2-arm64-arm-64bit",
+          "version": "3.12.16 (main, Oct 26 2026, 13:59:40) [Clang 23.1.3 ]"
+        }
+      },
+      "score": 1.0,
+      "selected": 4,
+      "suite": "all"
+    },
+    {
+      "candidate": "simplification/native/final-new-simplified/candidate.py",
+      "candidate_sha256": "c1a85f6bd9c8c5d53d51d44220eacde87043630d7dceb5b8e4625b2cbb37e570",
+      "case_ids": [
+        "conf-howto",
+        "conf-targeted",
+        "conf-duplicate",
+        "conf-preservation"
+      ],
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 4,
+        "UNKNOWN": 0
+      },
+      "directory": "simplification/native/final-new-simplified",
+      "executed": 4,
+      "identity": {
+        "files": {
+          "evals/cases.jsonl": "71f1d8c50f7ce2b3ca512c6f2703faa4e30d5c63237824e3a73e7a573cf4f7b2",
+          "evals/rubric.md": "cb133b50752a48098d463a562d7553ec5a5b29bfef1825b4e393e7de33d66dd8",
+          "evals/spec.json": "eb6f21266223c16708a4ed3bb4f401f3a2adb3355b9e176152665d70a665d8f6",
+          "evaluate.py": "fd1fdaa4b090852f8d0a6462303411bea5488dcc7f7a08895146e32d52b0430d"
+        },
+        "protocol": {
+          "confirmation": "baseline and incumbent; preserve baseline PASS; no lower score",
+          "execution_boundary": "trusted local subprocess; not a security sandbox",
+          "name": "deterministic-local-support-v1",
+          "new_ticket_issue": "vpn",
+          "new_ticket_status": "open",
+          "python_flags": [
+            "-I"
+          ],
+          "selection": "strict development improvement; preserve every incumbent PASS",
+          "timeout_seconds": 3,
+          "trials_per_case": 1
+        },
+        "python": {
+          "executable": "/Users/clayton/.local/share/uv/python/cpython-3.12.16-macos-aarch64-none/bin/python3.12",
+          "implementation": "CPython",
+          "platform": "macOS-27.2-arm64-arm-64bit",
+          "version": "3.12.16 (main, Oct 26 2026, 13:59:40) [Clang 23.1.3 ]"
+        }
+      },
+      "score": 1.0,
+      "selected": 4,
+      "suite": "all"
+    },
+    {
+      "candidate": "simplification/native/final-old-existing/candidate.py",
+      "candidate_sha256": "8bd79ed28276f336f5f4727a603900ab194c4e7c456ed736eff81e34acd802b2",
+      "case_ids": [
+        "conf-howto",
+        "conf-targeted",
+        "conf-duplicate",
+        "conf-preservation"
+      ],
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 4,
+        "UNKNOWN": 0
+      },
+      "directory": "simplification/native/final-old-existing",
+      "executed": 4,
+      "identity": {
+        "files": {
+          "evals/cases.jsonl": "71f1d8c50f7ce2b3ca512c6f2703faa4e30d5c63237824e3a73e7a573cf4f7b2",
+          "evals/rubric.md": "cb133b50752a48098d463a562d7553ec5a5b29bfef1825b4e393e7de33d66dd8",
+          "evals/spec.json": "eb6f21266223c16708a4ed3bb4f401f3a2adb3355b9e176152665d70a665d8f6",
+          "evaluate.py": "fd1fdaa4b090852f8d0a6462303411bea5488dcc7f7a08895146e32d52b0430d"
+        },
+        "protocol": {
+          "confirmation": "baseline and incumbent; preserve baseline PASS; no lower score",
+          "execution_boundary": "trusted local subprocess; not a security sandbox",
+          "name": "deterministic-local-support-v1",
+          "new_ticket_issue": "vpn",
+          "new_ticket_status": "open",
+          "python_flags": [
+            "-I"
+          ],
+          "selection": "strict development improvement; preserve every incumbent PASS",
+          "timeout_seconds": 3,
+          "trials_per_case": 1
+        },
+        "python": {
+          "executable": "/Users/clayton/.local/share/uv/python/cpython-3.12.16-macos-aarch64-none/bin/python3.12",
+          "implementation": "CPython",
+          "platform": "macOS-27.2-arm64-arm-64bit",
+          "version": "3.12.16 (main, Oct 26 2026, 13:59:40) [Clang 23.1.3 ]"
+        }
+      },
+      "score": 1.0,
+      "selected": 4,
+      "suite": "all"
+    },
+    {
+      "candidate": "simplification/native/final-old-reduced/candidate.py",
+      "candidate_sha256": "872a804ac71748d8bdae154522713a31a109c9c0d7f004d321b35a1546f0ab6b",
+      "case_ids": [
+        "conf-howto",
+        "conf-targeted",
+        "conf-duplicate",
+        "conf-preservation"
+      ],
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 4,
+        "UNKNOWN": 0
+      },
+      "directory": "simplification/native/final-old-reduced",
+      "executed": 4,
+      "identity": {
+        "files": {
+          "evals/cases.jsonl": "71f1d8c50f7ce2b3ca512c6f2703faa4e30d5c63237824e3a73e7a573cf4f7b2",
+          "evals/rubric.md": "cb133b50752a48098d463a562d7553ec5a5b29bfef1825b4e393e7de33d66dd8",
+          "evals/spec.json": "eb6f21266223c16708a4ed3bb4f401f3a2adb3355b9e176152665d70a665d8f6",
+          "evaluate.py": "fd1fdaa4b090852f8d0a6462303411bea5488dcc7f7a08895146e32d52b0430d"
+        },
+        "protocol": {
+          "confirmation": "baseline and incumbent; preserve baseline PASS; no lower score",
+          "execution_boundary": "trusted local subprocess; not a security sandbox",
+          "name": "deterministic-local-support-v1",
+          "new_ticket_issue": "vpn",
+          "new_ticket_status": "open",
+          "python_flags": [
+            "-I"
+          ],
+          "selection": "strict development improvement; preserve every incumbent PASS",
+          "timeout_seconds": 3,
+          "trials_per_case": 1
+        },
+        "python": {
+          "executable": "/Users/clayton/.local/share/uv/python/cpython-3.12.16-macos-aarch64-none/bin/python3.12",
+          "implementation": "CPython",
+          "platform": "macOS-27.2-arm64-arm-64bit",
+          "version": "3.12.16 (main, Oct 26 2026, 13:59:40) [Clang 23.1.3 ]"
+        }
+      },
+      "score": 1.0,
+      "selected": 4,
+      "suite": "all"
+    },
+    {
+      "candidate": "simplification/native/final-old-simplified/candidate.py",
+      "candidate_sha256": "ce35c8b8640da60a0f6141f24256e888ee056941e39ccfef6f9ef7661facd55f",
+      "case_ids": [
+        "conf-howto",
+        "conf-targeted",
+        "conf-duplicate",
+        "conf-preservation"
+      ],
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 2,
+        "PASS": 2,
+        "UNKNOWN": 0
+      },
+      "directory": "simplification/native/final-old-simplified",
+      "executed": 4,
+      "identity": {
+        "files": {
+          "evals/cases.jsonl": "71f1d8c50f7ce2b3ca512c6f2703faa4e30d5c63237824e3a73e7a573cf4f7b2",
+          "evals/rubric.md": "cb133b50752a48098d463a562d7553ec5a5b29bfef1825b4e393e7de33d66dd8",
+          "evals/spec.json": "eb6f21266223c16708a4ed3bb4f401f3a2adb3355b9e176152665d70a665d8f6",
+          "evaluate.py": "fd1fdaa4b090852f8d0a6462303411bea5488dcc7f7a08895146e32d52b0430d"
+        },
+        "protocol": {
+          "confirmation": "baseline and incumbent; preserve baseline PASS; no lower score",
+          "execution_boundary": "trusted local subprocess; not a security sandbox",
+          "name": "deterministic-local-support-v1",
+          "new_ticket_issue": "vpn",
+          "new_ticket_status": "open",
+          "python_flags": [
+            "-I"
+          ],
+          "selection": "strict development improvement; preserve every incumbent PASS",
+          "timeout_seconds": 3,
+          "trials_per_case": 1
+        },
+        "python": {
+          "executable": "/Users/clayton/.local/share/uv/python/cpython-3.12.16-macos-aarch64-none/bin/python3.12",
+          "implementation": "CPython",
+          "platform": "macOS-27.2-arm64-arm-64bit",
+          "version": "3.12.16 (main, Oct 26 2026, 13:59:40) [Clang 23.1.3 ]"
+        }
+      },
+      "score": 0.5,
+      "selected": 4,
+      "suite": "all"
+    },
+    {
+      "candidate": "simplification/native/leave-out-conflict-a/candidate.py",
+      "candidate_sha256": "75e47033a7a5f2c028e9133dbdddf11f388c714b298349650e7736bb63f84abf",
+      "case_ids": [
+        "dev-howto",
+        "dev-generic",
+        "dev-explicit",
+        "dev-duplicate",
+        "dev-ambiguous",
+        "dev-password",
+        "dev-closed",
+        "dev-unrelated"
+      ],
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 4,
+        "PASS": 4,
+        "UNKNOWN": 0
+      },
+      "directory": "simplification/native/leave-out-conflict-a",
+      "executed": 8,
+      "identity": {
+        "files": {
+          "evals/cases.jsonl": "71f1d8c50f7ce2b3ca512c6f2703faa4e30d5c63237824e3a73e7a573cf4f7b2",
+          "evals/rubric.md": "cb133b50752a48098d463a562d7553ec5a5b29bfef1825b4e393e7de33d66dd8",
+          "evals/spec.json": "eb6f21266223c16708a4ed3bb4f401f3a2adb3355b9e176152665d70a665d8f6",
+          "evaluate.py": "fd1fdaa4b090852f8d0a6462303411bea5488dcc7f7a08895146e32d52b0430d"
+        },
+        "protocol": {
+          "confirmation": "baseline and incumbent; preserve baseline PASS; no lower score",
+          "execution_boundary": "trusted local subprocess; not a security sandbox",
+          "name": "deterministic-local-support-v1",
+          "new_ticket_issue": "vpn",
+          "new_ticket_status": "open",
+          "python_flags": [
+            "-I"
+          ],
+          "selection": "strict development improvement; preserve every incumbent PASS",
+          "timeout_seconds": 3,
+          "trials_per_case": 1
+        },
+        "python": {
+          "executable": "/Users/clayton/.local/share/uv/python/cpython-3.12.16-macos-aarch64-none/bin/python3.12",
+          "implementation": "CPython",
+          "platform": "macOS-27.2-arm64-arm-64bit",
+          "version": "3.12.16 (main, Oct 26 2026, 13:59:40) [Clang 23.1.3 ]"
+        }
+      },
+      "score": 0.5,
+      "selected": 8,
+      "suite": "all"
+    },
+    {
+      "candidate": "simplification/native/leave-out-conflict-b/candidate.py",
+      "candidate_sha256": "9f06aa482cc34f1295ecdfd3644d39f81e102069ff60033ee7ef234fb9623b85",
+      "case_ids": [
+        "dev-howto",
+        "dev-generic",
+        "dev-explicit",
+        "dev-duplicate",
+        "dev-ambiguous",
+        "dev-password",
+        "dev-closed",
+        "dev-unrelated"
+      ],
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 4,
+        "PASS": 4,
+        "UNKNOWN": 0
+      },
+      "directory": "simplification/native/leave-out-conflict-b",
+      "executed": 8,
+      "identity": {
+        "files": {
+          "evals/cases.jsonl": "71f1d8c50f7ce2b3ca512c6f2703faa4e30d5c63237824e3a73e7a573cf4f7b2",
+          "evals/rubric.md": "cb133b50752a48098d463a562d7553ec5a5b29bfef1825b4e393e7de33d66dd8",
+          "evals/spec.json": "eb6f21266223c16708a4ed3bb4f401f3a2adb3355b9e176152665d70a665d8f6",
+          "evaluate.py": "fd1fdaa4b090852f8d0a6462303411bea5488dcc7f7a08895146e32d52b0430d"
+        },
+        "protocol": {
+          "confirmation": "baseline and incumbent; preserve baseline PASS; no lower score",
+          "execution_boundary": "trusted local subprocess; not a security sandbox",
+          "name": "deterministic-local-support-v1",
+          "new_ticket_issue": "vpn",
+          "new_ticket_status": "open",
+          "python_flags": [
+            "-I"
+          ],
+          "selection": "strict development improvement; preserve every incumbent PASS",
+          "timeout_seconds": 3,
+          "trials_per_case": 1
+        },
+        "python": {
+          "executable": "/Users/clayton/.local/share/uv/python/cpython-3.12.16-macos-aarch64-none/bin/python3.12",
+          "implementation": "CPython",
+          "platform": "macOS-27.2-arm64-arm-64bit",
+          "version": "3.12.16 (main, Oct 26 2026, 13:59:40) [Clang 23.1.3 ]"
+        }
+      },
+      "score": 0.5,
+      "selected": 8,
+      "suite": "all"
+    },
+    {
+      "candidate": "simplification/native/leave-out-duplicate-a/candidate.py",
+      "candidate_sha256": "b1aa3a808fcc0aebad717f7b4d466586270599cb3267942000efbf43bebeccd3",
+      "case_ids": [
+        "dev-howto",
+        "dev-generic",
+        "dev-explicit",
+        "dev-duplicate",
+        "dev-ambiguous",
+        "dev-password",
+        "dev-closed",
+        "dev-unrelated"
+      ],
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 8,
+        "UNKNOWN": 0
+      },
+      "directory": "simplification/native/leave-out-duplicate-a",
+      "executed": 8,
+      "identity": {
+        "files": {
+          "evals/cases.jsonl": "71f1d8c50f7ce2b3ca512c6f2703faa4e30d5c63237824e3a73e7a573cf4f7b2",
+          "evals/rubric.md": "cb133b50752a48098d463a562d7553ec5a5b29bfef1825b4e393e7de33d66dd8",
+          "evals/spec.json": "eb6f21266223c16708a4ed3bb4f401f3a2adb3355b9e176152665d70a665d8f6",
+          "evaluate.py": "fd1fdaa4b090852f8d0a6462303411bea5488dcc7f7a08895146e32d52b0430d"
+        },
+        "protocol": {
+          "confirmation": "baseline and incumbent; preserve baseline PASS; no lower score",
+          "execution_boundary": "trusted local subprocess; not a security sandbox",
+          "name": "deterministic-local-support-v1",
+          "new_ticket_issue": "vpn",
+          "new_ticket_status": "open",
+          "python_flags": [
+            "-I"
+          ],
+          "selection": "strict development improvement; preserve every incumbent PASS",
+          "timeout_seconds": 3,
+          "trials_per_case": 1
+        },
+        "python": {
+          "executable": "/Users/clayton/.local/share/uv/python/cpython-3.12.16-macos-aarch64-none/bin/python3.12",
+          "implementation": "CPython",
+          "platform": "macOS-27.2-arm64-arm-64bit",
+          "version": "3.12.16 (main, Oct 26 2026, 13:59:40) [Clang 23.1.3 ]"
+        }
+      },
+      "score": 1.0,
+      "selected": 8,
+      "suite": "all"
+    },
+    {
+      "candidate": "simplification/native/leave-out-duplicate-b/candidate.py",
+      "candidate_sha256": "fdac78193083ab38918c032fb4a1737288407b942b07062172eecc1c12d3b449",
+      "case_ids": [
+        "dev-howto",
+        "dev-generic",
+        "dev-explicit",
+        "dev-duplicate",
+        "dev-ambiguous",
+        "dev-password",
+        "dev-closed",
+        "dev-unrelated"
+      ],
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 8,
+        "UNKNOWN": 0
+      },
+      "directory": "simplification/native/leave-out-duplicate-b",
+      "executed": 8,
+      "identity": {
+        "files": {
+          "evals/cases.jsonl": "71f1d8c50f7ce2b3ca512c6f2703faa4e30d5c63237824e3a73e7a573cf4f7b2",
+          "evals/rubric.md": "cb133b50752a48098d463a562d7553ec5a5b29bfef1825b4e393e7de33d66dd8",
+          "evals/spec.json": "eb6f21266223c16708a4ed3bb4f401f3a2adb3355b9e176152665d70a665d8f6",
+          "evaluate.py": "fd1fdaa4b090852f8d0a6462303411bea5488dcc7f7a08895146e32d52b0430d"
+        },
+        "protocol": {
+          "confirmation": "baseline and incumbent; preserve baseline PASS; no lower score",
+          "execution_boundary": "trusted local subprocess; not a security sandbox",
+          "name": "deterministic-local-support-v1",
+          "new_ticket_issue": "vpn",
+          "new_ticket_status": "open",
+          "python_flags": [
+            "-I"
+          ],
+          "selection": "strict development improvement; preserve every incumbent PASS",
+          "timeout_seconds": 3,
+          "trials_per_case": 1
+        },
+        "python": {
+          "executable": "/Users/clayton/.local/share/uv/python/cpython-3.12.16-macos-aarch64-none/bin/python3.12",
+          "implementation": "CPython",
+          "platform": "macOS-27.2-arm64-arm-64bit",
+          "version": "3.12.16 (main, Oct 26 2026, 13:59:40) [Clang 23.1.3 ]"
+        }
+      },
+      "score": 1.0,
+      "selected": 8,
+      "suite": "all"
+    },
+    {
+      "candidate": "simplification/native/leave-out-example/candidate.py",
+      "candidate_sha256": "655c2ab994091fb0c6b2ce57c214a71b3dd6c9a84d04baf5be9103b8e39b1df8",
+      "case_ids": [
+        "dev-howto",
+        "dev-generic",
+        "dev-explicit",
+        "dev-duplicate",
+        "dev-ambiguous",
+        "dev-password",
+        "dev-closed",
+        "dev-unrelated"
+      ],
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 8,
+        "UNKNOWN": 0
+      },
+      "directory": "simplification/native/leave-out-example",
+      "executed": 8,
+      "identity": {
+        "files": {
+          "evals/cases.jsonl": "71f1d8c50f7ce2b3ca512c6f2703faa4e30d5c63237824e3a73e7a573cf4f7b2",
+          "evals/rubric.md": "cb133b50752a48098d463a562d7553ec5a5b29bfef1825b4e393e7de33d66dd8",
+          "evals/spec.json": "eb6f21266223c16708a4ed3bb4f401f3a2adb3355b9e176152665d70a665d8f6",
+          "evaluate.py": "fd1fdaa4b090852f8d0a6462303411bea5488dcc7f7a08895146e32d52b0430d"
+        },
+        "protocol": {
+          "confirmation": "baseline and incumbent; preserve baseline PASS; no lower score",
+          "execution_boundary": "trusted local subprocess; not a security sandbox",
+          "name": "deterministic-local-support-v1",
+          "new_ticket_issue": "vpn",
+          "new_ticket_status": "open",
+          "python_flags": [
+            "-I"
+          ],
+          "selection": "strict development improvement; preserve every incumbent PASS",
+          "timeout_seconds": 3,
+          "trials_per_case": 1
+        },
+        "python": {
+          "executable": "/Users/clayton/.local/share/uv/python/cpython-3.12.16-macos-aarch64-none/bin/python3.12",
+          "implementation": "CPython",
+          "platform": "macOS-27.2-arm64-arm-64bit",
+          "version": "3.12.16 (main, Oct 26 2026, 13:59:40) [Clang 23.1.3 ]"
+        }
+      },
+      "score": 1.0,
+      "selected": 8,
+      "suite": "all"
+    },
+    {
+      "candidate": "simplification/native/leave-out-legacy-auth/candidate.py",
+      "candidate_sha256": "dc388a5df2acf48e82dd9a7e2887cfa06c8b214b8be0a16f9ea898c851d61007",
+      "case_ids": [
+        "dev-howto",
+        "dev-generic",
+        "dev-explicit",
+        "dev-duplicate",
+        "dev-ambiguous",
+        "dev-password",
+        "dev-closed",
+        "dev-unrelated"
+      ],
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 4,
+        "PASS": 4,
+        "UNKNOWN": 0
+      },
+      "directory": "simplification/native/leave-out-legacy-auth",
+      "executed": 8,
+      "identity": {
+        "files": {
+          "evals/cases.jsonl": "71f1d8c50f7ce2b3ca512c6f2703faa4e30d5c63237824e3a73e7a573cf4f7b2",
+          "evals/rubric.md": "cb133b50752a48098d463a562d7553ec5a5b29bfef1825b4e393e7de33d66dd8",
+          "evals/spec.json": "eb6f21266223c16708a4ed3bb4f401f3a2adb3355b9e176152665d70a665d8f6",
+          "evaluate.py": "fd1fdaa4b090852f8d0a6462303411bea5488dcc7f7a08895146e32d52b0430d"
+        },
+        "protocol": {
+          "confirmation": "baseline and incumbent; preserve baseline PASS; no lower score",
+          "execution_boundary": "trusted local subprocess; not a security sandbox",
+          "name": "deterministic-local-support-v1",
+          "new_ticket_issue": "vpn",
+          "new_ticket_status": "open",
+          "python_flags": [
+            "-I"
+          ],
+          "selection": "strict development improvement; preserve every incumbent PASS",
+          "timeout_seconds": 3,
+          "trials_per_case": 1
+        },
+        "python": {
+          "executable": "/Users/clayton/.local/share/uv/python/cpython-3.12.16-macos-aarch64-none/bin/python3.12",
+          "implementation": "CPython",
+          "platform": "macOS-27.2-arm64-arm-64bit",
+          "version": "3.12.16 (main, Oct 26 2026, 13:59:40) [Clang 23.1.3 ]"
+        }
+      },
+      "score": 0.5,
+      "selected": 8,
+      "suite": "all"
+    },
+    {
+      "candidate": "simplification/native/leave-out-plan-detail/candidate.py",
+      "candidate_sha256": "12b65c25f024476597f85a470e7a6605f5928bb13e6def2bccdcd5d02cb7d9cd",
+      "case_ids": [
+        "dev-howto",
+        "dev-generic",
+        "dev-explicit",
+        "dev-duplicate",
+        "dev-ambiguous",
+        "dev-password",
+        "dev-closed",
+        "dev-unrelated"
+      ],
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 8,
+        "UNKNOWN": 0
+      },
+      "directory": "simplification/native/leave-out-plan-detail",
+      "executed": 8,
+      "identity": {
+        "files": {
+          "evals/cases.jsonl": "71f1d8c50f7ce2b3ca512c6f2703faa4e30d5c63237824e3a73e7a573cf4f7b2",
+          "evals/rubric.md": "cb133b50752a48098d463a562d7553ec5a5b29bfef1825b4e393e7de33d66dd8",
+          "evals/spec.json": "eb6f21266223c16708a4ed3bb4f401f3a2adb3355b9e176152665d70a665d8f6",
+          "evaluate.py": "fd1fdaa4b090852f8d0a6462303411bea5488dcc7f7a08895146e32d52b0430d"
+        },
+        "protocol": {
+          "confirmation": "baseline and incumbent; preserve baseline PASS; no lower score",
+          "execution_boundary": "trusted local subprocess; not a security sandbox",
+          "name": "deterministic-local-support-v1",
+          "new_ticket_issue": "vpn",
+          "new_ticket_status": "open",
+          "python_flags": [
+            "-I"
+          ],
+          "selection": "strict development improvement; preserve every incumbent PASS",
+          "timeout_seconds": 3,
+          "trials_per_case": 1
+        },
+        "python": {
+          "executable": "/Users/clayton/.local/share/uv/python/cpython-3.12.16-macos-aarch64-none/bin/python3.12",
+          "implementation": "CPython",
+          "platform": "macOS-27.2-arm64-arm-64bit",
+          "version": "3.12.16 (main, Oct 26 2026, 13:59:40) [Clang 23.1.3 ]"
+        }
+      },
+      "score": 1.0,
+      "selected": 8,
+      "suite": "all"
+    },
+    {
+      "candidate": "simplification/native/naive-union/candidate.py",
+      "candidate_sha256": "5194eb646f8c819f699eb8285af8d82d980932b86cdaf6f122ef1ab99bb73b4f",
+      "case_ids": [
+        "dev-howto",
+        "dev-generic",
+        "dev-explicit",
+        "dev-duplicate",
+        "dev-ambiguous",
+        "dev-password",
+        "dev-closed",
+        "dev-unrelated"
+      ],
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 1,
+        "PASS": 7,
+        "UNKNOWN": 0
+      },
+      "directory": "simplification/native/naive-union",
+      "executed": 8,
+      "identity": {
+        "files": {
+          "evals/cases.jsonl": "71f1d8c50f7ce2b3ca512c6f2703faa4e30d5c63237824e3a73e7a573cf4f7b2",
+          "evals/rubric.md": "cb133b50752a48098d463a562d7553ec5a5b29bfef1825b4e393e7de33d66dd8",
+          "evals/spec.json": "eb6f21266223c16708a4ed3bb4f401f3a2adb3355b9e176152665d70a665d8f6",
+          "evaluate.py": "fd1fdaa4b090852f8d0a6462303411bea5488dcc7f7a08895146e32d52b0430d"
+        },
+        "protocol": {
+          "confirmation": "baseline and incumbent; preserve baseline PASS; no lower score",
+          "execution_boundary": "trusted local subprocess; not a security sandbox",
+          "name": "deterministic-local-support-v1",
+          "new_ticket_issue": "vpn",
+          "new_ticket_status": "open",
+          "python_flags": [
+            "-I"
+          ],
+          "selection": "strict development improvement; preserve every incumbent PASS",
+          "timeout_seconds": 3,
+          "trials_per_case": 1
+        },
+        "python": {
+          "executable": "/Users/clayton/.local/share/uv/python/cpython-3.12.16-macos-aarch64-none/bin/python3.12",
+          "implementation": "CPython",
+          "platform": "macOS-27.2-arm64-arm-64bit",
+          "version": "3.12.16 (main, Oct 26 2026, 13:59:40) [Clang 23.1.3 ]"
+        }
+      },
+      "score": 0.875,
+      "selected": 8,
+      "suite": "all"
+    },
+    {
+      "candidate": "simplification/native/new-existing/candidate.py",
+      "candidate_sha256": "cfd3290663da1d5980890d655f5e00cf294c989134bea9b94eae5d4bc12c1fb1",
+      "case_ids": [
+        "dev-howto",
+        "dev-generic",
+        "dev-explicit",
+        "dev-duplicate",
+        "dev-ambiguous",
+        "dev-password",
+        "dev-closed",
+        "dev-unrelated"
+      ],
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 8,
+        "UNKNOWN": 0
+      },
+      "directory": "simplification/native/new-existing",
+      "executed": 8,
+      "identity": {
+        "files": {
+          "evals/cases.jsonl": "71f1d8c50f7ce2b3ca512c6f2703faa4e30d5c63237824e3a73e7a573cf4f7b2",
+          "evals/rubric.md": "cb133b50752a48098d463a562d7553ec5a5b29bfef1825b4e393e7de33d66dd8",
+          "evals/spec.json": "eb6f21266223c16708a4ed3bb4f401f3a2adb3355b9e176152665d70a665d8f6",
+          "evaluate.py": "fd1fdaa4b090852f8d0a6462303411bea5488dcc7f7a08895146e32d52b0430d"
+        },
+        "protocol": {
+          "confirmation": "baseline and incumbent; preserve baseline PASS; no lower score",
+          "execution_boundary": "trusted local subprocess; not a security sandbox",
+          "name": "deterministic-local-support-v1",
+          "new_ticket_issue": "vpn",
+          "new_ticket_status": "open",
+          "python_flags": [
+            "-I"
+          ],
+          "selection": "strict development improvement; preserve every incumbent PASS",
+          "timeout_seconds": 3,
+          "trials_per_case": 1
+        },
+        "python": {
+          "executable": "/Users/clayton/.local/share/uv/python/cpython-3.12.16-macos-aarch64-none/bin/python3.12",
+          "implementation": "CPython",
+          "platform": "macOS-27.2-arm64-arm-64bit",
+          "version": "3.12.16 (main, Oct 26 2026, 13:59:40) [Clang 23.1.3 ]"
+        }
+      },
+      "score": 1.0,
+      "selected": 8,
+      "suite": "all"
+    },
+    {
+      "candidate": "simplification/native/new-simplified/candidate.py",
+      "candidate_sha256": "c1a85f6bd9c8c5d53d51d44220eacde87043630d7dceb5b8e4625b2cbb37e570",
+      "case_ids": [
+        "dev-howto",
+        "dev-generic",
+        "dev-explicit",
+        "dev-duplicate",
+        "dev-ambiguous",
+        "dev-password",
+        "dev-closed",
+        "dev-unrelated"
+      ],
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 8,
+        "UNKNOWN": 0
+      },
+      "directory": "simplification/native/new-simplified",
+      "executed": 8,
+      "identity": {
+        "files": {
+          "evals/cases.jsonl": "71f1d8c50f7ce2b3ca512c6f2703faa4e30d5c63237824e3a73e7a573cf4f7b2",
+          "evals/rubric.md": "cb133b50752a48098d463a562d7553ec5a5b29bfef1825b4e393e7de33d66dd8",
+          "evals/spec.json": "eb6f21266223c16708a4ed3bb4f401f3a2adb3355b9e176152665d70a665d8f6",
+          "evaluate.py": "fd1fdaa4b090852f8d0a6462303411bea5488dcc7f7a08895146e32d52b0430d"
+        },
+        "protocol": {
+          "confirmation": "baseline and incumbent; preserve baseline PASS; no lower score",
+          "execution_boundary": "trusted local subprocess; not a security sandbox",
+          "name": "deterministic-local-support-v1",
+          "new_ticket_issue": "vpn",
+          "new_ticket_status": "open",
+          "python_flags": [
+            "-I"
+          ],
+          "selection": "strict development improvement; preserve every incumbent PASS",
+          "timeout_seconds": 3,
+          "trials_per_case": 1
+        },
+        "python": {
+          "executable": "/Users/clayton/.local/share/uv/python/cpython-3.12.16-macos-aarch64-none/bin/python3.12",
+          "implementation": "CPython",
+          "platform": "macOS-27.2-arm64-arm-64bit",
+          "version": "3.12.16 (main, Oct 26 2026, 13:59:40) [Clang 23.1.3 ]"
+        }
+      },
+      "score": 1.0,
+      "selected": 8,
+      "suite": "all"
+    },
+    {
+      "candidate": "simplification/native/old-simplified/candidate.py",
+      "candidate_sha256": "ce35c8b8640da60a0f6141f24256e888ee056941e39ccfef6f9ef7661facd55f",
+      "case_ids": [
+        "dev-howto",
+        "dev-generic",
+        "dev-explicit",
+        "dev-duplicate",
+        "dev-ambiguous",
+        "dev-password",
+        "dev-closed",
+        "dev-unrelated"
+      ],
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 4,
+        "PASS": 4,
+        "UNKNOWN": 0
+      },
+      "directory": "simplification/native/old-simplified",
+      "executed": 8,
+      "identity": {
+        "files": {
+          "evals/cases.jsonl": "71f1d8c50f7ce2b3ca512c6f2703faa4e30d5c63237824e3a73e7a573cf4f7b2",
+          "evals/rubric.md": "cb133b50752a48098d463a562d7553ec5a5b29bfef1825b4e393e7de33d66dd8",
+          "evals/spec.json": "eb6f21266223c16708a4ed3bb4f401f3a2adb3355b9e176152665d70a665d8f6",
+          "evaluate.py": "fd1fdaa4b090852f8d0a6462303411bea5488dcc7f7a08895146e32d52b0430d"
+        },
+        "protocol": {
+          "confirmation": "baseline and incumbent; preserve baseline PASS; no lower score",
+          "execution_boundary": "trusted local subprocess; not a security sandbox",
+          "name": "deterministic-local-support-v1",
+          "new_ticket_issue": "vpn",
+          "new_ticket_status": "open",
+          "python_flags": [
+            "-I"
+          ],
+          "selection": "strict development improvement; preserve every incumbent PASS",
+          "timeout_seconds": 3,
+          "trials_per_case": 1
+        },
+        "python": {
+          "executable": "/Users/clayton/.local/share/uv/python/cpython-3.12.16-macos-aarch64-none/bin/python3.12",
+          "implementation": "CPython",
+          "platform": "macOS-27.2-arm64-arm-64bit",
+          "version": "3.12.16 (main, Oct 26 2026, 13:59:40) [Clang 23.1.3 ]"
+        }
+      },
+      "score": 0.5,
+      "selected": 8,
+      "suite": "all"
+    },
+    {
+      "candidate": "simplification/native/original/candidate.py",
+      "candidate_sha256": "8bd79ed28276f336f5f4727a603900ab194c4e7c456ed736eff81e34acd802b2",
+      "case_ids": [
+        "dev-howto",
+        "dev-generic",
+        "dev-explicit",
+        "dev-duplicate",
+        "dev-ambiguous",
+        "dev-password",
+        "dev-closed",
+        "dev-unrelated"
+      ],
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 8,
+        "UNKNOWN": 0
+      },
+      "directory": "simplification/native/original",
+      "executed": 8,
+      "identity": {
+        "files": {
+          "evals/cases.jsonl": "71f1d8c50f7ce2b3ca512c6f2703faa4e30d5c63237824e3a73e7a573cf4f7b2",
+          "evals/rubric.md": "cb133b50752a48098d463a562d7553ec5a5b29bfef1825b4e393e7de33d66dd8",
+          "evals/spec.json": "eb6f21266223c16708a4ed3bb4f401f3a2adb3355b9e176152665d70a665d8f6",
+          "evaluate.py": "fd1fdaa4b090852f8d0a6462303411bea5488dcc7f7a08895146e32d52b0430d"
+        },
+        "protocol": {
+          "confirmation": "baseline and incumbent; preserve baseline PASS; no lower score",
+          "execution_boundary": "trusted local subprocess; not a security sandbox",
+          "name": "deterministic-local-support-v1",
+          "new_ticket_issue": "vpn",
+          "new_ticket_status": "open",
+          "python_flags": [
+            "-I"
+          ],
+          "selection": "strict development improvement; preserve every incumbent PASS",
+          "timeout_seconds": 3,
+          "trials_per_case": 1
+        },
+        "python": {
+          "executable": "/Users/clayton/.local/share/uv/python/cpython-3.12.16-macos-aarch64-none/bin/python3.12",
+          "implementation": "CPython",
+          "platform": "macOS-27.2-arm64-arm-64bit",
+          "version": "3.12.16 (main, Oct 26 2026, 13:59:40) [Clang 23.1.3 ]"
+        }
+      },
+      "score": 1.0,
+      "selected": 8,
+      "suite": "all"
+    }
+  ],
+  "release_thresholds": null,
+  "report": "REPORT.md",
+  "result_summary": "result-summary.json",
+  "source_checkout": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/skill-audit-ablation/post-audit-baseline",
+  "usage": "usage.json",
+  "workspace": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/skill-audit-ablation/runs/full-operations"
+}

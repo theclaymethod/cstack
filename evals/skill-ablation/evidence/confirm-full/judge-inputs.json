@@ -1,0 +1,60 @@
+{
+  "config": {
+    "backend": "jev",
+    "fail_at_or_above": 0.6,
+    "pass_below": 0.4,
+    "question": "Does this output violate the approved criterion?",
+    "question_means_failure": true
+  },
+  "origin": "Hand-authored synthetic response-shape controls; no backend calls",
+  "raw_responses": [
+    {
+      "id": "m1",
+      "raw": {
+        "answers": {
+          "criterion": {
+            "confidence": 0.99,
+            "noul": 1.4,
+            "type": "noul"
+          }
+        }
+      }
+    },
+    {
+      "id": "p0",
+      "raw": {
+        "answers": {
+          "criterion": {
+            "confidence": 0.99,
+            "noul": 0.2,
+            "type": "noul"
+          }
+        }
+      }
+    },
+    {
+      "id": "p1",
+      "raw": {
+        "answers": {
+          "criterion": {
+            "confidence": 0.99,
+            "noul": 0.2,
+            "type": "noul"
+          }
+        }
+      }
+    },
+    {
+      "id": "p2",
+      "raw": {
+        "answers": {
+          "criterion": {
+            "confidence": 0.99,
+            "noul": 0.2,
+            "type": "noul"
+          }
+        }
+      }
+    }
+  ]
+}

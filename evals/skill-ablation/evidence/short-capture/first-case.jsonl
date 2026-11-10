@@ -1,0 +1,1 @@
+{"expected": {"account": null, "allowed_actions": ["guidance"], "ticket_delta": 0}, "family": "dev-vpn-howto", "id": "dev-howto", "request": {"account": null, "accounts": ["acct-a"], "text": "How do I connect to the VPN?"}, "state": {"tickets": []}, "suite": "development"}

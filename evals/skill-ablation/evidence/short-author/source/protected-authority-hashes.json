@@ -1,0 +1,8 @@
+{
+  "handoff/authoring-handoff-v1.json": "5e75805b40683eba0de1084f8dfcaff30b16761081bcc666f4e9312de5b30914",
+  "handoff/current-approved.jsonl": "b8524ff0f87b6131a3bf1cdabe535b87b639d791f5c3ee1d47a03b7c99d914c5",
+  "handoff/intent-v1.json": "31939532d345fc24909a95ae1819ff9642b4ef04148aa8553962d0a6e52c3cd2",
+  "source/card-history.jsonl": "fd64a8baf850e3d353023454198271fcaf642aedec7ee8bd6408b8c6627b509a",
+  "source/frozen-inventory.json": "0bf8a5e1a23993000ad83931e955876df06f27e291944a5ebfaa21507ba9e8b7",
+  "source/scripted-decisions.md": "353cae2a831e685985579bf2c5349482be8d6c493b57a1f09537b5ab027d100b"
+}

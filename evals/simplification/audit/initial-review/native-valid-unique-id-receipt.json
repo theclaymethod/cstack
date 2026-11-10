@@ -1,0 +1,12 @@
+{
+  "counts": {
+    "ERROR": 0,
+    "FAIL": 0,
+    "PASS": 12,
+    "UNKNOWN": 0
+  },
+  "native_case_executions": 12,
+  "purpose": "Native-valid alternative unique ticket identifiers remain accepted",
+  "reviewer_total_native_case_executions": 48,
+  "score": 1.0
+}

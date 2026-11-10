@@ -1,0 +1,21 @@
+{
+  "actual_completed": 1,
+  "calls": [
+    {
+      "candidate": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/simplification-build/forward-use/eval-runs/forward-campaign/malformed.py",
+      "cases": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/simplification-build/forward-use/eval-runs/forward-campaign/schema-control/malformed.jsonl",
+      "counts": {
+        "ERROR": 1,
+        "FAIL": 0,
+        "PASS": 0,
+        "UNKNOWN": 0
+      },
+      "executed": 1,
+      "label": "malformed",
+      "reserved": 1,
+      "status": "complete"
+    }
+  ],
+  "limit": 1,
+  "reserved": 1
+}

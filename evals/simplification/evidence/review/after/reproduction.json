@@ -1,0 +1,19 @@
+{
+  "declared": {
+    "model": "old-fixture",
+    "retained": [
+      "conflict-a",
+      "conflict-b",
+      "contract",
+      "duplicate-a",
+      "duplicate-b",
+      "example",
+      "legacy-auth",
+      "plan",
+      "plan-detail"
+    ]
+  },
+  "guard_rejected_mutation": true,
+  "error": "Experiment contract, state, or source changed",
+  "native_case_executions": 0
+}

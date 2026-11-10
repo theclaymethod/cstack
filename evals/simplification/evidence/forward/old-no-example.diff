@@ -1,0 +1,17 @@
+--- original-full
++++ old-no-example
+@@ -35,14 +35,5 @@
+ ### duplicate-b
+ DUPLICATE CHECK B: reuse an open VPN ticket for the same account.
+ 
+-### example
+-EXAMPLE: a how-to question receives guidance without changing state.
+-
+ ### legacy-auth
+ LEGACY STEP: explicitly check authorization before answering.
+-
+-### plan
+-PLAN HEADER: organize a preliminary answer plan.
+-
+-### plan-detail
+-PLAN DETAIL: elaborate the preliminary plan.

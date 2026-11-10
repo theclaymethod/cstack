@@ -1,0 +1,98 @@
+{
+  "total_native_cases": 48,
+  "limit": 48,
+  "unsuccessful_attempts": 0,
+  "runs": [
+    {
+      "run": "clean/native/original",
+      "native_cases": 8,
+      "executed_count": 8,
+      "selected_count": 8,
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 8,
+        "UNKNOWN": 0
+      },
+      "all_checks_true": true
+    },
+    {
+      "run": "clean/native/reduced",
+      "native_cases": 8,
+      "executed_count": 8,
+      "selected_count": 8,
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 8,
+        "UNKNOWN": 0
+      },
+      "all_checks_true": true
+    },
+    {
+      "run": "clean/native/final-original",
+      "native_cases": 4,
+      "executed_count": 4,
+      "selected_count": 4,
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 4,
+        "UNKNOWN": 0
+      },
+      "all_checks_true": true
+    },
+    {
+      "run": "clean/native/final-reduced",
+      "native_cases": 4,
+      "executed_count": 4,
+      "selected_count": 4,
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 4,
+        "UNKNOWN": 0
+      },
+      "all_checks_true": true
+    },
+    {
+      "run": "alternative-native/alternative",
+      "native_cases": 8,
+      "executed_count": 8,
+      "selected_count": 8,
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 8,
+        "UNKNOWN": 0
+      },
+      "all_checks_true": true
+    },
+    {
+      "run": "replay-original/experiment/native/original",
+      "native_cases": 8,
+      "executed_count": 8,
+      "selected_count": 8,
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 8,
+        "UNKNOWN": 0
+      },
+      "all_checks_true": true
+    },
+    {
+      "run": "replay-candidate/experiment/native/original",
+      "native_cases": 8,
+      "executed_count": 8,
+      "selected_count": 8,
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 8,
+        "UNKNOWN": 0
+      },
+      "all_checks_true": true
+    }
+  ]
+}

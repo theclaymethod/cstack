@@ -1,0 +1,30 @@
+{
+  "contract_hash": "94c2393155debedea52273cd9ea22b0420be70d7963bdd3aff3d7e8ae067015a",
+  "plan": {},
+  "records": {
+    "interrupted": {
+      "candidate_sha256": "8bd79ed28276f336f5f4727a603900ab194c4e7c456ed736eff81e34acd802b2",
+      "config": {
+        "model": "old-fixture",
+        "retained": [
+          "conflict-a",
+          "conflict-b",
+          "contract",
+          "duplicate-a",
+          "duplicate-b",
+          "example",
+          "legacy-auth",
+          "plan",
+          "plan-detail"
+        ]
+      },
+      "prompt_utf8_bytes": 4193,
+      "status": "pending",
+      "suite": "development",
+      "unit_count": 9
+    }
+  },
+  "remaining_confirmation_reserve": 4,
+  "reserved_case_executions": 0,
+  "status": "search"
+}

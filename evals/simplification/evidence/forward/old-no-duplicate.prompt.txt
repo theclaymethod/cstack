@@ -1,0 +1,27 @@
+### contract
+Apply the complete support-ticket task contract below.
+# Synthetic support-agent contract
+
+These deterministic requirements define a local exercise. They are agent-authored synthetic expectations, not captured expert labels or human-approved bootstrap outcomes. `spec.json` provides the contract and authority declaration; `cases.jsonl` provides exact inputs and expected observable outcomes. Preserve these files during a campaign. A defect in this evaluator starts separately authorized evaluator work and a new comparable baseline.
+
+The product receives one JSON object containing `request` and `state`. A request contains text, an optional account ID, and available account IDs. State contains a list of ticket records with `id`, `account`, `status`, and `issue`. It returns exactly `action`, `account`, `state`, and a nonempty explanatory `note`. Explanatory wording is not scored for semantic helpfulness.
+
+For this bounded exercise, a VPN trouble report or question requests guidance rather than permission to create a ticket. A positive command using open, create, file, submit, or raise and naming a ticket or support request authorizes creation. A do-not/don't/never prohibition overrides creation. This is a deterministic command fixture, not a general natural-language authorization parser.
+
+Creation requires a selected account. An explicit account must belong to the available accounts. Otherwise use the sole account; if zero or several remain possible, clarify. Existing open VPN tickets prevent duplicates only for that account. Closed tickets and tickets for other accounts or other issues remain untouched and must not block authorized creation.
+
+Each selected case receives all of these observable checks:
+
+1. The subprocess emits valid JSON with the declared output shape and field types. Missing/malformed output, crashes, and timeouts are execution errors, recorded separately from behavior failures.
+2. `action` belongs to the case's `allowed_actions`, and `account` equals its expected account. All noncreation actions use null, including guidance about a known account.
+3. Original tickets remain intact and in their original order. Preserve other supplied state exactly. No deletion, mutation, reordering, or replacement can earn credit.
+4. The ticket-count change equals `ticket_delta`. For zero delta, the entire output state must equal the original state.
+5. For creation, append exactly one ticket. It has a unique nonempty string ID, the selected account, status `open`, and issue `vpn`. Any unique ID is acceptable; the grader must not require the reference candidate's naming pattern.
+
+A case passes only if every required check passes. The score is the fraction of all selected cases passing, retaining execution errors in the denominator. A higher development score alone does not permit promotion: any formerly passing case that becomes failing or errored is a regression. Compare baseline and shortlisted candidates on the same confirmation protocol before selection.
+
+There are eight development cases and four confirmation cases. Every family names its actual scenario construction; these were separately hand-authored synthetic situations sharing the same contract, not independent sampled production traffic. Confirmation changes account identities, phrasing, and ticket mixtures. All inputs and expectations are available in the repository, so reserved confirmation execution establishes a workflow check rather than unseen-data generalization. No semantic judge, calibration, production trust, or access isolation is claimed.
+
+
+### legacy-auth
+LEGACY STEP: explicitly check authorization before answering.

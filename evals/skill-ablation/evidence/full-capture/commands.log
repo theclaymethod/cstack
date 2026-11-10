@@ -1,0 +1,15 @@
+# Working directory: disposable runs/full-capture workspace.
+# Materialization, executed from post-audit-baseline/fixtures/playground:
+python3 scripts/new_workspace.py --source /Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/skill-audit-ablation/post-audit-baseline --out /Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/skill-audit-ablation/runs/full-capture
+# case.jsonl was serialized from the first development row only.
+python3 evaluate.py run --candidate support_agent.py --cases eval-runs/skill-exercise/case.jsonl --suite development --out eval-runs/skill-exercise/native-baseline
+python3 eval-runs/skill-exercise/capture.py initial
+python3 eval-runs/skill-exercise/capture.py stop
+python3 eval-runs/skill-exercise/capture.py merge1
+python3 eval-runs/skill-exercise/capture.py merge2
+# Regenerated candidate is preserved verbatim; source product is unchanged.
+python3 evaluate.py run --candidate eval-runs/skill-exercise/regenerated_candidate.py --cases eval-runs/skill-exercise/case.jsonl --suite development --out eval-runs/skill-exercise/native-regenerated
+python3 eval-runs/skill-exercise/verify.py
+# These two native calls each executed dev-howto exactly once. No others executed.
+# Replay native calls with fresh --out paths to avoid overwriting original receipts.
+# capture.py merge2 may be rerun locally without any native execution or new rows.

@@ -1,0 +1,37 @@
+{
+  "account": "team-red",
+  "action": "create_ticket",
+  "note": "Opened the requested VPN support ticket.",
+  "state": {
+    "counter": 31,
+    "settings": {
+      "keep": false
+    },
+    "tickets": [
+      {
+        "account": "team-blue",
+        "id": "old-blue",
+        "issue": "vpn",
+        "metadata": {
+          "active": true,
+          "tags": [
+            "keep"
+          ]
+        },
+        "status": "open"
+      },
+      {
+        "account": "team-red",
+        "id": "old-red",
+        "issue": "vpn",
+        "status": "closed"
+      },
+      {
+        "account": "team-red",
+        "id": "alternative-1",
+        "issue": "vpn",
+        "status": "open"
+      }
+    ]
+  }
+}

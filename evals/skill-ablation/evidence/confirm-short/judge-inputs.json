@@ -1,0 +1,62 @@
+{
+  "configuration": {
+    "backend": "jev",
+    "fail_at_or_above": 0.5,
+    "pass_below": 0.5,
+    "question_means_failure": true
+  },
+  "labels_authority": "synthetic controls, no human outcome labels",
+  "malformed_raw": {
+    "answers": {
+      "criterion": {
+        "choice": "PASS",
+        "confidence": 0.99,
+        "probabilities": {
+          "FAIL": 0.8,
+          "PASS": 0.8
+        },
+        "type": "choice"
+      }
+    }
+  },
+  "no_fitting": true,
+  "paired_label_rows": [
+    {
+      "failure_probability": 0.1,
+      "family": "fixture-family-0",
+      "gold": "PASS",
+      "id": "paired-0",
+      "verdict": "PASS"
+    },
+    {
+      "failure_probability": 0.1,
+      "family": "fixture-family-1",
+      "gold": "PASS",
+      "id": "paired-1",
+      "verdict": "PASS"
+    },
+    {
+      "failure_probability": 0.1,
+      "family": "fixture-family-2",
+      "gold": "PASS",
+      "id": "paired-2",
+      "verdict": "PASS"
+    },
+    {
+      "failure_probability": 0.1,
+      "family": "fixture-family-3",
+      "gold": "PASS",
+      "id": "paired-3",
+      "verdict": "PASS"
+    }
+  ],
+  "valid_raw": {
+    "answers": {
+      "criterion": {
+        "confidence": 0.99,
+        "noul": 0.1,
+        "type": "noul"
+      }
+    }
+  }
+}

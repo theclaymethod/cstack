@@ -1,0 +1,6 @@
+{
+  "evidence_directory": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/skill-audit-ablation/candidate-controls/bootstrap-audit",
+  "replay_observations": 9,
+  "result": "Recorded original acceptances, repaired rejections, and legitimate controls reproduced",
+  "scope": "Frozen synthetic development controls; no new agent workflow or held-out claim"
+}

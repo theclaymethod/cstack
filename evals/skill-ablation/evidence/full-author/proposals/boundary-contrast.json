@@ -1,0 +1,105 @@
+{
+  "authority": "construction proposal only; no expectation approval and no human outcome label",
+  "baseline_approved_case": {
+    "expected": {
+      "account": "acct-a",
+      "allowed_actions": [
+        "create_ticket"
+      ],
+      "ticket_delta": 1
+    },
+    "family": "synthetic-author-B-explicit-target",
+    "id": "B-r2",
+    "request": {
+      "account": "acct-a",
+      "accounts": [
+        "acct-a",
+        "acct-b"
+      ],
+      "text": "Please create a VPN support ticket."
+    },
+    "state": {
+      "counter": 7,
+      "tickets": [
+        {
+          "account": "acct-b",
+          "id": "old",
+          "issue": "vpn",
+          "metadata": {
+            "keep": true
+          },
+          "status": "open"
+        }
+      ]
+    },
+    "suite": "development"
+  },
+  "candidate_access": "Local standalone candidate via evaluate.py; host permissions, fresh subprocess per case; no sandbox claim.",
+  "construction_method": "minimal factual contrast; remove explicit account only",
+  "controls": "Executed approved B clean and allowed-ID controls exist; changed condition itself has no execution evidence.",
+  "execution": {
+    "case_executions": 0,
+    "native_score": null,
+    "observed_outcome": null,
+    "setup_if_approved": "Put separately approved changed case in its own native JSONL and use evaluate.py run --cases; fresh input reset per case.",
+    "status": "unrun"
+  },
+  "family": "synthetic-author-B-explicit-target",
+  "feasibility": "Both accounts listed, existing ticket for acct-b, no explicit account after change; native schema supports this state.",
+  "hypothesis": "A candidate may guess the first account when several are available.",
+  "id": "contrast-account-selection",
+  "intent_revision": 1,
+  "limits": [
+    "Not in approved authoring package",
+    "No independent scenario author or intent reviewer",
+    "No injected fault armed or activated; no recovery/failure claim",
+    "New case shares B development family; not independent coverage"
+  ],
+  "minimization": "Constructed one-field contrast; no executed reduction or fault minimization claimed.",
+  "operator_access": "No instrumentation or fault injection used. Core evaluator/spec/rubric/cases protected by scope and hashes, not enforced security.",
+  "perturbation": {
+    "activated": false,
+    "activation_witness": null,
+    "armed": false,
+    "injection": "none",
+    "kind": "proposed request.account removal"
+  },
+  "proposed_changed_case": {
+    "expected": {
+      "account": null,
+      "allowed_actions": [
+        "clarify"
+      ],
+      "ticket_delta": 0
+    },
+    "family": "synthetic-author-B-explicit-target",
+    "id": "proposed-B-account-null",
+    "request": {
+      "account": null,
+      "accounts": [
+        "acct-a",
+        "acct-b"
+      ],
+      "text": "Please create a VPN support ticket."
+    },
+    "state": {
+      "counter": 7,
+      "tickets": [
+        {
+          "account": "acct-b",
+          "id": "old",
+          "issue": "vpn",
+          "metadata": {
+            "keep": true
+          },
+          "status": "open"
+        }
+      ]
+    },
+    "suite": "development"
+  },
+  "proposed_expectation": "Clarify with account null and preserve entire state; derived from synthetic existing spec, awaiting scoped approval.",
+  "revision": 1,
+  "source": "B:r2 plus synthetic one-field transformation",
+  "status": "proposed-unapproved-unexecuted"
+}

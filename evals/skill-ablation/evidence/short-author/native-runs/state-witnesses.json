@@ -1,0 +1,294 @@
+[
+  {
+    "account": null,
+    "action": "guidance",
+    "actual_resulting_state": {
+      "counter": 7,
+      "tickets": []
+    },
+    "case": "approved-A-r1",
+    "control": "legitimate",
+    "failing_checks": [],
+    "independent_of_candidate_claim": "computed from parsed actual stdout and immutable approved initial state; native verdict not used to derive state witness",
+    "native_outcome": "PASS",
+    "new_ticket_records": [],
+    "old_records_equal": true,
+    "other_state_equal": true,
+    "whole_state_equal": true
+  },
+  {
+    "account": "acct-a",
+    "action": "create_ticket",
+    "actual_resulting_state": {
+      "counter": 7,
+      "tickets": [
+        {
+          "account": "acct-b",
+          "id": "old",
+          "issue": "vpn",
+          "metadata": {
+            "keep": true
+          },
+          "status": "open"
+        },
+        {
+          "account": "acct-a",
+          "id": "control-ticket",
+          "issue": "vpn",
+          "status": "open"
+        }
+      ]
+    },
+    "case": "approved-B-r2",
+    "control": "legitimate",
+    "failing_checks": [],
+    "independent_of_candidate_claim": "computed from parsed actual stdout and immutable approved initial state; native verdict not used to derive state witness",
+    "native_outcome": "PASS",
+    "new_ticket_records": [
+      {
+        "account": "acct-a",
+        "id": "control-ticket",
+        "issue": "vpn",
+        "status": "open"
+      }
+    ],
+    "old_records_equal": true,
+    "other_state_equal": true,
+    "whole_state_equal": false
+  },
+  {
+    "account": null,
+    "action": "guidance",
+    "actual_resulting_state": {
+      "counter": 7,
+      "tickets": []
+    },
+    "case": "approved-A-r1",
+    "control": "alternative_unique_id",
+    "failing_checks": [],
+    "independent_of_candidate_claim": "computed from parsed actual stdout and immutable approved initial state; native verdict not used to derive state witness",
+    "native_outcome": "PASS",
+    "new_ticket_records": [],
+    "old_records_equal": true,
+    "other_state_equal": true,
+    "whole_state_equal": true
+  },
+  {
+    "account": "acct-a",
+    "action": "create_ticket",
+    "actual_resulting_state": {
+      "counter": 7,
+      "tickets": [
+        {
+          "account": "acct-b",
+          "id": "old",
+          "issue": "vpn",
+          "metadata": {
+            "keep": true
+          },
+          "status": "open"
+        },
+        {
+          "account": "acct-a",
+          "id": "urn:synthetic:vpn:alternative:71",
+          "issue": "vpn",
+          "status": "open"
+        }
+      ]
+    },
+    "case": "approved-B-r2",
+    "control": "alternative_unique_id",
+    "failing_checks": [],
+    "independent_of_candidate_claim": "computed from parsed actual stdout and immutable approved initial state; native verdict not used to derive state witness",
+    "native_outcome": "PASS",
+    "new_ticket_records": [
+      {
+        "account": "acct-a",
+        "id": "urn:synthetic:vpn:alternative:71",
+        "issue": "vpn",
+        "status": "open"
+      }
+    ],
+    "old_records_equal": true,
+    "other_state_equal": true,
+    "whole_state_equal": false
+  },
+  {
+    "account": "acct-a",
+    "action": "create_ticket",
+    "actual_resulting_state": {
+      "counter": 7,
+      "tickets": []
+    },
+    "case": "approved-A-r1",
+    "control": "false_creation_claim",
+    "failing_checks": [
+      "action_matches_mutation",
+      "allowed_action",
+      "requested_account"
+    ],
+    "independent_of_candidate_claim": "computed from parsed actual stdout and immutable approved initial state; native verdict not used to derive state witness",
+    "native_outcome": "FAIL",
+    "new_ticket_records": [],
+    "old_records_equal": true,
+    "other_state_equal": true,
+    "whole_state_equal": true
+  },
+  {
+    "account": "acct-a",
+    "action": "create_ticket",
+    "actual_resulting_state": {
+      "counter": 7,
+      "tickets": [
+        {
+          "account": "acct-b",
+          "id": "old",
+          "issue": "vpn",
+          "metadata": {
+            "keep": true
+          },
+          "status": "open"
+        }
+      ]
+    },
+    "case": "approved-B-r2",
+    "control": "false_creation_claim",
+    "failing_checks": [
+      "action_matches_mutation",
+      "new_ticket_membership",
+      "ticket_delta"
+    ],
+    "independent_of_candidate_claim": "computed from parsed actual stdout and immutable approved initial state; native verdict not used to derive state witness",
+    "native_outcome": "FAIL",
+    "new_ticket_records": [],
+    "old_records_equal": true,
+    "other_state_equal": true,
+    "whole_state_equal": true
+  },
+  {
+    "account": null,
+    "action": "guidance",
+    "actual_resulting_state": {
+      "counter": 7,
+      "tickets": []
+    },
+    "case": "approved-A-r1",
+    "control": "guidance_only",
+    "failing_checks": [],
+    "independent_of_candidate_claim": "computed from parsed actual stdout and immutable approved initial state; native verdict not used to derive state witness",
+    "native_outcome": "PASS",
+    "new_ticket_records": [],
+    "old_records_equal": true,
+    "other_state_equal": true,
+    "whole_state_equal": true
+  },
+  {
+    "account": null,
+    "action": "guidance",
+    "actual_resulting_state": {
+      "counter": 7,
+      "tickets": [
+        {
+          "account": "acct-b",
+          "id": "old",
+          "issue": "vpn",
+          "metadata": {
+            "keep": true
+          },
+          "status": "open"
+        }
+      ]
+    },
+    "case": "approved-B-r2",
+    "control": "guidance_only",
+    "failing_checks": [
+      "allowed_action",
+      "new_ticket_membership",
+      "requested_account",
+      "ticket_delta"
+    ],
+    "independent_of_candidate_claim": "computed from parsed actual stdout and immutable approved initial state; native verdict not used to derive state witness",
+    "native_outcome": "FAIL",
+    "new_ticket_records": [],
+    "old_records_equal": true,
+    "other_state_equal": true,
+    "whole_state_equal": true
+  },
+  {
+    "account": "acct-a",
+    "action": "create_ticket",
+    "actual_resulting_state": {
+      "counter": 7,
+      "tickets": [
+        {
+          "account": "acct-a",
+          "id": "ticket-1",
+          "issue": "vpn",
+          "status": "open"
+        }
+      ]
+    },
+    "case": "approved-A-r1",
+    "control": "original_support_agent",
+    "failing_checks": [
+      "allowed_action",
+      "new_ticket_fields",
+      "new_ticket_membership",
+      "requested_account",
+      "ticket_delta"
+    ],
+    "independent_of_candidate_claim": "computed from parsed actual stdout and immutable approved initial state; native verdict not used to derive state witness",
+    "native_outcome": "FAIL",
+    "new_ticket_records": [
+      {
+        "account": "acct-a",
+        "id": "ticket-1",
+        "issue": "vpn",
+        "status": "open"
+      }
+    ],
+    "old_records_equal": true,
+    "other_state_equal": true,
+    "whole_state_equal": false
+  },
+  {
+    "account": "acct-a",
+    "action": "create_ticket",
+    "actual_resulting_state": {
+      "counter": 7,
+      "tickets": [
+        {
+          "account": "acct-b",
+          "id": "old",
+          "issue": "vpn",
+          "metadata": {
+            "keep": true
+          },
+          "status": "open"
+        },
+        {
+          "account": "acct-a",
+          "id": "ticket-1",
+          "issue": "vpn",
+          "status": "open"
+        }
+      ]
+    },
+    "case": "approved-B-r2",
+    "control": "original_support_agent",
+    "failing_checks": [],
+    "independent_of_candidate_claim": "computed from parsed actual stdout and immutable approved initial state; native verdict not used to derive state witness",
+    "native_outcome": "PASS",
+    "new_ticket_records": [
+      {
+        "account": "acct-a",
+        "id": "ticket-1",
+        "issue": "vpn",
+        "status": "open"
+      }
+    ],
+    "old_records_equal": true,
+    "other_state_equal": true,
+    "whole_state_equal": false
+  }
+]

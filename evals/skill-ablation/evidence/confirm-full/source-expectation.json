@@ -1,0 +1,44 @@
+{
+  "authority": "Scripted expectation explicitly approved in the exercise; no human outcome label",
+  "expectation": "Append one open VPN ticket for team-red with any unique nonempty string ID; preserve the entire original state.",
+  "formal_independent_audit_adjudication": "unreviewed",
+  "independent_scenario_or_intent_reviewer": "unavailable; no nested agents authorized",
+  "outside_approved_scoring": [
+    "Speculative urgency variant: no new urgency policy, no approval; not authored or executed"
+  ],
+  "request": {
+    "account": "team-red",
+    "accounts": [
+      "team-red",
+      "team-blue"
+    ],
+    "text": "Please submit a VPN support request."
+  },
+  "revision": "confirmation-v1",
+  "state": {
+    "counter": 31,
+    "settings": {
+      "keep": false
+    },
+    "tickets": [
+      {
+        "account": "team-blue",
+        "id": "old-blue",
+        "issue": "vpn",
+        "metadata": {
+          "active": true,
+          "tags": [
+            "keep"
+          ]
+        },
+        "status": "open"
+      },
+      {
+        "account": "team-red",
+        "id": "old-red",
+        "issue": "vpn",
+        "status": "closed"
+      }
+    ]
+  }
+}

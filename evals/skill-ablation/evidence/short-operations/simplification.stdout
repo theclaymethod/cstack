@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "native_case_executions": 164,
+  "confirmation_case_executions": 20,
+  "burden": {
+    "original_units": 9,
+    "selected_units": 2,
+    "original_prompt_utf8_bytes": 4193,
+    "selected_prompt_utf8_bytes": 3667,
+    "token_count": null,
+    "model_cost_or_latency_savings": "not measured"
+  },
+  "provider_calls": 0,
+  "paid_calls": 0,
+  "promotion": "Offline fixture artifact only; no deployable production prompt or real model validation"
+}

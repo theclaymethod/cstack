@@ -1,0 +1,34 @@
+{
+  "full": {
+    "exact_approved_native_control_rows": 3,
+    "model_configurations_executed": 5,
+    "models": [
+      "new-fixture"
+    ],
+    "reviewed_checks": [
+      "rich-state source fidelity",
+      "valid IDs accepted and false claim rejected",
+      "actual frozen new-model quality comparisons",
+      "old production comparisons remain missing",
+      "ERROR coverage and undefined kappa retained",
+      "sources, budget and evidence preserved"
+    ],
+    "status": "pass"
+  },
+  "short": {
+    "exact_approved_native_control_rows": 3,
+    "model_configurations_executed": 13,
+    "models": [
+      "new-fixture"
+    ],
+    "reviewed_checks": [
+      "rich-state source fidelity",
+      "valid IDs accepted and false claim rejected",
+      "actual frozen new-model quality comparisons",
+      "old production comparisons remain missing",
+      "ERROR coverage and undefined kappa retained",
+      "sources, budget and evidence preserved"
+    ],
+    "status": "pass"
+  }
+}

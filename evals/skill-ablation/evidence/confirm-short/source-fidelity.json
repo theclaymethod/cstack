@@ -1,0 +1,7 @@
+{
+  "case_sha256": "35bd97fdb0047278f62c3741fc7889ed366734aec1795e011094912ffc557530",
+  "expectation_exact": true,
+  "request_exact": true,
+  "source_sha256": "cde8ec40d1da043741d2d5e1c4a8f17e1f463c34250c9bcaf6e069f5b8c7d028",
+  "state_exact_including_types": true
+}

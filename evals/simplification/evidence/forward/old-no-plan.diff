@@ -1,0 +1,12 @@
+--- original-full
++++ old-no-plan
+@@ -40,9 +40,3 @@
+ 
+ ### legacy-auth
+ LEGACY STEP: explicitly check authorization before answering.
+-
+-### plan
+-PLAN HEADER: organize a preliminary answer plan.
+-
+-### plan-detail
+-PLAN DETAIL: elaborate the preliminary plan.

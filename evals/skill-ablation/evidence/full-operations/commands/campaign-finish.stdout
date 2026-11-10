@@ -1,0 +1,39 @@
+{
+  "best_attempt": 2,
+  "campaign": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/skill-audit-ablation/runs/full-operations/eval-runs/skill-exercise/hill-climb",
+  "last_decision": "verified development improvement; confirmation checks passed",
+  "max_case_runs": 48,
+  "pending_attempts": [],
+  "protected_confirmation_case_runs": 0,
+  "search_case_runs_remaining": 16,
+  "selection": {
+    "confirmation": {
+      "admissible": true,
+      "baseline_score": 0.5,
+      "candidate_score": 1.0,
+      "case_ids": [
+        "conf-howto",
+        "conf-targeted",
+        "conf-duplicate",
+        "conf-preservation"
+      ],
+      "errors": 0,
+      "gains": [
+        "conf-howto",
+        "conf-duplicate"
+      ],
+      "regressions": [],
+      "strict_improvement": true
+    },
+    "confirmation_selected": true,
+    "development_incumbent": 2,
+    "limits": "synthetic deterministic development and reserved-workflow evidence; trusted local execution; no generalization claim",
+    "outcome": "verified development improvement; confirmation checks passed",
+    "pending_attempts": [],
+    "selected_attempt": 2,
+    "stop_reason": "confirmation complete"
+  },
+  "status": "finished",
+  "used_case_runs": 32,
+  "verification": "record and completed evidence verified"
+}

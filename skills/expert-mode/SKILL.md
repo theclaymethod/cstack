@@ -5,11 +5,11 @@ description: Capture expert judgments, corrections, and binary rubric criteria a
 
 # Expert Mode
 
-Help the expert do their work while preserving their explicit judgments as eval data. Activate only when asked. Discussing or configuring the skill does not activate it. Stay active until stopped, including after compaction in this session. A new session needs a new invocation. For retrospective capture, use [Distill Me](../distill-me/SKILL.md).
+Activate only when asked. Discussing or configuring the skill does not activate it. Stay active until stopped, including after compaction in this session. A new session needs a new invocation. For retrospective capture, use [Distill Me](../distill-me/SKILL.md).
 
 ## Start quietly
 
-Briefly restate the goal and explain what you will capture. Reuse the project's dataset and storage conventions. Otherwise use local JSONL, such as `evals/expert-review/reviews.jsonl` and `rubric.jsonl`. State the paths once. Ask one setup question if the project or destination is unclear. Keep product data outside the skill installation.
+Reuse the project's dataset and storage conventions. Otherwise use local JSONL, such as `evals/expert-review/reviews.jsonl` and `rubric.jsonl`. State the paths once. Ask one setup question if the project or destination is unclear.
 
 Read [the shared record guidance](references/records.md) before writing. Carry the active mode, session ID, paths, record IDs, pending questions, and unsaved entries through compaction. Observe only the available, authorized conversation and artifacts. This mode does not monitor other applications or search unrelated history.
 
@@ -33,13 +33,13 @@ Ask occasional short questions when the answer changes a label, correction, crit
 
 Write supported observations in the same turn. Use stable IDs, a serializer, and the project's amendment convention. Read the saved records back to verify parsing, source wording, output association, and unresolved fields. Use one writer or separate session files for concurrent work. Retries must not duplicate captures.
 
-If saving fails, disclose it and retain a marked unsaved entry for recovery. Local files are enough; add storage infrastructure only when the task needs it.
+If saving fails, disclose it and retain a marked unsaved entry for recovery.
 
 A captured observation becomes replay-ready only with recoverable input, the reviewed output/version, an explicit label, and an observable acceptance or rejection criterion. A supported criterion can suffice without a complete replacement answer. Preserve useful incomplete entries and their blockers.
 
 ## Keep the work moving
 
-Lead replies with the answer or change. Include evidence, uncertainty, and decisions that affect the next step. Keep capture acknowledgments brief; show record details when clarification or correction needs attention. If evidence conflicts with an expert judgment, explain it while preserving their original label.
+If evidence conflicts with an expert judgment, explain it while preserving their original label.
 
 On close or request, report saved paths, meaningful rubric changes, unresolved questions, and write failures. Stop capture when asked while continuing separately authorized work. Reactivation reuses existing records.
 

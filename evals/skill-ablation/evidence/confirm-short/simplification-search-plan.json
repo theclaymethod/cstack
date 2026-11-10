@@ -1,0 +1,232 @@
+[
+  {
+    "config": {
+      "model": "new-fixture",
+      "retained": [
+        "conflict-a",
+        "conflict-b",
+        "contract",
+        "duplicate-a",
+        "duplicate-b",
+        "example",
+        "legacy-auth",
+        "plan",
+        "plan-detail"
+      ]
+    },
+    "hypothesis": "original baseline",
+    "label": "full",
+    "parent": null,
+    "removed": []
+  },
+  {
+    "config": {
+      "model": "new-fixture",
+      "retained": [
+        "conflict-a",
+        "conflict-b",
+        "contract",
+        "duplicate-a",
+        "duplicate-b",
+        "example",
+        "plan",
+        "plan-detail"
+      ]
+    },
+    "hypothesis": "remove legacy authorization reminder",
+    "label": "no-legacy",
+    "parent": "full",
+    "removed": [
+      "legacy-auth"
+    ]
+  },
+  {
+    "config": {
+      "model": "new-fixture",
+      "retained": [
+        "conflict-a",
+        "conflict-b",
+        "contract",
+        "duplicate-a",
+        "duplicate-b",
+        "legacy-auth"
+      ]
+    },
+    "hypothesis": "dependency-closed noise group",
+    "label": "no-noise",
+    "parent": "full",
+    "removed": [
+      "example",
+      "plan",
+      "plan-detail"
+    ]
+  },
+  {
+    "config": {
+      "model": "new-fixture",
+      "retained": [
+        "conflict-a",
+        "conflict-b",
+        "contract",
+        "duplicate-b",
+        "example",
+        "legacy-auth",
+        "plan",
+        "plan-detail"
+      ]
+    },
+    "hypothesis": "conditional contribution of duplicate A",
+    "label": "no-duplicate-a",
+    "parent": "full",
+    "removed": [
+      "duplicate-a"
+    ]
+  },
+  {
+    "config": {
+      "model": "new-fixture",
+      "retained": [
+        "conflict-a",
+        "conflict-b",
+        "contract",
+        "duplicate-a",
+        "example",
+        "legacy-auth",
+        "plan",
+        "plan-detail"
+      ]
+    },
+    "hypothesis": "conditional contribution of duplicate B",
+    "label": "no-duplicate-b",
+    "parent": "full",
+    "removed": [
+      "duplicate-b"
+    ]
+  },
+  {
+    "config": {
+      "model": "new-fixture",
+      "retained": [
+        "conflict-a",
+        "conflict-b",
+        "contract",
+        "example",
+        "legacy-auth",
+        "plan",
+        "plan-detail"
+      ]
+    },
+    "hypothesis": "test union of individually removable reminders",
+    "label": "no-duplicates",
+    "parent": "full",
+    "removed": [
+      "duplicate-a",
+      "duplicate-b"
+    ]
+  },
+  {
+    "config": {
+      "model": "new-fixture",
+      "retained": [
+        "conflict-b",
+        "contract",
+        "duplicate-a",
+        "duplicate-b",
+        "example",
+        "legacy-auth",
+        "plan",
+        "plan-detail"
+      ]
+    },
+    "hypothesis": "conditional conflict A removal",
+    "label": "no-conflict-a",
+    "parent": "full",
+    "removed": [
+      "conflict-a"
+    ]
+  },
+  {
+    "config": {
+      "model": "new-fixture",
+      "retained": [
+        "conflict-a",
+        "contract",
+        "duplicate-a",
+        "duplicate-b",
+        "example",
+        "legacy-auth",
+        "plan",
+        "plan-detail"
+      ]
+    },
+    "hypothesis": "conditional conflict B removal",
+    "label": "no-conflict-b",
+    "parent": "full",
+    "removed": [
+      "conflict-b"
+    ]
+  },
+  {
+    "config": {
+      "model": "new-fixture",
+      "retained": [
+        "contract",
+        "duplicate-a",
+        "duplicate-b",
+        "example",
+        "legacy-auth",
+        "plan",
+        "plan-detail"
+      ]
+    },
+    "hypothesis": "paired compensating-cue removal",
+    "label": "no-conflicts",
+    "parent": "full",
+    "removed": [
+      "conflict-a",
+      "conflict-b"
+    ]
+  },
+  {
+    "config": {
+      "model": "new-fixture",
+      "retained": [
+        "contract",
+        "duplicate-a"
+      ]
+    },
+    "hypothesis": "combined task-faithful reduction",
+    "label": "selected",
+    "parent": "full",
+    "removed": [
+      "conflict-a",
+      "conflict-b",
+      "duplicate-b",
+      "example",
+      "legacy-auth",
+      "plan",
+      "plan-detail"
+    ]
+  },
+  {
+    "config": {
+      "model": "new-fixture",
+      "retained": [
+        "contract"
+      ]
+    },
+    "hypothesis": "check selected survivor reminder removal",
+    "label": "contract-only",
+    "parent": "full",
+    "removed": [
+      "conflict-a",
+      "conflict-b",
+      "duplicate-a",
+      "duplicate-b",
+      "example",
+      "legacy-auth",
+      "plan",
+      "plan-detail"
+    ]
+  }
+]

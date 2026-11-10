@@ -27,7 +27,7 @@ If an independent reviewer is unavailable, mark intent review unreviewed and con
 
 ## Attack within the evaluated agent's access
 
-Start with an attacker, a defender, and the independent reviewer. Add attackers when coverage warrants it. Consider verifier trust, environment lifecycle and isolation, and gaps between literal checks and intended outcomes. These are coverage questions, not mandatory separate agents.
+Start with an attacker, a defender, and the independent reviewer. Consider verifier trust, environment lifecycle and isolation, and gaps between literal checks and intended outcomes. These are coverage questions, not mandatory separate agents.
 
 For targeted challenge construction, have the attacker or assigned builder use [Adversarial Cases](../adversarial-cases/SKILL.md). Supply original intent/source, the frozen scoring path, candidate access and permitted operator injections separately, and the remaining budget. Request setup/reset, actual activation evidence, an independent outcome witness, controls, and reduction history. An operator-injected fault is a resilience experiment rather than automatically a candidate-access exploit. The builder's handoff is evidence for this workflow; finding adjudication and repair acceptance remain with Cross-Examine and its independent intent reviewer.
 
@@ -37,7 +37,7 @@ Give each attacker its own reset state and a bounded objective:
 
 Keep initial hypotheses independent across attackers. Serialize runs if isolation is unavailable. Attackers edit only their assigned sandbox; the defender owns canonical repairs and may be the coordinator. Keep these roles separate. When delegation is unavailable, disclose missing role separation.
 
-White-box inspection can suggest attacks, but reproduced exploits must use the evaluated agent's actual permissions. Report extra-access experiments separately. An efficient permitted alternative is a valid solution. Keep failed attempts, hypotheses, and infrastructure limits distinct from findings.
+White-box inspection can suggest attacks, but reproduced exploits must use the evaluated agent's actual permissions. Report extra-access experiments separately. Keep failed attempts, hypotheses, and infrastructure limits distinct from findings.
 
 For condition generation and reduction, consult [synthetic methods](../adversarial-cases/references/synthetic-methods.md). For executable perturbations, consult [failure methods](../adversarial-cases/references/failure-methods.md). Implement the selected experiment in the project with its native runner and bounded access.
 
@@ -55,7 +55,7 @@ Use existing checks and direct replays within project rules on new test files. F
 
 ## Keep tooling proportional
 
-Use local files, the project's runtime, and separate scratch copies. Add SQLite only for database behavior. Use Docker or an adequate existing sandbox when untrusted execution or permission tests require isolation. Record why heavier tools are needed.
+Use Docker or an adequate existing sandbox when untrusted execution or permission tests require isolation.
 
 Scratch directories and timeouts provide repeatability, not containment. Local processes retain host permissions. Enforce any boundary a claim depends on or leave that claim unverified. Protect evaluator-only assets with actual access controls, not instructions.
 
@@ -63,4 +63,4 @@ Scratch directories and timeouts provide repeatability, not containment. Local p
 
 For each confirmed mechanism, update the skill that guides the generator or a reference it already reads. If none exists, use this skill's linked lessons file. Explain the faulty assumption, why the score diverged from intent, what to generate instead, and the reproducer/version supporting it. Deduplicate by root cause. Keep conjectures in the ledger and report failed lesson writes.
 
-Update the ledger with original and repaired outcomes, legitimate-solution checks, the independent intent verdict, and remaining limits. Report the evidence and changed ledger/lesson paths. Claim only the coverage and prevention actually demonstrated.
+Update the ledger with original and repaired outcomes, legitimate-solution checks, the independent intent verdict, and remaining limits. Claim only the coverage and prevention actually demonstrated.

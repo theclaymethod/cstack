@@ -1,0 +1,398 @@
+--- original/skills/expert-mode/SKILL.md
++++ candidate/skills/expert-mode/SKILL.md
+@@ -5,11 +5,11 @@
+ 
+ # Expert Mode
+ 
+-Help the expert do their work while preserving their explicit judgments as eval data. Activate only when asked. Discussing or configuring the skill does not activate it. Stay active until stopped, including after compaction in this session. A new session needs a new invocation. For retrospective capture, use [Distill Me](../distill-me/SKILL.md).
++Activate only when asked. Discussing or configuring the skill does not activate it. Stay active until stopped, including after compaction in this session. A new session needs a new invocation. For retrospective capture, use [Distill Me](../distill-me/SKILL.md).
+ 
+ ## Start quietly
+ 
+-Briefly restate the goal and explain what you will capture. Reuse the project's dataset and storage conventions. Otherwise use local JSONL, such as `evals/expert-review/reviews.jsonl` and `rubric.jsonl`. State the paths once. Ask one setup question if the project or destination is unclear. Keep product data outside the skill installation.
++Reuse the project's dataset and storage conventions. Otherwise use local JSONL, such as `evals/expert-review/reviews.jsonl` and `rubric.jsonl`. State the paths once. Ask one setup question if the project or destination is unclear.
+ 
+ Read [the shared record guidance](references/records.md) before writing. Carry the active mode, session ID, paths, record IDs, pending questions, and unsaved entries through compaction. Observe only the available, authorized conversation and artifacts. This mode does not monitor other applications or search unrelated history.
+ 
+@@ -33,13 +33,13 @@
+ 
+ Write supported observations in the same turn. Use stable IDs, a serializer, and the project's amendment convention. Read the saved records back to verify parsing, source wording, output association, and unresolved fields. Use one writer or separate session files for concurrent work. Retries must not duplicate captures.
+ 
+-If saving fails, disclose it and retain a marked unsaved entry for recovery. Local files are enough; add storage infrastructure only when the task needs it.
++If saving fails, disclose it and retain a marked unsaved entry for recovery.
+ 
+ A captured observation becomes replay-ready only with recoverable input, the reviewed output/version, an explicit label, and an observable acceptance or rejection criterion. A supported criterion can suffice without a complete replacement answer. Preserve useful incomplete entries and their blockers.
+ 
+ ## Keep the work moving
+ 
+-Lead replies with the answer or change. Include evidence, uncertainty, and decisions that affect the next step. Keep capture acknowledgments brief; show record details when clarification or correction needs attention. If evidence conflicts with an expert judgment, explain it while preserving their original label.
++If evidence conflicts with an expert judgment, explain it while preserving their original label.
+ 
+ On close or request, report saved paths, meaningful rubric changes, unresolved questions, and write failures. Stop capture when asked while continuing separately authorized work. Reactivation reuses existing records.
+ 
+--- original/skills/distill-me/SKILL.md
++++ candidate/skills/distill-me/SKILL.md
+@@ -5,7 +5,7 @@
+ 
+ # Distill Me
+ 
+-Review the current session once and save supported expert judgments as eval data. Discussing the skill does not invoke it. Leave [Expert Mode](../expert-mode/SKILL.md) active or inactive as it was; this pass does not start ongoing capture.
++Discussing the skill does not invoke it. Leave [Expert Mode](../expert-mode/SKILL.md) active or inactive as it was; this pass does not start ongoing capture.
+ 
+ ## Bound the source
+ 
+@@ -17,7 +17,7 @@
+ 
+ ## Find the useful judgments
+ 
+-Review corrections, rubric criteria, and evidence quality. For substantial sessions, independent reviewers can use [the review prompts](references/review-passes.md) within the authorized budget. Short sessions or hosts without delegation can cover those questions sequentially. Each reviewer uses the original source and returns candidates; the coordinator writes the dataset. Reviewer agreement supplies no expert authority.
++For substantial sessions, independent reviewers can use [the review prompts](references/review-passes.md) within the authorized budget. Each reviewer uses the original source and returns candidates; the coordinator writes the dataset. Reviewer agreement supplies no expert authority.
+ 
+ Follow the conversation chronologically, pairing each judgment with the output the expert actually saw and any later clarification or retraction. Capture explicit errors without waiting for a replacement. Preserve partial corrections, rationale, scope, and alternatives. Keep expert wording separate from your interpretation.
+ 
+@@ -39,8 +39,8 @@
+ 
+ ## Report and hand off
+ 
+-Lead with what was saved and where. Mention meaningful rubric changes, unresolved questions, source limits, and write failures. Keep replies short; show individual rows when an expert decision needs them.
++Lead with what was saved and where. Mention meaningful rubric changes, unresolved questions, source limits, and write failures.
+ 
+ For requested sharing, follow [the export workflow](../expert-mode/references/export.md), including its local Privacy Filter setup and review of redaction's effect on eval meaning. Preserve private originals. A local export does not send data or activate capture.
+ 
+-This pass adds no authority to fix products, create test files, run eval campaigns, commit, upload, publish, or change standing working rules. Use ordinary local files and available agent tools.
++This pass adds no authority to fix products, create test files, run eval campaigns, commit, upload, publish, or change standing working rules.
+--- original/skills/bootstrap/SKILL.md
++++ candidate/skills/bootstrap/SKILL.md
+@@ -7,7 +7,7 @@
+ 
+ Turn the user's intent into a small, reviewed set of scenarios and runnable evaluators. The user decides what behavior is acceptable; agents propose scenarios and implement checks. Work on one behavior at a time, including adjacent behavior that must keep working.
+ 
+-Bootstrap owns the interview, scenario review, and orchestration. [Create Eval](../create-eval/SKILL.md) owns evaluator authoring and calibration; [Run Eval](../run-eval/SKILL.md) owns execution; [Cross-Examine](../cross-examine/SKILL.md) owns optional adversarial review. Keep these sibling skills together.
++Bootstrap owns the interview, scenario review, and orchestration. [Create Eval](../create-eval/SKILL.md) owns evaluator authoring and calibration; [Run Eval](../run-eval/SKILL.md) owns execution; [Cross-Examine](../cross-examine/SKILL.md) owns optional adversarial review.
+ 
+ For deeper generated coverage, use the shared [synthetic methods](../adversarial-cases/references/synthetic-methods.md). Prefer Harbor for new executable agent evals while preserving existing/owner-selected formats; see [format selection](../create-eval/references/formats.md). Generators and adapters belong in the project, not this skill.
+ 
+@@ -15,7 +15,7 @@
+ 
+ Read project instructions, existing eval examples, schemas, runner commands, and any relevant intent already supplied in this session. Map where cases, checks, fixtures, and private labels belong. Reuse the project's runner and format; use [the local package contract](../run-eval/references/package.md) only if it has none.
+ 
+-Evidence gathering is project specific. Identify available requirements, user examples, authorized traces, fixtures, or domain documents and the project's way to access them. Use those sources when relevant; a trace integration, production corpus, or running implementation is not an entry requirement. Mark unavailable sources and continue with explicit requirements and synthetic proposals. Keep data and run artifacts in the project's eval workspace, outside the skill installation.
++Evidence gathering is project specific. Identify available requirements, user examples, authorized traces, fixtures, or domain documents and the project's way to access them. Use those sources when relevant; a trace integration, production corpus, or running implementation is not an entry requirement. Mark unavailable sources and continue with explicit requirements and synthetic proposals.
+ 
+ Interview in short rounds about missing decisions that change a scenario or its expected result:
+ 
+@@ -23,9 +23,9 @@
+ - What plausible response or action would be unacceptable? Which alternatives are acceptable?
+ - What nearby behavior must remain intact? Where should the system ask, abstain, or defer?
+ 
+-Use concrete situations to resolve vague terms. Keep questions about desired behavior; infer technical choices from the project. Propose a reviewable first batch and execution scope using the user's time and budget. Leave coverage priorities, review volume, trust thresholds, and optional hardening with the user. Reuse answers already supplied.
++Keep questions about desired behavior; infer technical choices from the project. Propose a reviewable first batch and execution scope using the user's time and budget. Leave coverage priorities, review volume, trust thresholds, and optional hardening with the user.
+ 
+-Record a short intent contract with the trigger, success, failures, alternatives, preserved behavior, and unresolved boundaries. Confirm missing product judgments before treating them as settled. Independent preparation can continue while questions are pending.
++Record a short intent contract with the trigger, success, failures, alternatives, preserved behavior, and unresolved boundaries. Confirm missing product judgments before treating them as settled.
+ 
+ ## Generate scenarios with subagents
+ 
+@@ -36,8 +36,6 @@
+ Dispatch independent scenario authors with distinct coverage assignments: ordinary successes and valid alternatives; boundaries and minimal contrast pairs; plausible failures and adjacent regressions. Combine assignments to fit available capacity. Give each author the same intent revision, relevant project facts, allowed fixtures, and a bounded output budget. Keep initial proposals independent and writes in separate scratch files. Authors return scenarios and proposed expectations, not approved labels or evaluator code.
+ 
+ Merge proposals by behavioral distinction, remove duplicates, and check feasibility against actual tools, data, and permissions. Preserve source and construction families across paraphrases and related variants. Show coverage gaps and unsupported assumptions. If delegation is unavailable, generate a bounded local draft and disclose that independent scenario coverage was not performed.
+-
+-The first batch is ready when each review card describes a feasible situation, a proposed expected behavior, the contract boundary it exercises, and any unresolved facts. A large scenario count is not evidence of coverage.
+ 
+ ## Ask for intent labels
+ 
+@@ -58,9 +56,7 @@
+ 
+ Dispatch evaluator authors for independent approved groups using [Create Eval](../create-eval/SKILL.md). Give each a separate scratch output and ownership scope; the coordinator integrates into the canonical package. Authors receive the contract and permitted task evidence. Reserve calibration examples and their human outcome labels from authors; give the validator only the judge's permitted payload.
+ 
+-Each evaluator must point back to an approved requirement and check the observable evidence that establishes it. Use deterministic checks for objective properties and narrow binary judges for interpretive criteria. Preserve legitimate alternative solutions. Stateful actions need resulting-state and preservation checks plus reset when executed; a claim of success or a tool name alone may be insufficient.
+-
+-Reuse the target project's schema and runner without introducing a second harness. When implementation or execution setup is missing, produce contract-based cases and checks where possible, record the execution gap, and leave product execution unrun. Keep mocked outputs and environments explicit. Synthetic scenario origin and actual product execution are separate facts.
++When implementation or execution setup is missing, produce contract-based cases and checks where possible, record the execution gap, and leave product execution unrun. Keep mocked outputs and environments explicit. Synthetic scenario origin and actual product execution are separate facts.
+ 
+ Before integration, validate the authored cases against the project's required schema and compare their inputs, context, initial state, families, and checks with the current approved scenarios. Matching IDs and expected labels alone does not establish fidelity. Preserve meaning across format conversion; return material changes for review and record any accepted alternative representation. Keep approved source records outside the author's changes so an edited case cannot redefine its own acceptance condition.
+ 
+--- original/skills/create-eval/SKILL.md
++++ candidate/skills/create-eval/SKILL.md
+@@ -4,8 +4,6 @@
+ ---
+ 
+ # Create Eval
+-
+-Build an eval that measures a stated capability and supports a concrete decision. Reuse the project's format, runner, and tools. Local files and an inspectable grader are enough unless the task needs more.
+ 
+ For trace analysis, synthetic inputs, failure discovery, or calibration, consult [existing eval skills](references/ecosystem.md). Use the relevant skill when available or its upstream guidance. These are optional references, not bundled dependencies.
+ 
+@@ -41,7 +39,7 @@
+ 
+ ## Check the grader
+ 
+-Keep the package a draft until legitimate passes, clear failures, and relevant boundaries run through the real grading path. Check supported alternatives too. Use existing checks or direct replays, respecting project rules on new test files. Report what those controls establish without generalizing beyond them.
++Keep the package a draft until legitimate passes, clear failures, and relevant boundaries run through the real grading path. Check supported alternatives too.
+ 
+ For semantic judges, read [judge calibration](references/judges.md). Use [Calibrate Judge](../calibrate-judge/SKILL.md) to fit a judge to authoritative labels before freezing it for product evaluation. Use separate expert-labeled development and calibration examples from both classes. Freeze the rubric, prompt, parser, model/configuration, runner version, sampling, and budget before comparison. Changes create a new revision; preserve earlier results.
+ 
+@@ -51,6 +49,6 @@
+ 
+ ## Hand off
+ 
+-Report the package path, measured capability, evidence sources, replayable cases, unresolved cases, and actual validation limits. Separate grader calibration from product performance and development results from held-out evidence. A small perfect run establishes no production-trust threshold.
++Report the package path, measured capability, evidence sources, replayable cases, unresolved cases, and actual validation limits. Separate grader calibration from product performance and development results from held-out evidence.
+ 
+ Authoring adds no authority for product fixes, paid campaigns, opening reserved cases, publication, or uploads. For requested sharing, follow [the export workflow](../expert-mode/references/export.md).
+--- original/skills/run-eval/SKILL.md
++++ candidate/skills/run-eval/SKILL.md
+@@ -4,8 +4,6 @@
+ ---
+ 
+ # Run Eval
+-
+-Run the requested eval and preserve what happened. Prefer the project's trusted runner. Stored-output review can use local files, code checks, and the active agent as a semantic judge. It needs no separate model API, database, or Docker.
+ 
+ For an authorized campaign that changes an artifact and compares candidates against this evaluator, use [Hill Climb](../hill-climb/SKILL.md).
+ 
+@@ -17,7 +15,7 @@
+ 
+ Identify whether you are grading stored outputs, executing the product, calibrating a judge, or running a stateful agent. Stay within the authorized data, systems, and budget. Missing execution setup is unrun, not a zero product score. Stored-output review does not establish product execution.
+ 
+-For new executions, capture original input, actual output or error, available tool interactions and retrieved evidence, state changes, and feature/configuration identity. Use project telemetry or [the local trace contract](../create-eval/references/trace-review.md). Keep failed and incomplete attempts visible. Record available evidence, not invented internals or private chain-of-thought. For a feature without relevant traces, see [early development](../create-eval/references/early-development.md).
++For new executions, capture original input, actual output or error, available tool interactions and retrieved evidence, state changes, and feature/configuration identity. Use project telemetry or [the local trace contract](../create-eval/references/trace-review.md). For a feature without relevant traces, see [early development](../create-eval/references/early-development.md).
+ 
+ Keep development, calibration, regression, and frontier results separate. Open final-test semantics only on explicit instruction and a frozen revision. Record prior exposure and runs. Renaming files or partitions does not restore unseen status.
+ 
+@@ -51,6 +49,6 @@
+ 
+ Use an existing viewer or [local trace review](../create-eval/references/trace-review.md) for selected development traces. A viewer supports discovery, not blind isolation. Preserve annotations and disagreements as new evidence for Create Eval rather than rewriting frozen results or calibration gold.
+ 
+-Lead with what ran, the result, and the evidence directory. Include revision, source and trial conditions, errors, abstentions, exposure, privacy limits, and label isolation. A process exit alone does not establish eval success.
++Lead with what ran, the result, and the evidence directory. Include revision, source and trial conditions, errors, abstentions, exposure, privacy limits, and label isolation.
+ 
+ Execution adds no authority to change expert labels, tune from final-test results, fix products, or publish data. For requested sharing, follow [the export workflow](../expert-mode/references/export.md).
+--- original/skills/cross-examine/SKILL.md
++++ candidate/skills/cross-examine/SKILL.md
+@@ -27,7 +27,7 @@
+ 
+ ## Attack within the evaluated agent's access
+ 
+-Start with an attacker, a defender, and the independent reviewer. Add attackers when coverage warrants it. Consider verifier trust, environment lifecycle and isolation, and gaps between literal checks and intended outcomes. These are coverage questions, not mandatory separate agents.
++Start with an attacker, a defender, and the independent reviewer. Consider verifier trust, environment lifecycle and isolation, and gaps between literal checks and intended outcomes. These are coverage questions, not mandatory separate agents.
+ 
+ For targeted challenge construction, have the attacker or assigned builder use [Adversarial Cases](../adversarial-cases/SKILL.md). Supply original intent/source, the frozen scoring path, candidate access and permitted operator injections separately, and the remaining budget. Request setup/reset, actual activation evidence, an independent outcome witness, controls, and reduction history. An operator-injected fault is a resilience experiment rather than automatically a candidate-access exploit. The builder's handoff is evidence for this workflow; finding adjudication and repair acceptance remain with Cross-Examine and its independent intent reviewer.
+ 
+@@ -37,7 +37,7 @@
+ 
+ Keep initial hypotheses independent across attackers. Serialize runs if isolation is unavailable. Attackers edit only their assigned sandbox; the defender owns canonical repairs and may be the coordinator. Keep these roles separate. When delegation is unavailable, disclose missing role separation.
+ 
+-White-box inspection can suggest attacks, but reproduced exploits must use the evaluated agent's actual permissions. Report extra-access experiments separately. An efficient permitted alternative is a valid solution. Keep failed attempts, hypotheses, and infrastructure limits distinct from findings.
++White-box inspection can suggest attacks, but reproduced exploits must use the evaluated agent's actual permissions. Report extra-access experiments separately. Keep failed attempts, hypotheses, and infrastructure limits distinct from findings.
+ 
+ For condition generation and reduction, consult [synthetic methods](../adversarial-cases/references/synthetic-methods.md). For executable perturbations, consult [failure methods](../adversarial-cases/references/failure-methods.md). Implement the selected experiment in the project with its native runner and bounded access.
+ 
+@@ -55,7 +55,7 @@
+ 
+ ## Keep tooling proportional
+ 
+-Use local files, the project's runtime, and separate scratch copies. Add SQLite only for database behavior. Use Docker or an adequate existing sandbox when untrusted execution or permission tests require isolation. Record why heavier tools are needed.
++Use Docker or an adequate existing sandbox when untrusted execution or permission tests require isolation.
+ 
+ Scratch directories and timeouts provide repeatability, not containment. Local processes retain host permissions. Enforce any boundary a claim depends on or leave that claim unverified. Protect evaluator-only assets with actual access controls, not instructions.
+ 
+@@ -63,4 +63,4 @@
+ 
+ For each confirmed mechanism, update the skill that guides the generator or a reference it already reads. If none exists, use this skill's linked lessons file. Explain the faulty assumption, why the score diverged from intent, what to generate instead, and the reproducer/version supporting it. Deduplicate by root cause. Keep conjectures in the ledger and report failed lesson writes.
+ 
+-Update the ledger with original and repaired outcomes, legitimate-solution checks, the independent intent verdict, and remaining limits. Report the evidence and changed ledger/lesson paths. Claim only the coverage and prevention actually demonstrated.
++Update the ledger with original and repaired outcomes, legitimate-solution checks, the independent intent verdict, and remaining limits. Claim only the coverage and prevention actually demonstrated.
+--- original/skills/hill-climb/SKILL.md
++++ candidate/skills/hill-climb/SKILL.md
+@@ -5,9 +5,9 @@
+ 
+ # Hill Climb
+ 
+-Run a bounded campaign that changes an authorized artifact, executes it, and compares its behavior with a baseline. Deliver the best verified artifact and evidence, including an honest no-improvement result. A promising search score and a confirmed improvement are different campaign states.
++Run a bounded campaign that changes an authorized artifact, executes it, and compares its behavior with a baseline. Deliver the best verified artifact and evidence, including an honest no-improvement result.
+ 
+-Use [Bootstrap](../bootstrap/SKILL.md) or [Create Eval](../create-eval/SKILL.md) when the behavior or evaluator is not established. [Run Eval](../run-eval/SKILL.md) owns faithful execution and scoring; [Cross-Examine](../cross-examine/SKILL.md) investigates suspected scoring gaps. Reuse the project's actual runner and formats.
++Use [Bootstrap](../bootstrap/SKILL.md) or [Create Eval](../create-eval/SKILL.md) when the behavior or evaluator is not established. [Run Eval](../run-eval/SKILL.md) owns faithful execution and scoring; [Cross-Examine](../cross-examine/SKILL.md) investigates suspected scoring gaps.
+ 
+ When the mutable target is the judge itself, [Calibrate Judge](../calibrate-judge/SKILL.md) owns label authority, agreement and confirmation; this skill can supply its bounded search. Product optimization keeps the approved evaluator fixed.
+ 
+@@ -25,7 +25,7 @@
+ 
+ Write the [campaign contract](references/campaign.md): mutable target, frozen evaluation boundary, objective/direction, case membership, constraints, trial protocol, allowed feedback, budget, confirmation allowance, stopping, and promotion rule. Pin actual model/tool versions where available; retain unknowns honestly. Hash content and configuration, including inputs and runner dependencies. Names and case IDs alone do not establish unchanged evaluation semantics.
+ 
+-Use existing infrastructure to enforce the contract. See [optimizer choices](references/optimizers.md) when selecting a backend. An agent-led proposal loop is valid; DSPy, Ax, GEPA, and Halo are optional integrations, not installation prerequisites. Keep experimental artifacts outside the skill installation.
++See [optimizer choices](references/optimizers.md) when selecting a backend. An agent-led proposal loop is valid; DSPy, Ax, GEPA, and Halo are optional integrations, not installation prerequisites.
+ 
+ For generated training/evaluation data or a DSPy integration, read [the data handoff](references/data-handoff.md). Keep dataset, adapter and dependency code project-local; the shared [generation](../adversarial-cases/references/synthetic-methods.md) and [failure](../adversarial-cases/references/failure-methods.md) references help choose a method.
+ 
+@@ -37,11 +37,11 @@
+ 
+ ## Diagnose and propose
+ 
+-Read per-case evidence and inspect representative failures and existing successes. State a concrete hypothesis: the observed mechanism, the proposed change, expected affected cases, and nearby behavior that could regress. Scale analysis to the evidence; a small batch need not acquire clustering infrastructure.
++Read per-case evidence and inspect representative failures and existing successes. State a concrete hypothesis: the observed mechanism, the proposed change, expected affected cases, and nearby behavior that could regress.
+ 
+-Make attributable candidates within the authorized scope. Snapshot candidate content and parentage before execution. Parallel proposals use separate copies and run state; one coordinator owns integration. Start with independent hypotheses when useful, then record which later proposals depend on earlier results. A single sequential agent is sufficient when capacity or the task makes that simpler.
++Make attributable candidates within the authorized scope. Snapshot candidate content and parentage before execution. Parallel proposals use separate copies and run state; one coordinator owns integration. Start with independent hypotheses when useful, then record which later proposals depend on earlier results.
+ 
+-Feed proposers evidence relevant to the hypothesis: failed assertions, actual outputs, trace excerpts, source-bound observations, and measured costs. Keep interpretation separate from verifier facts. Search labels and examples may be used when the task permits them; reserved evidence and final-test feedback follow the declared exposure policy. Do not extract or request private chain-of-thought.
++Feed proposers evidence relevant to the hypothesis: failed assertions, actual outputs, trace excerpts, source-bound observations, and measured costs. Keep interpretation separate from verifier facts. Search labels and examples may be used when the task permits them; reserved evidence and final-test feedback follow the declared exposure policy.
+ 
+ ## Evaluate and retain
+ 
+@@ -49,13 +49,13 @@
+ 
+ Execute the changed artifact with the declared trials and complete selected membership. Record actual evaluated IDs, per-case outcomes, errors, comparisons, and costs. Partial or cheap screening can nominate a candidate; it does not satisfy the full confirmation protocol. Validate source/schema fidelity as well as expected scores, and reject contract drift rather than silently rebasing.
+ 
+-Retain candidates according to the declared policy. A best feasible incumbent can coexist with complementary candidates for later search or merging. Retention does not authorize promotion. Test any merged candidate as a new artifact. Preserve rejected attempts and the baseline; stop or narrow the campaign when evidence shows the premise or search direction needs reconsideration.
++Test any merged candidate as a new artifact. Preserve rejected attempts and the baseline; stop or narrow the campaign when evidence shows the premise or search direction needs reconsideration.
+ 
+ ## Confirm and select
+ 
+ Confirm shortlisted candidates against the baseline using the agreed comparison, regression checks, and evidence volume. Repeatedly consulted validation cases are adaptive selection evidence. Independently reserved cases can support stronger claims only when they actually stayed outside fitting and opening them is authorized. Without independent evidence, report improvement on the exposed cases rather than generalization.
+ 
+-Apply the owner's objective and constraint policy to per-case outcomes as well as the aggregate. Leave inconclusive comparisons inconclusive; neither a tiny gain nor a perfect small run establishes a universal trust threshold. Preserve actual error/unknown counts even when other cases decide the result.
++Apply the owner's objective and constraint policy to per-case outcomes as well as the aggregate. Leave inconclusive comparisons inconclusive; neither a tiny gain nor a perfect small run establishes a universal trust threshold.
+ 
+ Promote only a candidate that satisfies the declared confirmation and admissibility rules. If none does, retain the baseline and report no verified improvement. Deliver a selected candidate as a reviewable artifact/diff; apply it to the authorized target when that is the requested promotion behavior and the working target has not acquired unrelated changes. Publishing, deployment, new paid budgets, or broader product changes need their own existing authorization.
+ 
+@@ -63,4 +63,4 @@
+ 
+ Stop at the declared budget, deadline, plateau, target, or user instruction. Preserve the best verified artifact even if the last proposal fails. Write durable state before and after executions so an interruption leaves an attempt visibly incomplete. If execution finished before its ledger update, reconcile complete native evidence with the original reservation and frozen contract before recovering its result or decision; avoid a new execution or charge for that reconciliation. Partial, invalid, or mismatched evidence stays incomplete and charged. Resume only after checking the exact target/eval/configuration and exposure history; use a new campaign for a changed contract. An interrupted execution may have consumed resources and must not be retried as free work.
+ 
+-Report the selected artifact and diff, baseline and candidate identities, measured capability, per-case changes and regressions, actual runs/costs, stopping reason, and remaining uncertainty. Distinguish search retention, development improvement, confirmation, and product/generalization claims. Provide reproducible commands and evidence paths. If no candidate earns promotion, make the retained baseline and unresolved opportunity concrete.
++Report the selected artifact and diff, baseline and candidate identities, measured capability, per-case changes and regressions, actual runs/costs, stopping reason, and remaining uncertainty. Distinguish search retention, development improvement, confirmation, and product/generalization claims. If no candidate earns promotion, make the retained baseline and unresolved opportunity concrete.
+--- original/skills/calibrate-judge/SKILL.md
++++ candidate/skills/calibrate-judge/SKILL.md
+@@ -5,13 +5,13 @@
+ 
+ # Calibrate Judge
+ 
+-Turn the project's grading standard into a reusable judge and measure how well it reproduces authoritative outcomes. Keep agreement, decision thresholds, probability calibration and repeated-input stability separate. A fitting score or typed output alone does not establish a calibrated judge.
++Turn the project's grading standard into a reusable judge and measure how well it reproduces authoritative outcomes. Keep agreement, decision thresholds, probability calibration and repeated-input stability separate.
+ 
+-This skill supplies instructions and references. Write judge code, native adapters, datasets and run artifacts in the consuming project. Reuse its format and runner. Missing gold or execution setup leaves the corresponding calibration unrun; a disclosed synthetic mechanics demonstration is still useful.
++Write judge code, native adapters, datasets and run artifacts in the consuming project. Reuse its format and runner. Missing gold or execution setup leaves the corresponding calibration unrun; a disclosed synthetic mechanics demonstration is still useful.
+ 
+ ## Establish the contract
+ 
+-Recover original inputs, evaluated outputs/versions, allowed task references, labels, criterion scope, authority and source families. Read [the calibration protocol](references/protocol.md) for label auditing, data separation, freezing and handoff. Resolve project facts before asking the owner for missing judgments.
++Recover original inputs, evaluated outputs/versions, allowed task references, labels, criterion scope, authority and source families. Read [the calibration protocol](references/protocol.md) for label auditing, data separation, freezing and handoff.
+ 
+ Establish the target decision and costly errors, supported label types, allowed abstention/fallback, backend/model, mutable judge components, budget and acceptance targets. Preserve choices the owner has not made. A missing release policy is not a pass. Do not infer permission for paid model calls, uploads, weight training or opening reserved labels from a request to write a skill or validate mechanics.
+ 
+@@ -19,7 +19,7 @@
+ 
+ ## Execute the untuned judge
+ 
+-Map actual backend capabilities using [backend guidance](references/backends.md). Use the project's native request and response format. A Jev-style model may return typed probabilities without an explanation; a generative judge may return a structured verdict and optional concise evidence summary. Preserve native responses, unavailable fields, parsing/transport errors, model identity and costs.
++Map actual backend capabilities using [backend guidance](references/backends.md). Use the project's native request and response format. Preserve native responses, unavailable fields, parsing/transport errors, model identity and costs.
+ 
+ Run the initial configuration before edits on declared development membership. Keep gold verdicts, annotation rationales, label-bearing names and selection metadata out of current judge inputs. Approved reference answers or expected task behavior may be legitimate inputs when the real judge is allowed to use them. Fitting feedback may expose development labels to a proposer; that does not make them runtime evidence.
+ 
+@@ -35,7 +35,7 @@
+ 
+ ## Confirm and decide
+ 
+-Read [measurement guidance](references/measurement.md). Report raw counts and class consequences alongside kappa and uncertainty. Use ordinal weighting only for a declared ordered scale. Preserve undefined statistics, UNKNOWN/errors, all-selected denominators and coverage. Report probability diagnostics, stability, latency and cost separately where measurable.
++Read [measurement guidance](references/measurement.md). Report raw counts and class consequences alongside kappa and uncertainty. Preserve undefined statistics, UNKNOWN/errors, all-selected denominators and coverage. Report probability diagnostics, stability, latency and cost separately where measurable.
+ 
+ Freeze the selected judge, mappings and confirmation plan before final execution. Compare baseline and candidate on the same reserved cases under the declared trial policy. Freeze all planned predictions before opening final labels. Final disagreements used for edits become development exposure; preserve the result and obtain fresh evidence for a new independent claim.
+ 
+--- original/skills/adversarial-cases/SKILL.md
++++ candidate/skills/adversarial-cases/SKILL.md
+@@ -9,19 +9,19 @@
+ 
+ ## Receive the parent's contract
+ 
+-Recover the original requirement and revision, raw input/context/state, supported alternatives, project runner, evaluated agent access, permitted operator injections, evidence boundaries, and case/execution budget. Read project instructions and existing fixtures. Resolve facts from the project before asking the parent for missing judgments. Continue independent construction while affected intent remains provisional.
++Recover the original requirement and revision, raw input/context/state, supported alternatives, project runner, evaluated agent access, permitted operator injections, evidence boundaries, and case/execution budget.
+ 
+ Keep the intended outcome fixed across the challenge. State the exact assumption being tested and why the situation is feasible. Separate source-backed facts, synthetic fixtures, and hypotheses. An impossible user goal can legitimately test clarification or refusal; distinguish that from an accidentally impossible environment.
+ 
+ Use the parent's case format or the equivalent fields in [the case contract](references/case-contract.md). Keep artifacts in its eval workspace, outside the installed skill. Preserve source/construction families across variants, transformations, repeated runs, and minimization. The parent decides coverage priorities, volume, realism requirements, and allowed scope.
+ 
+-For generation/reduction/selection, read [synthetic methods](references/synthetic-methods.md). For lifecycle, subprocess, storage or dependency perturbations, read [failure methods](references/failure-methods.md). These are recipes for project-local implementations; no generator or fault runtime is bundled with this skill.
++For generation/reduction/selection, read [synthetic methods](references/synthetic-methods.md). For lifecycle, subprocess, storage or dependency perturbations, read [failure methods](references/failure-methods.md).
+ 
+ ## Construct conditions before wording
+ 
+ Choose a meaningful boundary: authorization or evidence changes, stale/conflicting state, a malformed result, a partial operation, dependency failure, or an interrupted lifecycle transition. Tie it to a requirement and credible failure mechanism. Generate feasible conditions first, then render requests or conversation text from those facts.
+ 
+-Prefer a minimal contrast pair when it isolates the boundary. For stateful scenarios, preserve consistent identities, relationships, chronology, permissions, and reachable transitions. Existing fixture builders or small deterministic scripts can establish those facts. A model-generated document or expected answer remains a proposal, not independent domain truth.
++Prefer a minimal contrast pair when it isolates the boundary. For stateful scenarios, preserve consistent identities, relationships, chronology, permissions, and reachable transitions. A model-generated document or expected answer remains a proposal, not independent domain truth.
+ 
+ Specify the correct response under the perturbation: recovery, safe non-action, clarification, or completion may each be legitimate when supported by intent. Preserve acceptable wording, implementation paths, and outcome representations. A tool error or inability to finish the original action is not itself proof of task failure.
+ 
+@@ -39,7 +39,7 @@
+ 
+ Pair the challenge with a clean control and relevant legitimate alternatives. Include a non-activation or no-op control when activation could be mistaken for setup success. Keep inputs, versions, initial state, and the declared trial policy comparable. Verify reset between attempts and preserve original failed artifacts instead of replacing them with repaired outputs.
+ 
+-Replay within the parent's budget. Then remove irrelevant fields, steps, timing assumptions, or perturbations while preserving feasibility, observed activation, and the same distinguishing outcome. Minimize the mechanism rather than merely shortening its wording. Recheck controls after minimization; retain failed reductions and uncertainty where variability prevents stable attribution. Additional trials and minimization attempts consume the same declared budget.
++Replay within the parent's budget. Then remove irrelevant fields, steps, timing assumptions, or perturbations while preserving feasibility, observed activation, and the same distinguishing outcome. Recheck controls after minimization; retain failed reductions and uncertainty where variability prevents stable attribution. Additional trials and minimization attempts consume the same declared budget.
+ 
+ Freeze each scored version and preserve evidence before changing a case or instrument. Record material changes as revisions; return changed expected behavior to the parent. Cases exposed during fitting or repair remain development evidence.
+ 
+--- original/skills/ablation/SKILL.md
++++ candidate/skills/ablation/SKILL.md
+@@ -5,13 +5,13 @@
+ 
+ # Ablation
+ 
+-Find a less burdensome version of the authorized target that meets its quality contract. Deliver the best confirmed reduction found within budget, its deletion diff, and evidence. Keeping the original is a valid outcome.
++Find a less burdensome version of the authorized target that meets its quality contract. Deliver the best confirmed reduction found within budget, its deletion diff, and evidence.
+ 
+-This skill contains guidance and references. Put adapters, candidate generators and experiment artifacts in the consuming project. Reuse its runner and format. [Hill Climb](../hill-climb/SKILL.md) supplies bounded search, execution identity, accounting and confirmation; use the removal-specific rules here. [Bitter Lesson](../bitter-lesson/SKILL.md) adds model-migration comparisons.
++Put adapters, candidate generators and experiment artifacts in the consuming project. Reuse its runner and format. [Hill Climb](../hill-climb/SKILL.md) supplies bounded search, execution identity, accounting and confirmation; use the removal-specific rules here. [Bitter Lesson](../bitter-lesson/SKILL.md) adds model-migration comparisons.
+ 
+ ## Define the removal experiment
+ 
+-Recover the baseline, actual assembled prompt/context or workflow, existing evals, and owner decisions. Resolve project facts locally; ask only for missing judgments that change admissibility or execution scope.
++Recover the baseline, actual assembled prompt/context or workflow, existing evals, and owner decisions.
+ 
+ Declare the removable units and their dependencies, protected task requirements, burden objective, primary quality measure, important regression slices, acceptable loss, trial protocol, budget and confirmation rule. Quality loss is relative to the **original baseline**, throughout the campaign. A missing loss policy is not permission to invent one; prepare diagnostic candidates and report any unsupported selection as unconfirmed.
+ 
+@@ -32,7 +32,7 @@
+ 
+ ## Confirm the reduction
+ 
+-Read [quality preservation](references/quality.md) for stochastic comparisons and non-inferiority. Apply the declared quality floor and critical-case constraints as well as the aggregate. Preserve UNKNOWN/errors and complete selected denominators. Fewer prompt tokens establish a size reduction; runtime savings require actual cost/latency evidence.
++Read [quality preservation](references/quality.md) for stochastic comparisons and non-inferiority. Apply the declared quality floor and critical-case constraints as well as the aggregate. Preserve UNKNOWN/errors and complete selected denominators.
+ 
+ Freeze the selected combined artifact before confirmation and compare it with the original baseline under the same protocol. Repeatedly consulted validation is selection evidence. Reserve independent confirmation where available; disclose exposure and finite fixture limits. A nonsignificant difference alone does not establish preservation.
+ 
+--- original/skills/bitter-lesson/SKILL.md
++++ candidate/skills/bitter-lesson/SKILL.md
+@@ -5,17 +5,17 @@
+ 
+ # Bitter Lesson
+ 
+-Test whether a candidate model makes inherited prompt or workflow complexity unnecessary. Deliver a simpler versioned model-plus-prompt bundle only when it preserves the product's quality contract. A stronger model is a reason to retest complexity, not evidence that a deletion works.
++Test whether a candidate model makes inherited prompt or workflow complexity unnecessary. Deliver a simpler versioned model-plus-prompt bundle only when it preserves the product's quality contract.
+ 
+-Keep implementations, adapters and experiments project-local. [Ablation](../ablation/SKILL.md) owns removal experiments and original-baseline quality gates; [Hill Climb](../hill-climb/SKILL.md) supplies bounded execution and evidence controls. This skill adds model comparisons and the production handoff.
++Keep implementations, adapters and experiments project-local. [Ablation](../ablation/SKILL.md) owns removal experiments and original-baseline quality gates; [Hill Climb](../hill-climb/SKILL.md) supplies bounded execution and evidence controls.
+ 
+ ## Recover the production contract
+ 
+ Inspect the actual production model/version, inference settings, assembled prompts, examples, context/retrieval, tools, orchestration, evals and operational constraints. Recover why candidate workarounds were added from available failures or history; label missing rationale as unknown.
+ 
+-Separate required task meaning and unavailable private/current facts from hypotheses about compensating for an older model. Preserve the former while testing the latter. Model intelligence does not supply missing business rules or fresh tool state. Useful simplification can remove orchestration while keeping substantial relevant context.
++Separate required task meaning and unavailable private/current facts from hypotheses about compensating for an older model. Preserve the former while testing the latter. Model intelligence does not supply missing business rules or fresh tool state.
+ 
+-Establish the authorized candidate model, editable components, quality/loss policy, important production slices, resource budget, confirmation and release scope. Reuse prior decisions. Missing model access or an authorized live budget leaves that comparison unrun; offline fixtures establish mechanics only.
++Establish the authorized candidate model, editable components, quality/loss policy, important production slices, resource budget, confirmation and release scope. Missing model access or an authorized live budget leaves that comparison unrun; offline fixtures establish mechanics only.
+ 
+ ## Separate model and prompt effects
+ 
+@@ -27,7 +27,7 @@
+ 
+ Use Ablation to test redundant reminders, old reasoning recipes, compensatory examples, duplicate context or mandatory workflow stages within the authorized scope. A clean prompt expressing the task contract can be another candidate when useful. State each hypothesis and preserve exact parentage and removal sets.
+ 
+-Run changed artifacts and their combined reductions. Compare quality with the original production baseline **and** with the candidate model using the existing design. The upgrade must not hide a harmful simplification, and a good simplification must not hide a harmful migration. Keep regression slices, errors, uncertainty and total resource use visible. Retain useful steering when its removal fails; a no-simplification result is valid.
++Run changed artifacts and their combined reductions. Compare quality with the original production baseline **and** with the candidate model using the existing design. Keep regression slices, errors, uncertainty and total resource use visible. Retain useful steering when its removal fails; a no-simplification result is valid.
+ 
+ ## Confirm and hand off
+ 

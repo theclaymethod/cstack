@@ -23,6 +23,8 @@ class WorkspaceTests(unittest.TestCase):
             self.assertEqual(set(receipt['skills']), expected)
             self.assertIn('adversarial-cases', receipt['skills'])
             self.assertIn('calibrate-judge', receipt['skills'])
+            self.assertIn('ablation', receipt['skills'])
+            self.assertIn('bitter-lesson', receipt['skills'])
             self.assertTrue((workspace / '.git').is_dir())
             for name in receipt['skills']:
                 for agent in ['.claude', '.cursor']:

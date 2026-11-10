@@ -1,0 +1,287 @@
+{
+  "actual_completed": 136,
+  "calls": [
+    {
+      "candidate": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/simplification-build/forward-use/eval-runs/forward-campaign/campaign/candidates/old-full.py",
+      "cases": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/simplification-build/forward-use/eval-runs/forward-campaign/campaign/native/old-full.jsonl",
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 8,
+        "UNKNOWN": 0
+      },
+      "executed": 8,
+      "label": "old-full",
+      "reserved": 8,
+      "status": "complete"
+    },
+    {
+      "candidate": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/simplification-build/forward-use/eval-runs/forward-campaign/campaign/candidates/old-no-plan.py",
+      "cases": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/simplification-build/forward-use/eval-runs/forward-campaign/campaign/native/old-no-plan.jsonl",
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 8,
+        "UNKNOWN": 0
+      },
+      "executed": 8,
+      "label": "old-no-plan",
+      "reserved": 8,
+      "status": "complete"
+    },
+    {
+      "candidate": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/simplification-build/forward-use/eval-runs/forward-campaign/campaign/candidates/old-no-example.py",
+      "cases": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/simplification-build/forward-use/eval-runs/forward-campaign/campaign/native/old-no-example.jsonl",
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 8,
+        "UNKNOWN": 0
+      },
+      "executed": 8,
+      "label": "old-no-example",
+      "reserved": 8,
+      "status": "complete"
+    },
+    {
+      "candidate": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/simplification-build/forward-use/eval-runs/forward-campaign/campaign/candidates/old-one-duplicate.py",
+      "cases": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/simplification-build/forward-use/eval-runs/forward-campaign/campaign/native/old-one-duplicate.jsonl",
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 8,
+        "UNKNOWN": 0
+      },
+      "executed": 8,
+      "label": "old-one-duplicate",
+      "reserved": 8,
+      "status": "complete"
+    },
+    {
+      "candidate": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/simplification-build/forward-use/eval-runs/forward-campaign/campaign/candidates/old-no-conflict-a.py",
+      "cases": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/simplification-build/forward-use/eval-runs/forward-campaign/campaign/native/old-no-conflict-a.jsonl",
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 4,
+        "PASS": 4,
+        "UNKNOWN": 0
+      },
+      "executed": 8,
+      "label": "old-no-conflict-a",
+      "reserved": 8,
+      "status": "complete"
+    },
+    {
+      "candidate": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/simplification-build/forward-use/eval-runs/forward-campaign/campaign/candidates/old-no-conflict-b.py",
+      "cases": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/simplification-build/forward-use/eval-runs/forward-campaign/campaign/native/old-no-conflict-b.jsonl",
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 4,
+        "PASS": 4,
+        "UNKNOWN": 0
+      },
+      "executed": 8,
+      "label": "old-no-conflict-b",
+      "reserved": 8,
+      "status": "complete"
+    },
+    {
+      "candidate": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/simplification-build/forward-use/eval-runs/forward-campaign/campaign/candidates/old-simple.py",
+      "cases": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/simplification-build/forward-use/eval-runs/forward-campaign/campaign/native/old-simple.jsonl",
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 8,
+        "UNKNOWN": 0
+      },
+      "executed": 8,
+      "label": "old-simple",
+      "reserved": 8,
+      "status": "complete"
+    },
+    {
+      "candidate": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/simplification-build/forward-use/eval-runs/forward-campaign/campaign/candidates/old-no-legacy.py",
+      "cases": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/simplification-build/forward-use/eval-runs/forward-campaign/campaign/native/old-no-legacy.jsonl",
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 4,
+        "PASS": 4,
+        "UNKNOWN": 0
+      },
+      "executed": 8,
+      "label": "old-no-legacy",
+      "reserved": 8,
+      "status": "complete"
+    },
+    {
+      "candidate": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/simplification-build/forward-use/eval-runs/forward-campaign/campaign/candidates/old-no-duplicate.py",
+      "cases": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/simplification-build/forward-use/eval-runs/forward-campaign/campaign/native/old-no-duplicate.jsonl",
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 1,
+        "PASS": 7,
+        "UNKNOWN": 0
+      },
+      "executed": 8,
+      "label": "old-no-duplicate",
+      "reserved": 8,
+      "status": "complete"
+    },
+    {
+      "candidate": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/simplification-build/forward-use/eval-runs/forward-campaign/campaign/candidates/old-alternate-duplicate.py",
+      "cases": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/simplification-build/forward-use/eval-runs/forward-campaign/campaign/native/old-alternate-duplicate.jsonl",
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 8,
+        "UNKNOWN": 0
+      },
+      "executed": 8,
+      "label": "old-alternate-duplicate",
+      "reserved": 8,
+      "status": "complete"
+    },
+    {
+      "candidate": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/simplification-build/forward-use/eval-runs/forward-campaign/campaign/candidates/new-full.py",
+      "cases": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/simplification-build/forward-use/eval-runs/forward-campaign/campaign/native/new-full.jsonl",
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 8,
+        "UNKNOWN": 0
+      },
+      "executed": 8,
+      "label": "new-full",
+      "reserved": 8,
+      "status": "complete"
+    },
+    {
+      "candidate": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/simplification-build/forward-use/eval-runs/forward-campaign/campaign/candidates/new-old-simple.py",
+      "cases": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/simplification-build/forward-use/eval-runs/forward-campaign/campaign/native/new-old-simple.jsonl",
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 8,
+        "UNKNOWN": 0
+      },
+      "executed": 8,
+      "label": "new-old-simple",
+      "reserved": 8,
+      "status": "complete"
+    },
+    {
+      "candidate": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/simplification-build/forward-use/eval-runs/forward-campaign/campaign/candidates/new-migration-simple.py",
+      "cases": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/simplification-build/forward-use/eval-runs/forward-campaign/campaign/native/new-migration-simple.jsonl",
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 8,
+        "UNKNOWN": 0
+      },
+      "executed": 8,
+      "label": "new-migration-simple",
+      "reserved": 8,
+      "status": "complete"
+    },
+    {
+      "candidate": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/simplification-build/forward-use/eval-runs/forward-campaign/campaign/candidates/new-contract-only.py",
+      "cases": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/simplification-build/forward-use/eval-runs/forward-campaign/campaign/native/new-contract-only.jsonl",
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 1,
+        "PASS": 7,
+        "UNKNOWN": 0
+      },
+      "executed": 8,
+      "label": "new-contract-only",
+      "reserved": 8,
+      "status": "complete"
+    },
+    {
+      "candidate": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/simplification-build/forward-use/eval-runs/forward-campaign/campaign/candidates/confirm-old-full.py",
+      "cases": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/simplification-build/forward-use/eval-runs/forward-campaign/campaign/native/confirm-old-full.jsonl",
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 4,
+        "UNKNOWN": 0
+      },
+      "executed": 4,
+      "label": "confirm-old-full",
+      "reserved": 4,
+      "status": "complete"
+    },
+    {
+      "candidate": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/simplification-build/forward-use/eval-runs/forward-campaign/campaign/candidates/confirm-old-simple.py",
+      "cases": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/simplification-build/forward-use/eval-runs/forward-campaign/campaign/native/confirm-old-simple.jsonl",
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 4,
+        "UNKNOWN": 0
+      },
+      "executed": 4,
+      "label": "confirm-old-simple",
+      "reserved": 4,
+      "status": "complete"
+    },
+    {
+      "candidate": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/simplification-build/forward-use/eval-runs/forward-campaign/campaign/candidates/confirm-new-full.py",
+      "cases": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/simplification-build/forward-use/eval-runs/forward-campaign/campaign/native/confirm-new-full.jsonl",
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 4,
+        "UNKNOWN": 0
+      },
+      "executed": 4,
+      "label": "confirm-new-full",
+      "reserved": 4,
+      "status": "complete"
+    },
+    {
+      "candidate": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/simplification-build/forward-use/eval-runs/forward-campaign/campaign/candidates/confirm-new-old-simple.py",
+      "cases": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/simplification-build/forward-use/eval-runs/forward-campaign/campaign/native/confirm-new-old-simple.jsonl",
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 4,
+        "UNKNOWN": 0
+      },
+      "executed": 4,
+      "label": "confirm-new-old-simple",
+      "reserved": 4,
+      "status": "complete"
+    },
+    {
+      "candidate": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/simplification-build/forward-use/eval-runs/forward-campaign/campaign/candidates/confirm-old-migration-simple.py",
+      "cases": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/simplification-build/forward-use/eval-runs/forward-campaign/campaign/native/confirm-old-migration-simple.jsonl",
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 2,
+        "PASS": 2,
+        "UNKNOWN": 0
+      },
+      "executed": 4,
+      "label": "confirm-old-migration-simple",
+      "reserved": 4,
+      "status": "complete"
+    },
+    {
+      "candidate": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/simplification-build/forward-use/eval-runs/forward-campaign/campaign/candidates/confirm-new-migration-simple.py",
+      "cases": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/simplification-build/forward-use/eval-runs/forward-campaign/campaign/native/confirm-new-migration-simple.jsonl",
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 4,
+        "UNKNOWN": 0
+      },
+      "executed": 4,
+      "label": "confirm-new-migration-simple",
+      "reserved": 4,
+      "status": "complete"
+    }
+  ],
+  "limit": 159,
+  "reserved": 136
+}

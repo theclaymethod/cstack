@@ -1,0 +1,17 @@
+{
+  "INTENT.md": "9f83cb49e7ebd32b47acf56e55eb7cdeb2bd56e8e72f016d4dbfe79585f5fc85",
+  "frozen/skills/ablation/SKILL.md": "5b5a0ca5b1897a44e2ec1874676430b63a99862caad508c78cc28c133e0dadcb",
+  "frozen/skills/ablation/references/quality.md": "0992c05d585d9ecf0e4b4a7052e993f6bee120c0cf696aaa6e6ef7639dc73966",
+  "frozen/skills/ablation/references/removal.md": "f48ceb1889dee82a4af09d35a4cc62f07e1c3632b38514c9a158b5818dc2d955",
+  "frozen/skills/bitter-lesson/SKILL.md": "7ea7926e2f5330dbd48247351b16cdbf5b40bc8117bfe7c5853b00270debdf2b",
+  "frozen/skills/bitter-lesson/references/migration.md": "1bd87521d907a46d73284630696dc9378243957f00233a36f64842bdac17c343",
+  "frozen/fixtures/playground/simplification/run.py": "d6689ea5937679837104b3e006ef5447234cecaedfc408116f066559f41ace30",
+  "frozen/fixtures/playground/simplification/protocol.py": "9d0769eedf5e7d7d7b18851edcbe0fd42fe347f4d27a85635113151b0d8917f7",
+  "frozen/fixtures/playground/simplification/__init__.py": "9b265b7e39fe1ee3767d60306a74857d6429d3c352df97497cceaadf42e9d336",
+  "frozen/fixtures/playground/simplification/README.md": "6bb38c032944b4165058b2135476795152d8a04c4e2cc35aace1ff47be8f0bf0",
+  "frozen/fixtures/playground/simplification/demo.py": "2e682951a122ac9ee9a709b2d04a3038b9330cf1df46ee7deec38d73f34d6c76",
+  "frozen/fixtures/playground/evaluate.py": "fd1fdaa4b090852f8d0a6462303411bea5488dcc7f7a08895146e32d52b0430d",
+  "frozen/fixtures/playground/evals/spec.json": "eb6f21266223c16708a4ed3bb4f401f3a2adb3355b9e176152665d70a665d8f6",
+  "frozen/fixtures/playground/evals/rubric.md": "cb133b50752a48098d463a562d7553ec5a5b29bfef1825b4e393e7de33d66dd8",
+  "frozen/fixtures/playground/evals/cases.jsonl": "71f1d8c50f7ce2b3ca512c6f2703faa4e30d5c63237824e3a73e7a573cf4f7b2"
+}

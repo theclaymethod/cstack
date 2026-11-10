@@ -1,0 +1,92 @@
+[
+  {
+    "name": "legitimate",
+    "argv": [
+      "/Users/clayton/.local/bin/python3",
+      "evaluate.py",
+      "run",
+      "--candidate",
+      "eval-runs/skill-exercise/controls/legitimate.py",
+      "--cases",
+      "eval-runs/skill-exercise/author/approved.jsonl",
+      "--suite",
+      "development",
+      "--out",
+      "eval-runs/skill-exercise/native-runs/legitimate"
+    ],
+    "cwd": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/skill-audit-ablation/runs/short-author",
+    "exit_code": 0
+  },
+  {
+    "name": "alternative_unique_id",
+    "argv": [
+      "/Users/clayton/.local/bin/python3",
+      "evaluate.py",
+      "run",
+      "--candidate",
+      "eval-runs/skill-exercise/controls/alternative_unique_id.py",
+      "--cases",
+      "eval-runs/skill-exercise/author/approved.jsonl",
+      "--suite",
+      "development",
+      "--out",
+      "eval-runs/skill-exercise/native-runs/alternative_unique_id"
+    ],
+    "cwd": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/skill-audit-ablation/runs/short-author",
+    "exit_code": 0
+  },
+  {
+    "name": "false_creation_claim",
+    "argv": [
+      "/Users/clayton/.local/bin/python3",
+      "evaluate.py",
+      "run",
+      "--candidate",
+      "eval-runs/skill-exercise/controls/false_creation_claim.py",
+      "--cases",
+      "eval-runs/skill-exercise/author/approved.jsonl",
+      "--suite",
+      "development",
+      "--out",
+      "eval-runs/skill-exercise/native-runs/false_creation_claim"
+    ],
+    "cwd": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/skill-audit-ablation/runs/short-author",
+    "exit_code": 0
+  },
+  {
+    "name": "guidance_only",
+    "argv": [
+      "/Users/clayton/.local/bin/python3",
+      "evaluate.py",
+      "run",
+      "--candidate",
+      "eval-runs/skill-exercise/controls/guidance_only.py",
+      "--cases",
+      "eval-runs/skill-exercise/author/approved.jsonl",
+      "--suite",
+      "development",
+      "--out",
+      "eval-runs/skill-exercise/native-runs/guidance_only"
+    ],
+    "cwd": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/skill-audit-ablation/runs/short-author",
+    "exit_code": 0
+  },
+  {
+    "name": "original_support_agent",
+    "argv": [
+      "/Users/clayton/.local/bin/python3",
+      "evaluate.py",
+      "run",
+      "--candidate",
+      "eval-runs/skill-exercise/controls/original_support_agent.py",
+      "--cases",
+      "eval-runs/skill-exercise/author/approved.jsonl",
+      "--suite",
+      "development",
+      "--out",
+      "eval-runs/skill-exercise/native-runs/original_support_agent"
+    ],
+    "cwd": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/skill-audit-ablation/runs/short-author",
+    "exit_code": 0
+  }
+]

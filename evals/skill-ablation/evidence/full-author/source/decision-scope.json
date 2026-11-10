@@ -1,0 +1,16 @@
+{
+  "expectation_approvals": [
+    "A:r1",
+    "B:r2"
+  ],
+  "live_human_review": false,
+  "outcome_labels": [],
+  "provenance": "Controlled task scripted synthetic owner decisions",
+  "synthetic": true,
+  "unavailable_sources": [
+    "live expert outcome labels",
+    "production traces",
+    "independent scenario authors",
+    "independent validator"
+  ]
+}

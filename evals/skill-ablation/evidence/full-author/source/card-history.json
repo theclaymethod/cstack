@@ -1,0 +1,103 @@
+[
+  {
+    "decision": "rejected",
+    "id": "A",
+    "limits": "Earlier revision number and full reviewed text not supplied; not reconstructed.",
+    "proposed_expectation": "create a ticket",
+    "revision": null,
+    "source": "source/scripted-decisions.md",
+    "stage": "prior proposal"
+  },
+  {
+    "authority": "scripted synthetic owner expectation approval; not live human gold",
+    "decision": "approve expectation",
+    "expectation": {
+      "account": null,
+      "action": "guidance",
+      "preserve_entire_state": true,
+      "ticket_delta": 0
+    },
+    "family": "synthetic-author-A-howto",
+    "id": "A",
+    "intent_revision": 1,
+    "method": "scripted-owner-card",
+    "request": {
+      "account": null,
+      "accounts": [
+        "acct-a"
+      ],
+      "text": "How do I connect to the VPN?"
+    },
+    "revision": 1,
+    "source": "source/scripted-decisions.md",
+    "state": {
+      "counter": 7,
+      "tickets": []
+    },
+    "status": "approved"
+  },
+  {
+    "decision": "explicitly corrected",
+    "id": "B",
+    "limits": "Prior complete card text not supplied; no outcome label inferred.",
+    "proposed_expectation": "guidance only",
+    "revision": 1,
+    "source": "source/scripted-decisions.md",
+    "stage": "prior proposal",
+    "superseded_by": "B revision2"
+  },
+  {
+    "authority": "exact scripted owner replacement supplied at revision2; not live human gold",
+    "decision": "approve exact replacement expectation",
+    "expectation": {
+      "account": "acct-a",
+      "action": "create_ticket",
+      "new_ticket": {
+        "account": "acct-a",
+        "id": "any unique nonempty string",
+        "issue": "vpn",
+        "status": "open"
+      },
+      "preserve_original_tickets_and_other_state": true,
+      "ticket_delta": 1
+    },
+    "family": "synthetic-author-B-explicit-target",
+    "id": "B",
+    "intent_revision": 1,
+    "method": "scripted-owner-card-correction",
+    "request": {
+      "account": "acct-a",
+      "accounts": [
+        "acct-a",
+        "acct-b"
+      ],
+      "text": "Please create a VPN support ticket."
+    },
+    "revision": 2,
+    "source": "source/scripted-decisions.md",
+    "state": {
+      "counter": 7,
+      "tickets": [
+        {
+          "account": "acct-b",
+          "id": "old",
+          "issue": "vpn",
+          "metadata": {
+            "keep": true
+          },
+          "status": "open"
+        }
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "approved_inverse": false,
+    "decision": "defer",
+    "id": "C",
+    "proposed_expectation": "automatically escalate urgent VPN problems without a clear account",
+    "reason": "No urgency or escalation policy decided",
+    "revision": 1,
+    "source": "source/scripted-decisions.md"
+  }
+]

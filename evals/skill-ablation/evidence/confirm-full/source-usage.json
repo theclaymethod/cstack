@@ -1,0 +1,117 @@
+{
+  "helper_sources": {
+    "exercises/fixtures/verify_claim.py": "1809d3cf6ebf9beb1669e80db82c575ee08f9e7a60f80976ed627627a3b9fed9",
+    "judge_calibration/adapters.py": "2d616ed5fa7f1483e43e5cbb6e01b4aa4cbb047042d788044aebff9efc8396f6",
+    "judge_calibration/statistics.py": "034c3bf4e537956d6388a96a640e73f6269c05486a77071d4700f0f54b5b06d7",
+    "methods/native.py": "df83d4b57df0ac2dc0ac6cd5b94136082c02d486478c98334a6273cb623e86bd",
+    "simplification/protocol.py": "95b5c8121d3b5d81b1ece8bed046dcac1ceba9daa15a6ebf223a4421e3f82e32"
+  },
+  "skill_lock": {
+    "skills": {
+      "ablation": {
+        "SKILL.md": "5b5a0ca5b1897a44e2ec1874676430b63a99862caad508c78cc28c133e0dadcb",
+        "references/quality.md": "a429eb02278ab27a3d13f29713a71caa6573c5e2d5472984b1c39b156f988bf9",
+        "references/removal.md": "f48ceb1889dee82a4af09d35a4cc62f07e1c3632b38514c9a158b5818dc2d955"
+      },
+      "adversarial-cases": {
+        "SKILL.md": "5450cfa29c1da33023903108bc68d46ef9be9219a5c7c9a7e953128d3485d2d5",
+        "references/case-contract.md": "7943a09952eb0df5ef1a50e1c8d22ffe496b732a5cd9d33fbe04efaf7f4f60af",
+        "references/failure-methods.md": "2f8e1e2fbf133c8fc9bac9aa24139e6e07e10a81287d1b3632d1b100bd4f91e7",
+        "references/injection.md": "d8ae58d555513058864e6f47fcd2df74fbfe9d13e662bf04c3416601bccfd2df",
+        "references/synthetic-methods.md": "f207a283c8b487223691da3cb9a9187054711cc9460d743791ac901155e8e921"
+      },
+      "bitter-lesson": {
+        "SKILL.md": "7ea7926e2f5330dbd48247351b16cdbf5b40bc8117bfe7c5853b00270debdf2b",
+        "references/migration.md": "1bd87521d907a46d73284630696dc9378243957f00233a36f64842bdac17c343"
+      },
+      "bootstrap": {
+        "SKILL.md": "26148225ca63d39dbecde3922526a6d6f45048acc3f904d186e0d4b79ba97cbf",
+        "references/labeling.md": "fb795f316d718f0ccc9109f3f84f44545b7c3c97cf6156cc982173037487c503",
+        "references/research.md": "47b8d567f6d9129a8c2b0cf286cb1681f29309c5ab1d8c0ce3ea53e31e88a8c6",
+        "references/scenarios.md": "fecd4d6c67bede4ca448dbcd718b328b889c59e1746f0bd52303439a0471bf02"
+      },
+      "calibrate-judge": {
+        "SKILL.md": "e51a883d207eea17a561cf12f1a03265c26ce8d026e15878b83c68b64f7a5adb",
+        "references/backends.md": "231682e3bdd855a86f435554778c8ea9fd0c2c8b48bf3d09e2cee0f82836da0a",
+        "references/measurement.md": "f09b74ad7154ce28d73f5bcd7a5c0880d155cd536cc663590628ee876f87a9be",
+        "references/protocol.md": "d1c3b0ccc7621dc169105d1b354de829c2d7bb10975952fac090973ff1699765"
+      },
+      "create-eval": {
+        "SKILL.md": "8f43cee23e3eebfb7dcb665d160ba1640c6ef8add058c5195140396d5e602a02",
+        "assets/trace-review.css": "ac1c1c03405014e601ae0e54e136db82f8eb90ec8f11c14d4eaa2e70a23daa44",
+        "assets/trace-review.html": "59f65ab5c77cee1bb1520409b561112104e01a1db364ebf721e8cf92446af440",
+        "assets/trace-review.js": "3a7ef12bbbb05600b0f81f28ae54987cf2c16ef1c31670908efdc30e1bb55307",
+        "references/early-development.md": "a6eb562e7dbacb78f6861809b626ab27cf862e0c74eb261df83b68f9e13fa4f2",
+        "references/ecosystem.md": "90db1d3c9e6d84060d9a292693eca65db37f50b84a3f14832f5f1d4ba203c6df",
+        "references/formats.md": "9eddaa75c1ac7e0e403dd7f7eea2a98942092911f8a0b45e7030e1b88e44cc6b",
+        "references/from-findings.md": "c1704dc2f47cc25753d92af0a35d6c873405bad4bb3ae569545ec1a6a9a4e88b",
+        "references/judges.md": "206d0e30a90d380b4ca1fd14728f14e7ba67494bd21cc0ff38fa15b49af2803e",
+        "references/trace-review.md": "90587661b5eefc2de56efc8680f7cd66871aff24fd5eb1c1acc9096ad46eb748",
+        "scripts/review_traces.py": "9abd20fcf096b8895c7d66dd8d76009ba2c12e5d7881b737e596af0a4e65ed41"
+      },
+      "cross-examine": {
+        "SKILL.md": "12e245342d7defd6ba7031e473e5fd85f1706354434ca12eea6819fb43d3fe3d",
+        "references/ledger.md": "68c17680bef75b3e3225d7495ecf20882f8485ae19d2e4cd98d5b402d8970c95",
+        "references/lessons.md": "bb207ad412303b961456d6c62350c305c62854001eb47a35f7e7a0968c56e8a6"
+      },
+      "distill-me": {
+        "SKILL.md": "993daa1459ae5c3b347310220f54b0fd8685d32081f63a3da4e213206a05a896",
+        "agents/openai.yaml": "a1499d95abd8447558c535fe5554adcc3c9b988a0a39264a6283d430effe1e94",
+        "references/review-passes.md": "f9c7982d9bfb4d982d3ad7c42d060eb21b3e5474e64dd1f3894c0ea56112cfb1"
+      },
+      "expert-mode": {
+        "SKILL.md": "2b8fd14d644a9a435331275ba83f7c6ff6a46909a945b8ceeaa20bc45e185d88",
+        "agents/openai.yaml": "a1499d95abd8447558c535fe5554adcc3c9b988a0a39264a6283d430effe1e94",
+        "references/export.md": "3750ef95f311fc140536c30ccba9af5394acc82f418283c1931af873fc094d9a",
+        "references/privacy-filter.md": "0e8f0b80a94887654bd18e06f117e427ad9d64a2082e148a085567a5dba0aedd",
+        "references/records.md": "a0f57f2d563e24e5db7801c96d24bbb1e3e46c76b652b95b809b31007550bdbb",
+        "scripts/export_findings.py": "f289c2c6edcb40a4e492d92c4b107c50c1145896a36d4f9ad3026e8591689c15"
+      },
+      "hill-climb": {
+        "SKILL.md": "39f87db302d3e8bbef90df20e5c673958b93bb1f0fef1e811854bcc4283ac16e",
+        "references/campaign.md": "7294e377a9246f1467a1b9d0bfd56f35ddce3e32c4864524a3a7a4ef6188a51a",
+        "references/data-handoff.md": "690d56a93efd505a48da3c91b7b9248e0ef56585987ae4d7461fcee4c3c93fee",
+        "references/optimizers.md": "57953664ce53edd25b6aad86c3fcf156397b43451cc0db072a5b46bb36e7ada0"
+      },
+      "run-eval": {
+        "SKILL.md": "7c7107775107b4a3cfeb547ce8197042f1f63e1ffc293387efd33ea9f329ffbe",
+        "references/package.md": "d076dfc9e6dc218887bde32c3939b4edaba89d097539d5a7862bf7caff05d042"
+      }
+    },
+    "source": "theclaymethod/cstack",
+    "version": "0.9.0"
+  },
+  "used_installed_skills": {
+    "ablation": {
+      "path": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/skill-audit-ablation/runs/confirm-full/.agents/skills/ablation/SKILL.md",
+      "sha256": "5b5a0ca5b1897a44e2ec1874676430b63a99862caad508c78cc28c133e0dadcb"
+    },
+    "adversarial-cases": {
+      "path": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/skill-audit-ablation/runs/confirm-full/.agents/skills/adversarial-cases/SKILL.md",
+      "sha256": "5450cfa29c1da33023903108bc68d46ef9be9219a5c7c9a7e953128d3485d2d5"
+    },
+    "bitter-lesson": {
+      "path": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/skill-audit-ablation/runs/confirm-full/.agents/skills/bitter-lesson/SKILL.md",
+      "sha256": "7ea7926e2f5330dbd48247351b16cdbf5b40bc8117bfe7c5853b00270debdf2b"
+    },
+    "bootstrap": {
+      "path": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/skill-audit-ablation/runs/confirm-full/.agents/skills/bootstrap/SKILL.md",
+      "sha256": "26148225ca63d39dbecde3922526a6d6f45048acc3f904d186e0d4b79ba97cbf"
+    },
+    "calibrate-judge": {
+      "path": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/skill-audit-ablation/runs/confirm-full/.agents/skills/calibrate-judge/SKILL.md",
+      "sha256": "e51a883d207eea17a561cf12f1a03265c26ce8d026e15878b83c68b64f7a5adb"
+    },
+    "create-eval": {
+      "path": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/skill-audit-ablation/runs/confirm-full/.agents/skills/create-eval/SKILL.md",
+      "sha256": "8f43cee23e3eebfb7dcb665d160ba1640c6ef8add058c5195140396d5e602a02"
+    },
+    "run-eval": {
+      "path": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/skill-audit-ablation/runs/confirm-full/.agents/skills/run-eval/SKILL.md",
+      "sha256": "7c7107775107b4a3cfeb547ce8197042f1f63e1ffc293387efd33ea9f329ffbe"
+    }
+  },
+  "workspace_source": {
+    "source": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/skill-audit-ablation/post-audit-baseline"
+  }
+}

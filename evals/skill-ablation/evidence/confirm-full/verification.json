@@ -1,0 +1,18 @@
+{
+  "actual_native_cases": 35,
+  "additional_native_executions": 0,
+  "finished_and_exact_confirmation_plan": true,
+  "ledger_state_source_prompt_statistics_checks": "PASS",
+  "native_runs_checked": [
+    "authoring-native/alternative-id",
+    "authoring-native/false-claim",
+    "authoring-native/legitimate",
+    "simplification/native/confirm-original",
+    "simplification/native/confirm-selected",
+    "simplification/native/contract-only",
+    "simplification/native/full-original",
+    "simplification/native/reduced"
+  ],
+  "prior_manifest_verified": true,
+  "reserved_native_cases": 35
+}

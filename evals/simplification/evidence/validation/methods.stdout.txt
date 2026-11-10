@@ -1,0 +1,32 @@
+{
+  "status": "passed",
+  "actual_native_executions": 140,
+  "synthetic": {
+    "actual_native_executions": 95,
+    "selected_case_ids": [
+      "authorization:deny",
+      "scope:closed",
+      "sequence:own-created-repeat"
+    ],
+    "additional_mechanism": "ignore-own-created passes static seeds; valid-prefix repeat exposes duplicate creation",
+    "comparison": {
+      "seed_cases_per_candidate": 12,
+      "final_generated_cases_per_candidate": 10,
+      "per_arm_case_limit": 12,
+      "adaptive_exposure": "All selection cases exposed",
+      "scope": "One frozen corpus run per candidate per arm. Construction/reduction/selection work is separately included in the total; no generation efficiency or unseen improvement claim."
+    }
+  },
+  "faults": {
+    "actual_native_executions": 45,
+    "process_interruptions": 3,
+    "candidate_timeouts": 2
+  },
+  "deferred": {
+    "Hypothesis": "Explicit bounded enumeration suffices for this initial sequence vocabulary",
+    "Z3": "No constraint boundary requiring a solver in this tiny fixture",
+    "Toxiproxy": "No network dependency adapter exists",
+    "semantic_judges": "Native observable state is directly checkable",
+    "live_DSPy_optimization": "Model, mutable DSPy target and budget remain unspecified"
+  }
+}

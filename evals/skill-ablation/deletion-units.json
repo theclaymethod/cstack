@@ -1,0 +1,182 @@
+[
+  {
+    "skill": "expert-mode",
+    "units": [
+      "Help the expert do their work while preserving their explicit judgments as eval data. ",
+      "Briefly restate the goal and explain what you will capture. ",
+      "Keep product data outside the skill installation.",
+      "Local files are enough; add storage infrastructure only when the task needs it.",
+      "Lead replies with the answer or change. Include evidence, uncertainty, and decisions that affect the next step. Keep capture acknowledgments brief; show record details when clarification or correction needs attention. "
+    ],
+    "original_words": 703,
+    "candidate_words": 629,
+    "original_bytes": 5030,
+    "candidate_bytes": 4536,
+    "original_sha256": "2b8fd14d644a9a435331275ba83f7c6ff6a46909a945b8ceeaa20bc45e185d88",
+    "candidate_sha256": "d0dbcc5e1fa457a7e4164454e8910fcb1e7ea5bf77c73ea31aabaebca72b2d02"
+  },
+  {
+    "skill": "distill-me",
+    "units": [
+      "Review the current session once and save supported expert judgments as eval data. ",
+      "Review corrections, rubric criteria, and evidence quality. ",
+      "Short sessions or hosts without delegation can cover those questions sequentially. ",
+      "Keep replies short; show individual rows when an expert decision needs them.",
+      "Use ordinary local files and available agent tools."
+    ],
+    "original_words": 664,
+    "candidate_words": 613,
+    "original_bytes": 4923,
+    "candidate_bytes": 4570,
+    "original_sha256": "993daa1459ae5c3b347310220f54b0fd8685d32081f63a3da4e213206a05a896",
+    "candidate_sha256": "6f515b138f76d39d66998d6ce4d29a8029761aa0226f9d6dec01c3d2832e7186"
+  },
+  {
+    "skill": "bootstrap",
+    "units": [
+      "Keep these sibling skills together.",
+      "Keep data and run artifacts in the project's eval workspace, outside the skill installation.",
+      "Use concrete situations to resolve vague terms. ",
+      "Reuse answers already supplied.",
+      "Independent preparation can continue while questions are pending.",
+      "The first batch is ready when each review card describes a feasible situation, a proposed expected behavior, the contract boundary it exercises, and any unresolved facts. A large scenario count is not evidence of coverage.",
+      "Each evaluator must point back to an approved requirement and check the observable evidence that establishes it. Use deterministic checks for objective properties and narrow binary judges for interpretive criteria. Preserve legitimate alternative solutions. Stateful actions need resulting-state and preservation checks plus reset when executed; a claim of success or a tool name alone may be insufficient.",
+      "Reuse the target project's schema and runner without introducing a second harness. "
+    ],
+    "original_words": 1335,
+    "candidate_words": 1193,
+    "original_bytes": 10255,
+    "candidate_bytes": 9265,
+    "original_sha256": "26148225ca63d39dbecde3922526a6d6f45048acc3f904d186e0d4b79ba97cbf",
+    "candidate_sha256": "20fadd9ca7f82dadef981ea6c7a55e961faa12cc881e5f0cd5be8367caa94d1a"
+  },
+  {
+    "skill": "create-eval",
+    "units": [
+      "Build an eval that measures a stated capability and supports a concrete decision. Reuse the project's format, runner, and tools. Local files and an inspectable grader are enough unless the task needs more.",
+      "Use existing checks or direct replays, respecting project rules on new test files. ",
+      "Report what those controls establish without generalizing beyond them.",
+      "A small perfect run establishes no production-trust threshold."
+    ],
+    "original_words": 803,
+    "candidate_words": 740,
+    "original_bytes": 6263,
+    "candidate_bytes": 5839,
+    "original_sha256": "8f43cee23e3eebfb7dcb665d160ba1640c6ef8add058c5195140396d5e602a02",
+    "candidate_sha256": "c5a86934360a4b0fe8bb1916a8504e85b131c43479611e4346552d2af7a6a35c"
+  },
+  {
+    "skill": "run-eval",
+    "units": [
+      "Run the requested eval and preserve what happened. Prefer the project's trusted runner. Stored-output review can use local files, code checks, and the active agent as a semantic judge. It needs no separate model API, database, or Docker.",
+      "Keep failed and incomplete attempts visible. ",
+      "Record available evidence, not invented internals or private chain-of-thought. ",
+      "A process exit alone does not establish eval success."
+    ],
+    "original_words": 804,
+    "candidate_words": 742,
+    "original_bytes": 6164,
+    "candidate_bytes": 5747,
+    "original_sha256": "7c7107775107b4a3cfeb547ce8197042f1f63e1ffc293387efd33ea9f329ffbe",
+    "candidate_sha256": "02779435237bd4c3501ac8f307f42bb825a7d782032c7ffb940d8b483f97237a"
+  },
+  {
+    "skill": "cross-examine",
+    "units": [
+      "Add attackers when coverage warrants it. ",
+      "An efficient permitted alternative is a valid solution. ",
+      "Use local files, the project's runtime, and separate scratch copies. Add SQLite only for database behavior. ",
+      "Record why heavier tools are needed.",
+      "Report the evidence and changed ledger/lesson paths. "
+    ],
+    "original_words": 1042,
+    "candidate_words": 999,
+    "original_bytes": 7795,
+    "candidate_bytes": 7500,
+    "original_sha256": "12e245342d7defd6ba7031e473e5fd85f1706354434ca12eea6819fb43d3fe3d",
+    "candidate_sha256": "0ae687b4ae33f99a4fd5233b486aa3ee642b4f71ba6ad07f7aebde43b7098697"
+  },
+  {
+    "skill": "hill-climb",
+    "units": [
+      "A promising search score and a confirmed improvement are different campaign states.",
+      "Reuse the project's actual runner and formats.",
+      "Use existing infrastructure to enforce the contract. ",
+      "Keep experimental artifacts outside the skill installation.",
+      "Scale analysis to the evidence; a small batch need not acquire clustering infrastructure.",
+      "A single sequential agent is sufficient when capacity or the task makes that simpler.",
+      "Do not extract or request private chain-of-thought.",
+      "Retain candidates according to the declared policy. A best feasible incumbent can coexist with complementary candidates for later search or merging. Retention does not authorize promotion. ",
+      "Preserve actual error/unknown counts even when other cases decide the result.",
+      "Provide reproducible commands and evidence paths. "
+    ],
+    "original_words": 1199,
+    "candidate_words": 1089,
+    "original_bytes": 9185,
+    "candidate_bytes": 8396,
+    "original_sha256": "39f87db302d3e8bbef90df20e5c673958b93bb1f0fef1e811854bcc4283ac16e",
+    "candidate_sha256": "94519c298d98ee63f800633ff2f36df2472bd3f930adb6d974e24d02bbb1dc22"
+  },
+  {
+    "skill": "calibrate-judge",
+    "units": [
+      "A fitting score or typed output alone does not establish a calibrated judge.",
+      "This skill supplies instructions and references. ",
+      "Resolve project facts before asking the owner for missing judgments.",
+      "A Jev-style model may return typed probabilities without an explanation; a generative judge may return a structured verdict and optional concise evidence summary. ",
+      "Use ordinal weighting only for a declared ordered scale. "
+    ],
+    "original_words": 830,
+    "candidate_words": 769,
+    "original_bytes": 6431,
+    "candidate_bytes": 6016,
+    "original_sha256": "e51a883d207eea17a561cf12f1a03265c26ce8d026e15878b83c68b64f7a5adb",
+    "candidate_sha256": "3d048ca9465782a504cf02b5b3c8191bacfbb841d548c69b35acc3507c9003d9"
+  },
+  {
+    "skill": "adversarial-cases",
+    "units": [
+      "Read project instructions and existing fixtures. Resolve facts from the project before asking the parent for missing judgments. Continue independent construction while affected intent remains provisional.",
+      "Existing fixture builders or small deterministic scripts can establish those facts. ",
+      "These are recipes for project-local implementations; no generator or fault runtime is bundled with this skill.",
+      "Minimize the mechanism rather than merely shortening its wording. "
+    ],
+    "original_words": 966,
+    "candidate_words": 904,
+    "original_bytes": 7495,
+    "candidate_bytes": 7029,
+    "original_sha256": "5450cfa29c1da33023903108bc68d46ef9be9219a5c7c9a7e953128d3485d2d5",
+    "candidate_sha256": "c2796749a7fb4e96e65868843f19236af22c2df91e8afa74020abde6e929f851"
+  },
+  {
+    "skill": "ablation",
+    "units": [
+      "Keeping the original is a valid outcome.",
+      "This skill contains guidance and references. ",
+      "Resolve project facts locally; ask only for missing judgments that change admissibility or execution scope.",
+      "Fewer prompt tokens establish a size reduction; runtime savings require actual cost/latency evidence."
+    ],
+    "original_words": 583,
+    "candidate_words": 542,
+    "original_bytes": 4550,
+    "candidate_bytes": 4254,
+    "original_sha256": "5b5a0ca5b1897a44e2ec1874676430b63a99862caad508c78cc28c133e0dadcb",
+    "candidate_sha256": "a43baebc4431a6fed89a7e27d2d294bced21ca23c6e6813f262a4ce79a906c48"
+  },
+  {
+    "skill": "bitter-lesson",
+    "units": [
+      "A stronger model is a reason to retest complexity, not evidence that a deletion works.",
+      "This skill adds model comparisons and the production handoff.",
+      "Useful simplification can remove orchestration while keeping substantial relevant context.",
+      "Reuse prior decisions. ",
+      "The upgrade must not hide a harmful simplification, and a good simplification must not hide a harmful migration. "
+    ],
+    "original_words": 557,
+    "candidate_words": 502,
+    "original_bytes": 4255,
+    "candidate_bytes": 3879,
+    "original_sha256": "7ea7926e2f5330dbd48247351b16cdbf5b40bc8117bfe7c5853b00270debdf2b",
+    "candidate_sha256": "3b4b3bb99c43b319d41d7dfe00da28bfc8ab04eb89ca56030107444b56c98848"
+  }
+]

@@ -1,0 +1,25 @@
+{
+  "declared": {
+    "model": "old-fixture",
+    "retained": [
+      "conflict-a",
+      "conflict-b",
+      "contract",
+      "duplicate-a",
+      "duplicate-b",
+      "example",
+      "legacy-auth",
+      "plan",
+      "plan-detail"
+    ]
+  },
+  "executed": {
+    "model": "new-fixture",
+    "retained": [
+      "contract",
+      "duplicate-b"
+    ]
+  },
+  "guard_rejected_mutation": false,
+  "native_case_executions": 4
+}

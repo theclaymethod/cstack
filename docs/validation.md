@@ -29,4 +29,6 @@ The repo contains no patient records or real expert-session datasets. Historical
 
 Additional project-local generation, fault injection and DSPy compatibility results are in the [methods report](../evals/methods/REPORT.md). These remain exposed synthetic development evidence.
 
-The [Calibrate Judge report](../evals/calibrate-judge/REPORT.md) adds offline agreement, typed/LLM normalization, bounded selection and final-exposure controls. Its simulated outcomes are separate from real model/human-gold calibration. The current combined validation has ten groups and 45 native tests.
+The [Calibrate Judge report](../evals/calibrate-judge/REPORT.md) adds offline agreement, typed/LLM normalization, bounded selection and final-exposure controls. Its simulated outcomes are separate from real model/human-gold calibration. The [simplification report](../evals/simplification/REPORT.md) adds deletion interactions, original-baseline gates and a simulated model-migration comparison. All eleven control groups passed. Of 56 native tests, 55 passed and the optional DSPy SDK check was skipped; these are mechanics checks, not real-model simplification results.
+
+The [Ablation/Bitter Lesson audit](../evals/simplification/CROSS_EXAMINE_LEDGER.md) confirms and repairs durable-ledger drift under an operator fault. The [skill-pack ablation](../evals/skill-ablation/REPORT.md) compares full and shortened instructions with eight fresh agent exercises, frozen native scoring and exposed confirmation cases.

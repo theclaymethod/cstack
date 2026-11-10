@@ -1,0 +1,40 @@
+{
+  "allowed_edits": "author/approved.jsonl plus scratch controls and run evidence; no source card edits",
+  "approved_cards": "handoff/current-approved.jsonl",
+  "approved_revisions": [
+    "A/revision1",
+    "B/revision2"
+  ],
+  "check_mapping": {
+    "action/account": [
+      "allowed_action",
+      "requested_account"
+    ],
+    "exact old state": [
+      "preserved_tickets",
+      "preserved_other_state"
+    ],
+    "one new open VPN ticket with unique nonempty ID": [
+      "ticket_delta",
+      "new_ticket_membership",
+      "new_ticket_fields",
+      "unique_ticket_ids",
+      "action_matches_mutation",
+      "schema valid_ticket"
+    ]
+  },
+  "exposure": "All generated cases and outcomes are development evidence",
+  "format": "existing native JSONL",
+  "intent_revision": 1,
+  "labels": "No concrete output labels supplied; expectations only",
+  "mapping": {
+    "expectation": "native expected object",
+    "family": "preserved per approved source",
+    "request": "native request object unchanged",
+    "state": "native state object unchanged including counter and nested metadata"
+  },
+  "roles": "One active agent using disclosed local fallback; no independent scenario author, evaluator author, validator or intent reviewer",
+  "runner": "python3 evaluate.py run --candidate <candidate> --cases eval-runs/skill-exercise/author/approved.jsonl --suite development --out <fresh-directory>",
+  "source_cards": "source/card-history.jsonl",
+  "source_inventory": "source/frozen-inventory.json"
+}

@@ -1,0 +1,7 @@
+{
+  "executed_driver": "eval-runs/forward_driver.executed.py",
+  "executed_sha256": "de40e81a39eb07422fddcdc486344d862505766269b5f71ebc0f0b77b23929b0",
+  "reproduction_driver": "eval-runs/forward_driver.py",
+  "reproduction_sha256": "8ecf4d60db42fe58d34d3b837c6fb73606289c23cb1db288661a5d2c2fe66b46",
+  "difference": "Corrected unsubstantiated prose about Hill Climb; no candidate, evaluator, execution, result, or campaign evidence changed"
+}

@@ -1,0 +1,18 @@
+{
+  "approved_controls": 3,
+  "baseline_model": "new-fixture",
+  "burden": "rendered UTF-8 bytes and retained unit count",
+  "confirmation_plan": [
+    "baseline-confirm",
+    "selected-confirm"
+  ],
+  "fixture_scope": "exposed synthetic controls",
+  "native_limit": 120,
+  "native_trials": 1,
+  "new_dependencies": 0,
+  "old_model": "unavailable and not authorized",
+  "paid_provider_calls": 0,
+  "quality_policy": "zero finite score loss and no baseline PASS regressions/errors against ORIGINAL new-fixture full prompt",
+  "simplification_confirmation_reserve": 8,
+  "simplification_limit": 117
+}

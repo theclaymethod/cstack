@@ -5,8 +5,6 @@ description: Execute an eval package, freeze verdicts before comparing expert la
 
 # Run Eval
 
-Run the requested eval and preserve what happened. Prefer the project's trusted runner. Stored-output review can use local files, code checks, and the active agent as a semantic judge. It needs no separate model API, database, or Docker.
-
 For an authorized campaign that changes an artifact and compares candidates against this evaluator, use [Hill Climb](../hill-climb/SKILL.md).
 
 For fitting or aligning a judge to labeled outcomes, use [Calibrate Judge](../calibrate-judge/SKILL.md). This workflow executes the frozen judge and reports agreement separately from product performance.
@@ -17,7 +15,7 @@ Inspect the package, task contract, rubric, config, and runner. Follow [format s
 
 Identify whether you are grading stored outputs, executing the product, calibrating a judge, or running a stateful agent. Stay within the authorized data, systems, and budget. Missing execution setup is unrun, not a zero product score. Stored-output review does not establish product execution.
 
-For new executions, capture original input, actual output or error, available tool interactions and retrieved evidence, state changes, and feature/configuration identity. Use project telemetry or [the local trace contract](../create-eval/references/trace-review.md). Keep failed and incomplete attempts visible. Record available evidence, not invented internals or private chain-of-thought. For a feature without relevant traces, see [early development](../create-eval/references/early-development.md).
+For new executions, capture original input, actual output or error, available tool interactions and retrieved evidence, state changes, and feature/configuration identity. Use project telemetry or [the local trace contract](../create-eval/references/trace-review.md). For a feature without relevant traces, see [early development](../create-eval/references/early-development.md).
 
 Keep development, calibration, regression, and frontier results separate. Open final-test semantics only on explicit instruction and a frozen revision. Record prior exposure and runs. Renaming files or partitions does not restore unseen status.
 
@@ -51,6 +49,6 @@ Inspect permitted outputs, traces, and state for reward hacking, broken labels, 
 
 Use an existing viewer or [local trace review](../create-eval/references/trace-review.md) for selected development traces. A viewer supports discovery, not blind isolation. Preserve annotations and disagreements as new evidence for Create Eval rather than rewriting frozen results or calibration gold.
 
-Lead with what ran, the result, and the evidence directory. Include revision, source and trial conditions, errors, abstentions, exposure, privacy limits, and label isolation. A process exit alone does not establish eval success.
+Lead with what ran, the result, and the evidence directory. Include revision, source and trial conditions, errors, abstentions, exposure, privacy limits, and label isolation.
 
 Execution adds no authority to change expert labels, tune from final-test results, fix products, or publish data. For requested sharing, follow [the export workflow](../expert-mode/references/export.md).

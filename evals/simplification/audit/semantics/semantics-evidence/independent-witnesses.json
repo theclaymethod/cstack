@@ -1,0 +1,192 @@
+{
+  "valid_alternatives": [
+    {
+      "id": "dev-howto",
+      "action": "guidance",
+      "prior_state_preserved": true,
+      "added": []
+    },
+    {
+      "id": "dev-generic",
+      "action": "guidance",
+      "prior_state_preserved": true,
+      "added": []
+    },
+    {
+      "id": "dev-explicit",
+      "action": "create_ticket",
+      "prior_state_preserved": true,
+      "added": [
+        {
+          "account": "acct-a",
+          "audit": {
+            "enabled": true,
+            "source": "fixture"
+          },
+          "id": "independent-1",
+          "issue": "vpn",
+          "status": "open"
+        }
+      ]
+    },
+    {
+      "id": "dev-duplicate",
+      "action": "clarify",
+      "prior_state_preserved": true,
+      "added": []
+    },
+    {
+      "id": "dev-ambiguous",
+      "action": "clarify",
+      "prior_state_preserved": true,
+      "added": []
+    },
+    {
+      "id": "dev-password",
+      "action": "guidance",
+      "prior_state_preserved": true,
+      "added": []
+    },
+    {
+      "id": "dev-closed",
+      "action": "create_ticket",
+      "prior_state_preserved": true,
+      "added": [
+        {
+          "account": "acct-a",
+          "audit": {
+            "enabled": true,
+            "source": "fixture"
+          },
+          "id": "independent-1",
+          "issue": "vpn",
+          "status": "open"
+        }
+      ]
+    },
+    {
+      "id": "dev-unrelated",
+      "action": "create_ticket",
+      "prior_state_preserved": true,
+      "added": [
+        {
+          "account": "acct-a",
+          "audit": {
+            "enabled": true,
+            "source": "fixture"
+          },
+          "id": "independent-1",
+          "issue": "vpn",
+          "status": "open"
+        }
+      ]
+    },
+    {
+      "id": "conf-howto",
+      "action": "guidance",
+      "prior_state_preserved": true,
+      "added": []
+    },
+    {
+      "id": "conf-targeted",
+      "action": "create_ticket",
+      "prior_state_preserved": true,
+      "added": [
+        {
+          "account": "team-south",
+          "audit": {
+            "enabled": true,
+            "source": "fixture"
+          },
+          "id": "independent-1",
+          "issue": "vpn",
+          "status": "open"
+        }
+      ]
+    },
+    {
+      "id": "conf-duplicate",
+      "action": "clarify",
+      "prior_state_preserved": true,
+      "added": []
+    },
+    {
+      "id": "conf-preservation",
+      "action": "create_ticket",
+      "prior_state_preserved": true,
+      "added": [
+        {
+          "account": "team-north",
+          "audit": {
+            "enabled": true,
+            "source": "fixture"
+          },
+          "id": "independent-1",
+          "issue": "vpn",
+          "status": "open"
+        }
+      ]
+    },
+    {
+      "id": "extra-dev-explicit",
+      "action": "create_ticket",
+      "prior_state_preserved": true,
+      "added": [
+        {
+          "account": "acct-a",
+          "audit": {
+            "enabled": true,
+            "source": "fixture"
+          },
+          "id": "independent-1",
+          "issue": "vpn",
+          "status": "open"
+        }
+      ]
+    },
+    {
+      "id": "extra-dev-duplicate",
+      "action": "clarify",
+      "prior_state_preserved": true,
+      "added": []
+    },
+    {
+      "id": "extra-dev-closed",
+      "action": "create_ticket",
+      "prior_state_preserved": true,
+      "added": [
+        {
+          "account": "acct-a",
+          "audit": {
+            "enabled": true,
+            "source": "fixture"
+          },
+          "id": "independent-1",
+          "issue": "vpn",
+          "status": "open"
+        }
+      ]
+    },
+    {
+      "id": "extra-conf-preservation",
+      "action": "create_ticket",
+      "prior_state_preserved": true,
+      "added": [
+        {
+          "account": "team-north",
+          "audit": {
+            "enabled": true,
+            "source": "fixture"
+          },
+          "id": "independent-1",
+          "issue": "vpn",
+          "status": "open"
+        }
+      ]
+    }
+  ],
+  "invalid_state_change_witnesses": 12,
+  "invalid_id_collision_witnesses": 2,
+  "invalid_json_type_change_witnesses": 4,
+  "additional_native_cases": 0
+}

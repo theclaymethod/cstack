@@ -1,0 +1,23 @@
+{
+  "authoring_cases": 3,
+  "ceiling": 120,
+  "missing_cells": [
+    "A: old production model/full design",
+    "B: old production model/same reduced design"
+  ],
+  "missing_comparisons": [
+    "C-A model effect",
+    "D-A release versus production",
+    "B-A old-model simplification",
+    "(D-C)-(B-A) interaction"
+  ],
+  "model_cost_latency_tokens": "unmeasured; native local wall seconds are recorded separately by Experiment",
+  "new_dependencies": 0,
+  "normalizer_invocations": 4,
+  "paid_calls": 0,
+  "provider_calls": 0,
+  "proxy_invocations": 3,
+  "retries": 0,
+  "simplification_cases": 32,
+  "total_actual_native_cases": 35
+}

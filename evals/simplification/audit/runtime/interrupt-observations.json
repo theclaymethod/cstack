@@ -1,0 +1,60 @@
+{
+  "activation": {
+    "boundary": "before second run_case",
+    "completed_trace_lines": 1,
+    "source_sha256": "fd1fdaa4b090852f8d0a6462303411bea5488dcc7f7a08895146e32d52b0430d"
+  },
+  "actual_trace_cases": 1,
+  "comparison_rejected": {
+    "accepted": false,
+    "message": "[Errno 2] No such file or directory: '/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/skill-audit-ablation/attacker-runtime/eval-runs/runtime-audit/interrupted/native/interrupted/summary.json'",
+    "type": "FileNotFoundError"
+  },
+  "ledger": {
+    "actual_completed": 0,
+    "calls": [
+      {
+        "candidate": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/skill-audit-ablation/attacker-runtime/eval-runs/runtime-audit/interrupted/candidates/interrupted.py",
+        "cases": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/skill-audit-ablation/attacker-runtime/eval-runs/runtime-audit/interrupted/native/interrupted.jsonl",
+        "label": "interrupted",
+        "reserved": 8,
+        "status": "pending"
+      }
+    ],
+    "limit": 12,
+    "reserved": 8
+  },
+  "outcomes": [
+    "PASS"
+  ],
+  "state": {
+    "contract_hash": "94c2393155debedea52273cd9ea22b0420be70d7963bdd3aff3d7e8ae067015a",
+    "plan": {},
+    "records": {
+      "interrupted": {
+        "candidate_sha256": "8bd79ed28276f336f5f4727a603900ab194c4e7c456ed736eff81e34acd802b2",
+        "config": {
+          "model": "old-fixture",
+          "retained": [
+            "conflict-a",
+            "conflict-b",
+            "contract",
+            "duplicate-a",
+            "duplicate-b",
+            "example",
+            "legacy-auth",
+            "plan",
+            "plan-detail"
+          ]
+        },
+        "prompt_utf8_bytes": 4193,
+        "status": "pending",
+        "suite": "development",
+        "unit_count": 9
+      }
+    },
+    "remaining_confirmation_reserve": 4,
+    "reserved_case_executions": 0,
+    "status": "search"
+  }
+}

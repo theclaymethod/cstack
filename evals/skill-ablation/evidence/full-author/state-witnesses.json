@@ -1,0 +1,345 @@
+[
+  {
+    "actual_output": {
+      "account": null,
+      "action": "guidance",
+      "note": "Check connection settings; use account recovery for password help.",
+      "state": {
+        "counter": 7,
+        "tickets": []
+      }
+    },
+    "case_id": "A-r1",
+    "entire_state_equal": true,
+    "failed_native_checks": [],
+    "native_outcome": "PASS",
+    "new_ticket_count": 0,
+    "new_ticket_records": [],
+    "original_ticket_prefix_exact": true,
+    "other_state_exact": true,
+    "run": "clean",
+    "source_initial_state": {
+      "counter": 7,
+      "tickets": []
+    },
+    "stdout_parsed_matches_recorded_output": true
+  },
+  {
+    "actual_output": {
+      "account": "acct-a",
+      "action": "create_ticket",
+      "note": "Opened the requested VPN support ticket.",
+      "state": {
+        "counter": 7,
+        "tickets": [
+          {
+            "account": "acct-b",
+            "id": "old",
+            "issue": "vpn",
+            "metadata": {
+              "keep": true
+            },
+            "status": "open"
+          },
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "case_id": "B-r2",
+    "entire_state_equal": false,
+    "failed_native_checks": [],
+    "native_outcome": "PASS",
+    "new_ticket_count": 1,
+    "new_ticket_records": [
+      {
+        "account": "acct-a",
+        "id": "ticket-1",
+        "issue": "vpn",
+        "status": "open"
+      }
+    ],
+    "original_ticket_prefix_exact": true,
+    "other_state_exact": true,
+    "run": "clean",
+    "source_initial_state": {
+      "counter": 7,
+      "tickets": [
+        {
+          "account": "acct-b",
+          "id": "old",
+          "issue": "vpn",
+          "metadata": {
+            "keep": true
+          },
+          "status": "open"
+        }
+      ]
+    },
+    "stdout_parsed_matches_recorded_output": true
+  },
+  {
+    "actual_output": {
+      "account": null,
+      "action": "guidance",
+      "note": "Check connection settings; use account recovery for password help.",
+      "state": {
+        "counter": 7,
+        "tickets": []
+      }
+    },
+    "case_id": "A-r1",
+    "entire_state_equal": true,
+    "failed_native_checks": [],
+    "native_outcome": "PASS",
+    "new_ticket_count": 0,
+    "new_ticket_records": [],
+    "original_ticket_prefix_exact": true,
+    "other_state_exact": true,
+    "run": "alternate-id",
+    "source_initial_state": {
+      "counter": 7,
+      "tickets": []
+    },
+    "stdout_parsed_matches_recorded_output": true
+  },
+  {
+    "actual_output": {
+      "account": "acct-a",
+      "action": "create_ticket",
+      "note": "Opened the requested VPN support ticket.",
+      "state": {
+        "counter": 7,
+        "tickets": [
+          {
+            "account": "acct-b",
+            "id": "old",
+            "issue": "vpn",
+            "metadata": {
+              "keep": true
+            },
+            "status": "open"
+          },
+          {
+            "account": "acct-a",
+            "id": "allowed-alternative-1",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "case_id": "B-r2",
+    "entire_state_equal": false,
+    "failed_native_checks": [],
+    "native_outcome": "PASS",
+    "new_ticket_count": 1,
+    "new_ticket_records": [
+      {
+        "account": "acct-a",
+        "id": "allowed-alternative-1",
+        "issue": "vpn",
+        "status": "open"
+      }
+    ],
+    "original_ticket_prefix_exact": true,
+    "other_state_exact": true,
+    "run": "alternate-id",
+    "source_initial_state": {
+      "counter": 7,
+      "tickets": [
+        {
+          "account": "acct-b",
+          "id": "old",
+          "issue": "vpn",
+          "metadata": {
+            "keep": true
+          },
+          "status": "open"
+        }
+      ]
+    },
+    "stdout_parsed_matches_recorded_output": true
+  },
+  {
+    "actual_output": {
+      "account": null,
+      "action": "guidance",
+      "note": "Check connection settings; use account recovery for password help.",
+      "state": {
+        "counter": 7,
+        "tickets": []
+      }
+    },
+    "case_id": "A-r1",
+    "entire_state_equal": true,
+    "failed_native_checks": [],
+    "native_outcome": "PASS",
+    "new_ticket_count": 0,
+    "new_ticket_records": [],
+    "original_ticket_prefix_exact": true,
+    "other_state_exact": true,
+    "run": "false-creation-claim",
+    "source_initial_state": {
+      "counter": 7,
+      "tickets": []
+    },
+    "stdout_parsed_matches_recorded_output": true
+  },
+  {
+    "actual_output": {
+      "account": "acct-a",
+      "action": "create_ticket",
+      "note": "Opened the requested VPN support ticket.",
+      "state": {
+        "counter": 7,
+        "tickets": [
+          {
+            "account": "acct-b",
+            "id": "old",
+            "issue": "vpn",
+            "metadata": {
+              "keep": true
+            },
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "case_id": "B-r2",
+    "entire_state_equal": true,
+    "failed_native_checks": [
+      "action_matches_mutation",
+      "new_ticket_membership",
+      "ticket_delta"
+    ],
+    "native_outcome": "FAIL",
+    "new_ticket_count": 0,
+    "new_ticket_records": [],
+    "original_ticket_prefix_exact": true,
+    "other_state_exact": true,
+    "run": "false-creation-claim",
+    "source_initial_state": {
+      "counter": 7,
+      "tickets": [
+        {
+          "account": "acct-b",
+          "id": "old",
+          "issue": "vpn",
+          "metadata": {
+            "keep": true
+          },
+          "status": "open"
+        }
+      ]
+    },
+    "stdout_parsed_matches_recorded_output": true
+  },
+  {
+    "actual_output": {
+      "account": "acct-a",
+      "action": "create_ticket",
+      "note": "Opened a VPN support ticket.",
+      "state": {
+        "counter": 7,
+        "tickets": [
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "case_id": "A-r1",
+    "entire_state_equal": false,
+    "failed_native_checks": [
+      "allowed_action",
+      "new_ticket_fields",
+      "new_ticket_membership",
+      "requested_account",
+      "ticket_delta"
+    ],
+    "native_outcome": "FAIL",
+    "new_ticket_count": 1,
+    "new_ticket_records": [
+      {
+        "account": "acct-a",
+        "id": "ticket-1",
+        "issue": "vpn",
+        "status": "open"
+      }
+    ],
+    "original_ticket_prefix_exact": true,
+    "other_state_exact": true,
+    "run": "original-product",
+    "source_initial_state": {
+      "counter": 7,
+      "tickets": []
+    },
+    "stdout_parsed_matches_recorded_output": true
+  },
+  {
+    "actual_output": {
+      "account": "acct-a",
+      "action": "create_ticket",
+      "note": "Opened a VPN support ticket.",
+      "state": {
+        "counter": 7,
+        "tickets": [
+          {
+            "account": "acct-b",
+            "id": "old",
+            "issue": "vpn",
+            "metadata": {
+              "keep": true
+            },
+            "status": "open"
+          },
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "case_id": "B-r2",
+    "entire_state_equal": false,
+    "failed_native_checks": [],
+    "native_outcome": "PASS",
+    "new_ticket_count": 1,
+    "new_ticket_records": [
+      {
+        "account": "acct-a",
+        "id": "ticket-1",
+        "issue": "vpn",
+        "status": "open"
+      }
+    ],
+    "original_ticket_prefix_exact": true,
+    "other_state_exact": true,
+    "run": "original-product",
+    "source_initial_state": {
+      "counter": 7,
+      "tickets": [
+        {
+          "account": "acct-b",
+          "id": "old",
+          "issue": "vpn",
+          "metadata": {
+            "keep": true
+          },
+          "status": "open"
+        }
+      ]
+    },
+    "stdout_parsed_matches_recorded_output": true
+  }
+]

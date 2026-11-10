@@ -1,0 +1,26 @@
+{
+  "candidate_hash": "5ce4af8d605cf4e173d97f61014cec2c3f90f94ccb8ba350d7f6d5f2b24d2324",
+  "case_ids": [
+    "dev-howto"
+  ],
+  "complete": true,
+  "counts": {
+    "ERROR": 1,
+    "FAIL": 0,
+    "PASS": 0,
+    "UNKNOWN": 0
+  },
+  "executed_count": 1,
+  "identity_hash": "89a96d226443d97b3a269934961259e3fc32de1ab2358841c738e964bc6c829c",
+  "results": [
+    {
+      "checks": {},
+      "error": "malformed candidate JSON schema",
+      "id": "dev-howto",
+      "outcome": "ERROR",
+      "suite": "development"
+    }
+  ],
+  "score": 0.0,
+  "selected_count": 1
+}

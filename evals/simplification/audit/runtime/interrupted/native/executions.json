@@ -1,0 +1,14 @@
+{
+  "actual_completed": 0,
+  "calls": [
+    {
+      "candidate": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/skill-audit-ablation/attacker-runtime/eval-runs/runtime-audit/interrupted/candidates/interrupted.py",
+      "cases": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/skill-audit-ablation/attacker-runtime/eval-runs/runtime-audit/interrupted/native/interrupted.jsonl",
+      "label": "interrupted",
+      "reserved": 8,
+      "status": "pending"
+    }
+  ],
+  "limit": 12,
+  "reserved": 8
+}

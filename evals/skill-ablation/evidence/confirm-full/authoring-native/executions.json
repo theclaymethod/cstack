@@ -1,0 +1,49 @@
+{
+  "actual_completed": 3,
+  "calls": [
+    {
+      "candidate": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/skill-audit-ablation/runs/confirm-full/eval-runs/skill-exercise/candidates/legitimate.py",
+      "cases": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/skill-audit-ablation/runs/confirm-full/eval-runs/skill-exercise/authoring-native/legitimate.jsonl",
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 1,
+        "UNKNOWN": 0
+      },
+      "executed": 1,
+      "label": "legitimate",
+      "reserved": 1,
+      "status": "complete"
+    },
+    {
+      "candidate": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/skill-audit-ablation/runs/confirm-full/eval-runs/skill-exercise/candidates/alternative-id.py",
+      "cases": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/skill-audit-ablation/runs/confirm-full/eval-runs/skill-exercise/authoring-native/alternative-id.jsonl",
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 1,
+        "UNKNOWN": 0
+      },
+      "executed": 1,
+      "label": "alternative-id",
+      "reserved": 1,
+      "status": "complete"
+    },
+    {
+      "candidate": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/skill-audit-ablation/runs/confirm-full/eval-runs/skill-exercise/candidates/false-claim.py",
+      "cases": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/skill-audit-ablation/runs/confirm-full/eval-runs/skill-exercise/authoring-native/false-claim.jsonl",
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 1,
+        "PASS": 0,
+        "UNKNOWN": 0
+      },
+      "executed": 1,
+      "label": "false-claim",
+      "reserved": 1,
+      "status": "complete"
+    }
+  ],
+  "limit": 3,
+  "reserved": 3
+}
