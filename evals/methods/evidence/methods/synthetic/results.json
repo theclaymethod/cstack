@@ -1,0 +1,2046 @@
+{
+  "actual_native_executions": 95,
+  "additional_mechanism": "ignore-own-created passes static seeds; valid-prefix repeat exposes duplicate creation",
+  "budget": 300,
+  "comparison": {
+    "adaptive_exposure": "All selection cases exposed",
+    "final_generated_cases_per_candidate": 10,
+    "per_arm_case_limit": 12,
+    "scope": "One frozen corpus run per candidate per arm. Construction/reduction/selection work is separately included in the total; no generation efficiency or unseen improvement claim.",
+    "seed_cases_per_candidate": 12
+  },
+  "complete_detection_matrix": {
+    "broad-duplicate": [
+      "scope:closed",
+      "scope:other-account"
+    ],
+    "ignore-denial": [
+      "authorization:deny"
+    ],
+    "ignore-own-created": [
+      "sequence:own-created-repeat"
+    ]
+  },
+  "matrix": {
+    "broad-duplicate": {
+      "errors": [],
+      "generated_executions": 10,
+      "generated_failures": [
+        "scope:closed",
+        "scope:other-account"
+      ],
+      "seed_executions": 12,
+      "seed_failures": [
+        "dev-closed",
+        "dev-unrelated",
+        "conf-preservation"
+      ]
+    },
+    "ignore-denial": {
+      "errors": [],
+      "generated_executions": 10,
+      "generated_failures": [
+        "authorization:deny"
+      ],
+      "seed_executions": 12,
+      "seed_failures": [
+        "conf-howto"
+      ]
+    },
+    "ignore-own-created": {
+      "errors": [],
+      "generated_executions": 10,
+      "generated_failures": [
+        "sequence:own-created-repeat"
+      ],
+      "seed_executions": 12,
+      "seed_failures": []
+    }
+  },
+  "provider_calls": 0,
+  "reduction": {
+    "attempts": [
+      {
+        "legitimate_controls": [
+          {
+            "case": {
+              "expected": {
+                "account": "acct-a",
+                "allowed_actions": [
+                  "create_ticket"
+                ],
+                "ticket_delta": 1
+              },
+              "family": "sequence",
+              "id": "sequence:create-repeat-control-rich-0",
+              "request": {
+                "account": null,
+                "accounts": [
+                  "acct-a"
+                ],
+                "text": "Please create a VPN support ticket."
+              },
+              "state": {
+                "tickets": [
+                  {
+                    "account": "acct-b",
+                    "id": "noise-b",
+                    "issue": "vpn",
+                    "status": "closed"
+                  },
+                  {
+                    "account": "acct-c",
+                    "id": "noise-c",
+                    "issue": "vpn",
+                    "status": "closed"
+                  }
+                ]
+              },
+              "suite": "development"
+            },
+            "trace": {
+              "checks": {
+                "action_matches_mutation": true,
+                "allowed_action": true,
+                "new_ticket_fields": true,
+                "new_ticket_membership": true,
+                "preserved_other_state": true,
+                "preserved_tickets": true,
+                "requested_account": true,
+                "ticket_delta": true,
+                "unique_ticket_ids": true
+              },
+              "error": null,
+              "exit_code": 0,
+              "family": "sequence",
+              "id": "sequence:create-repeat-control-rich-0",
+              "input": {
+                "request": {
+                  "account": null,
+                  "accounts": [
+                    "acct-a"
+                  ],
+                  "text": "Please create a VPN support ticket."
+                },
+                "state": {
+                  "tickets": [
+                    {
+                      "account": "acct-b",
+                      "id": "noise-b",
+                      "issue": "vpn",
+                      "status": "closed"
+                    },
+                    {
+                      "account": "acct-c",
+                      "id": "noise-c",
+                      "issue": "vpn",
+                      "status": "closed"
+                    }
+                  ]
+                }
+              },
+              "outcome": "PASS",
+              "output": {
+                "account": "acct-a",
+                "action": "create_ticket",
+                "note": "Opened the requested VPN support ticket.",
+                "state": {
+                  "tickets": [
+                    {
+                      "account": "acct-b",
+                      "id": "noise-b",
+                      "issue": "vpn",
+                      "status": "closed"
+                    },
+                    {
+                      "account": "acct-c",
+                      "id": "noise-c",
+                      "issue": "vpn",
+                      "status": "closed"
+                    },
+                    {
+                      "account": "acct-a",
+                      "id": "ticket-1",
+                      "issue": "vpn",
+                      "status": "open"
+                    }
+                  ]
+                }
+              },
+              "stderr": "",
+              "stdout": "{\"account\": \"acct-a\", \"action\": \"create_ticket\", \"note\": \"Opened the requested VPN support ticket.\", \"state\": {\"tickets\": [{\"account\": \"acct-b\", \"id\": \"noise-b\", \"issue\": \"vpn\", \"status\": \"closed\"}, {\"account\": \"acct-c\", \"id\": \"noise-c\", \"issue\": \"vpn\", \"status\": \"closed\"}, {\"account\": \"acct-a\", \"id\": \"ticket-1\", \"issue\": \"vpn\", \"status\": \"open\"}]}}\n",
+              "suite": "development"
+            }
+          },
+          {
+            "case": {
+              "expected": {
+                "account": null,
+                "allowed_actions": [
+                  "guidance",
+                  "clarify"
+                ],
+                "ticket_delta": 0
+              },
+              "family": "sequence",
+              "id": "sequence:create-repeat-control-rich-1",
+              "request": {
+                "account": null,
+                "accounts": [
+                  "acct-a"
+                ],
+                "text": "Please create a VPN support ticket."
+              },
+              "state": {
+                "tickets": [
+                  {
+                    "account": "acct-b",
+                    "id": "noise-b",
+                    "issue": "vpn",
+                    "status": "closed"
+                  },
+                  {
+                    "account": "acct-c",
+                    "id": "noise-c",
+                    "issue": "vpn",
+                    "status": "closed"
+                  },
+                  {
+                    "account": "acct-a",
+                    "id": "ticket-1",
+                    "issue": "vpn",
+                    "status": "open"
+                  }
+                ]
+              },
+              "suite": "development"
+            },
+            "trace": {
+              "checks": {
+                "action_matches_mutation": true,
+                "allowed_action": true,
+                "new_ticket_fields": true,
+                "new_ticket_membership": true,
+                "preserved_other_state": true,
+                "preserved_tickets": true,
+                "requested_account": true,
+                "ticket_delta": true,
+                "unique_ticket_ids": true
+              },
+              "error": null,
+              "exit_code": 0,
+              "family": "sequence",
+              "id": "sequence:create-repeat-control-rich-1",
+              "input": {
+                "request": {
+                  "account": null,
+                  "accounts": [
+                    "acct-a"
+                  ],
+                  "text": "Please create a VPN support ticket."
+                },
+                "state": {
+                  "tickets": [
+                    {
+                      "account": "acct-b",
+                      "id": "noise-b",
+                      "issue": "vpn",
+                      "status": "closed"
+                    },
+                    {
+                      "account": "acct-c",
+                      "id": "noise-c",
+                      "issue": "vpn",
+                      "status": "closed"
+                    },
+                    {
+                      "account": "acct-a",
+                      "id": "ticket-1",
+                      "issue": "vpn",
+                      "status": "open"
+                    }
+                  ]
+                }
+              },
+              "outcome": "PASS",
+              "output": {
+                "account": null,
+                "action": "guidance",
+                "note": "An open VPN ticket already covers this account; use that ticket.",
+                "state": {
+                  "tickets": [
+                    {
+                      "account": "acct-b",
+                      "id": "noise-b",
+                      "issue": "vpn",
+                      "status": "closed"
+                    },
+                    {
+                      "account": "acct-c",
+                      "id": "noise-c",
+                      "issue": "vpn",
+                      "status": "closed"
+                    },
+                    {
+                      "account": "acct-a",
+                      "id": "ticket-1",
+                      "issue": "vpn",
+                      "status": "open"
+                    }
+                  ]
+                }
+              },
+              "stderr": "",
+              "stdout": "{\"account\": null, \"action\": \"guidance\", \"note\": \"An open VPN ticket already covers this account; use that ticket.\", \"state\": {\"tickets\": [{\"account\": \"acct-b\", \"id\": \"noise-b\", \"issue\": \"vpn\", \"status\": \"closed\"}, {\"account\": \"acct-c\", \"id\": \"noise-c\", \"issue\": \"vpn\", \"status\": \"closed\"}, {\"account\": \"acct-a\", \"id\": \"ticket-1\", \"issue\": \"vpn\", \"status\": \"open\"}]}}\n",
+              "suite": "development"
+            }
+          }
+        ],
+        "retained": true,
+        "revision": "rich",
+        "steps": [
+          {
+            "case": {
+              "expected": {
+                "account": "acct-a",
+                "allowed_actions": [
+                  "create_ticket"
+                ],
+                "ticket_delta": 1
+              },
+              "family": "sequence",
+              "id": "sequence:create-repeat-reduce-rich-0",
+              "request": {
+                "account": null,
+                "accounts": [
+                  "acct-a"
+                ],
+                "text": "Please create a VPN support ticket."
+              },
+              "state": {
+                "tickets": [
+                  {
+                    "account": "acct-b",
+                    "id": "noise-b",
+                    "issue": "vpn",
+                    "status": "closed"
+                  },
+                  {
+                    "account": "acct-c",
+                    "id": "noise-c",
+                    "issue": "vpn",
+                    "status": "closed"
+                  }
+                ]
+              },
+              "suite": "development"
+            },
+            "trace": {
+              "checks": {
+                "action_matches_mutation": true,
+                "allowed_action": true,
+                "new_ticket_fields": true,
+                "new_ticket_membership": true,
+                "preserved_other_state": true,
+                "preserved_tickets": true,
+                "requested_account": true,
+                "ticket_delta": true,
+                "unique_ticket_ids": true
+              },
+              "error": null,
+              "exit_code": 0,
+              "family": "sequence",
+              "id": "sequence:create-repeat-reduce-rich-0",
+              "input": {
+                "request": {
+                  "account": null,
+                  "accounts": [
+                    "acct-a"
+                  ],
+                  "text": "Please create a VPN support ticket."
+                },
+                "state": {
+                  "tickets": [
+                    {
+                      "account": "acct-b",
+                      "id": "noise-b",
+                      "issue": "vpn",
+                      "status": "closed"
+                    },
+                    {
+                      "account": "acct-c",
+                      "id": "noise-c",
+                      "issue": "vpn",
+                      "status": "closed"
+                    }
+                  ]
+                }
+              },
+              "outcome": "PASS",
+              "output": {
+                "account": "acct-a",
+                "action": "create_ticket",
+                "note": "Opened the requested VPN support ticket.",
+                "state": {
+                  "tickets": [
+                    {
+                      "account": "acct-b",
+                      "id": "noise-b",
+                      "issue": "vpn",
+                      "status": "closed"
+                    },
+                    {
+                      "account": "acct-c",
+                      "id": "noise-c",
+                      "issue": "vpn",
+                      "status": "closed"
+                    },
+                    {
+                      "account": "acct-a",
+                      "created_by": "fixture-agent",
+                      "id": "ticket-1",
+                      "issue": "vpn",
+                      "status": "open"
+                    }
+                  ]
+                }
+              },
+              "stderr": "",
+              "stdout": "{\"account\": \"acct-a\", \"action\": \"create_ticket\", \"note\": \"Opened the requested VPN support ticket.\", \"state\": {\"tickets\": [{\"account\": \"acct-b\", \"id\": \"noise-b\", \"issue\": \"vpn\", \"status\": \"closed\"}, {\"account\": \"acct-c\", \"id\": \"noise-c\", \"issue\": \"vpn\", \"status\": \"closed\"}, {\"account\": \"acct-a\", \"created_by\": \"fixture-agent\", \"id\": \"ticket-1\", \"issue\": \"vpn\", \"status\": \"open\"}]}}\n",
+              "suite": "development"
+            }
+          },
+          {
+            "case": {
+              "expected": {
+                "account": null,
+                "allowed_actions": [
+                  "guidance",
+                  "clarify"
+                ],
+                "ticket_delta": 0
+              },
+              "family": "sequence",
+              "id": "sequence:create-repeat-reduce-rich-1",
+              "request": {
+                "account": null,
+                "accounts": [
+                  "acct-a"
+                ],
+                "text": "Please create a VPN support ticket."
+              },
+              "state": {
+                "tickets": [
+                  {
+                    "account": "acct-b",
+                    "id": "noise-b",
+                    "issue": "vpn",
+                    "status": "closed"
+                  },
+                  {
+                    "account": "acct-c",
+                    "id": "noise-c",
+                    "issue": "vpn",
+                    "status": "closed"
+                  },
+                  {
+                    "account": "acct-a",
+                    "created_by": "fixture-agent",
+                    "id": "ticket-1",
+                    "issue": "vpn",
+                    "status": "open"
+                  }
+                ]
+              },
+              "suite": "development"
+            },
+            "trace": {
+              "checks": {
+                "action_matches_mutation": true,
+                "allowed_action": false,
+                "new_ticket_fields": false,
+                "new_ticket_membership": false,
+                "preserved_other_state": true,
+                "preserved_tickets": true,
+                "requested_account": false,
+                "ticket_delta": false,
+                "unique_ticket_ids": true
+              },
+              "error": null,
+              "exit_code": 0,
+              "family": "sequence",
+              "id": "sequence:create-repeat-reduce-rich-1",
+              "input": {
+                "request": {
+                  "account": null,
+                  "accounts": [
+                    "acct-a"
+                  ],
+                  "text": "Please create a VPN support ticket."
+                },
+                "state": {
+                  "tickets": [
+                    {
+                      "account": "acct-b",
+                      "id": "noise-b",
+                      "issue": "vpn",
+                      "status": "closed"
+                    },
+                    {
+                      "account": "acct-c",
+                      "id": "noise-c",
+                      "issue": "vpn",
+                      "status": "closed"
+                    },
+                    {
+                      "account": "acct-a",
+                      "created_by": "fixture-agent",
+                      "id": "ticket-1",
+                      "issue": "vpn",
+                      "status": "open"
+                    }
+                  ]
+                }
+              },
+              "outcome": "FAIL",
+              "output": {
+                "account": "acct-a",
+                "action": "create_ticket",
+                "note": "Opened the requested VPN support ticket.",
+                "state": {
+                  "tickets": [
+                    {
+                      "account": "acct-b",
+                      "id": "noise-b",
+                      "issue": "vpn",
+                      "status": "closed"
+                    },
+                    {
+                      "account": "acct-c",
+                      "id": "noise-c",
+                      "issue": "vpn",
+                      "status": "closed"
+                    },
+                    {
+                      "account": "acct-a",
+                      "created_by": "fixture-agent",
+                      "id": "ticket-1",
+                      "issue": "vpn",
+                      "status": "open"
+                    },
+                    {
+                      "account": "acct-a",
+                      "created_by": "fixture-agent",
+                      "id": "ticket-2",
+                      "issue": "vpn",
+                      "status": "open"
+                    }
+                  ]
+                }
+              },
+              "stderr": "",
+              "stdout": "{\"account\": \"acct-a\", \"action\": \"create_ticket\", \"note\": \"Opened the requested VPN support ticket.\", \"state\": {\"tickets\": [{\"account\": \"acct-b\", \"id\": \"noise-b\", \"issue\": \"vpn\", \"status\": \"closed\"}, {\"account\": \"acct-c\", \"id\": \"noise-c\", \"issue\": \"vpn\", \"status\": \"closed\"}, {\"account\": \"acct-a\", \"created_by\": \"fixture-agent\", \"id\": \"ticket-1\", \"issue\": \"vpn\", \"status\": \"open\"}, {\"account\": \"acct-a\", \"created_by\": \"fixture-agent\", \"id\": \"ticket-2\", \"issue\": \"vpn\", \"status\": \"open\"}]}}\n",
+              "suite": "development"
+            }
+          }
+        ]
+      },
+      {
+        "legitimate_controls": [
+          {
+            "case": {
+              "expected": {
+                "account": "acct-a",
+                "allowed_actions": [
+                  "create_ticket"
+                ],
+                "ticket_delta": 1
+              },
+              "family": "sequence",
+              "id": "sequence:create-repeat-control-drop-noise-b-0",
+              "request": {
+                "account": null,
+                "accounts": [
+                  "acct-a"
+                ],
+                "text": "Please create a VPN support ticket."
+              },
+              "state": {
+                "tickets": [
+                  {
+                    "account": "acct-c",
+                    "id": "noise-c",
+                    "issue": "vpn",
+                    "status": "closed"
+                  }
+                ]
+              },
+              "suite": "development"
+            },
+            "trace": {
+              "checks": {
+                "action_matches_mutation": true,
+                "allowed_action": true,
+                "new_ticket_fields": true,
+                "new_ticket_membership": true,
+                "preserved_other_state": true,
+                "preserved_tickets": true,
+                "requested_account": true,
+                "ticket_delta": true,
+                "unique_ticket_ids": true
+              },
+              "error": null,
+              "exit_code": 0,
+              "family": "sequence",
+              "id": "sequence:create-repeat-control-drop-noise-b-0",
+              "input": {
+                "request": {
+                  "account": null,
+                  "accounts": [
+                    "acct-a"
+                  ],
+                  "text": "Please create a VPN support ticket."
+                },
+                "state": {
+                  "tickets": [
+                    {
+                      "account": "acct-c",
+                      "id": "noise-c",
+                      "issue": "vpn",
+                      "status": "closed"
+                    }
+                  ]
+                }
+              },
+              "outcome": "PASS",
+              "output": {
+                "account": "acct-a",
+                "action": "create_ticket",
+                "note": "Opened the requested VPN support ticket.",
+                "state": {
+                  "tickets": [
+                    {
+                      "account": "acct-c",
+                      "id": "noise-c",
+                      "issue": "vpn",
+                      "status": "closed"
+                    },
+                    {
+                      "account": "acct-a",
+                      "id": "ticket-1",
+                      "issue": "vpn",
+                      "status": "open"
+                    }
+                  ]
+                }
+              },
+              "stderr": "",
+              "stdout": "{\"account\": \"acct-a\", \"action\": \"create_ticket\", \"note\": \"Opened the requested VPN support ticket.\", \"state\": {\"tickets\": [{\"account\": \"acct-c\", \"id\": \"noise-c\", \"issue\": \"vpn\", \"status\": \"closed\"}, {\"account\": \"acct-a\", \"id\": \"ticket-1\", \"issue\": \"vpn\", \"status\": \"open\"}]}}\n",
+              "suite": "development"
+            }
+          },
+          {
+            "case": {
+              "expected": {
+                "account": null,
+                "allowed_actions": [
+                  "guidance",
+                  "clarify"
+                ],
+                "ticket_delta": 0
+              },
+              "family": "sequence",
+              "id": "sequence:create-repeat-control-drop-noise-b-1",
+              "request": {
+                "account": null,
+                "accounts": [
+                  "acct-a"
+                ],
+                "text": "Please create a VPN support ticket."
+              },
+              "state": {
+                "tickets": [
+                  {
+                    "account": "acct-c",
+                    "id": "noise-c",
+                    "issue": "vpn",
+                    "status": "closed"
+                  },
+                  {
+                    "account": "acct-a",
+                    "id": "ticket-1",
+                    "issue": "vpn",
+                    "status": "open"
+                  }
+                ]
+              },
+              "suite": "development"
+            },
+            "trace": {
+              "checks": {
+                "action_matches_mutation": true,
+                "allowed_action": true,
+                "new_ticket_fields": true,
+                "new_ticket_membership": true,
+                "preserved_other_state": true,
+                "preserved_tickets": true,
+                "requested_account": true,
+                "ticket_delta": true,
+                "unique_ticket_ids": true
+              },
+              "error": null,
+              "exit_code": 0,
+              "family": "sequence",
+              "id": "sequence:create-repeat-control-drop-noise-b-1",
+              "input": {
+                "request": {
+                  "account": null,
+                  "accounts": [
+                    "acct-a"
+                  ],
+                  "text": "Please create a VPN support ticket."
+                },
+                "state": {
+                  "tickets": [
+                    {
+                      "account": "acct-c",
+                      "id": "noise-c",
+                      "issue": "vpn",
+                      "status": "closed"
+                    },
+                    {
+                      "account": "acct-a",
+                      "id": "ticket-1",
+                      "issue": "vpn",
+                      "status": "open"
+                    }
+                  ]
+                }
+              },
+              "outcome": "PASS",
+              "output": {
+                "account": null,
+                "action": "guidance",
+                "note": "An open VPN ticket already covers this account; use that ticket.",
+                "state": {
+                  "tickets": [
+                    {
+                      "account": "acct-c",
+                      "id": "noise-c",
+                      "issue": "vpn",
+                      "status": "closed"
+                    },
+                    {
+                      "account": "acct-a",
+                      "id": "ticket-1",
+                      "issue": "vpn",
+                      "status": "open"
+                    }
+                  ]
+                }
+              },
+              "stderr": "",
+              "stdout": "{\"account\": null, \"action\": \"guidance\", \"note\": \"An open VPN ticket already covers this account; use that ticket.\", \"state\": {\"tickets\": [{\"account\": \"acct-c\", \"id\": \"noise-c\", \"issue\": \"vpn\", \"status\": \"closed\"}, {\"account\": \"acct-a\", \"id\": \"ticket-1\", \"issue\": \"vpn\", \"status\": \"open\"}]}}\n",
+              "suite": "development"
+            }
+          }
+        ],
+        "retained": true,
+        "revision": "drop-noise-b",
+        "steps": [
+          {
+            "case": {
+              "expected": {
+                "account": "acct-a",
+                "allowed_actions": [
+                  "create_ticket"
+                ],
+                "ticket_delta": 1
+              },
+              "family": "sequence",
+              "id": "sequence:create-repeat-reduce-drop-noise-b-0",
+              "request": {
+                "account": null,
+                "accounts": [
+                  "acct-a"
+                ],
+                "text": "Please create a VPN support ticket."
+              },
+              "state": {
+                "tickets": [
+                  {
+                    "account": "acct-c",
+                    "id": "noise-c",
+                    "issue": "vpn",
+                    "status": "closed"
+                  }
+                ]
+              },
+              "suite": "development"
+            },
+            "trace": {
+              "checks": {
+                "action_matches_mutation": true,
+                "allowed_action": true,
+                "new_ticket_fields": true,
+                "new_ticket_membership": true,
+                "preserved_other_state": true,
+                "preserved_tickets": true,
+                "requested_account": true,
+                "ticket_delta": true,
+                "unique_ticket_ids": true
+              },
+              "error": null,
+              "exit_code": 0,
+              "family": "sequence",
+              "id": "sequence:create-repeat-reduce-drop-noise-b-0",
+              "input": {
+                "request": {
+                  "account": null,
+                  "accounts": [
+                    "acct-a"
+                  ],
+                  "text": "Please create a VPN support ticket."
+                },
+                "state": {
+                  "tickets": [
+                    {
+                      "account": "acct-c",
+                      "id": "noise-c",
+                      "issue": "vpn",
+                      "status": "closed"
+                    }
+                  ]
+                }
+              },
+              "outcome": "PASS",
+              "output": {
+                "account": "acct-a",
+                "action": "create_ticket",
+                "note": "Opened the requested VPN support ticket.",
+                "state": {
+                  "tickets": [
+                    {
+                      "account": "acct-c",
+                      "id": "noise-c",
+                      "issue": "vpn",
+                      "status": "closed"
+                    },
+                    {
+                      "account": "acct-a",
+                      "created_by": "fixture-agent",
+                      "id": "ticket-1",
+                      "issue": "vpn",
+                      "status": "open"
+                    }
+                  ]
+                }
+              },
+              "stderr": "",
+              "stdout": "{\"account\": \"acct-a\", \"action\": \"create_ticket\", \"note\": \"Opened the requested VPN support ticket.\", \"state\": {\"tickets\": [{\"account\": \"acct-c\", \"id\": \"noise-c\", \"issue\": \"vpn\", \"status\": \"closed\"}, {\"account\": \"acct-a\", \"created_by\": \"fixture-agent\", \"id\": \"ticket-1\", \"issue\": \"vpn\", \"status\": \"open\"}]}}\n",
+              "suite": "development"
+            }
+          },
+          {
+            "case": {
+              "expected": {
+                "account": null,
+                "allowed_actions": [
+                  "guidance",
+                  "clarify"
+                ],
+                "ticket_delta": 0
+              },
+              "family": "sequence",
+              "id": "sequence:create-repeat-reduce-drop-noise-b-1",
+              "request": {
+                "account": null,
+                "accounts": [
+                  "acct-a"
+                ],
+                "text": "Please create a VPN support ticket."
+              },
+              "state": {
+                "tickets": [
+                  {
+                    "account": "acct-c",
+                    "id": "noise-c",
+                    "issue": "vpn",
+                    "status": "closed"
+                  },
+                  {
+                    "account": "acct-a",
+                    "created_by": "fixture-agent",
+                    "id": "ticket-1",
+                    "issue": "vpn",
+                    "status": "open"
+                  }
+                ]
+              },
+              "suite": "development"
+            },
+            "trace": {
+              "checks": {
+                "action_matches_mutation": true,
+                "allowed_action": false,
+                "new_ticket_fields": false,
+                "new_ticket_membership": false,
+                "preserved_other_state": true,
+                "preserved_tickets": true,
+                "requested_account": false,
+                "ticket_delta": false,
+                "unique_ticket_ids": true
+              },
+              "error": null,
+              "exit_code": 0,
+              "family": "sequence",
+              "id": "sequence:create-repeat-reduce-drop-noise-b-1",
+              "input": {
+                "request": {
+                  "account": null,
+                  "accounts": [
+                    "acct-a"
+                  ],
+                  "text": "Please create a VPN support ticket."
+                },
+                "state": {
+                  "tickets": [
+                    {
+                      "account": "acct-c",
+                      "id": "noise-c",
+                      "issue": "vpn",
+                      "status": "closed"
+                    },
+                    {
+                      "account": "acct-a",
+                      "created_by": "fixture-agent",
+                      "id": "ticket-1",
+                      "issue": "vpn",
+                      "status": "open"
+                    }
+                  ]
+                }
+              },
+              "outcome": "FAIL",
+              "output": {
+                "account": "acct-a",
+                "action": "create_ticket",
+                "note": "Opened the requested VPN support ticket.",
+                "state": {
+                  "tickets": [
+                    {
+                      "account": "acct-c",
+                      "id": "noise-c",
+                      "issue": "vpn",
+                      "status": "closed"
+                    },
+                    {
+                      "account": "acct-a",
+                      "created_by": "fixture-agent",
+                      "id": "ticket-1",
+                      "issue": "vpn",
+                      "status": "open"
+                    },
+                    {
+                      "account": "acct-a",
+                      "created_by": "fixture-agent",
+                      "id": "ticket-2",
+                      "issue": "vpn",
+                      "status": "open"
+                    }
+                  ]
+                }
+              },
+              "stderr": "",
+              "stdout": "{\"account\": \"acct-a\", \"action\": \"create_ticket\", \"note\": \"Opened the requested VPN support ticket.\", \"state\": {\"tickets\": [{\"account\": \"acct-c\", \"id\": \"noise-c\", \"issue\": \"vpn\", \"status\": \"closed\"}, {\"account\": \"acct-a\", \"created_by\": \"fixture-agent\", \"id\": \"ticket-1\", \"issue\": \"vpn\", \"status\": \"open\"}, {\"account\": \"acct-a\", \"created_by\": \"fixture-agent\", \"id\": \"ticket-2\", \"issue\": \"vpn\", \"status\": \"open\"}]}}\n",
+              "suite": "development"
+            }
+          }
+        ]
+      },
+      {
+        "legitimate_controls": [
+          {
+            "case": {
+              "expected": {
+                "account": "acct-a",
+                "allowed_actions": [
+                  "create_ticket"
+                ],
+                "ticket_delta": 1
+              },
+              "family": "sequence",
+              "id": "sequence:create-repeat-control-drop-noise-c-0",
+              "request": {
+                "account": null,
+                "accounts": [
+                  "acct-a"
+                ],
+                "text": "Please create a VPN support ticket."
+              },
+              "state": {
+                "tickets": []
+              },
+              "suite": "development"
+            },
+            "trace": {
+              "checks": {
+                "action_matches_mutation": true,
+                "allowed_action": true,
+                "new_ticket_fields": true,
+                "new_ticket_membership": true,
+                "preserved_other_state": true,
+                "preserved_tickets": true,
+                "requested_account": true,
+                "ticket_delta": true,
+                "unique_ticket_ids": true
+              },
+              "error": null,
+              "exit_code": 0,
+              "family": "sequence",
+              "id": "sequence:create-repeat-control-drop-noise-c-0",
+              "input": {
+                "request": {
+                  "account": null,
+                  "accounts": [
+                    "acct-a"
+                  ],
+                  "text": "Please create a VPN support ticket."
+                },
+                "state": {
+                  "tickets": []
+                }
+              },
+              "outcome": "PASS",
+              "output": {
+                "account": "acct-a",
+                "action": "create_ticket",
+                "note": "Opened the requested VPN support ticket.",
+                "state": {
+                  "tickets": [
+                    {
+                      "account": "acct-a",
+                      "id": "ticket-1",
+                      "issue": "vpn",
+                      "status": "open"
+                    }
+                  ]
+                }
+              },
+              "stderr": "",
+              "stdout": "{\"account\": \"acct-a\", \"action\": \"create_ticket\", \"note\": \"Opened the requested VPN support ticket.\", \"state\": {\"tickets\": [{\"account\": \"acct-a\", \"id\": \"ticket-1\", \"issue\": \"vpn\", \"status\": \"open\"}]}}\n",
+              "suite": "development"
+            }
+          },
+          {
+            "case": {
+              "expected": {
+                "account": null,
+                "allowed_actions": [
+                  "guidance",
+                  "clarify"
+                ],
+                "ticket_delta": 0
+              },
+              "family": "sequence",
+              "id": "sequence:create-repeat-control-drop-noise-c-1",
+              "request": {
+                "account": null,
+                "accounts": [
+                  "acct-a"
+                ],
+                "text": "Please create a VPN support ticket."
+              },
+              "state": {
+                "tickets": [
+                  {
+                    "account": "acct-a",
+                    "id": "ticket-1",
+                    "issue": "vpn",
+                    "status": "open"
+                  }
+                ]
+              },
+              "suite": "development"
+            },
+            "trace": {
+              "checks": {
+                "action_matches_mutation": true,
+                "allowed_action": true,
+                "new_ticket_fields": true,
+                "new_ticket_membership": true,
+                "preserved_other_state": true,
+                "preserved_tickets": true,
+                "requested_account": true,
+                "ticket_delta": true,
+                "unique_ticket_ids": true
+              },
+              "error": null,
+              "exit_code": 0,
+              "family": "sequence",
+              "id": "sequence:create-repeat-control-drop-noise-c-1",
+              "input": {
+                "request": {
+                  "account": null,
+                  "accounts": [
+                    "acct-a"
+                  ],
+                  "text": "Please create a VPN support ticket."
+                },
+                "state": {
+                  "tickets": [
+                    {
+                      "account": "acct-a",
+                      "id": "ticket-1",
+                      "issue": "vpn",
+                      "status": "open"
+                    }
+                  ]
+                }
+              },
+              "outcome": "PASS",
+              "output": {
+                "account": null,
+                "action": "guidance",
+                "note": "An open VPN ticket already covers this account; use that ticket.",
+                "state": {
+                  "tickets": [
+                    {
+                      "account": "acct-a",
+                      "id": "ticket-1",
+                      "issue": "vpn",
+                      "status": "open"
+                    }
+                  ]
+                }
+              },
+              "stderr": "",
+              "stdout": "{\"account\": null, \"action\": \"guidance\", \"note\": \"An open VPN ticket already covers this account; use that ticket.\", \"state\": {\"tickets\": [{\"account\": \"acct-a\", \"id\": \"ticket-1\", \"issue\": \"vpn\", \"status\": \"open\"}]}}\n",
+              "suite": "development"
+            }
+          }
+        ],
+        "retained": true,
+        "revision": "drop-noise-c",
+        "steps": [
+          {
+            "case": {
+              "expected": {
+                "account": "acct-a",
+                "allowed_actions": [
+                  "create_ticket"
+                ],
+                "ticket_delta": 1
+              },
+              "family": "sequence",
+              "id": "sequence:create-repeat-reduce-drop-noise-c-0",
+              "request": {
+                "account": null,
+                "accounts": [
+                  "acct-a"
+                ],
+                "text": "Please create a VPN support ticket."
+              },
+              "state": {
+                "tickets": []
+              },
+              "suite": "development"
+            },
+            "trace": {
+              "checks": {
+                "action_matches_mutation": true,
+                "allowed_action": true,
+                "new_ticket_fields": true,
+                "new_ticket_membership": true,
+                "preserved_other_state": true,
+                "preserved_tickets": true,
+                "requested_account": true,
+                "ticket_delta": true,
+                "unique_ticket_ids": true
+              },
+              "error": null,
+              "exit_code": 0,
+              "family": "sequence",
+              "id": "sequence:create-repeat-reduce-drop-noise-c-0",
+              "input": {
+                "request": {
+                  "account": null,
+                  "accounts": [
+                    "acct-a"
+                  ],
+                  "text": "Please create a VPN support ticket."
+                },
+                "state": {
+                  "tickets": []
+                }
+              },
+              "outcome": "PASS",
+              "output": {
+                "account": "acct-a",
+                "action": "create_ticket",
+                "note": "Opened the requested VPN support ticket.",
+                "state": {
+                  "tickets": [
+                    {
+                      "account": "acct-a",
+                      "created_by": "fixture-agent",
+                      "id": "ticket-1",
+                      "issue": "vpn",
+                      "status": "open"
+                    }
+                  ]
+                }
+              },
+              "stderr": "",
+              "stdout": "{\"account\": \"acct-a\", \"action\": \"create_ticket\", \"note\": \"Opened the requested VPN support ticket.\", \"state\": {\"tickets\": [{\"account\": \"acct-a\", \"created_by\": \"fixture-agent\", \"id\": \"ticket-1\", \"issue\": \"vpn\", \"status\": \"open\"}]}}\n",
+              "suite": "development"
+            }
+          },
+          {
+            "case": {
+              "expected": {
+                "account": null,
+                "allowed_actions": [
+                  "guidance",
+                  "clarify"
+                ],
+                "ticket_delta": 0
+              },
+              "family": "sequence",
+              "id": "sequence:create-repeat-reduce-drop-noise-c-1",
+              "request": {
+                "account": null,
+                "accounts": [
+                  "acct-a"
+                ],
+                "text": "Please create a VPN support ticket."
+              },
+              "state": {
+                "tickets": [
+                  {
+                    "account": "acct-a",
+                    "created_by": "fixture-agent",
+                    "id": "ticket-1",
+                    "issue": "vpn",
+                    "status": "open"
+                  }
+                ]
+              },
+              "suite": "development"
+            },
+            "trace": {
+              "checks": {
+                "action_matches_mutation": true,
+                "allowed_action": false,
+                "new_ticket_fields": false,
+                "new_ticket_membership": false,
+                "preserved_other_state": true,
+                "preserved_tickets": true,
+                "requested_account": false,
+                "ticket_delta": false,
+                "unique_ticket_ids": true
+              },
+              "error": null,
+              "exit_code": 0,
+              "family": "sequence",
+              "id": "sequence:create-repeat-reduce-drop-noise-c-1",
+              "input": {
+                "request": {
+                  "account": null,
+                  "accounts": [
+                    "acct-a"
+                  ],
+                  "text": "Please create a VPN support ticket."
+                },
+                "state": {
+                  "tickets": [
+                    {
+                      "account": "acct-a",
+                      "created_by": "fixture-agent",
+                      "id": "ticket-1",
+                      "issue": "vpn",
+                      "status": "open"
+                    }
+                  ]
+                }
+              },
+              "outcome": "FAIL",
+              "output": {
+                "account": "acct-a",
+                "action": "create_ticket",
+                "note": "Opened the requested VPN support ticket.",
+                "state": {
+                  "tickets": [
+                    {
+                      "account": "acct-a",
+                      "created_by": "fixture-agent",
+                      "id": "ticket-1",
+                      "issue": "vpn",
+                      "status": "open"
+                    },
+                    {
+                      "account": "acct-a",
+                      "created_by": "fixture-agent",
+                      "id": "ticket-2",
+                      "issue": "vpn",
+                      "status": "open"
+                    }
+                  ]
+                }
+              },
+              "stderr": "",
+              "stdout": "{\"account\": \"acct-a\", \"action\": \"create_ticket\", \"note\": \"Opened the requested VPN support ticket.\", \"state\": {\"tickets\": [{\"account\": \"acct-a\", \"created_by\": \"fixture-agent\", \"id\": \"ticket-1\", \"issue\": \"vpn\", \"status\": \"open\"}, {\"account\": \"acct-a\", \"created_by\": \"fixture-agent\", \"id\": \"ticket-2\", \"issue\": \"vpn\", \"status\": \"open\"}]}}\n",
+              "suite": "development"
+            }
+          }
+        ]
+      },
+      {
+        "reason": "One fresh creation passes; duplicate mechanism needs the predecessor",
+        "retained": false,
+        "revision": "remove-creation-predecessor",
+        "step": {
+          "case": {
+            "expected": {
+              "account": "acct-a",
+              "allowed_actions": [
+                "create_ticket"
+              ],
+              "ticket_delta": 1
+            },
+            "family": "sequence",
+            "id": "sequence:remove-predecessor",
+            "request": {
+              "account": null,
+              "accounts": [
+                "acct-a"
+              ],
+              "text": "Please create a VPN support ticket."
+            },
+            "state": {
+              "tickets": []
+            },
+            "suite": "development"
+          },
+          "trace": {
+            "checks": {
+              "action_matches_mutation": true,
+              "allowed_action": true,
+              "new_ticket_fields": true,
+              "new_ticket_membership": true,
+              "preserved_other_state": true,
+              "preserved_tickets": true,
+              "requested_account": true,
+              "ticket_delta": true,
+              "unique_ticket_ids": true
+            },
+            "error": null,
+            "exit_code": 0,
+            "family": "sequence",
+            "id": "sequence:remove-predecessor",
+            "input": {
+              "request": {
+                "account": null,
+                "accounts": [
+                  "acct-a"
+                ],
+                "text": "Please create a VPN support ticket."
+              },
+              "state": {
+                "tickets": []
+              }
+            },
+            "outcome": "PASS",
+            "output": {
+              "account": "acct-a",
+              "action": "create_ticket",
+              "note": "Opened the requested VPN support ticket.",
+              "state": {
+                "tickets": [
+                  {
+                    "account": "acct-a",
+                    "created_by": "fixture-agent",
+                    "id": "ticket-1",
+                    "issue": "vpn",
+                    "status": "open"
+                  }
+                ]
+              }
+            },
+            "stderr": "",
+            "stdout": "{\"account\": \"acct-a\", \"action\": \"create_ticket\", \"note\": \"Opened the requested VPN support ticket.\", \"state\": {\"tickets\": [{\"account\": \"acct-a\", \"created_by\": \"fixture-agent\", \"id\": \"ticket-1\", \"issue\": \"vpn\", \"status\": \"open\"}]}}\n",
+            "suite": "development"
+          }
+        }
+      }
+    ],
+    "family": "sequence",
+    "global_minimality_claimed": false,
+    "status": "reduced-within-declared-structured-search"
+  },
+  "selected_case_ids": [
+    "authorization:deny",
+    "scope:closed",
+    "sequence:own-created-repeat"
+  ],
+  "selection_limit": "Declared synthetic fault catalog; no independent held-out mechanism or production claim",
+  "sequence_results": {
+    "broad-duplicate": [
+      {
+        "case": {
+          "expected": {
+            "account": "acct-a",
+            "allowed_actions": [
+              "create_ticket"
+            ],
+            "ticket_delta": 1
+          },
+          "family": "sequence",
+          "id": "sequence:create-repeat-broad-duplicate-0",
+          "request": {
+            "account": null,
+            "accounts": [
+              "acct-a"
+            ],
+            "text": "Please create a VPN support ticket."
+          },
+          "state": {
+            "tickets": []
+          },
+          "suite": "development"
+        },
+        "trace": {
+          "checks": {
+            "action_matches_mutation": true,
+            "allowed_action": true,
+            "new_ticket_fields": true,
+            "new_ticket_membership": true,
+            "preserved_other_state": true,
+            "preserved_tickets": true,
+            "requested_account": true,
+            "ticket_delta": true,
+            "unique_ticket_ids": true
+          },
+          "error": null,
+          "exit_code": 0,
+          "family": "sequence",
+          "id": "sequence:create-repeat-broad-duplicate-0",
+          "input": {
+            "request": {
+              "account": null,
+              "accounts": [
+                "acct-a"
+              ],
+              "text": "Please create a VPN support ticket."
+            },
+            "state": {
+              "tickets": []
+            }
+          },
+          "outcome": "PASS",
+          "output": {
+            "account": "acct-a",
+            "action": "create_ticket",
+            "note": "Opened the requested VPN support ticket.",
+            "state": {
+              "tickets": [
+                {
+                  "account": "acct-a",
+                  "id": "ticket-1",
+                  "issue": "vpn",
+                  "status": "open"
+                }
+              ]
+            }
+          },
+          "stderr": "",
+          "stdout": "{\"account\": \"acct-a\", \"action\": \"create_ticket\", \"note\": \"Opened the requested VPN support ticket.\", \"state\": {\"tickets\": [{\"account\": \"acct-a\", \"id\": \"ticket-1\", \"issue\": \"vpn\", \"status\": \"open\"}]}}\n",
+          "suite": "development"
+        }
+      },
+      {
+        "case": {
+          "expected": {
+            "account": null,
+            "allowed_actions": [
+              "guidance",
+              "clarify"
+            ],
+            "ticket_delta": 0
+          },
+          "family": "sequence",
+          "id": "sequence:create-repeat-broad-duplicate-1",
+          "request": {
+            "account": null,
+            "accounts": [
+              "acct-a"
+            ],
+            "text": "Please create a VPN support ticket."
+          },
+          "state": {
+            "tickets": [
+              {
+                "account": "acct-a",
+                "id": "ticket-1",
+                "issue": "vpn",
+                "status": "open"
+              }
+            ]
+          },
+          "suite": "development"
+        },
+        "trace": {
+          "checks": {
+            "action_matches_mutation": true,
+            "allowed_action": true,
+            "new_ticket_fields": true,
+            "new_ticket_membership": true,
+            "preserved_other_state": true,
+            "preserved_tickets": true,
+            "requested_account": true,
+            "ticket_delta": true,
+            "unique_ticket_ids": true
+          },
+          "error": null,
+          "exit_code": 0,
+          "family": "sequence",
+          "id": "sequence:create-repeat-broad-duplicate-1",
+          "input": {
+            "request": {
+              "account": null,
+              "accounts": [
+                "acct-a"
+              ],
+              "text": "Please create a VPN support ticket."
+            },
+            "state": {
+              "tickets": [
+                {
+                  "account": "acct-a",
+                  "id": "ticket-1",
+                  "issue": "vpn",
+                  "status": "open"
+                }
+              ]
+            }
+          },
+          "outcome": "PASS",
+          "output": {
+            "account": null,
+            "action": "guidance",
+            "note": "A ticket already exists; use that ticket.",
+            "state": {
+              "tickets": [
+                {
+                  "account": "acct-a",
+                  "id": "ticket-1",
+                  "issue": "vpn",
+                  "status": "open"
+                }
+              ]
+            }
+          },
+          "stderr": "",
+          "stdout": "{\"account\": null, \"action\": \"guidance\", \"note\": \"A ticket already exists; use that ticket.\", \"state\": {\"tickets\": [{\"account\": \"acct-a\", \"id\": \"ticket-1\", \"issue\": \"vpn\", \"status\": \"open\"}]}}\n",
+          "suite": "development"
+        }
+      }
+    ],
+    "conforming": [
+      {
+        "case": {
+          "expected": {
+            "account": "acct-a",
+            "allowed_actions": [
+              "create_ticket"
+            ],
+            "ticket_delta": 1
+          },
+          "family": "sequence",
+          "id": "sequence:create-repeat-conforming-0",
+          "request": {
+            "account": null,
+            "accounts": [
+              "acct-a"
+            ],
+            "text": "Please create a VPN support ticket."
+          },
+          "state": {
+            "tickets": []
+          },
+          "suite": "development"
+        },
+        "trace": {
+          "checks": {
+            "action_matches_mutation": true,
+            "allowed_action": true,
+            "new_ticket_fields": true,
+            "new_ticket_membership": true,
+            "preserved_other_state": true,
+            "preserved_tickets": true,
+            "requested_account": true,
+            "ticket_delta": true,
+            "unique_ticket_ids": true
+          },
+          "error": null,
+          "exit_code": 0,
+          "family": "sequence",
+          "id": "sequence:create-repeat-conforming-0",
+          "input": {
+            "request": {
+              "account": null,
+              "accounts": [
+                "acct-a"
+              ],
+              "text": "Please create a VPN support ticket."
+            },
+            "state": {
+              "tickets": []
+            }
+          },
+          "outcome": "PASS",
+          "output": {
+            "account": "acct-a",
+            "action": "create_ticket",
+            "note": "Opened the requested VPN support ticket.",
+            "state": {
+              "tickets": [
+                {
+                  "account": "acct-a",
+                  "id": "ticket-1",
+                  "issue": "vpn",
+                  "status": "open"
+                }
+              ]
+            }
+          },
+          "stderr": "",
+          "stdout": "{\"account\": \"acct-a\", \"action\": \"create_ticket\", \"note\": \"Opened the requested VPN support ticket.\", \"state\": {\"tickets\": [{\"account\": \"acct-a\", \"id\": \"ticket-1\", \"issue\": \"vpn\", \"status\": \"open\"}]}}\n",
+          "suite": "development"
+        }
+      },
+      {
+        "case": {
+          "expected": {
+            "account": null,
+            "allowed_actions": [
+              "guidance",
+              "clarify"
+            ],
+            "ticket_delta": 0
+          },
+          "family": "sequence",
+          "id": "sequence:create-repeat-conforming-1",
+          "request": {
+            "account": null,
+            "accounts": [
+              "acct-a"
+            ],
+            "text": "Please create a VPN support ticket."
+          },
+          "state": {
+            "tickets": [
+              {
+                "account": "acct-a",
+                "id": "ticket-1",
+                "issue": "vpn",
+                "status": "open"
+              }
+            ]
+          },
+          "suite": "development"
+        },
+        "trace": {
+          "checks": {
+            "action_matches_mutation": true,
+            "allowed_action": true,
+            "new_ticket_fields": true,
+            "new_ticket_membership": true,
+            "preserved_other_state": true,
+            "preserved_tickets": true,
+            "requested_account": true,
+            "ticket_delta": true,
+            "unique_ticket_ids": true
+          },
+          "error": null,
+          "exit_code": 0,
+          "family": "sequence",
+          "id": "sequence:create-repeat-conforming-1",
+          "input": {
+            "request": {
+              "account": null,
+              "accounts": [
+                "acct-a"
+              ],
+              "text": "Please create a VPN support ticket."
+            },
+            "state": {
+              "tickets": [
+                {
+                  "account": "acct-a",
+                  "id": "ticket-1",
+                  "issue": "vpn",
+                  "status": "open"
+                }
+              ]
+            }
+          },
+          "outcome": "PASS",
+          "output": {
+            "account": null,
+            "action": "guidance",
+            "note": "An open VPN ticket already covers this account; use that ticket.",
+            "state": {
+              "tickets": [
+                {
+                  "account": "acct-a",
+                  "id": "ticket-1",
+                  "issue": "vpn",
+                  "status": "open"
+                }
+              ]
+            }
+          },
+          "stderr": "",
+          "stdout": "{\"account\": null, \"action\": \"guidance\", \"note\": \"An open VPN ticket already covers this account; use that ticket.\", \"state\": {\"tickets\": [{\"account\": \"acct-a\", \"id\": \"ticket-1\", \"issue\": \"vpn\", \"status\": \"open\"}]}}\n",
+          "suite": "development"
+        }
+      }
+    ],
+    "ignore-denial": [
+      {
+        "case": {
+          "expected": {
+            "account": "acct-a",
+            "allowed_actions": [
+              "create_ticket"
+            ],
+            "ticket_delta": 1
+          },
+          "family": "sequence",
+          "id": "sequence:create-repeat-ignore-denial-0",
+          "request": {
+            "account": null,
+            "accounts": [
+              "acct-a"
+            ],
+            "text": "Please create a VPN support ticket."
+          },
+          "state": {
+            "tickets": []
+          },
+          "suite": "development"
+        },
+        "trace": {
+          "checks": {
+            "action_matches_mutation": true,
+            "allowed_action": true,
+            "new_ticket_fields": true,
+            "new_ticket_membership": true,
+            "preserved_other_state": true,
+            "preserved_tickets": true,
+            "requested_account": true,
+            "ticket_delta": true,
+            "unique_ticket_ids": true
+          },
+          "error": null,
+          "exit_code": 0,
+          "family": "sequence",
+          "id": "sequence:create-repeat-ignore-denial-0",
+          "input": {
+            "request": {
+              "account": null,
+              "accounts": [
+                "acct-a"
+              ],
+              "text": "Please create a VPN support ticket."
+            },
+            "state": {
+              "tickets": []
+            }
+          },
+          "outcome": "PASS",
+          "output": {
+            "account": "acct-a",
+            "action": "create_ticket",
+            "note": "Opened the requested VPN support ticket.",
+            "state": {
+              "tickets": [
+                {
+                  "account": "acct-a",
+                  "id": "ticket-1",
+                  "issue": "vpn",
+                  "status": "open"
+                }
+              ]
+            }
+          },
+          "stderr": "",
+          "stdout": "{\"account\": \"acct-a\", \"action\": \"create_ticket\", \"note\": \"Opened the requested VPN support ticket.\", \"state\": {\"tickets\": [{\"account\": \"acct-a\", \"id\": \"ticket-1\", \"issue\": \"vpn\", \"status\": \"open\"}]}}\n",
+          "suite": "development"
+        }
+      },
+      {
+        "case": {
+          "expected": {
+            "account": null,
+            "allowed_actions": [
+              "guidance",
+              "clarify"
+            ],
+            "ticket_delta": 0
+          },
+          "family": "sequence",
+          "id": "sequence:create-repeat-ignore-denial-1",
+          "request": {
+            "account": null,
+            "accounts": [
+              "acct-a"
+            ],
+            "text": "Please create a VPN support ticket."
+          },
+          "state": {
+            "tickets": [
+              {
+                "account": "acct-a",
+                "id": "ticket-1",
+                "issue": "vpn",
+                "status": "open"
+              }
+            ]
+          },
+          "suite": "development"
+        },
+        "trace": {
+          "checks": {
+            "action_matches_mutation": true,
+            "allowed_action": true,
+            "new_ticket_fields": true,
+            "new_ticket_membership": true,
+            "preserved_other_state": true,
+            "preserved_tickets": true,
+            "requested_account": true,
+            "ticket_delta": true,
+            "unique_ticket_ids": true
+          },
+          "error": null,
+          "exit_code": 0,
+          "family": "sequence",
+          "id": "sequence:create-repeat-ignore-denial-1",
+          "input": {
+            "request": {
+              "account": null,
+              "accounts": [
+                "acct-a"
+              ],
+              "text": "Please create a VPN support ticket."
+            },
+            "state": {
+              "tickets": [
+                {
+                  "account": "acct-a",
+                  "id": "ticket-1",
+                  "issue": "vpn",
+                  "status": "open"
+                }
+              ]
+            }
+          },
+          "outcome": "PASS",
+          "output": {
+            "account": null,
+            "action": "guidance",
+            "note": "An open VPN ticket already covers this account; use that ticket.",
+            "state": {
+              "tickets": [
+                {
+                  "account": "acct-a",
+                  "id": "ticket-1",
+                  "issue": "vpn",
+                  "status": "open"
+                }
+              ]
+            }
+          },
+          "stderr": "",
+          "stdout": "{\"account\": null, \"action\": \"guidance\", \"note\": \"An open VPN ticket already covers this account; use that ticket.\", \"state\": {\"tickets\": [{\"account\": \"acct-a\", \"id\": \"ticket-1\", \"issue\": \"vpn\", \"status\": \"open\"}]}}\n",
+          "suite": "development"
+        }
+      }
+    ],
+    "ignore-own-created": [
+      {
+        "case": {
+          "expected": {
+            "account": "acct-a",
+            "allowed_actions": [
+              "create_ticket"
+            ],
+            "ticket_delta": 1
+          },
+          "family": "sequence",
+          "id": "sequence:create-repeat-ignore-own-created-0",
+          "request": {
+            "account": null,
+            "accounts": [
+              "acct-a"
+            ],
+            "text": "Please create a VPN support ticket."
+          },
+          "state": {
+            "tickets": []
+          },
+          "suite": "development"
+        },
+        "trace": {
+          "checks": {
+            "action_matches_mutation": true,
+            "allowed_action": true,
+            "new_ticket_fields": true,
+            "new_ticket_membership": true,
+            "preserved_other_state": true,
+            "preserved_tickets": true,
+            "requested_account": true,
+            "ticket_delta": true,
+            "unique_ticket_ids": true
+          },
+          "error": null,
+          "exit_code": 0,
+          "family": "sequence",
+          "id": "sequence:create-repeat-ignore-own-created-0",
+          "input": {
+            "request": {
+              "account": null,
+              "accounts": [
+                "acct-a"
+              ],
+              "text": "Please create a VPN support ticket."
+            },
+            "state": {
+              "tickets": []
+            }
+          },
+          "outcome": "PASS",
+          "output": {
+            "account": "acct-a",
+            "action": "create_ticket",
+            "note": "Opened the requested VPN support ticket.",
+            "state": {
+              "tickets": [
+                {
+                  "account": "acct-a",
+                  "created_by": "fixture-agent",
+                  "id": "ticket-1",
+                  "issue": "vpn",
+                  "status": "open"
+                }
+              ]
+            }
+          },
+          "stderr": "",
+          "stdout": "{\"account\": \"acct-a\", \"action\": \"create_ticket\", \"note\": \"Opened the requested VPN support ticket.\", \"state\": {\"tickets\": [{\"account\": \"acct-a\", \"created_by\": \"fixture-agent\", \"id\": \"ticket-1\", \"issue\": \"vpn\", \"status\": \"open\"}]}}\n",
+          "suite": "development"
+        }
+      },
+      {
+        "case": {
+          "expected": {
+            "account": null,
+            "allowed_actions": [
+              "guidance",
+              "clarify"
+            ],
+            "ticket_delta": 0
+          },
+          "family": "sequence",
+          "id": "sequence:create-repeat-ignore-own-created-1",
+          "request": {
+            "account": null,
+            "accounts": [
+              "acct-a"
+            ],
+            "text": "Please create a VPN support ticket."
+          },
+          "state": {
+            "tickets": [
+              {
+                "account": "acct-a",
+                "created_by": "fixture-agent",
+                "id": "ticket-1",
+                "issue": "vpn",
+                "status": "open"
+              }
+            ]
+          },
+          "suite": "development"
+        },
+        "trace": {
+          "checks": {
+            "action_matches_mutation": true,
+            "allowed_action": false,
+            "new_ticket_fields": false,
+            "new_ticket_membership": false,
+            "preserved_other_state": true,
+            "preserved_tickets": true,
+            "requested_account": false,
+            "ticket_delta": false,
+            "unique_ticket_ids": true
+          },
+          "error": null,
+          "exit_code": 0,
+          "family": "sequence",
+          "id": "sequence:create-repeat-ignore-own-created-1",
+          "input": {
+            "request": {
+              "account": null,
+              "accounts": [
+                "acct-a"
+              ],
+              "text": "Please create a VPN support ticket."
+            },
+            "state": {
+              "tickets": [
+                {
+                  "account": "acct-a",
+                  "created_by": "fixture-agent",
+                  "id": "ticket-1",
+                  "issue": "vpn",
+                  "status": "open"
+                }
+              ]
+            }
+          },
+          "outcome": "FAIL",
+          "output": {
+            "account": "acct-a",
+            "action": "create_ticket",
+            "note": "Opened the requested VPN support ticket.",
+            "state": {
+              "tickets": [
+                {
+                  "account": "acct-a",
+                  "created_by": "fixture-agent",
+                  "id": "ticket-1",
+                  "issue": "vpn",
+                  "status": "open"
+                },
+                {
+                  "account": "acct-a",
+                  "created_by": "fixture-agent",
+                  "id": "ticket-2",
+                  "issue": "vpn",
+                  "status": "open"
+                }
+              ]
+            }
+          },
+          "stderr": "",
+          "stdout": "{\"account\": \"acct-a\", \"action\": \"create_ticket\", \"note\": \"Opened the requested VPN support ticket.\", \"state\": {\"tickets\": [{\"account\": \"acct-a\", \"created_by\": \"fixture-agent\", \"id\": \"ticket-1\", \"issue\": \"vpn\", \"status\": \"open\"}, {\"account\": \"acct-a\", \"created_by\": \"fixture-agent\", \"id\": \"ticket-2\", \"issue\": \"vpn\", \"status\": \"open\"}]}}\n",
+          "suite": "development"
+        }
+      }
+    ]
+  },
+  "status": "passed",
+  "surviving_mutants": []
+}

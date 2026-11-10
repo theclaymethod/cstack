@@ -1,0 +1,15 @@
+{
+  "command": [
+    "/Users/clayton/.local/bin/python3",
+    "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/adversarial-audit/attack-execution/workspace/evaluate.py",
+    "compare",
+    "--baseline",
+    "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/adversarial-audit/attack-execution/workspace/eval-runs/attack-execution/evidence/lifecycle-clean/attempts/000-baseline",
+    "--candidate",
+    "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/adversarial-audit/attack-execution/workspace/eval-runs/attack-execution/evidence/lifecycle-unreachable/attempts/000-baseline"
+  ],
+  "exit_code": 0,
+  "label": "compare-unreachable",
+  "stderr": "",
+  "stdout": "{\n  \"admissible\": true,\n  \"baseline_score\": 0.5,\n  \"candidate_score\": 0.5,\n  \"case_ids\": [\n    \"dev-howto\",\n    \"dev-generic\",\n    \"dev-explicit\",\n    \"dev-duplicate\",\n    \"dev-ambiguous\",\n    \"dev-password\",\n    \"dev-closed\",\n    \"dev-unrelated\"\n  ],\n  \"errors\": 0,\n  \"gains\": [],\n  \"regressions\": [],\n  \"strict_improvement\": false\n}\n"
+}

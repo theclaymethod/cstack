@@ -1,0 +1,6 @@
+{
+  "spec_rule": "Creation appends exactly one ticket with a unique nonempty string ID, selected account, status open, and issue vpn. Preserve original tickets and all other supplied state exactly.",
+  "rubric_check": "For creation, append exactly one ticket. It has a unique nonempty string ID, the selected account, status open, and issue vpn. Any unique ID is acceptable; the grader must not require the reference candidate naming pattern.",
+  "native_valid_ticket": "isinstance(value, dict) and set(value) == {id, account, status, issue} and all(isinstance(v, str) and bool(v) for v in value.values())",
+  "expected_status": "pending independent intent review; artifacts only, no conclusion"
+}

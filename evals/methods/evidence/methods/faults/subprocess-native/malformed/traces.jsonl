@@ -1,0 +1,1 @@
+{"checks": {}, "error": "Expecting value: line 1 column 1 (char 0)", "exit_code": 0, "family": "subprocess", "id": "subprocess:malformed", "input": {"request": {"account": null, "accounts": ["acct-a"], "text": "Please create a VPN support ticket."}, "state": {"tickets": []}}, "outcome": "ERROR", "output": null, "stderr": "", "stdout": "not JSON\n", "suite": "development"}

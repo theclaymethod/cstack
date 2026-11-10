@@ -1,0 +1,11 @@
+{
+  "fixtures/playground/methods/synthetic.py": "83b18f9521a9b62d6bf4c17b5b28de407f267d644b7a0c0292ebe6dc2eb1eabc",
+  "fixtures/playground/methods/run.py": "ec6965b5398d8aab31210af11a02af79f47c04913bd08994959e62996a47c326",
+  "fixtures/playground/methods/fault_worker.py": "fc2e526cd4715fbd66a400e2d111bd3db13e5c0991d66fa76b8719d5f9605fe5",
+  "fixtures/playground/methods/dspy_handoff.py": "b744df499a4b0456449e1d16afd85c61f62fde528c63bacb6d333fdacd545e51",
+  "fixtures/playground/methods/__init__.py": "5081e4dac1a85143c958090718b4bab4d81b55a756c8603fd4ae59de815fca94",
+  "fixtures/playground/methods/native.py": "df83d4b57df0ac2dc0ac6cd5b94136082c02d486478c98334a6273cb623e86bd",
+  "fixtures/playground/methods/README.md": "62981a4c02d4884298b99e47c50bcc328036ee4714a7ef2107200931bd85022a",
+  "fixtures/playground/methods/requirements-dspy.txt": "2419384e1ffa93079feb38ee501da7f7b8f6a69636435003efd81789182bd7fd",
+  "fixtures/playground/methods/faults.py": "9e28500f35cc2c00d5f69c167f59e8f3ec956b5d4c013a97e8d9fda7804bf90a"
+}

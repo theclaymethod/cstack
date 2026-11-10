@@ -1,0 +1,57 @@
+[
+  {
+    "label": "clean-copy",
+    "access": "explicit operator-extra-access probe on copied eval-runs artifacts; not permitted candidate behavior",
+    "mutation": null,
+    "frozen_replay_validate": {
+      "accepted": true,
+      "check_count": 71
+    },
+    "native_checked_run_legitimate": {
+      "accepted": true
+    },
+    "new_case_executions": 0,
+    "new_interruptions": 0
+  },
+  {
+    "label": "stdout-output-conflict",
+    "access": "explicit operator-extra-access probe on copied eval-runs artifacts; not permitted candidate behavior",
+    "mutation": {
+      "relative_path": "native-legitimate/traces.jsonl",
+      "field": "first trace stdout only",
+      "before": "{\"action\": \"create_ticket\", \"account\": \"acct-a\", \"state\": {\"audit\": {\"owner\": \"fixture\", \"revision\": 7}, \"tickets\": [{\"account\": \"acct-b\", \"id\": \"prior-password\", \"issue\": \"password\", \"status\": \"open\"}, {\"id\": \"ticket-1\", \"account\": \"acct-a\", \"status\": \"open\", \"issue\": \"vpn\"}]}, \"note\": \"Opened requested VPN ticket.\"}\n",
+      "after": "{\"action\": \"create_ticket\", \"account\": \"acct-a\", \"state\": {\"audit\": {\"owner\": \"fixture\", \"revision\": 7}, \"tickets\": [{\"account\": \"acct-b\", \"id\": \"prior-password\", \"issue\": \"password\", \"status\": \"open\"}]}, \"note\": \"Opened requested VPN ticket.\"}\n",
+      "output_field_and_native_outcome_unchanged": true
+    },
+    "frozen_replay_validate": {
+      "accepted": true,
+      "check_count": 71
+    },
+    "native_checked_run_legitimate": {
+      "accepted": false,
+      "error": "retained output differs from subprocess stdout"
+    },
+    "new_case_executions": 0,
+    "new_interruptions": 0
+  },
+  {
+    "label": "matched-false-source-inventory",
+    "access": "explicit operator-extra-access probe on copied eval-runs artifacts; not permitted candidate behavior",
+    "mutation": {
+      "relative_paths": [
+        "source-before.json",
+        "source-after.json"
+      ],
+      "change": "both inventories replaced by empty object; no protected files changed"
+    },
+    "frozen_replay_validate": {
+      "accepted": true,
+      "check_count": 71
+    },
+    "native_checked_run_legitimate": {
+      "accepted": true
+    },
+    "new_case_executions": 0,
+    "new_interruptions": 0
+  }
+]

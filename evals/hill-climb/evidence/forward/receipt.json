@@ -1,0 +1,20 @@
+{
+  "initial_target_sha256": "0720b56482a445967ff2a98ec5cfa668c858b8a6f662da74a55c21b257393efc",
+  "selected_sha256": "3f8e14f172a143b6c938bd5b46401f944d98f16c2206a52586213e89497eb69f",
+  "cases_attempted": 24,
+  "development": {
+    "baseline_pass": 4,
+    "candidate_pass": 8,
+    "cases": 8
+  },
+  "confirmation": {
+    "baseline_pass": 2,
+    "candidate_pass": 4,
+    "cases": 4
+  },
+  "regressions": 0,
+  "errors": 0,
+  "case_budget": 48,
+  "exposure": "All12 synthetic cases opened before fitting; no held-out generalization claim",
+  "source_note": "This fresh-agent run predates native-runner review fixes. Original execution module is retained as evaluate-version.py; source records preserve original paths/hashes. A separate post-review replay checks this candidate against the final runner."
+}

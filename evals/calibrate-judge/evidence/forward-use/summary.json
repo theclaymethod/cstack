@@ -1,0 +1,60 @@
+{
+  "authority": "Synthetic deterministic native labels, no human gold",
+  "backend_support": "offline native-shape simulation only",
+  "baseline": {
+    "jev": {
+      "backend": "jev",
+      "fail_at_or_above": 0.8,
+      "live_backend": false,
+      "model": "offline-response-shape-fixture",
+      "pass_below": 0.8,
+      "policy": "claim-only",
+      "question_means_failure": true
+    },
+    "llm": {
+      "backend": "llm",
+      "fail_at_or_above": 0.8,
+      "live_backend": false,
+      "model": "offline-response-shape-fixture",
+      "pass_below": 0.8,
+      "policy": "claim-only",
+      "question_means_failure": true
+    }
+  },
+  "boundary_probe_calls": 2,
+  "families_development": 2,
+  "families_final": 2,
+  "families_total": 4,
+  "final_blindness": false,
+  "fixture_judge_processes": 40,
+  "main_campaign_fixture_calls": 32,
+  "native_source_executions": 24,
+  "paid_calls": 0,
+  "probability_calibrator_fit": false,
+  "proposer_calls": 0,
+  "provider_calls": 0,
+  "readiness": "Not calibrated or production ready; owner/model/error policy missing",
+  "repeat_calls": 6,
+  "retries": 0,
+  "selected_fixture_candidate": {
+    "jev": {
+      "backend": "jev",
+      "fail_at_or_above": 0.5,
+      "live_backend": false,
+      "model": "offline-response-shape-fixture",
+      "pass_below": 0.5,
+      "policy": "state-witness",
+      "question_means_failure": true
+    },
+    "llm": {
+      "backend": "llm",
+      "fail_at_or_above": 0.5,
+      "live_backend": false,
+      "model": "offline-response-shape-fixture",
+      "pass_below": 0.5,
+      "policy": "state-witness",
+      "question_means_failure": true
+    }
+  },
+  "source_checksums_unchanged": true
+}

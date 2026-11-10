@@ -1,0 +1,36 @@
+{
+  "candidate_hash": "d8cc818e83af4453a44e9025484ae6e23ecc7cbcf8c9e621efa56c21a179a1c3",
+  "case_ids": [
+    "sequence:create-repeat-control-drop-noise-c-0"
+  ],
+  "complete": true,
+  "counts": {
+    "ERROR": 0,
+    "FAIL": 0,
+    "PASS": 1,
+    "UNKNOWN": 0
+  },
+  "executed_count": 1,
+  "identity_hash": "fcdcf237ecffa87832f642192843e78fd1ddd27c3d9bf12a825ace140e795f50",
+  "results": [
+    {
+      "checks": {
+        "action_matches_mutation": true,
+        "allowed_action": true,
+        "new_ticket_fields": true,
+        "new_ticket_membership": true,
+        "preserved_other_state": true,
+        "preserved_tickets": true,
+        "requested_account": true,
+        "ticket_delta": true,
+        "unique_ticket_ids": true
+      },
+      "error": null,
+      "id": "sequence:create-repeat-control-drop-noise-c-0",
+      "outcome": "PASS",
+      "suite": "development"
+    }
+  ],
+  "score": 1.0,
+  "selected_count": 1
+}

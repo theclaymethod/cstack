@@ -1,0 +1,10 @@
+{
+  ".lock": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "attempts/000-baseline/candidate.py": "0720b56482a445967ff2a98ec5cfa668c858b8a6f662da74a55c21b257393efc",
+  "attempts/000-baseline/cases.jsonl": "71f1d8c50f7ce2b3ca512c6f2703faa4e30d5c63237824e3a73e7a573cf4f7b2",
+  "attempts/000-baseline/manifest.json": "2f2fa9fc54f838bdd97996ac2256926f3d46e03b939d28f422d55ec992eaef16",
+  "attempts/000-baseline/summary.json": "e247cae050056b81d187c99ec89e2dc2e3352fcd2469733dff98c56dfefc6fee",
+  "attempts/000-baseline/traces.jsonl": "1e26368899fb4fb83ebaa147662ea87f19bdf185aa3f9390c50b832e9bb89fac",
+  "contract.json": "cad421a0ba33724965c9f920572838940eca1307d86415e7f6b2b3fb2aee476e",
+  "state.json": "60e6d6ac67df24ebf1b97d081530b469e7b884ae01649a0cca4f562c54459c0c"
+}

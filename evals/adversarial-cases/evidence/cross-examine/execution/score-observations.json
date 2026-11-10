@@ -1,0 +1,539 @@
+[
+  {
+    "candidate": "clean",
+    "independent_witnesses": [
+      {
+        "actual_new_tickets": [
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ],
+        "id": "exec-create-context",
+        "native_error": null,
+        "native_outcome": "PASS",
+        "original_creation_requirement_met": true,
+        "original_prefix_preserved": true,
+        "other_state_preserved": true,
+        "process_exit": 0
+      },
+      {
+        "actual_new_tickets": [
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ],
+        "id": "exec-create-reduced",
+        "native_error": null,
+        "native_outcome": "PASS",
+        "original_creation_requirement_met": true,
+        "original_prefix_preserved": true,
+        "other_state_preserved": true,
+        "process_exit": 0
+      }
+    ],
+    "summary": {
+      "candidate_hash": "d8cc818e83af4453a44e9025484ae6e23ecc7cbcf8c9e621efa56c21a179a1c3",
+      "case_ids": [
+        "exec-create-context",
+        "exec-create-reduced"
+      ],
+      "complete": true,
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 2,
+        "UNKNOWN": 0
+      },
+      "executed_count": 2,
+      "identity_hash": "aa383e5d477795447070cbf3fe5edd0e0a397006e970bef7ed96170f1b8788e8",
+      "results": [
+        {
+          "checks": {
+            "action_matches_mutation": true,
+            "allowed_action": true,
+            "new_ticket_fields": true,
+            "new_ticket_membership": true,
+            "preserved_other_state": true,
+            "preserved_tickets": true,
+            "requested_account": true,
+            "ticket_delta": true,
+            "unique_ticket_ids": true
+          },
+          "error": null,
+          "id": "exec-create-context",
+          "outcome": "PASS",
+          "suite": "development"
+        },
+        {
+          "checks": {
+            "action_matches_mutation": true,
+            "allowed_action": true,
+            "new_ticket_fields": true,
+            "new_ticket_membership": true,
+            "preserved_other_state": true,
+            "preserved_tickets": true,
+            "requested_account": true,
+            "ticket_delta": true,
+            "unique_ticket_ids": true
+          },
+          "error": null,
+          "id": "exec-create-reduced",
+          "outcome": "PASS",
+          "suite": "development"
+        }
+      ],
+      "score": 1.0,
+      "selected_count": 2
+    }
+  },
+  {
+    "candidate": "alternative",
+    "independent_witnesses": [
+      {
+        "actual_new_tickets": [
+          {
+            "account": "acct-a",
+            "id": "independent-1",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ],
+        "id": "exec-create-context",
+        "native_error": null,
+        "native_outcome": "PASS",
+        "original_creation_requirement_met": true,
+        "original_prefix_preserved": true,
+        "other_state_preserved": true,
+        "process_exit": 0
+      },
+      {
+        "actual_new_tickets": [
+          {
+            "account": "acct-a",
+            "id": "independent-1",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ],
+        "id": "exec-create-reduced",
+        "native_error": null,
+        "native_outcome": "PASS",
+        "original_creation_requirement_met": true,
+        "original_prefix_preserved": true,
+        "other_state_preserved": true,
+        "process_exit": 0
+      }
+    ],
+    "summary": {
+      "candidate_hash": "49745dd831effb7d1e4043ab3c15ea32786059c7fcae4ed5c7ba01e9f8c10ad3",
+      "case_ids": [
+        "exec-create-context",
+        "exec-create-reduced"
+      ],
+      "complete": true,
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 2,
+        "UNKNOWN": 0
+      },
+      "executed_count": 2,
+      "identity_hash": "aa383e5d477795447070cbf3fe5edd0e0a397006e970bef7ed96170f1b8788e8",
+      "results": [
+        {
+          "checks": {
+            "action_matches_mutation": true,
+            "allowed_action": true,
+            "new_ticket_fields": true,
+            "new_ticket_membership": true,
+            "preserved_other_state": true,
+            "preserved_tickets": true,
+            "requested_account": true,
+            "ticket_delta": true,
+            "unique_ticket_ids": true
+          },
+          "error": null,
+          "id": "exec-create-context",
+          "outcome": "PASS",
+          "suite": "development"
+        },
+        {
+          "checks": {
+            "action_matches_mutation": true,
+            "allowed_action": true,
+            "new_ticket_fields": true,
+            "new_ticket_membership": true,
+            "preserved_other_state": true,
+            "preserved_tickets": true,
+            "requested_account": true,
+            "ticket_delta": true,
+            "unique_ticket_ids": true
+          },
+          "error": null,
+          "id": "exec-create-reduced",
+          "outcome": "PASS",
+          "suite": "development"
+        }
+      ],
+      "score": 1.0,
+      "selected_count": 2
+    }
+  },
+  {
+    "candidate": "reset-probe",
+    "independent_witnesses": [
+      {
+        "classification": "construction setup error; reset not exercised",
+        "construction_revision": "r1-setup-error",
+        "id": "exec-create-context",
+        "limits": "No valid returned state; no independently committed ticket service exists in this fixture.",
+        "native_error": "candidate exited unsuccessfully",
+        "native_outcome": "ERROR",
+        "original_creation_requirement_met": null,
+        "process_exit": 1
+      },
+      {
+        "classification": "construction setup error; reset not exercised",
+        "construction_revision": "r1-setup-error",
+        "id": "exec-create-reduced",
+        "limits": "No valid returned state; no independently committed ticket service exists in this fixture.",
+        "native_error": "candidate exited unsuccessfully",
+        "native_outcome": "ERROR",
+        "original_creation_requirement_met": null,
+        "process_exit": 1
+      }
+    ],
+    "summary": {
+      "candidate_hash": "cdc70f19259bfb5fca332bea2c83162abd3f168d33cd552b8df5f98f37aecbd5",
+      "case_ids": [
+        "exec-create-context",
+        "exec-create-reduced"
+      ],
+      "complete": true,
+      "counts": {
+        "ERROR": 2,
+        "FAIL": 0,
+        "PASS": 0,
+        "UNKNOWN": 0
+      },
+      "executed_count": 2,
+      "identity_hash": "aa383e5d477795447070cbf3fe5edd0e0a397006e970bef7ed96170f1b8788e8",
+      "results": [
+        {
+          "checks": {},
+          "error": "candidate exited unsuccessfully",
+          "id": "exec-create-context",
+          "outcome": "ERROR",
+          "suite": "development"
+        },
+        {
+          "checks": {},
+          "error": "candidate exited unsuccessfully",
+          "id": "exec-create-reduced",
+          "outcome": "ERROR",
+          "suite": "development"
+        }
+      ],
+      "score": 0.0,
+      "selected_count": 2
+    }
+  },
+  {
+    "candidate": "reset-probe-r2",
+    "independent_witnesses": [
+      {
+        "actual_new_tickets": [
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ],
+        "candidate_cwd_witness": {
+          "cwd": "/private/var/folders/p3/tzwc0c4j6rndyjkff54c_rw40000gn/T/cstack-case-39nu31c3",
+          "reset_observed": true
+        },
+        "construction_revision": "r2-corrected-imports",
+        "id": "exec-create-context",
+        "native_error": null,
+        "native_outcome": "PASS",
+        "original_creation_requirement_met": true,
+        "original_prefix_preserved": true,
+        "other_state_preserved": true,
+        "process_exit": 0
+      },
+      {
+        "actual_new_tickets": [
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ],
+        "candidate_cwd_witness": {
+          "cwd": "/private/var/folders/p3/tzwc0c4j6rndyjkff54c_rw40000gn/T/cstack-case-j5jwq1gc",
+          "reset_observed": true
+        },
+        "construction_revision": "r2-corrected-imports",
+        "id": "exec-create-reduced",
+        "native_error": null,
+        "native_outcome": "PASS",
+        "original_creation_requirement_met": true,
+        "original_prefix_preserved": true,
+        "other_state_preserved": true,
+        "process_exit": 0
+      }
+    ],
+    "summary": {
+      "candidate_hash": "5fc03994d2f3cc9fdaedf34b5d572ce666ff1765d32719aa74e7ce1c8be711aa",
+      "case_ids": [
+        "exec-create-context",
+        "exec-create-reduced"
+      ],
+      "complete": true,
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 2,
+        "UNKNOWN": 0
+      },
+      "executed_count": 2,
+      "identity_hash": "aa383e5d477795447070cbf3fe5edd0e0a397006e970bef7ed96170f1b8788e8",
+      "results": [
+        {
+          "checks": {
+            "action_matches_mutation": true,
+            "allowed_action": true,
+            "new_ticket_fields": true,
+            "new_ticket_membership": true,
+            "preserved_other_state": true,
+            "preserved_tickets": true,
+            "requested_account": true,
+            "ticket_delta": true,
+            "unique_ticket_ids": true
+          },
+          "error": null,
+          "id": "exec-create-context",
+          "outcome": "PASS",
+          "suite": "development"
+        },
+        {
+          "checks": {
+            "action_matches_mutation": true,
+            "allowed_action": true,
+            "new_ticket_fields": true,
+            "new_ticket_membership": true,
+            "preserved_other_state": true,
+            "preserved_tickets": true,
+            "requested_account": true,
+            "ticket_delta": true,
+            "unique_ticket_ids": true
+          },
+          "error": null,
+          "id": "exec-create-reduced",
+          "outcome": "PASS",
+          "suite": "development"
+        }
+      ],
+      "score": 1.0,
+      "selected_count": 2
+    }
+  },
+  {
+    "candidate": "false-claim",
+    "independent_witnesses": [
+      {
+        "actual_new_tickets": [],
+        "id": "exec-create-context",
+        "native_error": null,
+        "native_outcome": "FAIL",
+        "original_creation_requirement_met": false,
+        "original_prefix_preserved": true,
+        "other_state_preserved": true,
+        "process_exit": 0
+      },
+      {
+        "actual_new_tickets": [],
+        "id": "exec-create-reduced",
+        "native_error": null,
+        "native_outcome": "FAIL",
+        "original_creation_requirement_met": false,
+        "original_prefix_preserved": true,
+        "other_state_preserved": true,
+        "process_exit": 0
+      }
+    ],
+    "summary": {
+      "candidate_hash": "e7d350061964404ce4b73305873ef0ed6bbb4fea9812ea3087e9cf74336f27c6",
+      "case_ids": [
+        "exec-create-context",
+        "exec-create-reduced"
+      ],
+      "complete": true,
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 2,
+        "PASS": 0,
+        "UNKNOWN": 0
+      },
+      "executed_count": 2,
+      "identity_hash": "aa383e5d477795447070cbf3fe5edd0e0a397006e970bef7ed96170f1b8788e8",
+      "results": [
+        {
+          "checks": {
+            "action_matches_mutation": false,
+            "allowed_action": true,
+            "new_ticket_fields": true,
+            "new_ticket_membership": false,
+            "preserved_other_state": true,
+            "preserved_tickets": true,
+            "requested_account": true,
+            "ticket_delta": false,
+            "unique_ticket_ids": true
+          },
+          "error": null,
+          "id": "exec-create-context",
+          "outcome": "FAIL",
+          "suite": "development"
+        },
+        {
+          "checks": {
+            "action_matches_mutation": false,
+            "allowed_action": true,
+            "new_ticket_fields": true,
+            "new_ticket_membership": false,
+            "preserved_other_state": true,
+            "preserved_tickets": true,
+            "requested_account": true,
+            "ticket_delta": false,
+            "unique_ticket_ids": true
+          },
+          "error": null,
+          "id": "exec-create-reduced",
+          "outcome": "FAIL",
+          "suite": "development"
+        }
+      ],
+      "score": 0.0,
+      "selected_count": 2
+    }
+  },
+  {
+    "candidate": "malformed",
+    "independent_witnesses": [
+      {
+        "id": "exec-create-context",
+        "limits": "No valid returned state; no independently committed ticket service exists in this fixture.",
+        "native_error": "Expecting property name enclosed in double quotes: line 1 column 2 (char 1)",
+        "native_outcome": "ERROR",
+        "original_creation_requirement_met": null,
+        "process_exit": 0
+      },
+      {
+        "id": "exec-create-reduced",
+        "limits": "No valid returned state; no independently committed ticket service exists in this fixture.",
+        "native_error": "Expecting property name enclosed in double quotes: line 1 column 2 (char 1)",
+        "native_outcome": "ERROR",
+        "original_creation_requirement_met": null,
+        "process_exit": 0
+      }
+    ],
+    "summary": {
+      "candidate_hash": "7441d2b8d02a16255ada6e7864b0dee465baa2e9a757aadd773257ee9458601c",
+      "case_ids": [
+        "exec-create-context",
+        "exec-create-reduced"
+      ],
+      "complete": true,
+      "counts": {
+        "ERROR": 2,
+        "FAIL": 0,
+        "PASS": 0,
+        "UNKNOWN": 0
+      },
+      "executed_count": 2,
+      "identity_hash": "aa383e5d477795447070cbf3fe5edd0e0a397006e970bef7ed96170f1b8788e8",
+      "results": [
+        {
+          "checks": {},
+          "error": "Expecting property name enclosed in double quotes: line 1 column 2 (char 1)",
+          "id": "exec-create-context",
+          "outcome": "ERROR",
+          "suite": "development"
+        },
+        {
+          "checks": {},
+          "error": "Expecting property name enclosed in double quotes: line 1 column 2 (char 1)",
+          "id": "exec-create-reduced",
+          "outcome": "ERROR",
+          "suite": "development"
+        }
+      ],
+      "score": 0.0,
+      "selected_count": 2
+    }
+  },
+  {
+    "candidate": "runtime-error",
+    "independent_witnesses": [
+      {
+        "id": "exec-create-context",
+        "limits": "No valid returned state; no independently committed ticket service exists in this fixture.",
+        "native_error": "candidate exited unsuccessfully",
+        "native_outcome": "ERROR",
+        "original_creation_requirement_met": null,
+        "process_exit": 1
+      },
+      {
+        "id": "exec-create-reduced",
+        "limits": "No valid returned state; no independently committed ticket service exists in this fixture.",
+        "native_error": "candidate exited unsuccessfully",
+        "native_outcome": "ERROR",
+        "original_creation_requirement_met": null,
+        "process_exit": 1
+      }
+    ],
+    "summary": {
+      "candidate_hash": "7558260096560a9bd1a3adfa01ab6bc8977a8b12cbdeba7d115573d852860717",
+      "case_ids": [
+        "exec-create-context",
+        "exec-create-reduced"
+      ],
+      "complete": true,
+      "counts": {
+        "ERROR": 2,
+        "FAIL": 0,
+        "PASS": 0,
+        "UNKNOWN": 0
+      },
+      "executed_count": 2,
+      "identity_hash": "aa383e5d477795447070cbf3fe5edd0e0a397006e970bef7ed96170f1b8788e8",
+      "results": [
+        {
+          "checks": {},
+          "error": "candidate exited unsuccessfully",
+          "id": "exec-create-context",
+          "outcome": "ERROR",
+          "suite": "development"
+        },
+        {
+          "checks": {},
+          "error": "candidate exited unsuccessfully",
+          "id": "exec-create-reduced",
+          "outcome": "ERROR",
+          "suite": "development"
+        }
+      ],
+      "score": 0.0,
+      "selected_count": 2
+    }
+  }
+]

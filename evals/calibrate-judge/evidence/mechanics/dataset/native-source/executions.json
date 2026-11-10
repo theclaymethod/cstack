@@ -1,0 +1,35 @@
+{
+  "actual_completed": 24,
+  "calls": [
+    {
+      "candidate": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/calibrate-judge-build/cstack/fixtures/playground/support_agent.py",
+      "cases": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/calibrate-judge-build/all-controls/judge-calibration/dataset/native-source/support_agent.jsonl",
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 6,
+        "PASS": 6,
+        "UNKNOWN": 0
+      },
+      "executed": 12,
+      "label": "support_agent",
+      "reserved": 12,
+      "status": "complete"
+    },
+    {
+      "candidate": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/calibrate-judge-build/cstack/fixtures/playground/examples/candidates/improved.py",
+      "cases": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/calibrate-judge-build/all-controls/judge-calibration/dataset/native-source/improved.jsonl",
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 12,
+        "UNKNOWN": 0
+      },
+      "executed": 12,
+      "label": "improved",
+      "reserved": 12,
+      "status": "complete"
+    }
+  ],
+  "limit": 24,
+  "reserved": 24
+}

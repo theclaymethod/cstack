@@ -1,0 +1,13 @@
+{
+  "actual_custom_case_executions": 26,
+  "actual_lifecycle_case_executions": 50,
+  "actual_native_candidate_case_executions": 76,
+  "candidate_case_budget": 120,
+  "candidate_construction_setup_error_case_executions_included_above": 2,
+  "lifecycle_reserved_case_runs": 56,
+  "network_or_provider_calls": 0,
+  "operator_process_interruptions": 4,
+  "process_interruption_budget": 4,
+  "reduction_case_executions": 12,
+  "setup_rejected_operator_invocations": 1
+}

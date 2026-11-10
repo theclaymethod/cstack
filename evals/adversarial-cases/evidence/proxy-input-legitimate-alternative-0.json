@@ -1,0 +1,25 @@
+{
+  "account": "acct-a",
+  "action": "create_ticket",
+  "note": "Saved your support request; reference incident:7f29.",
+  "state": {
+    "audit": {
+      "owner": "fixture",
+      "revision": 7
+    },
+    "tickets": [
+      {
+        "account": "acct-b",
+        "id": "prior-password",
+        "issue": "password",
+        "status": "open"
+      },
+      {
+        "account": "acct-a",
+        "id": "incident:7f29",
+        "issue": "vpn",
+        "status": "open"
+      }
+    ]
+  }
+}

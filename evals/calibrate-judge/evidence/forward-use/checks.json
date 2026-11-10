@@ -1,0 +1,115 @@
+{
+  "consumed_final_refit_block": "Final exposure prevents further fitting",
+  "early_final_compare_block": "Freeze all planned final predictions before opening final labels",
+  "normalization": {
+    "choice": {
+      "error": null,
+      "failure_probability": 0.65,
+      "rationale": null,
+      "verdict": "FAIL"
+    },
+    "llm_malformed": {
+      "error": "Expecting property name enclosed in double quotes: line 1 column 2 (char 1)",
+      "failure_probability": null,
+      "rationale": null,
+      "verdict": "ERROR"
+    },
+    "llm_unknown": {
+      "error": null,
+      "failure_probability": null,
+      "rationale": null,
+      "verdict": "UNKNOWN"
+    },
+    "noul_yes_is_acceptable": {
+      "error": null,
+      "failure_probability": 0.65,
+      "rationale": null,
+      "verdict": "FAIL"
+    },
+    "noul_yes_is_failure": {
+      "error": null,
+      "failure_probability": 0.65,
+      "rationale": null,
+      "verdict": "FAIL"
+    },
+    "unsupported_ordinal": {
+      "error": "This local adapter supports Noul/binary Choice, not native ordinal Score",
+      "failure_probability": null,
+      "rationale": null,
+      "verdict": "ERROR"
+    }
+  },
+  "private_field_probes": {
+    "jev": {
+      "decision": {
+        "error": "judge process did not exit successfully",
+        "failure_probability": null,
+        "rationale": null,
+        "verdict": "ERROR"
+      },
+      "exit_code": 1
+    },
+    "llm": {
+      "decision": {
+        "error": "judge process did not exit successfully",
+        "failure_probability": null,
+        "rationale": null,
+        "verdict": "ERROR"
+      },
+      "exit_code": 1
+    }
+  },
+  "repeatability": {
+    "jev": {
+      "identical": true,
+      "independent_examples_added": 0,
+      "one_item_three_calls": [
+        {
+          "answers": {
+            "criterion": {
+              "noul": 0.65,
+              "type": "noul"
+            }
+          },
+          "model": "offline-jev-shape-fixture"
+        },
+        {
+          "answers": {
+            "criterion": {
+              "noul": 0.65,
+              "type": "noul"
+            }
+          },
+          "model": "offline-jev-shape-fixture"
+        },
+        {
+          "answers": {
+            "criterion": {
+              "noul": 0.65,
+              "type": "noul"
+            }
+          },
+          "model": "offline-jev-shape-fixture"
+        }
+      ]
+    },
+    "llm": {
+      "identical": true,
+      "independent_examples_added": 0,
+      "one_item_three_calls": [
+        {
+          "model": "offline-llm-shape-fixture",
+          "text": "{\"verdict\": \"FAIL\", \"reason\": \"Deterministic fixture policy; no generated model reasoning.\"}"
+        },
+        {
+          "model": "offline-llm-shape-fixture",
+          "text": "{\"verdict\": \"FAIL\", \"reason\": \"Deterministic fixture policy; no generated model reasoning.\"}"
+        },
+        {
+          "model": "offline-llm-shape-fixture",
+          "text": "{\"verdict\": \"FAIL\", \"reason\": \"Deterministic fixture policy; no generated model reasoning.\"}"
+        }
+      ]
+    }
+  }
+}

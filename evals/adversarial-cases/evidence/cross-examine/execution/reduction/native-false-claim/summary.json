@@ -1,0 +1,90 @@
+{
+  "candidate_hash": "e7d350061964404ce4b73305873ef0ed6bbb4fea9812ea3087e9cf74336f27c6",
+  "case_ids": [
+    "exec-reduction-1",
+    "exec-reduction-2",
+    "exec-reduction-3",
+    "exec-reduction-4"
+  ],
+  "complete": true,
+  "counts": {
+    "ERROR": 0,
+    "FAIL": 4,
+    "PASS": 0,
+    "UNKNOWN": 0
+  },
+  "executed_count": 4,
+  "identity_hash": "aa383e5d477795447070cbf3fe5edd0e0a397006e970bef7ed96170f1b8788e8",
+  "results": [
+    {
+      "checks": {
+        "action_matches_mutation": false,
+        "allowed_action": true,
+        "new_ticket_fields": true,
+        "new_ticket_membership": false,
+        "preserved_other_state": true,
+        "preserved_tickets": true,
+        "requested_account": true,
+        "ticket_delta": false,
+        "unique_ticket_ids": true
+      },
+      "error": null,
+      "id": "exec-reduction-1",
+      "outcome": "FAIL",
+      "suite": "development"
+    },
+    {
+      "checks": {
+        "action_matches_mutation": false,
+        "allowed_action": true,
+        "new_ticket_fields": true,
+        "new_ticket_membership": false,
+        "preserved_other_state": true,
+        "preserved_tickets": true,
+        "requested_account": true,
+        "ticket_delta": false,
+        "unique_ticket_ids": true
+      },
+      "error": null,
+      "id": "exec-reduction-2",
+      "outcome": "FAIL",
+      "suite": "development"
+    },
+    {
+      "checks": {
+        "action_matches_mutation": false,
+        "allowed_action": true,
+        "new_ticket_fields": true,
+        "new_ticket_membership": false,
+        "preserved_other_state": true,
+        "preserved_tickets": true,
+        "requested_account": true,
+        "ticket_delta": false,
+        "unique_ticket_ids": true
+      },
+      "error": null,
+      "id": "exec-reduction-3",
+      "outcome": "FAIL",
+      "suite": "development"
+    },
+    {
+      "checks": {
+        "action_matches_mutation": false,
+        "allowed_action": true,
+        "new_ticket_fields": true,
+        "new_ticket_membership": false,
+        "preserved_other_state": true,
+        "preserved_tickets": true,
+        "requested_account": true,
+        "ticket_delta": false,
+        "unique_ticket_ids": true
+      },
+      "error": null,
+      "id": "exec-reduction-4",
+      "outcome": "FAIL",
+      "suite": "development"
+    }
+  ],
+  "score": 0.0,
+  "selected_count": 4
+}

@@ -1,5 +1,7 @@
 # Judge calibration
 
+For a complete gold-to-judge fitting and confirmation workflow, use [Calibrate Judge](../../calibrate-judge/SKILL.md). It supports typed decision models and generative LLM judges with project-local adapters; this reference remains the short calibration guidance for eval authoring.
+
 Code checks still need behavioral evidence: a predicate can be implemented correctly while measuring the wrong thing. Use known legitimate outcomes, known incorrect outcomes, and contract-relevant boundaries. Preserve any parser or environment errors separately from task failures.
 
 For semantic judgments, name the expert label source and the question being calibrated. Select examples from both supported classes. Keep same-source and same-template families in one partition. Use development cases to refine questions and examples; calibrate on a separately reserved set whose labels are withheld from the judge until verdicts freeze. Do not copy gold rationales or label-bearing scenario names into the blind payload.

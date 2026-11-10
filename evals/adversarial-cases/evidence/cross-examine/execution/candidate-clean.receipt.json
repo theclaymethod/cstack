@@ -1,0 +1,20 @@
+{
+  "command": [
+    "/Users/clayton/.local/bin/python3",
+    "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/adversarial-audit/attack-execution/workspace/evaluate.py",
+    "run",
+    "--candidate",
+    "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/adversarial-audit/attack-execution/workspace/eval-runs/attack-execution/evidence/candidates/clean.py",
+    "--suite",
+    "development",
+    "--cases",
+    "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/adversarial-audit/attack-execution/workspace/eval-runs/attack-execution/evidence/cases.jsonl",
+    "--out",
+    "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/adversarial-audit/attack-execution/workspace/eval-runs/attack-execution/evidence/native-clean"
+  ],
+  "exit_code": 0,
+  "label": "candidate-clean",
+  "pid": 34885,
+  "stderr": "",
+  "stdout": "{\n  \"candidate_hash\": \"d8cc818e83af4453a44e9025484ae6e23ecc7cbcf8c9e621efa56c21a179a1c3\",\n  \"case_ids\": [\n    \"exec-create-context\",\n    \"exec-create-reduced\"\n  ],\n  \"complete\": true,\n  \"counts\": {\n    \"ERROR\": 0,\n    \"FAIL\": 0,\n    \"PASS\": 2,\n    \"UNKNOWN\": 0\n  },\n  \"executed_count\": 2,\n  \"identity_hash\": \"aa383e5d477795447070cbf3fe5edd0e0a397006e970bef7ed96170f1b8788e8\",\n  \"results\": [\n    {\n      \"checks\": {\n        \"action_matches_mutation\": true,\n        \"allowed_action\": true,\n        \"new_ticket_fields\": true,\n        \"new_ticket_membership\": true,\n        \"preserved_other_state\": true,\n        \"preserved_tickets\": true,\n        \"requested_account\": true,\n        \"ticket_delta\": true,\n        \"unique_ticket_ids\": true\n      },\n      \"error\": null,\n      \"id\": \"exec-create-context\",\n      \"outcome\": \"PASS\",\n      \"suite\": \"development\"\n    },\n    {\n      \"checks\": {\n        \"action_matches_mutation\": true,\n        \"allowed_action\": true,\n        \"new_ticket_fields\": true,\n        \"new_ticket_membership\": true,\n        \"preserved_other_state\": true,\n        \"preserved_tickets\": true,\n        \"requested_account\": true,\n        \"ticket_delta\": true,\n        \"unique_ticket_ids\": true\n      },\n      \"error\": null,\n      \"id\": \"exec-create-reduced\",\n      \"outcome\": \"PASS\",\n      \"suite\": \"development\"\n    }\n  ],\n  \"score\": 1.0,\n  \"selected_count\": 2\n}\n"
+}

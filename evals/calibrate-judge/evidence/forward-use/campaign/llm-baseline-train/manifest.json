@@ -1,0 +1,24 @@
+{
+  "config_hash": "2aa4b2667ab8adf220e1bea0665a7535c72b626195e8784ffd4bc4387df7448b",
+  "ids": [
+    "item-000",
+    "item-002",
+    "item-012",
+    "item-014"
+  ],
+  "input_dataset_sha256": "992ab96858ca276f56bd301e92c0b4f0d56939c49a6de03dbedaaa7369b2775b",
+  "predictions_sha256": "ce9a116e9348085284d240e6c5bffbe16447536b732bea5747898bd1a21107b3",
+  "role": "train",
+  "sources": {
+    "evals/cases.jsonl": "71f1d8c50f7ce2b3ca512c6f2703faa4e30d5c63237824e3a73e7a573cf4f7b2",
+    "evals/rubric.md": "cb133b50752a48098d463a562d7553ec5a5b29bfef1825b4e393e7de33d66dd8",
+    "evals/spec.json": "eb6f21266223c16708a4ed3bb4f401f3a2adb3355b9e176152665d70a665d8f6",
+    "evaluate.py": "fd1fdaa4b090852f8d0a6462303411bea5488dcc7f7a08895146e32d52b0430d",
+    "judge_calibration/__init__.py": "817d7f11ca621fe90bcd3993976e355ac211b0da33a3adec99b8195929fc603d",
+    "judge_calibration/adapters.py": "a34ea6437062fa6c784ba0a90aaaa70c62e2bfab6fcbdd01b8a0684bf455a5bf",
+    "judge_calibration/fixture_backend.py": "2a829e0f9e9cc9636e1b72cc36d53d5b457e2a9ad9bc8793d7852e57260d3b4f",
+    "judge_calibration/run.py": "b05444d3a9b05929e16717f1b193c733e3c90f0a4d3bbc0fa7ad49798e3a6265",
+    "judge_calibration/statistics.py": "68be63485e19c30a6529e1e4d37e707ff85081ecab1f4130330609f8ade540f3",
+    "judge_calibration/workflow.py": "fd08acf49b61e36f93faceb381df631f7a1630000cb0badb4ad34d66ab70dc11"
+  }
+}

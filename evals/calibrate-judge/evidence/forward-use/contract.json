@@ -1,0 +1,63 @@
+{
+  "allowed_runtime_input": [
+    "opaque id",
+    "case.request",
+    "case.state",
+    "case.expected",
+    "output",
+    "criterion_version"
+  ],
+  "baseline": {
+    "jev": {
+      "backend": "jev",
+      "fail_at_or_above": 0.8,
+      "live_backend": false,
+      "model": "offline-response-shape-fixture",
+      "pass_below": 0.8,
+      "policy": "claim-only",
+      "question_means_failure": true
+    },
+    "llm": {
+      "backend": "llm",
+      "fail_at_or_above": 0.8,
+      "live_backend": false,
+      "model": "offline-response-shape-fixture",
+      "pass_below": 0.8,
+      "policy": "claim-only",
+      "question_means_failure": true
+    }
+  },
+  "budget": {
+    "fixture_processes": 40,
+    "native_source_cases": 24
+  },
+  "candidate": {
+    "jev": {
+      "backend": "jev",
+      "fail_at_or_above": 0.5,
+      "live_backend": false,
+      "model": "offline-response-shape-fixture",
+      "pass_below": 0.5,
+      "policy": "state-witness",
+      "question_means_failure": true
+    },
+    "llm": {
+      "backend": "llm",
+      "fail_at_or_above": 0.5,
+      "live_backend": false,
+      "model": "offline-response-shape-fixture",
+      "pass_below": 0.5,
+      "policy": "state-witness",
+      "question_means_failure": true
+    }
+  },
+  "candidate_scope": "Predeclared deterministic policy and decision threshold; no rubric change",
+  "development_acceptance": "All four decided and exact agreement on exposed synthetic train rows",
+  "label_unit": "whole-output conjunction of frozen native support contract checks",
+  "live_model": null,
+  "probability_mapping": null,
+  "provider": null,
+  "release_policy": null,
+  "threshold_policy": "0.5 fixture threshold to distinguish fixed scores 0.15 and 0.65; no owner error costs",
+  "trial_policy": "One prediction per backend/config/selected row, no retries, no cache"
+}

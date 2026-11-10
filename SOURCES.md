@@ -40,3 +40,31 @@ The portable version retains host-model judgment, deterministic mechanics, blind
 Expert Mode and Distill Me were created for expert feedback capture and retrospective extraction. Their working-mode and review-pass patterns were informed by Pstack's Poteto Mode, Automate Me, and Reflect by Lauren Tan. See the preserved [Pstack MIT license](licenses/pstack-MIT.txt).
 
 Cross-Examine originated in [theclaymethod/cross-examine](https://github.com/theclaymethod/cross-examine). Its historical eval evidence remains frozen under its original provenance. C Stack also contains subsequent capture-eval lessons developed in this project.
+
+## Bootstrap
+
+Bootstrap is original C Stack orchestration for interviewing about intent, reviewing proposed scenario expectations, and delegating evaluator authoring in the target project's format. It reuses Create Eval, Run Eval, and optional Cross-Examine rather than bundling another runner or tracing backend.
+
+The [research review](skills/bootstrap/references/research.md) records the bookmarked leads, primary sources, inspected revisions where available, and access limits behind its synthetic scenario methods. External tools and skills are referenced rather than copied or required. Expectation approvals and human labels on concrete outcomes remain separate authorities.
+
+## Hill Climb
+
+Hill Climb is original C Stack orchestration for bounded candidate search, actual target execution, regression-aware comparisons, confirmation, and resumable evidence. It reuses the project's execution/grading path rather than bundling a generic optimizer or second evaluator.
+
+The [research note](research/hill-climb.md) records inspected DSPy, Ax, GEPA, and Halo source revisions. The installed skill's [optimizer reference](skills/hill-climb/references/optimizers.md) retains the source links and integration boundaries. These projects inform methods and optional integrations; their code is not copied into the skill and their advertised results are not C Stack performance claims. The deterministic support-agent fixture and native campaign runner under `fixtures/playground/` are original test-project code. Disposable workspaces receive current skill copies rather than maintaining a second canonical pack.
+
+## Adversarial Cases
+
+Adversarial Cases is original shared C Stack guidance for constructing controlled challenges and fault-injection cases. Bootstrap keeps expectation approval and Cross-Examine keeps independent adjudication. The skill's activation/outcome distinction and controls draw on this project's reproduced schema and lifecycle cases, not a claim that a generic fault name proves execution.
+
+Additional primary-source research is recorded in [synthetic-generation follow-ups](research/synthetic-generation-followups.md) and [failure-injection follow-ups](research/failure-injection-followups.md). Their implementation pilots are explicitly deferred; no Hypothesis, solver, proxy, or chaos framework is bundled or required by the skill.
+
+## Project-local generation, failure methods and DSPy
+
+The method references and `fixtures/playground/methods` are original C Stack work based on the synthetic-generation and failure-injection follow-up research. Executable demonstrations and optional DSPy development dependencies stay in the fixture; new skill additions are references only. DSPy 3.5.0 was checked from official PyPI and its installed source. Compatibility uses Example, Prediction, Module, Evaluate and a GEPA feedback metric without provider calls or optimization. [The methods report](evals/methods/REPORT.md) records evidence and scope.
+
+LangChain's [eval-engineering](https://github.com/langchain-ai/langchain-skills/tree/main/config/skills/eval-engineering) is referenced for grounded task/environment/verifier engineering with useful production traces. Its SKILL.md was read directly from upstream; it is not vendored or automatically installed. Harbor is the preferred format for new executable agent tasks, with existing and owner-selected formats supported. The [format reference](skills/create-eval/references/formats.md) points to upstream task documentation and requires checking the installed version. No Harbor runtime or container execution was added or claimed by this format preference.
+
+## Calibrate Judge
+
+The reference-only Calibrate Judge skill and project-local offline controls are original work informed by [judge-calibration research](research/judge-calibration.md). References cover typed Jev-style decisions and traditional LLM judges without bundling model clients. Playground labels are native code-derived synthetic outcomes; its judge processes are deterministic response-shape fixtures. No provider model call or human-gold calibration was performed. [The development report](evals/calibrate-judge/REPORT.md) records baseline/selection mechanics, kappa/error/probability diagnostics, independent use, confirmed review repairs and limits.

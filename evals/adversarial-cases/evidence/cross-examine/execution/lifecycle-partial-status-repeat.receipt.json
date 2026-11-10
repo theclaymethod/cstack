@@ -1,0 +1,14 @@
+{
+  "command": [
+    "/Users/clayton/.local/bin/python3",
+    "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/adversarial-audit/attack-execution/workspace/evaluate.py",
+    "status",
+    "--campaign",
+    "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/adversarial-audit/attack-execution/workspace/eval-runs/attack-execution/evidence/lifecycle-partial"
+  ],
+  "exit_code": 0,
+  "label": "lifecycle-partial-status-repeat",
+  "pid": 34957,
+  "stderr": "",
+  "stdout": "{\n  \"best_attempt\": null,\n  \"campaign\": \"/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/adversarial-audit/attack-execution/workspace/eval-runs/attack-execution/evidence/lifecycle-partial\",\n  \"last_decision\": \"baseline pending\",\n  \"max_case_runs\": 24,\n  \"pending_attempts\": [\n    0\n  ],\n  \"protected_confirmation_case_runs\": 8,\n  \"search_case_runs_remaining\": 8,\n  \"status\": \"active\",\n  \"used_case_runs\": 8,\n  \"verification\": \"incomplete attempts remain charged\"\n}\n"
+}

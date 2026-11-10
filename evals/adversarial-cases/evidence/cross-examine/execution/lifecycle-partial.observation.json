@@ -1,0 +1,94 @@
+{
+  "activation_count": 1,
+  "actual_case_executions": 2,
+  "label": "lifecycle-partial",
+  "phase": "partial-2",
+  "post_status_files": {
+    ".lock": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "attempts/000-baseline/candidate.py": "0720b56482a445967ff2a98ec5cfa668c858b8a6f662da74a55c21b257393efc",
+    "attempts/000-baseline/cases.jsonl": "71f1d8c50f7ce2b3ca512c6f2703faa4e30d5c63237824e3a73e7a573cf4f7b2",
+    "attempts/000-baseline/manifest.json": "ae2ebd80223d51e8e74a5e92a10e9dea1cae036ac7647a69644080bc0ec7c6ac",
+    "attempts/000-baseline/traces.jsonl": "3600616699f997778de58cde9422183f6bf04550f1656c3f7564b2bf94b92095",
+    "contract.json": "cad421a0ba33724965c9f920572838940eca1307d86415e7f6b2b3fb2aee476e",
+    "state.json": "c5abcd15710222fa502feddda31fb5044fa93d4a626ddc192c89f28f3f27cbc9"
+  },
+  "post_status_state": {
+    "attempts": [
+      {
+        "candidate_hash": "0720b56482a445967ff2a98ec5cfa668c858b8a6f662da74a55c21b257393efc",
+        "hypothesis": "measure original",
+        "id": 0,
+        "parent": null,
+        "path": "attempts/000-baseline",
+        "reserved_case_runs": 8,
+        "role": "baseline",
+        "status": "pending",
+        "suite": "development"
+      }
+    ],
+    "best_attempt": null,
+    "contract_hash": "1ea575de8d84a9624f0e97602ee3299c0839a05f412f70c908cd5cbab45ebcdd",
+    "last_decision": "baseline pending",
+    "status": "active",
+    "used_case_runs": 8
+  },
+  "pre_status_files": {
+    ".lock": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "attempts/000-baseline/candidate.py": "0720b56482a445967ff2a98ec5cfa668c858b8a6f662da74a55c21b257393efc",
+    "attempts/000-baseline/cases.jsonl": "71f1d8c50f7ce2b3ca512c6f2703faa4e30d5c63237824e3a73e7a573cf4f7b2",
+    "attempts/000-baseline/manifest.json": "ae2ebd80223d51e8e74a5e92a10e9dea1cae036ac7647a69644080bc0ec7c6ac",
+    "attempts/000-baseline/traces.jsonl": "3600616699f997778de58cde9422183f6bf04550f1656c3f7564b2bf94b92095",
+    "contract.json": "cad421a0ba33724965c9f920572838940eca1307d86415e7f6b2b3fb2aee476e",
+    "state.json": "c5abcd15710222fa502feddda31fb5044fa93d4a626ddc192c89f28f3f27cbc9"
+  },
+  "pre_status_state": {
+    "attempts": [
+      {
+        "candidate_hash": "0720b56482a445967ff2a98ec5cfa668c858b8a6f662da74a55c21b257393efc",
+        "hypothesis": "measure original",
+        "id": 0,
+        "parent": null,
+        "path": "attempts/000-baseline",
+        "reserved_case_runs": 8,
+        "role": "baseline",
+        "status": "pending",
+        "suite": "development"
+      }
+    ],
+    "best_attempt": null,
+    "contract_hash": "1ea575de8d84a9624f0e97602ee3299c0839a05f412f70c908cd5cbab45ebcdd",
+    "last_decision": "baseline pending",
+    "status": "active",
+    "used_case_runs": 8
+  },
+  "process_exit": -9,
+  "repeat_status_files": {
+    ".lock": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "attempts/000-baseline/candidate.py": "0720b56482a445967ff2a98ec5cfa668c858b8a6f662da74a55c21b257393efc",
+    "attempts/000-baseline/cases.jsonl": "71f1d8c50f7ce2b3ca512c6f2703faa4e30d5c63237824e3a73e7a573cf4f7b2",
+    "attempts/000-baseline/manifest.json": "ae2ebd80223d51e8e74a5e92a10e9dea1cae036ac7647a69644080bc0ec7c6ac",
+    "attempts/000-baseline/traces.jsonl": "3600616699f997778de58cde9422183f6bf04550f1656c3f7564b2bf94b92095",
+    "contract.json": "cad421a0ba33724965c9f920572838940eca1307d86415e7f6b2b3fb2aee476e",
+    "state.json": "c5abcd15710222fa502feddda31fb5044fa93d4a626ddc192c89f28f3f27cbc9"
+  },
+  "repeat_status_state": {
+    "attempts": [
+      {
+        "candidate_hash": "0720b56482a445967ff2a98ec5cfa668c858b8a6f662da74a55c21b257393efc",
+        "hypothesis": "measure original",
+        "id": 0,
+        "parent": null,
+        "path": "attempts/000-baseline",
+        "reserved_case_runs": 8,
+        "role": "baseline",
+        "status": "pending",
+        "suite": "development"
+      }
+    ],
+    "best_attempt": null,
+    "contract_hash": "1ea575de8d84a9624f0e97602ee3299c0839a05f412f70c908cd5cbab45ebcdd",
+    "last_decision": "baseline pending",
+    "status": "active",
+    "used_case_runs": 8
+  }
+}

@@ -1,6 +1,6 @@
 # Minimal local eval package
 
-Use this format only when the project has no established harness. It is a fallback for reviewing stored outputs, not an implementation of an agent runtime. Ordinary files and Python's standard library are sufficient; the agent writes narrow scripts in an ignored scratch directory for validation, projection, deterministic checks, and post-verdict comparison.
+Use this stored-output fallback when the project has no established format and needs no executable agent environment. Prefer Harbor for new executable agent tasks, following [format selection](../../create-eval/references/formats.md). It is a fallback for reviewing stored outputs, not an implementation of an agent runtime. Ordinary files and Python's standard library are sufficient; the agent writes narrow scripts in an ignored scratch directory for validation, projection, deterministic checks, and post-verdict comparison.
 
 The package has `rubric.md`, `cases.jsonl`, and `config.json`. Existing `config.yaml` is acceptable when the project already has a parser. Keep run outputs outside these source files. Preserve approved source files unchanged while scoring.
 

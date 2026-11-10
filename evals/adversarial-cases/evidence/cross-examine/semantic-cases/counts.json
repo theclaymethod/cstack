@@ -1,0 +1,8 @@
+{
+  "actual_native_case_executions": 31,
+  "interruptions": 0,
+  "network_calls": 0,
+  "note": "checked_run revalidation launches no cases; stale-expectation deliberately invalid label is a control, not a supplied truth",
+  "provider_calls": 0,
+  "scored_native_revalidation_calls": 2
+}

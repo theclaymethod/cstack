@@ -1,0 +1,26 @@
+{
+  "candidate_hash": "3effa805ec5e29943755e11ba58ed8c8074fce8c06bdc51c234135053b460b14",
+  "case_ids": [
+    "extra-field-minimal"
+  ],
+  "complete": true,
+  "counts": {
+    "ERROR": 1,
+    "FAIL": 0,
+    "PASS": 0,
+    "UNKNOWN": 0
+  },
+  "executed_count": 1,
+  "identity_hash": "aa383e5d477795447070cbf3fe5edd0e0a397006e970bef7ed96170f1b8788e8",
+  "results": [
+    {
+      "checks": {},
+      "error": "malformed candidate JSON schema",
+      "id": "extra-field-minimal",
+      "outcome": "ERROR",
+      "suite": "development"
+    }
+  ],
+  "score": 0.0,
+  "selected_count": 1
+}

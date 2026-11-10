@@ -1,0 +1,51 @@
+{
+  "fixture": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/cross-examine-bootstrap/attacker-workflow/workflow-probes/resume-exact-correction",
+  "cases": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/cross-examine-bootstrap/attacker-workflow/workflow-probes/resume-exact-correction/evals/bootstrap-vpn.jsonl",
+  "cases_sha256": "0072ba6eac717694ca4a6bd1a12dc283526573d8e8910bcd9eeaf68619d65f52",
+  "scope": "synthetic expectation correction; stored-observation development controls only",
+  "checks": [
+    {
+      "control": "guidance-valid",
+      "returncode": 0,
+      "raw_result": {
+        "boundary": "stored-observation",
+        "results": [
+          {
+            "id": "S-04-r1",
+            "verdict": "PASS"
+          }
+        ]
+      }
+    },
+    {
+      "control": "clarify-valid",
+      "returncode": 0,
+      "raw_result": {
+        "boundary": "stored-observation",
+        "results": [
+          {
+            "id": "S-04-r1",
+            "verdict": "FAIL"
+          }
+        ]
+      }
+    },
+    {
+      "control": "duplicate-ticket-invalid",
+      "returncode": 0,
+      "raw_result": {
+        "boundary": "stored-observation",
+        "results": [
+          {
+            "id": "S-04-r1",
+            "verdict": "FAIL"
+          }
+        ]
+      }
+    }
+  ],
+  "preserved": {
+    "runner.py": true,
+    "evals/existing.jsonl": true
+  }
+}

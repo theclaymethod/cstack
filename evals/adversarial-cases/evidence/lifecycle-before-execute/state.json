@@ -1,0 +1,20 @@
+{
+  "attempts": [
+    {
+      "candidate_hash": "0720b56482a445967ff2a98ec5cfa668c858b8a6f662da74a55c21b257393efc",
+      "hypothesis": "measure original",
+      "id": 0,
+      "parent": null,
+      "path": "attempts/000-baseline",
+      "reserved_case_runs": 8,
+      "role": "baseline",
+      "status": "pending",
+      "suite": "development"
+    }
+  ],
+  "best_attempt": null,
+  "contract_hash": "1ea575de8d84a9624f0e97602ee3299c0839a05f412f70c908cd5cbab45ebcdd",
+  "last_decision": "baseline pending",
+  "status": "active",
+  "used_case_runs": 8
+}

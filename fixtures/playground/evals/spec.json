@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "name": "Deterministic support-agent exercise",
+  "source": {
+    "kind": "synthetic-exercise-contract",
+    "authority": "This spec and accompanying rubric define an agent-authored local test fixture under the user's authorized playground task.",
+    "expert_reviewed": false,
+    "human_expectation_approval": false,
+    "limits": "No expert labels, judge calibration, production coverage, or held-out generalization are established. All scenarios and expectations are synthetic."
+  },
+  "rules": [
+    "A VPN mention alone does not authorize a ticket. How-to, generic trouble reports, password guidance, and explicit prohibitions must not change tickets.",
+    "For this bounded command language, an affirmative open/create/file/submit/raise request naming a ticket or support request and VPN authorizes creation. A do not/don't/never prohibition does not.",
+    "Use the explicitly requested account only when it belongs to request.accounts. Without an explicit account, select the sole available account; otherwise clarify before creating.",
+    "An existing open ticket with issue vpn for the selected account prevents duplicate creation. Closed VPN tickets and tickets for another account or another issue do not prevent creation.",
+    "Every noncreation action returns account null and preserves the entire supplied state exactly.",
+    "Creation appends exactly one ticket with a unique nonempty string ID, selected account, status open, and issue vpn. Preserve original tickets and all other supplied state exactly."
+  ],
+  "objective": {
+    "metric": "fraction of selected cases passing every required check",
+    "direction": "maximize",
+    "development_promotion": "strict improvement with no regression on any previously passing development case",
+    "errors": "Keep errors separately visible and count their selected cases in the denominator."
+  },
+  "protocol": {
+    "deterministic": true,
+    "repeats": 1,
+    "development_cases": 8,
+    "confirmation_cases": 4,
+    "confirmation": "Run baseline and shortlisted candidate on the same four confirmation cases before selection; preserve zero-regression requirements.",
+    "exposure": "All cases are synthetic and readable in this repository. Confirmation is a reserved-workflow exercise, not a claim that cases were unseen.",
+    "editable_product": "support_agent.py or standalone candidate snapshots; cases, spec, rubric and evaluator remain frozen during a campaign."
+  }
+}

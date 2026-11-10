@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "native_source_executions": 24,
+  "fixture_judge_processes": 102,
+  "source_families": 12,
+  "final_refit_blocked": true,
+  "provider_calls": 0,
+  "live_backend_status": {
+    "Jev": "unrun; native response shape simulated",
+    "LLM": "unrun; native response shape simulated"
+  },
+  "promotion": "offline mechanics only; no human calibration or production release"
+}

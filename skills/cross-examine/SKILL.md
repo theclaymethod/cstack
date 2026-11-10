@@ -29,6 +29,8 @@ If an independent reviewer is unavailable, mark intent review unreviewed and con
 
 Start with an attacker, a defender, and the independent reviewer. Add attackers when coverage warrants it. Consider verifier trust, environment lifecycle and isolation, and gaps between literal checks and intended outcomes. These are coverage questions, not mandatory separate agents.
 
+For targeted challenge construction, have the attacker or assigned builder use [Adversarial Cases](../adversarial-cases/SKILL.md). Supply original intent/source, the frozen scoring path, candidate access and permitted operator injections separately, and the remaining budget. Request setup/reset, actual activation evidence, an independent outcome witness, controls, and reduction history. An operator-injected fault is a resilience experiment rather than automatically a candidate-access exploit. The builder's handoff is evidence for this workflow; finding adjudication and repair acceptance remain with Cross-Examine and its independent intent reviewer.
+
 Give each attacker its own reset state and a bounded objective:
 
 > Find the cheapest reproducible way to earn credit without achieving the intended outcome, or demonstrate an environment/verifier defect. Return the violated requirement, actual permissions, minimal reproducer, scoring command and result, and evidence of the real task outcome.
@@ -36,6 +38,8 @@ Give each attacker its own reset state and a bounded objective:
 Keep initial hypotheses independent across attackers. Serialize runs if isolation is unavailable. Attackers edit only their assigned sandbox; the defender owns canonical repairs and may be the coordinator. Keep these roles separate. When delegation is unavailable, disclose missing role separation.
 
 White-box inspection can suggest attacks, but reproduced exploits must use the evaluated agent's actual permissions. Report extra-access experiments separately. An efficient permitted alternative is a valid solution. Keep failed attempts, hypotheses, and infrastructure limits distinct from findings.
+
+For condition generation and reduction, consult [synthetic methods](../adversarial-cases/references/synthetic-methods.md). For executable perturbations, consult [failure methods](../adversarial-cases/references/failure-methods.md). Implement the selected experiment in the project with its native runner and bounded access.
 
 ## Replay and repair
 

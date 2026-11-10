@@ -1,0 +1,14 @@
+{
+  "activation": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/adversarial-audit/attack-execution/workspace/eval-runs/attack-execution/evidence/lifecycle-partial.activation.jsonl",
+  "completion": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/adversarial-audit/attack-execution/workspace/eval-runs/attack-execution/evidence/lifecycle-partial.completion.json",
+  "native_args": [
+    "start",
+    "--campaign",
+    "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/adversarial-audit/attack-execution/workspace/eval-runs/attack-execution/evidence/lifecycle-partial",
+    "--max-case-runs",
+    "24"
+  ],
+  "phase": "partial-2",
+  "source_sha256": "c0af96b600a53ae0089f8b9f7c8ddfd20cbc6588dfe1aca625361fe532c85ee9",
+  "target": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/adversarial-audit/attack-execution/workspace/evaluate.py"
+}

@@ -1,0 +1,50 @@
+{
+  "candidate_hash": "5fff29e7ea1a726cc9a4a74376ea5b93662fd81269e7497d9f5aa63a0684b230",
+  "candidate_source": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/methods-build/cstack/fixtures/playground/examples/candidates/regression.py",
+  "case_ids": [
+    "authorization:create",
+    "authorization:deny",
+    "authorization:guidance",
+    "account:ambiguous",
+    "account:unavailable",
+    "scope:other-account",
+    "scope:closed",
+    "sequence:create-repeat-conforming-0",
+    "sequence:create-repeat-conforming-1",
+    "sequence:own-created-repeat"
+  ],
+  "cases_source": {
+    "path": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/methods-build/final-source-methods/synthetic/native/selected-corpus-broad-duplicate.jsonl",
+    "sha256": "927d5e9c52feee167c361f15268eb6297550476bfad1e4c8ac1ee87d4cdd2c56"
+  },
+  "execution_mode": "fresh subprocess per case",
+  "identity": {
+    "files": {
+      "evals/cases.jsonl": "71f1d8c50f7ce2b3ca512c6f2703faa4e30d5c63237824e3a73e7a573cf4f7b2",
+      "evals/rubric.md": "cb133b50752a48098d463a562d7553ec5a5b29bfef1825b4e393e7de33d66dd8",
+      "evals/spec.json": "eb6f21266223c16708a4ed3bb4f401f3a2adb3355b9e176152665d70a665d8f6",
+      "evaluate.py": "fd1fdaa4b090852f8d0a6462303411bea5488dcc7f7a08895146e32d52b0430d"
+    },
+    "protocol": {
+      "confirmation": "baseline and incumbent; preserve baseline PASS; no lower score",
+      "execution_boundary": "trusted local subprocess; not a security sandbox",
+      "name": "deterministic-local-support-v1",
+      "new_ticket_issue": "vpn",
+      "new_ticket_status": "open",
+      "python_flags": [
+        "-I"
+      ],
+      "selection": "strict development improvement; preserve every incumbent PASS",
+      "timeout_seconds": 3,
+      "trials_per_case": 1
+    },
+    "python": {
+      "executable": "/Users/clayton/.local/share/uv/python/cpython-3.13.18-macos-aarch64-none/bin/python3.13",
+      "implementation": "CPython",
+      "platform": "macOS-27.2-arm64-arm-64bit-Mach-O",
+      "version": "3.13.18 (main, Oct 26 2026, 13:59:02) [Clang 23.1.3 ]"
+    }
+  },
+  "schema_version": 1,
+  "suite": "all"
+}

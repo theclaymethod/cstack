@@ -1,0 +1,76 @@
+{
+  "scope": "Local synthetic control suites and native fixture tests; not model-performance evaluation",
+  "results": [
+    {
+      "suite": "expert-review",
+      "command": [
+        "/Users/clayton/.local/bin/python3",
+        "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/hill-climb-build/cstack/evals/expert-review/calibration.py",
+        "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/hill-climb-build/final-controls/expert-review"
+      ],
+      "cwd": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/hill-climb-build/cstack",
+      "exit": 0,
+      "status": "passed",
+      "stdout": "expert-review.stdout.txt",
+      "stderr": "expert-review.stderr.txt"
+    },
+    {
+      "suite": "cross-examine",
+      "command": [
+        "/Users/clayton/.local/bin/python3",
+        "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/hill-climb-build/cstack/evals/cross-examine/calibration.py",
+        "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/hill-climb-build/final-controls/cross-examine",
+        "--executor",
+        "local"
+      ],
+      "cwd": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/hill-climb-build/cstack",
+      "exit": 0,
+      "status": "passed",
+      "stdout": "cross-examine.stdout.txt",
+      "stderr": "cross-examine.stderr.txt"
+    },
+    {
+      "suite": "bootstrap",
+      "command": [
+        "/Users/clayton/.local/bin/python3",
+        "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/hill-climb-build/cstack/evals/bootstrap/replay.py",
+        "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/hill-climb-build/final-controls/bootstrap"
+      ],
+      "cwd": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/hill-climb-build/cstack",
+      "exit": 0,
+      "status": "passed",
+      "stdout": "bootstrap.stdout.txt",
+      "stderr": "bootstrap.stderr.txt"
+    },
+    {
+      "suite": "bootstrap-audit",
+      "command": [
+        "/Users/clayton/.local/bin/python3",
+        "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/hill-climb-build/cstack/evals/bootstrap/cross_examine.py",
+        "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/hill-climb-build/final-controls/bootstrap-audit"
+      ],
+      "cwd": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/hill-climb-build/cstack",
+      "exit": 0,
+      "status": "passed",
+      "stdout": "bootstrap-audit.stdout.txt",
+      "stderr": "bootstrap-audit.stderr.txt"
+    },
+    {
+      "suite": "playground",
+      "command": [
+        "/Users/clayton/.local/bin/python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "cwd": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/hill-climb-build/playground",
+      "exit": 0,
+      "status": "passed",
+      "stdout": "playground.stdout.txt",
+      "stderr": "playground.stderr.txt"
+    }
+  ]
+}

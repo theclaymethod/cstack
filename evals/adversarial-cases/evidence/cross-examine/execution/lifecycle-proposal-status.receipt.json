@@ -1,0 +1,14 @@
+{
+  "command": [
+    "/Users/clayton/.local/bin/python3",
+    "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/adversarial-audit/attack-execution/workspace/evaluate.py",
+    "status",
+    "--campaign",
+    "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/adversarial-audit/attack-execution/workspace/eval-runs/attack-execution/evidence/lifecycle-proposal"
+  ],
+  "exit_code": 0,
+  "label": "lifecycle-proposal-status",
+  "pid": 35016,
+  "stderr": "",
+  "stdout": "{\n  \"best_attempt\": 1,\n  \"campaign\": \"/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/adversarial-audit/attack-execution/workspace/eval-runs/attack-execution/evidence/lifecycle-proposal\",\n  \"last_decision\": \"retain improvement\",\n  \"max_case_runs\": 24,\n  \"pending_attempts\": [],\n  \"protected_confirmation_case_runs\": 8,\n  \"search_case_runs_remaining\": 0,\n  \"status\": \"active\",\n  \"used_case_runs\": 16,\n  \"verification\": \"record and completed evidence verified\"\n}\n"
+}

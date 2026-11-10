@@ -1,0 +1,186 @@
+{
+  "status": "authored approved development contract checks; product execution unrun",
+  "scope": [
+    "S-01 revision 1",
+    "S-02 revision 1",
+    "S-03 revision 1"
+  ],
+  "approval_authority": {
+    "source": "approved-handoff.json top-level approved_revisions; fixture user reply turn 3",
+    "intent_revision": 3,
+    "interpretation": "The handoff explicitly freezes these three approved revisions. Embedded source-card pending statuses are historical proposal metadata, not a new approval decision."
+  },
+  "measured_capability": "Conformance of stored action category and integer ticket-count delta to approved routing contracts.",
+  "schema": {
+    "required_fields": [
+      "id",
+      "input",
+      "family",
+      "expected"
+    ],
+    "compatibility": "Existing runner treats input as opaque and accepts structured input; it grades only observation action and ticket_delta."
+  },
+  "cases": [
+    {
+      "scenario": "S-01",
+      "revision": 1,
+      "case_id": "existing-howto",
+      "requirements": [
+        "R1",
+        "R5"
+      ],
+      "origin": "preserved existing fixture input and expectation",
+      "family": "existing-reference",
+      "preservation": "The entire original JSONL row is copied byte for byte, including its newline.",
+      "supported_alternatives": [
+        "Guidance wording may vary."
+      ],
+      "observable_gap": "Runner cannot establish setup-guide existence or usefulness."
+    },
+    {
+      "scenario": "S-02",
+      "revision": 1,
+      "case_id": "S-02",
+      "requirements": [
+        "R1"
+      ],
+      "origin": "reviewed synthetic ordinary generic-failure proposal",
+      "family": "ordinary-generic-vpn-failure",
+      "input_preservation": "Request and clear-account/no-open-ticket context are included in structured input; no prior ticket authorization is supplied.",
+      "supported_alternatives": [
+        "Troubleshooting content may vary within guidance; zero ticket delta is required."
+      ],
+      "observable_gap": "Runner cannot establish troubleshooting quality, recovery, or account correctness."
+    },
+    {
+      "scenario": "S-03",
+      "revision": 1,
+      "case_id": "S-03",
+      "requirements": [
+        "R2"
+      ],
+      "origin": "reviewed synthetic explicit-new-ticket proposal",
+      "family": "vpn-explicit-ticket",
+      "input_preservation": "Explicit request, unambiguous primary account, and no-open-VPN-ticket state are included in structured input.",
+      "supported_alternatives": [
+        "Acknowledgment and accompanying guidance may vary; create_ticket and ticket_delta 1 are required."
+      ],
+      "observable_gap": "Runner cannot establish actual ticket creation, contents, target-account assignment, or final state."
+    }
+  ],
+  "partition": "development for every row; no independent outcome labels or calibration set",
+  "construction_lineage": "The existing-reference row and ordinary-generic-vpn-failure family remain separate; S-03 uses handoff family vpn-explicit-ticket to group related explicit-ticket boundary cases conservatively.",
+  "runner_validation": {
+    "method": "Unmodified runner.run loads the authored JSONL and in-memory pipe observations; no new evaluator code or persistent observation files.",
+    "controls": [
+      {
+        "name": "synthetic matching observations",
+        "origin": "synthetic control, not product output or a human outcome label",
+        "expected_verdict_per_case": "PASS",
+        "actual_runner_result": {
+          "boundary": "stored-observation",
+          "results": [
+            {
+              "id": "existing-howto",
+              "verdict": "PASS"
+            },
+            {
+              "id": "S-02",
+              "verdict": "PASS"
+            },
+            {
+              "id": "S-03",
+              "verdict": "PASS"
+            }
+          ]
+        }
+      },
+      {
+        "name": "synthetic wrong action, correct delta",
+        "origin": "synthetic control, not product output or a human outcome label",
+        "expected_verdict_per_case": "FAIL",
+        "actual_runner_result": {
+          "boundary": "stored-observation",
+          "results": [
+            {
+              "id": "existing-howto",
+              "verdict": "FAIL"
+            },
+            {
+              "id": "S-02",
+              "verdict": "FAIL"
+            },
+            {
+              "id": "S-03",
+              "verdict": "FAIL"
+            }
+          ]
+        }
+      },
+      {
+        "name": "synthetic correct action, wrong delta",
+        "origin": "synthetic control, not product output or a human outcome label",
+        "expected_verdict_per_case": "FAIL",
+        "actual_runner_result": {
+          "boundary": "stored-observation",
+          "results": [
+            {
+              "id": "existing-howto",
+              "verdict": "FAIL"
+            },
+            {
+              "id": "S-02",
+              "verdict": "FAIL"
+            },
+            {
+              "id": "S-03",
+              "verdict": "FAIL"
+            }
+          ]
+        }
+      },
+      {
+        "name": "no observations",
+        "origin": "synthetic control, not product output or a human outcome label",
+        "expected_verdict_per_case": "ERROR",
+        "actual_runner_result": {
+          "boundary": "stored-observation",
+          "results": [
+            {
+              "id": "existing-howto",
+              "verdict": "ERROR"
+            },
+            {
+              "id": "S-02",
+              "verdict": "ERROR"
+            },
+            {
+              "id": "S-03",
+              "verdict": "ERROR"
+            }
+          ]
+        }
+      }
+    ],
+    "conclusion": "The existing grading path accepts supported action/delta pairs, rejects independent action/delta violations, and reports missing observations as ERROR. These are grader development controls only."
+  },
+  "product_execution": {
+    "status": "unrun",
+    "reason": "README states no assistant implementation or product execution entrypoint exists.",
+    "minimum_missing_entrypoint": "A runnable assistant consuming the scenario input and exposing actual action and ticket-state observations."
+  },
+  "limits": [
+    "No human labels on actual outputs exist; these approved expectations do not calibrate a semantic judge.",
+    "Stored observations cannot prove execution or full state preservation.",
+    "R3 and R4 are outside this authoring slice.",
+    "No network, semantic judges, product changes, or canonical eval/runner edits."
+  ],
+  "sources": [
+    "approved-handoff.json",
+    "README.md",
+    "runner.py",
+    "evals/existing.jsonl",
+    "../cstack/skills/create-eval/SKILL.md",
+    "../cstack/skills/create-eval/references/early-development.md"
+  ]
+}

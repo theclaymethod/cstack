@@ -1,0 +1,23 @@
+{
+  "status": "passed",
+  "checks": 71,
+  "counts": {
+    "actual_native_case_executions": 38,
+    "native_campaign_reserved_case_runs": 40,
+    "native_case_run_trace_files": {
+      "lifecycle-clean/attempts/000-baseline/traces.jsonl": 8,
+      "lifecycle-complete-stop-1/attempts/000-baseline/traces.jsonl": 8,
+      "lifecycle-complete-stop-2/attempts/000-baseline/traces.jsonl": 8,
+      "lifecycle-noop/attempts/000-baseline/traces.jsonl": 8,
+      "native-forged/traces.jsonl": 2,
+      "native-legitimate-alternative/traces.jsonl": 2,
+      "native-legitimate/traces.jsonl": 2
+    },
+    "network_calls": 0,
+    "operator_process_interruptions": 3,
+    "protected_sources_unchanged": true,
+    "provider_calls": 0,
+    "proxy_invocations": 6,
+    "subagents": 0
+  }
+}

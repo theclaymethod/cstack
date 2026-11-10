@@ -1,0 +1,26 @@
+{
+  "candidate_hash": "2212682f174b9d60929fd1bfa75f9899872667fc0fa86fe8892c3d0df993002d",
+  "case_ids": [
+    "account-membership-r0-listed"
+  ],
+  "complete": true,
+  "counts": {
+    "ERROR": 1,
+    "FAIL": 0,
+    "PASS": 0,
+    "UNKNOWN": 0
+  },
+  "executed_count": 1,
+  "identity_hash": "89a96d226443d97b3a269934961259e3fc32de1ab2358841c738e964bc6c829c",
+  "results": [
+    {
+      "checks": {},
+      "error": "candidate exited unsuccessfully",
+      "id": "account-membership-r0-listed",
+      "outcome": "ERROR",
+      "suite": "development"
+    }
+  ],
+  "score": 0.0,
+  "selected_count": 1
+}

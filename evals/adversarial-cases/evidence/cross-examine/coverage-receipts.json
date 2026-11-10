@@ -1,0 +1,68 @@
+[
+  {
+    "label": "missing-one-lifecycle-observation",
+    "access": "explicit operator-extra-access probe on copied eval-runs artifacts; not permitted candidate behavior",
+    "mutation": {
+      "relative_path": "lifecycle-observations.json",
+      "removed_labels": [
+        "lifecycle-complete-stop-1"
+      ],
+      "retained_count": 3,
+      "note": "all real trace, campaign, configuration and activation artifacts retained"
+    },
+    "frozen_replay_validate": {
+      "accepted": true,
+      "check_count": 64
+    },
+    "native_checked_run_legitimate": {
+      "accepted": true
+    },
+    "new_case_executions": 0,
+    "new_interruptions": 0
+  },
+  {
+    "label": "empty-lifecycle-observations",
+    "access": "explicit operator-extra-access probe on copied eval-runs artifacts; not permitted candidate behavior",
+    "mutation": {
+      "relative_path": "lifecycle-observations.json",
+      "removed_labels": [
+        "lifecycle-noop",
+        "lifecycle-complete-stop-1",
+        "lifecycle-complete-stop-2",
+        "lifecycle-before-execute"
+      ],
+      "retained_count": 0,
+      "note": "all real trace, campaign, configuration and activation artifacts retained"
+    },
+    "frozen_replay_validate": {
+      "accepted": true,
+      "check_count": 46
+    },
+    "native_checked_run_legitimate": {
+      "accepted": true
+    },
+    "new_case_executions": 0,
+    "new_interruptions": 0
+  },
+  {
+    "label": "omitted-command-receipt",
+    "access": "explicit operator-extra-access probe on copied eval-runs artifacts; not permitted candidate behavior",
+    "mutation": {
+      "relative_paths": [
+        "commands.json",
+        "native-legitimate.receipt.json"
+      ],
+      "change": "removed native-legitimate command list entry and deleted its standalone receipt; actual native run evidence retained",
+      "removed_count": 1
+    },
+    "frozen_replay_validate": {
+      "accepted": true,
+      "check_count": 70
+    },
+    "native_checked_run_legitimate": {
+      "accepted": true
+    },
+    "new_case_executions": 0,
+    "new_interruptions": 0
+  }
+]

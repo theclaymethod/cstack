@@ -1,0 +1,54 @@
+{
+  "candidate_hash": "d22610bfe19589694330ff0e8240bb9a0cbedd669b3f61541be0c273156339e0",
+  "case_ids": [
+    "build-claim-preservation",
+    "build-claim-minimal"
+  ],
+  "complete": true,
+  "counts": {
+    "ERROR": 0,
+    "FAIL": 0,
+    "PASS": 2,
+    "UNKNOWN": 0
+  },
+  "executed_count": 2,
+  "identity_hash": "aa383e5d477795447070cbf3fe5edd0e0a397006e970bef7ed96170f1b8788e8",
+  "results": [
+    {
+      "checks": {
+        "action_matches_mutation": true,
+        "allowed_action": true,
+        "new_ticket_fields": true,
+        "new_ticket_membership": true,
+        "preserved_other_state": true,
+        "preserved_tickets": true,
+        "requested_account": true,
+        "ticket_delta": true,
+        "unique_ticket_ids": true
+      },
+      "error": null,
+      "id": "build-claim-preservation",
+      "outcome": "PASS",
+      "suite": "development"
+    },
+    {
+      "checks": {
+        "action_matches_mutation": true,
+        "allowed_action": true,
+        "new_ticket_fields": true,
+        "new_ticket_membership": true,
+        "preserved_other_state": true,
+        "preserved_tickets": true,
+        "requested_account": true,
+        "ticket_delta": true,
+        "unique_ticket_ids": true
+      },
+      "error": null,
+      "id": "build-claim-minimal",
+      "outcome": "PASS",
+      "suite": "development"
+    }
+  ],
+  "score": 1.0,
+  "selected_count": 2
+}

@@ -26,3 +26,7 @@ Follow project constraints when applying upstream advice. Batch sizes are heuris
 Keep initial discovery open-ended. Introduce binary criteria after the requirement or failure boundary is understood. Do not require an observed failure before checking an explicit schema or safety invariant. Domain-specific synthetic inputs need someone able to assess realism; generated clinical facts or labels are not expert authority. Reuse existing viewers and runners, and avoid unnecessary clustering, databases, hosted tracing, dependencies, or new test files.
 
 Inspected upstream revision: `80d5f7b0127c7572ed9e9339937adbfd7240ffeb`. Links above follow upstream for discovery; record the actual revision when applying its workflow.
+
+## Production-trace task engineering
+
+With recoverable production traces and repository context, use LangChain's [eval-engineering](https://github.com/langchain-ai/langchain-skills/tree/main/config/skills/eval-engineering) for reviewed task specs, controlled environments, independent verifiers and Harbor runs. It also supports optional traces; this is C Stack's recommended production handoff. Read the actual installed/upstream workflow when applying it. Do not vendor or install it merely because it is referenced.

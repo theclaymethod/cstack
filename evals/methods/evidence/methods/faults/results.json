@@ -1,0 +1,926 @@
+{
+  "actual_native_executions": 45,
+  "budget": {
+    "max_cases": 53,
+    "max_interruptions": 3
+  },
+  "candidate_timeouts": 2,
+  "instrumentation": "Source-pinned named mappings to native Python call/return events; version sensitive",
+  "lifecycle": [
+    {
+      "action": "noop",
+      "activation_count": 0,
+      "actual_cases": 8,
+      "after": {
+        "attempts": [
+          {
+            "candidate_hash": "0720b56482a445967ff2a98ec5cfa668c858b8a6f662da74a55c21b257393efc",
+            "evidence_hashes": {
+              "candidate.py": "0720b56482a445967ff2a98ec5cfa668c858b8a6f662da74a55c21b257393efc",
+              "cases.jsonl": "71f1d8c50f7ce2b3ca512c6f2703faa4e30d5c63237824e3a73e7a573cf4f7b2",
+              "manifest.json": "8c14c9017e9eea5a52e52eb9b0320363625a7ef446d8a365dd5457892e3cc43e",
+              "summary.json": "a524495cf7b47f30b3ba3645ffd428313ba06ed8b07c6379403fa37f34b20793",
+              "traces.jsonl": "1e26368899fb4fb83ebaa147662ea87f19bdf185aa3f9390c50b832e9bb89fac"
+            },
+            "executed_case_runs": 8,
+            "hypothesis": "measure original",
+            "id": 0,
+            "parent": null,
+            "path": "attempts/000-baseline",
+            "reserved_case_runs": 8,
+            "role": "baseline",
+            "status": "complete",
+            "suite": "development"
+          }
+        ],
+        "best_attempt": 0,
+        "contract_hash": "0f8aa0442929f24c34b9a110872bef0efe816691a743d3f031b99c48ca088508",
+        "last_decision": "baseline measured",
+        "status": "active",
+        "used_case_runs": 8
+      },
+      "after_files": {
+        ".lock": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "attempts/000-baseline/candidate.py": "0720b56482a445967ff2a98ec5cfa668c858b8a6f662da74a55c21b257393efc",
+        "attempts/000-baseline/cases.jsonl": "71f1d8c50f7ce2b3ca512c6f2703faa4e30d5c63237824e3a73e7a573cf4f7b2",
+        "attempts/000-baseline/manifest.json": "8c14c9017e9eea5a52e52eb9b0320363625a7ef446d8a365dd5457892e3cc43e",
+        "attempts/000-baseline/summary.json": "a524495cf7b47f30b3ba3645ffd428313ba06ed8b07c6379403fa37f34b20793",
+        "attempts/000-baseline/traces.jsonl": "1e26368899fb4fb83ebaa147662ea87f19bdf185aa3f9390c50b832e9bb89fac",
+        "contract.json": "9c78dd412eb735bf4f8690ce0560924b9d755ebfe13d1b4a615af70a9848c386",
+        "state.json": "cd3fbc1dd06c9f764f3706b230304c94daaee96e487a8d9743b2863dbc859ec1"
+      },
+      "before": {
+        "attempts": [
+          {
+            "candidate_hash": "0720b56482a445967ff2a98ec5cfa668c858b8a6f662da74a55c21b257393efc",
+            "evidence_hashes": {
+              "candidate.py": "0720b56482a445967ff2a98ec5cfa668c858b8a6f662da74a55c21b257393efc",
+              "cases.jsonl": "71f1d8c50f7ce2b3ca512c6f2703faa4e30d5c63237824e3a73e7a573cf4f7b2",
+              "manifest.json": "8c14c9017e9eea5a52e52eb9b0320363625a7ef446d8a365dd5457892e3cc43e",
+              "summary.json": "a524495cf7b47f30b3ba3645ffd428313ba06ed8b07c6379403fa37f34b20793",
+              "traces.jsonl": "1e26368899fb4fb83ebaa147662ea87f19bdf185aa3f9390c50b832e9bb89fac"
+            },
+            "executed_case_runs": 8,
+            "hypothesis": "measure original",
+            "id": 0,
+            "parent": null,
+            "path": "attempts/000-baseline",
+            "reserved_case_runs": 8,
+            "role": "baseline",
+            "status": "complete",
+            "suite": "development"
+          }
+        ],
+        "best_attempt": 0,
+        "contract_hash": "0f8aa0442929f24c34b9a110872bef0efe816691a743d3f031b99c48ca088508",
+        "last_decision": "baseline measured",
+        "status": "active",
+        "used_case_runs": 8
+      },
+      "before_files": {
+        ".lock": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "attempts/000-baseline/candidate.py": "0720b56482a445967ff2a98ec5cfa668c858b8a6f662da74a55c21b257393efc",
+        "attempts/000-baseline/cases.jsonl": "71f1d8c50f7ce2b3ca512c6f2703faa4e30d5c63237824e3a73e7a573cf4f7b2",
+        "attempts/000-baseline/manifest.json": "8c14c9017e9eea5a52e52eb9b0320363625a7ef446d8a365dd5457892e3cc43e",
+        "attempts/000-baseline/summary.json": "a524495cf7b47f30b3ba3645ffd428313ba06ed8b07c6379403fa37f34b20793",
+        "attempts/000-baseline/traces.jsonl": "1e26368899fb4fb83ebaa147662ea87f19bdf185aa3f9390c50b832e9bb89fac",
+        "contract.json": "9c78dd412eb735bf4f8690ce0560924b9d755ebfe13d1b4a615af70a9848c386",
+        "state.json": "cd3fbc1dd06c9f764f3706b230304c94daaee96e487a8d9743b2863dbc859ec1"
+      },
+      "boundary": "unreached",
+      "label": "clean",
+      "process": {
+        "exit": 0,
+        "pid": 41470,
+        "stderr": "",
+        "stdout": "",
+        "supervisor_timeout": false
+      }
+    },
+    {
+      "action": "kill",
+      "activation_count": 0,
+      "actual_cases": 8,
+      "after": {
+        "attempts": [
+          {
+            "candidate_hash": "0720b56482a445967ff2a98ec5cfa668c858b8a6f662da74a55c21b257393efc",
+            "evidence_hashes": {
+              "candidate.py": "0720b56482a445967ff2a98ec5cfa668c858b8a6f662da74a55c21b257393efc",
+              "cases.jsonl": "71f1d8c50f7ce2b3ca512c6f2703faa4e30d5c63237824e3a73e7a573cf4f7b2",
+              "manifest.json": "8c14c9017e9eea5a52e52eb9b0320363625a7ef446d8a365dd5457892e3cc43e",
+              "summary.json": "a524495cf7b47f30b3ba3645ffd428313ba06ed8b07c6379403fa37f34b20793",
+              "traces.jsonl": "1e26368899fb4fb83ebaa147662ea87f19bdf185aa3f9390c50b832e9bb89fac"
+            },
+            "executed_case_runs": 8,
+            "hypothesis": "measure original",
+            "id": 0,
+            "parent": null,
+            "path": "attempts/000-baseline",
+            "reserved_case_runs": 8,
+            "role": "baseline",
+            "status": "complete",
+            "suite": "development"
+          }
+        ],
+        "best_attempt": 0,
+        "contract_hash": "0f8aa0442929f24c34b9a110872bef0efe816691a743d3f031b99c48ca088508",
+        "last_decision": "baseline measured",
+        "status": "active",
+        "used_case_runs": 8
+      },
+      "after_files": {
+        ".lock": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "attempts/000-baseline/candidate.py": "0720b56482a445967ff2a98ec5cfa668c858b8a6f662da74a55c21b257393efc",
+        "attempts/000-baseline/cases.jsonl": "71f1d8c50f7ce2b3ca512c6f2703faa4e30d5c63237824e3a73e7a573cf4f7b2",
+        "attempts/000-baseline/manifest.json": "8c14c9017e9eea5a52e52eb9b0320363625a7ef446d8a365dd5457892e3cc43e",
+        "attempts/000-baseline/summary.json": "a524495cf7b47f30b3ba3645ffd428313ba06ed8b07c6379403fa37f34b20793",
+        "attempts/000-baseline/traces.jsonl": "1e26368899fb4fb83ebaa147662ea87f19bdf185aa3f9390c50b832e9bb89fac",
+        "contract.json": "9c78dd412eb735bf4f8690ce0560924b9d755ebfe13d1b4a615af70a9848c386",
+        "state.json": "cd3fbc1dd06c9f764f3706b230304c94daaee96e487a8d9743b2863dbc859ec1"
+      },
+      "before": {
+        "attempts": [
+          {
+            "candidate_hash": "0720b56482a445967ff2a98ec5cfa668c858b8a6f662da74a55c21b257393efc",
+            "evidence_hashes": {
+              "candidate.py": "0720b56482a445967ff2a98ec5cfa668c858b8a6f662da74a55c21b257393efc",
+              "cases.jsonl": "71f1d8c50f7ce2b3ca512c6f2703faa4e30d5c63237824e3a73e7a573cf4f7b2",
+              "manifest.json": "8c14c9017e9eea5a52e52eb9b0320363625a7ef446d8a365dd5457892e3cc43e",
+              "summary.json": "a524495cf7b47f30b3ba3645ffd428313ba06ed8b07c6379403fa37f34b20793",
+              "traces.jsonl": "1e26368899fb4fb83ebaa147662ea87f19bdf185aa3f9390c50b832e9bb89fac"
+            },
+            "executed_case_runs": 8,
+            "hypothesis": "measure original",
+            "id": 0,
+            "parent": null,
+            "path": "attempts/000-baseline",
+            "reserved_case_runs": 8,
+            "role": "baseline",
+            "status": "complete",
+            "suite": "development"
+          }
+        ],
+        "best_attempt": 0,
+        "contract_hash": "0f8aa0442929f24c34b9a110872bef0efe816691a743d3f031b99c48ca088508",
+        "last_decision": "baseline measured",
+        "status": "active",
+        "used_case_runs": 8
+      },
+      "before_files": {
+        ".lock": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "attempts/000-baseline/candidate.py": "0720b56482a445967ff2a98ec5cfa668c858b8a6f662da74a55c21b257393efc",
+        "attempts/000-baseline/cases.jsonl": "71f1d8c50f7ce2b3ca512c6f2703faa4e30d5c63237824e3a73e7a573cf4f7b2",
+        "attempts/000-baseline/manifest.json": "8c14c9017e9eea5a52e52eb9b0320363625a7ef446d8a365dd5457892e3cc43e",
+        "attempts/000-baseline/summary.json": "a524495cf7b47f30b3ba3645ffd428313ba06ed8b07c6379403fa37f34b20793",
+        "attempts/000-baseline/traces.jsonl": "1e26368899fb4fb83ebaa147662ea87f19bdf185aa3f9390c50b832e9bb89fac",
+        "contract.json": "9c78dd412eb735bf4f8690ce0560924b9d755ebfe13d1b4a615af70a9848c386",
+        "state.json": "cd3fbc1dd06c9f764f3706b230304c94daaee96e487a8d9743b2863dbc859ec1"
+      },
+      "boundary": "unreached",
+      "label": "armed-unreached",
+      "process": {
+        "exit": 0,
+        "pid": 41481,
+        "stderr": "",
+        "stdout": "",
+        "supervisor_timeout": false
+      }
+    },
+    {
+      "action": "noop",
+      "activation_count": 1,
+      "actual_cases": 8,
+      "after": {
+        "attempts": [
+          {
+            "candidate_hash": "0720b56482a445967ff2a98ec5cfa668c858b8a6f662da74a55c21b257393efc",
+            "evidence_hashes": {
+              "candidate.py": "0720b56482a445967ff2a98ec5cfa668c858b8a6f662da74a55c21b257393efc",
+              "cases.jsonl": "71f1d8c50f7ce2b3ca512c6f2703faa4e30d5c63237824e3a73e7a573cf4f7b2",
+              "manifest.json": "8c14c9017e9eea5a52e52eb9b0320363625a7ef446d8a365dd5457892e3cc43e",
+              "summary.json": "a524495cf7b47f30b3ba3645ffd428313ba06ed8b07c6379403fa37f34b20793",
+              "traces.jsonl": "1e26368899fb4fb83ebaa147662ea87f19bdf185aa3f9390c50b832e9bb89fac"
+            },
+            "executed_case_runs": 8,
+            "hypothesis": "measure original",
+            "id": 0,
+            "parent": null,
+            "path": "attempts/000-baseline",
+            "reserved_case_runs": 8,
+            "role": "baseline",
+            "status": "complete",
+            "suite": "development"
+          }
+        ],
+        "best_attempt": 0,
+        "contract_hash": "0f8aa0442929f24c34b9a110872bef0efe816691a743d3f031b99c48ca088508",
+        "last_decision": "baseline measured",
+        "status": "active",
+        "used_case_runs": 8
+      },
+      "after_files": {
+        ".lock": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "attempts/000-baseline/candidate.py": "0720b56482a445967ff2a98ec5cfa668c858b8a6f662da74a55c21b257393efc",
+        "attempts/000-baseline/cases.jsonl": "71f1d8c50f7ce2b3ca512c6f2703faa4e30d5c63237824e3a73e7a573cf4f7b2",
+        "attempts/000-baseline/manifest.json": "8c14c9017e9eea5a52e52eb9b0320363625a7ef446d8a365dd5457892e3cc43e",
+        "attempts/000-baseline/summary.json": "a524495cf7b47f30b3ba3645ffd428313ba06ed8b07c6379403fa37f34b20793",
+        "attempts/000-baseline/traces.jsonl": "1e26368899fb4fb83ebaa147662ea87f19bdf185aa3f9390c50b832e9bb89fac",
+        "contract.json": "9c78dd412eb735bf4f8690ce0560924b9d755ebfe13d1b4a615af70a9848c386",
+        "state.json": "cd3fbc1dd06c9f764f3706b230304c94daaee96e487a8d9743b2863dbc859ec1"
+      },
+      "before": {
+        "attempts": [
+          {
+            "candidate_hash": "0720b56482a445967ff2a98ec5cfa668c858b8a6f662da74a55c21b257393efc",
+            "evidence_hashes": {
+              "candidate.py": "0720b56482a445967ff2a98ec5cfa668c858b8a6f662da74a55c21b257393efc",
+              "cases.jsonl": "71f1d8c50f7ce2b3ca512c6f2703faa4e30d5c63237824e3a73e7a573cf4f7b2",
+              "manifest.json": "8c14c9017e9eea5a52e52eb9b0320363625a7ef446d8a365dd5457892e3cc43e",
+              "summary.json": "a524495cf7b47f30b3ba3645ffd428313ba06ed8b07c6379403fa37f34b20793",
+              "traces.jsonl": "1e26368899fb4fb83ebaa147662ea87f19bdf185aa3f9390c50b832e9bb89fac"
+            },
+            "executed_case_runs": 8,
+            "hypothesis": "measure original",
+            "id": 0,
+            "parent": null,
+            "path": "attempts/000-baseline",
+            "reserved_case_runs": 8,
+            "role": "baseline",
+            "status": "complete",
+            "suite": "development"
+          }
+        ],
+        "best_attempt": 0,
+        "contract_hash": "0f8aa0442929f24c34b9a110872bef0efe816691a743d3f031b99c48ca088508",
+        "last_decision": "baseline measured",
+        "status": "active",
+        "used_case_runs": 8
+      },
+      "before_files": {
+        ".lock": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "attempts/000-baseline/candidate.py": "0720b56482a445967ff2a98ec5cfa668c858b8a6f662da74a55c21b257393efc",
+        "attempts/000-baseline/cases.jsonl": "71f1d8c50f7ce2b3ca512c6f2703faa4e30d5c63237824e3a73e7a573cf4f7b2",
+        "attempts/000-baseline/manifest.json": "8c14c9017e9eea5a52e52eb9b0320363625a7ef446d8a365dd5457892e3cc43e",
+        "attempts/000-baseline/summary.json": "a524495cf7b47f30b3ba3645ffd428313ba06ed8b07c6379403fa37f34b20793",
+        "attempts/000-baseline/traces.jsonl": "1e26368899fb4fb83ebaa147662ea87f19bdf185aa3f9390c50b832e9bb89fac",
+        "contract.json": "9c78dd412eb735bf4f8690ce0560924b9d755ebfe13d1b4a615af70a9848c386",
+        "state.json": "cd3fbc1dd06c9f764f3706b230304c94daaee96e487a8d9743b2863dbc859ec1"
+      },
+      "boundary": "summary.published",
+      "label": "observed-noop",
+      "process": {
+        "exit": 0,
+        "pid": 41492,
+        "stderr": "",
+        "stdout": "",
+        "supervisor_timeout": false
+      }
+    },
+    {
+      "action": "kill",
+      "activation_count": 1,
+      "actual_cases": 0,
+      "after": {
+        "attempts": [
+          {
+            "candidate_hash": "0720b56482a445967ff2a98ec5cfa668c858b8a6f662da74a55c21b257393efc",
+            "hypothesis": "measure original",
+            "id": 0,
+            "parent": null,
+            "path": "attempts/000-baseline",
+            "reserved_case_runs": 8,
+            "role": "baseline",
+            "status": "pending",
+            "suite": "development"
+          }
+        ],
+        "best_attempt": null,
+        "contract_hash": "0f8aa0442929f24c34b9a110872bef0efe816691a743d3f031b99c48ca088508",
+        "last_decision": "baseline pending",
+        "status": "active",
+        "used_case_runs": 8
+      },
+      "after_files": {
+        ".lock": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "contract.json": "9c78dd412eb735bf4f8690ce0560924b9d755ebfe13d1b4a615af70a9848c386",
+        "state.json": "ca15ad7da8b39c4040411a41c5afe997cb348608b7e81120bb896108baa3f6c5"
+      },
+      "before": {
+        "attempts": [
+          {
+            "candidate_hash": "0720b56482a445967ff2a98ec5cfa668c858b8a6f662da74a55c21b257393efc",
+            "hypothesis": "measure original",
+            "id": 0,
+            "parent": null,
+            "path": "attempts/000-baseline",
+            "reserved_case_runs": 8,
+            "role": "baseline",
+            "status": "pending",
+            "suite": "development"
+          }
+        ],
+        "best_attempt": null,
+        "contract_hash": "0f8aa0442929f24c34b9a110872bef0efe816691a743d3f031b99c48ca088508",
+        "last_decision": "baseline pending",
+        "status": "active",
+        "used_case_runs": 8
+      },
+      "before_files": {
+        ".lock": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "contract.json": "9c78dd412eb735bf4f8690ce0560924b9d755ebfe13d1b4a615af70a9848c386",
+        "state.json": "ca15ad7da8b39c4040411a41c5afe997cb348608b7e81120bb896108baa3f6c5"
+      },
+      "boundary": "reservation.published",
+      "label": "reservation",
+      "process": {
+        "exit": -9,
+        "pid": 41503,
+        "stderr": "",
+        "stdout": "",
+        "supervisor_timeout": false
+      }
+    },
+    {
+      "action": "kill",
+      "activation_count": 1,
+      "actual_cases": 8,
+      "after": {
+        "attempts": [
+          {
+            "candidate_hash": "0720b56482a445967ff2a98ec5cfa668c858b8a6f662da74a55c21b257393efc",
+            "completion_recovered": true,
+            "evidence_hashes": {
+              "candidate.py": "0720b56482a445967ff2a98ec5cfa668c858b8a6f662da74a55c21b257393efc",
+              "cases.jsonl": "71f1d8c50f7ce2b3ca512c6f2703faa4e30d5c63237824e3a73e7a573cf4f7b2",
+              "manifest.json": "8c14c9017e9eea5a52e52eb9b0320363625a7ef446d8a365dd5457892e3cc43e",
+              "summary.json": "a524495cf7b47f30b3ba3645ffd428313ba06ed8b07c6379403fa37f34b20793",
+              "traces.jsonl": "1e26368899fb4fb83ebaa147662ea87f19bdf185aa3f9390c50b832e9bb89fac"
+            },
+            "executed_case_runs": 8,
+            "hypothesis": "measure original",
+            "id": 0,
+            "parent": null,
+            "path": "attempts/000-baseline",
+            "reserved_case_runs": 8,
+            "role": "baseline",
+            "status": "complete",
+            "suite": "development"
+          }
+        ],
+        "best_attempt": 0,
+        "contract_hash": "0f8aa0442929f24c34b9a110872bef0efe816691a743d3f031b99c48ca088508",
+        "last_decision": "baseline measured; recovered completed evidence",
+        "status": "active",
+        "used_case_runs": 8
+      },
+      "after_files": {
+        ".lock": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "attempts/000-baseline/candidate.py": "0720b56482a445967ff2a98ec5cfa668c858b8a6f662da74a55c21b257393efc",
+        "attempts/000-baseline/cases.jsonl": "71f1d8c50f7ce2b3ca512c6f2703faa4e30d5c63237824e3a73e7a573cf4f7b2",
+        "attempts/000-baseline/manifest.json": "8c14c9017e9eea5a52e52eb9b0320363625a7ef446d8a365dd5457892e3cc43e",
+        "attempts/000-baseline/summary.json": "a524495cf7b47f30b3ba3645ffd428313ba06ed8b07c6379403fa37f34b20793",
+        "attempts/000-baseline/traces.jsonl": "1e26368899fb4fb83ebaa147662ea87f19bdf185aa3f9390c50b832e9bb89fac",
+        "contract.json": "9c78dd412eb735bf4f8690ce0560924b9d755ebfe13d1b4a615af70a9848c386",
+        "state.json": "31445d4cc5b158e43607a1458dba9f6931caefbbf012c0c6d92d87d5fbe847b9"
+      },
+      "before": {
+        "attempts": [
+          {
+            "candidate_hash": "0720b56482a445967ff2a98ec5cfa668c858b8a6f662da74a55c21b257393efc",
+            "hypothesis": "measure original",
+            "id": 0,
+            "parent": null,
+            "path": "attempts/000-baseline",
+            "reserved_case_runs": 8,
+            "role": "baseline",
+            "status": "pending",
+            "suite": "development"
+          }
+        ],
+        "best_attempt": null,
+        "contract_hash": "0f8aa0442929f24c34b9a110872bef0efe816691a743d3f031b99c48ca088508",
+        "last_decision": "baseline pending",
+        "status": "active",
+        "used_case_runs": 8
+      },
+      "before_files": {
+        ".lock": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "attempts/000-baseline/candidate.py": "0720b56482a445967ff2a98ec5cfa668c858b8a6f662da74a55c21b257393efc",
+        "attempts/000-baseline/cases.jsonl": "71f1d8c50f7ce2b3ca512c6f2703faa4e30d5c63237824e3a73e7a573cf4f7b2",
+        "attempts/000-baseline/manifest.json": "8c14c9017e9eea5a52e52eb9b0320363625a7ef446d8a365dd5457892e3cc43e",
+        "attempts/000-baseline/summary.json": "a524495cf7b47f30b3ba3645ffd428313ba06ed8b07c6379403fa37f34b20793",
+        "attempts/000-baseline/traces.jsonl": "1e26368899fb4fb83ebaa147662ea87f19bdf185aa3f9390c50b832e9bb89fac",
+        "contract.json": "9c78dd412eb735bf4f8690ce0560924b9d755ebfe13d1b4a615af70a9848c386",
+        "state.json": "ca15ad7da8b39c4040411a41c5afe997cb348608b7e81120bb896108baa3f6c5"
+      },
+      "boundary": "summary.published",
+      "label": "summary",
+      "process": {
+        "exit": -9,
+        "pid": 41506,
+        "stderr": "",
+        "stdout": "",
+        "supervisor_timeout": false
+      }
+    },
+    {
+      "action": "kill",
+      "activation_count": 1,
+      "actual_cases": 8,
+      "after": {
+        "attempts": [
+          {
+            "candidate_hash": "0720b56482a445967ff2a98ec5cfa668c858b8a6f662da74a55c21b257393efc",
+            "evidence_hashes": {
+              "candidate.py": "0720b56482a445967ff2a98ec5cfa668c858b8a6f662da74a55c21b257393efc",
+              "cases.jsonl": "71f1d8c50f7ce2b3ca512c6f2703faa4e30d5c63237824e3a73e7a573cf4f7b2",
+              "manifest.json": "8c14c9017e9eea5a52e52eb9b0320363625a7ef446d8a365dd5457892e3cc43e",
+              "summary.json": "a524495cf7b47f30b3ba3645ffd428313ba06ed8b07c6379403fa37f34b20793",
+              "traces.jsonl": "1e26368899fb4fb83ebaa147662ea87f19bdf185aa3f9390c50b832e9bb89fac"
+            },
+            "executed_case_runs": 8,
+            "hypothesis": "measure original",
+            "id": 0,
+            "parent": null,
+            "path": "attempts/000-baseline",
+            "reserved_case_runs": 8,
+            "role": "baseline",
+            "status": "complete",
+            "suite": "development"
+          }
+        ],
+        "best_attempt": 0,
+        "contract_hash": "0f8aa0442929f24c34b9a110872bef0efe816691a743d3f031b99c48ca088508",
+        "last_decision": "baseline measured; recovered completed evidence",
+        "status": "active",
+        "used_case_runs": 8
+      },
+      "after_files": {
+        ".lock": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "attempts/000-baseline/candidate.py": "0720b56482a445967ff2a98ec5cfa668c858b8a6f662da74a55c21b257393efc",
+        "attempts/000-baseline/cases.jsonl": "71f1d8c50f7ce2b3ca512c6f2703faa4e30d5c63237824e3a73e7a573cf4f7b2",
+        "attempts/000-baseline/manifest.json": "8c14c9017e9eea5a52e52eb9b0320363625a7ef446d8a365dd5457892e3cc43e",
+        "attempts/000-baseline/summary.json": "a524495cf7b47f30b3ba3645ffd428313ba06ed8b07c6379403fa37f34b20793",
+        "attempts/000-baseline/traces.jsonl": "1e26368899fb4fb83ebaa147662ea87f19bdf185aa3f9390c50b832e9bb89fac",
+        "contract.json": "9c78dd412eb735bf4f8690ce0560924b9d755ebfe13d1b4a615af70a9848c386",
+        "state.json": "ba41ffa065f0e0a25040d32d16e3a18a6f8f37ab58a5c5a3b8399f65419a78da"
+      },
+      "before": {
+        "attempts": [
+          {
+            "candidate_hash": "0720b56482a445967ff2a98ec5cfa668c858b8a6f662da74a55c21b257393efc",
+            "evidence_hashes": {
+              "candidate.py": "0720b56482a445967ff2a98ec5cfa668c858b8a6f662da74a55c21b257393efc",
+              "cases.jsonl": "71f1d8c50f7ce2b3ca512c6f2703faa4e30d5c63237824e3a73e7a573cf4f7b2",
+              "manifest.json": "8c14c9017e9eea5a52e52eb9b0320363625a7ef446d8a365dd5457892e3cc43e",
+              "summary.json": "a524495cf7b47f30b3ba3645ffd428313ba06ed8b07c6379403fa37f34b20793",
+              "traces.jsonl": "1e26368899fb4fb83ebaa147662ea87f19bdf185aa3f9390c50b832e9bb89fac"
+            },
+            "executed_case_runs": 8,
+            "hypothesis": "measure original",
+            "id": 0,
+            "parent": null,
+            "path": "attempts/000-baseline",
+            "reserved_case_runs": 8,
+            "role": "baseline",
+            "status": "complete",
+            "suite": "development"
+          }
+        ],
+        "best_attempt": null,
+        "contract_hash": "0f8aa0442929f24c34b9a110872bef0efe816691a743d3f031b99c48ca088508",
+        "last_decision": "baseline pending",
+        "status": "active",
+        "used_case_runs": 8
+      },
+      "before_files": {
+        ".lock": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "attempts/000-baseline/candidate.py": "0720b56482a445967ff2a98ec5cfa668c858b8a6f662da74a55c21b257393efc",
+        "attempts/000-baseline/cases.jsonl": "71f1d8c50f7ce2b3ca512c6f2703faa4e30d5c63237824e3a73e7a573cf4f7b2",
+        "attempts/000-baseline/manifest.json": "8c14c9017e9eea5a52e52eb9b0320363625a7ef446d8a365dd5457892e3cc43e",
+        "attempts/000-baseline/summary.json": "a524495cf7b47f30b3ba3645ffd428313ba06ed8b07c6379403fa37f34b20793",
+        "attempts/000-baseline/traces.jsonl": "1e26368899fb4fb83ebaa147662ea87f19bdf185aa3f9390c50b832e9bb89fac",
+        "contract.json": "9c78dd412eb735bf4f8690ce0560924b9d755ebfe13d1b4a615af70a9848c386",
+        "state.json": "80d013bd8930dde990379d925ce4298612884dc041528d12b4797fd194d55344"
+      },
+      "boundary": "completion.published",
+      "label": "completion",
+      "process": {
+        "exit": -9,
+        "pid": 41517,
+        "stderr": "",
+        "stdout": "",
+        "supervisor_timeout": false
+      }
+    }
+  ],
+  "process_interruptions": 3,
+  "provider_calls": 0,
+  "scope": "Operator process/API faults; not dependency outages, power loss or DSPy training labels",
+  "source_hashes": {
+    "evals/cases.jsonl": "71f1d8c50f7ce2b3ca512c6f2703faa4e30d5c63237824e3a73e7a573cf4f7b2",
+    "evals/rubric.md": "cb133b50752a48098d463a562d7553ec5a5b29bfef1825b4e393e7de33d66dd8",
+    "evals/spec.json": "eb6f21266223c16708a4ed3bb4f401f3a2adb3355b9e176152665d70a665d8f6",
+    "evaluate.py": "fd1fdaa4b090852f8d0a6462303411bea5488dcc7f7a08895146e32d52b0430d"
+  },
+  "status": "passed",
+  "storage": [
+    {
+      "action": "noop",
+      "events": [],
+      "observation": {
+        "attempts": [
+          {
+            "after": "{\n  \"revision\": 2\n}\n",
+            "attempt": 1,
+            "before": "{\n  \"revision\": 1\n}\n",
+            "error": null
+          },
+          {
+            "after": "{\n  \"revision\": 2\n}\n",
+            "attempt": 2,
+            "before": "{\n  \"revision\": 2\n}\n",
+            "error": null
+          }
+        ],
+        "temporary_files": []
+      },
+      "operation": "fsync",
+      "process": {
+        "exit": 0,
+        "pid": 41528,
+        "stderr": "",
+        "stdout": "",
+        "supervisor_timeout": false
+      }
+    },
+    {
+      "action": "once",
+      "events": [
+        {
+          "action": "raise-OSError",
+          "attempt": 1,
+          "errno": 28,
+          "occurrence": 1,
+          "operation": "fsync",
+          "pid": 41529,
+          "source_sha256": "fd1fdaa4b090852f8d0a6462303411bea5488dcc7f7a08895146e32d52b0430d"
+        }
+      ],
+      "observation": {
+        "attempts": [
+          {
+            "after": "{\n  \"revision\": 1\n}\n",
+            "attempt": 1,
+            "before": "{\n  \"revision\": 1\n}\n",
+            "error": {
+              "errno": 28,
+              "type": "OSError"
+            }
+          },
+          {
+            "after": "{\n  \"revision\": 2\n}\n",
+            "attempt": 2,
+            "before": "{\n  \"revision\": 1\n}\n",
+            "error": null
+          }
+        ],
+        "temporary_files": []
+      },
+      "operation": "fsync",
+      "process": {
+        "exit": 0,
+        "pid": 41529,
+        "stderr": "",
+        "stdout": "",
+        "supervisor_timeout": false
+      }
+    },
+    {
+      "action": "persistent",
+      "events": [
+        {
+          "action": "raise-OSError",
+          "attempt": 1,
+          "errno": 28,
+          "occurrence": 1,
+          "operation": "fsync",
+          "pid": 41530,
+          "source_sha256": "fd1fdaa4b090852f8d0a6462303411bea5488dcc7f7a08895146e32d52b0430d"
+        },
+        {
+          "action": "raise-OSError",
+          "attempt": 2,
+          "errno": 28,
+          "occurrence": 2,
+          "operation": "fsync",
+          "pid": 41530,
+          "source_sha256": "fd1fdaa4b090852f8d0a6462303411bea5488dcc7f7a08895146e32d52b0430d"
+        }
+      ],
+      "observation": {
+        "attempts": [
+          {
+            "after": "{\n  \"revision\": 1\n}\n",
+            "attempt": 1,
+            "before": "{\n  \"revision\": 1\n}\n",
+            "error": {
+              "errno": 28,
+              "type": "OSError"
+            }
+          },
+          {
+            "after": "{\n  \"revision\": 1\n}\n",
+            "attempt": 2,
+            "before": "{\n  \"revision\": 1\n}\n",
+            "error": {
+              "errno": 28,
+              "type": "OSError"
+            }
+          }
+        ],
+        "temporary_files": []
+      },
+      "operation": "fsync",
+      "process": {
+        "exit": 0,
+        "pid": 41530,
+        "stderr": "",
+        "stdout": "",
+        "supervisor_timeout": false
+      }
+    },
+    {
+      "action": "noop",
+      "events": [],
+      "observation": {
+        "attempts": [
+          {
+            "after": "{\n  \"revision\": 2\n}\n",
+            "attempt": 1,
+            "before": "{\n  \"revision\": 1\n}\n",
+            "error": null
+          },
+          {
+            "after": "{\n  \"revision\": 2\n}\n",
+            "attempt": 2,
+            "before": "{\n  \"revision\": 2\n}\n",
+            "error": null
+          }
+        ],
+        "temporary_files": []
+      },
+      "operation": "replace",
+      "process": {
+        "exit": 0,
+        "pid": 41531,
+        "stderr": "",
+        "stdout": "",
+        "supervisor_timeout": false
+      }
+    },
+    {
+      "action": "once",
+      "events": [
+        {
+          "action": "raise-OSError",
+          "attempt": 1,
+          "errno": 28,
+          "occurrence": 1,
+          "operation": "replace",
+          "pid": 41532,
+          "source_sha256": "fd1fdaa4b090852f8d0a6462303411bea5488dcc7f7a08895146e32d52b0430d"
+        }
+      ],
+      "observation": {
+        "attempts": [
+          {
+            "after": "{\n  \"revision\": 1\n}\n",
+            "attempt": 1,
+            "before": "{\n  \"revision\": 1\n}\n",
+            "error": {
+              "errno": 28,
+              "type": "OSError"
+            }
+          },
+          {
+            "after": "{\n  \"revision\": 2\n}\n",
+            "attempt": 2,
+            "before": "{\n  \"revision\": 1\n}\n",
+            "error": null
+          }
+        ],
+        "temporary_files": []
+      },
+      "operation": "replace",
+      "process": {
+        "exit": 0,
+        "pid": 41532,
+        "stderr": "",
+        "stdout": "",
+        "supervisor_timeout": false
+      }
+    },
+    {
+      "action": "persistent",
+      "events": [
+        {
+          "action": "raise-OSError",
+          "attempt": 1,
+          "errno": 28,
+          "occurrence": 1,
+          "operation": "replace",
+          "pid": 41533,
+          "source_sha256": "fd1fdaa4b090852f8d0a6462303411bea5488dcc7f7a08895146e32d52b0430d"
+        },
+        {
+          "action": "raise-OSError",
+          "attempt": 2,
+          "errno": 28,
+          "occurrence": 2,
+          "operation": "replace",
+          "pid": 41533,
+          "source_sha256": "fd1fdaa4b090852f8d0a6462303411bea5488dcc7f7a08895146e32d52b0430d"
+        }
+      ],
+      "observation": {
+        "attempts": [
+          {
+            "after": "{\n  \"revision\": 1\n}\n",
+            "attempt": 1,
+            "before": "{\n  \"revision\": 1\n}\n",
+            "error": {
+              "errno": 28,
+              "type": "OSError"
+            }
+          },
+          {
+            "after": "{\n  \"revision\": 1\n}\n",
+            "attempt": 2,
+            "before": "{\n  \"revision\": 1\n}\n",
+            "error": {
+              "errno": 28,
+              "type": "OSError"
+            }
+          }
+        ],
+        "temporary_files": []
+      },
+      "operation": "replace",
+      "process": {
+        "exit": 0,
+        "pid": 41533,
+        "stderr": "",
+        "stdout": "",
+        "supervisor_timeout": false
+      }
+    }
+  ],
+  "subprocess": [
+    {
+      "checks": {
+        "action_matches_mutation": true,
+        "allowed_action": true,
+        "new_ticket_fields": true,
+        "new_ticket_membership": true,
+        "preserved_other_state": true,
+        "preserved_tickets": true,
+        "requested_account": true,
+        "ticket_delta": true,
+        "unique_ticket_ids": true
+      },
+      "error": null,
+      "exit_code": 0,
+      "family": "subprocess",
+      "id": "subprocess:healthy",
+      "input": {
+        "request": {
+          "account": null,
+          "accounts": [
+            "acct-a"
+          ],
+          "text": "Please create a VPN support ticket."
+        },
+        "state": {
+          "tickets": []
+        }
+      },
+      "outcome": "PASS",
+      "output": {
+        "account": "acct-a",
+        "action": "create_ticket",
+        "note": "Created",
+        "state": {
+          "tickets": [
+            {
+              "account": "acct-a",
+              "id": "new",
+              "issue": "vpn",
+              "status": "open"
+            }
+          ]
+        }
+      },
+      "stderr": "",
+      "stdout": "{\"action\": \"create_ticket\", \"account\": \"acct-a\", \"state\": {\"tickets\": [{\"id\": \"new\", \"account\": \"acct-a\", \"status\": \"open\", \"issue\": \"vpn\"}]}, \"note\": \"Created\"}\n",
+      "suite": "development"
+    },
+    {
+      "checks": {},
+      "error": "candidate timeout",
+      "exit_code": null,
+      "family": "subprocess",
+      "id": "subprocess:deadline",
+      "input": {
+        "request": {
+          "account": null,
+          "accounts": [
+            "acct-a"
+          ],
+          "text": "Please create a VPN support ticket."
+        },
+        "state": {
+          "tickets": []
+        }
+      },
+      "outcome": "ERROR",
+      "output": null,
+      "stderr": "",
+      "stdout": "",
+      "suite": "development"
+    },
+    {
+      "checks": {},
+      "error": "candidate timeout",
+      "exit_code": null,
+      "family": "subprocess",
+      "id": "subprocess:prefix-deadline",
+      "input": {
+        "request": {
+          "account": null,
+          "accounts": [
+            "acct-a"
+          ],
+          "text": "Please create a VPN support ticket."
+        },
+        "state": {
+          "tickets": []
+        }
+      },
+      "outcome": "ERROR",
+      "output": null,
+      "stderr": "",
+      "stdout": "{\"action\":",
+      "suite": "development"
+    },
+    {
+      "checks": {},
+      "error": "candidate exited unsuccessfully",
+      "exit_code": 2,
+      "family": "subprocess",
+      "id": "subprocess:valid-nonzero",
+      "input": {
+        "request": {
+          "account": null,
+          "accounts": [
+            "acct-a"
+          ],
+          "text": "Please create a VPN support ticket."
+        },
+        "state": {
+          "tickets": []
+        }
+      },
+      "outcome": "ERROR",
+      "output": null,
+      "stderr": "",
+      "stdout": "{\"action\": \"create_ticket\", \"account\": \"acct-a\", \"state\": {\"tickets\": [{\"id\": \"new\", \"account\": \"acct-a\", \"status\": \"open\", \"issue\": \"vpn\"}]}, \"note\": \"Created\"}\n",
+      "suite": "development"
+    },
+    {
+      "checks": {},
+      "error": "Expecting value: line 1 column 1 (char 0)",
+      "exit_code": 0,
+      "family": "subprocess",
+      "id": "subprocess:malformed",
+      "input": {
+        "request": {
+          "account": null,
+          "accounts": [
+            "acct-a"
+          ],
+          "text": "Please create a VPN support ticket."
+        },
+        "state": {
+          "tickets": []
+        }
+      },
+      "outcome": "ERROR",
+      "output": null,
+      "stderr": "",
+      "stdout": "not JSON\n",
+      "suite": "development"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "clean_noop_output_equality": true,
+  "status_no_new_evidence_files": true,
+  "status_nonledger_evidence_unchanged": true,
+  "all_reservations_unchanged": true,
+  "score_membership_witnesses_checked": true
+}

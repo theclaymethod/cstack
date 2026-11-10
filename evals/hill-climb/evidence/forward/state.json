@@ -1,0 +1,112 @@
+{
+  "attempts": [
+    {
+      "candidate_hash": "0720b56482a445967ff2a98ec5cfa668c858b8a6f662da74a55c21b257393efc",
+      "evidence_hashes": {
+        "candidate.py": "0720b56482a445967ff2a98ec5cfa668c858b8a6f662da74a55c21b257393efc",
+        "manifest.json": "71ed504c5e275dde87c19a6967913571b1747595b7febd9282f11bce75998aff",
+        "summary.json": "03fa83b4d4aae8322ca0112cdedc641eec20489abd413ea7c4903543e1d539e1",
+        "traces.jsonl": "1e26368899fb4fb83ebaa147662ea87f19bdf185aa3f9390c50b832e9bb89fac"
+      },
+      "executed_case_runs": 8,
+      "hypothesis": "measure original",
+      "id": 0,
+      "parent": null,
+      "path": "attempts/000-baseline",
+      "reserved_case_runs": 8,
+      "role": "baseline",
+      "status": "complete",
+      "suite": "development"
+    },
+    {
+      "candidate_hash": "3f8e14f172a143b6c938bd5b46401f944d98f16c2206a52586213e89497eb69f",
+      "comparison": {
+        "admissible": true,
+        "baseline_score": 0.5,
+        "candidate_score": 1.0,
+        "case_ids": [
+          "dev-howto",
+          "dev-generic",
+          "dev-explicit",
+          "dev-duplicate",
+          "dev-ambiguous",
+          "dev-password",
+          "dev-closed",
+          "dev-unrelated"
+        ],
+        "errors": 0,
+        "gains": [
+          "dev-howto",
+          "dev-generic",
+          "dev-duplicate",
+          "dev-ambiguous"
+        ],
+        "regressions": [],
+        "strict_improvement": true
+      },
+      "decision": "retain improvement",
+      "evidence_hashes": {
+        "candidate.py": "3f8e14f172a143b6c938bd5b46401f944d98f16c2206a52586213e89497eb69f",
+        "manifest.json": "fc032ef85f8161a7ed1365ccc138ab5746ea79f592738375c56fcb3bf201a03d",
+        "summary.json": "37db0e3a0613aa198ee1648128a1e860047de22b9357cd737f46f3b32a4ef13d",
+        "traces.jsonl": "ead30d242f7d22ae806d51799f634fc99c0a8ed54e1b7263426e908c457c9c2e"
+      },
+      "executed_case_runs": 8,
+      "hypothesis": "VPN mentions alone currently create tickets; require bounded positive authorization and honor prohibitions, validate account selection, and avoid matching open VPN duplicates. Expect dev-howto, dev-generic, dev-duplicate and dev-ambiguous to pass while preserving every original pass and state.",
+      "id": 1,
+      "parent": 0,
+      "path": "attempts/001-proposal",
+      "reserved_case_runs": 8,
+      "role": "proposal",
+      "status": "complete",
+      "suite": "development"
+    },
+    {
+      "candidate_hash": "0720b56482a445967ff2a98ec5cfa668c858b8a6f662da74a55c21b257393efc",
+      "evidence_hashes": {
+        "candidate.py": "0720b56482a445967ff2a98ec5cfa668c858b8a6f662da74a55c21b257393efc",
+        "manifest.json": "60589a7a7473bcc27e9bb7ba69b80c4b778dd401f8abb9e61b83881b9ddbcb7a",
+        "summary.json": "8a6ea6e191cf521e5b3e96b926e1ee64938e95c71b035e3ad7da95c29e00085d",
+        "traces.jsonl": "6890994256c0c4f1ff861452b57a2f52b7dd944ff36c61beebe1488adfb96df6"
+      },
+      "executed_case_runs": 4,
+      "hypothesis": "confirm frozen selected artifacts",
+      "id": 2,
+      "parent": 1,
+      "path": "attempts/002-confirm-baseline",
+      "reserved_case_runs": 4,
+      "role": "confirm-baseline",
+      "status": "complete",
+      "suite": "confirmation"
+    },
+    {
+      "candidate_hash": "3f8e14f172a143b6c938bd5b46401f944d98f16c2206a52586213e89497eb69f",
+      "evidence_hashes": {
+        "candidate.py": "3f8e14f172a143b6c938bd5b46401f944d98f16c2206a52586213e89497eb69f",
+        "manifest.json": "0d0a387861a782fde12231ddadd7b54ffb4926c942e6c6e95797a7e22ccce7cc",
+        "summary.json": "d7351427d0a150a4d80c79961c6b3f1a3c5ddee1331638e439f674e67c3c8851",
+        "traces.jsonl": "a4d78c99bb3e17743bdee621aa2251dc28c0d449e1875d6c47c3f23862d9b262"
+      },
+      "executed_case_runs": 4,
+      "hypothesis": "confirm frozen selected artifacts",
+      "id": 3,
+      "parent": 1,
+      "path": "attempts/003-confirm-incumbent",
+      "reserved_case_runs": 4,
+      "role": "confirm-incumbent",
+      "status": "complete",
+      "suite": "confirmation"
+    }
+  ],
+  "best_attempt": 1,
+  "contract_hash": "7e48608067e240e45834f7d584f0cbe11f00d0965fad18d5389d0d2ecddbea93",
+  "deliverable_hashes": {
+    "best.diff": "409352581af372e3f98f706750b53477c9184e75f80326ea6d1fa3532f57b819",
+    "best.py": "3f8e14f172a143b6c938bd5b46401f944d98f16c2206a52586213e89497eb69f",
+    "selection.json": "fb96ccb3f9274b6fdc70b7f8ee1a45d792ebf2b3ea41c94a69a7ad4e61b16859"
+  },
+  "last_decision": "confirmed incumbent",
+  "selected_attempt": 1,
+  "status": "finished",
+  "used_case_runs": 24
+}

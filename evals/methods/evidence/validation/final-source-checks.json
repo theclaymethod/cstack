@@ -1,0 +1,13 @@
+{
+  "final_method_run": "../methods/results.json",
+  "native_cases": 140,
+  "sdk_status": "passed",
+  "method_tests_followup": {
+    "observed_exit": 0,
+    "tests": 7,
+    "source": "Codex tool execution after source-label fix"
+  },
+  "workspace_environment_guard": "workspace-environment-guard.json",
+  "generator_hash_matches_all_records": true,
+  "new_skill_content": "Markdown references only"
+}

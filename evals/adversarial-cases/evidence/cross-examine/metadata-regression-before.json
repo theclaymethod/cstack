@@ -1,0 +1,13 @@
+{
+  "command": [
+    "/Users/clayton/.local/bin/python3",
+    "-m",
+    "unittest",
+    "test_campaign.CampaignTests.test_ticket_metadata_is_accepted_preserved_and_not_silently_changed",
+    "-v"
+  ],
+  "cwd": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/adversarial-audit/regression-before/tests",
+  "exit": 1,
+  "stdout": "",
+  "stderr": "test_ticket_metadata_is_accepted_preserved_and_not_silently_changed (test_campaign.CampaignTests.test_ticket_metadata_is_accepted_preserved_and_not_silently_changed) ... FAIL\n\n======================================================================\nFAIL: test_ticket_metadata_is_accepted_preserved_and_not_silently_changed (test_campaign.CampaignTests.test_ticket_metadata_is_accepted_preserved_and_not_silently_changed)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/adversarial-audit/regression-before/tests/test_campaign.py\", line 65, in test_ticket_metadata_is_accepted_preserved_and_not_silently_changed\n    self.assertEqual(summary[\"counts\"], {\"PASS\": 8, \"FAIL\": 0, \"ERROR\": 0, \"UNKNOWN\": 0})\nAssertionError: {'PASS': 5, 'FAIL': 0, 'ERROR': 3, 'UNKNOWN': 0} != {'PASS': 8, 'FAIL': 0, 'ERROR': 0, 'UNKNOWN': 0}\n- {'ERROR': 3, 'FAIL': 0, 'PASS': 5, 'UNKNOWN': 0}\n?           ^                     ^\n\n+ {'ERROR': 0, 'FAIL': 0, 'PASS': 8, 'UNKNOWN': 0}\n?           ^                     ^\n\n\n----------------------------------------------------------------------\nRan 1 test in 0.176s\n\nFAILED (failures=1)\n"
+}

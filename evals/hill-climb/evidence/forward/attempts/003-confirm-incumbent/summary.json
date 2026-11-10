@@ -1,0 +1,90 @@
+{
+  "candidate_hash": "3f8e14f172a143b6c938bd5b46401f944d98f16c2206a52586213e89497eb69f",
+  "case_ids": [
+    "conf-howto",
+    "conf-targeted",
+    "conf-duplicate",
+    "conf-preservation"
+  ],
+  "complete": true,
+  "counts": {
+    "ERROR": 0,
+    "FAIL": 0,
+    "PASS": 4,
+    "UNKNOWN": 0
+  },
+  "executed_count": 4,
+  "identity_hash": "cde32d3c2015c3f0a1197310bf729e7ce202afca7037c47b8126bf45c83793c1",
+  "results": [
+    {
+      "checks": {
+        "action_matches_mutation": true,
+        "allowed_action": true,
+        "new_ticket_fields": true,
+        "new_ticket_membership": true,
+        "preserved_other_state": true,
+        "preserved_tickets": true,
+        "requested_account": true,
+        "ticket_delta": true,
+        "unique_ticket_ids": true
+      },
+      "error": null,
+      "id": "conf-howto",
+      "outcome": "PASS",
+      "suite": "confirmation"
+    },
+    {
+      "checks": {
+        "action_matches_mutation": true,
+        "allowed_action": true,
+        "new_ticket_fields": true,
+        "new_ticket_membership": true,
+        "preserved_other_state": true,
+        "preserved_tickets": true,
+        "requested_account": true,
+        "ticket_delta": true,
+        "unique_ticket_ids": true
+      },
+      "error": null,
+      "id": "conf-targeted",
+      "outcome": "PASS",
+      "suite": "confirmation"
+    },
+    {
+      "checks": {
+        "action_matches_mutation": true,
+        "allowed_action": true,
+        "new_ticket_fields": true,
+        "new_ticket_membership": true,
+        "preserved_other_state": true,
+        "preserved_tickets": true,
+        "requested_account": true,
+        "ticket_delta": true,
+        "unique_ticket_ids": true
+      },
+      "error": null,
+      "id": "conf-duplicate",
+      "outcome": "PASS",
+      "suite": "confirmation"
+    },
+    {
+      "checks": {
+        "action_matches_mutation": true,
+        "allowed_action": true,
+        "new_ticket_fields": true,
+        "new_ticket_membership": true,
+        "preserved_other_state": true,
+        "preserved_tickets": true,
+        "requested_account": true,
+        "ticket_delta": true,
+        "unique_ticket_ids": true
+      },
+      "error": null,
+      "id": "conf-preservation",
+      "outcome": "PASS",
+      "suite": "confirmation"
+    }
+  ],
+  "score": 1.0,
+  "selected_count": 4
+}

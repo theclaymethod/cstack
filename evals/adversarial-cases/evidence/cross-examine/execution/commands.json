@@ -1,0 +1,515 @@
+[
+  {
+    "command": [
+      "/Users/clayton/.local/bin/python3",
+      "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/adversarial-audit/attack-execution/workspace/evaluate.py",
+      "run",
+      "--candidate",
+      "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/adversarial-audit/attack-execution/workspace/eval-runs/attack-execution/evidence/candidates/alternative.py",
+      "--suite",
+      "development",
+      "--cases",
+      "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/adversarial-audit/attack-execution/workspace/eval-runs/attack-execution/evidence/cases.jsonl",
+      "--out",
+      "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/adversarial-audit/attack-execution/workspace/eval-runs/attack-execution/evidence/native-alternative"
+    ],
+    "exit_code": 0,
+    "label": "candidate-alternative",
+    "pid": 34890,
+    "stderr": "",
+    "stdout": "{\n  \"candidate_hash\": \"49745dd831effb7d1e4043ab3c15ea32786059c7fcae4ed5c7ba01e9f8c10ad3\",\n  \"case_ids\": [\n    \"exec-create-context\",\n    \"exec-create-reduced\"\n  ],\n  \"complete\": true,\n  \"counts\": {\n    \"ERROR\": 0,\n    \"FAIL\": 0,\n    \"PASS\": 2,\n    \"UNKNOWN\": 0\n  },\n  \"executed_count\": 2,\n  \"identity_hash\": \"aa383e5d477795447070cbf3fe5edd0e0a397006e970bef7ed96170f1b8788e8\",\n  \"results\": [\n    {\n      \"checks\": {\n        \"action_matches_mutation\": true,\n        \"allowed_action\": true,\n        \"new_ticket_fields\": true,\n        \"new_ticket_membership\": true,\n        \"preserved_other_state\": true,\n        \"preserved_tickets\": true,\n        \"requested_account\": true,\n        \"ticket_delta\": true,\n        \"unique_ticket_ids\": true\n      },\n      \"error\": null,\n      \"id\": \"exec-create-context\",\n      \"outcome\": \"PASS\",\n      \"suite\": \"development\"\n    },\n    {\n      \"checks\": {\n        \"action_matches_mutation\": true,\n        \"allowed_action\": true,\n        \"new_ticket_fields\": true,\n        \"new_ticket_membership\": true,\n        \"preserved_other_state\": true,\n        \"preserved_tickets\": true,\n        \"requested_account\": true,\n        \"ticket_delta\": true,\n        \"unique_ticket_ids\": true\n      },\n      \"error\": null,\n      \"id\": \"exec-create-reduced\",\n      \"outcome\": \"PASS\",\n      \"suite\": \"development\"\n    }\n  ],\n  \"score\": 1.0,\n  \"selected_count\": 2\n}\n"
+  },
+  {
+    "command": [
+      "/Users/clayton/.local/bin/python3",
+      "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/adversarial-audit/attack-execution/workspace/evaluate.py",
+      "run",
+      "--candidate",
+      "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/adversarial-audit/attack-execution/workspace/eval-runs/attack-execution/evidence/candidates/clean.py",
+      "--suite",
+      "development",
+      "--cases",
+      "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/adversarial-audit/attack-execution/workspace/eval-runs/attack-execution/evidence/cases.jsonl",
+      "--out",
+      "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/adversarial-audit/attack-execution/workspace/eval-runs/attack-execution/evidence/native-clean"
+    ],
+    "exit_code": 0,
+    "label": "candidate-clean",
+    "pid": 34885,
+    "stderr": "",
+    "stdout": "{\n  \"candidate_hash\": \"d8cc818e83af4453a44e9025484ae6e23ecc7cbcf8c9e621efa56c21a179a1c3\",\n  \"case_ids\": [\n    \"exec-create-context\",\n    \"exec-create-reduced\"\n  ],\n  \"complete\": true,\n  \"counts\": {\n    \"ERROR\": 0,\n    \"FAIL\": 0,\n    \"PASS\": 2,\n    \"UNKNOWN\": 0\n  },\n  \"executed_count\": 2,\n  \"identity_hash\": \"aa383e5d477795447070cbf3fe5edd0e0a397006e970bef7ed96170f1b8788e8\",\n  \"results\": [\n    {\n      \"checks\": {\n        \"action_matches_mutation\": true,\n        \"allowed_action\": true,\n        \"new_ticket_fields\": true,\n        \"new_ticket_membership\": true,\n        \"preserved_other_state\": true,\n        \"preserved_tickets\": true,\n        \"requested_account\": true,\n        \"ticket_delta\": true,\n        \"unique_ticket_ids\": true\n      },\n      \"error\": null,\n      \"id\": \"exec-create-context\",\n      \"outcome\": \"PASS\",\n      \"suite\": \"development\"\n    },\n    {\n      \"checks\": {\n        \"action_matches_mutation\": true,\n        \"allowed_action\": true,\n        \"new_ticket_fields\": true,\n        \"new_ticket_membership\": true,\n        \"preserved_other_state\": true,\n        \"preserved_tickets\": true,\n        \"requested_account\": true,\n        \"ticket_delta\": true,\n        \"unique_ticket_ids\": true\n      },\n      \"error\": null,\n      \"id\": \"exec-create-reduced\",\n      \"outcome\": \"PASS\",\n      \"suite\": \"development\"\n    }\n  ],\n  \"score\": 1.0,\n  \"selected_count\": 2\n}\n"
+  },
+  {
+    "command": [
+      "/Users/clayton/.local/bin/python3",
+      "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/adversarial-audit/attack-execution/workspace/evaluate.py",
+      "run",
+      "--candidate",
+      "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/adversarial-audit/attack-execution/workspace/eval-runs/attack-execution/evidence/candidates/false-claim.py",
+      "--suite",
+      "development",
+      "--cases",
+      "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/adversarial-audit/attack-execution/workspace/eval-runs/attack-execution/evidence/cases.jsonl",
+      "--out",
+      "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/adversarial-audit/attack-execution/workspace/eval-runs/attack-execution/evidence/native-false-claim"
+    ],
+    "exit_code": 0,
+    "label": "candidate-false-claim",
+    "pid": 34900,
+    "stderr": "",
+    "stdout": "{\n  \"candidate_hash\": \"e7d350061964404ce4b73305873ef0ed6bbb4fea9812ea3087e9cf74336f27c6\",\n  \"case_ids\": [\n    \"exec-create-context\",\n    \"exec-create-reduced\"\n  ],\n  \"complete\": true,\n  \"counts\": {\n    \"ERROR\": 0,\n    \"FAIL\": 2,\n    \"PASS\": 0,\n    \"UNKNOWN\": 0\n  },\n  \"executed_count\": 2,\n  \"identity_hash\": \"aa383e5d477795447070cbf3fe5edd0e0a397006e970bef7ed96170f1b8788e8\",\n  \"results\": [\n    {\n      \"checks\": {\n        \"action_matches_mutation\": false,\n        \"allowed_action\": true,\n        \"new_ticket_fields\": true,\n        \"new_ticket_membership\": false,\n        \"preserved_other_state\": true,\n        \"preserved_tickets\": true,\n        \"requested_account\": true,\n        \"ticket_delta\": false,\n        \"unique_ticket_ids\": true\n      },\n      \"error\": null,\n      \"id\": \"exec-create-context\",\n      \"outcome\": \"FAIL\",\n      \"suite\": \"development\"\n    },\n    {\n      \"checks\": {\n        \"action_matches_mutation\": false,\n        \"allowed_action\": true,\n        \"new_ticket_fields\": true,\n        \"new_ticket_membership\": false,\n        \"preserved_other_state\": true,\n        \"preserved_tickets\": true,\n        \"requested_account\": true,\n        \"ticket_delta\": false,\n        \"unique_ticket_ids\": true\n      },\n      \"error\": null,\n      \"id\": \"exec-create-reduced\",\n      \"outcome\": \"FAIL\",\n      \"suite\": \"development\"\n    }\n  ],\n  \"score\": 0.0,\n  \"selected_count\": 2\n}\n"
+  },
+  {
+    "command": [
+      "/Users/clayton/.local/bin/python3",
+      "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/adversarial-audit/attack-execution/workspace/evaluate.py",
+      "run",
+      "--candidate",
+      "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/adversarial-audit/attack-execution/workspace/eval-runs/attack-execution/evidence/candidates/malformed.py",
+      "--suite",
+      "development",
+      "--cases",
+      "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/adversarial-audit/attack-execution/workspace/eval-runs/attack-execution/evidence/cases.jsonl",
+      "--out",
+      "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/adversarial-audit/attack-execution/workspace/eval-runs/attack-execution/evidence/native-malformed"
+    ],
+    "exit_code": 0,
+    "label": "candidate-malformed",
+    "pid": 34905,
+    "stderr": "",
+    "stdout": "{\n  \"candidate_hash\": \"7441d2b8d02a16255ada6e7864b0dee465baa2e9a757aadd773257ee9458601c\",\n  \"case_ids\": [\n    \"exec-create-context\",\n    \"exec-create-reduced\"\n  ],\n  \"complete\": true,\n  \"counts\": {\n    \"ERROR\": 2,\n    \"FAIL\": 0,\n    \"PASS\": 0,\n    \"UNKNOWN\": 0\n  },\n  \"executed_count\": 2,\n  \"identity_hash\": \"aa383e5d477795447070cbf3fe5edd0e0a397006e970bef7ed96170f1b8788e8\",\n  \"results\": [\n    {\n      \"checks\": {},\n      \"error\": \"Expecting property name enclosed in double quotes: line 1 column 2 (char 1)\",\n      \"id\": \"exec-create-context\",\n      \"outcome\": \"ERROR\",\n      \"suite\": \"development\"\n    },\n    {\n      \"checks\": {},\n      \"error\": \"Expecting property name enclosed in double quotes: line 1 column 2 (char 1)\",\n      \"id\": \"exec-create-reduced\",\n      \"outcome\": \"ERROR\",\n      \"suite\": \"development\"\n    }\n  ],\n  \"score\": 0.0,\n  \"selected_count\": 2\n}\n"
+  },
+  {
+    "command": [
+      "/Users/clayton/.local/bin/python3",
+      "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/adversarial-audit/attack-execution/workspace/evaluate.py",
+      "run",
+      "--candidate",
+      "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/adversarial-audit/attack-execution/workspace/eval-runs/attack-execution/evidence/candidates/reset-probe-r2.py",
+      "--suite",
+      "development",
+      "--cases",
+      "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/adversarial-audit/attack-execution/workspace/eval-runs/attack-execution/evidence/cases.jsonl",
+      "--out",
+      "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/adversarial-audit/attack-execution/workspace/eval-runs/attack-execution/evidence/native-reset-probe-r2"
+    ],
+    "exit_code": 0,
+    "label": "candidate-reset-probe-r2",
+    "stderr": "",
+    "stdout": "{\n  \"candidate_hash\": \"5fc03994d2f3cc9fdaedf34b5d572ce666ff1765d32719aa74e7ce1c8be711aa\",\n  \"case_ids\": [\n    \"exec-create-context\",\n    \"exec-create-reduced\"\n  ],\n  \"complete\": true,\n  \"counts\": {\n    \"ERROR\": 0,\n    \"FAIL\": 0,\n    \"PASS\": 2,\n    \"UNKNOWN\": 0\n  },\n  \"executed_count\": 2,\n  \"identity_hash\": \"aa383e5d477795447070cbf3fe5edd0e0a397006e970bef7ed96170f1b8788e8\",\n  \"results\": [\n    {\n      \"checks\": {\n        \"action_matches_mutation\": true,\n        \"allowed_action\": true,\n        \"new_ticket_fields\": true,\n        \"new_ticket_membership\": true,\n        \"preserved_other_state\": true,\n        \"preserved_tickets\": true,\n        \"requested_account\": true,\n        \"ticket_delta\": true,\n        \"unique_ticket_ids\": true\n      },\n      \"error\": null,\n      \"id\": \"exec-create-context\",\n      \"outcome\": \"PASS\",\n      \"suite\": \"development\"\n    },\n    {\n      \"checks\": {\n        \"action_matches_mutation\": true,\n        \"allowed_action\": true,\n        \"new_ticket_fields\": true,\n        \"new_ticket_membership\": true,\n        \"preserved_other_state\": true,\n        \"preserved_tickets\": true,\n        \"requested_account\": true,\n        \"ticket_delta\": true,\n        \"unique_ticket_ids\": true\n      },\n      \"error\": null,\n      \"id\": \"exec-create-reduced\",\n      \"outcome\": \"PASS\",\n      \"suite\": \"development\"\n    }\n  ],\n  \"score\": 1.0,\n  \"selected_count\": 2\n}\n"
+  },
+  {
+    "command": [
+      "/Users/clayton/.local/bin/python3",
+      "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/adversarial-audit/attack-execution/workspace/evaluate.py",
+      "run",
+      "--candidate",
+      "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/adversarial-audit/attack-execution/workspace/eval-runs/attack-execution/evidence/candidates/reset-probe.py",
+      "--suite",
+      "development",
+      "--cases",
+      "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/adversarial-audit/attack-execution/workspace/eval-runs/attack-execution/evidence/cases.jsonl",
+      "--out",
+      "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/adversarial-audit/attack-execution/workspace/eval-runs/attack-execution/evidence/native-reset-probe"
+    ],
+    "exit_code": 0,
+    "label": "candidate-reset-probe",
+    "pid": 34895,
+    "stderr": "",
+    "stdout": "{\n  \"candidate_hash\": \"cdc70f19259bfb5fca332bea2c83162abd3f168d33cd552b8df5f98f37aecbd5\",\n  \"case_ids\": [\n    \"exec-create-context\",\n    \"exec-create-reduced\"\n  ],\n  \"complete\": true,\n  \"counts\": {\n    \"ERROR\": 2,\n    \"FAIL\": 0,\n    \"PASS\": 0,\n    \"UNKNOWN\": 0\n  },\n  \"executed_count\": 2,\n  \"identity_hash\": \"aa383e5d477795447070cbf3fe5edd0e0a397006e970bef7ed96170f1b8788e8\",\n  \"results\": [\n    {\n      \"checks\": {},\n      \"error\": \"candidate exited unsuccessfully\",\n      \"id\": \"exec-create-context\",\n      \"outcome\": \"ERROR\",\n      \"suite\": \"development\"\n    },\n    {\n      \"checks\": {},\n      \"error\": \"candidate exited unsuccessfully\",\n      \"id\": \"exec-create-reduced\",\n      \"outcome\": \"ERROR\",\n      \"suite\": \"development\"\n    }\n  ],\n  \"score\": 0.0,\n  \"selected_count\": 2\n}\n"
+  },
+  {
+    "command": [
+      "/Users/clayton/.local/bin/python3",
+      "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/adversarial-audit/attack-execution/workspace/evaluate.py",
+      "run",
+      "--candidate",
+      "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/adversarial-audit/attack-execution/workspace/eval-runs/attack-execution/evidence/candidates/runtime-error.py",
+      "--suite",
+      "development",
+      "--cases",
+      "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/adversarial-audit/attack-execution/workspace/eval-runs/attack-execution/evidence/cases.jsonl",
+      "--out",
+      "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/adversarial-audit/attack-execution/workspace/eval-runs/attack-execution/evidence/native-runtime-error"
+    ],
+    "exit_code": 0,
+    "label": "candidate-runtime-error",
+    "pid": 34910,
+    "stderr": "",
+    "stdout": "{\n  \"candidate_hash\": \"7558260096560a9bd1a3adfa01ab6bc8977a8b12cbdeba7d115573d852860717\",\n  \"case_ids\": [\n    \"exec-create-context\",\n    \"exec-create-reduced\"\n  ],\n  \"complete\": true,\n  \"counts\": {\n    \"ERROR\": 2,\n    \"FAIL\": 0,\n    \"PASS\": 0,\n    \"UNKNOWN\": 0\n  },\n  \"executed_count\": 2,\n  \"identity_hash\": \"aa383e5d477795447070cbf3fe5edd0e0a397006e970bef7ed96170f1b8788e8\",\n  \"results\": [\n    {\n      \"checks\": {},\n      \"error\": \"candidate exited unsuccessfully\",\n      \"id\": \"exec-create-context\",\n      \"outcome\": \"ERROR\",\n      \"suite\": \"development\"\n    },\n    {\n      \"checks\": {},\n      \"error\": \"candidate exited unsuccessfully\",\n      \"id\": \"exec-create-reduced\",\n      \"outcome\": \"ERROR\",\n      \"suite\": \"development\"\n    }\n  ],\n  \"score\": 0.0,\n  \"selected_count\": 2\n}\n"
+  },
+  {
+    "command": [
+      "/Users/clayton/.local/bin/python3",
+      "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/adversarial-audit/attack-execution/workspace/evaluate.py",
+      "compare",
+      "--baseline",
+      "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/adversarial-audit/attack-execution/workspace/eval-runs/attack-execution/evidence/native-clean",
+      "--candidate",
+      "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/adversarial-audit/attack-execution/workspace/eval-runs/attack-execution/evidence/native-alternative"
+    ],
+    "exit_code": 0,
+    "label": "compare-alternative",
+    "stderr": "",
+    "stdout": "{\n  \"admissible\": true,\n  \"baseline_score\": 1.0,\n  \"candidate_score\": 1.0,\n  \"case_ids\": [\n    \"exec-create-context\",\n    \"exec-create-reduced\"\n  ],\n  \"errors\": 0,\n  \"gains\": [],\n  \"regressions\": [],\n  \"strict_improvement\": false\n}\n"
+  },
+  {
+    "command": [
+      "/Users/clayton/.local/bin/python3",
+      "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/adversarial-audit/attack-execution/workspace/evaluate.py",
+      "compare",
+      "--baseline",
+      "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/adversarial-audit/attack-execution/workspace/eval-runs/attack-execution/evidence/native-clean",
+      "--candidate",
+      "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/adversarial-audit/attack-execution/workspace/eval-runs/attack-execution/evidence/native-reset-probe-r2"
+    ],
+    "exit_code": 0,
+    "label": "compare-reset-r2",
+    "stderr": "",
+    "stdout": "{\n  \"admissible\": true,\n  \"baseline_score\": 1.0,\n  \"candidate_score\": 1.0,\n  \"case_ids\": [\n    \"exec-create-context\",\n    \"exec-create-reduced\"\n  ],\n  \"errors\": 0,\n  \"gains\": [],\n  \"regressions\": [],\n  \"strict_improvement\": false\n}\n"
+  },
+  {
+    "command": [
+      "/Users/clayton/.local/bin/python3",
+      "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/adversarial-audit/attack-execution/workspace/evaluate.py",
+      "compare",
+      "--baseline",
+      "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/adversarial-audit/attack-execution/workspace/eval-runs/attack-execution/evidence/lifecycle-clean/attempts/000-baseline",
+      "--candidate",
+      "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/adversarial-audit/attack-execution/workspace/eval-runs/attack-execution/evidence/lifecycle-unreachable/attempts/000-baseline"
+    ],
+    "exit_code": 0,
+    "label": "compare-unreachable",
+    "stderr": "",
+    "stdout": "{\n  \"admissible\": true,\n  \"baseline_score\": 0.5,\n  \"candidate_score\": 0.5,\n  \"case_ids\": [\n    \"dev-howto\",\n    \"dev-generic\",\n    \"dev-explicit\",\n    \"dev-duplicate\",\n    \"dev-ambiguous\",\n    \"dev-password\",\n    \"dev-closed\",\n    \"dev-unrelated\"\n  ],\n  \"errors\": 0,\n  \"gains\": [],\n  \"regressions\": [],\n  \"strict_improvement\": false\n}\n"
+  },
+  {
+    "command": [
+      "/Users/clayton/.local/bin/python3",
+      "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/adversarial-audit/attack-execution/workspace/evaluate.py",
+      "status",
+      "--campaign",
+      "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/adversarial-audit/attack-execution/workspace/eval-runs/attack-execution/evidence/lifecycle-clean"
+    ],
+    "exit_code": 0,
+    "label": "lifecycle-clean-status-repeat",
+    "pid": 34929,
+    "stderr": "",
+    "stdout": "{\n  \"best_attempt\": 0,\n  \"campaign\": \"/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/adversarial-audit/attack-execution/workspace/eval-runs/attack-execution/evidence/lifecycle-clean\",\n  \"last_decision\": \"baseline measured\",\n  \"max_case_runs\": 24,\n  \"pending_attempts\": [],\n  \"protected_confirmation_case_runs\": 8,\n  \"search_case_runs_remaining\": 8,\n  \"status\": \"active\",\n  \"used_case_runs\": 8,\n  \"verification\": \"record and completed evidence verified\"\n}\n"
+  },
+  {
+    "command": [
+      "/Users/clayton/.local/bin/python3",
+      "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/adversarial-audit/attack-execution/workspace/evaluate.py",
+      "status",
+      "--campaign",
+      "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/adversarial-audit/attack-execution/workspace/eval-runs/attack-execution/evidence/lifecycle-clean"
+    ],
+    "exit_code": 0,
+    "label": "lifecycle-clean-status",
+    "pid": 34926,
+    "stderr": "",
+    "stdout": "{\n  \"best_attempt\": 0,\n  \"campaign\": \"/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/adversarial-audit/attack-execution/workspace/eval-runs/attack-execution/evidence/lifecycle-clean\",\n  \"last_decision\": \"baseline measured\",\n  \"max_case_runs\": 24,\n  \"pending_attempts\": [],\n  \"protected_confirmation_case_runs\": 8,\n  \"search_case_runs_remaining\": 8,\n  \"status\": \"active\",\n  \"used_case_runs\": 8,\n  \"verification\": \"record and completed evidence verified\"\n}\n"
+  },
+  {
+    "command": [
+      "/Users/clayton/.local/bin/python3",
+      "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/adversarial-audit/attack-execution/workspace/evaluate.py",
+      "start",
+      "--campaign",
+      "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/adversarial-audit/attack-execution/workspace/eval-runs/attack-execution/evidence/lifecycle-clean",
+      "--max-case-runs",
+      "24"
+    ],
+    "exit_code": 0,
+    "label": "lifecycle-clean",
+    "pid": 34915,
+    "stderr": "",
+    "stdout": "{\n  \"best_attempt\": 0,\n  \"campaign\": \"/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/adversarial-audit/attack-execution/workspace/eval-runs/attack-execution/evidence/lifecycle-clean\",\n  \"last_decision\": \"baseline measured\",\n  \"max_case_runs\": 24,\n  \"pending_attempts\": [],\n  \"protected_confirmation_case_runs\": 8,\n  \"search_case_runs_remaining\": 8,\n  \"status\": \"active\",\n  \"used_case_runs\": 8,\n  \"verification\": \"record and completed evidence verified\"\n}\n"
+  },
+  {
+    "command": [
+      "/Users/clayton/.local/bin/python3",
+      "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/adversarial-audit/attack-execution/workspace/evaluate.py",
+      "status",
+      "--campaign",
+      "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/adversarial-audit/attack-execution/workspace/eval-runs/attack-execution/evidence/lifecycle-memory"
+    ],
+    "exit_code": 0,
+    "label": "lifecycle-memory-status-repeat",
+    "pid": 34991,
+    "stderr": "",
+    "stdout": "{\n  \"best_attempt\": 0,\n  \"campaign\": \"/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/adversarial-audit/attack-execution/workspace/eval-runs/attack-execution/evidence/lifecycle-memory\",\n  \"last_decision\": \"baseline measured; recovered completed evidence\",\n  \"max_case_runs\": 24,\n  \"pending_attempts\": [],\n  \"protected_confirmation_case_runs\": 8,\n  \"search_case_runs_remaining\": 8,\n  \"status\": \"active\",\n  \"used_case_runs\": 8,\n  \"verification\": \"record and completed evidence verified\"\n}\n"
+  },
+  {
+    "command": [
+      "/Users/clayton/.local/bin/python3",
+      "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/adversarial-audit/attack-execution/workspace/evaluate.py",
+      "status",
+      "--campaign",
+      "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/adversarial-audit/attack-execution/workspace/eval-runs/attack-execution/evidence/lifecycle-memory"
+    ],
+    "exit_code": 0,
+    "label": "lifecycle-memory-status",
+    "pid": 34988,
+    "stderr": "",
+    "stdout": "{\n  \"best_attempt\": 0,\n  \"campaign\": \"/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/adversarial-audit/attack-execution/workspace/eval-runs/attack-execution/evidence/lifecycle-memory\",\n  \"last_decision\": \"baseline measured; recovered completed evidence\",\n  \"max_case_runs\": 24,\n  \"pending_attempts\": [],\n  \"protected_confirmation_case_runs\": 8,\n  \"search_case_runs_remaining\": 8,\n  \"status\": \"active\",\n  \"used_case_runs\": 8,\n  \"verification\": \"record and completed evidence verified\"\n}\n"
+  },
+  {
+    "command": [
+      "/Users/clayton/.local/bin/python3",
+      "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/adversarial-audit/attack-execution/workspace/eval-runs/attack-execution/inject.py",
+      "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/adversarial-audit/attack-execution/workspace/eval-runs/attack-execution/evidence/lifecycle-memory.config.json"
+    ],
+    "exit_code": -9,
+    "label": "lifecycle-memory",
+    "pid": 34977,
+    "stderr": "",
+    "stdout": ""
+  },
+  {
+    "command": [
+      "/Users/clayton/.local/bin/python3",
+      "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/adversarial-audit/attack-execution/workspace/evaluate.py",
+      "status",
+      "--campaign",
+      "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/adversarial-audit/attack-execution/workspace/eval-runs/attack-execution/evidence/lifecycle-partial"
+    ],
+    "exit_code": 0,
+    "label": "lifecycle-partial-status-repeat",
+    "pid": 34957,
+    "stderr": "",
+    "stdout": "{\n  \"best_attempt\": null,\n  \"campaign\": \"/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/adversarial-audit/attack-execution/workspace/eval-runs/attack-execution/evidence/lifecycle-partial\",\n  \"last_decision\": \"baseline pending\",\n  \"max_case_runs\": 24,\n  \"pending_attempts\": [\n    0\n  ],\n  \"protected_confirmation_case_runs\": 8,\n  \"search_case_runs_remaining\": 8,\n  \"status\": \"active\",\n  \"used_case_runs\": 8,\n  \"verification\": \"incomplete attempts remain charged\"\n}\n"
+  },
+  {
+    "command": [
+      "/Users/clayton/.local/bin/python3",
+      "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/adversarial-audit/attack-execution/workspace/evaluate.py",
+      "status",
+      "--campaign",
+      "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/adversarial-audit/attack-execution/workspace/eval-runs/attack-execution/evidence/lifecycle-partial"
+    ],
+    "exit_code": 0,
+    "label": "lifecycle-partial-status",
+    "pid": 34954,
+    "stderr": "",
+    "stdout": "{\n  \"best_attempt\": null,\n  \"campaign\": \"/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/adversarial-audit/attack-execution/workspace/eval-runs/attack-execution/evidence/lifecycle-partial\",\n  \"last_decision\": \"baseline pending\",\n  \"max_case_runs\": 24,\n  \"pending_attempts\": [\n    0\n  ],\n  \"protected_confirmation_case_runs\": 8,\n  \"search_case_runs_remaining\": 8,\n  \"status\": \"active\",\n  \"used_case_runs\": 8,\n  \"verification\": \"incomplete attempts remain charged\"\n}\n"
+  },
+  {
+    "command": [
+      "/Users/clayton/.local/bin/python3",
+      "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/adversarial-audit/attack-execution/workspace/eval-runs/attack-execution/inject.py",
+      "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/adversarial-audit/attack-execution/workspace/eval-runs/attack-execution/evidence/lifecycle-partial.config.json"
+    ],
+    "exit_code": -9,
+    "label": "lifecycle-partial",
+    "pid": 34949,
+    "stderr": "",
+    "stdout": ""
+  },
+  {
+    "command": [
+      "/Users/clayton/.local/bin/python3",
+      "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/adversarial-audit/attack-execution/workspace/evaluate.py",
+      "start",
+      "--campaign",
+      "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/adversarial-audit/attack-execution/workspace/eval-runs/attack-execution/evidence/lifecycle-proposal",
+      "--max-case-runs",
+      "24"
+    ],
+    "exit_code": 0,
+    "label": "lifecycle-proposal-baseline",
+    "pid": 34994,
+    "stderr": "",
+    "stdout": "{\n  \"best_attempt\": 0,\n  \"campaign\": \"/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/adversarial-audit/attack-execution/workspace/eval-runs/attack-execution/evidence/lifecycle-proposal\",\n  \"last_decision\": \"baseline measured\",\n  \"max_case_runs\": 24,\n  \"pending_attempts\": [],\n  \"protected_confirmation_case_runs\": 8,\n  \"search_case_runs_remaining\": 8,\n  \"status\": \"active\",\n  \"used_case_runs\": 8,\n  \"verification\": \"record and completed evidence verified\"\n}\n"
+  },
+  {
+    "command": [
+      "/Users/clayton/.local/bin/python3",
+      "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/adversarial-audit/attack-execution/workspace/evaluate.py",
+      "status",
+      "--campaign",
+      "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/adversarial-audit/attack-execution/workspace/eval-runs/attack-execution/evidence/lifecycle-proposal"
+    ],
+    "exit_code": 0,
+    "label": "lifecycle-proposal-status-repeat",
+    "pid": 35019,
+    "stderr": "",
+    "stdout": "{\n  \"best_attempt\": 1,\n  \"campaign\": \"/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/adversarial-audit/attack-execution/workspace/eval-runs/attack-execution/evidence/lifecycle-proposal\",\n  \"last_decision\": \"retain improvement\",\n  \"max_case_runs\": 24,\n  \"pending_attempts\": [],\n  \"protected_confirmation_case_runs\": 8,\n  \"search_case_runs_remaining\": 0,\n  \"status\": \"active\",\n  \"used_case_runs\": 16,\n  \"verification\": \"record and completed evidence verified\"\n}\n"
+  },
+  {
+    "command": [
+      "/Users/clayton/.local/bin/python3",
+      "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/adversarial-audit/attack-execution/workspace/evaluate.py",
+      "status",
+      "--campaign",
+      "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/adversarial-audit/attack-execution/workspace/eval-runs/attack-execution/evidence/lifecycle-proposal"
+    ],
+    "exit_code": 0,
+    "label": "lifecycle-proposal-status",
+    "pid": 35016,
+    "stderr": "",
+    "stdout": "{\n  \"best_attempt\": 1,\n  \"campaign\": \"/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/adversarial-audit/attack-execution/workspace/eval-runs/attack-execution/evidence/lifecycle-proposal\",\n  \"last_decision\": \"retain improvement\",\n  \"max_case_runs\": 24,\n  \"pending_attempts\": [],\n  \"protected_confirmation_case_runs\": 8,\n  \"search_case_runs_remaining\": 0,\n  \"status\": \"active\",\n  \"used_case_runs\": 16,\n  \"verification\": \"record and completed evidence verified\"\n}\n"
+  },
+  {
+    "command": [
+      "/Users/clayton/.local/bin/python3",
+      "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/adversarial-audit/attack-execution/workspace/eval-runs/attack-execution/inject.py",
+      "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/adversarial-audit/attack-execution/workspace/eval-runs/attack-execution/evidence/lifecycle-proposal.config.json"
+    ],
+    "exit_code": -9,
+    "label": "lifecycle-proposal",
+    "pid": 35005,
+    "stderr": "",
+    "stdout": ""
+  },
+  {
+    "command": [
+      "/Users/clayton/.local/bin/python3",
+      "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/adversarial-audit/attack-execution/workspace/evaluate.py",
+      "status",
+      "--campaign",
+      "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/adversarial-audit/attack-execution/workspace/eval-runs/attack-execution/evidence/lifecycle-published"
+    ],
+    "exit_code": 0,
+    "label": "lifecycle-published-status-repeat",
+    "pid": 34974,
+    "stderr": "",
+    "stdout": "{\n  \"best_attempt\": 0,\n  \"campaign\": \"/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/adversarial-audit/attack-execution/workspace/eval-runs/attack-execution/evidence/lifecycle-published\",\n  \"last_decision\": \"baseline measured; recovered completed evidence\",\n  \"max_case_runs\": 24,\n  \"pending_attempts\": [],\n  \"protected_confirmation_case_runs\": 8,\n  \"search_case_runs_remaining\": 8,\n  \"status\": \"active\",\n  \"used_case_runs\": 8,\n  \"verification\": \"record and completed evidence verified\"\n}\n"
+  },
+  {
+    "command": [
+      "/Users/clayton/.local/bin/python3",
+      "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/adversarial-audit/attack-execution/workspace/evaluate.py",
+      "status",
+      "--campaign",
+      "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/adversarial-audit/attack-execution/workspace/eval-runs/attack-execution/evidence/lifecycle-published"
+    ],
+    "exit_code": 0,
+    "label": "lifecycle-published-status",
+    "pid": 34971,
+    "stderr": "",
+    "stdout": "{\n  \"best_attempt\": 0,\n  \"campaign\": \"/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/adversarial-audit/attack-execution/workspace/eval-runs/attack-execution/evidence/lifecycle-published\",\n  \"last_decision\": \"baseline measured; recovered completed evidence\",\n  \"max_case_runs\": 24,\n  \"pending_attempts\": [],\n  \"protected_confirmation_case_runs\": 8,\n  \"search_case_runs_remaining\": 8,\n  \"status\": \"active\",\n  \"used_case_runs\": 8,\n  \"verification\": \"record and completed evidence verified\"\n}\n"
+  },
+  {
+    "command": [
+      "/Users/clayton/.local/bin/python3",
+      "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/adversarial-audit/attack-execution/workspace/eval-runs/attack-execution/inject.py",
+      "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/adversarial-audit/attack-execution/workspace/eval-runs/attack-execution/evidence/lifecycle-published.config.json"
+    ],
+    "exit_code": -9,
+    "label": "lifecycle-published",
+    "pid": 34960,
+    "stderr": "",
+    "stdout": ""
+  },
+  {
+    "command": [
+      "/Users/clayton/.local/bin/python3",
+      "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/adversarial-audit/attack-execution/workspace/evaluate.py",
+      "status",
+      "--campaign",
+      "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/adversarial-audit/attack-execution/workspace/eval-runs/attack-execution/evidence/lifecycle-unreachable"
+    ],
+    "exit_code": 0,
+    "label": "lifecycle-unreachable-status-repeat",
+    "pid": 34946,
+    "stderr": "",
+    "stdout": "{\n  \"best_attempt\": 0,\n  \"campaign\": \"/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/adversarial-audit/attack-execution/workspace/eval-runs/attack-execution/evidence/lifecycle-unreachable\",\n  \"last_decision\": \"baseline measured\",\n  \"max_case_runs\": 24,\n  \"pending_attempts\": [],\n  \"protected_confirmation_case_runs\": 8,\n  \"search_case_runs_remaining\": 8,\n  \"status\": \"active\",\n  \"used_case_runs\": 8,\n  \"verification\": \"record and completed evidence verified\"\n}\n"
+  },
+  {
+    "command": [
+      "/Users/clayton/.local/bin/python3",
+      "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/adversarial-audit/attack-execution/workspace/evaluate.py",
+      "status",
+      "--campaign",
+      "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/adversarial-audit/attack-execution/workspace/eval-runs/attack-execution/evidence/lifecycle-unreachable"
+    ],
+    "exit_code": 0,
+    "label": "lifecycle-unreachable-status",
+    "pid": 34943,
+    "stderr": "",
+    "stdout": "{\n  \"best_attempt\": 0,\n  \"campaign\": \"/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/adversarial-audit/attack-execution/workspace/eval-runs/attack-execution/evidence/lifecycle-unreachable\",\n  \"last_decision\": \"baseline measured\",\n  \"max_case_runs\": 24,\n  \"pending_attempts\": [],\n  \"protected_confirmation_case_runs\": 8,\n  \"search_case_runs_remaining\": 8,\n  \"status\": \"active\",\n  \"used_case_runs\": 8,\n  \"verification\": \"record and completed evidence verified\"\n}\n"
+  },
+  {
+    "command": [
+      "/Users/clayton/.local/bin/python3",
+      "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/adversarial-audit/attack-execution/workspace/eval-runs/attack-execution/inject.py",
+      "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/adversarial-audit/attack-execution/workspace/eval-runs/attack-execution/evidence/lifecycle-unreachable.config.json"
+    ],
+    "exit_code": 0,
+    "label": "lifecycle-unreachable",
+    "pid": 34932,
+    "stderr": "",
+    "stdout": "{\n  \"best_attempt\": 0,\n  \"campaign\": \"/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/adversarial-audit/attack-execution/workspace/eval-runs/attack-execution/evidence/lifecycle-unreachable\",\n  \"last_decision\": \"baseline measured\",\n  \"max_case_runs\": 24,\n  \"pending_attempts\": [],\n  \"protected_confirmation_case_runs\": 8,\n  \"search_case_runs_remaining\": 8,\n  \"status\": \"active\",\n  \"used_case_runs\": 8,\n  \"verification\": \"record and completed evidence verified\"\n}\n"
+  },
+  {
+    "command": [
+      "/Users/clayton/.local/bin/python3",
+      "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/adversarial-audit/attack-execution/workspace/eval-runs/attack-execution/inject.py",
+      "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/adversarial-audit/attack-execution/workspace/eval-runs/attack-execution/evidence/bad-source.config.json"
+    ],
+    "exit_code": 1,
+    "label": "setup-source-mismatch",
+    "pid": 35022,
+    "stderr": "SETUP ERROR: source hash does not match target\n",
+    "stdout": ""
+  },
+  {
+    "command": [
+      "/Users/clayton/.local/bin/python3",
+      "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/adversarial-audit/attack-execution/workspace/evaluate.py",
+      "run",
+      "--candidate",
+      "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/adversarial-audit/attack-execution/workspace/eval-runs/attack-execution/evidence/candidates/clean.py",
+      "--suite",
+      "development",
+      "--cases",
+      "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/adversarial-audit/attack-execution/workspace/eval-runs/attack-execution/evidence/reduction/cases.jsonl",
+      "--out",
+      "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/adversarial-audit/attack-execution/workspace/eval-runs/attack-execution/evidence/reduction/native-clean"
+    ],
+    "exit_code": 0,
+    "label": "reduction-clean",
+    "stderr": "",
+    "stdout": "{\n  \"candidate_hash\": \"d8cc818e83af4453a44e9025484ae6e23ecc7cbcf8c9e621efa56c21a179a1c3\",\n  \"case_ids\": [\n    \"exec-reduction-1\",\n    \"exec-reduction-2\",\n    \"exec-reduction-3\",\n    \"exec-reduction-4\"\n  ],\n  \"complete\": true,\n  \"counts\": {\n    \"ERROR\": 0,\n    \"FAIL\": 0,\n    \"PASS\": 4,\n    \"UNKNOWN\": 0\n  },\n  \"executed_count\": 4,\n  \"identity_hash\": \"aa383e5d477795447070cbf3fe5edd0e0a397006e970bef7ed96170f1b8788e8\",\n  \"results\": [\n    {\n      \"checks\": {\n        \"action_matches_mutation\": true,\n        \"allowed_action\": true,\n        \"new_ticket_fields\": true,\n        \"new_ticket_membership\": true,\n        \"preserved_other_state\": true,\n        \"preserved_tickets\": true,\n        \"requested_account\": true,\n        \"ticket_delta\": true,\n        \"unique_ticket_ids\": true\n      },\n      \"error\": null,\n      \"id\": \"exec-reduction-1\",\n      \"outcome\": \"PASS\",\n      \"suite\": \"development\"\n    },\n    {\n      \"checks\": {\n        \"action_matches_mutation\": true,\n        \"allowed_action\": true,\n        \"new_ticket_fields\": true,\n        \"new_ticket_membership\": true,\n        \"preserved_other_state\": true,\n        \"preserved_tickets\": true,\n        \"requested_account\": true,\n        \"ticket_delta\": true,\n        \"unique_ticket_ids\": true\n      },\n      \"error\": null,\n      \"id\": \"exec-reduction-2\",\n      \"outcome\": \"PASS\",\n      \"suite\": \"development\"\n    },\n    {\n      \"checks\": {\n        \"action_matches_mutation\": true,\n        \"allowed_action\": true,\n        \"new_ticket_fields\": true,\n        \"new_ticket_membership\": true,\n        \"preserved_other_state\": true,\n        \"preserved_tickets\": true,\n        \"requested_account\": true,\n        \"ticket_delta\": true,\n        \"unique_ticket_ids\": true\n      },\n      \"error\": null,\n      \"id\": \"exec-reduction-3\",\n      \"outcome\": \"PASS\",\n      \"suite\": \"development\"\n    },\n    {\n      \"checks\": {\n        \"action_matches_mutation\": true,\n        \"allowed_action\": true,\n        \"new_ticket_fields\": true,\n        \"new_ticket_membership\": true,\n        \"preserved_other_state\": true,\n        \"preserved_tickets\": true,\n        \"requested_account\": true,\n        \"ticket_delta\": true,\n        \"unique_ticket_ids\": true\n      },\n      \"error\": null,\n      \"id\": \"exec-reduction-4\",\n      \"outcome\": \"PASS\",\n      \"suite\": \"development\"\n    }\n  ],\n  \"score\": 1.0,\n  \"selected_count\": 4\n}\n"
+  },
+  {
+    "command": [
+      "/Users/clayton/.local/bin/python3",
+      "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/adversarial-audit/attack-execution/workspace/evaluate.py",
+      "run",
+      "--candidate",
+      "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/adversarial-audit/attack-execution/workspace/eval-runs/attack-execution/evidence/candidates/alternative.py",
+      "--suite",
+      "development",
+      "--cases",
+      "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/adversarial-audit/attack-execution/workspace/eval-runs/attack-execution/evidence/reduction/cases.jsonl",
+      "--out",
+      "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/adversarial-audit/attack-execution/workspace/eval-runs/attack-execution/evidence/reduction/native-alternative"
+    ],
+    "exit_code": 0,
+    "label": "reduction-alternative",
+    "stderr": "",
+    "stdout": "{\n  \"candidate_hash\": \"49745dd831effb7d1e4043ab3c15ea32786059c7fcae4ed5c7ba01e9f8c10ad3\",\n  \"case_ids\": [\n    \"exec-reduction-1\",\n    \"exec-reduction-2\",\n    \"exec-reduction-3\",\n    \"exec-reduction-4\"\n  ],\n  \"complete\": true,\n  \"counts\": {\n    \"ERROR\": 0,\n    \"FAIL\": 0,\n    \"PASS\": 4,\n    \"UNKNOWN\": 0\n  },\n  \"executed_count\": 4,\n  \"identity_hash\": \"aa383e5d477795447070cbf3fe5edd0e0a397006e970bef7ed96170f1b8788e8\",\n  \"results\": [\n    {\n      \"checks\": {\n        \"action_matches_mutation\": true,\n        \"allowed_action\": true,\n        \"new_ticket_fields\": true,\n        \"new_ticket_membership\": true,\n        \"preserved_other_state\": true,\n        \"preserved_tickets\": true,\n        \"requested_account\": true,\n        \"ticket_delta\": true,\n        \"unique_ticket_ids\": true\n      },\n      \"error\": null,\n      \"id\": \"exec-reduction-1\",\n      \"outcome\": \"PASS\",\n      \"suite\": \"development\"\n    },\n    {\n      \"checks\": {\n        \"action_matches_mutation\": true,\n        \"allowed_action\": true,\n        \"new_ticket_fields\": true,\n        \"new_ticket_membership\": true,\n        \"preserved_other_state\": true,\n        \"preserved_tickets\": true,\n        \"requested_account\": true,\n        \"ticket_delta\": true,\n        \"unique_ticket_ids\": true\n      },\n      \"error\": null,\n      \"id\": \"exec-reduction-2\",\n      \"outcome\": \"PASS\",\n      \"suite\": \"development\"\n    },\n    {\n      \"checks\": {\n        \"action_matches_mutation\": true,\n        \"allowed_action\": true,\n        \"new_ticket_fields\": true,\n        \"new_ticket_membership\": true,\n        \"preserved_other_state\": true,\n        \"preserved_tickets\": true,\n        \"requested_account\": true,\n        \"ticket_delta\": true,\n        \"unique_ticket_ids\": true\n      },\n      \"error\": null,\n      \"id\": \"exec-reduction-3\",\n      \"outcome\": \"PASS\",\n      \"suite\": \"development\"\n    },\n    {\n      \"checks\": {\n        \"action_matches_mutation\": true,\n        \"allowed_action\": true,\n        \"new_ticket_fields\": true,\n        \"new_ticket_membership\": true,\n        \"preserved_other_state\": true,\n        \"preserved_tickets\": true,\n        \"requested_account\": true,\n        \"ticket_delta\": true,\n        \"unique_ticket_ids\": true\n      },\n      \"error\": null,\n      \"id\": \"exec-reduction-4\",\n      \"outcome\": \"PASS\",\n      \"suite\": \"development\"\n    }\n  ],\n  \"score\": 1.0,\n  \"selected_count\": 4\n}\n"
+  },
+  {
+    "command": [
+      "/Users/clayton/.local/bin/python3",
+      "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/adversarial-audit/attack-execution/workspace/evaluate.py",
+      "run",
+      "--candidate",
+      "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/adversarial-audit/attack-execution/workspace/eval-runs/attack-execution/evidence/candidates/false-claim.py",
+      "--suite",
+      "development",
+      "--cases",
+      "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/adversarial-audit/attack-execution/workspace/eval-runs/attack-execution/evidence/reduction/cases.jsonl",
+      "--out",
+      "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/adversarial-audit/attack-execution/workspace/eval-runs/attack-execution/evidence/reduction/native-false-claim"
+    ],
+    "exit_code": 0,
+    "label": "reduction-false-claim",
+    "stderr": "",
+    "stdout": "{\n  \"candidate_hash\": \"e7d350061964404ce4b73305873ef0ed6bbb4fea9812ea3087e9cf74336f27c6\",\n  \"case_ids\": [\n    \"exec-reduction-1\",\n    \"exec-reduction-2\",\n    \"exec-reduction-3\",\n    \"exec-reduction-4\"\n  ],\n  \"complete\": true,\n  \"counts\": {\n    \"ERROR\": 0,\n    \"FAIL\": 4,\n    \"PASS\": 0,\n    \"UNKNOWN\": 0\n  },\n  \"executed_count\": 4,\n  \"identity_hash\": \"aa383e5d477795447070cbf3fe5edd0e0a397006e970bef7ed96170f1b8788e8\",\n  \"results\": [\n    {\n      \"checks\": {\n        \"action_matches_mutation\": false,\n        \"allowed_action\": true,\n        \"new_ticket_fields\": true,\n        \"new_ticket_membership\": false,\n        \"preserved_other_state\": true,\n        \"preserved_tickets\": true,\n        \"requested_account\": true,\n        \"ticket_delta\": false,\n        \"unique_ticket_ids\": true\n      },\n      \"error\": null,\n      \"id\": \"exec-reduction-1\",\n      \"outcome\": \"FAIL\",\n      \"suite\": \"development\"\n    },\n    {\n      \"checks\": {\n        \"action_matches_mutation\": false,\n        \"allowed_action\": true,\n        \"new_ticket_fields\": true,\n        \"new_ticket_membership\": false,\n        \"preserved_other_state\": true,\n        \"preserved_tickets\": true,\n        \"requested_account\": true,\n        \"ticket_delta\": false,\n        \"unique_ticket_ids\": true\n      },\n      \"error\": null,\n      \"id\": \"exec-reduction-2\",\n      \"outcome\": \"FAIL\",\n      \"suite\": \"development\"\n    },\n    {\n      \"checks\": {\n        \"action_matches_mutation\": false,\n        \"allowed_action\": true,\n        \"new_ticket_fields\": true,\n        \"new_ticket_membership\": false,\n        \"preserved_other_state\": true,\n        \"preserved_tickets\": true,\n        \"requested_account\": true,\n        \"ticket_delta\": false,\n        \"unique_ticket_ids\": true\n      },\n      \"error\": null,\n      \"id\": \"exec-reduction-3\",\n      \"outcome\": \"FAIL\",\n      \"suite\": \"development\"\n    },\n    {\n      \"checks\": {\n        \"action_matches_mutation\": false,\n        \"allowed_action\": true,\n        \"new_ticket_fields\": true,\n        \"new_ticket_membership\": false,\n        \"preserved_other_state\": true,\n        \"preserved_tickets\": true,\n        \"requested_account\": true,\n        \"ticket_delta\": false,\n        \"unique_ticket_ids\": true\n      },\n      \"error\": null,\n      \"id\": \"exec-reduction-4\",\n      \"outcome\": \"FAIL\",\n      \"suite\": \"development\"\n    }\n  ],\n  \"score\": 0.0,\n  \"selected_count\": 4\n}\n"
+  }
+]

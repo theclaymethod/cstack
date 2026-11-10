@@ -1,0 +1,1 @@
+{"checks": {}, "error": "candidate timeout", "exit_code": null, "family": "subprocess", "id": "subprocess:deadline", "input": {"request": {"account": null, "accounts": ["acct-a"], "text": "Please create a VPN support ticket."}, "state": {"tickets": []}}, "outcome": "ERROR", "output": null, "stderr": "", "stdout": "", "suite": "development"}

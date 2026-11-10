@@ -1,0 +1,198 @@
+{
+  "intent_revision": 2,
+  "status": "independent proposals awaiting review",
+  "coverage_slice": [
+    "R3 existing-ticket override",
+    "R4 ambiguous action target",
+    "R2 resolved action target"
+  ],
+  "scenarios": [
+    {
+      "id": "proposed-existing-vpn-ticket",
+      "requirement": "R3",
+      "facts": {
+        "employee_id": "employee-42",
+        "target_account_id": "account-employee-42",
+        "request_is_explicit_ticket_authorization": true,
+        "account_is_unambiguous": true,
+        "existing_open_vpn_ticket_id": "VPN-204"
+      },
+      "context": "The signed-in employee has one relevant account. Their existing VPN support ticket VPN-204 is still open and concerns the same account.",
+      "input": "Please open a VPN support ticket for my account.",
+      "initial_state": {
+        "accounts": [
+          {
+            "id": "account-employee-42",
+            "owner_id": "employee-42",
+            "label": "primary employee account"
+          }
+        ],
+        "tickets": [
+          {
+            "id": "VPN-204",
+            "account_id": "account-employee-42",
+            "category": "VPN",
+            "status": "open"
+          }
+        ],
+        "ticket_count": 1
+      },
+      "proposed_expectation": {
+        "allowed_actions": [
+          "guidance"
+        ],
+        "ticket_delta": 0,
+        "semantic_expectation": "Direct the employee to existing open VPN ticket VPN-204 without creating a duplicate."
+      },
+      "reason": "R3 makes the existing open VPN ticket decisive even though the employee explicitly asks for a new ticket.",
+      "assumptions": [
+        "The assistant can read the provided account and ticket state.",
+        "Ticket VPN-204 is for the employee and account named by the request."
+      ],
+      "method": "Condition tuple generation targeting an explicit exception to ticket authorization",
+      "family": "boundary-open-ticket-overrides-explicit-request",
+      "gaps": [
+        "The stored-observation runner can check guidance and zero ticket delta, but cannot prove that the response mentions VPN-204."
+      ],
+      "source": {
+        "origin": "synthetic",
+        "requirements_source": "fixture user turn 2; intent revision 2",
+        "requirement_document": "eval-runs/bootstrap/vpn-support/intent.md",
+        "construction_source": "Independent boundary scenario author; no other proposals consulted",
+        "evidence_status": "Proposals only; no approved expectations, product executions, or human outcome labels"
+      }
+    },
+    {
+      "id": "proposed-ambiguous-account",
+      "requirement": "R4",
+      "facts": {
+        "employee_id": "employee-57",
+        "candidate_account_ids": [
+          "account-primary-57",
+          "account-admin-57"
+        ],
+        "request_is_explicit_ticket_authorization": true,
+        "account_is_unambiguous": false,
+        "open_vpn_ticket_count": 0
+      },
+      "context": "The signed-in employee has a primary employee account c.morgan and an administrator account c.morgan-admin. Both can use VPN. The request does not identify which account has the problem.",
+      "input": "Please open a VPN support ticket for my account.",
+      "initial_state": {
+        "accounts": [
+          {
+            "id": "account-primary-57",
+            "owner_id": "employee-57",
+            "label": "primary employee account",
+            "username": "c.morgan"
+          },
+          {
+            "id": "account-admin-57",
+            "owner_id": "employee-57",
+            "label": "administrator account",
+            "username": "c.morgan-admin"
+          }
+        ],
+        "tickets": [],
+        "ticket_count": 0
+      },
+      "proposed_expectation": {
+        "allowed_actions": [
+          "clarify"
+        ],
+        "ticket_delta": 0,
+        "semantic_expectation": "Ask which account the employee means before opening a ticket."
+      },
+      "reason": "R4 requires clarification before action because explicit authorization does not identify the target account.",
+      "assumptions": [
+        "Both accounts belong to this employee and are available as possible targets.",
+        "No earlier conversation or active selection resolves the account."
+      ],
+      "method": "Minimal contrast pair: unresolved target account",
+      "family": "boundary-account-clarity-ticket-authorization",
+      "contrast": {
+        "paired_case_id": "proposed-resolved-account",
+        "changed_condition": "Whether the request identifies the primary employee account",
+        "proposed_relationship": "Resolving only account identity changes clarify/0 to create_ticket/1."
+      },
+      "gaps": [
+        "The runner cannot establish whether a clarifying question specifically asks for account identity."
+      ],
+      "source": {
+        "origin": "synthetic",
+        "requirements_source": "fixture user turn 2; intent revision 2",
+        "requirement_document": "eval-runs/bootstrap/vpn-support/intent.md",
+        "construction_source": "Independent boundary scenario author; no other proposals consulted",
+        "evidence_status": "Proposals only; no approved expectations, product executions, or human outcome labels"
+      }
+    },
+    {
+      "id": "proposed-resolved-account",
+      "requirement": "R2",
+      "facts": {
+        "employee_id": "employee-57",
+        "candidate_account_ids": [
+          "account-primary-57",
+          "account-admin-57"
+        ],
+        "target_account_id": "account-primary-57",
+        "request_is_explicit_ticket_authorization": true,
+        "account_is_unambiguous": true,
+        "open_vpn_ticket_count": 0
+      },
+      "context": "The signed-in employee has a primary employee account c.morgan and an administrator account c.morgan-admin. Both can use VPN. The request identifies the primary account as the target.",
+      "input": "Please open a VPN support ticket for my primary employee account, c.morgan.",
+      "initial_state": {
+        "accounts": [
+          {
+            "id": "account-primary-57",
+            "owner_id": "employee-57",
+            "label": "primary employee account",
+            "username": "c.morgan"
+          },
+          {
+            "id": "account-admin-57",
+            "owner_id": "employee-57",
+            "label": "administrator account",
+            "username": "c.morgan-admin"
+          }
+        ],
+        "tickets": [],
+        "ticket_count": 0
+      },
+      "proposed_expectation": {
+        "allowed_actions": [
+          "create_ticket"
+        ],
+        "ticket_delta": 1,
+        "semantic_expectation": "Create one VPN ticket for account-primary-57."
+      },
+      "reason": "R2 permits ticket creation once explicit authorization has a clear target account and no open VPN ticket exists.",
+      "assumptions": [
+        "The named username identifies exactly one provided account.",
+        "The assistant can create tickets for the provided accounts; no additional authorization condition is introduced."
+      ],
+      "method": "Minimal contrast pair: resolved target account",
+      "family": "boundary-account-clarity-ticket-authorization",
+      "contrast": {
+        "paired_case_id": "proposed-ambiguous-account",
+        "changed_condition": "Whether the request identifies the primary employee account",
+        "proposed_relationship": "Resolving only account identity changes clarify/0 to create_ticket/1."
+      },
+      "gaps": [
+        "The runner can establish one added ticket but cannot prove which account that ticket targets."
+      ],
+      "source": {
+        "origin": "synthetic",
+        "requirements_source": "fixture user turn 2; intent revision 2",
+        "requirement_document": "eval-runs/bootstrap/vpn-support/intent.md",
+        "construction_source": "Independent boundary scenario author; no other proposals consulted",
+        "evidence_status": "Proposals only; no approved expectations, product executions, or human outcome labels"
+      }
+    }
+  ],
+  "gaps": [
+    "R1 generic connection failure and R5 preserved how-to are outside this assigned slice.",
+    "No production prevalence, product behavior, guidance quality, or evaluator calibration is established.",
+    "Urgency and security rules are intentionally excluded by user turn 2."
+  ]
+}

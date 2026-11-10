@@ -1,0 +1,1131 @@
+[
+  {
+    "actual_new_tickets": [
+      {
+        "account": "acct-a",
+        "id": "incident:7f29",
+        "issue": "vpn",
+        "status": "open"
+      }
+    ],
+    "actual_output": {
+      "account": "acct-a",
+      "action": "create_ticket",
+      "note": "Opened requested VPN ticket.",
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-a",
+            "id": "incident:7f29",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "authorization_fact": "source-controlled",
+    "checks": {
+      "action_matches_mutation": true,
+      "allowed_action": true,
+      "new_ticket_fields": true,
+      "new_ticket_membership": true,
+      "preserved_other_state": true,
+      "preserved_tickets": true,
+      "requested_account": true,
+      "ticket_delta": true,
+      "unique_ticket_ids": true
+    },
+    "delta": 1,
+    "error": null,
+    "family": "dev-explicit-output-boundary",
+    "id": "semantic-minimal",
+    "mode": "minimal",
+    "native_expected": {
+      "account": "acct-a",
+      "allowed_actions": [
+        "create_ticket"
+      ],
+      "ticket_delta": 1
+    },
+    "non_ticket_state_exact": true,
+    "outcome": "PASS"
+  },
+  {
+    "actual_new_tickets": [
+      {
+        "account": "acct-a",
+        "id": "incident:7f29",
+        "issue": "vpn",
+        "status": "open"
+      }
+    ],
+    "actual_output": {
+      "account": "acct-a",
+      "action": "create_ticket",
+      "note": "Opened requested VPN ticket.",
+      "state": {
+        "audit": {
+          "enabled": true,
+          "nested": [
+            "preserve",
+            null
+          ],
+          "revision": 7
+        },
+        "tickets": [
+          {
+            "account": "acct-b",
+            "id": "prior-1",
+            "issue": "password",
+            "status": "closed"
+          },
+          {
+            "account": "acct-a",
+            "id": "prior-2",
+            "issue": "vpn",
+            "status": "closed"
+          },
+          {
+            "account": "acct-a",
+            "id": "incident:7f29",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "authorization_fact": "source-controlled",
+    "checks": {
+      "action_matches_mutation": true,
+      "allowed_action": true,
+      "new_ticket_fields": true,
+      "new_ticket_membership": true,
+      "preserved_other_state": true,
+      "preserved_tickets": true,
+      "requested_account": true,
+      "ticket_delta": true,
+      "unique_ticket_ids": true
+    },
+    "delta": 1,
+    "error": null,
+    "family": "dev-explicit-output-boundary",
+    "id": "semantic-rich",
+    "mode": "rich",
+    "native_expected": {
+      "account": "acct-a",
+      "allowed_actions": [
+        "create_ticket"
+      ],
+      "ticket_delta": 1
+    },
+    "non_ticket_state_exact": true,
+    "outcome": "PASS"
+  },
+  {
+    "actual_new_tickets": [
+      {
+        "account": "acct-a",
+        "id": "incident:7f29",
+        "issue": "vpn",
+        "status": "open"
+      }
+    ],
+    "actual_output": {
+      "account": "acct-a",
+      "action": "create_ticket",
+      "note": "Opened requested VPN ticket.",
+      "state": {
+        "audit": {
+          "enabled": true,
+          "nested": [
+            "preserve",
+            null
+          ],
+          "revision": 7
+        },
+        "tickets": [
+          {
+            "account": "acct-b",
+            "id": "prior-1",
+            "issue": "password",
+            "status": "closed"
+          },
+          {
+            "account": "acct-a",
+            "id": "prior-2",
+            "issue": "vpn",
+            "status": "closed"
+          },
+          {
+            "account": "acct-a",
+            "id": "incident:7f29",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "authorization_fact": "source-controlled",
+    "checks": {
+      "action_matches_mutation": true,
+      "allowed_action": true,
+      "new_ticket_fields": true,
+      "new_ticket_membership": true,
+      "preserved_other_state": true,
+      "preserved_tickets": true,
+      "requested_account": true,
+      "ticket_delta": true,
+      "unique_ticket_ids": true
+    },
+    "delta": 1,
+    "error": null,
+    "family": "dev-explicit-output-boundary",
+    "id": "semantic-alternate-id",
+    "mode": "alternate-id",
+    "native_expected": {
+      "account": "acct-a",
+      "allowed_actions": [
+        "create_ticket"
+      ],
+      "ticket_delta": 1
+    },
+    "non_ticket_state_exact": true,
+    "outcome": "PASS"
+  },
+  {
+    "actual_new_tickets": [
+      {
+        "account": "acct-a",
+        "id": "incident:7f29",
+        "issue": "vpn",
+        "status": "open"
+      }
+    ],
+    "actual_output": {
+      "account": "acct-a",
+      "action": "create_ticket",
+      "note": "Saved reference incident:7f29.",
+      "state": {
+        "audit": {
+          "enabled": true,
+          "nested": [
+            "preserve",
+            null
+          ],
+          "revision": 7
+        },
+        "tickets": [
+          {
+            "account": "acct-b",
+            "id": "prior-1",
+            "issue": "password",
+            "status": "closed"
+          },
+          {
+            "account": "acct-a",
+            "id": "prior-2",
+            "issue": "vpn",
+            "status": "closed"
+          },
+          {
+            "account": "acct-a",
+            "id": "incident:7f29",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "authorization_fact": "source-controlled",
+    "checks": {
+      "action_matches_mutation": true,
+      "allowed_action": true,
+      "new_ticket_fields": true,
+      "new_ticket_membership": true,
+      "preserved_other_state": true,
+      "preserved_tickets": true,
+      "requested_account": true,
+      "ticket_delta": true,
+      "unique_ticket_ids": true
+    },
+    "delta": 1,
+    "error": null,
+    "family": "dev-explicit-output-boundary",
+    "id": "semantic-alternate-note",
+    "mode": "alternate-note",
+    "native_expected": {
+      "account": "acct-a",
+      "allowed_actions": [
+        "create_ticket"
+      ],
+      "ticket_delta": 1
+    },
+    "non_ticket_state_exact": true,
+    "outcome": "PASS"
+  },
+  {
+    "actual_new_tickets": [
+      {
+        "account": "acct-a",
+        "id": "incident:7f29",
+        "issue": "vpn",
+        "status": "open"
+      }
+    ],
+    "actual_output": {
+      "account": "acct-a",
+      "action": "create_ticket",
+      "note": "Opened requested VPN ticket.",
+      "state": {
+        "audit": {
+          "enabled": true,
+          "nested": [
+            "preserve",
+            null
+          ],
+          "revision": 7
+        },
+        "tickets": [
+          {
+            "account": "acct-b",
+            "id": "prior-1",
+            "issue": "password",
+            "status": "closed"
+          },
+          {
+            "account": "acct-a",
+            "id": "prior-2",
+            "issue": "vpn",
+            "status": "closed"
+          },
+          {
+            "account": "acct-a",
+            "id": "incident:7f29",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "authorization_fact": "source-controlled",
+    "checks": {
+      "action_matches_mutation": true,
+      "allowed_action": true,
+      "new_ticket_fields": true,
+      "new_ticket_membership": true,
+      "preserved_other_state": true,
+      "preserved_tickets": true,
+      "requested_account": true,
+      "ticket_delta": true,
+      "unique_ticket_ids": true
+    },
+    "delta": 1,
+    "error": null,
+    "family": "dev-explicit-output-boundary",
+    "id": "semantic-reordered-keys",
+    "mode": "reordered-keys",
+    "native_expected": {
+      "account": "acct-a",
+      "allowed_actions": [
+        "create_ticket"
+      ],
+      "ticket_delta": 1
+    },
+    "non_ticket_state_exact": true,
+    "outcome": "PASS"
+  },
+  {
+    "actual_new_tickets": [
+      {
+        "account": "acct-a",
+        "created_at": "2026-11-10T00:00:00Z",
+        "id": "incident:7f29",
+        "issue": "vpn",
+        "status": "open"
+      }
+    ],
+    "actual_output": {
+      "account": "acct-a",
+      "action": "create_ticket",
+      "note": "Opened requested VPN ticket.",
+      "state": {
+        "audit": {
+          "enabled": true,
+          "nested": [
+            "preserve",
+            null
+          ],
+          "revision": 7
+        },
+        "tickets": [
+          {
+            "account": "acct-b",
+            "id": "prior-1",
+            "issue": "password",
+            "status": "closed"
+          },
+          {
+            "account": "acct-a",
+            "id": "prior-2",
+            "issue": "vpn",
+            "status": "closed"
+          },
+          {
+            "account": "acct-a",
+            "created_at": "2026-11-10T00:00:00Z",
+            "id": "incident:7f29",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "authorization_fact": "source-controlled",
+    "checks": {},
+    "delta": 1,
+    "error": "malformed candidate JSON schema",
+    "family": "dev-explicit-output-boundary",
+    "id": "semantic-extra-ticket-metadata",
+    "mode": "extra-ticket-metadata",
+    "native_expected": {
+      "account": "acct-a",
+      "allowed_actions": [
+        "create_ticket"
+      ],
+      "ticket_delta": 1
+    },
+    "non_ticket_state_exact": true,
+    "outcome": "ERROR"
+  },
+  {
+    "actual_new_tickets": [],
+    "actual_output": {
+      "account": "acct-a",
+      "action": "create_ticket",
+      "note": "Opened requested VPN ticket.",
+      "state": {
+        "audit": {
+          "enabled": true,
+          "nested": [
+            "preserve",
+            null
+          ],
+          "revision": 7
+        },
+        "tickets": [
+          {
+            "account": "acct-b",
+            "id": "prior-1",
+            "issue": "password",
+            "status": "closed"
+          },
+          {
+            "account": "acct-a",
+            "id": "prior-2",
+            "issue": "vpn",
+            "status": "closed"
+          },
+          {
+            "account": "acct-a",
+            "id": "prior-1",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "authorization_fact": "source-controlled",
+    "checks": {
+      "action_matches_mutation": false,
+      "allowed_action": true,
+      "new_ticket_fields": true,
+      "new_ticket_membership": false,
+      "preserved_other_state": true,
+      "preserved_tickets": true,
+      "requested_account": true,
+      "ticket_delta": true,
+      "unique_ticket_ids": false
+    },
+    "delta": 1,
+    "error": null,
+    "family": "dev-explicit-output-boundary",
+    "id": "semantic-duplicate-id",
+    "mode": "duplicate-id",
+    "native_expected": {
+      "account": "acct-a",
+      "allowed_actions": [
+        "create_ticket"
+      ],
+      "ticket_delta": 1
+    },
+    "non_ticket_state_exact": true,
+    "outcome": "FAIL"
+  },
+  {
+    "actual_new_tickets": [
+      {
+        "account": "acct-a",
+        "id": "incident:7f29",
+        "issue": "vpn",
+        "status": "open"
+      }
+    ],
+    "actual_output": {
+      "account": "acct-a",
+      "action": "create_ticket",
+      "note": "Opened requested VPN ticket.",
+      "state": {
+        "audit": {
+          "enabled": 1,
+          "nested": [
+            "preserve",
+            null
+          ],
+          "revision": 7
+        },
+        "tickets": [
+          {
+            "account": "acct-b",
+            "id": "prior-1",
+            "issue": "password",
+            "status": "closed"
+          },
+          {
+            "account": "acct-a",
+            "id": "prior-2",
+            "issue": "vpn",
+            "status": "closed"
+          },
+          {
+            "account": "acct-a",
+            "id": "incident:7f29",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "authorization_fact": "source-controlled",
+    "checks": {
+      "action_matches_mutation": true,
+      "allowed_action": true,
+      "new_ticket_fields": true,
+      "new_ticket_membership": true,
+      "preserved_other_state": false,
+      "preserved_tickets": true,
+      "requested_account": true,
+      "ticket_delta": true,
+      "unique_ticket_ids": true
+    },
+    "delta": 1,
+    "error": null,
+    "family": "dev-explicit-output-boundary",
+    "id": "semantic-state-type-flip",
+    "mode": "state-type-flip",
+    "native_expected": {
+      "account": "acct-a",
+      "allowed_actions": [
+        "create_ticket"
+      ],
+      "ticket_delta": 1
+    },
+    "non_ticket_state_exact": false,
+    "outcome": "FAIL"
+  },
+  {
+    "actual_new_tickets": [],
+    "actual_output": {
+      "account": "acct-a",
+      "action": "create_ticket",
+      "note": "Opened requested VPN ticket.",
+      "state": {
+        "audit": {
+          "enabled": true,
+          "nested": [
+            "preserve",
+            null
+          ],
+          "revision": 7
+        },
+        "tickets": [
+          {
+            "account": "acct-b",
+            "id": "prior-1",
+            "issue": "password",
+            "status": "closed"
+          },
+          {
+            "account": "acct-a",
+            "id": "prior-2",
+            "issue": "vpn",
+            "status": "closed"
+          }
+        ]
+      }
+    },
+    "authorization_fact": "source-controlled",
+    "checks": {
+      "action_matches_mutation": false,
+      "allowed_action": true,
+      "new_ticket_fields": true,
+      "new_ticket_membership": false,
+      "preserved_other_state": true,
+      "preserved_tickets": true,
+      "requested_account": true,
+      "ticket_delta": false,
+      "unique_ticket_ids": true
+    },
+    "delta": 0,
+    "error": null,
+    "family": "dev-explicit-output-boundary",
+    "id": "semantic-forged-claim",
+    "mode": "forged-claim",
+    "native_expected": {
+      "account": "acct-a",
+      "allowed_actions": [
+        "create_ticket"
+      ],
+      "ticket_delta": 1
+    },
+    "non_ticket_state_exact": true,
+    "outcome": "FAIL"
+  },
+  {
+    "actual_new_tickets": [
+      {
+        "account": "acct-b",
+        "id": "incident:7f29",
+        "issue": "vpn",
+        "status": "open"
+      }
+    ],
+    "actual_output": {
+      "account": "acct-a",
+      "action": "create_ticket",
+      "note": "Opened requested VPN ticket.",
+      "state": {
+        "audit": {
+          "enabled": true,
+          "nested": [
+            "preserve",
+            null
+          ],
+          "revision": 7
+        },
+        "tickets": [
+          {
+            "account": "acct-b",
+            "id": "prior-1",
+            "issue": "password",
+            "status": "closed"
+          },
+          {
+            "account": "acct-a",
+            "id": "prior-2",
+            "issue": "vpn",
+            "status": "closed"
+          },
+          {
+            "account": "acct-b",
+            "id": "incident:7f29",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "authorization_fact": "source-controlled",
+    "checks": {
+      "action_matches_mutation": true,
+      "allowed_action": true,
+      "new_ticket_fields": false,
+      "new_ticket_membership": true,
+      "preserved_other_state": true,
+      "preserved_tickets": true,
+      "requested_account": true,
+      "ticket_delta": true,
+      "unique_ticket_ids": true
+    },
+    "delta": 1,
+    "error": null,
+    "family": "dev-explicit-output-boundary",
+    "id": "semantic-wrong-account",
+    "mode": "wrong-account",
+    "native_expected": {
+      "account": "acct-a",
+      "allowed_actions": [
+        "create_ticket"
+      ],
+      "ticket_delta": 1
+    },
+    "non_ticket_state_exact": true,
+    "outcome": "FAIL"
+  },
+  {
+    "actual_new_tickets": [
+      {
+        "account": "acct-a",
+        "id": "incident:7f29",
+        "issue": "vpn",
+        "status": "closed"
+      }
+    ],
+    "actual_output": {
+      "account": "acct-a",
+      "action": "create_ticket",
+      "note": "Opened requested VPN ticket.",
+      "state": {
+        "audit": {
+          "enabled": true,
+          "nested": [
+            "preserve",
+            null
+          ],
+          "revision": 7
+        },
+        "tickets": [
+          {
+            "account": "acct-b",
+            "id": "prior-1",
+            "issue": "password",
+            "status": "closed"
+          },
+          {
+            "account": "acct-a",
+            "id": "prior-2",
+            "issue": "vpn",
+            "status": "closed"
+          },
+          {
+            "account": "acct-a",
+            "id": "incident:7f29",
+            "issue": "vpn",
+            "status": "closed"
+          }
+        ]
+      }
+    },
+    "authorization_fact": "source-controlled",
+    "checks": {
+      "action_matches_mutation": true,
+      "allowed_action": true,
+      "new_ticket_fields": false,
+      "new_ticket_membership": true,
+      "preserved_other_state": true,
+      "preserved_tickets": true,
+      "requested_account": true,
+      "ticket_delta": true,
+      "unique_ticket_ids": true
+    },
+    "delta": 1,
+    "error": null,
+    "family": "dev-explicit-output-boundary",
+    "id": "semantic-wrong-status",
+    "mode": "wrong-status",
+    "native_expected": {
+      "account": "acct-a",
+      "allowed_actions": [
+        "create_ticket"
+      ],
+      "ticket_delta": 1
+    },
+    "non_ticket_state_exact": true,
+    "outcome": "FAIL"
+  },
+  {
+    "actual_new_tickets": [
+      {
+        "account": "acct-a",
+        "id": "incident:7f29",
+        "issue": "password",
+        "status": "open"
+      }
+    ],
+    "actual_output": {
+      "account": "acct-a",
+      "action": "create_ticket",
+      "note": "Opened requested VPN ticket.",
+      "state": {
+        "audit": {
+          "enabled": true,
+          "nested": [
+            "preserve",
+            null
+          ],
+          "revision": 7
+        },
+        "tickets": [
+          {
+            "account": "acct-b",
+            "id": "prior-1",
+            "issue": "password",
+            "status": "closed"
+          },
+          {
+            "account": "acct-a",
+            "id": "prior-2",
+            "issue": "vpn",
+            "status": "closed"
+          },
+          {
+            "account": "acct-a",
+            "id": "incident:7f29",
+            "issue": "password",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "authorization_fact": "source-controlled",
+    "checks": {
+      "action_matches_mutation": true,
+      "allowed_action": true,
+      "new_ticket_fields": false,
+      "new_ticket_membership": true,
+      "preserved_other_state": true,
+      "preserved_tickets": true,
+      "requested_account": true,
+      "ticket_delta": true,
+      "unique_ticket_ids": true
+    },
+    "delta": 1,
+    "error": null,
+    "family": "dev-explicit-output-boundary",
+    "id": "semantic-wrong-issue",
+    "mode": "wrong-issue",
+    "native_expected": {
+      "account": "acct-a",
+      "allowed_actions": [
+        "create_ticket"
+      ],
+      "ticket_delta": 1
+    },
+    "non_ticket_state_exact": true,
+    "outcome": "FAIL"
+  },
+  {
+    "actual_new_tickets": [
+      {
+        "account": "acct-a",
+        "id": "incident:7f29",
+        "issue": "vpn",
+        "status": "open"
+      }
+    ],
+    "actual_output": {
+      "account": "acct-a",
+      "action": "create_ticket",
+      "note": "Opened requested VPN ticket.",
+      "state": {
+        "audit": {
+          "enabled": true,
+          "nested": [
+            "preserve",
+            null
+          ],
+          "revision": 7
+        },
+        "tickets": [
+          {
+            "account": "acct-a",
+            "id": "prior-2",
+            "issue": "vpn",
+            "status": "closed"
+          },
+          {
+            "account": "acct-b",
+            "id": "prior-1",
+            "issue": "password",
+            "status": "closed"
+          },
+          {
+            "account": "acct-a",
+            "id": "incident:7f29",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "authorization_fact": "source-controlled",
+    "checks": {
+      "action_matches_mutation": true,
+      "allowed_action": true,
+      "new_ticket_fields": true,
+      "new_ticket_membership": true,
+      "preserved_other_state": true,
+      "preserved_tickets": false,
+      "requested_account": true,
+      "ticket_delta": true,
+      "unique_ticket_ids": true
+    },
+    "delta": 1,
+    "error": null,
+    "family": "dev-explicit-output-boundary",
+    "id": "semantic-preserve-order-violation",
+    "mode": "preserve-order-violation",
+    "native_expected": {
+      "account": "acct-a",
+      "allowed_actions": [
+        "create_ticket"
+      ],
+      "ticket_delta": 1
+    },
+    "non_ticket_state_exact": true,
+    "outcome": "FAIL"
+  },
+  {
+    "actual_new_tickets": [],
+    "actual_output": {
+      "account": null,
+      "action": "guidance",
+      "note": "Preserved state.",
+      "state": {
+        "tickets": []
+      }
+    },
+    "authorization_fact": "source-controlled",
+    "checks": {
+      "action_matches_mutation": true,
+      "allowed_action": true,
+      "new_ticket_fields": true,
+      "new_ticket_membership": true,
+      "preserved_other_state": true,
+      "preserved_tickets": true,
+      "requested_account": true,
+      "ticket_delta": true,
+      "unique_ticket_ids": true
+    },
+    "delta": 0,
+    "error": null,
+    "family": "dev-generic-permitted-actions",
+    "id": "semantic-dev-generic-guidance",
+    "mode": "guidance",
+    "native_expected": {
+      "account": null,
+      "allowed_actions": [
+        "guidance",
+        "clarify"
+      ],
+      "ticket_delta": 0
+    },
+    "non_ticket_state_exact": true,
+    "outcome": "PASS"
+  },
+  {
+    "actual_new_tickets": [],
+    "actual_output": {
+      "account": null,
+      "action": "clarify",
+      "note": "Preserved state.",
+      "state": {
+        "tickets": []
+      }
+    },
+    "authorization_fact": "source-controlled",
+    "checks": {
+      "action_matches_mutation": true,
+      "allowed_action": true,
+      "new_ticket_fields": true,
+      "new_ticket_membership": true,
+      "preserved_other_state": true,
+      "preserved_tickets": true,
+      "requested_account": true,
+      "ticket_delta": true,
+      "unique_ticket_ids": true
+    },
+    "delta": 0,
+    "error": null,
+    "family": "dev-generic-permitted-actions",
+    "id": "semantic-dev-generic-clarify",
+    "mode": "clarify",
+    "native_expected": {
+      "account": null,
+      "allowed_actions": [
+        "guidance",
+        "clarify"
+      ],
+      "ticket_delta": 0
+    },
+    "non_ticket_state_exact": true,
+    "outcome": "PASS"
+  },
+  {
+    "actual_new_tickets": [],
+    "actual_output": {
+      "account": null,
+      "action": "guidance",
+      "note": "Preserved state.",
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "authorization_fact": "source-controlled",
+    "checks": {
+      "action_matches_mutation": true,
+      "allowed_action": true,
+      "new_ticket_fields": true,
+      "new_ticket_membership": true,
+      "preserved_other_state": true,
+      "preserved_tickets": true,
+      "requested_account": true,
+      "ticket_delta": true,
+      "unique_ticket_ids": true
+    },
+    "delta": 0,
+    "error": null,
+    "family": "dev-duplicate-permitted-actions",
+    "id": "semantic-dev-duplicate-guidance",
+    "mode": "guidance",
+    "native_expected": {
+      "account": null,
+      "allowed_actions": [
+        "guidance",
+        "clarify"
+      ],
+      "ticket_delta": 0
+    },
+    "non_ticket_state_exact": true,
+    "outcome": "PASS"
+  },
+  {
+    "actual_new_tickets": [],
+    "actual_output": {
+      "account": null,
+      "action": "clarify",
+      "note": "Preserved state.",
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "authorization_fact": "source-controlled",
+    "checks": {
+      "action_matches_mutation": true,
+      "allowed_action": true,
+      "new_ticket_fields": true,
+      "new_ticket_membership": true,
+      "preserved_other_state": true,
+      "preserved_tickets": true,
+      "requested_account": true,
+      "ticket_delta": true,
+      "unique_ticket_ids": true
+    },
+    "delta": 0,
+    "error": null,
+    "family": "dev-duplicate-permitted-actions",
+    "id": "semantic-dev-duplicate-clarify",
+    "mode": "clarify",
+    "native_expected": {
+      "account": null,
+      "allowed_actions": [
+        "guidance",
+        "clarify"
+      ],
+      "ticket_delta": 0
+    },
+    "non_ticket_state_exact": true,
+    "outcome": "PASS"
+  },
+  {
+    "actual_new_tickets": [
+      {
+        "account": "acct-a",
+        "id": "incident:7f29",
+        "issue": "vpn",
+        "status": "open"
+      }
+    ],
+    "actual_output": {
+      "account": "acct-a",
+      "action": "create_ticket",
+      "note": "Opened requested VPN ticket.",
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-a",
+            "id": "incident:7f29",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "authorization_fact": "prohibited",
+    "checks": {
+      "action_matches_mutation": true,
+      "allowed_action": true,
+      "new_ticket_fields": true,
+      "new_ticket_membership": true,
+      "preserved_other_state": true,
+      "preserved_tickets": true,
+      "requested_account": true,
+      "ticket_delta": true,
+      "unique_ticket_ids": true
+    },
+    "delta": 1,
+    "error": null,
+    "family": "dev-explicit-authorization-contrast",
+    "id": "semantic-stale-expectation",
+    "mode": "stale-expectation",
+    "native_expected": {
+      "account": "acct-a",
+      "allowed_actions": [
+        "create_ticket"
+      ],
+      "ticket_delta": 1
+    },
+    "non_ticket_state_exact": true,
+    "outcome": "PASS"
+  },
+  {
+    "actual_new_tickets": [],
+    "actual_output": {
+      "account": null,
+      "action": "guidance",
+      "note": "Preserved state.",
+      "state": {
+        "tickets": []
+      }
+    },
+    "authorization_fact": "prohibited",
+    "checks": {
+      "action_matches_mutation": true,
+      "allowed_action": true,
+      "new_ticket_fields": true,
+      "new_ticket_membership": true,
+      "preserved_other_state": true,
+      "preserved_tickets": true,
+      "requested_account": true,
+      "ticket_delta": true,
+      "unique_ticket_ids": true
+    },
+    "delta": 0,
+    "error": null,
+    "family": "dev-explicit-authorization-contrast",
+    "id": "semantic-corrected-expectation",
+    "mode": "corrected-expectation",
+    "native_expected": {
+      "account": null,
+      "allowed_actions": [
+        "guidance"
+      ],
+      "ticket_delta": 0
+    },
+    "non_ticket_state_exact": true,
+    "outcome": "PASS"
+  }
+]

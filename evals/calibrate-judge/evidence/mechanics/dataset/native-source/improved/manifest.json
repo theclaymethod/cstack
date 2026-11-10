@@ -1,0 +1,52 @@
+{
+  "candidate_hash": "d8cc818e83af4453a44e9025484ae6e23ecc7cbcf8c9e621efa56c21a179a1c3",
+  "candidate_source": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/calibrate-judge-build/cstack/fixtures/playground/examples/candidates/improved.py",
+  "case_ids": [
+    "dev-howto",
+    "dev-generic",
+    "dev-explicit",
+    "dev-duplicate",
+    "dev-ambiguous",
+    "dev-password",
+    "dev-closed",
+    "dev-unrelated",
+    "conf-howto",
+    "conf-targeted",
+    "conf-duplicate",
+    "conf-preservation"
+  ],
+  "cases_source": {
+    "path": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/calibrate-judge-build/all-controls/judge-calibration/dataset/native-source/improved.jsonl",
+    "sha256": "26c058edfa0e24b1daff73c8944d6f8171ed2e4a561b8b0b4cf32b3fb07fd13b"
+  },
+  "execution_mode": "fresh subprocess per case",
+  "identity": {
+    "files": {
+      "evals/cases.jsonl": "71f1d8c50f7ce2b3ca512c6f2703faa4e30d5c63237824e3a73e7a573cf4f7b2",
+      "evals/rubric.md": "cb133b50752a48098d463a562d7553ec5a5b29bfef1825b4e393e7de33d66dd8",
+      "evals/spec.json": "eb6f21266223c16708a4ed3bb4f401f3a2adb3355b9e176152665d70a665d8f6",
+      "evaluate.py": "fd1fdaa4b090852f8d0a6462303411bea5488dcc7f7a08895146e32d52b0430d"
+    },
+    "protocol": {
+      "confirmation": "baseline and incumbent; preserve baseline PASS; no lower score",
+      "execution_boundary": "trusted local subprocess; not a security sandbox",
+      "name": "deterministic-local-support-v1",
+      "new_ticket_issue": "vpn",
+      "new_ticket_status": "open",
+      "python_flags": [
+        "-I"
+      ],
+      "selection": "strict development improvement; preserve every incumbent PASS",
+      "timeout_seconds": 3,
+      "trials_per_case": 1
+    },
+    "python": {
+      "executable": "/Users/clayton/.local/share/uv/python/cpython-3.13.18-macos-aarch64-none/bin/python3.13",
+      "implementation": "CPython",
+      "platform": "macOS-27.2-arm64-arm-64bit-Mach-O",
+      "version": "3.13.18 (main, Oct 26 2026, 13:59:02) [Clang 23.1.3 ]"
+    }
+  },
+  "schema_version": 1,
+  "suite": "all"
+}

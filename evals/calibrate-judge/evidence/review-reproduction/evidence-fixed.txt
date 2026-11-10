@@ -1,0 +1,9 @@
+malformed_choice {'verdict': 'ERROR', 'failure_probability': None, 'rationale': None, 'error': 'Fixture Choice needs a complete PASS/FAIL distribution'}
+oversized_probability {'verdict': 'ERROR', 'failure_probability': None, 'rationale': None, 'error': 'Expected finite probability in [0,1]'}
+Traceback (most recent call last):
+  File "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/calibrate-judge-build/review-scratch/reproduce.py", line 41, in <module>
+    after=c.compare(p)['agreement']['observed_agreement_decided']
+          ^^^^^^^^^^^^
+  File "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/calibrate-judge-build/cstack/fixtures/playground/judge_calibration/workflow.py", line 137, in compare
+    raise ValueError('Campaign-anchored prediction evidence changed')
+ValueError: Campaign-anchored prediction evidence changed

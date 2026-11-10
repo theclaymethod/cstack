@@ -1,0 +1,26 @@
+{
+  "candidate_hash": "4415802fd413fe7cf05a1a2a87fc7a94a029b8f2730adbf519ae78c4c76c2f07",
+  "case_ids": [
+    "subprocess:prefix-deadline"
+  ],
+  "complete": true,
+  "counts": {
+    "ERROR": 1,
+    "FAIL": 0,
+    "PASS": 0,
+    "UNKNOWN": 0
+  },
+  "executed_count": 1,
+  "identity_hash": "fcdcf237ecffa87832f642192843e78fd1ddd27c3d9bf12a825ace140e795f50",
+  "results": [
+    {
+      "checks": {},
+      "error": "candidate timeout",
+      "id": "subprocess:prefix-deadline",
+      "outcome": "ERROR",
+      "suite": "development"
+    }
+  ],
+  "score": 0.0,
+  "selected_count": 1
+}

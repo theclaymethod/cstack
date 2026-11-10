@@ -1,0 +1,268 @@
+{
+  "endpoints": "Full context and sole implicit-account endpoint are in ../cases.jsonl; stage4 -> endpoint removes only explicit account.",
+  "family": "execution-creation-observation",
+  "limits": "No claimed defect to minimize; these reduce the false-claim challenge while retaining legitimate controls.",
+  "rejected_reductions": [],
+  "stages": [
+    {
+      "case": {
+        "expected": {
+          "account": "acct-a",
+          "allowed_actions": [
+            "create_ticket"
+          ],
+          "ticket_delta": 1
+        },
+        "family": "execution-creation-observation",
+        "id": "exec-reduction-1",
+        "request": {
+          "account": "acct-a",
+          "accounts": [
+            "acct-a",
+            "acct-b"
+          ],
+          "text": "Please open a ticket for my VPN outage."
+        },
+        "state": {
+          "tickets": [
+            {
+              "account": "acct-a",
+              "id": "keep-closed",
+              "issue": "vpn",
+              "status": "closed"
+            },
+            {
+              "account": "acct-b",
+              "id": "keep-other",
+              "issue": "vpn",
+              "status": "open"
+            }
+          ]
+        },
+        "suite": "development"
+      },
+      "observations": {
+        "alternative": {
+          "actual_new_tickets": [
+            {
+              "account": "acct-a",
+              "id": "independent-1",
+              "issue": "vpn",
+              "status": "open"
+            }
+          ],
+          "mechanism_retained": true,
+          "native_outcome": "PASS",
+          "original_state_preserved": true
+        },
+        "clean": {
+          "actual_new_tickets": [
+            {
+              "account": "acct-a",
+              "id": "ticket-1",
+              "issue": "vpn",
+              "status": "open"
+            }
+          ],
+          "mechanism_retained": true,
+          "native_outcome": "PASS",
+          "original_state_preserved": true
+        },
+        "false-claim": {
+          "actual_new_tickets": [],
+          "mechanism_retained": true,
+          "native_outcome": "FAIL",
+          "original_state_preserved": true
+        }
+      },
+      "operation": "remove unrelated profile metadata"
+    },
+    {
+      "case": {
+        "expected": {
+          "account": "acct-a",
+          "allowed_actions": [
+            "create_ticket"
+          ],
+          "ticket_delta": 1
+        },
+        "family": "execution-creation-observation",
+        "id": "exec-reduction-2",
+        "request": {
+          "account": "acct-a",
+          "accounts": [
+            "acct-a",
+            "acct-b"
+          ],
+          "text": "Please open a ticket for my VPN outage."
+        },
+        "state": {
+          "tickets": [
+            {
+              "account": "acct-a",
+              "id": "keep-closed",
+              "issue": "vpn",
+              "status": "closed"
+            }
+          ]
+        },
+        "suite": "development"
+      },
+      "observations": {
+        "alternative": {
+          "actual_new_tickets": [
+            {
+              "account": "acct-a",
+              "id": "independent-1",
+              "issue": "vpn",
+              "status": "open"
+            }
+          ],
+          "mechanism_retained": true,
+          "native_outcome": "PASS",
+          "original_state_preserved": true
+        },
+        "clean": {
+          "actual_new_tickets": [
+            {
+              "account": "acct-a",
+              "id": "ticket-1",
+              "issue": "vpn",
+              "status": "open"
+            }
+          ],
+          "mechanism_retained": true,
+          "native_outcome": "PASS",
+          "original_state_preserved": true
+        },
+        "false-claim": {
+          "actual_new_tickets": [],
+          "mechanism_retained": true,
+          "native_outcome": "FAIL",
+          "original_state_preserved": true
+        }
+      },
+      "operation": "remove other-account open ticket"
+    },
+    {
+      "case": {
+        "expected": {
+          "account": "acct-a",
+          "allowed_actions": [
+            "create_ticket"
+          ],
+          "ticket_delta": 1
+        },
+        "family": "execution-creation-observation",
+        "id": "exec-reduction-3",
+        "request": {
+          "account": "acct-a",
+          "accounts": [
+            "acct-a",
+            "acct-b"
+          ],
+          "text": "Please open a ticket for my VPN outage."
+        },
+        "state": {
+          "tickets": []
+        },
+        "suite": "development"
+      },
+      "observations": {
+        "alternative": {
+          "actual_new_tickets": [
+            {
+              "account": "acct-a",
+              "id": "independent-1",
+              "issue": "vpn",
+              "status": "open"
+            }
+          ],
+          "mechanism_retained": true,
+          "native_outcome": "PASS",
+          "original_state_preserved": true
+        },
+        "clean": {
+          "actual_new_tickets": [
+            {
+              "account": "acct-a",
+              "id": "ticket-1",
+              "issue": "vpn",
+              "status": "open"
+            }
+          ],
+          "mechanism_retained": true,
+          "native_outcome": "PASS",
+          "original_state_preserved": true
+        },
+        "false-claim": {
+          "actual_new_tickets": [],
+          "mechanism_retained": true,
+          "native_outcome": "FAIL",
+          "original_state_preserved": true
+        }
+      },
+      "operation": "remove selected-account closed ticket"
+    },
+    {
+      "case": {
+        "expected": {
+          "account": "acct-a",
+          "allowed_actions": [
+            "create_ticket"
+          ],
+          "ticket_delta": 1
+        },
+        "family": "execution-creation-observation",
+        "id": "exec-reduction-4",
+        "request": {
+          "account": "acct-a",
+          "accounts": [
+            "acct-a"
+          ],
+          "text": "Please open a ticket for my VPN outage."
+        },
+        "state": {
+          "tickets": []
+        },
+        "suite": "development"
+      },
+      "observations": {
+        "alternative": {
+          "actual_new_tickets": [
+            {
+              "account": "acct-a",
+              "id": "independent-1",
+              "issue": "vpn",
+              "status": "open"
+            }
+          ],
+          "mechanism_retained": true,
+          "native_outcome": "PASS",
+          "original_state_preserved": true
+        },
+        "clean": {
+          "actual_new_tickets": [
+            {
+              "account": "acct-a",
+              "id": "ticket-1",
+              "issue": "vpn",
+              "status": "open"
+            }
+          ],
+          "mechanism_retained": true,
+          "native_outcome": "PASS",
+          "original_state_preserved": true
+        },
+        "false-claim": {
+          "actual_new_tickets": [],
+          "mechanism_retained": true,
+          "native_outcome": "FAIL",
+          "original_state_preserved": true
+        }
+      },
+      "operation": "remove unused second account"
+    }
+  ],
+  "status": "executed; no native discrepancy"
+}

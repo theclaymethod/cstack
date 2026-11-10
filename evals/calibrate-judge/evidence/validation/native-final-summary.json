@@ -1,0 +1,22 @@
+{
+  "scope": "Local synthetic control suites and native fixture tests; not model-performance evaluation",
+  "results": [
+    {
+      "suite": "playground",
+      "command": [
+        "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/methods-build/dspy-venv/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "cwd": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/calibrate-judge-build/cstack/fixtures/playground",
+      "exit": 0,
+      "status": "passed",
+      "stdout": "playground.stdout.txt",
+      "stderr": "playground.stderr.txt"
+    }
+  ]
+}

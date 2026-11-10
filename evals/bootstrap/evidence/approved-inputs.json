@@ -1,0 +1,79 @@
+{
+  "scope": "Frozen development fixture input representations; reviewed against scenario decisions. JSON formatting/key order may vary. New semantics require source review and a new fixture revision. This registry is eval-owned, outside candidate-scored edits.",
+  "cases": {
+    "existing-howto": {
+      "scenario_id": "S-01",
+      "revision": 1,
+      "family": "existing-reference",
+      "renderings": [
+        "Where is the VPN setup guide?"
+      ]
+    },
+    "S-02": {
+      "scenario_id": "S-02",
+      "revision": 1,
+      "family": "ordinary-generic-vpn-failure",
+      "renderings": [
+        {
+          "request": "My VPN won't connect. Can you help?",
+          "context": {
+            "target_account": "employee-primary",
+            "account_reference": "unambiguous"
+          },
+          "initial_state": {
+            "open_vpn_tickets": [],
+            "ticket_count": 0
+          }
+        }
+      ]
+    },
+    "S-03": {
+      "scenario_id": "S-03",
+      "revision": 1,
+      "family": "vpn-explicit-ticket",
+      "renderings": [
+        {
+          "request": "Please open a VPN support ticket for my primary work account. The VPN won't connect.",
+          "context": {
+            "target_account": "employee-primary",
+            "account_reference": "unambiguous"
+          },
+          "initial_state": {
+            "open_vpn_tickets": [],
+            "ticket_count": 0
+          }
+        }
+      ]
+    },
+    "bootstrap-vpn-s04-r2": {
+      "scenario_id": "S-04",
+      "revision": 2,
+      "family": "vpn-explicit-ticket",
+      "renderings": [
+        "Context: The signed-in employee has one clearly identified primary employee account, account-employee-42. There is already an open VPN support ticket VPN-204 for that same employee and account. Employee request: \"Please open a VPN support ticket for my account.\"",
+        {
+          "request": "Please open a VPN support ticket for my account.",
+          "context": "The signed-in employee has one relevant account. Their existing VPN support ticket VPN-204 is still open and concerns the same account.",
+          "initial_state": {
+            "accounts": [
+              {
+                "id": "account-employee-42",
+                "owner_id": "employee-42",
+                "label": "primary employee account"
+              }
+            ],
+            "tickets": [
+              {
+                "id": "VPN-204",
+                "account_id": "account-employee-42",
+                "category": "VPN",
+                "status": "open"
+              }
+            ],
+            "ticket_count": 1
+          }
+        }
+      ]
+    }
+  }
+}

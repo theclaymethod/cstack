@@ -1,0 +1,68 @@
+[
+  {
+    "construction": "explicit condition enumeration followed by whole-record and whole-field reduction",
+    "expectation_authority": "synthetic-fixture-contract; not human judgment",
+    "family": "forward-explicit-account-membership-and-reductions",
+    "id": "account-membership-r0-unlisted",
+    "input_sha256": "76e46003909c0dcc0ab02b95a7cedb496035abc0b2bf31dbd38214e33b5f7c29",
+    "parent": null,
+    "partition": "adaptive-development",
+    "source": "evals/spec.json rules 3,5,6",
+    "source_sha256": "eb6f21266223c16708a4ed3bb4f401f3a2adb3355b9e176152665d70a665d8f6"
+  },
+  {
+    "construction": "explicit condition enumeration followed by whole-record and whole-field reduction",
+    "expectation_authority": "synthetic-fixture-contract; not human judgment",
+    "family": "forward-explicit-account-membership-and-reductions",
+    "id": "account-membership-r0-listed",
+    "input_sha256": "2eea706f5812f2b2684c1c191ec9aee0c177ce1195b6418023e6f588a7ed30c5",
+    "parent": null,
+    "partition": "adaptive-development",
+    "source": "evals/spec.json rules 3,5,6",
+    "source_sha256": "eb6f21266223c16708a4ed3bb4f401f3a2adb3355b9e176152665d70a665d8f6"
+  },
+  {
+    "construction": "explicit condition enumeration followed by whole-record and whole-field reduction",
+    "expectation_authority": "synthetic-fixture-contract; not human judgment",
+    "family": "forward-explicit-account-membership-and-reductions",
+    "id": "account-membership-r1-unlisted",
+    "input_sha256": "11268ed0eecebf1e56049dfac3bb98a932efb4f7a36bc01e768665d10972fbec",
+    "parent": "account-membership-r0-unlisted",
+    "partition": "adaptive-development",
+    "source": "evals/spec.json rules 3,5,6",
+    "source_sha256": "eb6f21266223c16708a4ed3bb4f401f3a2adb3355b9e176152665d70a665d8f6"
+  },
+  {
+    "construction": "explicit condition enumeration followed by whole-record and whole-field reduction",
+    "expectation_authority": "synthetic-fixture-contract; not human judgment",
+    "family": "forward-explicit-account-membership-and-reductions",
+    "id": "account-membership-r1-listed",
+    "input_sha256": "69512f2903d135f90aa50df2f64a012ee5458d745bbfe68dd2bf34e2e6545c75",
+    "parent": "account-membership-r0-listed",
+    "partition": "adaptive-development",
+    "source": "evals/spec.json rules 3,5,6",
+    "source_sha256": "eb6f21266223c16708a4ed3bb4f401f3a2adb3355b9e176152665d70a665d8f6"
+  },
+  {
+    "construction": "explicit condition enumeration followed by whole-record and whole-field reduction",
+    "expectation_authority": "synthetic-fixture-contract; not human judgment",
+    "family": "forward-explicit-account-membership-and-reductions",
+    "id": "account-membership-r2-unlisted",
+    "input_sha256": "5ee2876bd12db117a72280136dda1f7b6861e9ab7b4fbd8ff8ea487c1ef73186",
+    "parent": "account-membership-r1-unlisted",
+    "partition": "adaptive-development",
+    "source": "evals/spec.json rules 3,5,6",
+    "source_sha256": "eb6f21266223c16708a4ed3bb4f401f3a2adb3355b9e176152665d70a665d8f6"
+  },
+  {
+    "construction": "explicit condition enumeration followed by whole-record and whole-field reduction",
+    "expectation_authority": "synthetic-fixture-contract; not human judgment",
+    "family": "forward-explicit-account-membership-and-reductions",
+    "id": "account-membership-r2-listed",
+    "input_sha256": "0a0f82f2e944f5e0722cdd028ef32a9a28f3abf6e32a26ff61cf8d9c331d94f0",
+    "parent": "account-membership-r1-listed",
+    "partition": "adaptive-development",
+    "source": "evals/spec.json rules 3,5,6",
+    "source_sha256": "eb6f21266223c16708a4ed3bb4f401f3a2adb3355b9e176152665d70a665d8f6"
+  }
+]

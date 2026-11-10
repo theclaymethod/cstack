@@ -1,0 +1,10 @@
+{
+  "action": "kill",
+  "boundary": "completion.published",
+  "campaign": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/methods-build/final-source-methods/faults/completion/campaign",
+  "completed": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/methods-build/final-source-methods/faults/completion/completed.json",
+  "events": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/methods-build/final-source-methods/faults/completion/events.jsonl",
+  "mode": "lifecycle",
+  "root": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/methods-build/cstack/fixtures/playground",
+  "source_sha256": "fd1fdaa4b090852f8d0a6462303411bea5488dcc7f7a08895146e32d52b0430d"
+}

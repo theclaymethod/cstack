@@ -1,0 +1,26 @@
+{
+  "candidate_hash": "9bb3d5c9c79ac93f8a3a586a811b64dd91ef76863cdcc67ec7735b04c12f141b",
+  "case_ids": [
+    "subprocess:malformed"
+  ],
+  "complete": true,
+  "counts": {
+    "ERROR": 1,
+    "FAIL": 0,
+    "PASS": 0,
+    "UNKNOWN": 0
+  },
+  "executed_count": 1,
+  "identity_hash": "fcdcf237ecffa87832f642192843e78fd1ddd27c3d9bf12a825ace140e795f50",
+  "results": [
+    {
+      "checks": {},
+      "error": "Expecting value: line 1 column 1 (char 0)",
+      "id": "subprocess:malformed",
+      "outcome": "ERROR",
+      "suite": "development"
+    }
+  ],
+  "score": 0.0,
+  "selected_count": 1
+}

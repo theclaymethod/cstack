@@ -1,0 +1,107 @@
+{
+  "adjudication": "No repair proposed. Root defender and independent reviewer retain finding and original-intent authority.",
+  "audit": "Independent attacker execution coverage of frozen /adversarial-cases",
+  "counts": {
+    "actual_custom_case_executions": 26,
+    "actual_lifecycle_case_executions": 50,
+    "actual_native_candidate_case_executions": 76,
+    "candidate_case_budget": 120,
+    "candidate_construction_setup_error_case_executions_included_above": 2,
+    "lifecycle_reserved_case_runs": 56,
+    "network_or_provider_calls": 0,
+    "operator_process_interruptions": 4,
+    "process_interruption_budget": 4,
+    "reduction_case_executions": 12,
+    "setup_rejected_operator_invocations": 1
+  },
+  "families": [
+    {
+      "activation": "Targeted output variants actually returned; raw stdout and parsed state retained in native traces.",
+      "conditions": "Explicit affirmative VPN ticket command; selected valid account; unrelated closed and other-account tickets and nested profile preserved. Reduced case is sole implicit account with empty tickets.",
+      "controls_and_reduction": "Clean and alternative replay at each full/reduced endpoint and four one-condition intermediate reductions; no false-claim native PASS.",
+      "entrypoint": "Native evaluate.py run --cases evidence/cases.jsonl; clean/alternative/false-claim variants",
+      "evidence": [
+        "workspace/eval-runs/attack-execution/evidence/score-observations.json",
+        "workspace/eval-runs/attack-execution/evidence/reduction/observations.json"
+      ],
+      "expectation": "Require one new ticket and preserve old state; any unique nonempty ID and explanatory wording allowed.",
+      "hypothesis": "A creation claim without a newly appended selected-account open VPN ticket might receive credit, or legitimate ID/note variation might be rejected.",
+      "id": "execution-creation-observation",
+      "independent_witness": "Compare actual returned ticket identities/account/status/issue and preserved prior state with original input, separately from score.",
+      "origin": "synthetic, source-derived bounded command/state cases",
+      "outcome": "Clean and legitimate alternative PASS 2/2 each; false-claim FAIL2/2 with unchanged state and zero new tickets."
+    },
+    {
+      "activation": "Malformed string actually emitted with exit0; runtime exception actually exited1; raw stderr retained.",
+      "expectation": "ERROR separately visible; both selected cases retained in denominator.",
+      "hypothesis": "Malformed stdout or unsuccessful exit might be hidden as behavior FAIL/PASS or removed from denominator.",
+      "id": "execution-errors",
+      "limits": "These are candidate failure/output controls, not independently injected network/dependency failures.",
+      "origin": "synthetic candidate-output protocol variants",
+      "outcome": "Both variants 0/2, ERROR2; selected_count2 each. No valid returned state available, task-outcome state remains unavailable."
+    },
+    {
+      "activation": "Each of four source-pinned trace predicates logged target event with source hash and PID, followed by same process native return -9.",
+      "controls": "Uninstrumented clean baseline and armed unreachable attempt999 complete normally; unreachable log absent/completion count0; outputs exactly match clean. State-repeat and all non-state evidence hashes stable.",
+      "evidence": [
+        "workspace/eval-runs/attack-execution/evidence/lifecycle-observations.json"
+      ],
+      "expectation": "Partial evidence remains pending/charged; complete identity-matching measurements and decisions reconcile without reexecuting candidates; repeated status preserves evidence.",
+      "hypothesis": "An interrupted lifecycle may silently lose budget/evidence, promote a partial attempt, or lose a fully measured eligible improvement.",
+      "id": "lifecycle-source-pinned-stops",
+      "limits": "One execution at each of four deterministic boundaries. This tests owned-process interruption, not power loss/storage durability, confirmation completion, or recovery variability.",
+      "origin": "synthetic deterministic operator resilience injections based on native transition source",
+      "outcome": "Partial two-result run remains pending with8 reserved; published-summary and complete-in-memory stops recover complete baseline8-case evidence; proposal decision stop recovers retain improvement with eight PASS."
+    },
+    {
+      "expectation": "Sentinel absent on entry; two native cwd paths differ; scratch dirs removed after case.",
+      "hypothesis": "Prior candidate cwd file may leak between fresh native case subprocesses.",
+      "id": "reset-observation",
+      "limits": "Candidate-reported absence plus independently different/removed cwd witnesses establish this narrow path; no host containment asserted.",
+      "origin": "synthetic candidate scratch sentinel",
+      "outcome": "r2 passes both cases and all three observations hold. r1 had import-order NameError on both cases and does not exercise reset; both original errors preserved and counted."
+    }
+  ],
+  "parent_expectation_authority": "Original synthetic fixture requirements only; new cases and interpretations remain proposed, no human approval/model-performance claim.",
+  "permissions": {
+    "actual_enforcement": "Native snapshots readonly0444 and hashes; not a security sandbox; local host access exists but no candidate writes outside native scratch or protected edits were exercised.",
+    "candidate": "Standalone trusted local Python program, stdin JSON request/state, stdout returned state; variants under eval-runs; no changes to protected source; native runner uses fresh local subprocess cwd and -I.",
+    "operator": "Read frozen protected source; use own native process with source-pinned sys.settrace; SIGKILL_SELF only for four declared phases; inspect retained state/artifacts.",
+    "separation": "Operator injector is separate from candidate artifacts, never imported by candidates. Candidate reset probe writes only its native temporary cwd."
+  },
+  "requirement_source": "../ORIGINAL-CONTRACT.md; frozen fixtures/playground/evals/spec.json and rubric.md; frozen skills/adversarial-cases",
+  "scenario_cards": [
+    {
+      "approval": "pending parent review",
+      "observed": "pending; best_attempt null; reserved8 actual2",
+      "proposed_expectation": "Keep attempt pending and charged; no promotion from partial evidence.",
+      "situation": "Interrupt after two durable trace rows before third execution."
+    },
+    {
+      "approval": "pending parent review",
+      "observed": "two boundary variants recovered; original evidence bytes unchanged",
+      "proposed_expectation": "Reconcile retained complete identity-matching measurement without rerunning cases.",
+      "situation": "Interrupt after complete native summary exists before attempt completion is durably recorded."
+    },
+    {
+      "approval": "pending parent review",
+      "observed": "false-claim FAIL; both legitimate controls PASS through reductions",
+      "proposed_expectation": "Reject claim as lacking a new ticket; accept independently valid ID/note alternatives.",
+      "situation": "Return creation claim but unchanged original state."
+    }
+  ],
+  "setup_errors": [
+    "Driver r1 final expectation assertion failed because reset probe inserted json/sys marker before imports; two ERROR cases preserved; fixed only in r2.",
+    "Mismatched source hash rejected operator setup before native runner/candidate invocation, activation0; one setup rejection."
+  ],
+  "source_revision": "c0af96b600a53ae0089f8b9f7c8ddfd20cbc6588dfe1aca625361fe532c85ee9",
+  "status": "executed; no demonstrated defect; parent adjudication pending",
+  "unexecuted": [
+    "Real external dependency failure/retry: no native external dependency hook in this fixture; candidate crash is not claimed as one.",
+    "Power-loss and persistent-storage durability faults.",
+    "Candidate host escape or attempts to mutate protected evaluation assets.",
+    "Full finish/confirmation interruption paths.",
+    "More fault trials/repeated process interruptions: limit4 exhausted."
+  ],
+  "validation_limits": "Inspected frozen replay.py and inject_native.py; did not run replay (would exceed interruption allowance) or alter them. Its native controls are not a semantic judge of all skill outputs. No supplied defective proxy finding is relabeled as a current defect."
+}

@@ -4,13 +4,13 @@
     "name": "Clayton Kim"
   },
   "metadata": {
-    "description": "C Stack: expert feedback capture, eval creation and execution, and eval validity review."
+    "description": "C Stack: skills for eval-driven development."
   },
   "plugins": [
     {
       "name": "cstack",
       "source": "./",
-      "description": "Capture expert feedback, create and run repeatable evals, and cross-examine their validity."
+      "description": "Capture judgments, bootstrap evals, calibrate judges, and improve agents against them."
     }
   ]
 }

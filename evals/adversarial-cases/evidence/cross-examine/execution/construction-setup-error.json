@@ -1,0 +1,12 @@
+{
+  "actual_cases_before_correction": 62,
+  "additional_cases": 2,
+  "additional_interruptions": 0,
+  "attribution": "Attacker construction import-order error, not target/skill defect.",
+  "corrected_revision": "reset-probe-r2.py imports json/sys before observation marker",
+  "driver_revision": "reproduce.py-r1",
+  "probe_r1_native_errors": 2,
+  "probe_r1_native_score": 0.0,
+  "raw_driver_outcome": "exit 1: final expected_outcomes assertion failed",
+  "reproduction": "reproduce.py retains original failed construction; finalize.py corrects it once and harvests both revisions."
+}

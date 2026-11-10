@@ -1,0 +1,275 @@
+[
+  {
+    "actual_new_tickets": [],
+    "candidate": "forged",
+    "candidate_output": {
+      "account": "acct-a",
+      "action": "create_ticket",
+      "note": "A ticket was created.",
+      "state": {
+        "audit": {
+          "owner": "fixture",
+          "revision": 7
+        },
+        "tickets": [
+          {
+            "account": "acct-b",
+            "id": "prior-password",
+            "issue": "password",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "delta": 0,
+    "id": "build-claim-preservation",
+    "native_checks": {
+      "action_matches_mutation": false,
+      "allowed_action": true,
+      "new_ticket_fields": true,
+      "new_ticket_membership": false,
+      "preserved_other_state": true,
+      "preserved_tickets": true,
+      "requested_account": true,
+      "ticket_delta": false,
+      "unique_ticket_ids": true
+    },
+    "native_outcome": "FAIL",
+    "output_sha256": "6081a9dfe3a6ee1f62e7442538bd6e195b56543bf383ebbf9d7015ab0b045e4e",
+    "preserved_original_prefix": true,
+    "preserved_other_state": true,
+    "proxy_exit": 0,
+    "proxy_passed": true
+  },
+  {
+    "actual_new_tickets": [],
+    "candidate": "forged",
+    "candidate_output": {
+      "account": "acct-a",
+      "action": "create_ticket",
+      "note": "A ticket was created.",
+      "state": {
+        "tickets": []
+      }
+    },
+    "delta": 0,
+    "id": "build-claim-minimal",
+    "native_checks": {
+      "action_matches_mutation": false,
+      "allowed_action": true,
+      "new_ticket_fields": true,
+      "new_ticket_membership": false,
+      "preserved_other_state": true,
+      "preserved_tickets": true,
+      "requested_account": true,
+      "ticket_delta": false,
+      "unique_ticket_ids": true
+    },
+    "native_outcome": "FAIL",
+    "output_sha256": "f52b0784984ac9b49594d2a4a1080681b79fba6c503d3a6709ca0945c384e6e8",
+    "preserved_original_prefix": true,
+    "preserved_other_state": true,
+    "proxy_exit": 0,
+    "proxy_passed": true
+  },
+  {
+    "actual_new_tickets": [
+      {
+        "account": "acct-a",
+        "id": "ticket-1",
+        "issue": "vpn",
+        "status": "open"
+      }
+    ],
+    "candidate": "legitimate",
+    "candidate_output": {
+      "account": "acct-a",
+      "action": "create_ticket",
+      "note": "Opened requested VPN ticket.",
+      "state": {
+        "audit": {
+          "owner": "fixture",
+          "revision": 7
+        },
+        "tickets": [
+          {
+            "account": "acct-b",
+            "id": "prior-password",
+            "issue": "password",
+            "status": "open"
+          },
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "delta": 1,
+    "id": "build-claim-preservation",
+    "native_checks": {
+      "action_matches_mutation": true,
+      "allowed_action": true,
+      "new_ticket_fields": true,
+      "new_ticket_membership": true,
+      "preserved_other_state": true,
+      "preserved_tickets": true,
+      "requested_account": true,
+      "ticket_delta": true,
+      "unique_ticket_ids": true
+    },
+    "native_outcome": "PASS",
+    "output_sha256": "259de9c995c296fe214887f4db26bcb0459291b99dd142a7cf0b8c5625b936c7",
+    "preserved_original_prefix": true,
+    "preserved_other_state": true,
+    "proxy_exit": 0,
+    "proxy_passed": true
+  },
+  {
+    "actual_new_tickets": [
+      {
+        "account": "acct-a",
+        "id": "ticket-1",
+        "issue": "vpn",
+        "status": "open"
+      }
+    ],
+    "candidate": "legitimate",
+    "candidate_output": {
+      "account": "acct-a",
+      "action": "create_ticket",
+      "note": "Opened requested VPN ticket.",
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "delta": 1,
+    "id": "build-claim-minimal",
+    "native_checks": {
+      "action_matches_mutation": true,
+      "allowed_action": true,
+      "new_ticket_fields": true,
+      "new_ticket_membership": true,
+      "preserved_other_state": true,
+      "preserved_tickets": true,
+      "requested_account": true,
+      "ticket_delta": true,
+      "unique_ticket_ids": true
+    },
+    "native_outcome": "PASS",
+    "output_sha256": "5f2d2f653b1987305ca2a02f77f5dea62a08d644f1a6e9785739f5b7d82447b1",
+    "preserved_original_prefix": true,
+    "preserved_other_state": true,
+    "proxy_exit": 0,
+    "proxy_passed": true
+  },
+  {
+    "actual_new_tickets": [
+      {
+        "account": "acct-a",
+        "id": "incident:7f29",
+        "issue": "vpn",
+        "status": "open"
+      }
+    ],
+    "candidate": "legitimate-alternative",
+    "candidate_output": {
+      "account": "acct-a",
+      "action": "create_ticket",
+      "note": "Saved your support request; reference incident:7f29.",
+      "state": {
+        "audit": {
+          "owner": "fixture",
+          "revision": 7
+        },
+        "tickets": [
+          {
+            "account": "acct-b",
+            "id": "prior-password",
+            "issue": "password",
+            "status": "open"
+          },
+          {
+            "account": "acct-a",
+            "id": "incident:7f29",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "delta": 1,
+    "id": "build-claim-preservation",
+    "native_checks": {
+      "action_matches_mutation": true,
+      "allowed_action": true,
+      "new_ticket_fields": true,
+      "new_ticket_membership": true,
+      "preserved_other_state": true,
+      "preserved_tickets": true,
+      "requested_account": true,
+      "ticket_delta": true,
+      "unique_ticket_ids": true
+    },
+    "native_outcome": "PASS",
+    "output_sha256": "b70e1ddb433954a2ee0c8e03d71cc4f5db6f20ec8044ee4a9179bed61c00641b",
+    "preserved_original_prefix": true,
+    "preserved_other_state": true,
+    "proxy_exit": 0,
+    "proxy_passed": true
+  },
+  {
+    "actual_new_tickets": [
+      {
+        "account": "acct-a",
+        "id": "incident:7f29",
+        "issue": "vpn",
+        "status": "open"
+      }
+    ],
+    "candidate": "legitimate-alternative",
+    "candidate_output": {
+      "account": "acct-a",
+      "action": "create_ticket",
+      "note": "Saved your support request; reference incident:7f29.",
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-a",
+            "id": "incident:7f29",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "delta": 1,
+    "id": "build-claim-minimal",
+    "native_checks": {
+      "action_matches_mutation": true,
+      "allowed_action": true,
+      "new_ticket_fields": true,
+      "new_ticket_membership": true,
+      "preserved_other_state": true,
+      "preserved_tickets": true,
+      "requested_account": true,
+      "ticket_delta": true,
+      "unique_ticket_ids": true
+    },
+    "native_outcome": "PASS",
+    "output_sha256": "639c6086ff65be5036ef391999512afa67e199ad034e4fceebb393c9f44eedda",
+    "preserved_original_prefix": true,
+    "preserved_other_state": true,
+    "proxy_exit": 0,
+    "proxy_passed": true
+  }
+]

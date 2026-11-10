@@ -1,0 +1,1 @@
+{"id": "extra-field-minimal", "suite": "development", "family": "dev-explicit-output-boundary", "request": {"text": "Please open a ticket for my VPN problem.", "account": null, "accounts": ["acct-a"]}, "state": {"tickets": []}, "expected": {"allowed_actions": ["create_ticket"], "ticket_delta": 1, "account": "acct-a"}}

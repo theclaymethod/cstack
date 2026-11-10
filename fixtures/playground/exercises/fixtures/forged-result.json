@@ -1,0 +1,6 @@
+{
+  "action": "create_ticket",
+  "account": "primary",
+  "state": {"tickets": []},
+  "note": "A ticket was created."
+}

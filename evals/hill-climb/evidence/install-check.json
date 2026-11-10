@@ -1,0 +1,15 @@
+{
+  "installed_skills": [
+    "bootstrap",
+    "create-eval",
+    "cross-examine",
+    "distill-me",
+    "expert-mode",
+    "hill-climb",
+    "run-eval"
+  ],
+  "verified_links": 14,
+  "local_edit_refused": true,
+  "edited_content_preserved": true,
+  "guard_message": "Installed skill changed; preserve your edits before syncing: hill-climb"
+}

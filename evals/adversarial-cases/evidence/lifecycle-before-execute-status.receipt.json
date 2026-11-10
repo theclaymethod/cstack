@@ -1,0 +1,14 @@
+{
+  "argv": [
+    "/Users/clayton/.local/bin/python3",
+    "evaluate.py",
+    "status",
+    "--campaign",
+    "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/adversarial-case-build/forward-workspace/eval-runs/case-build/lifecycle-before-execute"
+  ],
+  "cwd": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/adversarial-case-build/forward-workspace",
+  "exit_code": 0,
+  "label": "lifecycle-before-execute-status",
+  "stderr": "",
+  "stdout": "{\n  \"best_attempt\": null,\n  \"campaign\": \"/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/adversarial-case-build/forward-workspace/eval-runs/case-build/lifecycle-before-execute\",\n  \"last_decision\": \"baseline pending\",\n  \"max_case_runs\": 24,\n  \"pending_attempts\": [\n    0\n  ],\n  \"protected_confirmation_case_runs\": 8,\n  \"search_case_runs_remaining\": 8,\n  \"status\": \"active\",\n  \"used_case_runs\": 8,\n  \"verification\": \"incomplete attempts remain charged\"\n}\n"
+}

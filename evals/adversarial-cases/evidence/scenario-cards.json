@@ -1,0 +1,61 @@
+[
+  {
+    "construction_status": "executed",
+    "expectation_approval": "pending-parent-user-scoped-decision",
+    "finding_status": "not-adjudicated",
+    "hypothesis": "A lifecycle stop could lose the reservation, rerun completed work for free, or promote absent evidence.",
+    "id": "forward-lifecycle-r1",
+    "observed": "Two independent fresh-campaign stops activated once each; both process exits -9. Pre-status state pending, used=8, best=null; complete 8-case evidence score=.5. Status changed pending to complete with completion_recovered=true and best=0; used stayed 8. Second status produced no trace changes. Earlier-boundary reduction retained pending/charge and created no native run artifacts.",
+    "pending": "Parent approval of this expectation and independent adjudication; no user labels or production recovery claim.",
+    "proposed_expectation": "Preserve the eight-case reservation and evidence. On status, validate completed artifacts, recover baseline completion and incumbent 0 exactly once, and execute no new cases. An earlier stop before case execution should remain pending and charged.",
+    "reason": "README says interrupted attempts remain charged until evidence is reconciled; native load_campaign explicitly validates complete evidence and recovers a completed baseline.",
+    "revision": 1,
+    "situation": "Start an eight-case baseline. Stop the operator-owned native process after run_suite completed native artifacts and before complete_attempt changes the pending ledger entry.",
+    "source_family": "native-campaign-baseline-reservation-reconciliation",
+    "sources": [
+      "README.md",
+      "evaluate.py:reserve_attempt",
+      "evaluate.py:execute_attempt",
+      "evaluate.py:load_campaign"
+    ]
+  },
+  {
+    "construction_status": "executed",
+    "expectation_approval": "pending-parent-user-scoped-decision",
+    "finding_status": "not-adjudicated",
+    "hypothesis": "An action-only scoring boundary may award credit when actual new-ticket membership is empty.",
+    "id": "forward-score-r1",
+    "observed": "Native grader FAIL 2/2 for forge; three failed checks: ticket_delta, new_ticket_membership, action_matches_mutation. Actual new-ticket list empty. Exact supplied deliberately defective proxy PASS 2/2. Both legitimate variants native and proxy PASS 4/4; actual correct tickets present and original state preserved.",
+    "pending": "Parent scope/expectation approval and independent intent review; discrepancy is confined to supplied defective exercise proxy, not current native grading.",
+    "proposed_expectation": "Reject claimed creation without exactly one new open VPN ticket for acct-a; accept preserved state plus a valid appended ticket using either ticket-1 or incident:7f29 and either explanatory note.",
+    "reason": "Synthetic spec requires an actual appended ticket and preservation; rubric allows any unique nonempty ID and does not score note semantics.",
+    "revision": 1,
+    "situation": "Explicitly authorized VPN ticket for acct-a, with either empty state or unrelated password ticket and audit metadata. Candidate emits create_ticket with unchanged state.",
+    "source_family": "dev-explicit-transformed-claim-vs-membership",
+    "sources": [
+      "evals/cases.jsonl:dev-explicit",
+      "evals/spec.json:rules",
+      "evals/rubric.md",
+      "exercises/06-cross-examine.md",
+      "exercises/fixtures/verify_claim.py"
+    ]
+  },
+  {
+    "construction_status": "executed-not-activated",
+    "expectation_approval": "pending-parent-user-scoped-decision",
+    "finding_status": "not-adjudicated",
+    "hypothesis": "A configured fault could be mistaken for an exercised fault, or the tracer itself could change baseline execution.",
+    "id": "forward-noactivation-r1",
+    "observed": "Process exit0, completion_log activation_count0, no activation file, eight native traces, score .5 and best0; same outcomes/outputs as uninstrumented clean baseline.",
+    "pending": "Parent expectation approval; no claim about behavior under an activated fault.",
+    "proposed_expectation": "No stop occurs because the trigger predicate is never true; complete the normal baseline and preserve eight charged case runs. This establishes instrumentation/no-activation control, not recovery.",
+    "reason": "Native start creates only attempt0. Trigger configuration must be distinguished from activation.",
+    "revision": 1,
+    "situation": "Same tracer and self-SIGKILL action are armed for complete_attempt attempt ID99 during a fresh start that creates only baseline attempt0.",
+    "source_family": "native-campaign-baseline-reservation-reconciliation",
+    "sources": [
+      "evaluate.py:complete_attempt",
+      "eval-runs/case-build/inject_native.py"
+    ]
+  }
+]

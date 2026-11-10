@@ -1,0 +1,20 @@
+{
+  "command": [
+    "/Users/clayton/.local/bin/python3",
+    "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/adversarial-audit/attack-execution/workspace/evaluate.py",
+    "run",
+    "--candidate",
+    "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/adversarial-audit/attack-execution/workspace/eval-runs/attack-execution/evidence/candidates/reset-probe.py",
+    "--suite",
+    "development",
+    "--cases",
+    "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/adversarial-audit/attack-execution/workspace/eval-runs/attack-execution/evidence/cases.jsonl",
+    "--out",
+    "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/adversarial-audit/attack-execution/workspace/eval-runs/attack-execution/evidence/native-reset-probe"
+  ],
+  "exit_code": 0,
+  "label": "candidate-reset-probe",
+  "pid": 34895,
+  "stderr": "",
+  "stdout": "{\n  \"candidate_hash\": \"cdc70f19259bfb5fca332bea2c83162abd3f168d33cd552b8df5f98f37aecbd5\",\n  \"case_ids\": [\n    \"exec-create-context\",\n    \"exec-create-reduced\"\n  ],\n  \"complete\": true,\n  \"counts\": {\n    \"ERROR\": 2,\n    \"FAIL\": 0,\n    \"PASS\": 0,\n    \"UNKNOWN\": 0\n  },\n  \"executed_count\": 2,\n  \"identity_hash\": \"aa383e5d477795447070cbf3fe5edd0e0a397006e970bef7ed96170f1b8788e8\",\n  \"results\": [\n    {\n      \"checks\": {},\n      \"error\": \"candidate exited unsuccessfully\",\n      \"id\": \"exec-create-context\",\n      \"outcome\": \"ERROR\",\n      \"suite\": \"development\"\n    },\n    {\n      \"checks\": {},\n      \"error\": \"candidate exited unsuccessfully\",\n      \"id\": \"exec-create-reduced\",\n      \"outcome\": \"ERROR\",\n      \"suite\": \"development\"\n    }\n  ],\n  \"score\": 0.0,\n  \"selected_count\": 2\n}\n"
+}

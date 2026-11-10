@@ -1,0 +1,1 @@
+{"expected": {"account": null, "allowed_actions": ["guidance", "clarify"], "ticket_delta": 0}, "family": "second", "id": "second", "request": {"account": null, "accounts": ["acct-a"], "text": "Do not create a VPN support ticket."}, "state": {"tickets": []}, "suite": "development"}

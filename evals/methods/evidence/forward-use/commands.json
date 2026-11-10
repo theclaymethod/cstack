@@ -1,0 +1,56 @@
+[
+  {
+    "command": [
+      "/Users/clayton/.local/bin/python3",
+      "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/methods-build/forward-use/evaluate.py",
+      "run",
+      "--candidate",
+      "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/methods-build/forward-use/support_agent.py",
+      "--cases",
+      "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/methods-build/forward-use/eval-runs/forward-use/cases.jsonl",
+      "--suite",
+      "development",
+      "--out",
+      "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/methods-build/forward-use/eval-runs/forward-use/baseline"
+    ],
+    "exit": 0,
+    "stderr": "",
+    "stdout": "{\n  \"candidate_hash\": \"0720b56482a445967ff2a98ec5cfa668c858b8a6f662da74a55c21b257393efc\",\n  \"case_ids\": [\n    \"account-membership-r0-unlisted\",\n    \"account-membership-r0-listed\",\n    \"account-membership-r1-unlisted\",\n    \"account-membership-r1-listed\",\n    \"account-membership-r2-unlisted\",\n    \"account-membership-r2-listed\"\n  ],\n  \"complete\": true,\n  \"counts\": {\n    \"ERROR\": 0,\n    \"FAIL\": 3,\n    \"PASS\": 3,\n    \"UNKNOWN\": 0\n  },\n  \"executed_count\": 6,\n  \"identity_hash\": \"89a96d226443d97b3a269934961259e3fc32de1ab2358841c738e964bc6c829c\",\n  \"results\": [\n    {\n      \"checks\": {\n        \"action_matches_mutation\": true,\n        \"allowed_action\": false,\n        \"new_ticket_fields\": false,\n        \"new_ticket_membership\": false,\n        \"preserved_other_state\": true,\n        \"preserved_tickets\": true,\n        \"requested_account\": false,\n        \"ticket_delta\": false,\n        \"unique_ticket_ids\": true\n      },\n      \"error\": null,\n      \"id\": \"account-membership-r0-unlisted\",\n      \"outcome\": \"FAIL\",\n      \"suite\": \"development\"\n    },\n    {\n      \"checks\": {\n        \"action_matches_mutation\": true,\n        \"allowed_action\": true,\n        \"new_ticket_fields\": true,\n        \"new_ticket_membership\": true,\n        \"preserved_other_state\": true,\n        \"preserved_tickets\": true,\n        \"requested_account\": true,\n        \"ticket_delta\": true,\n        \"unique_ticket_ids\": true\n      },\n      \"error\": null,\n      \"id\": \"account-membership-r0-listed\",\n      \"outcome\": \"PASS\",\n      \"suite\": \"development\"\n    },\n    {\n      \"checks\": {\n        \"action_matches_mutation\": true,\n        \"allowed_action\": false,\n        \"new_ticket_fields\": false,\n        \"new_ticket_membership\": false,\n        \"preserved_other_state\": true,\n        \"preserved_tickets\": true,\n        \"requested_account\": false,\n        \"ticket_delta\": false,\n        \"unique_ticket_ids\": true\n      },\n      \"error\": null,\n      \"id\": \"account-membership-r1-unlisted\",\n      \"outcome\": \"FAIL\",\n      \"suite\": \"development\"\n    },\n    {\n      \"checks\": {\n        \"action_matches_mutation\": true,\n        \"allowed_action\": true,\n        \"new_ticket_fields\": true,\n        \"new_ticket_membership\": true,\n        \"preserved_other_state\": true,\n        \"preserved_tickets\": true,\n        \"requested_account\": true,\n        \"ticket_delta\": true,\n        \"unique_ticket_ids\": true\n      },\n      \"error\": null,\n      \"id\": \"account-membership-r1-listed\",\n      \"outcome\": \"PASS\",\n      \"suite\": \"development\"\n    },\n    {\n      \"checks\": {\n        \"action_matches_mutation\": true,\n        \"allowed_action\": false,\n        \"new_ticket_fields\": false,\n        \"new_ticket_membership\": false,\n        \"preserved_other_state\": true,\n        \"preserved_tickets\": true,\n        \"requested_account\": false,\n        \"ticket_delta\": false,\n        \"unique_ticket_ids\": true\n      },\n      \"error\": null,\n      \"id\": \"account-membership-r2-unlisted\",\n      \"outcome\": \"FAIL\",\n      \"suite\": \"development\"\n    },\n    {\n      \"checks\": {\n        \"action_matches_mutation\": true,\n        \"allowed_action\": true,\n        \"new_ticket_fields\": true,\n        \"new_ticket_membership\": true,\n        \"preserved_other_state\": true,\n        \"preserved_tickets\": true,\n        \"requested_account\": true,\n        \"ticket_delta\": true,\n        \"unique_ticket_ids\": true\n      },\n      \"error\": null,\n      \"id\": \"account-membership-r2-listed\",\n      \"outcome\": \"PASS\",\n      \"suite\": \"development\"\n    }\n  ],\n  \"score\": 0.5,\n  \"selected_count\": 6\n}\n"
+  },
+  {
+    "command": [
+      "/Users/clayton/.local/bin/python3",
+      "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/methods-build/forward-use/evaluate.py",
+      "run",
+      "--candidate",
+      "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/methods-build/forward-use/examples/candidates/improved.py",
+      "--cases",
+      "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/methods-build/forward-use/eval-runs/forward-use/cases.jsonl",
+      "--suite",
+      "development",
+      "--out",
+      "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/methods-build/forward-use/eval-runs/forward-use/legitimate-control"
+    ],
+    "exit": 0,
+    "stderr": "",
+    "stdout": "{\n  \"candidate_hash\": \"d8cc818e83af4453a44e9025484ae6e23ecc7cbcf8c9e621efa56c21a179a1c3\",\n  \"case_ids\": [\n    \"account-membership-r0-unlisted\",\n    \"account-membership-r0-listed\",\n    \"account-membership-r1-unlisted\",\n    \"account-membership-r1-listed\",\n    \"account-membership-r2-unlisted\",\n    \"account-membership-r2-listed\"\n  ],\n  \"complete\": true,\n  \"counts\": {\n    \"ERROR\": 0,\n    \"FAIL\": 0,\n    \"PASS\": 6,\n    \"UNKNOWN\": 0\n  },\n  \"executed_count\": 6,\n  \"identity_hash\": \"89a96d226443d97b3a269934961259e3fc32de1ab2358841c738e964bc6c829c\",\n  \"results\": [\n    {\n      \"checks\": {\n        \"action_matches_mutation\": true,\n        \"allowed_action\": true,\n        \"new_ticket_fields\": true,\n        \"new_ticket_membership\": true,\n        \"preserved_other_state\": true,\n        \"preserved_tickets\": true,\n        \"requested_account\": true,\n        \"ticket_delta\": true,\n        \"unique_ticket_ids\": true\n      },\n      \"error\": null,\n      \"id\": \"account-membership-r0-unlisted\",\n      \"outcome\": \"PASS\",\n      \"suite\": \"development\"\n    },\n    {\n      \"checks\": {\n        \"action_matches_mutation\": true,\n        \"allowed_action\": true,\n        \"new_ticket_fields\": true,\n        \"new_ticket_membership\": true,\n        \"preserved_other_state\": true,\n        \"preserved_tickets\": true,\n        \"requested_account\": true,\n        \"ticket_delta\": true,\n        \"unique_ticket_ids\": true\n      },\n      \"error\": null,\n      \"id\": \"account-membership-r0-listed\",\n      \"outcome\": \"PASS\",\n      \"suite\": \"development\"\n    },\n    {\n      \"checks\": {\n        \"action_matches_mutation\": true,\n        \"allowed_action\": true,\n        \"new_ticket_fields\": true,\n        \"new_ticket_membership\": true,\n        \"preserved_other_state\": true,\n        \"preserved_tickets\": true,\n        \"requested_account\": true,\n        \"ticket_delta\": true,\n        \"unique_ticket_ids\": true\n      },\n      \"error\": null,\n      \"id\": \"account-membership-r1-unlisted\",\n      \"outcome\": \"PASS\",\n      \"suite\": \"development\"\n    },\n    {\n      \"checks\": {\n        \"action_matches_mutation\": true,\n        \"allowed_action\": true,\n        \"new_ticket_fields\": true,\n        \"new_ticket_membership\": true,\n        \"preserved_other_state\": true,\n        \"preserved_tickets\": true,\n        \"requested_account\": true,\n        \"ticket_delta\": true,\n        \"unique_ticket_ids\": true\n      },\n      \"error\": null,\n      \"id\": \"account-membership-r1-listed\",\n      \"outcome\": \"PASS\",\n      \"suite\": \"development\"\n    },\n    {\n      \"checks\": {\n        \"action_matches_mutation\": true,\n        \"allowed_action\": true,\n        \"new_ticket_fields\": true,\n        \"new_ticket_membership\": true,\n        \"preserved_other_state\": true,\n        \"preserved_tickets\": true,\n        \"requested_account\": true,\n        \"ticket_delta\": true,\n        \"unique_ticket_ids\": true\n      },\n      \"error\": null,\n      \"id\": \"account-membership-r2-unlisted\",\n      \"outcome\": \"PASS\",\n      \"suite\": \"development\"\n    },\n    {\n      \"checks\": {\n        \"action_matches_mutation\": true,\n        \"allowed_action\": true,\n        \"new_ticket_fields\": true,\n        \"new_ticket_membership\": true,\n        \"preserved_other_state\": true,\n        \"preserved_tickets\": true,\n        \"requested_account\": true,\n        \"ticket_delta\": true,\n        \"unique_ticket_ids\": true\n      },\n      \"error\": null,\n      \"id\": \"account-membership-r2-listed\",\n      \"outcome\": \"PASS\",\n      \"suite\": \"development\"\n    }\n  ],\n  \"score\": 1.0,\n  \"selected_count\": 6\n}\n"
+  },
+  {
+    "command": [
+      "/Users/clayton/.local/bin/python3",
+      "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/methods-build/forward-use/evaluate.py",
+      "run",
+      "--candidate",
+      "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/methods-build/forward-use/eval-runs/forward-use/valid_then_nonzero.py",
+      "--cases",
+      "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/methods-build/forward-use/eval-runs/forward-use/failure-case.jsonl",
+      "--suite",
+      "development",
+      "--out",
+      "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/methods-build/forward-use/eval-runs/forward-use/nonzero-treatment"
+    ],
+    "exit": 0,
+    "stderr": "",
+    "stdout": "{\n  \"candidate_hash\": \"2212682f174b9d60929fd1bfa75f9899872667fc0fa86fe8892c3d0df993002d\",\n  \"case_ids\": [\n    \"account-membership-r0-listed\"\n  ],\n  \"complete\": true,\n  \"counts\": {\n    \"ERROR\": 1,\n    \"FAIL\": 0,\n    \"PASS\": 0,\n    \"UNKNOWN\": 0\n  },\n  \"executed_count\": 1,\n  \"identity_hash\": \"89a96d226443d97b3a269934961259e3fc32de1ab2358841c738e964bc6c829c\",\n  \"results\": [\n    {\n      \"checks\": {},\n      \"error\": \"candidate exited unsuccessfully\",\n      \"id\": \"account-membership-r0-listed\",\n      \"outcome\": \"ERROR\",\n      \"suite\": \"development\"\n    }\n  ],\n  \"score\": 0.0,\n  \"selected_count\": 1\n}\n"
+  }
+]

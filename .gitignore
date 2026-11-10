@@ -17,3 +17,8 @@ exports/
 .env
 .env.*
 !.env.example
+fixtures/playground/.agents/
+fixtures/playground/.claude/
+fixtures/playground/.cursor/
+fixtures/playground/cstack-skills.lock.json
+fixtures/playground/.cstack-source.json

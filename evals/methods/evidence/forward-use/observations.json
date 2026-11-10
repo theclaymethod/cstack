@@ -1,0 +1,40 @@
+{
+  "authority": "Source-backed synthetic fixture expectations, not human approval; all descendants share adaptive development partition.",
+  "baseline": {
+    "ERROR": 0,
+    "FAIL": 3,
+    "PASS": 3
+  },
+  "fault_activation": "Captured complete JSON equal to clean output, stderr marker, and actual exit 7 jointly observed.",
+  "independent_outcome": "Each unlisted-account baseline output appended one ticket assigned to an account absent from request.accounts.",
+  "legitimate_control": {
+    "ERROR": 0,
+    "FAIL": 0,
+    "PASS": 6
+  },
+  "limits": [
+    "trusted local subprocesses, no containment",
+    "failure uses operator-authored candidate; not evaluator crash or power loss",
+    "no provider calls, optimizer, production coverage or held-out generalization",
+    "no source or evaluator edits"
+  ],
+  "native_case_executions": 13,
+  "network_or_provider_calls": 0,
+  "nonzero_treatment": {
+    "ERROR": 1,
+    "FAIL": 0,
+    "PASS": 0,
+    "exit_code": 7,
+    "selected_denominator": 1
+  },
+  "owned_process_interruptions": 0,
+  "reduction": {
+    "controls_rechecked": 2,
+    "rejected_deletions": [],
+    "retained": [
+      "remove unrelated closed password ticket",
+      "remove entire preferences field"
+    ],
+    "stop": "bounded two-step experiment; not global or 1-minimal claim"
+  }
+}

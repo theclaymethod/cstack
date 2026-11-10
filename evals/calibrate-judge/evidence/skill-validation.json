@@ -1,0 +1,56 @@
+[
+  {
+    "skill": "adversarial-cases",
+    "exit": 0,
+    "stdout": "Skill is valid!\n",
+    "stderr": ""
+  },
+  {
+    "skill": "bootstrap",
+    "exit": 0,
+    "stdout": "Skill is valid!\n",
+    "stderr": ""
+  },
+  {
+    "skill": "calibrate-judge",
+    "exit": 0,
+    "stdout": "Skill is valid!\n",
+    "stderr": ""
+  },
+  {
+    "skill": "create-eval",
+    "exit": 0,
+    "stdout": "Skill is valid!\n",
+    "stderr": ""
+  },
+  {
+    "skill": "cross-examine",
+    "exit": 0,
+    "stdout": "Skill is valid!\n",
+    "stderr": ""
+  },
+  {
+    "skill": "distill-me",
+    "exit": 0,
+    "stdout": "Skill is valid!\n",
+    "stderr": ""
+  },
+  {
+    "skill": "expert-mode",
+    "exit": 0,
+    "stdout": "Skill is valid!\n",
+    "stderr": ""
+  },
+  {
+    "skill": "hill-climb",
+    "exit": 0,
+    "stdout": "Skill is valid!\n",
+    "stderr": ""
+  },
+  {
+    "skill": "run-eval",
+    "exit": 0,
+    "stdout": "Skill is valid!\n",
+    "stderr": ""
+  }
+]

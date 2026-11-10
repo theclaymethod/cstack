@@ -1,0 +1,18 @@
+{
+  "evidence_directory": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/hill-climb-audit/coordinator/all-controls/bootstrap",
+  "boundary": "stored-observation; synthetic contract-derived development controls",
+  "approved_cases": 4,
+  "control_runs": 14,
+  "case_control_verdicts": {
+    "PASS": 5,
+    "FAIL": 43,
+    "ERROR": 8
+  },
+  "expected_vs_observed_mismatches": [],
+  "suite_and_runner_unchanged": true,
+  "product_execution": "unrun: no implementation",
+  "semantic_judge_calibration": "not performed; excluded by user",
+  "independent_holdout": false,
+  "host": "macOS-27.2-arm64-arm-64bit",
+  "python": "3.12.16 (main, Oct 26 2026, 13:59:40) [Clang 23.1.3 ]"
+}

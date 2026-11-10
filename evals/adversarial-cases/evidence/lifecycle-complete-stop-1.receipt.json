@@ -1,0 +1,12 @@
+{
+  "argv": [
+    "/Users/clayton/.local/bin/python3",
+    "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/adversarial-case-build/forward-workspace/eval-runs/case-build/inject_native.py",
+    "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/adversarial-case-build/forward-workspace/eval-runs/case-build/lifecycle-complete-stop-1.config.json"
+  ],
+  "cwd": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/adversarial-case-build/forward-workspace",
+  "exit_code": -9,
+  "label": "lifecycle-complete-stop-1",
+  "stderr": "",
+  "stdout": ""
+}

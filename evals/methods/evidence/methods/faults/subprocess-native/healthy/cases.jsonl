@@ -1,0 +1,1 @@
+{"expected": {"account": "acct-a", "allowed_actions": ["create_ticket"], "ticket_delta": 1}, "family": "subprocess", "id": "subprocess:healthy", "request": {"account": null, "accounts": ["acct-a"], "text": "Please create a VPN support ticket."}, "state": {"tickets": []}, "suite": "development"}

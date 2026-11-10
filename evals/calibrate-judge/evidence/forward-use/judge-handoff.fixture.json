@@ -1,0 +1,52 @@
+{
+  "adapter": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/calibrate-judge-build/forward-use/judge_calibration/adapters.py",
+  "deployable": false,
+  "fixture_worker": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/calibrate-judge-build/forward-use/judge_calibration/fixture_backend.py",
+  "invocation": "python3 judge_calibration/fixture_backend.py < envelope.json",
+  "owner_release_policy": null,
+  "recoverable_baseline": {
+    "jev": {
+      "backend": "jev",
+      "fail_at_or_above": 0.8,
+      "live_backend": false,
+      "model": "offline-response-shape-fixture",
+      "pass_below": 0.8,
+      "policy": "claim-only",
+      "question_means_failure": true
+    },
+    "llm": {
+      "backend": "llm",
+      "fail_at_or_above": 0.8,
+      "live_backend": false,
+      "model": "offline-response-shape-fixture",
+      "pass_below": 0.8,
+      "policy": "claim-only",
+      "question_means_failure": true
+    }
+  },
+  "runtime_envelope": {
+    "config": "selected backend configuration",
+    "input": "dataset/inputs.jsonl row"
+  },
+  "selected": {
+    "jev": {
+      "backend": "jev",
+      "fail_at_or_above": 0.5,
+      "live_backend": false,
+      "model": "offline-response-shape-fixture",
+      "pass_below": 0.5,
+      "policy": "state-witness",
+      "question_means_failure": true
+    },
+    "llm": {
+      "backend": "llm",
+      "fail_at_or_above": 0.5,
+      "live_backend": false,
+      "model": "offline-response-shape-fixture",
+      "pass_below": 0.5,
+      "policy": "state-witness",
+      "question_means_failure": true
+    }
+  },
+  "source_manifest": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/calibrate-judge-build/forward-use/eval-runs/forward-calibration-02/dataset/manifest.json"
+}

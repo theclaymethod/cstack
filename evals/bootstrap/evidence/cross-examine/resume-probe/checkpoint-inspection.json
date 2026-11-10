@@ -1,0 +1,14 @@
+{
+  "original_decisions_byte_identical": true,
+  "original_scenario_prefix_byte_identical": true,
+  "original_incomplete_byte_identical": true,
+  "archived_handoff_matches_original": true,
+  "archived_case_matches_original": true,
+  "canonical_ids": [
+    "S-04-r2"
+  ],
+  "current_approved_revisions": {
+    "S-04": 2
+  },
+  "r2_scenario_count": 1
+}

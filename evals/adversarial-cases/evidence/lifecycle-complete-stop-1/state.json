@@ -1,0 +1,29 @@
+{
+  "attempts": [
+    {
+      "candidate_hash": "0720b56482a445967ff2a98ec5cfa668c858b8a6f662da74a55c21b257393efc",
+      "completion_recovered": true,
+      "evidence_hashes": {
+        "candidate.py": "0720b56482a445967ff2a98ec5cfa668c858b8a6f662da74a55c21b257393efc",
+        "cases.jsonl": "71f1d8c50f7ce2b3ca512c6f2703faa4e30d5c63237824e3a73e7a573cf4f7b2",
+        "manifest.json": "2f2fa9fc54f838bdd97996ac2256926f3d46e03b939d28f422d55ec992eaef16",
+        "summary.json": "e247cae050056b81d187c99ec89e2dc2e3352fcd2469733dff98c56dfefc6fee",
+        "traces.jsonl": "1e26368899fb4fb83ebaa147662ea87f19bdf185aa3f9390c50b832e9bb89fac"
+      },
+      "executed_case_runs": 8,
+      "hypothesis": "measure original",
+      "id": 0,
+      "parent": null,
+      "path": "attempts/000-baseline",
+      "reserved_case_runs": 8,
+      "role": "baseline",
+      "status": "complete",
+      "suite": "development"
+    }
+  ],
+  "best_attempt": 0,
+  "contract_hash": "1ea575de8d84a9624f0e97602ee3299c0839a05f412f70c908cd5cbab45ebcdd",
+  "last_decision": "baseline measured; recovered completed evidence",
+  "status": "active",
+  "used_case_runs": 8
+}

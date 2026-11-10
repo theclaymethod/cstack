@@ -1,0 +1,198 @@
+{
+  "candidate_hash": "fc58e60f347a659bc50eb2fddd5437c31dbb1733532dc31f1507a5e981c7eff3",
+  "case_ids": [
+    "authorization:create",
+    "authorization:deny",
+    "authorization:guidance",
+    "account:ambiguous",
+    "account:unavailable",
+    "scope:other-account",
+    "scope:closed",
+    "sequence:create-repeat-conforming-0",
+    "sequence:create-repeat-conforming-1",
+    "sequence:own-created-repeat"
+  ],
+  "complete": true,
+  "counts": {
+    "ERROR": 0,
+    "FAIL": 1,
+    "PASS": 9,
+    "UNKNOWN": 0
+  },
+  "executed_count": 10,
+  "identity_hash": "fcdcf237ecffa87832f642192843e78fd1ddd27c3d9bf12a825ace140e795f50",
+  "results": [
+    {
+      "checks": {
+        "action_matches_mutation": true,
+        "allowed_action": true,
+        "new_ticket_fields": true,
+        "new_ticket_membership": true,
+        "preserved_other_state": true,
+        "preserved_tickets": true,
+        "requested_account": true,
+        "ticket_delta": true,
+        "unique_ticket_ids": true
+      },
+      "error": null,
+      "id": "authorization:create",
+      "outcome": "PASS",
+      "suite": "development"
+    },
+    {
+      "checks": {
+        "action_matches_mutation": true,
+        "allowed_action": true,
+        "new_ticket_fields": true,
+        "new_ticket_membership": true,
+        "preserved_other_state": true,
+        "preserved_tickets": true,
+        "requested_account": true,
+        "ticket_delta": true,
+        "unique_ticket_ids": true
+      },
+      "error": null,
+      "id": "authorization:deny",
+      "outcome": "PASS",
+      "suite": "development"
+    },
+    {
+      "checks": {
+        "action_matches_mutation": true,
+        "allowed_action": true,
+        "new_ticket_fields": true,
+        "new_ticket_membership": true,
+        "preserved_other_state": true,
+        "preserved_tickets": true,
+        "requested_account": true,
+        "ticket_delta": true,
+        "unique_ticket_ids": true
+      },
+      "error": null,
+      "id": "authorization:guidance",
+      "outcome": "PASS",
+      "suite": "development"
+    },
+    {
+      "checks": {
+        "action_matches_mutation": true,
+        "allowed_action": true,
+        "new_ticket_fields": true,
+        "new_ticket_membership": true,
+        "preserved_other_state": true,
+        "preserved_tickets": true,
+        "requested_account": true,
+        "ticket_delta": true,
+        "unique_ticket_ids": true
+      },
+      "error": null,
+      "id": "account:ambiguous",
+      "outcome": "PASS",
+      "suite": "development"
+    },
+    {
+      "checks": {
+        "action_matches_mutation": true,
+        "allowed_action": true,
+        "new_ticket_fields": true,
+        "new_ticket_membership": true,
+        "preserved_other_state": true,
+        "preserved_tickets": true,
+        "requested_account": true,
+        "ticket_delta": true,
+        "unique_ticket_ids": true
+      },
+      "error": null,
+      "id": "account:unavailable",
+      "outcome": "PASS",
+      "suite": "development"
+    },
+    {
+      "checks": {
+        "action_matches_mutation": true,
+        "allowed_action": true,
+        "new_ticket_fields": true,
+        "new_ticket_membership": true,
+        "preserved_other_state": true,
+        "preserved_tickets": true,
+        "requested_account": true,
+        "ticket_delta": true,
+        "unique_ticket_ids": true
+      },
+      "error": null,
+      "id": "scope:other-account",
+      "outcome": "PASS",
+      "suite": "development"
+    },
+    {
+      "checks": {
+        "action_matches_mutation": true,
+        "allowed_action": true,
+        "new_ticket_fields": true,
+        "new_ticket_membership": true,
+        "preserved_other_state": true,
+        "preserved_tickets": true,
+        "requested_account": true,
+        "ticket_delta": true,
+        "unique_ticket_ids": true
+      },
+      "error": null,
+      "id": "scope:closed",
+      "outcome": "PASS",
+      "suite": "development"
+    },
+    {
+      "checks": {
+        "action_matches_mutation": true,
+        "allowed_action": true,
+        "new_ticket_fields": true,
+        "new_ticket_membership": true,
+        "preserved_other_state": true,
+        "preserved_tickets": true,
+        "requested_account": true,
+        "ticket_delta": true,
+        "unique_ticket_ids": true
+      },
+      "error": null,
+      "id": "sequence:create-repeat-conforming-0",
+      "outcome": "PASS",
+      "suite": "development"
+    },
+    {
+      "checks": {
+        "action_matches_mutation": true,
+        "allowed_action": true,
+        "new_ticket_fields": true,
+        "new_ticket_membership": true,
+        "preserved_other_state": true,
+        "preserved_tickets": true,
+        "requested_account": true,
+        "ticket_delta": true,
+        "unique_ticket_ids": true
+      },
+      "error": null,
+      "id": "sequence:create-repeat-conforming-1",
+      "outcome": "PASS",
+      "suite": "development"
+    },
+    {
+      "checks": {
+        "action_matches_mutation": true,
+        "allowed_action": false,
+        "new_ticket_fields": false,
+        "new_ticket_membership": false,
+        "preserved_other_state": true,
+        "preserved_tickets": true,
+        "requested_account": false,
+        "ticket_delta": false,
+        "unique_ticket_ids": true
+      },
+      "error": null,
+      "id": "sequence:own-created-repeat",
+      "outcome": "FAIL",
+      "suite": "development"
+    }
+  ],
+  "score": 0.9,
+  "selected_count": 10
+}

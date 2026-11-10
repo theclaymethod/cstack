@@ -1,0 +1,12 @@
+{
+  "argv": [
+    "/Users/clayton/.local/bin/python3",
+    "exercises/fixtures/verify_claim.py",
+    "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/adversarial-case-build/forward-workspace/eval-runs/case-build/proxy-input-legitimate-alternative-0.json"
+  ],
+  "cwd": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/adversarial-case-build/forward-workspace",
+  "exit_code": 0,
+  "label": "proxy-legitimate-alternative-0",
+  "stderr": "",
+  "stdout": "{\"passed\": true, \"boundary\": \"intentionally defective action-claim proxy\"}\n"
+}

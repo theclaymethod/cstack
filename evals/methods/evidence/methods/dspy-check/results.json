@@ -1,0 +1,262 @@
+{
+  "adapter_sha256": "b744df499a4b0456449e1d16afd85c61f62fde528c63bacb6d333fdacd545e51",
+  "checks": [
+    {
+      "case_id": "account:unavailable",
+      "feedback": {
+        "checks": {
+          "action_matches_mutation": true,
+          "allowed_action": true,
+          "new_ticket_fields": true,
+          "new_ticket_membership": true,
+          "preserved_other_state": true,
+          "preserved_tickets": true,
+          "requested_account": true,
+          "ticket_delta": true,
+          "unique_ticket_ids": true
+        },
+        "error": null,
+        "feedback": "Native required state, authorization and membership checks passed. {\"actual_action\": \"clarify\", \"actual_ticket_delta\": 0, \"allowed_actions\": [\"clarify\"], \"required_ticket_delta\": 0}",
+        "outcome": "PASS",
+        "score": 1.0
+      },
+      "metric": 1.0
+    },
+    {
+      "case_id": "account:ambiguous",
+      "feedback": {
+        "checks": {
+          "action_matches_mutation": true,
+          "allowed_action": true,
+          "new_ticket_fields": true,
+          "new_ticket_membership": true,
+          "preserved_other_state": true,
+          "preserved_tickets": true,
+          "requested_account": true,
+          "ticket_delta": true,
+          "unique_ticket_ids": true
+        },
+        "error": null,
+        "feedback": "Native required state, authorization and membership checks passed. {\"actual_action\": \"clarify\", \"actual_ticket_delta\": 0, \"allowed_actions\": [\"clarify\"], \"required_ticket_delta\": 0}",
+        "outcome": "PASS",
+        "score": 1.0
+      },
+      "metric": 1.0
+    },
+    {
+      "case_id": "scope:closed",
+      "feedback": {
+        "checks": {
+          "action_matches_mutation": true,
+          "allowed_action": true,
+          "new_ticket_fields": true,
+          "new_ticket_membership": true,
+          "preserved_other_state": true,
+          "preserved_tickets": true,
+          "requested_account": true,
+          "ticket_delta": true,
+          "unique_ticket_ids": true
+        },
+        "error": null,
+        "feedback": "Native required state, authorization and membership checks passed. {\"actual_action\": \"create_ticket\", \"actual_ticket_delta\": 1, \"allowed_actions\": [\"create_ticket\"], \"required_ticket_delta\": 1}",
+        "outcome": "PASS",
+        "score": 1.0
+      },
+      "metric": 1.0
+    },
+    {
+      "case_id": "scope:other-account",
+      "feedback": {
+        "checks": {
+          "action_matches_mutation": true,
+          "allowed_action": true,
+          "new_ticket_fields": true,
+          "new_ticket_membership": true,
+          "preserved_other_state": true,
+          "preserved_tickets": true,
+          "requested_account": true,
+          "ticket_delta": true,
+          "unique_ticket_ids": true
+        },
+        "error": null,
+        "feedback": "Native required state, authorization and membership checks passed. {\"actual_action\": \"create_ticket\", \"actual_ticket_delta\": 1, \"allowed_actions\": [\"create_ticket\"], \"required_ticket_delta\": 1}",
+        "outcome": "PASS",
+        "score": 1.0
+      },
+      "metric": 1.0
+    },
+    {
+      "case_id": "sequence:own-created-repeat",
+      "feedback": {
+        "checks": {
+          "action_matches_mutation": true,
+          "allowed_action": true,
+          "new_ticket_fields": true,
+          "new_ticket_membership": true,
+          "preserved_other_state": true,
+          "preserved_tickets": true,
+          "requested_account": true,
+          "ticket_delta": true,
+          "unique_ticket_ids": true
+        },
+        "error": null,
+        "feedback": "Native required state, authorization and membership checks passed. {\"actual_action\": \"guidance\", \"actual_ticket_delta\": 0, \"allowed_actions\": [\"guidance\", \"clarify\"], \"required_ticket_delta\": 0}",
+        "outcome": "PASS",
+        "score": 1.0
+      },
+      "metric": 1.0
+    },
+    {
+      "case_id": "sequence:create-repeat-conforming-1",
+      "feedback": {
+        "checks": {
+          "action_matches_mutation": true,
+          "allowed_action": true,
+          "new_ticket_fields": true,
+          "new_ticket_membership": true,
+          "preserved_other_state": true,
+          "preserved_tickets": true,
+          "requested_account": true,
+          "ticket_delta": true,
+          "unique_ticket_ids": true
+        },
+        "error": null,
+        "feedback": "Native required state, authorization and membership checks passed. {\"actual_action\": \"guidance\", \"actual_ticket_delta\": 0, \"allowed_actions\": [\"guidance\", \"clarify\"], \"required_ticket_delta\": 0}",
+        "outcome": "PASS",
+        "score": 1.0
+      },
+      "metric": 1.0
+    },
+    {
+      "case_id": "sequence:create-repeat-conforming-0",
+      "feedback": {
+        "checks": {
+          "action_matches_mutation": true,
+          "allowed_action": true,
+          "new_ticket_fields": true,
+          "new_ticket_membership": true,
+          "preserved_other_state": true,
+          "preserved_tickets": true,
+          "requested_account": true,
+          "ticket_delta": true,
+          "unique_ticket_ids": true
+        },
+        "error": null,
+        "feedback": "Native required state, authorization and membership checks passed. {\"actual_action\": \"create_ticket\", \"actual_ticket_delta\": 1, \"allowed_actions\": [\"create_ticket\"], \"required_ticket_delta\": 1}",
+        "outcome": "PASS",
+        "score": 1.0
+      },
+      "metric": 1.0
+    },
+    {
+      "case_id": "authorization:guidance",
+      "feedback": {
+        "checks": {
+          "action_matches_mutation": true,
+          "allowed_action": true,
+          "new_ticket_fields": true,
+          "new_ticket_membership": true,
+          "preserved_other_state": true,
+          "preserved_tickets": true,
+          "requested_account": true,
+          "ticket_delta": true,
+          "unique_ticket_ids": true
+        },
+        "error": null,
+        "feedback": "Native required state, authorization and membership checks passed. {\"actual_action\": \"guidance\", \"actual_ticket_delta\": 0, \"allowed_actions\": [\"guidance\"], \"required_ticket_delta\": 0}",
+        "outcome": "PASS",
+        "score": 1.0
+      },
+      "metric": 1.0
+    },
+    {
+      "case_id": "authorization:deny",
+      "feedback": {
+        "checks": {
+          "action_matches_mutation": true,
+          "allowed_action": true,
+          "new_ticket_fields": true,
+          "new_ticket_membership": true,
+          "preserved_other_state": true,
+          "preserved_tickets": true,
+          "requested_account": true,
+          "ticket_delta": true,
+          "unique_ticket_ids": true
+        },
+        "error": null,
+        "feedback": "Native required state, authorization and membership checks passed. {\"actual_action\": \"guidance\", \"actual_ticket_delta\": 0, \"allowed_actions\": [\"guidance\", \"clarify\"], \"required_ticket_delta\": 0}",
+        "outcome": "PASS",
+        "score": 1.0
+      },
+      "metric": 1.0
+    },
+    {
+      "case_id": "authorization:create",
+      "feedback": {
+        "checks": {
+          "action_matches_mutation": true,
+          "allowed_action": true,
+          "new_ticket_fields": true,
+          "new_ticket_membership": true,
+          "preserved_other_state": true,
+          "preserved_tickets": true,
+          "requested_account": true,
+          "ticket_delta": true,
+          "unique_ticket_ids": true
+        },
+        "error": null,
+        "feedback": "Native required state, authorization and membership checks passed. {\"actual_action\": \"create_ticket\", \"actual_ticket_delta\": 1, \"allowed_actions\": [\"create_ticket\"], \"required_ticket_delta\": 1}",
+        "outcome": "PASS",
+        "score": 1.0
+      },
+      "metric": 1.0
+    }
+  ],
+  "dspy_version": "3.5.0",
+  "evaluate_percentage": 100.0,
+  "examples": 10,
+  "execution_error": {
+    "checks": {},
+    "error": "fixture timeout",
+    "feedback": "Native execution/schema error: fixture timeout",
+    "outcome": "ERROR",
+    "score": 0.0
+  },
+  "false_claim": {
+    "checks": {
+      "action_matches_mutation": false,
+      "allowed_action": true,
+      "new_ticket_fields": true,
+      "new_ticket_membership": false,
+      "preserved_other_state": true,
+      "preserved_tickets": true,
+      "requested_account": true,
+      "ticket_delta": false,
+      "unique_ticket_ids": true
+    },
+    "error": null,
+    "feedback": "Native required checks failed: ticket_delta, new_ticket_membership, action_matches_mutation {\"actual_action\": \"create_ticket\", \"actual_ticket_delta\": 0, \"allowed_actions\": [\"create_ticket\"], \"required_ticket_delta\": 1}",
+    "outcome": "FAIL",
+    "score": 0.0
+  },
+  "malformed": {
+    "checks": {},
+    "error": "malformed candidate JSON schema",
+    "feedback": "Native execution/schema error: malformed candidate JSON schema",
+    "outcome": "ERROR",
+    "score": 0.0
+  },
+  "program_sha256": "d8cc818e83af4453a44e9025484ae6e23ecc7cbcf8c9e621efa56c21a179a1c3",
+  "provider_calls": 0,
+  "scalar_metric_fraction": 1.0,
+  "scope": "Actual DSPy Example/Module/Evaluate/Prediction and GEPA metric interface compatibility; deterministic in-process fixture program, no LM or optimizer compile, no optimization-gain claim",
+  "sdk_program_invocations": 20,
+  "sdk_source_hashes": {
+    "Evaluate": "2c6fcbef742c8e1023cd25c1ac342b1dc58dbeba33ff4cb5f029a69aab0a5fcb",
+    "Example": "0c14e356eb4b1f9d54d195b4107dadc4d6871e8083f5d6b2f1b87f6183f24e7e",
+    "GEPA": "8fe81892f81a29196783f1f938c656af94bb759b9eae27feda17623e0650da81",
+    "Module": "0f63191e91db2c1c1d9ae087cecc7ea9997838198500b77d685edc25662687d3",
+    "Prediction": "c3535a9b4d2caf4b510aacd40c0534cc0f948ec563aed63ac8f190186fd1eee4"
+  },
+  "status": "passed"
+}

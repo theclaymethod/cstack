@@ -1,0 +1,42 @@
+{
+  "candidate_hash": "d22610bfe19589694330ff0e8240bb9a0cbedd669b3f61541be0c273156339e0",
+  "candidate_source": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/adversarial-case-build/forward-workspace/eval-runs/case-build/legitimate.py",
+  "case_ids": [
+    "build-claim-preservation",
+    "build-claim-minimal"
+  ],
+  "cases_source": {
+    "path": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/adversarial-case-build/forward-workspace/eval-runs/case-build/score-boundary.jsonl",
+    "sha256": "993f3c6a242032bd6e271eeb34657a913ad5b84d8d39d16b8fa67129309438c9"
+  },
+  "execution_mode": "fresh subprocess per case",
+  "identity": {
+    "files": {
+      "evals/cases.jsonl": "71f1d8c50f7ce2b3ca512c6f2703faa4e30d5c63237824e3a73e7a573cf4f7b2",
+      "evals/rubric.md": "cb133b50752a48098d463a562d7553ec5a5b29bfef1825b4e393e7de33d66dd8",
+      "evals/spec.json": "eb6f21266223c16708a4ed3bb4f401f3a2adb3355b9e176152665d70a665d8f6",
+      "evaluate.py": "c0af96b600a53ae0089f8b9f7c8ddfd20cbc6588dfe1aca625361fe532c85ee9"
+    },
+    "protocol": {
+      "confirmation": "baseline and incumbent; preserve baseline PASS; no lower score",
+      "execution_boundary": "trusted local subprocess; not a security sandbox",
+      "name": "deterministic-local-support-v1",
+      "new_ticket_issue": "vpn",
+      "new_ticket_status": "open",
+      "python_flags": [
+        "-I"
+      ],
+      "selection": "strict development improvement; preserve every incumbent PASS",
+      "timeout_seconds": 3,
+      "trials_per_case": 1
+    },
+    "python": {
+      "executable": "/Users/clayton/.local/share/uv/python/cpython-3.12.16-macos-aarch64-none/bin/python3.12",
+      "implementation": "CPython",
+      "platform": "macOS-27.2-arm64-arm-64bit",
+      "version": "3.12.16 (main, Oct 26 2026, 13:59:40) [Clang 23.1.3 ]"
+    }
+  },
+  "schema_version": 1,
+  "suite": "development"
+}

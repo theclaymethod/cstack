@@ -1,0 +1,21 @@
+{
+  "actual_completed": 1,
+  "calls": [
+    {
+      "candidate": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/methods-build/cstack/fixtures/playground/examples/candidates/improved.py",
+      "cases": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/methods-build/review-scratch/duplicate-label-fixed/trial.jsonl",
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 1,
+        "UNKNOWN": 0
+      },
+      "executed": 1,
+      "label": "trial",
+      "reserved": 1,
+      "status": "complete"
+    }
+  ],
+  "limit": 10,
+  "reserved": 1
+}

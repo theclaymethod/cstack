@@ -1,0 +1,19 @@
+{
+  "account": "acct-a",
+  "action": "create_ticket",
+  "note": "A ticket was created.",
+  "state": {
+    "audit": {
+      "owner": "fixture",
+      "revision": 7
+    },
+    "tickets": [
+      {
+        "account": "acct-b",
+        "id": "prior-password",
+        "issue": "password",
+        "status": "open"
+      }
+    ]
+  }
+}

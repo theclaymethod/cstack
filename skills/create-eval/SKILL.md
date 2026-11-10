@@ -9,6 +9,8 @@ Build an eval that measures a stated capability and supports a concrete decision
 
 For trace analysis, synthetic inputs, failure discovery, or calibration, consult [existing eval skills](references/ecosystem.md). Use the relevant skill when available or its upstream guidance. These are optional references, not bundled dependencies.
 
+For an intent interview and human approval of generated scenarios before authoring, use [Bootstrap](../bootstrap/SKILL.md). Continue here when the behavior and reviewed cases are already established.
+
 ## Define the decision
 
 Establish the intended capability, observable success, expert authority, and acceptable alternatives. Identify what each case judges, such as an assertion, whole output, or environment outcome. One wrong assertion does not label its neighbors. Keep factual correctness, preferences, process requirements, and missing evidence distinct.
@@ -29,7 +31,7 @@ Include legitimate passes and realistic boundary failures. Agent agreement does 
 
 ## Package the cases
 
-Use project conventions or [the local package contract](../run-eval/references/package.md). Its fallback is `rubric.md`, `cases.jsonl`, and `config.json`. Keep data and run evidence outside skill installations.
+Prefer Harbor for new executable agent tasks; preserve established or owner-selected formats. Read [format selection](references/formats.md). For stored-output review, [the local package contract](../run-eval/references/package.md) uses `rubric.md`, `cases.jsonl`, and `config.json`. Keep data and run evidence outside skill installations.
 
 Retain replay inputs, the reviewed output or execution entrypoint, applicable checks, source authority, construction family, and intended use. Write one binary question per independent requirement. Preserve supported alternatives, conditions, and passing direction. Insufficient evidence stays unknown; execution errors are distinct from domain failures.
 
@@ -41,7 +43,7 @@ Split by source or construction family. Keep development, calibration, final tes
 
 Keep the package a draft until legitimate passes, clear failures, and relevant boundaries run through the real grading path. Check supported alternatives too. Use existing checks or direct replays, respecting project rules on new test files. Report what those controls establish without generalizing beyond them.
 
-For semantic judges, read [judge calibration](references/judges.md). Use separate expert-labeled development and calibration examples from both classes. Freeze the rubric, prompt, parser, model/configuration, runner version, sampling, and budget before comparison. Changes create a new revision; preserve earlier results.
+For semantic judges, read [judge calibration](references/judges.md). Use [Calibrate Judge](../calibrate-judge/SKILL.md) to fit a judge to authoritative labels before freezing it for product evaluation. Use separate expert-labeled development and calibration examples from both classes. Freeze the rubric, prompt, parser, model/configuration, runner version, sampling, and budget before comparison. Changes create a new revision; preserve earlier results.
 
 Use [Cross-Examine](../cross-examine/SKILL.md) when requested or when adversarial hardening is needed before a score drives decisions. Supply original intent, permitted shortcuts, access limits, the frozen grading path, and a bounded budget. Record untested risks honestly; reading a checklist is not an audit.
 

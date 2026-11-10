@@ -1,0 +1,26 @@
+{
+  "candidate_hash": "f8de1537e7c8cde6ba0a2b035738695c359787ccb976d5f08c20bbaec28f496f",
+  "case_ids": [
+    "subprocess:valid-nonzero"
+  ],
+  "complete": true,
+  "counts": {
+    "ERROR": 1,
+    "FAIL": 0,
+    "PASS": 0,
+    "UNKNOWN": 0
+  },
+  "executed_count": 1,
+  "identity_hash": "fcdcf237ecffa87832f642192843e78fd1ddd27c3d9bf12a825ace140e795f50",
+  "results": [
+    {
+      "checks": {},
+      "error": "candidate exited unsuccessfully",
+      "id": "subprocess:valid-nonzero",
+      "outcome": "ERROR",
+      "suite": "development"
+    }
+  ],
+  "score": 0.0,
+  "selected_count": 1
+}

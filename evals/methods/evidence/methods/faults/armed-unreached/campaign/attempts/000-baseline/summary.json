@@ -1,0 +1,162 @@
+{
+  "candidate_hash": "0720b56482a445967ff2a98ec5cfa668c858b8a6f662da74a55c21b257393efc",
+  "case_ids": [
+    "dev-howto",
+    "dev-generic",
+    "dev-explicit",
+    "dev-duplicate",
+    "dev-ambiguous",
+    "dev-password",
+    "dev-closed",
+    "dev-unrelated"
+  ],
+  "complete": true,
+  "counts": {
+    "ERROR": 0,
+    "FAIL": 4,
+    "PASS": 4,
+    "UNKNOWN": 0
+  },
+  "executed_count": 8,
+  "identity_hash": "fcdcf237ecffa87832f642192843e78fd1ddd27c3d9bf12a825ace140e795f50",
+  "results": [
+    {
+      "checks": {
+        "action_matches_mutation": true,
+        "allowed_action": false,
+        "new_ticket_fields": false,
+        "new_ticket_membership": false,
+        "preserved_other_state": true,
+        "preserved_tickets": true,
+        "requested_account": false,
+        "ticket_delta": false,
+        "unique_ticket_ids": true
+      },
+      "error": null,
+      "id": "dev-howto",
+      "outcome": "FAIL",
+      "suite": "development"
+    },
+    {
+      "checks": {
+        "action_matches_mutation": true,
+        "allowed_action": false,
+        "new_ticket_fields": false,
+        "new_ticket_membership": false,
+        "preserved_other_state": true,
+        "preserved_tickets": true,
+        "requested_account": false,
+        "ticket_delta": false,
+        "unique_ticket_ids": true
+      },
+      "error": null,
+      "id": "dev-generic",
+      "outcome": "FAIL",
+      "suite": "development"
+    },
+    {
+      "checks": {
+        "action_matches_mutation": true,
+        "allowed_action": true,
+        "new_ticket_fields": true,
+        "new_ticket_membership": true,
+        "preserved_other_state": true,
+        "preserved_tickets": true,
+        "requested_account": true,
+        "ticket_delta": true,
+        "unique_ticket_ids": true
+      },
+      "error": null,
+      "id": "dev-explicit",
+      "outcome": "PASS",
+      "suite": "development"
+    },
+    {
+      "checks": {
+        "action_matches_mutation": true,
+        "allowed_action": false,
+        "new_ticket_fields": false,
+        "new_ticket_membership": false,
+        "preserved_other_state": true,
+        "preserved_tickets": true,
+        "requested_account": false,
+        "ticket_delta": false,
+        "unique_ticket_ids": true
+      },
+      "error": null,
+      "id": "dev-duplicate",
+      "outcome": "FAIL",
+      "suite": "development"
+    },
+    {
+      "checks": {
+        "action_matches_mutation": true,
+        "allowed_action": false,
+        "new_ticket_fields": false,
+        "new_ticket_membership": false,
+        "preserved_other_state": true,
+        "preserved_tickets": true,
+        "requested_account": false,
+        "ticket_delta": false,
+        "unique_ticket_ids": true
+      },
+      "error": null,
+      "id": "dev-ambiguous",
+      "outcome": "FAIL",
+      "suite": "development"
+    },
+    {
+      "checks": {
+        "action_matches_mutation": true,
+        "allowed_action": true,
+        "new_ticket_fields": true,
+        "new_ticket_membership": true,
+        "preserved_other_state": true,
+        "preserved_tickets": true,
+        "requested_account": true,
+        "ticket_delta": true,
+        "unique_ticket_ids": true
+      },
+      "error": null,
+      "id": "dev-password",
+      "outcome": "PASS",
+      "suite": "development"
+    },
+    {
+      "checks": {
+        "action_matches_mutation": true,
+        "allowed_action": true,
+        "new_ticket_fields": true,
+        "new_ticket_membership": true,
+        "preserved_other_state": true,
+        "preserved_tickets": true,
+        "requested_account": true,
+        "ticket_delta": true,
+        "unique_ticket_ids": true
+      },
+      "error": null,
+      "id": "dev-closed",
+      "outcome": "PASS",
+      "suite": "development"
+    },
+    {
+      "checks": {
+        "action_matches_mutation": true,
+        "allowed_action": true,
+        "new_ticket_fields": true,
+        "new_ticket_membership": true,
+        "preserved_other_state": true,
+        "preserved_tickets": true,
+        "requested_account": true,
+        "ticket_delta": true,
+        "unique_ticket_ids": true
+      },
+      "error": null,
+      "id": "dev-unrelated",
+      "outcome": "PASS",
+      "suite": "development"
+    }
+  ],
+  "score": 0.5,
+  "selected_count": 8
+}

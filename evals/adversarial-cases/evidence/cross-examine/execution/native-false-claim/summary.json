@@ -1,0 +1,54 @@
+{
+  "candidate_hash": "e7d350061964404ce4b73305873ef0ed6bbb4fea9812ea3087e9cf74336f27c6",
+  "case_ids": [
+    "exec-create-context",
+    "exec-create-reduced"
+  ],
+  "complete": true,
+  "counts": {
+    "ERROR": 0,
+    "FAIL": 2,
+    "PASS": 0,
+    "UNKNOWN": 0
+  },
+  "executed_count": 2,
+  "identity_hash": "aa383e5d477795447070cbf3fe5edd0e0a397006e970bef7ed96170f1b8788e8",
+  "results": [
+    {
+      "checks": {
+        "action_matches_mutation": false,
+        "allowed_action": true,
+        "new_ticket_fields": true,
+        "new_ticket_membership": false,
+        "preserved_other_state": true,
+        "preserved_tickets": true,
+        "requested_account": true,
+        "ticket_delta": false,
+        "unique_ticket_ids": true
+      },
+      "error": null,
+      "id": "exec-create-context",
+      "outcome": "FAIL",
+      "suite": "development"
+    },
+    {
+      "checks": {
+        "action_matches_mutation": false,
+        "allowed_action": true,
+        "new_ticket_fields": true,
+        "new_ticket_membership": false,
+        "preserved_other_state": true,
+        "preserved_tickets": true,
+        "requested_account": true,
+        "ticket_delta": false,
+        "unique_ticket_ids": true
+      },
+      "error": null,
+      "id": "exec-create-reduced",
+      "outcome": "FAIL",
+      "suite": "development"
+    }
+  ],
+  "score": 0.0,
+  "selected_count": 2
+}

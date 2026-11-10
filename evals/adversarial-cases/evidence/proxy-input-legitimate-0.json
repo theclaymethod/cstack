@@ -1,0 +1,25 @@
+{
+  "account": "acct-a",
+  "action": "create_ticket",
+  "note": "Opened requested VPN ticket.",
+  "state": {
+    "audit": {
+      "owner": "fixture",
+      "revision": 7
+    },
+    "tickets": [
+      {
+        "account": "acct-b",
+        "id": "prior-password",
+        "issue": "password",
+        "status": "open"
+      },
+      {
+        "account": "acct-a",
+        "id": "ticket-1",
+        "issue": "vpn",
+        "status": "open"
+      }
+    ]
+  }
+}

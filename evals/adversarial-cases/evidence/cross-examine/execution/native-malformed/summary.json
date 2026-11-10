@@ -1,0 +1,34 @@
+{
+  "candidate_hash": "7441d2b8d02a16255ada6e7864b0dee465baa2e9a757aadd773257ee9458601c",
+  "case_ids": [
+    "exec-create-context",
+    "exec-create-reduced"
+  ],
+  "complete": true,
+  "counts": {
+    "ERROR": 2,
+    "FAIL": 0,
+    "PASS": 0,
+    "UNKNOWN": 0
+  },
+  "executed_count": 2,
+  "identity_hash": "aa383e5d477795447070cbf3fe5edd0e0a397006e970bef7ed96170f1b8788e8",
+  "results": [
+    {
+      "checks": {},
+      "error": "Expecting property name enclosed in double quotes: line 1 column 2 (char 1)",
+      "id": "exec-create-context",
+      "outcome": "ERROR",
+      "suite": "development"
+    },
+    {
+      "checks": {},
+      "error": "Expecting property name enclosed in double quotes: line 1 column 2 (char 1)",
+      "id": "exec-create-reduced",
+      "outcome": "ERROR",
+      "suite": "development"
+    }
+  ],
+  "score": 0.0,
+  "selected_count": 2
+}

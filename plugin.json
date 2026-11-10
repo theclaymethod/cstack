@@ -1,8 +1,8 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "cstack",
-  "version": "0.3.0",
-  "description": "Capture expert feedback, create and run repeatable evals, and cross-examine their validity.",
+  "version": "0.8.0",
+  "description": "Skills for eval-driven development: capture expert judgments, build evals, calibrate judges, and improve agents.",
   "author": {
     "name": "Clayton Kim"
   },

@@ -1,0 +1,320 @@
+[
+  {
+    "activation_count": 0,
+    "events": [],
+    "label": "lifecycle-noop",
+    "post_status_files": {
+      ".lock": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "attempts/000-baseline/candidate.py": "0720b56482a445967ff2a98ec5cfa668c858b8a6f662da74a55c21b257393efc",
+      "attempts/000-baseline/cases.jsonl": "71f1d8c50f7ce2b3ca512c6f2703faa4e30d5c63237824e3a73e7a573cf4f7b2",
+      "attempts/000-baseline/manifest.json": "2f2fa9fc54f838bdd97996ac2256926f3d46e03b939d28f422d55ec992eaef16",
+      "attempts/000-baseline/summary.json": "e247cae050056b81d187c99ec89e2dc2e3352fcd2469733dff98c56dfefc6fee",
+      "attempts/000-baseline/traces.jsonl": "1e26368899fb4fb83ebaa147662ea87f19bdf185aa3f9390c50b832e9bb89fac",
+      "contract.json": "cad421a0ba33724965c9f920572838940eca1307d86415e7f6b2b3fb2aee476e",
+      "state.json": "60e6d6ac67df24ebf1b97d081530b469e7b884ae01649a0cca4f562c54459c0c"
+    },
+    "post_status_state": {
+      "attempts": [
+        {
+          "candidate_hash": "0720b56482a445967ff2a98ec5cfa668c858b8a6f662da74a55c21b257393efc",
+          "evidence_hashes": {
+            "candidate.py": "0720b56482a445967ff2a98ec5cfa668c858b8a6f662da74a55c21b257393efc",
+            "cases.jsonl": "71f1d8c50f7ce2b3ca512c6f2703faa4e30d5c63237824e3a73e7a573cf4f7b2",
+            "manifest.json": "2f2fa9fc54f838bdd97996ac2256926f3d46e03b939d28f422d55ec992eaef16",
+            "summary.json": "e247cae050056b81d187c99ec89e2dc2e3352fcd2469733dff98c56dfefc6fee",
+            "traces.jsonl": "1e26368899fb4fb83ebaa147662ea87f19bdf185aa3f9390c50b832e9bb89fac"
+          },
+          "executed_case_runs": 8,
+          "hypothesis": "measure original",
+          "id": 0,
+          "parent": null,
+          "path": "attempts/000-baseline",
+          "reserved_case_runs": 8,
+          "role": "baseline",
+          "status": "complete",
+          "suite": "development"
+        }
+      ],
+      "best_attempt": 0,
+      "contract_hash": "1ea575de8d84a9624f0e97602ee3299c0839a05f412f70c908cd5cbab45ebcdd",
+      "last_decision": "baseline measured",
+      "status": "active",
+      "used_case_runs": 8
+    },
+    "pre_status_files": {
+      ".lock": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "attempts/000-baseline/candidate.py": "0720b56482a445967ff2a98ec5cfa668c858b8a6f662da74a55c21b257393efc",
+      "attempts/000-baseline/cases.jsonl": "71f1d8c50f7ce2b3ca512c6f2703faa4e30d5c63237824e3a73e7a573cf4f7b2",
+      "attempts/000-baseline/manifest.json": "2f2fa9fc54f838bdd97996ac2256926f3d46e03b939d28f422d55ec992eaef16",
+      "attempts/000-baseline/summary.json": "e247cae050056b81d187c99ec89e2dc2e3352fcd2469733dff98c56dfefc6fee",
+      "attempts/000-baseline/traces.jsonl": "1e26368899fb4fb83ebaa147662ea87f19bdf185aa3f9390c50b832e9bb89fac",
+      "contract.json": "cad421a0ba33724965c9f920572838940eca1307d86415e7f6b2b3fb2aee476e",
+      "state.json": "60e6d6ac67df24ebf1b97d081530b469e7b884ae01649a0cca4f562c54459c0c"
+    },
+    "pre_status_state": {
+      "attempts": [
+        {
+          "candidate_hash": "0720b56482a445967ff2a98ec5cfa668c858b8a6f662da74a55c21b257393efc",
+          "evidence_hashes": {
+            "candidate.py": "0720b56482a445967ff2a98ec5cfa668c858b8a6f662da74a55c21b257393efc",
+            "cases.jsonl": "71f1d8c50f7ce2b3ca512c6f2703faa4e30d5c63237824e3a73e7a573cf4f7b2",
+            "manifest.json": "2f2fa9fc54f838bdd97996ac2256926f3d46e03b939d28f422d55ec992eaef16",
+            "summary.json": "e247cae050056b81d187c99ec89e2dc2e3352fcd2469733dff98c56dfefc6fee",
+            "traces.jsonl": "1e26368899fb4fb83ebaa147662ea87f19bdf185aa3f9390c50b832e9bb89fac"
+          },
+          "executed_case_runs": 8,
+          "hypothesis": "measure original",
+          "id": 0,
+          "parent": null,
+          "path": "attempts/000-baseline",
+          "reserved_case_runs": 8,
+          "role": "baseline",
+          "status": "complete",
+          "suite": "development"
+        }
+      ],
+      "best_attempt": 0,
+      "contract_hash": "1ea575de8d84a9624f0e97602ee3299c0839a05f412f70c908cd5cbab45ebcdd",
+      "last_decision": "baseline measured",
+      "status": "active",
+      "used_case_runs": 8
+    },
+    "process_exit": 0
+  },
+  {
+    "activation_count": 1,
+    "events": [
+      {
+        "action": "SIGKILL_SELF",
+        "attempt_id": 0,
+        "event": "trigger_reached",
+        "function": "complete_attempt",
+        "line": 340,
+        "pid": 32483,
+        "source_sha256": "c0af96b600a53ae0089f8b9f7c8ddfd20cbc6588dfe1aca625361fe532c85ee9"
+      }
+    ],
+    "label": "lifecycle-complete-stop-1",
+    "post_status_files": {
+      ".lock": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "attempts/000-baseline/candidate.py": "0720b56482a445967ff2a98ec5cfa668c858b8a6f662da74a55c21b257393efc",
+      "attempts/000-baseline/cases.jsonl": "71f1d8c50f7ce2b3ca512c6f2703faa4e30d5c63237824e3a73e7a573cf4f7b2",
+      "attempts/000-baseline/manifest.json": "2f2fa9fc54f838bdd97996ac2256926f3d46e03b939d28f422d55ec992eaef16",
+      "attempts/000-baseline/summary.json": "e247cae050056b81d187c99ec89e2dc2e3352fcd2469733dff98c56dfefc6fee",
+      "attempts/000-baseline/traces.jsonl": "1e26368899fb4fb83ebaa147662ea87f19bdf185aa3f9390c50b832e9bb89fac",
+      "contract.json": "cad421a0ba33724965c9f920572838940eca1307d86415e7f6b2b3fb2aee476e",
+      "state.json": "188cf1b99235d78564cfbecfcd02949e2666e94879ca33e27f020ad4c96e3529"
+    },
+    "post_status_state": {
+      "attempts": [
+        {
+          "candidate_hash": "0720b56482a445967ff2a98ec5cfa668c858b8a6f662da74a55c21b257393efc",
+          "completion_recovered": true,
+          "evidence_hashes": {
+            "candidate.py": "0720b56482a445967ff2a98ec5cfa668c858b8a6f662da74a55c21b257393efc",
+            "cases.jsonl": "71f1d8c50f7ce2b3ca512c6f2703faa4e30d5c63237824e3a73e7a573cf4f7b2",
+            "manifest.json": "2f2fa9fc54f838bdd97996ac2256926f3d46e03b939d28f422d55ec992eaef16",
+            "summary.json": "e247cae050056b81d187c99ec89e2dc2e3352fcd2469733dff98c56dfefc6fee",
+            "traces.jsonl": "1e26368899fb4fb83ebaa147662ea87f19bdf185aa3f9390c50b832e9bb89fac"
+          },
+          "executed_case_runs": 8,
+          "hypothesis": "measure original",
+          "id": 0,
+          "parent": null,
+          "path": "attempts/000-baseline",
+          "reserved_case_runs": 8,
+          "role": "baseline",
+          "status": "complete",
+          "suite": "development"
+        }
+      ],
+      "best_attempt": 0,
+      "contract_hash": "1ea575de8d84a9624f0e97602ee3299c0839a05f412f70c908cd5cbab45ebcdd",
+      "last_decision": "baseline measured; recovered completed evidence",
+      "status": "active",
+      "used_case_runs": 8
+    },
+    "pre_status_files": {
+      ".lock": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "attempts/000-baseline/candidate.py": "0720b56482a445967ff2a98ec5cfa668c858b8a6f662da74a55c21b257393efc",
+      "attempts/000-baseline/cases.jsonl": "71f1d8c50f7ce2b3ca512c6f2703faa4e30d5c63237824e3a73e7a573cf4f7b2",
+      "attempts/000-baseline/manifest.json": "2f2fa9fc54f838bdd97996ac2256926f3d46e03b939d28f422d55ec992eaef16",
+      "attempts/000-baseline/summary.json": "e247cae050056b81d187c99ec89e2dc2e3352fcd2469733dff98c56dfefc6fee",
+      "attempts/000-baseline/traces.jsonl": "1e26368899fb4fb83ebaa147662ea87f19bdf185aa3f9390c50b832e9bb89fac",
+      "contract.json": "cad421a0ba33724965c9f920572838940eca1307d86415e7f6b2b3fb2aee476e",
+      "state.json": "c5abcd15710222fa502feddda31fb5044fa93d4a626ddc192c89f28f3f27cbc9"
+    },
+    "pre_status_state": {
+      "attempts": [
+        {
+          "candidate_hash": "0720b56482a445967ff2a98ec5cfa668c858b8a6f662da74a55c21b257393efc",
+          "hypothesis": "measure original",
+          "id": 0,
+          "parent": null,
+          "path": "attempts/000-baseline",
+          "reserved_case_runs": 8,
+          "role": "baseline",
+          "status": "pending",
+          "suite": "development"
+        }
+      ],
+      "best_attempt": null,
+      "contract_hash": "1ea575de8d84a9624f0e97602ee3299c0839a05f412f70c908cd5cbab45ebcdd",
+      "last_decision": "baseline pending",
+      "status": "active",
+      "used_case_runs": 8
+    },
+    "process_exit": -9
+  },
+  {
+    "activation_count": 1,
+    "events": [
+      {
+        "action": "SIGKILL_SELF",
+        "attempt_id": 0,
+        "event": "trigger_reached",
+        "function": "complete_attempt",
+        "line": 340,
+        "pid": 32503,
+        "source_sha256": "c0af96b600a53ae0089f8b9f7c8ddfd20cbc6588dfe1aca625361fe532c85ee9"
+      }
+    ],
+    "label": "lifecycle-complete-stop-2",
+    "post_status_files": {
+      ".lock": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "attempts/000-baseline/candidate.py": "0720b56482a445967ff2a98ec5cfa668c858b8a6f662da74a55c21b257393efc",
+      "attempts/000-baseline/cases.jsonl": "71f1d8c50f7ce2b3ca512c6f2703faa4e30d5c63237824e3a73e7a573cf4f7b2",
+      "attempts/000-baseline/manifest.json": "2f2fa9fc54f838bdd97996ac2256926f3d46e03b939d28f422d55ec992eaef16",
+      "attempts/000-baseline/summary.json": "e247cae050056b81d187c99ec89e2dc2e3352fcd2469733dff98c56dfefc6fee",
+      "attempts/000-baseline/traces.jsonl": "1e26368899fb4fb83ebaa147662ea87f19bdf185aa3f9390c50b832e9bb89fac",
+      "contract.json": "cad421a0ba33724965c9f920572838940eca1307d86415e7f6b2b3fb2aee476e",
+      "state.json": "188cf1b99235d78564cfbecfcd02949e2666e94879ca33e27f020ad4c96e3529"
+    },
+    "post_status_state": {
+      "attempts": [
+        {
+          "candidate_hash": "0720b56482a445967ff2a98ec5cfa668c858b8a6f662da74a55c21b257393efc",
+          "completion_recovered": true,
+          "evidence_hashes": {
+            "candidate.py": "0720b56482a445967ff2a98ec5cfa668c858b8a6f662da74a55c21b257393efc",
+            "cases.jsonl": "71f1d8c50f7ce2b3ca512c6f2703faa4e30d5c63237824e3a73e7a573cf4f7b2",
+            "manifest.json": "2f2fa9fc54f838bdd97996ac2256926f3d46e03b939d28f422d55ec992eaef16",
+            "summary.json": "e247cae050056b81d187c99ec89e2dc2e3352fcd2469733dff98c56dfefc6fee",
+            "traces.jsonl": "1e26368899fb4fb83ebaa147662ea87f19bdf185aa3f9390c50b832e9bb89fac"
+          },
+          "executed_case_runs": 8,
+          "hypothesis": "measure original",
+          "id": 0,
+          "parent": null,
+          "path": "attempts/000-baseline",
+          "reserved_case_runs": 8,
+          "role": "baseline",
+          "status": "complete",
+          "suite": "development"
+        }
+      ],
+      "best_attempt": 0,
+      "contract_hash": "1ea575de8d84a9624f0e97602ee3299c0839a05f412f70c908cd5cbab45ebcdd",
+      "last_decision": "baseline measured; recovered completed evidence",
+      "status": "active",
+      "used_case_runs": 8
+    },
+    "pre_status_files": {
+      ".lock": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "attempts/000-baseline/candidate.py": "0720b56482a445967ff2a98ec5cfa668c858b8a6f662da74a55c21b257393efc",
+      "attempts/000-baseline/cases.jsonl": "71f1d8c50f7ce2b3ca512c6f2703faa4e30d5c63237824e3a73e7a573cf4f7b2",
+      "attempts/000-baseline/manifest.json": "2f2fa9fc54f838bdd97996ac2256926f3d46e03b939d28f422d55ec992eaef16",
+      "attempts/000-baseline/summary.json": "e247cae050056b81d187c99ec89e2dc2e3352fcd2469733dff98c56dfefc6fee",
+      "attempts/000-baseline/traces.jsonl": "1e26368899fb4fb83ebaa147662ea87f19bdf185aa3f9390c50b832e9bb89fac",
+      "contract.json": "cad421a0ba33724965c9f920572838940eca1307d86415e7f6b2b3fb2aee476e",
+      "state.json": "c5abcd15710222fa502feddda31fb5044fa93d4a626ddc192c89f28f3f27cbc9"
+    },
+    "pre_status_state": {
+      "attempts": [
+        {
+          "candidate_hash": "0720b56482a445967ff2a98ec5cfa668c858b8a6f662da74a55c21b257393efc",
+          "hypothesis": "measure original",
+          "id": 0,
+          "parent": null,
+          "path": "attempts/000-baseline",
+          "reserved_case_runs": 8,
+          "role": "baseline",
+          "status": "pending",
+          "suite": "development"
+        }
+      ],
+      "best_attempt": null,
+      "contract_hash": "1ea575de8d84a9624f0e97602ee3299c0839a05f412f70c908cd5cbab45ebcdd",
+      "last_decision": "baseline pending",
+      "status": "active",
+      "used_case_runs": 8
+    },
+    "process_exit": -9
+  },
+  {
+    "activation_count": 1,
+    "events": [
+      {
+        "action": "SIGKILL_SELF",
+        "attempt_id": 0,
+        "event": "trigger_reached",
+        "function": "execute_attempt",
+        "line": 415,
+        "pid": 32520,
+        "source_sha256": "c0af96b600a53ae0089f8b9f7c8ddfd20cbc6588dfe1aca625361fe532c85ee9"
+      }
+    ],
+    "label": "lifecycle-before-execute",
+    "post_status_files": {
+      ".lock": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "contract.json": "cad421a0ba33724965c9f920572838940eca1307d86415e7f6b2b3fb2aee476e",
+      "state.json": "c5abcd15710222fa502feddda31fb5044fa93d4a626ddc192c89f28f3f27cbc9"
+    },
+    "post_status_state": {
+      "attempts": [
+        {
+          "candidate_hash": "0720b56482a445967ff2a98ec5cfa668c858b8a6f662da74a55c21b257393efc",
+          "hypothesis": "measure original",
+          "id": 0,
+          "parent": null,
+          "path": "attempts/000-baseline",
+          "reserved_case_runs": 8,
+          "role": "baseline",
+          "status": "pending",
+          "suite": "development"
+        }
+      ],
+      "best_attempt": null,
+      "contract_hash": "1ea575de8d84a9624f0e97602ee3299c0839a05f412f70c908cd5cbab45ebcdd",
+      "last_decision": "baseline pending",
+      "status": "active",
+      "used_case_runs": 8
+    },
+    "pre_status_files": {
+      ".lock": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "contract.json": "cad421a0ba33724965c9f920572838940eca1307d86415e7f6b2b3fb2aee476e",
+      "state.json": "c5abcd15710222fa502feddda31fb5044fa93d4a626ddc192c89f28f3f27cbc9"
+    },
+    "pre_status_state": {
+      "attempts": [
+        {
+          "candidate_hash": "0720b56482a445967ff2a98ec5cfa668c858b8a6f662da74a55c21b257393efc",
+          "hypothesis": "measure original",
+          "id": 0,
+          "parent": null,
+          "path": "attempts/000-baseline",
+          "reserved_case_runs": 8,
+          "role": "baseline",
+          "status": "pending",
+          "suite": "development"
+        }
+      ],
+      "best_attempt": null,
+      "contract_hash": "1ea575de8d84a9624f0e97602ee3299c0839a05f412f70c908cd5cbab45ebcdd",
+      "last_decision": "baseline pending",
+      "status": "active",
+      "used_case_runs": 8
+    },
+    "process_exit": -9
+  }
+]

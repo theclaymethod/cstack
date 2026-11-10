@@ -1,0 +1,228 @@
+{
+  "original": {
+    "schema": {
+      "invalid": {
+        "empty-note": {
+          "ERROR": 0,
+          "FAIL": 0,
+          "PASS": 12,
+          "UNKNOWN": 0
+        },
+        "extra-key": {
+          "ERROR": 0,
+          "FAIL": 0,
+          "PASS": 12,
+          "UNKNOWN": 0
+        }
+      },
+      "decision": "retain improvement",
+      "selected_attempt": 1
+    },
+    "proposal": {
+      "status": {
+        "best_attempt": 0,
+        "campaign": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/hill-climb-audit/coordinator/replay/original/proposal/eval-runs/campaign",
+        "last_decision": "baseline measured",
+        "max_case_runs": 24,
+        "pending_attempts": [
+          1
+        ],
+        "protected_confirmation_case_runs": 8,
+        "search_case_runs_remaining": 0,
+        "status": "active",
+        "used_case_runs": 16,
+        "verification": "incomplete attempts remain charged"
+      },
+      "finish": {
+        "best_attempt": 0,
+        "campaign": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/hill-climb-audit/coordinator/replay/original/proposal/eval-runs/campaign",
+        "last_decision": "no verified improvement; baseline retained",
+        "max_case_runs": 24,
+        "pending_attempts": [
+          1
+        ],
+        "protected_confirmation_case_runs": 0,
+        "search_case_runs_remaining": 0,
+        "selection": {
+          "confirmation": {
+            "admissible": true,
+            "baseline_score": 0.5,
+            "candidate_score": 0.5,
+            "case_ids": [
+              "conf-howto",
+              "conf-targeted",
+              "conf-duplicate",
+              "conf-preservation"
+            ],
+            "errors": 0,
+            "gains": [],
+            "regressions": [],
+            "strict_improvement": false
+          },
+          "confirmation_selected": true,
+          "development_incumbent": 0,
+          "limits": "synthetic deterministic development and reserved-workflow evidence; trusted local execution; no generalization claim",
+          "outcome": "no verified improvement; baseline retained",
+          "pending_attempts": [
+            1
+          ],
+          "selected_attempt": 0,
+          "stop_reason": "no verified improvement"
+        },
+        "status": "finished",
+        "used_case_runs": 24,
+        "verification": "incomplete attempts remain charged"
+      },
+      "evidence_unchanged_on_recovery": true
+    },
+    "confirm-incumbent": {
+      "status": {
+        "best_attempt": 1,
+        "campaign": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/hill-climb-audit/coordinator/replay/original/confirm-incumbent/eval-runs/campaign",
+        "last_decision": "retain improvement",
+        "max_case_runs": 24,
+        "pending_attempts": [
+          3
+        ],
+        "protected_confirmation_case_runs": 8,
+        "search_case_runs_remaining": 0,
+        "status": "active",
+        "used_case_runs": 24,
+        "verification": "incomplete attempts remain charged"
+      },
+      "finish": {
+        "exit": 2,
+        "stderr": "{\"error\": \"confirmation interrupted and remains charged; start a new campaign for further confirmation\"}\n"
+      },
+      "evidence_unchanged_on_recovery": true
+    }
+  },
+  "repaired": {
+    "schema": {
+      "invalid": {
+        "empty-note": {
+          "ERROR": 12,
+          "FAIL": 0,
+          "PASS": 0,
+          "UNKNOWN": 0
+        },
+        "extra-key": {
+          "ERROR": 12,
+          "FAIL": 0,
+          "PASS": 0,
+          "UNKNOWN": 0
+        }
+      },
+      "decision": "reject regression",
+      "selected_attempt": 0
+    },
+    "proposal": {
+      "status": {
+        "best_attempt": 1,
+        "campaign": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/hill-climb-audit/coordinator/replay/repaired/proposal/eval-runs/campaign",
+        "last_decision": "retain improvement",
+        "max_case_runs": 24,
+        "pending_attempts": [],
+        "protected_confirmation_case_runs": 8,
+        "search_case_runs_remaining": 0,
+        "status": "active",
+        "used_case_runs": 16,
+        "verification": "record and completed evidence verified"
+      },
+      "finish": {
+        "best_attempt": 1,
+        "campaign": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/hill-climb-audit/coordinator/replay/repaired/proposal/eval-runs/campaign",
+        "last_decision": "verified development improvement; confirmation checks passed",
+        "max_case_runs": 24,
+        "pending_attempts": [],
+        "protected_confirmation_case_runs": 0,
+        "search_case_runs_remaining": 0,
+        "selection": {
+          "confirmation": {
+            "admissible": true,
+            "baseline_score": 0.5,
+            "candidate_score": 1.0,
+            "case_ids": [
+              "conf-howto",
+              "conf-targeted",
+              "conf-duplicate",
+              "conf-preservation"
+            ],
+            "errors": 0,
+            "gains": [
+              "conf-howto",
+              "conf-duplicate"
+            ],
+            "regressions": [],
+            "strict_improvement": true
+          },
+          "confirmation_selected": true,
+          "development_incumbent": 1,
+          "limits": "synthetic deterministic development and reserved-workflow evidence; trusted local execution; no generalization claim",
+          "outcome": "verified development improvement; confirmation checks passed",
+          "pending_attempts": [],
+          "selected_attempt": 1,
+          "stop_reason": "confirmation complete"
+        },
+        "status": "finished",
+        "used_case_runs": 24,
+        "verification": "record and completed evidence verified"
+      },
+      "evidence_unchanged_on_recovery": true
+    },
+    "confirm-incumbent": {
+      "status": {
+        "best_attempt": 1,
+        "campaign": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/hill-climb-audit/coordinator/replay/repaired/confirm-incumbent/eval-runs/campaign",
+        "last_decision": "retain improvement",
+        "max_case_runs": 24,
+        "pending_attempts": [],
+        "protected_confirmation_case_runs": 8,
+        "search_case_runs_remaining": 0,
+        "status": "active",
+        "used_case_runs": 24,
+        "verification": "record and completed evidence verified"
+      },
+      "finish": {
+        "best_attempt": 1,
+        "campaign": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/hill-climb-audit/coordinator/replay/repaired/confirm-incumbent/eval-runs/campaign",
+        "last_decision": "verified development improvement; confirmation checks passed",
+        "max_case_runs": 24,
+        "pending_attempts": [],
+        "protected_confirmation_case_runs": 0,
+        "search_case_runs_remaining": 0,
+        "selection": {
+          "confirmation": {
+            "admissible": true,
+            "baseline_score": 0.5,
+            "candidate_score": 1.0,
+            "case_ids": [
+              "conf-howto",
+              "conf-targeted",
+              "conf-duplicate",
+              "conf-preservation"
+            ],
+            "errors": 0,
+            "gains": [
+              "conf-howto",
+              "conf-duplicate"
+            ],
+            "regressions": [],
+            "strict_improvement": true
+          },
+          "confirmation_selected": true,
+          "development_incumbent": 1,
+          "limits": "synthetic deterministic development and reserved-workflow evidence; trusted local execution; no generalization claim",
+          "outcome": "verified development improvement; confirmation checks passed",
+          "pending_attempts": [],
+          "selected_attempt": 1,
+          "stop_reason": "confirmation complete"
+        },
+        "status": "finished",
+        "used_case_runs": 24,
+        "verification": "record and completed evidence verified"
+      },
+      "evidence_unchanged_on_recovery": true
+    }
+  }
+}

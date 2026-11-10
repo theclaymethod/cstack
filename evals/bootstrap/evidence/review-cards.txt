@@ -1,0 +1,35 @@
+**S-01 · revision 1**
+Situation: An employee asks, “Where is the VPN setup guide?”
+Proposed expectation: Provide guidance; create no ticket.
+Why: Preserves the existing how-to behavior.
+Decision: Approve / Disapprove or correct / Defer.
+
+**S-02 · revision 1**
+Situation: The employee has one clearly identified account and no open VPN ticket. They ask, “My VPN won’t connect. Can you help?” They have not requested a ticket.
+Proposed expectation: Give troubleshooting guidance; create no ticket.
+Why: A generic connection failure is not permission to file a ticket.
+Decision: Approve / Disapprove or correct / Defer.
+
+**S-03 · revision 1**
+Situation: The employee has one clearly identified primary work account and no open VPN ticket. They ask, “Please open a VPN support ticket for my primary work account. The VPN won’t connect.”
+Proposed expectation: Create one ticket.
+Why: An explicit request is enough when the account is clear and no duplicate exists.
+Decision: Approve / Disapprove or correct / Defer.
+
+**S-04 · revision 1**
+Situation: The employee has one clearly identified account and already has open VPN ticket VPN-204 for it. They ask, “Please open a VPN support ticket for my account.”
+Proposed expectation: Guide them to VPN-204; create no new ticket.
+Why: The existing open ticket overrides the new-ticket request.
+Decision: Approve / Disapprove or correct / Defer.
+
+**S-05 · revision 1**
+Situation: The employee has primary account c.morgan and administrator account c.morgan-admin, with no open VPN tickets. No prior conversation identifies the affected account. They ask, “Please open a VPN support ticket for my account.”
+Proposed expectation: Ask which account they mean; create no ticket yet.
+Why: A request to act needs an unambiguous target account.
+Decision: Approve / Disapprove or correct / Defer.
+
+**S-06 · revision 1**
+Situation: The account and ticket state is identical to S-05, but the employee asks, “Please open a VPN support ticket for my primary employee account, c.morgan.”
+Proposed expectation: Create one ticket for c.morgan.
+Why: Naming the account resolves the ambiguity in S-05.
+Decision: Approve / Disapprove or correct / Defer.

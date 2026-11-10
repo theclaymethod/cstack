@@ -1,0 +1,4 @@
+{"id": "existing-howto", "input": "Where is the VPN setup guide?", "family": "existing-reference", "expected": {"allowed_actions": ["guidance"], "ticket_delta": 0}}
+{"id": "S-02", "expected": {"allowed_actions": ["guidance"], "ticket_delta": 0}}
+{"id": "S-03", "expected": {"allowed_actions": ["create_ticket"], "ticket_delta": 1}}
+{"id": "bootstrap-vpn-s04-r2", "expected": {"allowed_actions": ["guidance", "clarify"], "ticket_delta": 0}}

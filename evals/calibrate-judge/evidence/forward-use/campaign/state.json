@@ -1,0 +1,107 @@
+{
+  "exposed_roles": [
+    "train",
+    "validation",
+    "final"
+  ],
+  "final_plan": {
+    "jev-baseline-final": {
+      "backend": "jev",
+      "fail_at_or_above": 0.8,
+      "live_backend": false,
+      "model": "offline-response-shape-fixture",
+      "pass_below": 0.8,
+      "policy": "claim-only",
+      "question_means_failure": true
+    },
+    "jev-candidate-final": {
+      "backend": "jev",
+      "fail_at_or_above": 0.5,
+      "live_backend": false,
+      "model": "offline-response-shape-fixture",
+      "pass_below": 0.5,
+      "policy": "state-witness",
+      "question_means_failure": true
+    },
+    "llm-baseline-final": {
+      "backend": "llm",
+      "fail_at_or_above": 0.8,
+      "live_backend": false,
+      "model": "offline-response-shape-fixture",
+      "pass_below": 0.8,
+      "policy": "claim-only",
+      "question_means_failure": true
+    },
+    "llm-candidate-final": {
+      "backend": "llm",
+      "fail_at_or_above": 0.5,
+      "live_backend": false,
+      "model": "offline-response-shape-fixture",
+      "pass_below": 0.5,
+      "policy": "state-witness",
+      "question_means_failure": true
+    }
+  },
+  "phase": "final_consumed",
+  "reserved_calls": 32,
+  "runs": [
+    {
+      "config_hash": "2aa4b2667ab8adf220e1bea0665a7535c72b626195e8784ffd4bc4387df7448b",
+      "label": "llm-baseline-train",
+      "reserved": 4,
+      "role": "train",
+      "status": "complete"
+    },
+    {
+      "config_hash": "27133a5056e3bf6eb30f1cab1525db3fcc2964ddb36cf0dd6d3de13b9349c37e",
+      "label": "llm-candidate-train",
+      "reserved": 4,
+      "role": "train",
+      "status": "complete"
+    },
+    {
+      "config_hash": "6027853e5ae54b2e2cf091c12a922e7ee5e20bd68ffd42f0a52a62296df30b32",
+      "label": "jev-baseline-train",
+      "reserved": 4,
+      "role": "train",
+      "status": "complete"
+    },
+    {
+      "config_hash": "3f92069dd18a66fab7f68c2941a9667da81834d69782fbe23207ea65afce26b7",
+      "label": "jev-candidate-train",
+      "reserved": 4,
+      "role": "train",
+      "status": "complete"
+    },
+    {
+      "config_hash": "2aa4b2667ab8adf220e1bea0665a7535c72b626195e8784ffd4bc4387df7448b",
+      "label": "llm-baseline-final",
+      "reserved": 4,
+      "role": "final",
+      "status": "complete"
+    },
+    {
+      "config_hash": "27133a5056e3bf6eb30f1cab1525db3fcc2964ddb36cf0dd6d3de13b9349c37e",
+      "label": "llm-candidate-final",
+      "reserved": 4,
+      "role": "final",
+      "status": "complete"
+    },
+    {
+      "config_hash": "6027853e5ae54b2e2cf091c12a922e7ee5e20bd68ffd42f0a52a62296df30b32",
+      "label": "jev-baseline-final",
+      "reserved": 4,
+      "role": "final",
+      "status": "complete"
+    },
+    {
+      "config_hash": "3f92069dd18a66fab7f68c2941a9667da81834d69782fbe23207ea65afce26b7",
+      "label": "jev-candidate-final",
+      "reserved": 4,
+      "role": "final",
+      "status": "complete"
+    }
+  ],
+  "worker_calls": 32,
+  "worker_limit": 32
+}

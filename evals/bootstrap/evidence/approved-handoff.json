@@ -1,0 +1,293 @@
+{
+  "intent_revision": 3,
+  "status": "frozen approved subset for deterministic authoring",
+  "source": "Fixture user labeling reply, turn 3",
+  "approved_scenarios": [
+    {
+      "id": "S-01",
+      "revision": 1,
+      "intent_revision": 2,
+      "status": "pending",
+      "review_card_text": "**S-01 · revision 1**\nSituation: An employee asks, “Where is the VPN setup guide?”\nProposed expectation: Provide guidance; create no ticket.\nWhy: Preserves the existing how-to behavior.\nDecision: Approve / Disapprove or correct / Defer.",
+      "situation": "An employee asks, “Where is the VPN setup guide?”",
+      "proposed_behavior": "Provide guidance; create no ticket.",
+      "reason": "Preserves the existing how-to behavior.",
+      "proposal_source": "scratch/ordinary-proposals.json",
+      "source_proposal": {
+        "id": "ordinary-setup-guide",
+        "input": "Where is the VPN setup guide?",
+        "context": {
+          "request_type": "how-to",
+          "target_account": "employee-primary",
+          "account_reference": "unambiguous"
+        },
+        "initial_state": {
+          "open_vpn_tickets": [],
+          "ticket_count": 0
+        },
+        "proposed_expectation": {
+          "allowed_actions": [
+            "guidance"
+          ],
+          "ticket_delta": 0
+        },
+        "reason": "The preserved setup-guide request requires guidance and no new ticket.",
+        "requirements": [
+          "R1",
+          "R5"
+        ],
+        "assumptions": [
+          "Account and ticket state are fictional supporting context; the existing case's input, family, and expectation must remain unchanged in the existing suite."
+        ],
+        "origin": {
+          "kind": "synthetic context around preserved fixture input",
+          "source": "evals/existing.jsonl#existing-howto; eval-runs/bootstrap/vpn-support/intent.md#Intent revision 2"
+        },
+        "method": "Existing-case preservation with an ordinary feasible context tuple.",
+        "construction_family": "existing-reference",
+        "available_alternatives": [
+          "Guidance wording may vary and may direct the employee to the setup guide."
+        ],
+        "gaps": [
+          "The stored-observation runner cannot establish that the linked guide exists or is useful."
+        ]
+      },
+      "construction_family": "existing-reference",
+      "origin": "synthetic input and state, except preserved existing input S-01",
+      "execution_status": "no product implementation or execution",
+      "partition": "development; no independent outcome labels"
+    },
+    {
+      "id": "S-02",
+      "revision": 1,
+      "intent_revision": 2,
+      "status": "pending",
+      "review_card_text": "**S-02 · revision 1**\nSituation: The employee has one clearly identified account and no open VPN ticket. They ask, “My VPN won’t connect. Can you help?” They have not requested a ticket.\nProposed expectation: Give troubleshooting guidance; create no ticket.\nWhy: A generic connection failure is not permission to file a ticket.\nDecision: Approve / Disapprove or correct / Defer.",
+      "situation": "The employee has one clearly identified account and no open VPN ticket. They ask, “My VPN won’t connect. Can you help?” They have not requested a ticket.",
+      "proposed_behavior": "Give troubleshooting guidance; create no ticket.",
+      "reason": "A generic connection failure is not permission to file a ticket.",
+      "proposal_source": "scratch/ordinary-proposals.json",
+      "source_proposal": {
+        "id": "ordinary-generic-failure",
+        "input": "My VPN won't connect. Can you help?",
+        "context": {
+          "request_type": "generic connection failure",
+          "target_account": "employee-primary",
+          "account_reference": "unambiguous",
+          "explicit_ticket_request": false
+        },
+        "initial_state": {
+          "open_vpn_tickets": [],
+          "ticket_count": 0
+        },
+        "proposed_expectation": {
+          "allowed_actions": [
+            "guidance"
+          ],
+          "ticket_delta": 0
+        },
+        "reason": "A generic connection failure alone does not authorize filing a ticket under revision 2.",
+        "requirements": [
+          "R1"
+        ],
+        "assumptions": [
+          "This is an ordinary support request with no urgency or security condition supplied.",
+          "The employee has not separately authorized a ticket in prior conversation."
+        ],
+        "origin": {
+          "kind": "synthetic",
+          "source": "eval-runs/bootstrap/vpn-support/intent.md#Intent revision 2 (R1)"
+        },
+        "method": "Dimension/tuple generation: generic failure, clear account, no open ticket, no ticket authorization.",
+        "construction_family": "ordinary-generic-vpn-failure",
+        "available_alternatives": [
+          "Troubleshooting instructions may vary within the guidance action category."
+        ],
+        "gaps": [
+          "The runner cannot establish troubleshooting quality or eventual VPN recovery."
+        ]
+      },
+      "construction_family": "ordinary-generic-vpn-failure",
+      "origin": "synthetic input and state, except preserved existing input S-01",
+      "execution_status": "no product implementation or execution",
+      "partition": "development; no independent outcome labels"
+    },
+    {
+      "id": "S-03",
+      "revision": 1,
+      "intent_revision": 2,
+      "status": "pending",
+      "review_card_text": "**S-03 · revision 1**\nSituation: The employee has one clearly identified primary work account and no open VPN ticket. They ask, “Please open a VPN support ticket for my primary work account. The VPN won’t connect.”\nProposed expectation: Create one ticket.\nWhy: An explicit request is enough when the account is clear and no duplicate exists.\nDecision: Approve / Disapprove or correct / Defer.",
+      "situation": "The employee has one clearly identified primary work account and no open VPN ticket. They ask, “Please open a VPN support ticket for my primary work account. The VPN won’t connect.”",
+      "proposed_behavior": "Create one ticket.",
+      "reason": "An explicit request is enough when the account is clear and no duplicate exists.",
+      "proposal_source": "scratch/ordinary-proposals.json",
+      "source_proposal": {
+        "id": "ordinary-explicit-new-ticket",
+        "input": "Please open a VPN support ticket for my primary work account. The VPN won't connect.",
+        "context": {
+          "request_type": "explicit ticket request",
+          "target_account": "employee-primary",
+          "account_reference": "unambiguous",
+          "explicit_ticket_request": true
+        },
+        "initial_state": {
+          "open_vpn_tickets": [],
+          "ticket_count": 0
+        },
+        "proposed_expectation": {
+          "allowed_actions": [
+            "create_ticket"
+          ],
+          "ticket_delta": 1
+        },
+        "reason": "The employee explicitly requests a ticket for a clear account with no existing open VPN ticket.",
+        "requirements": [
+          "R2"
+        ],
+        "assumptions": [
+          "The primary work account is uniquely resolved in the supplied context.",
+          "The open-ticket state is complete for this account.",
+          "No tool failure or permissions restriction is injected into this ordinary proposal."
+        ],
+        "origin": {
+          "kind": "synthetic",
+          "source": "eval-runs/bootstrap/vpn-support/intent.md#Intent revision 2 (R2)"
+        },
+        "method": "Dimension/tuple generation: explicit authorization, clear account, no open VPN ticket.",
+        "construction_family": "ordinary-authorized-new-vpn-ticket",
+        "available_alternatives": [
+          "Acknowledgment and accompanying guidance may vary, provided the action is create_ticket and exactly one ticket is added."
+        ],
+        "gaps": [
+          "No product or ticket API exists in the fixture; state is proposed fictional input, not an observed execution.",
+          "The runner cannot establish correct ticket contents or account assignment."
+        ]
+      },
+      "construction_family": "vpn-explicit-ticket",
+      "origin": "synthetic input and state, except preserved existing input S-01",
+      "execution_status": "no product implementation or execution",
+      "partition": "development; no independent outcome labels"
+    },
+    {
+      "id": "S-04",
+      "revision": 2,
+      "intent_revision": 3,
+      "status": "approved by explicit user correction",
+      "review_card_text": "**S-04 · revision 2**\nSituation: The employee has one clearly identified account and already has open VPN ticket VPN-204 for it. They ask, “Please open a VPN support ticket for my account.”\nApproved replacement expectation (user supplied): Either guidance to the existing ticket or asking a clarifying question about following up on that existing ticket is acceptable; create no new ticket in either case.",
+      "situation": "The employee has one clearly identified account and already has open VPN ticket VPN-204 for it. They ask, “Please open a VPN support ticket for my account.”",
+      "proposed_behavior": "Either guidance to the existing ticket or asking a clarifying question about following up on that existing ticket is acceptable; create no new ticket in either case.",
+      "reason": "Exact replacement authorized by user turn 3.",
+      "proposal_source": "scratch/boundary-independent-proposals.json",
+      "source_proposal": {
+        "id": "proposed-existing-vpn-ticket",
+        "requirement": "R3",
+        "facts": {
+          "employee_id": "employee-42",
+          "target_account_id": "account-employee-42",
+          "request_is_explicit_ticket_authorization": true,
+          "account_is_unambiguous": true,
+          "existing_open_vpn_ticket_id": "VPN-204"
+        },
+        "context": "The signed-in employee has one relevant account. Their existing VPN support ticket VPN-204 is still open and concerns the same account.",
+        "input": "Please open a VPN support ticket for my account.",
+        "initial_state": {
+          "accounts": [
+            {
+              "id": "account-employee-42",
+              "owner_id": "employee-42",
+              "label": "primary employee account"
+            }
+          ],
+          "tickets": [
+            {
+              "id": "VPN-204",
+              "account_id": "account-employee-42",
+              "category": "VPN",
+              "status": "open"
+            }
+          ],
+          "ticket_count": 1
+        },
+        "proposed_expectation": {
+          "allowed_actions": [
+            "guidance",
+            "clarify"
+          ],
+          "ticket_delta": 0,
+          "semantic_expectation": "Either guidance to the existing ticket or asking a clarifying question about following up on that existing ticket is acceptable; create no new ticket in either case."
+        },
+        "reason": "R3 makes the existing open VPN ticket decisive even though the employee explicitly asks for a new ticket.",
+        "assumptions": [
+          "The assistant can read the provided account and ticket state.",
+          "Ticket VPN-204 is for the employee and account named by the request."
+        ],
+        "method": "Condition tuple generation targeting an explicit exception to ticket authorization",
+        "family": "boundary-open-ticket-overrides-explicit-request",
+        "gaps": [
+          "The stored-observation runner can check guidance and zero ticket delta, but cannot prove that the response mentions VPN-204."
+        ],
+        "source": {
+          "origin": "synthetic",
+          "requirements_source": "fixture user turn 2; intent revision 2",
+          "requirement_document": "eval-runs/bootstrap/vpn-support/intent.md",
+          "construction_source": "Independent boundary scenario author; no other proposals consulted",
+          "evidence_status": "Proposals only; no approved expectations, product executions, or human outcome labels"
+        }
+      },
+      "construction_family": "vpn-explicit-ticket",
+      "origin": "synthetic input and state, except preserved existing input S-01",
+      "execution_status": "no product implementation or execution",
+      "partition": "development; no independent outcome labels",
+      "supersedes_revision": 1
+    }
+  ],
+  "approved_revisions": {
+    "S-01": 1,
+    "S-02": 1,
+    "S-03": 1,
+    "S-04": 2
+  },
+  "exclusions": {
+    "S-04 revision1": "superseded",
+    "S-05 revision1": "disapproved; replacement undecided",
+    "S-06 revision1": "deferred"
+  },
+  "format": {
+    "required": [
+      "id",
+      "input",
+      "family",
+      "expected"
+    ],
+    "expected": {
+      "allowed_actions": "nonempty list",
+      "ticket_delta": "integer"
+    },
+    "actions": [
+      "guidance",
+      "create_ticket",
+      "clarify"
+    ]
+  },
+  "runner": "python3 runner.py --cases evals/bootstrap-vpn.jsonl --observations OBSERVATIONS",
+  "preservation": "Keep runner.py and evals/existing.jsonl unchanged; use existing-howto row unchanged for S-01 in standalone approved package.",
+  "constraints": [
+    "No product implementation",
+    "No semantic judge calibration",
+    "No cross-examine",
+    "No external calls"
+  ],
+  "evidence_limit": "Only stored action category and ticket_delta are observable. Account correctness, existing-ticket referral semantics, final ticket state, and response quality are unverified.",
+  "exposure": "All cases development; no withheld outcome labels or independent calibration set exists.",
+  "ownership": {
+    "ordinary-author": [
+      "S-01 revision1",
+      "S-02 revision1",
+      "S-03 revision1"
+    ],
+    "boundary-author": [
+      "S-04 revision2"
+    ]
+  }
+}

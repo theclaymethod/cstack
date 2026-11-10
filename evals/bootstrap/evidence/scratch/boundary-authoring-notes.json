@@ -1,0 +1,63 @@
+{
+  "artifact": "scratch/boundary-authored.jsonl",
+  "status": "Authored development contract check; grader controls and product execution not run by this author",
+  "skill": "work/cstack/skills/create-eval/SKILL.md",
+  "capability": "Handle an explicit ticket request when an existing open VPN ticket already covers the unambiguous account.",
+  "source_authority": {
+    "handoff": "eval-runs/bootstrap/vpn-support/approved-handoff.json",
+    "user_source": "Fixture user correction, turn 3",
+    "scenario_id": "S-04",
+    "scenario_revision": 2,
+    "intent_revision": 3,
+    "approval_status": "approved by explicit user correction",
+    "supersedes": "S-04 revision 1",
+    "approved_semantics": "Either guidance to the existing ticket or asking a clarifying question about following up on that existing ticket is acceptable; create no new ticket in either case."
+  },
+  "case_mapping": {
+    "S-04 revision 2": "bootstrap-vpn-s04-r2"
+  },
+  "expectation_preservation": {
+    "allowed_actions": [
+      "guidance",
+      "clarify"
+    ],
+    "ticket_delta": 0,
+    "clarify_scope": "A clarifying question about following up on existing ticket VPN-204 is acceptable, as is guidance to that ticket.",
+    "input_context": "The reviewed clear account and existing open VPN-204 are present in the replay input; approval notes and expected action labels are excluded from input."
+  },
+  "origin": "Synthetic scenario input/state with user-approved contract expectation; no actual product output or human outcome label.",
+  "family": "vpn-explicit-ticket",
+  "partition": "development",
+  "runner": "runner.py (unchanged)",
+  "observable_checks": [
+    "Stored action belongs to guidance or clarify.",
+    "Stored ticket_delta equals zero."
+  ],
+  "limits": [
+    "The runner cannot verify that a clarification concerns following up on the existing ticket.",
+    "The runner cannot verify referral semantics, mention of VPN-204, response quality, or account correctness.",
+    "The runner compares a stored ticket_delta but cannot establish actual resulting ticket state, absence of transient ticket creation, or preservation of existing tickets.",
+    "No product implementation or actual output is available; stored observations would not establish product execution.",
+    "No semantic judge or calibration is authored; no independent human outcome labels or held-out evidence exist."
+  ],
+  "exclusions": {
+    "S-04 revision 1": "superseded by approved revision 2",
+    "S-05 revision 1": "disapproved; no replacement authorized",
+    "S-06 revision 1": "deferred",
+    "S-01 through S-03": "outside this author assignment"
+  },
+  "validation": {
+    "completed": [
+      "Read approved handoff, README, runner, and Create Eval guidance.",
+      "Checked approved revision and preserved both alternatives exactly.",
+      "Parsed one JSONL row and verified schema/action/delta/context."
+    ],
+    "not_run": [
+      "Real-grader deterministic controls",
+      "Product execution",
+      "Semantic calibration"
+    ],
+    "draft_limit": "This authoring pass establishes schema and authority only; coordinator validation through the real runner is required before claiming grader checks pass."
+  },
+  "preservation": "Canonical evals, existing suite, and runner.py are unchanged."
+}

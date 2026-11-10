@@ -1,0 +1,13 @@
+{
+  "skills/calibrate-judge/SKILL.md": "e51a883d207eea17a561cf12f1a03265c26ce8d026e15878b83c68b64f7a5adb",
+  "skills/calibrate-judge/references/backends.md": "231682e3bdd855a86f435554778c8ea9fd0c2c8b48bf3d09e2cee0f82836da0a",
+  "skills/calibrate-judge/references/measurement.md": "f09b74ad7154ce28d73f5bcd7a5c0880d155cd536cc663590628ee876f87a9be",
+  "skills/calibrate-judge/references/protocol.md": "d1c3b0ccc7621dc169105d1b354de829c2d7bb10975952fac090973ff1699765",
+  "fixtures/playground/judge_calibration/run.py": "b05444d3a9b05929e16717f1b193c733e3c90f0a4d3bbc0fa7ad49798e3a6265",
+  "fixtures/playground/judge_calibration/__init__.py": "817d7f11ca621fe90bcd3993976e355ac211b0da33a3adec99b8195929fc603d",
+  "fixtures/playground/judge_calibration/README.md": "9a3e29d20de10883448992c5b33028ca219ddf4d006e9fb0aa42978535abecaf",
+  "fixtures/playground/judge_calibration/statistics.py": "034c3bf4e537956d6388a96a640e73f6269c05486a77071d4700f0f54b5b06d7",
+  "fixtures/playground/judge_calibration/workflow.py": "43796e7f075a0e71882cfb0c0e58a8d3c817935bb93fa6cb1c041d2ab776f89f",
+  "fixtures/playground/judge_calibration/fixture_backend.py": "2a829e0f9e9cc9636e1b72cc36d53d5b457e2a9ad9bc8793d7852e57260d3b4f",
+  "fixtures/playground/judge_calibration/adapters.py": "2d616ed5fa7f1483e43e5cbb6e01b4aa4cbb047042d788044aebff9efc8396f6"
+}

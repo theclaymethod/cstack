@@ -1,0 +1,413 @@
+{
+  "actual_completed": 95,
+  "calls": [
+    {
+      "candidate": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/methods-build/cstack/fixtures/playground/examples/candidates/improved.py",
+      "cases": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/methods-build/final-source-methods/synthetic/native/conforming-generated.jsonl",
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 7,
+        "UNKNOWN": 0
+      },
+      "executed": 7,
+      "label": "conforming-generated",
+      "reserved": 7,
+      "status": "complete"
+    },
+    {
+      "candidate": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/methods-build/cstack/fixtures/playground/examples/candidates/improved.py",
+      "cases": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/methods-build/final-source-methods/synthetic/native/conforming-step-0.jsonl",
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 1,
+        "UNKNOWN": 0
+      },
+      "executed": 1,
+      "label": "conforming-step-0",
+      "reserved": 1,
+      "status": "complete"
+    },
+    {
+      "candidate": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/methods-build/cstack/fixtures/playground/examples/candidates/improved.py",
+      "cases": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/methods-build/final-source-methods/synthetic/native/conforming-step-1.jsonl",
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 1,
+        "UNKNOWN": 0
+      },
+      "executed": 1,
+      "label": "conforming-step-1",
+      "reserved": 1,
+      "status": "complete"
+    },
+    {
+      "candidate": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/methods-build/final-source-methods/synthetic/ignore-own-created.py",
+      "cases": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/methods-build/final-source-methods/synthetic/native/ignore-own-created-step-0.jsonl",
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 1,
+        "UNKNOWN": 0
+      },
+      "executed": 1,
+      "label": "ignore-own-created-step-0",
+      "reserved": 1,
+      "status": "complete"
+    },
+    {
+      "candidate": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/methods-build/final-source-methods/synthetic/ignore-own-created.py",
+      "cases": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/methods-build/final-source-methods/synthetic/native/ignore-own-created-step-1.jsonl",
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 1,
+        "PASS": 0,
+        "UNKNOWN": 0
+      },
+      "executed": 1,
+      "label": "ignore-own-created-step-1",
+      "reserved": 1,
+      "status": "complete"
+    },
+    {
+      "candidate": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/methods-build/final-source-methods/synthetic/ignore-denial.py",
+      "cases": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/methods-build/final-source-methods/synthetic/native/ignore-denial-step-0.jsonl",
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 1,
+        "UNKNOWN": 0
+      },
+      "executed": 1,
+      "label": "ignore-denial-step-0",
+      "reserved": 1,
+      "status": "complete"
+    },
+    {
+      "candidate": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/methods-build/final-source-methods/synthetic/ignore-denial.py",
+      "cases": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/methods-build/final-source-methods/synthetic/native/ignore-denial-step-1.jsonl",
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 1,
+        "UNKNOWN": 0
+      },
+      "executed": 1,
+      "label": "ignore-denial-step-1",
+      "reserved": 1,
+      "status": "complete"
+    },
+    {
+      "candidate": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/methods-build/cstack/fixtures/playground/examples/candidates/regression.py",
+      "cases": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/methods-build/final-source-methods/synthetic/native/broad-duplicate-step-0.jsonl",
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 1,
+        "UNKNOWN": 0
+      },
+      "executed": 1,
+      "label": "broad-duplicate-step-0",
+      "reserved": 1,
+      "status": "complete"
+    },
+    {
+      "candidate": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/methods-build/cstack/fixtures/playground/examples/candidates/regression.py",
+      "cases": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/methods-build/final-source-methods/synthetic/native/broad-duplicate-step-1.jsonl",
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 1,
+        "UNKNOWN": 0
+      },
+      "executed": 1,
+      "label": "broad-duplicate-step-1",
+      "reserved": 1,
+      "status": "complete"
+    },
+    {
+      "candidate": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/methods-build/final-source-methods/synthetic/ignore-own-created.py",
+      "cases": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/methods-build/final-source-methods/synthetic/native/seeds-ignore-own-created.jsonl",
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 12,
+        "UNKNOWN": 0
+      },
+      "executed": 12,
+      "label": "seeds-ignore-own-created",
+      "reserved": 12,
+      "status": "complete"
+    },
+    {
+      "candidate": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/methods-build/final-source-methods/synthetic/ignore-denial.py",
+      "cases": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/methods-build/final-source-methods/synthetic/native/seeds-ignore-denial.jsonl",
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 1,
+        "PASS": 11,
+        "UNKNOWN": 0
+      },
+      "executed": 12,
+      "label": "seeds-ignore-denial",
+      "reserved": 12,
+      "status": "complete"
+    },
+    {
+      "candidate": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/methods-build/cstack/fixtures/playground/examples/candidates/regression.py",
+      "cases": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/methods-build/final-source-methods/synthetic/native/seeds-broad-duplicate.jsonl",
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 3,
+        "PASS": 9,
+        "UNKNOWN": 0
+      },
+      "executed": 12,
+      "label": "seeds-broad-duplicate",
+      "reserved": 12,
+      "status": "complete"
+    },
+    {
+      "candidate": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/methods-build/final-source-methods/synthetic/ignore-own-created.py",
+      "cases": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/methods-build/final-source-methods/synthetic/native/reduce-rich-step-0.jsonl",
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 1,
+        "UNKNOWN": 0
+      },
+      "executed": 1,
+      "label": "reduce-rich-step-0",
+      "reserved": 1,
+      "status": "complete"
+    },
+    {
+      "candidate": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/methods-build/final-source-methods/synthetic/ignore-own-created.py",
+      "cases": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/methods-build/final-source-methods/synthetic/native/reduce-rich-step-1.jsonl",
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 1,
+        "PASS": 0,
+        "UNKNOWN": 0
+      },
+      "executed": 1,
+      "label": "reduce-rich-step-1",
+      "reserved": 1,
+      "status": "complete"
+    },
+    {
+      "candidate": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/methods-build/cstack/fixtures/playground/examples/candidates/improved.py",
+      "cases": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/methods-build/final-source-methods/synthetic/native/control-rich-step-0.jsonl",
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 1,
+        "UNKNOWN": 0
+      },
+      "executed": 1,
+      "label": "control-rich-step-0",
+      "reserved": 1,
+      "status": "complete"
+    },
+    {
+      "candidate": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/methods-build/cstack/fixtures/playground/examples/candidates/improved.py",
+      "cases": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/methods-build/final-source-methods/synthetic/native/control-rich-step-1.jsonl",
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 1,
+        "UNKNOWN": 0
+      },
+      "executed": 1,
+      "label": "control-rich-step-1",
+      "reserved": 1,
+      "status": "complete"
+    },
+    {
+      "candidate": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/methods-build/final-source-methods/synthetic/ignore-own-created.py",
+      "cases": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/methods-build/final-source-methods/synthetic/native/reduce-drop-noise-b-step-0.jsonl",
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 1,
+        "UNKNOWN": 0
+      },
+      "executed": 1,
+      "label": "reduce-drop-noise-b-step-0",
+      "reserved": 1,
+      "status": "complete"
+    },
+    {
+      "candidate": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/methods-build/final-source-methods/synthetic/ignore-own-created.py",
+      "cases": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/methods-build/final-source-methods/synthetic/native/reduce-drop-noise-b-step-1.jsonl",
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 1,
+        "PASS": 0,
+        "UNKNOWN": 0
+      },
+      "executed": 1,
+      "label": "reduce-drop-noise-b-step-1",
+      "reserved": 1,
+      "status": "complete"
+    },
+    {
+      "candidate": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/methods-build/cstack/fixtures/playground/examples/candidates/improved.py",
+      "cases": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/methods-build/final-source-methods/synthetic/native/control-drop-noise-b-step-0.jsonl",
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 1,
+        "UNKNOWN": 0
+      },
+      "executed": 1,
+      "label": "control-drop-noise-b-step-0",
+      "reserved": 1,
+      "status": "complete"
+    },
+    {
+      "candidate": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/methods-build/cstack/fixtures/playground/examples/candidates/improved.py",
+      "cases": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/methods-build/final-source-methods/synthetic/native/control-drop-noise-b-step-1.jsonl",
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 1,
+        "UNKNOWN": 0
+      },
+      "executed": 1,
+      "label": "control-drop-noise-b-step-1",
+      "reserved": 1,
+      "status": "complete"
+    },
+    {
+      "candidate": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/methods-build/final-source-methods/synthetic/ignore-own-created.py",
+      "cases": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/methods-build/final-source-methods/synthetic/native/reduce-drop-noise-c-step-0.jsonl",
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 1,
+        "UNKNOWN": 0
+      },
+      "executed": 1,
+      "label": "reduce-drop-noise-c-step-0",
+      "reserved": 1,
+      "status": "complete"
+    },
+    {
+      "candidate": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/methods-build/final-source-methods/synthetic/ignore-own-created.py",
+      "cases": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/methods-build/final-source-methods/synthetic/native/reduce-drop-noise-c-step-1.jsonl",
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 1,
+        "PASS": 0,
+        "UNKNOWN": 0
+      },
+      "executed": 1,
+      "label": "reduce-drop-noise-c-step-1",
+      "reserved": 1,
+      "status": "complete"
+    },
+    {
+      "candidate": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/methods-build/cstack/fixtures/playground/examples/candidates/improved.py",
+      "cases": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/methods-build/final-source-methods/synthetic/native/control-drop-noise-c-step-0.jsonl",
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 1,
+        "UNKNOWN": 0
+      },
+      "executed": 1,
+      "label": "control-drop-noise-c-step-0",
+      "reserved": 1,
+      "status": "complete"
+    },
+    {
+      "candidate": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/methods-build/cstack/fixtures/playground/examples/candidates/improved.py",
+      "cases": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/methods-build/final-source-methods/synthetic/native/control-drop-noise-c-step-1.jsonl",
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 1,
+        "UNKNOWN": 0
+      },
+      "executed": 1,
+      "label": "control-drop-noise-c-step-1",
+      "reserved": 1,
+      "status": "complete"
+    },
+    {
+      "candidate": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/methods-build/final-source-methods/synthetic/ignore-own-created.py",
+      "cases": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/methods-build/final-source-methods/synthetic/native/reduce-prefix-control.jsonl",
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 1,
+        "UNKNOWN": 0
+      },
+      "executed": 1,
+      "label": "reduce-prefix-control",
+      "reserved": 1,
+      "status": "complete"
+    },
+    {
+      "candidate": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/methods-build/cstack/fixtures/playground/examples/candidates/improved.py",
+      "cases": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/methods-build/final-source-methods/synthetic/native/conforming-own-created-repeat.jsonl",
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 1,
+        "UNKNOWN": 0
+      },
+      "executed": 1,
+      "label": "conforming-own-created-repeat",
+      "reserved": 1,
+      "status": "complete"
+    },
+    {
+      "candidate": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/methods-build/final-source-methods/synthetic/ignore-own-created.py",
+      "cases": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/methods-build/final-source-methods/synthetic/native/selected-corpus-ignore-own-created.jsonl",
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 1,
+        "PASS": 9,
+        "UNKNOWN": 0
+      },
+      "executed": 10,
+      "label": "selected-corpus-ignore-own-created",
+      "reserved": 10,
+      "status": "complete"
+    },
+    {
+      "candidate": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/methods-build/final-source-methods/synthetic/ignore-denial.py",
+      "cases": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/methods-build/final-source-methods/synthetic/native/selected-corpus-ignore-denial.jsonl",
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 1,
+        "PASS": 9,
+        "UNKNOWN": 0
+      },
+      "executed": 10,
+      "label": "selected-corpus-ignore-denial",
+      "reserved": 10,
+      "status": "complete"
+    },
+    {
+      "candidate": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/methods-build/cstack/fixtures/playground/examples/candidates/regression.py",
+      "cases": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/methods-build/final-source-methods/synthetic/native/selected-corpus-broad-duplicate.jsonl",
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 2,
+        "PASS": 8,
+        "UNKNOWN": 0
+      },
+      "executed": 10,
+      "label": "selected-corpus-broad-duplicate",
+      "reserved": 10,
+      "status": "complete"
+    }
+  ],
+  "limit": 300,
+  "reserved": 95
+}

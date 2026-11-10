@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+.DS_Store
+eval-runs/
+.venv/
+.env
+.env.*
+!.env.example
+.cstack-source.json

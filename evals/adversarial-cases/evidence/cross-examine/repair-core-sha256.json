@@ -1,0 +1,7 @@
+{
+  "fixtures/playground/evaluate.py": "fd1fdaa4b090852f8d0a6462303411bea5488dcc7f7a08895146e32d52b0430d",
+  "fixtures/playground/tests/test_campaign.py": "ee14c3acffb333784b61561b728e5117547807d2f50a0619d63ff01104f1d241",
+  "evals/adversarial-cases/replay.py": "ff7fa54c5a1b9e28f05e0233666f4dfa8888de69971de32fabda5abfdd2f521e",
+  "skills/adversarial-cases/references/case-contract.md": "7943a09952eb0df5ef1a50e1c8d22ffe496b732a5cd9d33fbe04efaf7f4f60af",
+  "skills/adversarial-cases/references/injection.md": "d8ae58d555513058864e6f47fcd2df74fbfe9d13e662bf04c3416601bccfd2df"
+}

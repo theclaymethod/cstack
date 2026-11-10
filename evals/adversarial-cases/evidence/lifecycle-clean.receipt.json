@@ -1,0 +1,18 @@
+{
+  "argv": [
+    "/Users/clayton/.local/bin/python3",
+    "evaluate.py",
+    "start",
+    "--campaign",
+    "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/adversarial-case-build/forward-workspace/eval-runs/case-build/lifecycle-clean",
+    "--max-case-runs",
+    "24",
+    "--reserve-case-runs",
+    "8"
+  ],
+  "cwd": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/adversarial-case-build/forward-workspace",
+  "exit_code": 0,
+  "label": "lifecycle-clean",
+  "stderr": "",
+  "stdout": "{\n  \"best_attempt\": 0,\n  \"campaign\": \"/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/adversarial-case-build/forward-workspace/eval-runs/case-build/lifecycle-clean\",\n  \"last_decision\": \"baseline measured\",\n  \"max_case_runs\": 24,\n  \"pending_attempts\": [],\n  \"protected_confirmation_case_runs\": 8,\n  \"search_case_runs_remaining\": 8,\n  \"status\": \"active\",\n  \"used_case_runs\": 8,\n  \"verification\": \"record and completed evidence verified\"\n}\n"
+}

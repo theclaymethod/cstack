@@ -1,0 +1,14 @@
+{
+  "activation": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/adversarial-audit/attack-execution/workspace/eval-runs/attack-execution/evidence/lifecycle-unreachable.activation.jsonl",
+  "completion": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/adversarial-audit/attack-execution/workspace/eval-runs/attack-execution/evidence/lifecycle-unreachable.completion.json",
+  "native_args": [
+    "start",
+    "--campaign",
+    "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/adversarial-audit/attack-execution/workspace/eval-runs/attack-execution/evidence/lifecycle-unreachable",
+    "--max-case-runs",
+    "24"
+  ],
+  "phase": "unreachable",
+  "source_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+  "target": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/adversarial-audit/attack-execution/workspace/evaluate.py"
+}

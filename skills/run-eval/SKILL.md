@@ -7,9 +7,13 @@ description: Execute an eval package, freeze verdicts before comparing expert la
 
 Run the requested eval and preserve what happened. Prefer the project's trusted runner. Stored-output review can use local files, code checks, and the active agent as a semantic judge. It needs no separate model API, database, or Docker.
 
+For an authorized campaign that changes an artifact and compares candidates against this evaluator, use [Hill Climb](../hill-climb/SKILL.md).
+
+For fitting or aligning a judge to labeled outcomes, use [Calibrate Judge](../calibrate-judge/SKILL.md). This workflow executes the frozen judge and reports agreement separately from product performance.
+
 ## Establish the run
 
-Inspect the package, task contract, rubric, config, and runner. Use [the local package contract](references/package.md) when no project runner exists. Check what commands read and write, including accidental exposure of final-test cases.
+Inspect the package, task contract, rubric, config, and runner. Follow [format selection](../create-eval/references/formats.md): prefer Harbor for new executable agent tasks and preserve existing/owner-selected formats. Use [the local package contract](references/package.md) for stored-output review. Check what commands read and write, including accidental exposure of final-test cases.
 
 Identify whether you are grading stored outputs, executing the product, calibrating a judge, or running a stateful agent. Stay within the authorized data, systems, and budget. Missing execution setup is unrun, not a zero product score. Stored-output review does not establish product execution.
 
