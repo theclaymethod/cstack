@@ -80,3 +80,7 @@ The [current-model prompt simplification](evals/bitter-lesson/REPORT.md) preserv
 ## Review-to-calibration capture
 
 The shared [capture guide](skills/expert-mode/references/calibration-capture.md), review hooks and [playground exercise](fixtures/playground/exercises/13-review-calibration-capture.md) are original C Stack work prompted by the owner's request to offer retention of useful review judgments. They reuse Expert Mode records and Calibrate Judge authority/exposure boundaries. Project-local example serializers and synthetic review sources are archived as development evidence, not packaged with the skills. The [report](evals/review-capture/REPORT.md) records the iterative source revision and validation limits; no actual user-session labels were retained.
+
+## Co-Climb
+
+[Co-Climb](skills/co-climb/SKILL.md) was supplied by the owner on 2026-11-11 for inclusion in C Stack. Its entrypoint preserves that text with Markdown paste escapes removed. The [protocol](skills/co-climb/references/protocol.md) expands its execution steps and applies the existing Hill Climb, Calibrate Judge and calibration-capture boundaries. The [lessons reference](skills/co-climb/references/lessons.md) distinguishes supplied guidance from confirmed campaign evidence. No campaign measurements or empirical validation accompanied this addition; no runners, adapters or datasets are bundled with the skill.

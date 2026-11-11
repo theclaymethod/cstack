@@ -18,6 +18,9 @@ flowchart TD
     J --> R
     R --> H["Improve the target<br/>/hill-climb"]
     H --> R
+    R --> CC["Improve target and immature judge<br/>/co-climb"]
+    CC --> H
+    CC --> J
     R --> L["Remove complexity<br/>/ablation"]
     L --> R
     M["Upgrading a production model"] --> BL["Revisit prompts and context<br/>/bitter-lesson"]
@@ -41,6 +44,7 @@ With useful production traces, use LangChain's [eval-engineering](https://github
 | [run-eval](skills/run-eval/SKILL.md) | Execute and report evals. |
 | [cross-examine](skills/cross-examine/SKILL.md) | Reproduce scoring gaps and check repairs independently. |
 | [hill-climb](skills/hill-climb/SKILL.md) | Improve a target within an eval budget. |
+| [co-climb](skills/co-climb/SKILL.md) | Alternate target improvements and judge calibration in frozen blocks. |
 | [ablation](skills/ablation/SKILL.md) | Remove complexity while preserving required performance. |
 | [bitter-lesson](skills/bitter-lesson/SKILL.md) | Retest inherited prompt complexity when upgrading models. |
 | [adversarial-cases](skills/adversarial-cases/SKILL.md) | Construct targeted cases, failures and controls. |
@@ -51,7 +55,7 @@ Prefer [Harbor](skills/create-eval/references/formats.md) for new executable age
 
 The skills reference [synthetic generation](skills/adversarial-cases/references/synthetic-methods.md), [failure injection](skills/adversarial-cases/references/failure-methods.md) and a [DSPy handoff](skills/hill-climb/references/data-handoff.md). Implementations and dependencies belong in your project. The [playground fixture](fixtures/playground/README.md) demonstrates the methods with the native runner and an optional local DSPy environment.
 
-Review corrections can become calibration candidates through a [scoped capture offer](skills/expert-mode/references/calibration-capture.md).
+Review corrections can become calibration candidates through a [scoped capture offer](skills/expert-mode/references/calibration-capture.md). Use [Co-Climb](skills/co-climb/SKILL.md) when target failures may be judge errors: it separates target changes from judge changes, checks evidence parity, and confirms against controls on two working sets before a sealed final comparison.
 
 ## Validation levels
 
@@ -70,7 +74,7 @@ Playground checks use synthetic and adversarial evidence. They do not establish 
 
 ```bash
 npx skills add theclaymethod/cstack \
-  --skill expert-mode distill-me bootstrap create-eval run-eval cross-examine hill-climb adversarial-cases calibrate-judge ablation bitter-lesson \
+  --skill expert-mode distill-me bootstrap create-eval run-eval cross-examine hill-climb co-climb adversarial-cases calibrate-judge ablation bitter-lesson \
   -a codex -a claude-code -a cursor --copy
 ```
 
