@@ -1,0 +1,9 @@
+[
+  {
+    "behavior": "automatic escalation for urgent VPN requests",
+    "decision": "C",
+    "expected": null,
+    "included_in_scored_denominator": false,
+    "status": "pending-owner-decision"
+  }
+]

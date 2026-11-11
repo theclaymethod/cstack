@@ -1,0 +1,792 @@
+{
+  "baseline_artifacts": [
+    "run-baseline/candidate.py",
+    "hill/attempts/000-baseline/candidate.py",
+    "judge/campaign/llm-baseline-final/config.json",
+    "judge/campaign/jev-baseline-final/config.json",
+    "simplification/candidates/original.py"
+  ],
+  "commands": "commands.jsonl",
+  "configuration_and_state": [
+    "hill/contract.json",
+    "hill/state.json",
+    "judge/campaign/state.json",
+    "judge/dataset/manifest.json",
+    "simplification/contract.json",
+    "simplification/state.json",
+    "simplification/native/executions.json"
+  ],
+  "inspections": "inspected-state.json",
+  "native_runs": [
+    {
+      "candidate": "cross/forged-run/candidate.py",
+      "candidate_sha256": "97e92f4d85a1c37e308005a26acd9391e234684d97c8b52d1c3ce071434f3dad",
+      "case_ids": [
+        "dev-howto",
+        "dev-generic",
+        "dev-explicit",
+        "dev-duplicate",
+        "dev-ambiguous",
+        "dev-password",
+        "dev-closed",
+        "dev-unrelated"
+      ],
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 8,
+        "PASS": 0,
+        "UNKNOWN": 0
+      },
+      "directory": "cross/forged-run",
+      "executed": 8
+    },
+    {
+      "candidate": "cross/legitimate-alternative-run/candidate.py",
+      "candidate_sha256": "5160a77ebbc28f0cd5ddc0d9807338b78346b8b2887b4d8e3efc8bf54ae07bef",
+      "case_ids": [
+        "dev-howto",
+        "dev-generic",
+        "dev-explicit",
+        "dev-duplicate",
+        "dev-ambiguous",
+        "dev-password",
+        "dev-closed",
+        "dev-unrelated"
+      ],
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 8,
+        "UNKNOWN": 0
+      },
+      "directory": "cross/legitimate-alternative-run",
+      "executed": 8
+    },
+    {
+      "candidate": "hill/attempts/000-baseline/candidate.py",
+      "candidate_sha256": "0720b56482a445967ff2a98ec5cfa668c858b8a6f662da74a55c21b257393efc",
+      "case_ids": [
+        "dev-howto",
+        "dev-generic",
+        "dev-explicit",
+        "dev-duplicate",
+        "dev-ambiguous",
+        "dev-password",
+        "dev-closed",
+        "dev-unrelated"
+      ],
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 4,
+        "PASS": 4,
+        "UNKNOWN": 0
+      },
+      "directory": "hill/attempts/000-baseline",
+      "executed": 8
+    },
+    {
+      "candidate": "hill/attempts/001-proposal/candidate.py",
+      "candidate_sha256": "5fff29e7ea1a726cc9a4a74376ea5b93662fd81269e7497d9f5aa63a0684b230",
+      "case_ids": [
+        "dev-howto",
+        "dev-generic",
+        "dev-explicit",
+        "dev-duplicate",
+        "dev-ambiguous",
+        "dev-password",
+        "dev-closed",
+        "dev-unrelated"
+      ],
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 2,
+        "PASS": 6,
+        "UNKNOWN": 0
+      },
+      "directory": "hill/attempts/001-proposal",
+      "executed": 8
+    },
+    {
+      "candidate": "hill/attempts/002-proposal/candidate.py",
+      "candidate_sha256": "d8cc818e83af4453a44e9025484ae6e23ecc7cbcf8c9e621efa56c21a179a1c3",
+      "case_ids": [
+        "dev-howto",
+        "dev-generic",
+        "dev-explicit",
+        "dev-duplicate",
+        "dev-ambiguous",
+        "dev-password",
+        "dev-closed",
+        "dev-unrelated"
+      ],
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 8,
+        "UNKNOWN": 0
+      },
+      "directory": "hill/attempts/002-proposal",
+      "executed": 8
+    },
+    {
+      "candidate": "hill/attempts/003-confirm-baseline/candidate.py",
+      "candidate_sha256": "0720b56482a445967ff2a98ec5cfa668c858b8a6f662da74a55c21b257393efc",
+      "case_ids": [
+        "conf-howto",
+        "conf-targeted",
+        "conf-duplicate",
+        "conf-preservation"
+      ],
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 2,
+        "PASS": 2,
+        "UNKNOWN": 0
+      },
+      "directory": "hill/attempts/003-confirm-baseline",
+      "executed": 4
+    },
+    {
+      "candidate": "hill/attempts/004-confirm-incumbent/candidate.py",
+      "candidate_sha256": "d8cc818e83af4453a44e9025484ae6e23ecc7cbcf8c9e621efa56c21a179a1c3",
+      "case_ids": [
+        "conf-howto",
+        "conf-targeted",
+        "conf-duplicate",
+        "conf-preservation"
+      ],
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 4,
+        "UNKNOWN": 0
+      },
+      "directory": "hill/attempts/004-confirm-incumbent",
+      "executed": 4
+    },
+    {
+      "candidate": "judge/dataset/native-source/improved/candidate.py",
+      "candidate_sha256": "d8cc818e83af4453a44e9025484ae6e23ecc7cbcf8c9e621efa56c21a179a1c3",
+      "case_ids": [
+        "dev-howto",
+        "dev-generic",
+        "dev-explicit",
+        "dev-duplicate",
+        "dev-ambiguous",
+        "dev-password",
+        "dev-closed",
+        "dev-unrelated",
+        "conf-howto",
+        "conf-targeted",
+        "conf-duplicate",
+        "conf-preservation"
+      ],
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 12,
+        "UNKNOWN": 0
+      },
+      "directory": "judge/dataset/native-source/improved",
+      "executed": 12
+    },
+    {
+      "candidate": "judge/dataset/native-source/support_agent/candidate.py",
+      "candidate_sha256": "0720b56482a445967ff2a98ec5cfa668c858b8a6f662da74a55c21b257393efc",
+      "case_ids": [
+        "dev-howto",
+        "dev-generic",
+        "dev-explicit",
+        "dev-duplicate",
+        "dev-ambiguous",
+        "dev-password",
+        "dev-closed",
+        "dev-unrelated",
+        "conf-howto",
+        "conf-targeted",
+        "conf-duplicate",
+        "conf-preservation"
+      ],
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 6,
+        "PASS": 6,
+        "UNKNOWN": 0
+      },
+      "directory": "judge/dataset/native-source/support_agent",
+      "executed": 12
+    },
+    {
+      "candidate": "run-baseline/candidate.py",
+      "candidate_sha256": "0720b56482a445967ff2a98ec5cfa668c858b8a6f662da74a55c21b257393efc",
+      "case_ids": [
+        "dev-howto",
+        "dev-generic",
+        "dev-explicit",
+        "dev-duplicate",
+        "dev-ambiguous",
+        "dev-password",
+        "dev-closed",
+        "dev-unrelated"
+      ],
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 4,
+        "PASS": 4,
+        "UNKNOWN": 0
+      },
+      "directory": "run-baseline",
+      "executed": 8
+    },
+    {
+      "candidate": "run-conforming/candidate.py",
+      "candidate_sha256": "d8cc818e83af4453a44e9025484ae6e23ecc7cbcf8c9e621efa56c21a179a1c3",
+      "case_ids": [
+        "dev-howto",
+        "dev-generic",
+        "dev-explicit",
+        "dev-duplicate",
+        "dev-ambiguous",
+        "dev-password",
+        "dev-closed",
+        "dev-unrelated"
+      ],
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 8,
+        "UNKNOWN": 0
+      },
+      "directory": "run-conforming",
+      "executed": 8
+    },
+    {
+      "candidate": "simplification/native/drop-conflict-a/candidate.py",
+      "candidate_sha256": "ff1398a9bf4e7266f4253f12afc5a75852e97991e88aa742cf957de30f449adb",
+      "case_ids": [
+        "dev-howto",
+        "dev-generic",
+        "dev-explicit",
+        "dev-duplicate",
+        "dev-ambiguous",
+        "dev-password",
+        "dev-closed",
+        "dev-unrelated"
+      ],
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 4,
+        "PASS": 4,
+        "UNKNOWN": 0
+      },
+      "directory": "simplification/native/drop-conflict-a",
+      "executed": 8
+    },
+    {
+      "candidate": "simplification/native/drop-conflict-b/candidate.py",
+      "candidate_sha256": "9c071428acb1d134061d3ecfae9ee3d06dcc0fce716f9f29028610b04f214cc8",
+      "case_ids": [
+        "dev-howto",
+        "dev-generic",
+        "dev-explicit",
+        "dev-duplicate",
+        "dev-ambiguous",
+        "dev-password",
+        "dev-closed",
+        "dev-unrelated"
+      ],
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 4,
+        "PASS": 4,
+        "UNKNOWN": 0
+      },
+      "directory": "simplification/native/drop-conflict-b",
+      "executed": 8
+    },
+    {
+      "candidate": "simplification/native/drop-conflict-pair/candidate.py",
+      "candidate_sha256": "872a804ac71748d8bdae154522713a31a109c9c0d7f004d321b35a1546f0ab6b",
+      "case_ids": [
+        "dev-howto",
+        "dev-generic",
+        "dev-explicit",
+        "dev-duplicate",
+        "dev-ambiguous",
+        "dev-password",
+        "dev-closed",
+        "dev-unrelated"
+      ],
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 8,
+        "UNKNOWN": 0
+      },
+      "directory": "simplification/native/drop-conflict-pair",
+      "executed": 8
+    },
+    {
+      "candidate": "simplification/native/drop-duplicate-a/candidate.py",
+      "candidate_sha256": "6c183962f27c6ff769a1a127f92412f27b22e8cf49b4299573b6d8719a732cc3",
+      "case_ids": [
+        "dev-howto",
+        "dev-generic",
+        "dev-explicit",
+        "dev-duplicate",
+        "dev-ambiguous",
+        "dev-password",
+        "dev-closed",
+        "dev-unrelated"
+      ],
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 8,
+        "UNKNOWN": 0
+      },
+      "directory": "simplification/native/drop-duplicate-a",
+      "executed": 8
+    },
+    {
+      "candidate": "simplification/native/drop-duplicate-b/candidate.py",
+      "candidate_sha256": "45a2486069fbfefe7a08b9dedf4be490fe3f3ac0527ca45d3a6d3563957de6ed",
+      "case_ids": [
+        "dev-howto",
+        "dev-generic",
+        "dev-explicit",
+        "dev-duplicate",
+        "dev-ambiguous",
+        "dev-password",
+        "dev-closed",
+        "dev-unrelated"
+      ],
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 1,
+        "PASS": 7,
+        "UNKNOWN": 0
+      },
+      "directory": "simplification/native/drop-duplicate-b",
+      "executed": 8
+    },
+    {
+      "candidate": "simplification/native/drop-noise/candidate.py",
+      "candidate_sha256": "9da54f3355108076f583afb8196c36bd371f80bdaad5bc25100e2e915bab8bab",
+      "case_ids": [
+        "dev-howto",
+        "dev-generic",
+        "dev-explicit",
+        "dev-duplicate",
+        "dev-ambiguous",
+        "dev-password",
+        "dev-closed",
+        "dev-unrelated"
+      ],
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 8,
+        "UNKNOWN": 0
+      },
+      "directory": "simplification/native/drop-noise",
+      "executed": 8
+    },
+    {
+      "candidate": "simplification/native/final-new-existing/candidate.py",
+      "candidate_sha256": "cfd3290663da1d5980890d655f5e00cf294c989134bea9b94eae5d4bc12c1fb1",
+      "case_ids": [
+        "conf-howto",
+        "conf-targeted",
+        "conf-duplicate",
+        "conf-preservation"
+      ],
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 4,
+        "UNKNOWN": 0
+      },
+      "directory": "simplification/native/final-new-existing",
+      "executed": 4
+    },
+    {
+      "candidate": "simplification/native/final-new-simplified/candidate.py",
+      "candidate_sha256": "c1a85f6bd9c8c5d53d51d44220eacde87043630d7dceb5b8e4625b2cbb37e570",
+      "case_ids": [
+        "conf-howto",
+        "conf-targeted",
+        "conf-duplicate",
+        "conf-preservation"
+      ],
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 4,
+        "UNKNOWN": 0
+      },
+      "directory": "simplification/native/final-new-simplified",
+      "executed": 4
+    },
+    {
+      "candidate": "simplification/native/final-old-existing/candidate.py",
+      "candidate_sha256": "8bd79ed28276f336f5f4727a603900ab194c4e7c456ed736eff81e34acd802b2",
+      "case_ids": [
+        "conf-howto",
+        "conf-targeted",
+        "conf-duplicate",
+        "conf-preservation"
+      ],
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 4,
+        "UNKNOWN": 0
+      },
+      "directory": "simplification/native/final-old-existing",
+      "executed": 4
+    },
+    {
+      "candidate": "simplification/native/final-old-reduced/candidate.py",
+      "candidate_sha256": "872a804ac71748d8bdae154522713a31a109c9c0d7f004d321b35a1546f0ab6b",
+      "case_ids": [
+        "conf-howto",
+        "conf-targeted",
+        "conf-duplicate",
+        "conf-preservation"
+      ],
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 4,
+        "UNKNOWN": 0
+      },
+      "directory": "simplification/native/final-old-reduced",
+      "executed": 4
+    },
+    {
+      "candidate": "simplification/native/final-old-simplified/candidate.py",
+      "candidate_sha256": "ce35c8b8640da60a0f6141f24256e888ee056941e39ccfef6f9ef7661facd55f",
+      "case_ids": [
+        "conf-howto",
+        "conf-targeted",
+        "conf-duplicate",
+        "conf-preservation"
+      ],
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 2,
+        "PASS": 2,
+        "UNKNOWN": 0
+      },
+      "directory": "simplification/native/final-old-simplified",
+      "executed": 4
+    },
+    {
+      "candidate": "simplification/native/leave-out-conflict-a/candidate.py",
+      "candidate_sha256": "75e47033a7a5f2c028e9133dbdddf11f388c714b298349650e7736bb63f84abf",
+      "case_ids": [
+        "dev-howto",
+        "dev-generic",
+        "dev-explicit",
+        "dev-duplicate",
+        "dev-ambiguous",
+        "dev-password",
+        "dev-closed",
+        "dev-unrelated"
+      ],
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 4,
+        "PASS": 4,
+        "UNKNOWN": 0
+      },
+      "directory": "simplification/native/leave-out-conflict-a",
+      "executed": 8
+    },
+    {
+      "candidate": "simplification/native/leave-out-conflict-b/candidate.py",
+      "candidate_sha256": "9f06aa482cc34f1295ecdfd3644d39f81e102069ff60033ee7ef234fb9623b85",
+      "case_ids": [
+        "dev-howto",
+        "dev-generic",
+        "dev-explicit",
+        "dev-duplicate",
+        "dev-ambiguous",
+        "dev-password",
+        "dev-closed",
+        "dev-unrelated"
+      ],
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 4,
+        "PASS": 4,
+        "UNKNOWN": 0
+      },
+      "directory": "simplification/native/leave-out-conflict-b",
+      "executed": 8
+    },
+    {
+      "candidate": "simplification/native/leave-out-duplicate-a/candidate.py",
+      "candidate_sha256": "b1aa3a808fcc0aebad717f7b4d466586270599cb3267942000efbf43bebeccd3",
+      "case_ids": [
+        "dev-howto",
+        "dev-generic",
+        "dev-explicit",
+        "dev-duplicate",
+        "dev-ambiguous",
+        "dev-password",
+        "dev-closed",
+        "dev-unrelated"
+      ],
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 8,
+        "UNKNOWN": 0
+      },
+      "directory": "simplification/native/leave-out-duplicate-a",
+      "executed": 8
+    },
+    {
+      "candidate": "simplification/native/leave-out-duplicate-b/candidate.py",
+      "candidate_sha256": "fdac78193083ab38918c032fb4a1737288407b942b07062172eecc1c12d3b449",
+      "case_ids": [
+        "dev-howto",
+        "dev-generic",
+        "dev-explicit",
+        "dev-duplicate",
+        "dev-ambiguous",
+        "dev-password",
+        "dev-closed",
+        "dev-unrelated"
+      ],
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 8,
+        "UNKNOWN": 0
+      },
+      "directory": "simplification/native/leave-out-duplicate-b",
+      "executed": 8
+    },
+    {
+      "candidate": "simplification/native/leave-out-example/candidate.py",
+      "candidate_sha256": "655c2ab994091fb0c6b2ce57c214a71b3dd6c9a84d04baf5be9103b8e39b1df8",
+      "case_ids": [
+        "dev-howto",
+        "dev-generic",
+        "dev-explicit",
+        "dev-duplicate",
+        "dev-ambiguous",
+        "dev-password",
+        "dev-closed",
+        "dev-unrelated"
+      ],
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 8,
+        "UNKNOWN": 0
+      },
+      "directory": "simplification/native/leave-out-example",
+      "executed": 8
+    },
+    {
+      "candidate": "simplification/native/leave-out-legacy-auth/candidate.py",
+      "candidate_sha256": "dc388a5df2acf48e82dd9a7e2887cfa06c8b214b8be0a16f9ea898c851d61007",
+      "case_ids": [
+        "dev-howto",
+        "dev-generic",
+        "dev-explicit",
+        "dev-duplicate",
+        "dev-ambiguous",
+        "dev-password",
+        "dev-closed",
+        "dev-unrelated"
+      ],
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 4,
+        "PASS": 4,
+        "UNKNOWN": 0
+      },
+      "directory": "simplification/native/leave-out-legacy-auth",
+      "executed": 8
+    },
+    {
+      "candidate": "simplification/native/leave-out-plan-detail/candidate.py",
+      "candidate_sha256": "12b65c25f024476597f85a470e7a6605f5928bb13e6def2bccdcd5d02cb7d9cd",
+      "case_ids": [
+        "dev-howto",
+        "dev-generic",
+        "dev-explicit",
+        "dev-duplicate",
+        "dev-ambiguous",
+        "dev-password",
+        "dev-closed",
+        "dev-unrelated"
+      ],
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 8,
+        "UNKNOWN": 0
+      },
+      "directory": "simplification/native/leave-out-plan-detail",
+      "executed": 8
+    },
+    {
+      "candidate": "simplification/native/naive-union/candidate.py",
+      "candidate_sha256": "5194eb646f8c819f699eb8285af8d82d980932b86cdaf6f122ef1ab99bb73b4f",
+      "case_ids": [
+        "dev-howto",
+        "dev-generic",
+        "dev-explicit",
+        "dev-duplicate",
+        "dev-ambiguous",
+        "dev-password",
+        "dev-closed",
+        "dev-unrelated"
+      ],
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 1,
+        "PASS": 7,
+        "UNKNOWN": 0
+      },
+      "directory": "simplification/native/naive-union",
+      "executed": 8
+    },
+    {
+      "candidate": "simplification/native/new-existing/candidate.py",
+      "candidate_sha256": "cfd3290663da1d5980890d655f5e00cf294c989134bea9b94eae5d4bc12c1fb1",
+      "case_ids": [
+        "dev-howto",
+        "dev-generic",
+        "dev-explicit",
+        "dev-duplicate",
+        "dev-ambiguous",
+        "dev-password",
+        "dev-closed",
+        "dev-unrelated"
+      ],
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 8,
+        "UNKNOWN": 0
+      },
+      "directory": "simplification/native/new-existing",
+      "executed": 8
+    },
+    {
+      "candidate": "simplification/native/new-simplified/candidate.py",
+      "candidate_sha256": "c1a85f6bd9c8c5d53d51d44220eacde87043630d7dceb5b8e4625b2cbb37e570",
+      "case_ids": [
+        "dev-howto",
+        "dev-generic",
+        "dev-explicit",
+        "dev-duplicate",
+        "dev-ambiguous",
+        "dev-password",
+        "dev-closed",
+        "dev-unrelated"
+      ],
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 8,
+        "UNKNOWN": 0
+      },
+      "directory": "simplification/native/new-simplified",
+      "executed": 8
+    },
+    {
+      "candidate": "simplification/native/old-simplified/candidate.py",
+      "candidate_sha256": "ce35c8b8640da60a0f6141f24256e888ee056941e39ccfef6f9ef7661facd55f",
+      "case_ids": [
+        "dev-howto",
+        "dev-generic",
+        "dev-explicit",
+        "dev-duplicate",
+        "dev-ambiguous",
+        "dev-password",
+        "dev-closed",
+        "dev-unrelated"
+      ],
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 4,
+        "PASS": 4,
+        "UNKNOWN": 0
+      },
+      "directory": "simplification/native/old-simplified",
+      "executed": 8
+    },
+    {
+      "candidate": "simplification/native/original/candidate.py",
+      "candidate_sha256": "8bd79ed28276f336f5f4727a603900ab194c4e7c456ed736eff81e34acd802b2",
+      "case_ids": [
+        "dev-howto",
+        "dev-generic",
+        "dev-explicit",
+        "dev-duplicate",
+        "dev-ambiguous",
+        "dev-password",
+        "dev-closed",
+        "dev-unrelated"
+      ],
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 8,
+        "UNKNOWN": 0
+      },
+      "directory": "simplification/native/original",
+      "executed": 8
+    }
+  ],
+  "rendered_prompts": [
+    "original.prompt.txt",
+    "drop-conflict-pair.prompt.txt",
+    "new-simplified.prompt.txt"
+  ],
+  "report": "REPORT.md",
+  "results": "results.json",
+  "selected_artifacts": [
+    "hill/best.py",
+    "hill/best.diff",
+    "judge/selected-judge.fixture.json",
+    "simplification/selected-offline-fixture.py",
+    "simplification/selected.diff",
+    "simplification/candidates/drop-conflict-pair.py",
+    "cross/legitimate-alternative.py"
+  ],
+  "skill_sha256": {
+    ".agents/skills/ablation/SKILL.md": "8fb5ca319b71b907c99c8bbd4e79526a2715d19146e772a2e954659b18cc5090",
+    ".agents/skills/ablation/references/quality.md": "a429eb02278ab27a3d13f29713a71caa6573c5e2d5472984b1c39b156f988bf9",
+    ".agents/skills/ablation/references/removal.md": "f48ceb1889dee82a4af09d35a4cc62f07e1c3632b38514c9a158b5818dc2d955",
+    ".agents/skills/bitter-lesson/SKILL.md": "22c7911910e3fbb51b14f7deee3ae3b5862466acafd99ec6732c3a63c04a6e4f",
+    ".agents/skills/bitter-lesson/references/migration.md": "1bd87521d907a46d73284630696dc9378243957f00233a36f64842bdac17c343",
+    ".agents/skills/calibrate-judge/SKILL.md": "237ac1d5f09605b2ad4890ea9aa2b9f17e035d94c8c194627db12e6aed1d8960",
+    ".agents/skills/calibrate-judge/references/backends.md": "231682e3bdd855a86f435554778c8ea9fd0c2c8b48bf3d09e2cee0f82836da0a",
+    ".agents/skills/calibrate-judge/references/measurement.md": "f09b74ad7154ce28d73f5bcd7a5c0880d155cd536cc663590628ee876f87a9be",
+    ".agents/skills/calibrate-judge/references/protocol.md": "d1c3b0ccc7621dc169105d1b354de829c2d7bb10975952fac090973ff1699765",
+    ".agents/skills/cross-examine/SKILL.md": "35ea750507ca195683bea586a08db8ffceaa8c861f1b65d9e2d2838a6ac444f3",
+    ".agents/skills/cross-examine/references/ledger.md": "68c17680bef75b3e3225d7495ecf20882f8485ae19d2e4cd98d5b402d8970c95",
+    ".agents/skills/cross-examine/references/lessons.md": "bb207ad412303b961456d6c62350c305c62854001eb47a35f7e7a0968c56e8a6",
+    ".agents/skills/hill-climb/SKILL.md": "7617adc0a8503249f1a6f6851ae833d6de45364e92806a795d02efd339c5b599",
+    ".agents/skills/hill-climb/references/campaign.md": "7294e377a9246f1467a1b9d0bfd56f35ddce3e32c4864524a3a7a4ef6188a51a",
+    ".agents/skills/hill-climb/references/data-handoff.md": "690d56a93efd505a48da3c91b7b9248e0ef56585987ae4d7461fcee4c3c93fee",
+    ".agents/skills/hill-climb/references/optimizers.md": "57953664ce53edd25b6aad86c3fcf156397b43451cc0db072a5b46bb36e7ada0",
+    ".agents/skills/run-eval/SKILL.md": "64c7d8ac0e14fa074095be3d514e20d33cca380408664b63f79d82405da704ae",
+    ".agents/skills/run-eval/references/package.md": "d076dfc9e6dc218887bde32c3939b4edaba89d097539d5a7862bf7caff05d042"
+  },
+  "skills_lock": "../../cstack-skills.lock.json",
+  "source": {
+    "source": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/bitter-lesson-build/cstack"
+  },
+  "usage": "usage.json",
+  "workspace": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/bitter-lesson-build/runs/short-operations"
+}

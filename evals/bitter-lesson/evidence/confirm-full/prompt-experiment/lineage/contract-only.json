@@ -1,0 +1,22 @@
+{
+  "hypothesis": "Challenge the surviving duplicate reminder; native duplicate slice may regress",
+  "label": "contract-only",
+  "parent": "one-duplicate",
+  "removed_from_full": [
+    "conflict-a",
+    "conflict-b",
+    "duplicate-a",
+    "duplicate-b",
+    "example",
+    "legacy-auth",
+    "plan",
+    "plan-detail"
+  ],
+  "removed_from_parent": [
+    "duplicate-b"
+  ],
+  "retained": [
+    "contract"
+  ],
+  "scope": "Cumulative reduction relative to actual parent; full remains quality anchor"
+}

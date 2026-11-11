@@ -1,0 +1,112 @@
+{
+  "budget": {
+    "confirmation_reserve": 8,
+    "controls": 16,
+    "global_limit": 120,
+    "prompt_development": 56,
+    "prompt_limit": 64
+  },
+  "deterministic": true,
+  "exposure": "All canonical cases inspected and readable; confirmation is reserved execution only, not unseen evidence",
+  "host_model": "Inherited fixed host model; exact served version unavailable to script. No host-model comparison or hosted model calls.",
+  "missing_comparisons": [
+    "old-fixture existing design: unavailable and unauthorized",
+    "old-fixture same reduced design: unavailable and unauthorized"
+  ],
+  "mutable_target": "Project-local prompt units for new-fixture only",
+  "objective": "Minimize rendered UTF-8 bytes among feasible measured candidates",
+  "policy": "Local fixture diagnostic: zero finite observed pass regressions or quality loss; not a production release rule",
+  "primary_quality": "Native all-required-checks pass fraction; errors remain in denominator",
+  "protected": [
+    "contract"
+  ],
+  "repeats": 1,
+  "schedules": [
+    {
+      "hypothesis": "Recover existing-design behavior under the authorized backend",
+      "label": "full",
+      "parent": null,
+      "retained": [
+        "contract",
+        "legacy-auth",
+        "duplicate-a",
+        "duplicate-b",
+        "plan",
+        "plan-detail",
+        "example",
+        "conflict-a",
+        "conflict-b"
+      ]
+    },
+    {
+      "hypothesis": "Remove legacy authorization recipe while preserving the complete contract",
+      "label": "no-legacy",
+      "parent": "full",
+      "retained": [
+        "contract",
+        "duplicate-a",
+        "duplicate-b",
+        "plan",
+        "plan-detail",
+        "example",
+        "conflict-a",
+        "conflict-b"
+      ]
+    },
+    {
+      "hypothesis": "Remove dependent planning group and example together",
+      "label": "no-noise",
+      "parent": "no-legacy",
+      "retained": [
+        "contract",
+        "duplicate-a",
+        "duplicate-b",
+        "conflict-a",
+        "conflict-b"
+      ]
+    },
+    {
+      "hypothesis": "Remove both compensating synthetic steering cues as one group",
+      "label": "no-conflicts",
+      "parent": "no-noise",
+      "retained": [
+        "contract",
+        "duplicate-a",
+        "duplicate-b"
+      ]
+    },
+    {
+      "hypothesis": "Keep one duplicate reminder; test cumulative reduction as an actual combined artifact",
+      "label": "one-duplicate",
+      "parent": "no-conflicts",
+      "retained": [
+        "contract",
+        "duplicate-b"
+      ]
+    },
+    {
+      "hypothesis": "Challenge the surviving duplicate reminder; native duplicate slice may regress",
+      "label": "contract-only",
+      "parent": "one-duplicate",
+      "retained": [
+        "contract"
+      ]
+    },
+    {
+      "hypothesis": "Contrast pair deletion with single conflicting-cue removal",
+      "label": "one-conflict-removed",
+      "parent": "full",
+      "retained": [
+        "contract",
+        "legacy-auth",
+        "duplicate-a",
+        "duplicate-b",
+        "plan",
+        "plan-detail",
+        "example",
+        "conflict-b"
+      ]
+    }
+  ],
+  "stopping": "Complete the seven declared development trials, select lowest-byte admissible candidate, freeze and run baseline/selection confirmation, no post-confirmation fitting"
+}

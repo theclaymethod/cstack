@@ -1,0 +1,22 @@
+[
+  {
+    "error": null,
+    "id": "control-1",
+    "verdict": "PASS"
+  },
+  {
+    "error": null,
+    "id": "control-2",
+    "verdict": "PASS"
+  },
+  {
+    "error": null,
+    "id": "control-3",
+    "verdict": "PASS"
+  },
+  {
+    "error": "parse failure (raw response not supplied)",
+    "id": "control-4",
+    "verdict": "ERROR"
+  }
+]

@@ -1,0 +1,24 @@
+{
+  "forgery": {
+    "argv": [
+      "/Users/clayton/.local/bin/python3",
+      "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/bitter-lesson-build/runs/full-operations/eval-runs/skill-exercise/claim-audit/verify_claim.repaired.py",
+      "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/bitter-lesson-build/runs/full-operations/eval-runs/skill-exercise/claim-audit/forgery-output.json",
+      "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/bitter-lesson-build/runs/full-operations/eval-runs/skill-exercise/claim-audit/case.json"
+    ],
+    "exit_code": 1,
+    "stdout": "{\"checks\": {\"action_matches_mutation\": false, \"allowed_action\": true, \"new_ticket_fields\": true, \"new_ticket_membership\": false, \"preserved_other_state\": true, \"preserved_tickets\": true, \"requested_account\": true, \"ticket_delta\": false, \"unique_ticket_ids\": true}, \"error\": null, \"outcome\": \"FAIL\"}\n",
+    "stderr": ""
+  },
+  "alternative": {
+    "argv": [
+      "/Users/clayton/.local/bin/python3",
+      "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/bitter-lesson-build/runs/full-operations/eval-runs/skill-exercise/claim-audit/verify_claim.repaired.py",
+      "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/bitter-lesson-build/runs/full-operations/eval-runs/skill-exercise/claim-audit/alternative-output.json",
+      "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/bitter-lesson-build/runs/full-operations/eval-runs/skill-exercise/claim-audit/case.json"
+    ],
+    "exit_code": 0,
+    "stdout": "{\"checks\": {\"action_matches_mutation\": true, \"allowed_action\": true, \"new_ticket_fields\": true, \"new_ticket_membership\": true, \"preserved_other_state\": true, \"preserved_tickets\": true, \"requested_account\": true, \"ticket_delta\": true, \"unique_ticket_ids\": true}, \"error\": null, \"outcome\": \"PASS\"}\n",
+    "stderr": ""
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "evals/cases.jsonl": "71f1d8c50f7ce2b3ca512c6f2703faa4e30d5c63237824e3a73e7a573cf4f7b2",
+  "evals/rubric.md": "cb133b50752a48098d463a562d7553ec5a5b29bfef1825b4e393e7de33d66dd8",
+  "evals/spec.json": "eb6f21266223c16708a4ed3bb4f401f3a2adb3355b9e176152665d70a665d8f6",
+  "evaluate.py": "fd1fdaa4b090852f8d0a6462303411bea5488dcc7f7a08895146e32d52b0430d",
+  "examples/candidates/improved.py": "d8cc818e83af4453a44e9025484ae6e23ecc7cbcf8c9e621efa56c21a179a1c3",
+  "judge_calibration/statistics.py": "034c3bf4e537956d6388a96a640e73f6269c05486a77071d4700f0f54b5b06d7",
+  "methods/native.py": "df83d4b57df0ac2dc0ac6cd5b94136082c02d486478c98334a6273cb623e86bd",
+  "simplification/__init__.py": "9b265b7e39fe1ee3767d60306a74857d6429d3c352df97497cceaadf42e9d336",
+  "simplification/demo.py": "2e682951a122ac9ee9a709b2d04a3038b9330cf1df46ee7deec38d73f34d6c76",
+  "simplification/protocol.py": "95b5c8121d3b5d81b1ece8bed046dcac1ceba9daa15a6ebf223a4421e3f82e32",
+  "simplification/run.py": "d6689ea5937679837104b3e006ef5447234cecaedfc408116f066559f41ace30",
+  "support_agent.py": "0720b56482a445967ff2a98ec5cfa668c858b8a6f662da74a55c21b257393efc"
+}

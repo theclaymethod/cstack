@@ -1,0 +1,1134 @@
+{
+  "cross": {
+    "alternative_native": {
+      "ERROR": 0,
+      "FAIL": 0,
+      "PASS": 8,
+      "UNKNOWN": 0
+    },
+    "forged_native": {
+      "ERROR": 0,
+      "FAIL": 8,
+      "PASS": 0,
+      "UNKNOWN": 0
+    },
+    "independent_attacker": "unavailable",
+    "independent_intent_review": "UNREVIEWED"
+  },
+  "deployment": "unperformed",
+  "hill_selection": {
+    "confirmation": {
+      "admissible": true,
+      "baseline_score": 0.5,
+      "candidate_score": 1.0,
+      "case_ids": [
+        "conf-howto",
+        "conf-targeted",
+        "conf-duplicate",
+        "conf-preservation"
+      ],
+      "errors": 0,
+      "gains": [
+        "conf-howto",
+        "conf-duplicate"
+      ],
+      "regressions": [],
+      "strict_improvement": true
+    },
+    "confirmation_selected": true,
+    "development_incumbent": 2,
+    "limits": "synthetic deterministic development and reserved-workflow evidence; trusted local execution; no generalization claim",
+    "outcome": "verified development improvement; confirmation checks passed",
+    "pending_attempts": [],
+    "selected_attempt": 2,
+    "stop_reason": "confirmation complete"
+  },
+  "judge_exposure": [
+    "train",
+    "validation",
+    "final"
+  ],
+  "judge_final": {
+    "jev-baseline-final": {
+      "agreement": {
+        "attempted": 8,
+        "confusion": {
+          "FAIL": {
+            "FAIL": 0,
+            "PASS": 2
+          },
+          "PASS": {
+            "FAIL": 0,
+            "PASS": 6
+          }
+        },
+        "coverage": 1.0,
+        "decided": 8,
+        "failure_positive_rates_decided": {
+          "FN": 2,
+          "FP": 0,
+          "TN": 6,
+          "TP": 0,
+          "failure_catch": 0.0,
+          "false_outcomes_among_judge_passes": 0.25,
+          "false_pass_among_gold_failures": 1.0,
+          "false_rejection_among_gold_passes": 0.0
+        },
+        "gold_prevalence_all_attempted": {
+          "FAIL": 0.25,
+          "PASS": 0.75
+        },
+        "kappa_decided": 0.0,
+        "kappa_expected_disagreement": 0.25,
+        "kappa_observed_disagreement": 0.25,
+        "kappa_undefined_reason": null,
+        "labels": [
+          "PASS",
+          "FAIL"
+        ],
+        "marginal_gold_decided": {
+          "FAIL": 0.25,
+          "PASS": 0.75
+        },
+        "marginal_prediction_decided": {
+          "FAIL": 0.0,
+          "PASS": 1.0
+        },
+        "nominal_expected_agreement_decided": 0.75,
+        "observed_agreement_decided": 0.75,
+        "other_by_gold": {
+          "FAIL": {
+            "ERROR": 0,
+            "UNKNOWN": 0
+          },
+          "PASS": {
+            "ERROR": 0,
+            "UNKNOWN": 0
+          }
+        },
+        "weighting": null
+      },
+      "probabilities": {
+        "attempted": 8,
+        "brier": 0.2975,
+        "limits": "Brier/log loss include discrimination and uncertainty; these do not alone isolate calibration.",
+        "log_loss": 0.8179949920950272,
+        "log_loss_infinite": false,
+        "probability_pairs": 8,
+        "reliability_bins": [
+          {
+            "count": 6,
+            "empirical_failure_rate": 0.3333333333333333,
+            "lower": 0.0,
+            "mean_probability": 0.15,
+            "upper": 0.2
+          },
+          {
+            "count": 0,
+            "empirical_failure_rate": null,
+            "lower": 0.2,
+            "mean_probability": null,
+            "upper": 0.4
+          },
+          {
+            "count": 0,
+            "empirical_failure_rate": null,
+            "lower": 0.4,
+            "mean_probability": null,
+            "upper": 0.6
+          },
+          {
+            "count": 2,
+            "empirical_failure_rate": 0.0,
+            "lower": 0.6,
+            "mean_probability": 0.65,
+            "upper": 0.8
+          },
+          {
+            "count": 0,
+            "empirical_failure_rate": null,
+            "lower": 0.8,
+            "mean_probability": null,
+            "upper": 1.0
+          }
+        ]
+      },
+      "uncertainty": {
+        "confidence_level": 0.95,
+        "draws": 200,
+        "families": 4,
+        "intervals": {
+          "coverage": {
+            "bounds": [
+              1.0,
+              1.0
+            ],
+            "undefined_replicates": 0
+          },
+          "failure_catch": {
+            "bounds": null,
+            "undefined_replicates": 19
+          },
+          "false_pass_among_gold_failures": {
+            "bounds": null,
+            "undefined_replicates": 19
+          },
+          "false_rejection_among_gold_passes": {
+            "bounds": [
+              0.0,
+              0.0
+            ],
+            "undefined_replicates": 0
+          },
+          "kappa_decided": {
+            "bounds": null,
+            "undefined_replicates": 19
+          }
+        },
+        "limits": "Assumes independent declared families and an appropriate sampling model; few families/rare classes limit inference. Undefined replicates suppress that interval rather than being discarded.",
+        "method": "paired whole-family percentile bootstrap, row-weighted within sampled families",
+        "seed": 17
+      }
+    },
+    "jev-selected-final": {
+      "agreement": {
+        "attempted": 8,
+        "confusion": {
+          "FAIL": {
+            "FAIL": 2,
+            "PASS": 0
+          },
+          "PASS": {
+            "FAIL": 0,
+            "PASS": 6
+          }
+        },
+        "coverage": 1.0,
+        "decided": 8,
+        "failure_positive_rates_decided": {
+          "FN": 0,
+          "FP": 0,
+          "TN": 6,
+          "TP": 2,
+          "failure_catch": 1.0,
+          "false_outcomes_among_judge_passes": 0.0,
+          "false_pass_among_gold_failures": 0.0,
+          "false_rejection_among_gold_passes": 0.0
+        },
+        "gold_prevalence_all_attempted": {
+          "FAIL": 0.25,
+          "PASS": 0.75
+        },
+        "kappa_decided": 1.0,
+        "kappa_expected_disagreement": 0.375,
+        "kappa_observed_disagreement": 0.0,
+        "kappa_undefined_reason": null,
+        "labels": [
+          "PASS",
+          "FAIL"
+        ],
+        "marginal_gold_decided": {
+          "FAIL": 0.25,
+          "PASS": 0.75
+        },
+        "marginal_prediction_decided": {
+          "FAIL": 0.25,
+          "PASS": 0.75
+        },
+        "nominal_expected_agreement_decided": 0.625,
+        "observed_agreement_decided": 1.0,
+        "other_by_gold": {
+          "FAIL": {
+            "ERROR": 0,
+            "UNKNOWN": 0
+          },
+          "PASS": {
+            "ERROR": 0,
+            "UNKNOWN": 0
+          }
+        },
+        "weighting": null
+      },
+      "probabilities": {
+        "attempted": 8,
+        "brier": 0.047499999999999994,
+        "limits": "Brier/log loss include discrimination and uncertainty; these do not alone isolate calibration.",
+        "log_loss": 0.22958492614644477,
+        "log_loss_infinite": false,
+        "probability_pairs": 8,
+        "reliability_bins": [
+          {
+            "count": 6,
+            "empirical_failure_rate": 0.0,
+            "lower": 0.0,
+            "mean_probability": 0.15,
+            "upper": 0.2
+          },
+          {
+            "count": 0,
+            "empirical_failure_rate": null,
+            "lower": 0.2,
+            "mean_probability": null,
+            "upper": 0.4
+          },
+          {
+            "count": 0,
+            "empirical_failure_rate": null,
+            "lower": 0.4,
+            "mean_probability": null,
+            "upper": 0.6
+          },
+          {
+            "count": 2,
+            "empirical_failure_rate": 1.0,
+            "lower": 0.6,
+            "mean_probability": 0.65,
+            "upper": 0.8
+          },
+          {
+            "count": 0,
+            "empirical_failure_rate": null,
+            "lower": 0.8,
+            "mean_probability": null,
+            "upper": 1.0
+          }
+        ]
+      },
+      "uncertainty": {
+        "confidence_level": 0.95,
+        "draws": 200,
+        "families": 4,
+        "intervals": {
+          "coverage": {
+            "bounds": [
+              1.0,
+              1.0
+            ],
+            "undefined_replicates": 0
+          },
+          "failure_catch": {
+            "bounds": null,
+            "undefined_replicates": 19
+          },
+          "false_pass_among_gold_failures": {
+            "bounds": null,
+            "undefined_replicates": 19
+          },
+          "false_rejection_among_gold_passes": {
+            "bounds": [
+              0.0,
+              0.0
+            ],
+            "undefined_replicates": 0
+          },
+          "kappa_decided": {
+            "bounds": null,
+            "undefined_replicates": 19
+          }
+        },
+        "limits": "Assumes independent declared families and an appropriate sampling model; few families/rare classes limit inference. Undefined replicates suppress that interval rather than being discarded.",
+        "method": "paired whole-family percentile bootstrap, row-weighted within sampled families",
+        "seed": 17
+      }
+    },
+    "llm-baseline-final": {
+      "agreement": {
+        "attempted": 8,
+        "confusion": {
+          "FAIL": {
+            "FAIL": 0,
+            "PASS": 2
+          },
+          "PASS": {
+            "FAIL": 2,
+            "PASS": 4
+          }
+        },
+        "coverage": 1.0,
+        "decided": 8,
+        "failure_positive_rates_decided": {
+          "FN": 2,
+          "FP": 2,
+          "TN": 4,
+          "TP": 0,
+          "failure_catch": 0.0,
+          "false_outcomes_among_judge_passes": 0.3333333333333333,
+          "false_pass_among_gold_failures": 1.0,
+          "false_rejection_among_gold_passes": 0.3333333333333333
+        },
+        "gold_prevalence_all_attempted": {
+          "FAIL": 0.25,
+          "PASS": 0.75
+        },
+        "kappa_decided": -0.33333333333333326,
+        "kappa_expected_disagreement": 0.375,
+        "kappa_observed_disagreement": 0.5,
+        "kappa_undefined_reason": null,
+        "labels": [
+          "PASS",
+          "FAIL"
+        ],
+        "marginal_gold_decided": {
+          "FAIL": 0.25,
+          "PASS": 0.75
+        },
+        "marginal_prediction_decided": {
+          "FAIL": 0.25,
+          "PASS": 0.75
+        },
+        "nominal_expected_agreement_decided": 0.625,
+        "observed_agreement_decided": 0.5,
+        "other_by_gold": {
+          "FAIL": {
+            "ERROR": 0,
+            "UNKNOWN": 0
+          },
+          "PASS": {
+            "ERROR": 0,
+            "UNKNOWN": 0
+          }
+        },
+        "weighting": null
+      },
+      "probabilities": {
+        "attempted": 8,
+        "brier": null,
+        "limits": "Brier/log loss include discrimination and uncertainty; these do not alone isolate calibration.",
+        "log_loss": null,
+        "log_loss_infinite": false,
+        "probability_pairs": 0,
+        "reliability_bins": [
+          {
+            "count": 0,
+            "empirical_failure_rate": null,
+            "lower": 0.0,
+            "mean_probability": null,
+            "upper": 0.2
+          },
+          {
+            "count": 0,
+            "empirical_failure_rate": null,
+            "lower": 0.2,
+            "mean_probability": null,
+            "upper": 0.4
+          },
+          {
+            "count": 0,
+            "empirical_failure_rate": null,
+            "lower": 0.4,
+            "mean_probability": null,
+            "upper": 0.6
+          },
+          {
+            "count": 0,
+            "empirical_failure_rate": null,
+            "lower": 0.6,
+            "mean_probability": null,
+            "upper": 0.8
+          },
+          {
+            "count": 0,
+            "empirical_failure_rate": null,
+            "lower": 0.8,
+            "mean_probability": null,
+            "upper": 1.0
+          }
+        ]
+      },
+      "uncertainty": {
+        "confidence_level": 0.95,
+        "draws": 200,
+        "families": 4,
+        "intervals": {
+          "coverage": {
+            "bounds": [
+              1.0,
+              1.0
+            ],
+            "undefined_replicates": 0
+          },
+          "failure_catch": {
+            "bounds": null,
+            "undefined_replicates": 19
+          },
+          "false_pass_among_gold_failures": {
+            "bounds": null,
+            "undefined_replicates": 19
+          },
+          "false_rejection_among_gold_passes": {
+            "bounds": [
+              0.0,
+              1.0
+            ],
+            "undefined_replicates": 0
+          },
+          "kappa_decided": {
+            "bounds": null,
+            "undefined_replicates": 19
+          }
+        },
+        "limits": "Assumes independent declared families and an appropriate sampling model; few families/rare classes limit inference. Undefined replicates suppress that interval rather than being discarded.",
+        "method": "paired whole-family percentile bootstrap, row-weighted within sampled families",
+        "seed": 17
+      }
+    },
+    "llm-selected-final": {
+      "agreement": {
+        "attempted": 8,
+        "confusion": {
+          "FAIL": {
+            "FAIL": 2,
+            "PASS": 0
+          },
+          "PASS": {
+            "FAIL": 0,
+            "PASS": 6
+          }
+        },
+        "coverage": 1.0,
+        "decided": 8,
+        "failure_positive_rates_decided": {
+          "FN": 0,
+          "FP": 0,
+          "TN": 6,
+          "TP": 2,
+          "failure_catch": 1.0,
+          "false_outcomes_among_judge_passes": 0.0,
+          "false_pass_among_gold_failures": 0.0,
+          "false_rejection_among_gold_passes": 0.0
+        },
+        "gold_prevalence_all_attempted": {
+          "FAIL": 0.25,
+          "PASS": 0.75
+        },
+        "kappa_decided": 1.0,
+        "kappa_expected_disagreement": 0.375,
+        "kappa_observed_disagreement": 0.0,
+        "kappa_undefined_reason": null,
+        "labels": [
+          "PASS",
+          "FAIL"
+        ],
+        "marginal_gold_decided": {
+          "FAIL": 0.25,
+          "PASS": 0.75
+        },
+        "marginal_prediction_decided": {
+          "FAIL": 0.25,
+          "PASS": 0.75
+        },
+        "nominal_expected_agreement_decided": 0.625,
+        "observed_agreement_decided": 1.0,
+        "other_by_gold": {
+          "FAIL": {
+            "ERROR": 0,
+            "UNKNOWN": 0
+          },
+          "PASS": {
+            "ERROR": 0,
+            "UNKNOWN": 0
+          }
+        },
+        "weighting": null
+      },
+      "probabilities": {
+        "attempted": 8,
+        "brier": null,
+        "limits": "Brier/log loss include discrimination and uncertainty; these do not alone isolate calibration.",
+        "log_loss": null,
+        "log_loss_infinite": false,
+        "probability_pairs": 0,
+        "reliability_bins": [
+          {
+            "count": 0,
+            "empirical_failure_rate": null,
+            "lower": 0.0,
+            "mean_probability": null,
+            "upper": 0.2
+          },
+          {
+            "count": 0,
+            "empirical_failure_rate": null,
+            "lower": 0.2,
+            "mean_probability": null,
+            "upper": 0.4
+          },
+          {
+            "count": 0,
+            "empirical_failure_rate": null,
+            "lower": 0.4,
+            "mean_probability": null,
+            "upper": 0.6
+          },
+          {
+            "count": 0,
+            "empirical_failure_rate": null,
+            "lower": 0.6,
+            "mean_probability": null,
+            "upper": 0.8
+          },
+          {
+            "count": 0,
+            "empirical_failure_rate": null,
+            "lower": 0.8,
+            "mean_probability": null,
+            "upper": 1.0
+          }
+        ]
+      },
+      "uncertainty": {
+        "confidence_level": 0.95,
+        "draws": 200,
+        "families": 4,
+        "intervals": {
+          "coverage": {
+            "bounds": [
+              1.0,
+              1.0
+            ],
+            "undefined_replicates": 0
+          },
+          "failure_catch": {
+            "bounds": null,
+            "undefined_replicates": 19
+          },
+          "false_pass_among_gold_failures": {
+            "bounds": null,
+            "undefined_replicates": 19
+          },
+          "false_rejection_among_gold_passes": {
+            "bounds": [
+              0.0,
+              0.0
+            ],
+            "undefined_replicates": 0
+          },
+          "kappa_decided": {
+            "bounds": null,
+            "undefined_replicates": 19
+          }
+        },
+        "limits": "Assumes independent declared families and an appropriate sampling model; few families/rare classes limit inference. Undefined replicates suppress that interval rather than being discarded.",
+        "method": "paired whole-family percentile bootstrap, row-weighted within sampled families",
+        "seed": 17
+      }
+    }
+  },
+  "judge_final_plan": {
+    "jev-baseline-final": {
+      "backend": "jev",
+      "fail_at_or_above": 0.8,
+      "live_backend": false,
+      "model": "offline-response-shape-fixture",
+      "pass_below": 0.8,
+      "policy": "claim-only",
+      "question_means_failure": true
+    },
+    "jev-selected-final": {
+      "backend": "jev",
+      "fail_at_or_above": 0.5,
+      "live_backend": false,
+      "model": "offline-response-shape-fixture",
+      "pass_below": 0.5,
+      "policy": "state-witness",
+      "question_means_failure": true
+    },
+    "llm-baseline-final": {
+      "backend": "llm",
+      "fail_at_or_above": 0.8,
+      "live_backend": false,
+      "model": "offline-response-shape-fixture",
+      "pass_below": 0.8,
+      "policy": "claim-only",
+      "question_means_failure": true
+    },
+    "llm-selected-final": {
+      "backend": "llm",
+      "fail_at_or_above": 0.5,
+      "live_backend": false,
+      "model": "offline-response-shape-fixture",
+      "pass_below": 0.5,
+      "policy": "state-witness",
+      "question_means_failure": true
+    }
+  },
+  "release_thresholds": null,
+  "run_eval": {
+    "run-baseline": {
+      "ERROR": 0,
+      "FAIL": 4,
+      "PASS": 4,
+      "UNKNOWN": 0
+    },
+    "run-conforming": {
+      "ERROR": 0,
+      "FAIL": 0,
+      "PASS": 8,
+      "UNKNOWN": 0
+    }
+  },
+  "simplification": {
+    "burden": {
+      "model_cost_or_latency_savings": "not measured",
+      "original_prompt_utf8_bytes": 4193,
+      "original_units": 9,
+      "selected_prompt_utf8_bytes": 3667,
+      "selected_units": 2,
+      "token_count": null
+    },
+    "closed_controls": {
+      "duplicate-final": true,
+      "refitting-after-final": true,
+      "unplanned-final": true
+    },
+    "confirmation_case_executions": 20,
+    "diagnostics": {
+      "conflict-a": {
+        "admissible": false,
+        "baseline_score": 1.0,
+        "candidate_score": 0.5,
+        "difference": -0.5,
+        "errors_or_unknown": 0,
+        "max_loss": 0.0,
+        "regressions": [
+          "dev-explicit",
+          "dev-ambiguous",
+          "dev-closed",
+          "dev-unrelated"
+        ],
+        "run": "leave-out-conflict-a",
+        "scope": "Exact outcomes on the declared finite synthetic cases only",
+        "score": 0.5,
+        "status": "measured"
+      },
+      "conflict-b": {
+        "admissible": false,
+        "baseline_score": 1.0,
+        "candidate_score": 0.5,
+        "difference": -0.5,
+        "errors_or_unknown": 0,
+        "max_loss": 0.0,
+        "regressions": [
+          "dev-explicit",
+          "dev-ambiguous",
+          "dev-closed",
+          "dev-unrelated"
+        ],
+        "run": "leave-out-conflict-b",
+        "scope": "Exact outcomes on the declared finite synthetic cases only",
+        "score": 0.5,
+        "status": "measured"
+      },
+      "contract": {
+        "reason": "Protected task contract must remain",
+        "status": "invalid-before-execution"
+      },
+      "duplicate-a": {
+        "admissible": true,
+        "baseline_score": 1.0,
+        "candidate_score": 1.0,
+        "difference": 0.0,
+        "errors_or_unknown": 0,
+        "max_loss": 0.0,
+        "regressions": [],
+        "run": "leave-out-duplicate-a",
+        "scope": "Exact outcomes on the declared finite synthetic cases only",
+        "score": 1.0,
+        "status": "measured"
+      },
+      "duplicate-b": {
+        "admissible": true,
+        "baseline_score": 1.0,
+        "candidate_score": 1.0,
+        "difference": 0.0,
+        "errors_or_unknown": 0,
+        "max_loss": 0.0,
+        "regressions": [],
+        "run": "leave-out-duplicate-b",
+        "scope": "Exact outcomes on the declared finite synthetic cases only",
+        "score": 1.0,
+        "status": "measured"
+      },
+      "example": {
+        "admissible": true,
+        "baseline_score": 1.0,
+        "candidate_score": 1.0,
+        "difference": 0.0,
+        "errors_or_unknown": 0,
+        "max_loss": 0.0,
+        "regressions": [],
+        "run": "leave-out-example",
+        "scope": "Exact outcomes on the declared finite synthetic cases only",
+        "score": 1.0,
+        "status": "measured"
+      },
+      "legacy-auth": {
+        "admissible": false,
+        "baseline_score": 1.0,
+        "candidate_score": 0.5,
+        "difference": -0.5,
+        "errors_or_unknown": 0,
+        "max_loss": 0.0,
+        "regressions": [
+          "dev-explicit",
+          "dev-ambiguous",
+          "dev-closed",
+          "dev-unrelated"
+        ],
+        "run": "leave-out-legacy-auth",
+        "scope": "Exact outcomes on the declared finite synthetic cases only",
+        "score": 0.5,
+        "status": "measured"
+      },
+      "plan": {
+        "reason": "Surviving dependent requires its parent: plan-detail",
+        "status": "invalid-before-execution"
+      },
+      "plan-detail": {
+        "admissible": true,
+        "baseline_score": 1.0,
+        "candidate_score": 1.0,
+        "difference": 0.0,
+        "errors_or_unknown": 0,
+        "max_loss": 0.0,
+        "regressions": [],
+        "run": "leave-out-plan-detail",
+        "scope": "Exact outcomes on the declared finite synthetic cases only",
+        "score": 1.0,
+        "status": "measured"
+      }
+    },
+    "limit": 200,
+    "limits": [
+      "All task cases and expected outcomes are synthetic and readable.",
+      "Model capability and prompt interactions are explicitly programmed stand-ins.",
+      "No model inference, human labels, statistical non-inferiority or production rollout tested.",
+      "One-shot protocol; no resume loader or adversarial host/filesystem isolation."
+    ],
+    "migration": {
+      "interaction": 0.5,
+      "matrix": {
+        "new-existing": {
+          "config": {
+            "model": "new-fixture",
+            "retained": [
+              "conflict-a",
+              "conflict-b",
+              "contract",
+              "duplicate-a",
+              "duplicate-b",
+              "example",
+              "legacy-auth",
+              "plan",
+              "plan-detail"
+            ]
+          },
+          "run": "final-new-existing",
+          "score": 1.0
+        },
+        "new-simplified": {
+          "config": {
+            "model": "new-fixture",
+            "retained": [
+              "contract",
+              "duplicate-b"
+            ]
+          },
+          "run": "final-new-simplified",
+          "score": 1.0
+        },
+        "old-existing": {
+          "config": {
+            "model": "old-fixture",
+            "retained": [
+              "conflict-a",
+              "conflict-b",
+              "contract",
+              "duplicate-a",
+              "duplicate-b",
+              "example",
+              "legacy-auth",
+              "plan",
+              "plan-detail"
+            ]
+          },
+          "run": "final-old-existing",
+          "score": 1.0
+        },
+        "old-simplified": {
+          "config": {
+            "model": "old-fixture",
+            "retained": [
+              "contract",
+              "duplicate-b"
+            ]
+          },
+          "run": "final-old-simplified",
+          "score": 0.5
+        }
+      },
+      "model_effect_existing_design": 0.0,
+      "release_vs_original": {
+        "admissible": true,
+        "baseline_score": 1.0,
+        "candidate_score": 1.0,
+        "difference": 0.0,
+        "errors_or_unknown": 0,
+        "max_loss": 0.0,
+        "regressions": [],
+        "scope": "Exact outcomes on the declared finite synthetic cases only"
+      },
+      "simplification_effect_new": 0.0,
+      "simplification_effect_old": -0.5,
+      "simplification_vs_new_existing": {
+        "admissible": true,
+        "baseline_score": 1.0,
+        "candidate_score": 1.0,
+        "difference": 0.0,
+        "errors_or_unknown": 0,
+        "max_loss": 0.0,
+        "regressions": [],
+        "scope": "Exact outcomes on the declared finite synthetic cases only"
+      }
+    },
+    "minimality": "Smallest feasible candidate in this scripted search; no minimality sweep or global claim",
+    "naive_union": {
+      "admissible": false,
+      "baseline_score": 1.0,
+      "candidate_score": 0.875,
+      "difference": -0.125,
+      "errors_or_unknown": 0,
+      "max_loss": 0.0,
+      "regressions": [
+        "dev-duplicate"
+      ],
+      "scope": "Exact outcomes on the declared finite synthetic cases only"
+    },
+    "native_case_executions": 164,
+    "old_model_reduction": {
+      "config": {
+        "model": "old-fixture",
+        "retained": [
+          "contract",
+          "duplicate-b",
+          "legacy-auth"
+        ]
+      },
+      "confirmation": {
+        "admissible": true,
+        "baseline_score": 1.0,
+        "candidate_score": 1.0,
+        "difference": 0.0,
+        "errors_or_unknown": 0,
+        "max_loss": 0.0,
+        "regressions": [],
+        "scope": "Exact outcomes on the declared finite synthetic cases only"
+      }
+    },
+    "paid_calls": 0,
+    "policy": {
+      "objective": "fewer retained units and fewer rendered prompt UTF-8 bytes",
+      "observed_pass_regressions": 0,
+      "quality_loss": 0
+    },
+    "promotion": "Offline fixture artifact only; no deployable production prompt or real model validation",
+    "provider_calls": 0,
+    "reduction_history": [
+      {
+        "accepted": true,
+        "admissible": true,
+        "baseline_score": 1.0,
+        "candidate_score": 1.0,
+        "difference": 0.0,
+        "errors_or_unknown": 0,
+        "max_loss": 0.0,
+        "parent": "original",
+        "regressions": [],
+        "removed": [
+          "example",
+          "plan",
+          "plan-detail"
+        ],
+        "run": "drop-noise",
+        "scope": "Exact outcomes on the declared finite synthetic cases only"
+      },
+      {
+        "accepted": true,
+        "admissible": true,
+        "baseline_score": 1.0,
+        "candidate_score": 1.0,
+        "difference": 0.0,
+        "errors_or_unknown": 0,
+        "max_loss": 0.0,
+        "parent": "drop-noise",
+        "regressions": [],
+        "removed": [
+          "duplicate-a"
+        ],
+        "run": "drop-duplicate-a",
+        "scope": "Exact outcomes on the declared finite synthetic cases only"
+      },
+      {
+        "accepted": false,
+        "admissible": false,
+        "baseline_score": 1.0,
+        "candidate_score": 0.875,
+        "difference": -0.125,
+        "errors_or_unknown": 0,
+        "max_loss": 0.0,
+        "parent": "drop-duplicate-a",
+        "regressions": [
+          "dev-duplicate"
+        ],
+        "removed": [
+          "duplicate-b"
+        ],
+        "run": "drop-duplicate-b",
+        "scope": "Exact outcomes on the declared finite synthetic cases only"
+      },
+      {
+        "accepted": false,
+        "admissible": false,
+        "baseline_score": 1.0,
+        "candidate_score": 0.5,
+        "difference": -0.5,
+        "errors_or_unknown": 0,
+        "max_loss": 0.0,
+        "parent": "drop-duplicate-a",
+        "regressions": [
+          "dev-explicit",
+          "dev-ambiguous",
+          "dev-closed",
+          "dev-unrelated"
+        ],
+        "removed": [
+          "conflict-a"
+        ],
+        "run": "drop-conflict-a",
+        "scope": "Exact outcomes on the declared finite synthetic cases only"
+      },
+      {
+        "accepted": false,
+        "admissible": false,
+        "baseline_score": 1.0,
+        "candidate_score": 0.5,
+        "difference": -0.5,
+        "errors_or_unknown": 0,
+        "max_loss": 0.0,
+        "parent": "drop-duplicate-a",
+        "regressions": [
+          "dev-explicit",
+          "dev-ambiguous",
+          "dev-closed",
+          "dev-unrelated"
+        ],
+        "removed": [
+          "conflict-b"
+        ],
+        "run": "drop-conflict-b",
+        "scope": "Exact outcomes on the declared finite synthetic cases only"
+      },
+      {
+        "accepted": true,
+        "admissible": true,
+        "baseline_score": 1.0,
+        "candidate_score": 1.0,
+        "difference": 0.0,
+        "errors_or_unknown": 0,
+        "max_loss": 0.0,
+        "parent": "drop-duplicate-a",
+        "regressions": [],
+        "removed": [
+          "conflict-a",
+          "conflict-b"
+        ],
+        "run": "drop-conflict-pair",
+        "scope": "Exact outcomes on the declared finite synthetic cases only"
+      }
+    ],
+    "selected_artifact": "selected-offline-fixture.py",
+    "selected_sha256": "c1a85f6bd9c8c5d53d51d44220eacde87043630d7dceb5b8e4625b2cbb37e570",
+    "source_identity": {
+      "catalog": "dc332e7a108b52e03789f1185e88e02d405bbbe906a6ef030a74d0b7b9d34b73",
+      "files": {
+        "examples/candidates/improved.py": "d8cc818e83af4453a44e9025484ae6e23ecc7cbcf8c9e621efa56c21a179a1c3",
+        "methods/native.py": "df83d4b57df0ac2dc0ac6cd5b94136082c02d486478c98334a6273cb623e86bd",
+        "simplification/__init__.py": "9b265b7e39fe1ee3767d60306a74857d6429d3c352df97497cceaadf42e9d336",
+        "simplification/demo.py": "2e682951a122ac9ee9a709b2d04a3038b9330cf1df46ee7deec38d73f34d6c76",
+        "simplification/protocol.py": "95b5c8121d3b5d81b1ece8bed046dcac1ceba9daa15a6ebf223a4421e3f82e32",
+        "simplification/run.py": "d6689ea5937679837104b3e006ef5447234cecaedfc408116f066559f41ace30"
+      },
+      "native": {
+        "files": {
+          "evals/cases.jsonl": "71f1d8c50f7ce2b3ca512c6f2703faa4e30d5c63237824e3a73e7a573cf4f7b2",
+          "evals/rubric.md": "cb133b50752a48098d463a562d7553ec5a5b29bfef1825b4e393e7de33d66dd8",
+          "evals/spec.json": "eb6f21266223c16708a4ed3bb4f401f3a2adb3355b9e176152665d70a665d8f6",
+          "evaluate.py": "fd1fdaa4b090852f8d0a6462303411bea5488dcc7f7a08895146e32d52b0430d"
+        },
+        "protocol": {
+          "confirmation": "baseline and incumbent; preserve baseline PASS; no lower score",
+          "execution_boundary": "trusted local subprocess; not a security sandbox",
+          "name": "deterministic-local-support-v1",
+          "new_ticket_issue": "vpn",
+          "new_ticket_status": "open",
+          "python_flags": [
+            "-I"
+          ],
+          "selection": "strict development improvement; preserve every incumbent PASS",
+          "timeout_seconds": 3,
+          "trials_per_case": 1
+        },
+        "python": {
+          "executable": "/Users/clayton/.local/share/uv/python/cpython-3.12.16-macos-aarch64-none/bin/python3.12",
+          "implementation": "CPython",
+          "platform": "macOS-27.2-arm64-arm-64bit",
+          "version": "3.12.16 (main, Oct 26 2026, 13:59:40) [Clang 23.1.3 ]"
+        }
+      }
+    },
+    "status": "passed"
+  },
+  "status": "completed controls; independent audit unreviewed",
+  "unmeasured": [
+    "human agreement",
+    "live judge calibration",
+    "model inference costs",
+    "production latency",
+    "generalization",
+    "statistical non-inferiority"
+  ],
+  "usage": {
+    "cross_proxy_processes": 3,
+    "dependencies_installed": 0,
+    "deployment": "unperformed",
+    "extra_adapter_probes": 5,
+    "native_breakdown": {
+      "cross_examine": 16,
+      "hill_climb": 32,
+      "judge_source": 24,
+      "run_eval": 16,
+      "simplification": 164
+    },
+    "native_case_executions": 252,
+    "native_case_limit": 300,
+    "native_counts_all_attempts": {
+      "ERROR": 0,
+      "FAIL": 54,
+      "PASS": 198,
+      "UNKNOWN": 0
+    },
+    "native_incomplete": 0,
+    "nested_agents": 0,
+    "offline_judge_worker_processes": 102,
+    "offline_worker_ceiling": 200,
+    "paid_calls": 0,
+    "provider_calls": 0,
+    "release_thresholds": null,
+    "stored_judge_response_renormalizations": 96,
+    "stored_native_regrades": 2,
+    "worker_breakdown": {
+      "fitting_and_final": 96,
+      "stability": 6
+    }
+  }
+}

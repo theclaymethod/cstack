@@ -1,0 +1,25 @@
+Successful substantive command sequence (run from workspace unless noted):
+
+# From the chat working directory; source path corrected after initial missing-path diagnostic.
+python3 work/bitter-lesson-build/cstack/fixtures/playground/scripts/new_workspace.py --source work/bitter-lesson-build/cstack --out work/bitter-lesson-build/runs/short-capture
+
+# Workspace: work/bitter-lesson-build/runs/short-capture
+mkdir -p eval-runs/skill-exercise/source eval-runs/skill-exercise/native
+cp exercises/fixtures/review-session.md eval-runs/skill-exercise/source/review-session.md
+python3 -c 'from pathlib import Path; p=Path("eval-runs/skill-exercise"); p.joinpath("source/first-development.jsonl").write_text(Path("evals/cases.jsonl").read_text().splitlines()[0]+"\n")'
+python3 evaluate.py run --candidate support_agent.py --suite development --cases eval-runs/skill-exercise/source/first-development.jsonl --out eval-runs/skill-exercise/native/baseline
+
+# driver.py and source/regenerated.py were authored locally via apply_patch.
+python3 eval-runs/skill-exercise/driver.py capture
+python3 eval-runs/skill-exercise/driver.py stop
+python3 eval-runs/skill-exercise/driver.py merge1
+python3 eval-runs/skill-exercise/driver.py merge2
+python3 evaluate.py run --candidate eval-runs/skill-exercise/source/regenerated.py --suite development --cases eval-runs/skill-exercise/source/first-development.jsonl --out eval-runs/skill-exercise/native/regenerated
+python3 eval-runs/skill-exercise/driver.py verify
+python3 eval-runs/skill-exercise/finalize.py
+python3 eval-runs/skill-exercise/driver.py verify > eval-runs/skill-exercise/verification.json
+python3 eval-runs/skill-exercise/finalize.py
+
+Read evidence: installed Expert Mode SKILL.md and references/records.md; installed Distill Me SKILL.md; workspace AGENTS.md, README.md, exercises/01-expert-mode.md, exercises/02-distill-me.md, scripted review-session.md; first development case; support_agent.py; evaluate.py help and relevant run/trace paths; newly written receipts/records. No tests, other skill versions, old reports, grading notes, or other chats were read. Global installed skills-librarian was read during initial path discovery; no installations or external discovery followed.
+
+Reproduction: materialize another fresh workspace from the same source, copy this driver, source/regenerated.py, and finalize.py into its eval-runs/skill-exercise; copy the same review-session and first development case; run the sequence from baseline onward. Never replace the original checkpoint directories. Timestamps change; source evidence, labels, outputs and duplicate counts remain stable. Running merge logic against unchanged evidence returns no additions. Verification is read-only and consumes zero native executions.

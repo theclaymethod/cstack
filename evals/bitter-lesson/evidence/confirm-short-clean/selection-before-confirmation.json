@@ -1,0 +1,90 @@
+{
+  "comparisons": {
+    "combined-minimal-found": {
+      "admissible": true,
+      "baseline_score": 1.0,
+      "candidate_score": 1.0,
+      "difference": 0.0,
+      "errors_or_unknown": 0,
+      "max_loss": 0.0,
+      "regressions": [],
+      "scope": "Exact outcomes on the declared finite synthetic cases only"
+    },
+    "remove-both-duplicates": {
+      "admissible": false,
+      "baseline_score": 1.0,
+      "candidate_score": 0.875,
+      "difference": -0.125,
+      "errors_or_unknown": 0,
+      "max_loss": 0.0,
+      "regressions": [
+        "dev-duplicate"
+      ],
+      "scope": "Exact outcomes on the declared finite synthetic cases only"
+    },
+    "remove-conflict-a": {
+      "admissible": false,
+      "baseline_score": 1.0,
+      "candidate_score": 0.5,
+      "difference": -0.5,
+      "errors_or_unknown": 0,
+      "max_loss": 0.0,
+      "regressions": [
+        "dev-explicit",
+        "dev-ambiguous",
+        "dev-closed",
+        "dev-unrelated"
+      ],
+      "scope": "Exact outcomes on the declared finite synthetic cases only"
+    },
+    "remove-duplicate-a": {
+      "admissible": true,
+      "baseline_score": 1.0,
+      "candidate_score": 1.0,
+      "difference": 0.0,
+      "errors_or_unknown": 0,
+      "max_loss": 0.0,
+      "regressions": [],
+      "scope": "Exact outcomes on the declared finite synthetic cases only"
+    },
+    "remove-duplicate-b": {
+      "admissible": true,
+      "baseline_score": 1.0,
+      "candidate_score": 1.0,
+      "difference": 0.0,
+      "errors_or_unknown": 0,
+      "max_loss": 0.0,
+      "regressions": [],
+      "scope": "Exact outcomes on the declared finite synthetic cases only"
+    },
+    "remove-legacy": {
+      "admissible": true,
+      "baseline_score": 1.0,
+      "candidate_score": 1.0,
+      "difference": 0.0,
+      "errors_or_unknown": 0,
+      "max_loss": 0.0,
+      "regressions": [],
+      "scope": "Exact outcomes on the declared finite synthetic cases only"
+    },
+    "remove-planning-example": {
+      "admissible": true,
+      "baseline_score": 1.0,
+      "candidate_score": 1.0,
+      "difference": 0.0,
+      "errors_or_unknown": 0,
+      "max_loss": 0.0,
+      "regressions": [],
+      "scope": "Exact outcomes on the declared finite synthetic cases only"
+    }
+  },
+  "configuration": {
+    "model": "new-fixture",
+    "retained": [
+      "contract",
+      "duplicate-a"
+    ]
+  },
+  "rule": "Smallest rendered byte count among observed zero-loss/no-regression candidates relative to full original; finite fixture gate only.",
+  "selected": "combined-minimal-found"
+}

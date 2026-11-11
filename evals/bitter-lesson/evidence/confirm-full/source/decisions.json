@@ -1,0 +1,35 @@
+{
+  "authority": "Scripted synthetic owner decisions in source/owner-request.md; not live human labels",
+  "history": [
+    {
+      "case": "approved-a-r1",
+      "decision": "A",
+      "meaning": "Give guidance; account null; preserve the entire input state",
+      "revision": 1,
+      "status": "approved"
+    },
+    {
+      "decision": "B",
+      "meaning": "Prior guidance-only proposal explicitly corrected; exact prior response unavailable",
+      "revision": 1,
+      "status": "superseded",
+      "superseded_by": "B revision2"
+    },
+    {
+      "case": "approved-b-r2",
+      "decision": "B",
+      "meaning": "Append exactly one open VPN ticket for red; any unique nonempty ID; preserve all original state",
+      "revision": 2,
+      "status": "approved"
+    },
+    {
+      "decision": "C",
+      "meaning": "Automatic escalation for urgent VPN requests is undecided",
+      "revision": null,
+      "scored": false,
+      "status": "deferred"
+    }
+  ],
+  "reviewed_output": null,
+  "reviewed_output_limit": "No original reviewed response/trace supplied; expectations are replay contracts, not labels on generated outputs"
+}

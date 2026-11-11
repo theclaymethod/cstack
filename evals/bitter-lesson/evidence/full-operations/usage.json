@@ -1,0 +1,34 @@
+{
+  "by_workflow": {
+    "claim_audit": 24,
+    "hill_climb": 32,
+    "judge_source_execution": 24,
+    "run_eval": 16,
+    "simplification": 164
+  },
+  "final_inventory_validation": "260 stored observations rechecked with native.checked_run; no new candidate execution",
+  "incomplete_native_attempts": 0,
+  "judge_pending_calls": 0,
+  "judge_prediction_processes": 96,
+  "judge_repeatability_processes": 6,
+  "judge_worker_limit": 200,
+  "judge_worker_processes": 102,
+  "model_cost": null,
+  "model_token_usage": null,
+  "native_candidate_case_executions": 260,
+  "native_confirmation_executions": 36,
+  "native_limit": 300,
+  "native_outcomes": {
+    "ERROR": 8,
+    "FAIL": 54,
+    "PASS": 198
+  },
+  "nested_agents": 0,
+  "network_calls": 0,
+  "new_dependencies": 0,
+  "paid_calls": 0,
+  "production_latency_evidence": null,
+  "provider_calls": 0,
+  "remaining_native_allowance": 40,
+  "stored_output_repaired_verifier_replays": 2
+}

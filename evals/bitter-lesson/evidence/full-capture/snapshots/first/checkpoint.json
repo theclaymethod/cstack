@@ -1,0 +1,10 @@
+{
+  "files": {
+    "capture-state.json": "31df814d24dfb5293a859dbcce3340771c2e9790267c1a509df44cdd2431a22a",
+    "exclusions.jsonl": "70eaa87db96d36809390b4d8bac8e4b0c4f3d7697c8b744e0a32557d0e30862d",
+    "reviews.jsonl": "71f811250a2cc3fff82e98bee00970227a77499d44ca6709d8a57ac8e83050c9",
+    "rubric.jsonl": "55e9662254cfbd69967e52af487e48b2a7d100221f35c376a75899218868cbf0"
+  },
+  "name": "first",
+  "saved_at": "2026-11-10T23:14:36.585515+00:00"
+}

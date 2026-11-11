@@ -1,0 +1,22 @@
+{
+  "authority": "Scripted synthetic owner decisions in source/owner-request.md; not live human labels",
+  "checks": [
+    "schema",
+    "allowed_action",
+    "requested_account",
+    "preserved_tickets",
+    "unique_ticket_ids",
+    "ticket_delta",
+    "new_ticket_membership",
+    "new_ticket_fields",
+    "action_matches_mutation",
+    "preserved_other_state"
+  ],
+  "format": "existing native JSONL",
+  "pending_decisions": 1,
+  "release_threshold": null,
+  "rubric": "package/rubric.md",
+  "runner": "evaluate.py run --candidate <candidate.py> --cases eval-runs/skill-exercise/package/cases.jsonl --suite development --out <fresh-directory>",
+  "schema_version": 1,
+  "scored_cases": 2
+}

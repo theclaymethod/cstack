@@ -1,0 +1,8 @@
+{
+  "account": null,
+  "action": "clarify",
+  "note": "Which listed account needs the VPN support ticket?",
+  "state": {
+    "tickets": []
+  }
+}

@@ -5,46 +5,28 @@ description: Fit and validate an automated judge against authoritative labeled e
 
 # Calibrate Judge
 
-Turn the project's grading standard into a reusable judge and measure how well it reproduces authoritative outcomes. Keep agreement, decision thresholds, probability calibration and repeated-input stability separate.
+Fit a versioned judge to authoritative labeled outcomes. Keep label agreement, threshold selection, probability calibration and repeated-input stability distinct. Implement adapters/data/experiments in the project, reusing its runner and format.
 
-Write judge code, native adapters, datasets and run artifacts in the consuming project. Reuse its format and runner. Missing gold or execution setup leaves the corresponding calibration unrun; a disclosed synthetic mechanics demonstration is still useful.
+## Gold and backend contract
 
-## Establish the contract
+Recover original inputs, reviewed outputs/versions, criterion scope, permitted references, source families and label authority. Read [the protocol](references/protocol.md). Disputed/incomplete labels remain a visible queue. Freeze intended criteria; semantic rubric/gold/aggregation changes need owner adjudication and a new comparable revision.
 
-Recover original inputs, evaluated outputs/versions, allowed task references, labels, criterion scope, authority and source families. Read [the calibration protocol](references/protocol.md) for label auditing, data separation, freezing and handoff.
+Establish costly errors, labels, abstention/fallback, mutable judge components, supported model/backend, budget and acceptance policy. Missing release targets do not imply approval. Weight training, paid calls, uploads and reserved-label access require actual capability and scope; missing gold/setup leaves those claims unrun.
 
-Establish the target decision and costly errors, supported label types, allowed abstention/fallback, backend/model, mutable judge components, budget and acceptance targets. Preserve choices the owner has not made. A missing release policy is not a pass. Do not infer permission for paid model calls, uploads, weight training or opening reserved labels from a request to write a skill or validate mechanics.
+Map [backend capabilities](references/backends.md). Preserve raw responses, optional fields, normalization errors, versions and costs. Typed Jev-style decisions need no invented explanations; generative reasons are optional. Concentration confidence is not event probability.
 
-Freeze intended criteria and gold meaning. Wording, examples and input representation may be tuned to apply those criteria better. A semantic rubric change, corrected label or new aggregation rule requires recorded owner adjudication and a new comparable revision. Preserve disputed and incomplete annotations instead of forcing them into training gold.
+## Baseline and bounded fitting
 
-## Execute the untuned judge
+Execute the untuned judge on declared membership. Gold, annotation rationales and label-bearing selection metadata stay out of runtime payloads; approved task references can enter when legitimate. Store complete predictions before label comparison and verify coverage, inputs/configuration and response/parser identity. A context already exposed to final gold cannot claim blindness.
 
-Map actual backend capabilities using [backend guidance](references/backends.md). Use the project's native request and response format. Preserve native responses, unavailable fields, parsing/transport errors, model identity and costs.
+Use development disagreements to distinguish judge errors, ambiguous criteria, bad labels and missing evidence. Tune LLM instructions/examples/settings or typed questions/options/context without changing gold meaning. [Hill Climb](../hill-climb/SKILL.md) can search under a total budget/reserve; keep the proposer separate from its typed target.
 
-Run the initial configuration before edits on declared development membership. Keep gold verdicts, annotation rationales, label-bearing names and selection metadata out of current judge inputs. Approved reference answers or expected task behavior may be legitimate inputs when the real judge is allowed to use them. Fitting feedback may expose development labels to a proposer; that does not make them runtime evidence.
+Assess genuine probabilities before fitting a supported mapping. Choose thresholds/review bands from separate or out-of-fold development predictions under the error policy. Optional weight fitting needs a supported interface and explicit authority; it is not required.
 
-Store complete predictions before comparing them with labels. Verify selected case/criterion coverage and unchanged inputs, configuration, parser and responses. A context that already saw final gold cannot supply blind validation merely by following instructions.
+## Confirmation and handoff
 
-## Fit within the permitted scope
+Read [measurement](references/measurement.md). Report counts, nominal or predeclared ordinal kappa and uncertainty, consequential class errors, UNKNOWN/ERROR and all-selected coverage. Preserve undefined quantities. Probability reliability, stability, latency and costs are separate measurements; repeated calls are not independent gold items.
 
-Inspect development disagreements and separate judge mistakes, unclear criteria, bad gold and missing evidence. For LLM judges, try clearer instructions, representative examples or declared inference settings. For typed models, tune atomic questions, criteria/option definitions and permitted state. Never fabricate target explanations.
+Freeze the exact judge/model/parser/calibrator/threshold/fallback bundle and final plan. Complete all planned predictions before opening final labels; final-driven edits require new evidence. Exercise alternatives, malformed/missing responses and label leakage. [Adversarial Cases](../adversarial-cases/SKILL.md) builds challenges; [Cross-Examine](../cross-examine/SKILL.md) adjudicates scoring gaps.
 
-Use [Hill Climb](../hill-climb/SKILL.md) for bounded candidate search when useful; DSPy/GEPA is optional. Keep a generative proposer separate from the typed judge it edits. Reserve confirmation resources and count model/reflector calls, retries, repetitions and comparison work in the relevant counters.
-
-When genuine probabilities exist, assess their reliability and fit a supported mapping only when justified. Choose thresholds/review bands from separate or out-of-fold development predictions under the declared error policy. Keep probability fitting and decision selection distinct. Weight training is conditional on a supported interface, appropriate data and explicit scope; it is not required for this workflow.
-
-## Confirm and decide
-
-Read [measurement guidance](references/measurement.md). Report raw counts and class consequences alongside kappa and uncertainty. Preserve undefined statistics, UNKNOWN/errors, all-selected denominators and coverage. Report probability diagnostics, stability, latency and cost separately where measurable.
-
-Freeze the selected judge, mappings and confirmation plan before final execution. Compare baseline and candidate on the same reserved cases under the declared trial policy. Freeze all planned predictions before opening final labels. Final disagreements used for edits become development exposure; preserve the result and obtain fresh evidence for a new independent claim.
-
-Exercise legitimate alternatives, relevant failures, malformed responses, missing evidence, label leakage and targeted adversarial content. [Adversarial Cases](../adversarial-cases/SKILL.md) constructs challenges; [Cross-Examine](../cross-examine/SKILL.md) adjudicates suspected scoring gaps. Repeated calls on one frozen example measure repeatability, not additional independent labeled data.
-
-Promote only when the declared evidence and acceptance policy support it. Otherwise retain the baseline or best disclosed development candidate and report not yet calibrated. Synthetic controls, mocked backend responses, actual provider calls and agreement with human labels establish different claims.
-
-## Deliver the judge and evidence
-
-Return the versioned judge configuration/program, project-local adapter and invocation, baseline/selected identities, data membership and exposure record, before/after metrics and uncertainty, costs, decision policy and unresolved limits. Mark live backend support unrun when only response shapes or mocks were tested. Keep an offline fixture artifact distinct from a deployable judge.
-
-[Create Eval](../create-eval/SKILL.md) supplies cases and criteria. [Run Eval](../run-eval/SKILL.md) executes frozen judges and reports product results separately from judge agreement. A later product-optimization campaign keeps its approved judge fixed; evaluator changes start a new measurement revision.
+Promote only under the declared evidence/policy; otherwise report not yet calibrated. Deliver configurations/code, invocation, original/selected identities, membership/exposure, metrics, costs and limits. Synthetic controls and response-shape mocks do not establish live backend or human-gold calibration. [Create Eval](../create-eval/SKILL.md) supplies criteria; [Run Eval](../run-eval/SKILL.md) executes frozen judges. Product optimization keeps its approved evaluator fixed.

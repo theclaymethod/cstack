@@ -5,50 +5,26 @@ description: Create repeatable evals from expert findings, model traces, or a ne
 
 # Create Eval
 
-For trace analysis, synthetic inputs, failure discovery, or calibration, consult [existing eval skills](references/ecosystem.md). Use the relevant skill when available or its upstream guidance. These are optional references, not bundled dependencies.
+Define the capability and decision this eval supports. Establish source authority, judged unit, observable success and legitimate alternatives. Separate assertion correctness, preferences, process and missing evidence; one bad assertion does not label its neighbors. Keep ambiguous cases provisional while other work continues.
 
-For an intent interview and human approval of generated scenarios before authoring, use [Bootstrap](../bootstrap/SKILL.md). Continue here when the behavior and reviewed cases are already established.
+## Evidence and cases
 
-## Define the decision
+For interviewing and scenario approval, use [Bootstrap](../bootstrap/SKILL.md). Resolve capture amendments/retractions through [findings-to-cases](references/from-findings.md), retaining the original reviewed output. Privacy/meaning review supplies no label authority.
 
-Establish the intended capability, observable success, expert authority, and acceptable alternatives. Identify what each case judges, such as an assertion, whole output, or environment outcome. One wrong assertion does not label its neighbors. Keep factual correctness, preferences, process requirements, and missing evidence distinct.
+Use [early development](references/early-development.md) when traces are absent: execute realistic feature inputs and review actual evidence where available. Label synthetic, hypothetical and mocked material; missing setup remains unrun. [Existing eval workflows](references/ecosystem.md) are optional tools for discovery and calibration.
 
-Use deterministic checks for directly observable properties. Use independent binary questions for open-ended criteria, with passing answers and applicability. Stateful tasks need actual execution, reset, and resulting-state checks, including what must remain unchanged. Stored text alone does not test execution.
+Make evidence reviewable before a large batch, using the existing viewer or [local trace review](references/trace-review.md). Include legitimate passes and boundary failures. A supported negative can be useful without a replacement answer; unreplayable annotations stay in an explicit incomplete queue outside scored denominators.
 
-Resolve material ambiguity from local evidence first. Ask only for missing judgments that change the task or pass condition. Keep affected cases provisional while continuing independent work.
+Reuse project format/runner. Prefer Harbor for new executable tasks while preserving established/owner choices; read [formats](references/formats.md). Stored-output review can use the [local package](../run-eval/references/package.md). Data/adapters belong in the project.
 
-## Gather evidence and make it reviewable
+Retain replay inputs or execution entrypoint, original output, source authority, construction family, intended role and applicable criteria. Use deterministic checks for observable properties and independent binary questions for interpretation, preserving passing direction and applicability. Stateful tasks require reset, actual resulting state and preservation checks.
 
-Inspect original inputs, outputs, and expert statements. Resolve amendments, retractions, and rubric versions before importing captures through [from findings to cases](references/from-findings.md). Preserve the reviewed output rather than replacing it with a repaired result. Export privacy and meaning reviews do not establish expert label authority or judge calibration.
+Keep labels/rationales and label-bearing metadata outside allowlisted judge inputs; references enter only when the grading task permits them. Split by source/construction family. Track development, calibration, final, regression and frontier roles; renaming exposed cases cannot restore independence. Open reserved final semantics only when explicitly authorized.
 
-For a new product or feature without relevant traces, follow [early development](references/early-development.md). Run realistic inputs through the actual feature and review the traces with the expert. Explicit task invariants can support initial checks. Keep hypothetical failures, synthetic examples, and mocked outputs labeled as such. Missing execution setup remains unrun.
+## Completion contract
 
-Provide a viewer before producing a large batch. Reuse the project's viewer, `build-review-interface`, or the bundled [local trace review tool](references/trace-review.md). Review outputs, tool interactions, retrieved evidence, and resulting state. Let observed failures inform the taxonomy; keep hypotheses separate.
+The package remains a draft until legitimate, failing, boundary and alternative controls execute through its real grading path. Preserve earlier evidence when checks change. Use [judge guidance](references/judges.md) and [Calibrate Judge](../calibrate-judge/SKILL.md) for semantic fitting to authoritative labels; freeze criteria, parser, model/config, runner, sampling and budget before comparison.
 
-Include legitimate passes and realistic boundary failures. Agent agreement does not create expert gold. A supported negative can be useful without a replacement answer if its rejection criterion is observable. Keep unreplayable annotations in an incomplete queue, outside scored denominators, and report exclusions.
+Use [Cross-Examine](../cross-examine/SKILL.md) for requested/needed adversarial hardening, with original intent, access and a bounded budget. Use [Run Eval](../run-eval/SKILL.md) for authorized execution. Report paths, actual checks, source limits and incomplete cases, separating judge agreement from product performance and development from independent evidence.
 
-## Package the cases
-
-Prefer Harbor for new executable agent tasks; preserve established or owner-selected formats. Read [format selection](references/formats.md). For stored-output review, [the local package contract](../run-eval/references/package.md) uses `rubric.md`, `cases.jsonl`, and `config.json`. Keep data and run evidence outside skill installations.
-
-Retain replay inputs, the reviewed output or execution entrypoint, applicable checks, source authority, construction family, and intended use. Write one binary question per independent requirement. Preserve supported alternatives, conditions, and passing direction. Insufficient evidence stays unknown; execution errors are distinct from domain failures.
-
-Keep expert labels and rationales separate from judge inputs. Build blind payloads with an allowlist that excludes label-bearing names, source notes, and prior verdicts too. Reference answers belong in the payload only when the grading task legitimately uses them.
-
-Split by source or construction family. Keep development, calibration, final test, regression, and frontier roles explicit. Exposed cases remain development evidence regardless of renaming. Open final-test semantics only on explicit instruction.
-
-## Check the grader
-
-Keep the package a draft until legitimate passes, clear failures, and relevant boundaries run through the real grading path. Check supported alternatives too.
-
-For semantic judges, read [judge calibration](references/judges.md). Use [Calibrate Judge](../calibrate-judge/SKILL.md) to fit a judge to authoritative labels before freezing it for product evaluation. Use separate expert-labeled development and calibration examples from both classes. Freeze the rubric, prompt, parser, model/configuration, runner version, sampling, and budget before comparison. Changes create a new revision; preserve earlier results.
-
-Use [Cross-Examine](../cross-examine/SKILL.md) when requested or when adversarial hardening is needed before a score drives decisions. Supply original intent, permitted shortcuts, access limits, the frozen grading path, and a bounded budget. Record untested risks honestly; reading a checklist is not an audit.
-
-Use [Run Eval](../run-eval/SKILL.md) when execution is requested and authorized. Compare meaningful baselines when available, with costs and trial conditions. Regression coverage and model discrimination are separate claims.
-
-## Hand off
-
-Report the package path, measured capability, evidence sources, replayable cases, unresolved cases, and actual validation limits. Separate grader calibration from product performance and development results from held-out evidence.
-
-Authoring adds no authority for product fixes, paid campaigns, opening reserved cases, publication, or uploads. For requested sharing, follow [the export workflow](../expert-mode/references/export.md).
+Authoring supplies no authority for product fixes, paid calls, reserved-data access or publication. Requested sharing follows [export](../expert-mode/references/export.md).

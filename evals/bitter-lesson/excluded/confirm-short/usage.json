@@ -1,0 +1,14 @@
+{
+  "native_attempted": 0,
+  "native_completed": 0,
+  "native_limit": 120,
+  "native_reserved": 0,
+  "nested_agents": 0,
+  "network_calls": 0,
+  "new_dependencies": 0,
+  "paid_calls": 0,
+  "planned_but_unexecuted": 102,
+  "provider_calls": 0,
+  "script_executed": false,
+  "status": "excluded before native execution"
+}

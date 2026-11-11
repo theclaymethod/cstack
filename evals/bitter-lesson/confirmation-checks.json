@@ -1,0 +1,15 @@
+{
+  "source": "tasks/confirmation.md",
+  "checks": [
+    "Only current approved A and corrected B are authored with exact typed input/state fidelity",
+    "Rejected/superseded decision history and deferred C stay preserved and unapproved items unscored",
+    "Real native grading accepts legitimate/alternative IDs and rejects false creation claims with actual state evidence",
+    "Synthetic expectation authority is separate from human output labels and independent review is not fabricated",
+    "Only authorized new-fixture is executed; changed prompt and frozen confirmation are actually measured against its original full baseline",
+    "Missing old production comparisons prevent upgrade, interaction or production-parity claims",
+    "Four attempted judge rows retain one ERROR, 3/4 coverage and undefined kappa without a calibration/release claim",
+    "Budgets, source/receipt identities and complete observed evidence are preserved without canonical edits"
+  ],
+  "scoring": "Coordinator source/output review plus native revalidation; match full/candidate per check, not pooled control pass rate",
+  "limits": "Readable synthetic cases; no human gold, model upgrade experiment, population non-inferiority or runtime savings"
+}

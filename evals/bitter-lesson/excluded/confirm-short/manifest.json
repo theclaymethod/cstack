@@ -1,0 +1,10 @@
+{
+  "files": {
+    "REPORT.md": "cfe3391cdb4b615d38dce90647c29126081a3ff882becf3574827c196fde6a45",
+    "exclusion.json": "6cb6bac1647eb4f65f2c691f81943fe515ec3f849e4b0af798f872d97fe32e70",
+    "exercise.py": "c3c85a30297bdf307aedc5eb0d039639c18d89f66ecc2b8d76b19c7e7344f6bd",
+    "skill-access-hashes.json": "d6ec3151e8d82e3b40611b1a2425d20fa24745626fce3c4f659df772b3a93e02",
+    "usage.json": "6eccc3ef9c125f0f97811b7f8893630ffea6eebfc9d697efa8924328b38d4183"
+  },
+  "status": "excluded"
+}

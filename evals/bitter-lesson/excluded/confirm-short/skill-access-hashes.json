@@ -1,0 +1,52 @@
+[
+  {
+    "path": "/Users/clayton/.agents/skills/create-eval/SKILL.md",
+    "resolved": "/Users/clayton/dev/cstack/skills/create-eval/SKILL.md",
+    "sha256": "c5a86934360a4b0fe8bb1916a8504e85b131c43479611e4346552d2af7a6a35c"
+  },
+  {
+    "path": "/Users/clayton/.agents/skills/run-eval/SKILL.md",
+    "resolved": "/Users/clayton/dev/cstack/skills/run-eval/SKILL.md",
+    "sha256": "02779435237bd4c3501ac8f307f42bb825a7d782032c7ffb940d8b483f97237a"
+  },
+  {
+    "path": "/Users/clayton/.agents/skills/skills-librarian/SKILL.md",
+    "resolved": "/Users/clayton/dev/skill-index/skills/skills-librarian/SKILL.md",
+    "sha256": "e9471df559c640c7ee50af2bd9bf686c000611424a4ea5e4b4d6da3ee558a101"
+  },
+  {
+    "path": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/bitter-lesson-build/runs/confirm-short/.agents/skills/bootstrap/SKILL.md",
+    "resolved": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/bitter-lesson-build/runs/confirm-short/.agents/skills/bootstrap/SKILL.md",
+    "sha256": "00fe735356bda1f201b35d7655d0428db9c58ece2184b690cf549ceeb65a4ff5"
+  },
+  {
+    "path": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/bitter-lesson-build/runs/confirm-short/.agents/skills/create-eval/SKILL.md",
+    "resolved": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/bitter-lesson-build/runs/confirm-short/.agents/skills/create-eval/SKILL.md",
+    "sha256": "d728d3b6d422c60b358d0af50a57b788b0506b3c35f7ab8ba7b10815ddbfaf58"
+  },
+  {
+    "path": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/bitter-lesson-build/runs/confirm-short/.agents/skills/run-eval/SKILL.md",
+    "resolved": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/bitter-lesson-build/runs/confirm-short/.agents/skills/run-eval/SKILL.md",
+    "sha256": "64c7d8ac0e14fa074095be3d514e20d33cca380408664b63f79d82405da704ae"
+  },
+  {
+    "path": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/bitter-lesson-build/runs/confirm-short/.agents/skills/bitter-lesson/SKILL.md",
+    "resolved": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/bitter-lesson-build/runs/confirm-short/.agents/skills/bitter-lesson/SKILL.md",
+    "sha256": "22c7911910e3fbb51b14f7deee3ae3b5862466acafd99ec6732c3a63c04a6e4f"
+  },
+  {
+    "path": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/bitter-lesson-build/runs/confirm-short/.agents/skills/calibrate-judge/SKILL.md",
+    "resolved": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/bitter-lesson-build/runs/confirm-short/.agents/skills/calibrate-judge/SKILL.md",
+    "sha256": "237ac1d5f09605b2ad4890ea9aa2b9f17e035d94c8c194627db12e6aed1d8960"
+  },
+  {
+    "path": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/bitter-lesson-build/runs/confirm-short/.agents/skills/ablation/SKILL.md",
+    "resolved": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/bitter-lesson-build/runs/confirm-short/.agents/skills/ablation/SKILL.md",
+    "sha256": "8fb5ca319b71b907c99c8bbd4e79526a2715d19146e772a2e954659b18cc5090"
+  },
+  {
+    "path": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/bitter-lesson-build/runs/confirm-short/.agents/skills/hill-climb/SKILL.md",
+    "resolved": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/bitter-lesson-build/runs/confirm-short/.agents/skills/hill-climb/SKILL.md",
+    "sha256": "7617adc0a8503249f1a6f6851ae833d6de45364e92806a795d02efd339c5b599"
+  }
+]

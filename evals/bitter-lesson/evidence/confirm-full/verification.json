@@ -1,0 +1,7 @@
+{
+  "command": "python3 eval-runs/skill-exercise/verify.py",
+  "exit_code": 0,
+  "stdout": "{\n  \"checked_native_runs\": 17,\n  \"checked_native_case_attempts\": 80,\n  \"canonical_sources_unchanged\": true,\n  \"completed_frozen_plan\": true,\n  \"additional_native_case_attempts\": 0\n}\n",
+  "stderr": "",
+  "additional_native_attempts": 0
+}

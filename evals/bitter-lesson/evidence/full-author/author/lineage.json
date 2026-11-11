@@ -1,0 +1,16 @@
+{
+  "approved-A-r1": {
+    "source_card": "A:1",
+    "intent_revision": 1,
+    "handoff_revision": 1,
+    "source": "../source/current-handoff-v1.json",
+    "conversion": "exact deep JSON values; native expected encodes behavioral checks, ID unconstrained"
+  },
+  "approved-B-r2": {
+    "source_card": "B:2",
+    "intent_revision": 1,
+    "handoff_revision": 1,
+    "source": "../source/current-handoff-v1.json",
+    "conversion": "exact deep JSON values; native expected encodes behavioral checks, ID unconstrained"
+  }
+}

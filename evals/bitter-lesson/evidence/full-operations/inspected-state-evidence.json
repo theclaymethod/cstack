@@ -1,0 +1,6192 @@
+[
+  {
+    "checks": {
+      "action_matches_mutation": true,
+      "allowed_action": true,
+      "new_ticket_fields": true,
+      "new_ticket_membership": true,
+      "preserved_other_state": true,
+      "preserved_tickets": true,
+      "requested_account": true,
+      "ticket_delta": true,
+      "unique_ticket_ids": true
+    },
+    "error": null,
+    "id": "dev-explicit",
+    "input": {
+      "request": {
+        "account": null,
+        "accounts": [
+          "acct-a"
+        ],
+        "text": "Please open a ticket for my VPN problem."
+      },
+      "state": {
+        "tickets": []
+      }
+    },
+    "outcome": "PASS",
+    "output": {
+      "account": "acct-a",
+      "action": "create_ticket",
+      "note": "Your account now has an open VPN support request.",
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-a",
+            "id": "alternative-1",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "run": "claim-audit/native-alternative"
+  },
+  {
+    "checks": {
+      "action_matches_mutation": true,
+      "allowed_action": true,
+      "new_ticket_fields": true,
+      "new_ticket_membership": true,
+      "preserved_other_state": true,
+      "preserved_tickets": true,
+      "requested_account": true,
+      "ticket_delta": true,
+      "unique_ticket_ids": true
+    },
+    "error": null,
+    "id": "dev-duplicate",
+    "input": {
+      "request": {
+        "account": "acct-a",
+        "accounts": [
+          "acct-a"
+        ],
+        "text": "Create a ticket for the VPN outage."
+      },
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "outcome": "PASS",
+    "output": {
+      "account": null,
+      "action": "guidance",
+      "note": "An open VPN ticket already covers this account; use that ticket.",
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "run": "claim-audit/native-alternative"
+  },
+  {
+    "checks": {
+      "action_matches_mutation": true,
+      "allowed_action": true,
+      "new_ticket_fields": true,
+      "new_ticket_membership": true,
+      "preserved_other_state": true,
+      "preserved_tickets": true,
+      "requested_account": true,
+      "ticket_delta": true,
+      "unique_ticket_ids": true
+    },
+    "error": null,
+    "id": "dev-closed",
+    "input": {
+      "request": {
+        "account": "acct-a",
+        "accounts": [
+          "acct-a"
+        ],
+        "text": "Please open a new ticket for today's VPN failure."
+      },
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "closed"
+          }
+        ]
+      }
+    },
+    "outcome": "PASS",
+    "output": {
+      "account": "acct-a",
+      "action": "create_ticket",
+      "note": "Your account now has an open VPN support request.",
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "closed"
+          },
+          {
+            "account": "acct-a",
+            "id": "alternative-1",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "run": "claim-audit/native-alternative"
+  },
+  {
+    "checks": {
+      "action_matches_mutation": true,
+      "allowed_action": true,
+      "new_ticket_fields": true,
+      "new_ticket_membership": true,
+      "preserved_other_state": true,
+      "preserved_tickets": true,
+      "requested_account": true,
+      "ticket_delta": true,
+      "unique_ticket_ids": true
+    },
+    "error": null,
+    "id": "dev-unrelated",
+    "input": {
+      "request": {
+        "account": "acct-a",
+        "accounts": [
+          "acct-a",
+          "acct-b"
+        ],
+        "text": "Create a VPN support ticket for the selected account."
+      },
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-b",
+            "id": "ticket-2",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "outcome": "PASS",
+    "output": {
+      "account": "acct-a",
+      "action": "create_ticket",
+      "note": "Your account now has an open VPN support request.",
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-b",
+            "id": "ticket-2",
+            "issue": "vpn",
+            "status": "open"
+          },
+          {
+            "account": "acct-a",
+            "id": "alternative-1",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "run": "claim-audit/native-alternative"
+  },
+  {
+    "checks": {
+      "action_matches_mutation": false,
+      "allowed_action": true,
+      "new_ticket_fields": true,
+      "new_ticket_membership": false,
+      "preserved_other_state": true,
+      "preserved_tickets": true,
+      "requested_account": true,
+      "ticket_delta": false,
+      "unique_ticket_ids": true
+    },
+    "error": null,
+    "id": "dev-explicit",
+    "input": {
+      "request": {
+        "account": null,
+        "accounts": [
+          "acct-a"
+        ],
+        "text": "Please open a ticket for my VPN problem."
+      },
+      "state": {
+        "tickets": []
+      }
+    },
+    "outcome": "FAIL",
+    "output": {
+      "account": "acct-a",
+      "action": "create_ticket",
+      "note": "A ticket was created.",
+      "state": {
+        "tickets": []
+      }
+    },
+    "run": "claim-audit/native-forgery"
+  },
+  {
+    "checks": {
+      "action_matches_mutation": false,
+      "allowed_action": false,
+      "new_ticket_fields": true,
+      "new_ticket_membership": true,
+      "preserved_other_state": true,
+      "preserved_tickets": true,
+      "requested_account": false,
+      "ticket_delta": true,
+      "unique_ticket_ids": true
+    },
+    "error": null,
+    "id": "dev-duplicate",
+    "input": {
+      "request": {
+        "account": "acct-a",
+        "accounts": [
+          "acct-a"
+        ],
+        "text": "Create a ticket for the VPN outage."
+      },
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "outcome": "FAIL",
+    "output": {
+      "account": "acct-a",
+      "action": "create_ticket",
+      "note": "A ticket was created.",
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "run": "claim-audit/native-forgery"
+  },
+  {
+    "checks": {
+      "action_matches_mutation": false,
+      "allowed_action": true,
+      "new_ticket_fields": true,
+      "new_ticket_membership": false,
+      "preserved_other_state": true,
+      "preserved_tickets": true,
+      "requested_account": true,
+      "ticket_delta": false,
+      "unique_ticket_ids": true
+    },
+    "error": null,
+    "id": "dev-closed",
+    "input": {
+      "request": {
+        "account": "acct-a",
+        "accounts": [
+          "acct-a"
+        ],
+        "text": "Please open a new ticket for today's VPN failure."
+      },
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "closed"
+          }
+        ]
+      }
+    },
+    "outcome": "FAIL",
+    "output": {
+      "account": "acct-a",
+      "action": "create_ticket",
+      "note": "A ticket was created.",
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "closed"
+          }
+        ]
+      }
+    },
+    "run": "claim-audit/native-forgery"
+  },
+  {
+    "checks": {
+      "action_matches_mutation": false,
+      "allowed_action": true,
+      "new_ticket_fields": true,
+      "new_ticket_membership": false,
+      "preserved_other_state": true,
+      "preserved_tickets": true,
+      "requested_account": true,
+      "ticket_delta": false,
+      "unique_ticket_ids": true
+    },
+    "error": null,
+    "id": "dev-unrelated",
+    "input": {
+      "request": {
+        "account": "acct-a",
+        "accounts": [
+          "acct-a",
+          "acct-b"
+        ],
+        "text": "Create a VPN support ticket for the selected account."
+      },
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-b",
+            "id": "ticket-2",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "outcome": "FAIL",
+    "output": {
+      "account": "acct-a",
+      "action": "create_ticket",
+      "note": "A ticket was created.",
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-b",
+            "id": "ticket-2",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "run": "claim-audit/native-forgery"
+  },
+  {
+    "checks": {},
+    "error": "malformed candidate JSON schema",
+    "id": "dev-explicit",
+    "input": {
+      "request": {
+        "account": null,
+        "accounts": [
+          "acct-a"
+        ],
+        "text": "Please open a ticket for my VPN problem."
+      },
+      "state": {
+        "tickets": []
+      }
+    },
+    "outcome": "ERROR",
+    "output": {
+      "account": null,
+      "action": "guidance",
+      "extra": "forbidden",
+      "note": "ok",
+      "state": {
+        "tickets": []
+      }
+    },
+    "run": "claim-audit/native-malformed"
+  },
+  {
+    "checks": {},
+    "error": "malformed candidate JSON schema",
+    "id": "dev-duplicate",
+    "input": {
+      "request": {
+        "account": "acct-a",
+        "accounts": [
+          "acct-a"
+        ],
+        "text": "Create a ticket for the VPN outage."
+      },
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "outcome": "ERROR",
+    "output": {
+      "account": null,
+      "action": "guidance",
+      "extra": "forbidden",
+      "note": "ok",
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "run": "claim-audit/native-malformed"
+  },
+  {
+    "checks": {},
+    "error": "malformed candidate JSON schema",
+    "id": "dev-closed",
+    "input": {
+      "request": {
+        "account": "acct-a",
+        "accounts": [
+          "acct-a"
+        ],
+        "text": "Please open a new ticket for today's VPN failure."
+      },
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "closed"
+          }
+        ]
+      }
+    },
+    "outcome": "ERROR",
+    "output": {
+      "account": null,
+      "action": "guidance",
+      "extra": "forbidden",
+      "note": "ok",
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "closed"
+          }
+        ]
+      }
+    },
+    "run": "claim-audit/native-malformed"
+  },
+  {
+    "checks": {},
+    "error": "malformed candidate JSON schema",
+    "id": "dev-unrelated",
+    "input": {
+      "request": {
+        "account": "acct-a",
+        "accounts": [
+          "acct-a",
+          "acct-b"
+        ],
+        "text": "Create a VPN support ticket for the selected account."
+      },
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-b",
+            "id": "ticket-2",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "outcome": "ERROR",
+    "output": {
+      "account": null,
+      "action": "guidance",
+      "extra": "forbidden",
+      "note": "ok",
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-b",
+            "id": "ticket-2",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "run": "claim-audit/native-malformed"
+  },
+  {
+    "checks": {
+      "action_matches_mutation": true,
+      "allowed_action": true,
+      "new_ticket_fields": true,
+      "new_ticket_membership": true,
+      "preserved_other_state": true,
+      "preserved_tickets": true,
+      "requested_account": true,
+      "ticket_delta": true,
+      "unique_ticket_ids": true
+    },
+    "error": null,
+    "id": "dev-explicit",
+    "input": {
+      "request": {
+        "account": null,
+        "accounts": [
+          "acct-a"
+        ],
+        "text": "Please open a ticket for my VPN problem."
+      },
+      "state": {
+        "tickets": []
+      }
+    },
+    "outcome": "PASS",
+    "output": {
+      "account": "acct-a",
+      "action": "create_ticket",
+      "note": "Opened a VPN support ticket.",
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "run": "hill-climb/attempts/000-baseline"
+  },
+  {
+    "checks": {
+      "action_matches_mutation": true,
+      "allowed_action": false,
+      "new_ticket_fields": false,
+      "new_ticket_membership": false,
+      "preserved_other_state": true,
+      "preserved_tickets": true,
+      "requested_account": false,
+      "ticket_delta": false,
+      "unique_ticket_ids": true
+    },
+    "error": null,
+    "id": "dev-duplicate",
+    "input": {
+      "request": {
+        "account": "acct-a",
+        "accounts": [
+          "acct-a"
+        ],
+        "text": "Create a ticket for the VPN outage."
+      },
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "outcome": "FAIL",
+    "output": {
+      "account": "acct-a",
+      "action": "create_ticket",
+      "note": "Opened a VPN support ticket.",
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "open"
+          },
+          {
+            "account": "acct-a",
+            "id": "ticket-2",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "run": "hill-climb/attempts/000-baseline"
+  },
+  {
+    "checks": {
+      "action_matches_mutation": true,
+      "allowed_action": true,
+      "new_ticket_fields": true,
+      "new_ticket_membership": true,
+      "preserved_other_state": true,
+      "preserved_tickets": true,
+      "requested_account": true,
+      "ticket_delta": true,
+      "unique_ticket_ids": true
+    },
+    "error": null,
+    "id": "dev-closed",
+    "input": {
+      "request": {
+        "account": "acct-a",
+        "accounts": [
+          "acct-a"
+        ],
+        "text": "Please open a new ticket for today's VPN failure."
+      },
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "closed"
+          }
+        ]
+      }
+    },
+    "outcome": "PASS",
+    "output": {
+      "account": "acct-a",
+      "action": "create_ticket",
+      "note": "Opened a VPN support ticket.",
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "closed"
+          },
+          {
+            "account": "acct-a",
+            "id": "ticket-2",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "run": "hill-climb/attempts/000-baseline"
+  },
+  {
+    "checks": {
+      "action_matches_mutation": true,
+      "allowed_action": true,
+      "new_ticket_fields": true,
+      "new_ticket_membership": true,
+      "preserved_other_state": true,
+      "preserved_tickets": true,
+      "requested_account": true,
+      "ticket_delta": true,
+      "unique_ticket_ids": true
+    },
+    "error": null,
+    "id": "dev-unrelated",
+    "input": {
+      "request": {
+        "account": "acct-a",
+        "accounts": [
+          "acct-a",
+          "acct-b"
+        ],
+        "text": "Create a VPN support ticket for the selected account."
+      },
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-b",
+            "id": "ticket-2",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "outcome": "PASS",
+    "output": {
+      "account": "acct-a",
+      "action": "create_ticket",
+      "note": "Opened a VPN support ticket.",
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-b",
+            "id": "ticket-2",
+            "issue": "vpn",
+            "status": "open"
+          },
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "run": "hill-climb/attempts/000-baseline"
+  },
+  {
+    "checks": {
+      "action_matches_mutation": true,
+      "allowed_action": true,
+      "new_ticket_fields": true,
+      "new_ticket_membership": true,
+      "preserved_other_state": true,
+      "preserved_tickets": true,
+      "requested_account": true,
+      "ticket_delta": true,
+      "unique_ticket_ids": true
+    },
+    "error": null,
+    "id": "dev-explicit",
+    "input": {
+      "request": {
+        "account": null,
+        "accounts": [
+          "acct-a"
+        ],
+        "text": "Please open a ticket for my VPN problem."
+      },
+      "state": {
+        "tickets": []
+      }
+    },
+    "outcome": "PASS",
+    "output": {
+      "account": "acct-a",
+      "action": "create_ticket",
+      "note": "Opened the requested VPN support ticket.",
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "run": "hill-climb/attempts/001-proposal"
+  },
+  {
+    "checks": {
+      "action_matches_mutation": true,
+      "allowed_action": true,
+      "new_ticket_fields": true,
+      "new_ticket_membership": true,
+      "preserved_other_state": true,
+      "preserved_tickets": true,
+      "requested_account": true,
+      "ticket_delta": true,
+      "unique_ticket_ids": true
+    },
+    "error": null,
+    "id": "dev-duplicate",
+    "input": {
+      "request": {
+        "account": "acct-a",
+        "accounts": [
+          "acct-a"
+        ],
+        "text": "Create a ticket for the VPN outage."
+      },
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "outcome": "PASS",
+    "output": {
+      "account": null,
+      "action": "guidance",
+      "note": "A ticket already exists; use that ticket.",
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "run": "hill-climb/attempts/001-proposal"
+  },
+  {
+    "checks": {
+      "action_matches_mutation": true,
+      "allowed_action": false,
+      "new_ticket_fields": true,
+      "new_ticket_membership": false,
+      "preserved_other_state": true,
+      "preserved_tickets": true,
+      "requested_account": false,
+      "ticket_delta": false,
+      "unique_ticket_ids": true
+    },
+    "error": null,
+    "id": "dev-closed",
+    "input": {
+      "request": {
+        "account": "acct-a",
+        "accounts": [
+          "acct-a"
+        ],
+        "text": "Please open a new ticket for today's VPN failure."
+      },
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "closed"
+          }
+        ]
+      }
+    },
+    "outcome": "FAIL",
+    "output": {
+      "account": null,
+      "action": "guidance",
+      "note": "A ticket already exists; use that ticket.",
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "closed"
+          }
+        ]
+      }
+    },
+    "run": "hill-climb/attempts/001-proposal"
+  },
+  {
+    "checks": {
+      "action_matches_mutation": true,
+      "allowed_action": false,
+      "new_ticket_fields": true,
+      "new_ticket_membership": false,
+      "preserved_other_state": true,
+      "preserved_tickets": true,
+      "requested_account": false,
+      "ticket_delta": false,
+      "unique_ticket_ids": true
+    },
+    "error": null,
+    "id": "dev-unrelated",
+    "input": {
+      "request": {
+        "account": "acct-a",
+        "accounts": [
+          "acct-a",
+          "acct-b"
+        ],
+        "text": "Create a VPN support ticket for the selected account."
+      },
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-b",
+            "id": "ticket-2",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "outcome": "FAIL",
+    "output": {
+      "account": null,
+      "action": "guidance",
+      "note": "A ticket already exists; use that ticket.",
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-b",
+            "id": "ticket-2",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "run": "hill-climb/attempts/001-proposal"
+  },
+  {
+    "checks": {
+      "action_matches_mutation": true,
+      "allowed_action": true,
+      "new_ticket_fields": true,
+      "new_ticket_membership": true,
+      "preserved_other_state": true,
+      "preserved_tickets": true,
+      "requested_account": true,
+      "ticket_delta": true,
+      "unique_ticket_ids": true
+    },
+    "error": null,
+    "id": "dev-explicit",
+    "input": {
+      "request": {
+        "account": null,
+        "accounts": [
+          "acct-a"
+        ],
+        "text": "Please open a ticket for my VPN problem."
+      },
+      "state": {
+        "tickets": []
+      }
+    },
+    "outcome": "PASS",
+    "output": {
+      "account": "acct-a",
+      "action": "create_ticket",
+      "note": "Opened the requested VPN support ticket.",
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "run": "hill-climb/attempts/002-proposal"
+  },
+  {
+    "checks": {
+      "action_matches_mutation": true,
+      "allowed_action": true,
+      "new_ticket_fields": true,
+      "new_ticket_membership": true,
+      "preserved_other_state": true,
+      "preserved_tickets": true,
+      "requested_account": true,
+      "ticket_delta": true,
+      "unique_ticket_ids": true
+    },
+    "error": null,
+    "id": "dev-duplicate",
+    "input": {
+      "request": {
+        "account": "acct-a",
+        "accounts": [
+          "acct-a"
+        ],
+        "text": "Create a ticket for the VPN outage."
+      },
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "outcome": "PASS",
+    "output": {
+      "account": null,
+      "action": "guidance",
+      "note": "An open VPN ticket already covers this account; use that ticket.",
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "run": "hill-climb/attempts/002-proposal"
+  },
+  {
+    "checks": {
+      "action_matches_mutation": true,
+      "allowed_action": true,
+      "new_ticket_fields": true,
+      "new_ticket_membership": true,
+      "preserved_other_state": true,
+      "preserved_tickets": true,
+      "requested_account": true,
+      "ticket_delta": true,
+      "unique_ticket_ids": true
+    },
+    "error": null,
+    "id": "dev-closed",
+    "input": {
+      "request": {
+        "account": "acct-a",
+        "accounts": [
+          "acct-a"
+        ],
+        "text": "Please open a new ticket for today's VPN failure."
+      },
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "closed"
+          }
+        ]
+      }
+    },
+    "outcome": "PASS",
+    "output": {
+      "account": "acct-a",
+      "action": "create_ticket",
+      "note": "Opened the requested VPN support ticket.",
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "closed"
+          },
+          {
+            "account": "acct-a",
+            "id": "ticket-2",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "run": "hill-climb/attempts/002-proposal"
+  },
+  {
+    "checks": {
+      "action_matches_mutation": true,
+      "allowed_action": true,
+      "new_ticket_fields": true,
+      "new_ticket_membership": true,
+      "preserved_other_state": true,
+      "preserved_tickets": true,
+      "requested_account": true,
+      "ticket_delta": true,
+      "unique_ticket_ids": true
+    },
+    "error": null,
+    "id": "dev-unrelated",
+    "input": {
+      "request": {
+        "account": "acct-a",
+        "accounts": [
+          "acct-a",
+          "acct-b"
+        ],
+        "text": "Create a VPN support ticket for the selected account."
+      },
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-b",
+            "id": "ticket-2",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "outcome": "PASS",
+    "output": {
+      "account": "acct-a",
+      "action": "create_ticket",
+      "note": "Opened the requested VPN support ticket.",
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-b",
+            "id": "ticket-2",
+            "issue": "vpn",
+            "status": "open"
+          },
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "run": "hill-climb/attempts/002-proposal"
+  },
+  {
+    "checks": {
+      "action_matches_mutation": true,
+      "allowed_action": false,
+      "new_ticket_fields": false,
+      "new_ticket_membership": false,
+      "preserved_other_state": true,
+      "preserved_tickets": true,
+      "requested_account": false,
+      "ticket_delta": false,
+      "unique_ticket_ids": true
+    },
+    "error": null,
+    "id": "conf-howto",
+    "input": {
+      "request": {
+        "account": "team-north",
+        "accounts": [
+          "team-north",
+          "team-south"
+        ],
+        "text": "Explain VPN setup. Do not open a ticket."
+      },
+      "state": {
+        "tickets": [
+          {
+            "account": "team-south",
+            "id": "setup-9",
+            "issue": "password",
+            "status": "closed"
+          }
+        ]
+      }
+    },
+    "outcome": "FAIL",
+    "output": {
+      "account": "team-north",
+      "action": "create_ticket",
+      "note": "Opened a VPN support ticket.",
+      "state": {
+        "tickets": [
+          {
+            "account": "team-south",
+            "id": "setup-9",
+            "issue": "password",
+            "status": "closed"
+          },
+          {
+            "account": "team-north",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "run": "hill-climb/attempts/003-confirm-baseline"
+  },
+  {
+    "checks": {
+      "action_matches_mutation": true,
+      "allowed_action": true,
+      "new_ticket_fields": true,
+      "new_ticket_membership": true,
+      "preserved_other_state": true,
+      "preserved_tickets": true,
+      "requested_account": true,
+      "ticket_delta": true,
+      "unique_ticket_ids": true
+    },
+    "error": null,
+    "id": "conf-howto",
+    "input": {
+      "request": {
+        "account": "team-north",
+        "accounts": [
+          "team-north",
+          "team-south"
+        ],
+        "text": "Explain VPN setup. Do not open a ticket."
+      },
+      "state": {
+        "tickets": [
+          {
+            "account": "team-south",
+            "id": "setup-9",
+            "issue": "password",
+            "status": "closed"
+          }
+        ]
+      }
+    },
+    "outcome": "PASS",
+    "output": {
+      "account": null,
+      "action": "guidance",
+      "note": "Check connection settings; use account recovery for password help.",
+      "state": {
+        "tickets": [
+          {
+            "account": "team-south",
+            "id": "setup-9",
+            "issue": "password",
+            "status": "closed"
+          }
+        ]
+      }
+    },
+    "run": "hill-climb/attempts/004-confirm-incumbent"
+  },
+  {
+    "checks": {
+      "action_matches_mutation": true,
+      "allowed_action": true,
+      "new_ticket_fields": true,
+      "new_ticket_membership": true,
+      "preserved_other_state": true,
+      "preserved_tickets": true,
+      "requested_account": true,
+      "ticket_delta": true,
+      "unique_ticket_ids": true
+    },
+    "error": null,
+    "id": "dev-explicit",
+    "input": {
+      "request": {
+        "account": null,
+        "accounts": [
+          "acct-a"
+        ],
+        "text": "Please open a ticket for my VPN problem."
+      },
+      "state": {
+        "tickets": []
+      }
+    },
+    "outcome": "PASS",
+    "output": {
+      "account": "acct-a",
+      "action": "create_ticket",
+      "note": "Opened the requested VPN support ticket.",
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "run": "judge-calibration/dataset/native-source/improved"
+  },
+  {
+    "checks": {
+      "action_matches_mutation": true,
+      "allowed_action": true,
+      "new_ticket_fields": true,
+      "new_ticket_membership": true,
+      "preserved_other_state": true,
+      "preserved_tickets": true,
+      "requested_account": true,
+      "ticket_delta": true,
+      "unique_ticket_ids": true
+    },
+    "error": null,
+    "id": "dev-duplicate",
+    "input": {
+      "request": {
+        "account": "acct-a",
+        "accounts": [
+          "acct-a"
+        ],
+        "text": "Create a ticket for the VPN outage."
+      },
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "outcome": "PASS",
+    "output": {
+      "account": null,
+      "action": "guidance",
+      "note": "An open VPN ticket already covers this account; use that ticket.",
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "run": "judge-calibration/dataset/native-source/improved"
+  },
+  {
+    "checks": {
+      "action_matches_mutation": true,
+      "allowed_action": true,
+      "new_ticket_fields": true,
+      "new_ticket_membership": true,
+      "preserved_other_state": true,
+      "preserved_tickets": true,
+      "requested_account": true,
+      "ticket_delta": true,
+      "unique_ticket_ids": true
+    },
+    "error": null,
+    "id": "dev-closed",
+    "input": {
+      "request": {
+        "account": "acct-a",
+        "accounts": [
+          "acct-a"
+        ],
+        "text": "Please open a new ticket for today's VPN failure."
+      },
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "closed"
+          }
+        ]
+      }
+    },
+    "outcome": "PASS",
+    "output": {
+      "account": "acct-a",
+      "action": "create_ticket",
+      "note": "Opened the requested VPN support ticket.",
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "closed"
+          },
+          {
+            "account": "acct-a",
+            "id": "ticket-2",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "run": "judge-calibration/dataset/native-source/improved"
+  },
+  {
+    "checks": {
+      "action_matches_mutation": true,
+      "allowed_action": true,
+      "new_ticket_fields": true,
+      "new_ticket_membership": true,
+      "preserved_other_state": true,
+      "preserved_tickets": true,
+      "requested_account": true,
+      "ticket_delta": true,
+      "unique_ticket_ids": true
+    },
+    "error": null,
+    "id": "dev-unrelated",
+    "input": {
+      "request": {
+        "account": "acct-a",
+        "accounts": [
+          "acct-a",
+          "acct-b"
+        ],
+        "text": "Create a VPN support ticket for the selected account."
+      },
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-b",
+            "id": "ticket-2",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "outcome": "PASS",
+    "output": {
+      "account": "acct-a",
+      "action": "create_ticket",
+      "note": "Opened the requested VPN support ticket.",
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-b",
+            "id": "ticket-2",
+            "issue": "vpn",
+            "status": "open"
+          },
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "run": "judge-calibration/dataset/native-source/improved"
+  },
+  {
+    "checks": {
+      "action_matches_mutation": true,
+      "allowed_action": true,
+      "new_ticket_fields": true,
+      "new_ticket_membership": true,
+      "preserved_other_state": true,
+      "preserved_tickets": true,
+      "requested_account": true,
+      "ticket_delta": true,
+      "unique_ticket_ids": true
+    },
+    "error": null,
+    "id": "conf-howto",
+    "input": {
+      "request": {
+        "account": "team-north",
+        "accounts": [
+          "team-north",
+          "team-south"
+        ],
+        "text": "Explain VPN setup. Do not open a ticket."
+      },
+      "state": {
+        "tickets": [
+          {
+            "account": "team-south",
+            "id": "setup-9",
+            "issue": "password",
+            "status": "closed"
+          }
+        ]
+      }
+    },
+    "outcome": "PASS",
+    "output": {
+      "account": null,
+      "action": "guidance",
+      "note": "Check connection settings; use account recovery for password help.",
+      "state": {
+        "tickets": [
+          {
+            "account": "team-south",
+            "id": "setup-9",
+            "issue": "password",
+            "status": "closed"
+          }
+        ]
+      }
+    },
+    "run": "judge-calibration/dataset/native-source/improved"
+  },
+  {
+    "checks": {
+      "action_matches_mutation": true,
+      "allowed_action": true,
+      "new_ticket_fields": true,
+      "new_ticket_membership": true,
+      "preserved_other_state": true,
+      "preserved_tickets": true,
+      "requested_account": true,
+      "ticket_delta": true,
+      "unique_ticket_ids": true
+    },
+    "error": null,
+    "id": "dev-explicit",
+    "input": {
+      "request": {
+        "account": null,
+        "accounts": [
+          "acct-a"
+        ],
+        "text": "Please open a ticket for my VPN problem."
+      },
+      "state": {
+        "tickets": []
+      }
+    },
+    "outcome": "PASS",
+    "output": {
+      "account": "acct-a",
+      "action": "create_ticket",
+      "note": "Opened a VPN support ticket.",
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "run": "judge-calibration/dataset/native-source/support_agent"
+  },
+  {
+    "checks": {
+      "action_matches_mutation": true,
+      "allowed_action": false,
+      "new_ticket_fields": false,
+      "new_ticket_membership": false,
+      "preserved_other_state": true,
+      "preserved_tickets": true,
+      "requested_account": false,
+      "ticket_delta": false,
+      "unique_ticket_ids": true
+    },
+    "error": null,
+    "id": "dev-duplicate",
+    "input": {
+      "request": {
+        "account": "acct-a",
+        "accounts": [
+          "acct-a"
+        ],
+        "text": "Create a ticket for the VPN outage."
+      },
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "outcome": "FAIL",
+    "output": {
+      "account": "acct-a",
+      "action": "create_ticket",
+      "note": "Opened a VPN support ticket.",
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "open"
+          },
+          {
+            "account": "acct-a",
+            "id": "ticket-2",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "run": "judge-calibration/dataset/native-source/support_agent"
+  },
+  {
+    "checks": {
+      "action_matches_mutation": true,
+      "allowed_action": true,
+      "new_ticket_fields": true,
+      "new_ticket_membership": true,
+      "preserved_other_state": true,
+      "preserved_tickets": true,
+      "requested_account": true,
+      "ticket_delta": true,
+      "unique_ticket_ids": true
+    },
+    "error": null,
+    "id": "dev-closed",
+    "input": {
+      "request": {
+        "account": "acct-a",
+        "accounts": [
+          "acct-a"
+        ],
+        "text": "Please open a new ticket for today's VPN failure."
+      },
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "closed"
+          }
+        ]
+      }
+    },
+    "outcome": "PASS",
+    "output": {
+      "account": "acct-a",
+      "action": "create_ticket",
+      "note": "Opened a VPN support ticket.",
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "closed"
+          },
+          {
+            "account": "acct-a",
+            "id": "ticket-2",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "run": "judge-calibration/dataset/native-source/support_agent"
+  },
+  {
+    "checks": {
+      "action_matches_mutation": true,
+      "allowed_action": true,
+      "new_ticket_fields": true,
+      "new_ticket_membership": true,
+      "preserved_other_state": true,
+      "preserved_tickets": true,
+      "requested_account": true,
+      "ticket_delta": true,
+      "unique_ticket_ids": true
+    },
+    "error": null,
+    "id": "dev-unrelated",
+    "input": {
+      "request": {
+        "account": "acct-a",
+        "accounts": [
+          "acct-a",
+          "acct-b"
+        ],
+        "text": "Create a VPN support ticket for the selected account."
+      },
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-b",
+            "id": "ticket-2",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "outcome": "PASS",
+    "output": {
+      "account": "acct-a",
+      "action": "create_ticket",
+      "note": "Opened a VPN support ticket.",
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-b",
+            "id": "ticket-2",
+            "issue": "vpn",
+            "status": "open"
+          },
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "run": "judge-calibration/dataset/native-source/support_agent"
+  },
+  {
+    "checks": {
+      "action_matches_mutation": true,
+      "allowed_action": false,
+      "new_ticket_fields": false,
+      "new_ticket_membership": false,
+      "preserved_other_state": true,
+      "preserved_tickets": true,
+      "requested_account": false,
+      "ticket_delta": false,
+      "unique_ticket_ids": true
+    },
+    "error": null,
+    "id": "conf-howto",
+    "input": {
+      "request": {
+        "account": "team-north",
+        "accounts": [
+          "team-north",
+          "team-south"
+        ],
+        "text": "Explain VPN setup. Do not open a ticket."
+      },
+      "state": {
+        "tickets": [
+          {
+            "account": "team-south",
+            "id": "setup-9",
+            "issue": "password",
+            "status": "closed"
+          }
+        ]
+      }
+    },
+    "outcome": "FAIL",
+    "output": {
+      "account": "team-north",
+      "action": "create_ticket",
+      "note": "Opened a VPN support ticket.",
+      "state": {
+        "tickets": [
+          {
+            "account": "team-south",
+            "id": "setup-9",
+            "issue": "password",
+            "status": "closed"
+          },
+          {
+            "account": "team-north",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "run": "judge-calibration/dataset/native-source/support_agent"
+  },
+  {
+    "checks": {
+      "action_matches_mutation": true,
+      "allowed_action": true,
+      "new_ticket_fields": true,
+      "new_ticket_membership": true,
+      "preserved_other_state": true,
+      "preserved_tickets": true,
+      "requested_account": true,
+      "ticket_delta": true,
+      "unique_ticket_ids": true
+    },
+    "error": null,
+    "id": "dev-explicit",
+    "input": {
+      "request": {
+        "account": null,
+        "accounts": [
+          "acct-a"
+        ],
+        "text": "Please open a ticket for my VPN problem."
+      },
+      "state": {
+        "tickets": []
+      }
+    },
+    "outcome": "PASS",
+    "output": {
+      "account": "acct-a",
+      "action": "create_ticket",
+      "note": "Opened the requested VPN support ticket.",
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "run": "run-conforming"
+  },
+  {
+    "checks": {
+      "action_matches_mutation": true,
+      "allowed_action": true,
+      "new_ticket_fields": true,
+      "new_ticket_membership": true,
+      "preserved_other_state": true,
+      "preserved_tickets": true,
+      "requested_account": true,
+      "ticket_delta": true,
+      "unique_ticket_ids": true
+    },
+    "error": null,
+    "id": "dev-duplicate",
+    "input": {
+      "request": {
+        "account": "acct-a",
+        "accounts": [
+          "acct-a"
+        ],
+        "text": "Create a ticket for the VPN outage."
+      },
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "outcome": "PASS",
+    "output": {
+      "account": null,
+      "action": "guidance",
+      "note": "An open VPN ticket already covers this account; use that ticket.",
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "run": "run-conforming"
+  },
+  {
+    "checks": {
+      "action_matches_mutation": true,
+      "allowed_action": true,
+      "new_ticket_fields": true,
+      "new_ticket_membership": true,
+      "preserved_other_state": true,
+      "preserved_tickets": true,
+      "requested_account": true,
+      "ticket_delta": true,
+      "unique_ticket_ids": true
+    },
+    "error": null,
+    "id": "dev-closed",
+    "input": {
+      "request": {
+        "account": "acct-a",
+        "accounts": [
+          "acct-a"
+        ],
+        "text": "Please open a new ticket for today's VPN failure."
+      },
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "closed"
+          }
+        ]
+      }
+    },
+    "outcome": "PASS",
+    "output": {
+      "account": "acct-a",
+      "action": "create_ticket",
+      "note": "Opened the requested VPN support ticket.",
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "closed"
+          },
+          {
+            "account": "acct-a",
+            "id": "ticket-2",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "run": "run-conforming"
+  },
+  {
+    "checks": {
+      "action_matches_mutation": true,
+      "allowed_action": true,
+      "new_ticket_fields": true,
+      "new_ticket_membership": true,
+      "preserved_other_state": true,
+      "preserved_tickets": true,
+      "requested_account": true,
+      "ticket_delta": true,
+      "unique_ticket_ids": true
+    },
+    "error": null,
+    "id": "dev-unrelated",
+    "input": {
+      "request": {
+        "account": "acct-a",
+        "accounts": [
+          "acct-a",
+          "acct-b"
+        ],
+        "text": "Create a VPN support ticket for the selected account."
+      },
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-b",
+            "id": "ticket-2",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "outcome": "PASS",
+    "output": {
+      "account": "acct-a",
+      "action": "create_ticket",
+      "note": "Opened the requested VPN support ticket.",
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-b",
+            "id": "ticket-2",
+            "issue": "vpn",
+            "status": "open"
+          },
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "run": "run-conforming"
+  },
+  {
+    "checks": {
+      "action_matches_mutation": true,
+      "allowed_action": true,
+      "new_ticket_fields": true,
+      "new_ticket_membership": true,
+      "preserved_other_state": true,
+      "preserved_tickets": true,
+      "requested_account": true,
+      "ticket_delta": true,
+      "unique_ticket_ids": true
+    },
+    "error": null,
+    "id": "dev-explicit",
+    "input": {
+      "request": {
+        "account": null,
+        "accounts": [
+          "acct-a"
+        ],
+        "text": "Please open a ticket for my VPN problem."
+      },
+      "state": {
+        "tickets": []
+      }
+    },
+    "outcome": "PASS",
+    "output": {
+      "account": "acct-a",
+      "action": "create_ticket",
+      "note": "Opened a VPN support ticket.",
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "run": "run-original"
+  },
+  {
+    "checks": {
+      "action_matches_mutation": true,
+      "allowed_action": false,
+      "new_ticket_fields": false,
+      "new_ticket_membership": false,
+      "preserved_other_state": true,
+      "preserved_tickets": true,
+      "requested_account": false,
+      "ticket_delta": false,
+      "unique_ticket_ids": true
+    },
+    "error": null,
+    "id": "dev-duplicate",
+    "input": {
+      "request": {
+        "account": "acct-a",
+        "accounts": [
+          "acct-a"
+        ],
+        "text": "Create a ticket for the VPN outage."
+      },
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "outcome": "FAIL",
+    "output": {
+      "account": "acct-a",
+      "action": "create_ticket",
+      "note": "Opened a VPN support ticket.",
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "open"
+          },
+          {
+            "account": "acct-a",
+            "id": "ticket-2",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "run": "run-original"
+  },
+  {
+    "checks": {
+      "action_matches_mutation": true,
+      "allowed_action": true,
+      "new_ticket_fields": true,
+      "new_ticket_membership": true,
+      "preserved_other_state": true,
+      "preserved_tickets": true,
+      "requested_account": true,
+      "ticket_delta": true,
+      "unique_ticket_ids": true
+    },
+    "error": null,
+    "id": "dev-closed",
+    "input": {
+      "request": {
+        "account": "acct-a",
+        "accounts": [
+          "acct-a"
+        ],
+        "text": "Please open a new ticket for today's VPN failure."
+      },
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "closed"
+          }
+        ]
+      }
+    },
+    "outcome": "PASS",
+    "output": {
+      "account": "acct-a",
+      "action": "create_ticket",
+      "note": "Opened a VPN support ticket.",
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "closed"
+          },
+          {
+            "account": "acct-a",
+            "id": "ticket-2",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "run": "run-original"
+  },
+  {
+    "checks": {
+      "action_matches_mutation": true,
+      "allowed_action": true,
+      "new_ticket_fields": true,
+      "new_ticket_membership": true,
+      "preserved_other_state": true,
+      "preserved_tickets": true,
+      "requested_account": true,
+      "ticket_delta": true,
+      "unique_ticket_ids": true
+    },
+    "error": null,
+    "id": "dev-unrelated",
+    "input": {
+      "request": {
+        "account": "acct-a",
+        "accounts": [
+          "acct-a",
+          "acct-b"
+        ],
+        "text": "Create a VPN support ticket for the selected account."
+      },
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-b",
+            "id": "ticket-2",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "outcome": "PASS",
+    "output": {
+      "account": "acct-a",
+      "action": "create_ticket",
+      "note": "Opened a VPN support ticket.",
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-b",
+            "id": "ticket-2",
+            "issue": "vpn",
+            "status": "open"
+          },
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "run": "run-original"
+  },
+  {
+    "checks": {
+      "action_matches_mutation": true,
+      "allowed_action": false,
+      "new_ticket_fields": true,
+      "new_ticket_membership": false,
+      "preserved_other_state": true,
+      "preserved_tickets": true,
+      "requested_account": false,
+      "ticket_delta": false,
+      "unique_ticket_ids": true
+    },
+    "error": null,
+    "id": "dev-explicit",
+    "input": {
+      "request": {
+        "account": null,
+        "accounts": [
+          "acct-a"
+        ],
+        "text": "Please open a ticket for my VPN problem."
+      },
+      "state": {
+        "tickets": []
+      }
+    },
+    "outcome": "FAIL",
+    "output": {
+      "account": null,
+      "action": "guidance",
+      "note": "Deterministic fixture lost a required steering combination.",
+      "state": {
+        "tickets": []
+      }
+    },
+    "run": "simplification/native/drop-conflict-a"
+  },
+  {
+    "checks": {
+      "action_matches_mutation": true,
+      "allowed_action": true,
+      "new_ticket_fields": true,
+      "new_ticket_membership": true,
+      "preserved_other_state": true,
+      "preserved_tickets": true,
+      "requested_account": true,
+      "ticket_delta": true,
+      "unique_ticket_ids": true
+    },
+    "error": null,
+    "id": "dev-duplicate",
+    "input": {
+      "request": {
+        "account": "acct-a",
+        "accounts": [
+          "acct-a"
+        ],
+        "text": "Create a ticket for the VPN outage."
+      },
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "outcome": "PASS",
+    "output": {
+      "account": null,
+      "action": "guidance",
+      "note": "Deterministic fixture lost a required steering combination.",
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "run": "simplification/native/drop-conflict-a"
+  },
+  {
+    "checks": {
+      "action_matches_mutation": true,
+      "allowed_action": false,
+      "new_ticket_fields": true,
+      "new_ticket_membership": false,
+      "preserved_other_state": true,
+      "preserved_tickets": true,
+      "requested_account": false,
+      "ticket_delta": false,
+      "unique_ticket_ids": true
+    },
+    "error": null,
+    "id": "dev-closed",
+    "input": {
+      "request": {
+        "account": "acct-a",
+        "accounts": [
+          "acct-a"
+        ],
+        "text": "Please open a new ticket for today's VPN failure."
+      },
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "closed"
+          }
+        ]
+      }
+    },
+    "outcome": "FAIL",
+    "output": {
+      "account": null,
+      "action": "guidance",
+      "note": "Deterministic fixture lost a required steering combination.",
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "closed"
+          }
+        ]
+      }
+    },
+    "run": "simplification/native/drop-conflict-a"
+  },
+  {
+    "checks": {
+      "action_matches_mutation": true,
+      "allowed_action": false,
+      "new_ticket_fields": true,
+      "new_ticket_membership": false,
+      "preserved_other_state": true,
+      "preserved_tickets": true,
+      "requested_account": false,
+      "ticket_delta": false,
+      "unique_ticket_ids": true
+    },
+    "error": null,
+    "id": "dev-unrelated",
+    "input": {
+      "request": {
+        "account": "acct-a",
+        "accounts": [
+          "acct-a",
+          "acct-b"
+        ],
+        "text": "Create a VPN support ticket for the selected account."
+      },
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-b",
+            "id": "ticket-2",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "outcome": "FAIL",
+    "output": {
+      "account": null,
+      "action": "guidance",
+      "note": "Deterministic fixture lost a required steering combination.",
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-b",
+            "id": "ticket-2",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "run": "simplification/native/drop-conflict-a"
+  },
+  {
+    "checks": {
+      "action_matches_mutation": true,
+      "allowed_action": false,
+      "new_ticket_fields": true,
+      "new_ticket_membership": false,
+      "preserved_other_state": true,
+      "preserved_tickets": true,
+      "requested_account": false,
+      "ticket_delta": false,
+      "unique_ticket_ids": true
+    },
+    "error": null,
+    "id": "dev-explicit",
+    "input": {
+      "request": {
+        "account": null,
+        "accounts": [
+          "acct-a"
+        ],
+        "text": "Please open a ticket for my VPN problem."
+      },
+      "state": {
+        "tickets": []
+      }
+    },
+    "outcome": "FAIL",
+    "output": {
+      "account": null,
+      "action": "guidance",
+      "note": "Deterministic fixture lost a required steering combination.",
+      "state": {
+        "tickets": []
+      }
+    },
+    "run": "simplification/native/drop-conflict-b"
+  },
+  {
+    "checks": {
+      "action_matches_mutation": true,
+      "allowed_action": true,
+      "new_ticket_fields": true,
+      "new_ticket_membership": true,
+      "preserved_other_state": true,
+      "preserved_tickets": true,
+      "requested_account": true,
+      "ticket_delta": true,
+      "unique_ticket_ids": true
+    },
+    "error": null,
+    "id": "dev-duplicate",
+    "input": {
+      "request": {
+        "account": "acct-a",
+        "accounts": [
+          "acct-a"
+        ],
+        "text": "Create a ticket for the VPN outage."
+      },
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "outcome": "PASS",
+    "output": {
+      "account": null,
+      "action": "guidance",
+      "note": "Deterministic fixture lost a required steering combination.",
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "run": "simplification/native/drop-conflict-b"
+  },
+  {
+    "checks": {
+      "action_matches_mutation": true,
+      "allowed_action": false,
+      "new_ticket_fields": true,
+      "new_ticket_membership": false,
+      "preserved_other_state": true,
+      "preserved_tickets": true,
+      "requested_account": false,
+      "ticket_delta": false,
+      "unique_ticket_ids": true
+    },
+    "error": null,
+    "id": "dev-closed",
+    "input": {
+      "request": {
+        "account": "acct-a",
+        "accounts": [
+          "acct-a"
+        ],
+        "text": "Please open a new ticket for today's VPN failure."
+      },
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "closed"
+          }
+        ]
+      }
+    },
+    "outcome": "FAIL",
+    "output": {
+      "account": null,
+      "action": "guidance",
+      "note": "Deterministic fixture lost a required steering combination.",
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "closed"
+          }
+        ]
+      }
+    },
+    "run": "simplification/native/drop-conflict-b"
+  },
+  {
+    "checks": {
+      "action_matches_mutation": true,
+      "allowed_action": false,
+      "new_ticket_fields": true,
+      "new_ticket_membership": false,
+      "preserved_other_state": true,
+      "preserved_tickets": true,
+      "requested_account": false,
+      "ticket_delta": false,
+      "unique_ticket_ids": true
+    },
+    "error": null,
+    "id": "dev-unrelated",
+    "input": {
+      "request": {
+        "account": "acct-a",
+        "accounts": [
+          "acct-a",
+          "acct-b"
+        ],
+        "text": "Create a VPN support ticket for the selected account."
+      },
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-b",
+            "id": "ticket-2",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "outcome": "FAIL",
+    "output": {
+      "account": null,
+      "action": "guidance",
+      "note": "Deterministic fixture lost a required steering combination.",
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-b",
+            "id": "ticket-2",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "run": "simplification/native/drop-conflict-b"
+  },
+  {
+    "checks": {
+      "action_matches_mutation": true,
+      "allowed_action": true,
+      "new_ticket_fields": true,
+      "new_ticket_membership": true,
+      "preserved_other_state": true,
+      "preserved_tickets": true,
+      "requested_account": true,
+      "ticket_delta": true,
+      "unique_ticket_ids": true
+    },
+    "error": null,
+    "id": "dev-explicit",
+    "input": {
+      "request": {
+        "account": null,
+        "accounts": [
+          "acct-a"
+        ],
+        "text": "Please open a ticket for my VPN problem."
+      },
+      "state": {
+        "tickets": []
+      }
+    },
+    "outcome": "PASS",
+    "output": {
+      "account": "acct-a",
+      "action": "create_ticket",
+      "note": "Opened the requested VPN support ticket.",
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "run": "simplification/native/drop-conflict-pair"
+  },
+  {
+    "checks": {
+      "action_matches_mutation": true,
+      "allowed_action": true,
+      "new_ticket_fields": true,
+      "new_ticket_membership": true,
+      "preserved_other_state": true,
+      "preserved_tickets": true,
+      "requested_account": true,
+      "ticket_delta": true,
+      "unique_ticket_ids": true
+    },
+    "error": null,
+    "id": "dev-duplicate",
+    "input": {
+      "request": {
+        "account": "acct-a",
+        "accounts": [
+          "acct-a"
+        ],
+        "text": "Create a ticket for the VPN outage."
+      },
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "outcome": "PASS",
+    "output": {
+      "account": null,
+      "action": "guidance",
+      "note": "An open VPN ticket already covers this account; use that ticket.",
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "run": "simplification/native/drop-conflict-pair"
+  },
+  {
+    "checks": {
+      "action_matches_mutation": true,
+      "allowed_action": true,
+      "new_ticket_fields": true,
+      "new_ticket_membership": true,
+      "preserved_other_state": true,
+      "preserved_tickets": true,
+      "requested_account": true,
+      "ticket_delta": true,
+      "unique_ticket_ids": true
+    },
+    "error": null,
+    "id": "dev-closed",
+    "input": {
+      "request": {
+        "account": "acct-a",
+        "accounts": [
+          "acct-a"
+        ],
+        "text": "Please open a new ticket for today's VPN failure."
+      },
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "closed"
+          }
+        ]
+      }
+    },
+    "outcome": "PASS",
+    "output": {
+      "account": "acct-a",
+      "action": "create_ticket",
+      "note": "Opened the requested VPN support ticket.",
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "closed"
+          },
+          {
+            "account": "acct-a",
+            "id": "ticket-2",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "run": "simplification/native/drop-conflict-pair"
+  },
+  {
+    "checks": {
+      "action_matches_mutation": true,
+      "allowed_action": true,
+      "new_ticket_fields": true,
+      "new_ticket_membership": true,
+      "preserved_other_state": true,
+      "preserved_tickets": true,
+      "requested_account": true,
+      "ticket_delta": true,
+      "unique_ticket_ids": true
+    },
+    "error": null,
+    "id": "dev-unrelated",
+    "input": {
+      "request": {
+        "account": "acct-a",
+        "accounts": [
+          "acct-a",
+          "acct-b"
+        ],
+        "text": "Create a VPN support ticket for the selected account."
+      },
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-b",
+            "id": "ticket-2",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "outcome": "PASS",
+    "output": {
+      "account": "acct-a",
+      "action": "create_ticket",
+      "note": "Opened the requested VPN support ticket.",
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-b",
+            "id": "ticket-2",
+            "issue": "vpn",
+            "status": "open"
+          },
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "run": "simplification/native/drop-conflict-pair"
+  },
+  {
+    "checks": {
+      "action_matches_mutation": true,
+      "allowed_action": true,
+      "new_ticket_fields": true,
+      "new_ticket_membership": true,
+      "preserved_other_state": true,
+      "preserved_tickets": true,
+      "requested_account": true,
+      "ticket_delta": true,
+      "unique_ticket_ids": true
+    },
+    "error": null,
+    "id": "dev-explicit",
+    "input": {
+      "request": {
+        "account": null,
+        "accounts": [
+          "acct-a"
+        ],
+        "text": "Please open a ticket for my VPN problem."
+      },
+      "state": {
+        "tickets": []
+      }
+    },
+    "outcome": "PASS",
+    "output": {
+      "account": "acct-a",
+      "action": "create_ticket",
+      "note": "Opened the requested VPN support ticket.",
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "run": "simplification/native/drop-duplicate-a"
+  },
+  {
+    "checks": {
+      "action_matches_mutation": true,
+      "allowed_action": true,
+      "new_ticket_fields": true,
+      "new_ticket_membership": true,
+      "preserved_other_state": true,
+      "preserved_tickets": true,
+      "requested_account": true,
+      "ticket_delta": true,
+      "unique_ticket_ids": true
+    },
+    "error": null,
+    "id": "dev-duplicate",
+    "input": {
+      "request": {
+        "account": "acct-a",
+        "accounts": [
+          "acct-a"
+        ],
+        "text": "Create a ticket for the VPN outage."
+      },
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "outcome": "PASS",
+    "output": {
+      "account": null,
+      "action": "guidance",
+      "note": "An open VPN ticket already covers this account; use that ticket.",
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "run": "simplification/native/drop-duplicate-a"
+  },
+  {
+    "checks": {
+      "action_matches_mutation": true,
+      "allowed_action": true,
+      "new_ticket_fields": true,
+      "new_ticket_membership": true,
+      "preserved_other_state": true,
+      "preserved_tickets": true,
+      "requested_account": true,
+      "ticket_delta": true,
+      "unique_ticket_ids": true
+    },
+    "error": null,
+    "id": "dev-closed",
+    "input": {
+      "request": {
+        "account": "acct-a",
+        "accounts": [
+          "acct-a"
+        ],
+        "text": "Please open a new ticket for today's VPN failure."
+      },
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "closed"
+          }
+        ]
+      }
+    },
+    "outcome": "PASS",
+    "output": {
+      "account": "acct-a",
+      "action": "create_ticket",
+      "note": "Opened the requested VPN support ticket.",
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "closed"
+          },
+          {
+            "account": "acct-a",
+            "id": "ticket-2",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "run": "simplification/native/drop-duplicate-a"
+  },
+  {
+    "checks": {
+      "action_matches_mutation": true,
+      "allowed_action": true,
+      "new_ticket_fields": true,
+      "new_ticket_membership": true,
+      "preserved_other_state": true,
+      "preserved_tickets": true,
+      "requested_account": true,
+      "ticket_delta": true,
+      "unique_ticket_ids": true
+    },
+    "error": null,
+    "id": "dev-unrelated",
+    "input": {
+      "request": {
+        "account": "acct-a",
+        "accounts": [
+          "acct-a",
+          "acct-b"
+        ],
+        "text": "Create a VPN support ticket for the selected account."
+      },
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-b",
+            "id": "ticket-2",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "outcome": "PASS",
+    "output": {
+      "account": "acct-a",
+      "action": "create_ticket",
+      "note": "Opened the requested VPN support ticket.",
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-b",
+            "id": "ticket-2",
+            "issue": "vpn",
+            "status": "open"
+          },
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "run": "simplification/native/drop-duplicate-a"
+  },
+  {
+    "checks": {
+      "action_matches_mutation": true,
+      "allowed_action": true,
+      "new_ticket_fields": true,
+      "new_ticket_membership": true,
+      "preserved_other_state": true,
+      "preserved_tickets": true,
+      "requested_account": true,
+      "ticket_delta": true,
+      "unique_ticket_ids": true
+    },
+    "error": null,
+    "id": "dev-explicit",
+    "input": {
+      "request": {
+        "account": null,
+        "accounts": [
+          "acct-a"
+        ],
+        "text": "Please open a ticket for my VPN problem."
+      },
+      "state": {
+        "tickets": []
+      }
+    },
+    "outcome": "PASS",
+    "output": {
+      "account": "acct-a",
+      "action": "create_ticket",
+      "note": "Opened the requested VPN support ticket.",
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "run": "simplification/native/drop-duplicate-b"
+  },
+  {
+    "checks": {
+      "action_matches_mutation": true,
+      "allowed_action": false,
+      "new_ticket_fields": false,
+      "new_ticket_membership": false,
+      "preserved_other_state": true,
+      "preserved_tickets": true,
+      "requested_account": false,
+      "ticket_delta": false,
+      "unique_ticket_ids": true
+    },
+    "error": null,
+    "id": "dev-duplicate",
+    "input": {
+      "request": {
+        "account": "acct-a",
+        "accounts": [
+          "acct-a"
+        ],
+        "text": "Create a ticket for the VPN outage."
+      },
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "outcome": "FAIL",
+    "output": {
+      "account": "acct-a",
+      "action": "create_ticket",
+      "note": "Deterministic fixture omitted duplicate steering.",
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "open"
+          },
+          {
+            "account": "acct-a",
+            "id": "fixture-1",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "run": "simplification/native/drop-duplicate-b"
+  },
+  {
+    "checks": {
+      "action_matches_mutation": true,
+      "allowed_action": true,
+      "new_ticket_fields": true,
+      "new_ticket_membership": true,
+      "preserved_other_state": true,
+      "preserved_tickets": true,
+      "requested_account": true,
+      "ticket_delta": true,
+      "unique_ticket_ids": true
+    },
+    "error": null,
+    "id": "dev-closed",
+    "input": {
+      "request": {
+        "account": "acct-a",
+        "accounts": [
+          "acct-a"
+        ],
+        "text": "Please open a new ticket for today's VPN failure."
+      },
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "closed"
+          }
+        ]
+      }
+    },
+    "outcome": "PASS",
+    "output": {
+      "account": "acct-a",
+      "action": "create_ticket",
+      "note": "Opened the requested VPN support ticket.",
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "closed"
+          },
+          {
+            "account": "acct-a",
+            "id": "ticket-2",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "run": "simplification/native/drop-duplicate-b"
+  },
+  {
+    "checks": {
+      "action_matches_mutation": true,
+      "allowed_action": true,
+      "new_ticket_fields": true,
+      "new_ticket_membership": true,
+      "preserved_other_state": true,
+      "preserved_tickets": true,
+      "requested_account": true,
+      "ticket_delta": true,
+      "unique_ticket_ids": true
+    },
+    "error": null,
+    "id": "dev-unrelated",
+    "input": {
+      "request": {
+        "account": "acct-a",
+        "accounts": [
+          "acct-a",
+          "acct-b"
+        ],
+        "text": "Create a VPN support ticket for the selected account."
+      },
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-b",
+            "id": "ticket-2",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "outcome": "PASS",
+    "output": {
+      "account": "acct-a",
+      "action": "create_ticket",
+      "note": "Opened the requested VPN support ticket.",
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-b",
+            "id": "ticket-2",
+            "issue": "vpn",
+            "status": "open"
+          },
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "run": "simplification/native/drop-duplicate-b"
+  },
+  {
+    "checks": {
+      "action_matches_mutation": true,
+      "allowed_action": true,
+      "new_ticket_fields": true,
+      "new_ticket_membership": true,
+      "preserved_other_state": true,
+      "preserved_tickets": true,
+      "requested_account": true,
+      "ticket_delta": true,
+      "unique_ticket_ids": true
+    },
+    "error": null,
+    "id": "dev-explicit",
+    "input": {
+      "request": {
+        "account": null,
+        "accounts": [
+          "acct-a"
+        ],
+        "text": "Please open a ticket for my VPN problem."
+      },
+      "state": {
+        "tickets": []
+      }
+    },
+    "outcome": "PASS",
+    "output": {
+      "account": "acct-a",
+      "action": "create_ticket",
+      "note": "Opened the requested VPN support ticket.",
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "run": "simplification/native/drop-noise"
+  },
+  {
+    "checks": {
+      "action_matches_mutation": true,
+      "allowed_action": true,
+      "new_ticket_fields": true,
+      "new_ticket_membership": true,
+      "preserved_other_state": true,
+      "preserved_tickets": true,
+      "requested_account": true,
+      "ticket_delta": true,
+      "unique_ticket_ids": true
+    },
+    "error": null,
+    "id": "dev-duplicate",
+    "input": {
+      "request": {
+        "account": "acct-a",
+        "accounts": [
+          "acct-a"
+        ],
+        "text": "Create a ticket for the VPN outage."
+      },
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "outcome": "PASS",
+    "output": {
+      "account": null,
+      "action": "guidance",
+      "note": "An open VPN ticket already covers this account; use that ticket.",
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "run": "simplification/native/drop-noise"
+  },
+  {
+    "checks": {
+      "action_matches_mutation": true,
+      "allowed_action": true,
+      "new_ticket_fields": true,
+      "new_ticket_membership": true,
+      "preserved_other_state": true,
+      "preserved_tickets": true,
+      "requested_account": true,
+      "ticket_delta": true,
+      "unique_ticket_ids": true
+    },
+    "error": null,
+    "id": "dev-closed",
+    "input": {
+      "request": {
+        "account": "acct-a",
+        "accounts": [
+          "acct-a"
+        ],
+        "text": "Please open a new ticket for today's VPN failure."
+      },
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "closed"
+          }
+        ]
+      }
+    },
+    "outcome": "PASS",
+    "output": {
+      "account": "acct-a",
+      "action": "create_ticket",
+      "note": "Opened the requested VPN support ticket.",
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "closed"
+          },
+          {
+            "account": "acct-a",
+            "id": "ticket-2",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "run": "simplification/native/drop-noise"
+  },
+  {
+    "checks": {
+      "action_matches_mutation": true,
+      "allowed_action": true,
+      "new_ticket_fields": true,
+      "new_ticket_membership": true,
+      "preserved_other_state": true,
+      "preserved_tickets": true,
+      "requested_account": true,
+      "ticket_delta": true,
+      "unique_ticket_ids": true
+    },
+    "error": null,
+    "id": "dev-unrelated",
+    "input": {
+      "request": {
+        "account": "acct-a",
+        "accounts": [
+          "acct-a",
+          "acct-b"
+        ],
+        "text": "Create a VPN support ticket for the selected account."
+      },
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-b",
+            "id": "ticket-2",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "outcome": "PASS",
+    "output": {
+      "account": "acct-a",
+      "action": "create_ticket",
+      "note": "Opened the requested VPN support ticket.",
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-b",
+            "id": "ticket-2",
+            "issue": "vpn",
+            "status": "open"
+          },
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "run": "simplification/native/drop-noise"
+  },
+  {
+    "checks": {
+      "action_matches_mutation": true,
+      "allowed_action": true,
+      "new_ticket_fields": true,
+      "new_ticket_membership": true,
+      "preserved_other_state": true,
+      "preserved_tickets": true,
+      "requested_account": true,
+      "ticket_delta": true,
+      "unique_ticket_ids": true
+    },
+    "error": null,
+    "id": "conf-howto",
+    "input": {
+      "request": {
+        "account": "team-north",
+        "accounts": [
+          "team-north",
+          "team-south"
+        ],
+        "text": "Explain VPN setup. Do not open a ticket."
+      },
+      "state": {
+        "tickets": [
+          {
+            "account": "team-south",
+            "id": "setup-9",
+            "issue": "password",
+            "status": "closed"
+          }
+        ]
+      }
+    },
+    "outcome": "PASS",
+    "output": {
+      "account": null,
+      "action": "guidance",
+      "note": "Check connection settings; use account recovery for password help.",
+      "state": {
+        "tickets": [
+          {
+            "account": "team-south",
+            "id": "setup-9",
+            "issue": "password",
+            "status": "closed"
+          }
+        ]
+      }
+    },
+    "run": "simplification/native/final-new-existing"
+  },
+  {
+    "checks": {
+      "action_matches_mutation": true,
+      "allowed_action": true,
+      "new_ticket_fields": true,
+      "new_ticket_membership": true,
+      "preserved_other_state": true,
+      "preserved_tickets": true,
+      "requested_account": true,
+      "ticket_delta": true,
+      "unique_ticket_ids": true
+    },
+    "error": null,
+    "id": "conf-howto",
+    "input": {
+      "request": {
+        "account": "team-north",
+        "accounts": [
+          "team-north",
+          "team-south"
+        ],
+        "text": "Explain VPN setup. Do not open a ticket."
+      },
+      "state": {
+        "tickets": [
+          {
+            "account": "team-south",
+            "id": "setup-9",
+            "issue": "password",
+            "status": "closed"
+          }
+        ]
+      }
+    },
+    "outcome": "PASS",
+    "output": {
+      "account": null,
+      "action": "guidance",
+      "note": "Check connection settings; use account recovery for password help.",
+      "state": {
+        "tickets": [
+          {
+            "account": "team-south",
+            "id": "setup-9",
+            "issue": "password",
+            "status": "closed"
+          }
+        ]
+      }
+    },
+    "run": "simplification/native/final-new-simplified"
+  },
+  {
+    "checks": {
+      "action_matches_mutation": true,
+      "allowed_action": true,
+      "new_ticket_fields": true,
+      "new_ticket_membership": true,
+      "preserved_other_state": true,
+      "preserved_tickets": true,
+      "requested_account": true,
+      "ticket_delta": true,
+      "unique_ticket_ids": true
+    },
+    "error": null,
+    "id": "conf-howto",
+    "input": {
+      "request": {
+        "account": "team-north",
+        "accounts": [
+          "team-north",
+          "team-south"
+        ],
+        "text": "Explain VPN setup. Do not open a ticket."
+      },
+      "state": {
+        "tickets": [
+          {
+            "account": "team-south",
+            "id": "setup-9",
+            "issue": "password",
+            "status": "closed"
+          }
+        ]
+      }
+    },
+    "outcome": "PASS",
+    "output": {
+      "account": null,
+      "action": "guidance",
+      "note": "Check connection settings; use account recovery for password help.",
+      "state": {
+        "tickets": [
+          {
+            "account": "team-south",
+            "id": "setup-9",
+            "issue": "password",
+            "status": "closed"
+          }
+        ]
+      }
+    },
+    "run": "simplification/native/final-old-existing"
+  },
+  {
+    "checks": {
+      "action_matches_mutation": true,
+      "allowed_action": true,
+      "new_ticket_fields": true,
+      "new_ticket_membership": true,
+      "preserved_other_state": true,
+      "preserved_tickets": true,
+      "requested_account": true,
+      "ticket_delta": true,
+      "unique_ticket_ids": true
+    },
+    "error": null,
+    "id": "conf-howto",
+    "input": {
+      "request": {
+        "account": "team-north",
+        "accounts": [
+          "team-north",
+          "team-south"
+        ],
+        "text": "Explain VPN setup. Do not open a ticket."
+      },
+      "state": {
+        "tickets": [
+          {
+            "account": "team-south",
+            "id": "setup-9",
+            "issue": "password",
+            "status": "closed"
+          }
+        ]
+      }
+    },
+    "outcome": "PASS",
+    "output": {
+      "account": null,
+      "action": "guidance",
+      "note": "Check connection settings; use account recovery for password help.",
+      "state": {
+        "tickets": [
+          {
+            "account": "team-south",
+            "id": "setup-9",
+            "issue": "password",
+            "status": "closed"
+          }
+        ]
+      }
+    },
+    "run": "simplification/native/final-old-reduced"
+  },
+  {
+    "checks": {
+      "action_matches_mutation": true,
+      "allowed_action": true,
+      "new_ticket_fields": true,
+      "new_ticket_membership": true,
+      "preserved_other_state": true,
+      "preserved_tickets": true,
+      "requested_account": true,
+      "ticket_delta": true,
+      "unique_ticket_ids": true
+    },
+    "error": null,
+    "id": "conf-howto",
+    "input": {
+      "request": {
+        "account": "team-north",
+        "accounts": [
+          "team-north",
+          "team-south"
+        ],
+        "text": "Explain VPN setup. Do not open a ticket."
+      },
+      "state": {
+        "tickets": [
+          {
+            "account": "team-south",
+            "id": "setup-9",
+            "issue": "password",
+            "status": "closed"
+          }
+        ]
+      }
+    },
+    "outcome": "PASS",
+    "output": {
+      "account": null,
+      "action": "guidance",
+      "note": "Deterministic fixture lost a required steering combination.",
+      "state": {
+        "tickets": [
+          {
+            "account": "team-south",
+            "id": "setup-9",
+            "issue": "password",
+            "status": "closed"
+          }
+        ]
+      }
+    },
+    "run": "simplification/native/final-old-simplified"
+  },
+  {
+    "checks": {
+      "action_matches_mutation": true,
+      "allowed_action": false,
+      "new_ticket_fields": true,
+      "new_ticket_membership": false,
+      "preserved_other_state": true,
+      "preserved_tickets": true,
+      "requested_account": false,
+      "ticket_delta": false,
+      "unique_ticket_ids": true
+    },
+    "error": null,
+    "id": "dev-explicit",
+    "input": {
+      "request": {
+        "account": null,
+        "accounts": [
+          "acct-a"
+        ],
+        "text": "Please open a ticket for my VPN problem."
+      },
+      "state": {
+        "tickets": []
+      }
+    },
+    "outcome": "FAIL",
+    "output": {
+      "account": null,
+      "action": "guidance",
+      "note": "Deterministic fixture lost a required steering combination.",
+      "state": {
+        "tickets": []
+      }
+    },
+    "run": "simplification/native/leave-out-conflict-a"
+  },
+  {
+    "checks": {
+      "action_matches_mutation": true,
+      "allowed_action": true,
+      "new_ticket_fields": true,
+      "new_ticket_membership": true,
+      "preserved_other_state": true,
+      "preserved_tickets": true,
+      "requested_account": true,
+      "ticket_delta": true,
+      "unique_ticket_ids": true
+    },
+    "error": null,
+    "id": "dev-duplicate",
+    "input": {
+      "request": {
+        "account": "acct-a",
+        "accounts": [
+          "acct-a"
+        ],
+        "text": "Create a ticket for the VPN outage."
+      },
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "outcome": "PASS",
+    "output": {
+      "account": null,
+      "action": "guidance",
+      "note": "Deterministic fixture lost a required steering combination.",
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "run": "simplification/native/leave-out-conflict-a"
+  },
+  {
+    "checks": {
+      "action_matches_mutation": true,
+      "allowed_action": false,
+      "new_ticket_fields": true,
+      "new_ticket_membership": false,
+      "preserved_other_state": true,
+      "preserved_tickets": true,
+      "requested_account": false,
+      "ticket_delta": false,
+      "unique_ticket_ids": true
+    },
+    "error": null,
+    "id": "dev-closed",
+    "input": {
+      "request": {
+        "account": "acct-a",
+        "accounts": [
+          "acct-a"
+        ],
+        "text": "Please open a new ticket for today's VPN failure."
+      },
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "closed"
+          }
+        ]
+      }
+    },
+    "outcome": "FAIL",
+    "output": {
+      "account": null,
+      "action": "guidance",
+      "note": "Deterministic fixture lost a required steering combination.",
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "closed"
+          }
+        ]
+      }
+    },
+    "run": "simplification/native/leave-out-conflict-a"
+  },
+  {
+    "checks": {
+      "action_matches_mutation": true,
+      "allowed_action": false,
+      "new_ticket_fields": true,
+      "new_ticket_membership": false,
+      "preserved_other_state": true,
+      "preserved_tickets": true,
+      "requested_account": false,
+      "ticket_delta": false,
+      "unique_ticket_ids": true
+    },
+    "error": null,
+    "id": "dev-unrelated",
+    "input": {
+      "request": {
+        "account": "acct-a",
+        "accounts": [
+          "acct-a",
+          "acct-b"
+        ],
+        "text": "Create a VPN support ticket for the selected account."
+      },
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-b",
+            "id": "ticket-2",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "outcome": "FAIL",
+    "output": {
+      "account": null,
+      "action": "guidance",
+      "note": "Deterministic fixture lost a required steering combination.",
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-b",
+            "id": "ticket-2",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "run": "simplification/native/leave-out-conflict-a"
+  },
+  {
+    "checks": {
+      "action_matches_mutation": true,
+      "allowed_action": false,
+      "new_ticket_fields": true,
+      "new_ticket_membership": false,
+      "preserved_other_state": true,
+      "preserved_tickets": true,
+      "requested_account": false,
+      "ticket_delta": false,
+      "unique_ticket_ids": true
+    },
+    "error": null,
+    "id": "dev-explicit",
+    "input": {
+      "request": {
+        "account": null,
+        "accounts": [
+          "acct-a"
+        ],
+        "text": "Please open a ticket for my VPN problem."
+      },
+      "state": {
+        "tickets": []
+      }
+    },
+    "outcome": "FAIL",
+    "output": {
+      "account": null,
+      "action": "guidance",
+      "note": "Deterministic fixture lost a required steering combination.",
+      "state": {
+        "tickets": []
+      }
+    },
+    "run": "simplification/native/leave-out-conflict-b"
+  },
+  {
+    "checks": {
+      "action_matches_mutation": true,
+      "allowed_action": true,
+      "new_ticket_fields": true,
+      "new_ticket_membership": true,
+      "preserved_other_state": true,
+      "preserved_tickets": true,
+      "requested_account": true,
+      "ticket_delta": true,
+      "unique_ticket_ids": true
+    },
+    "error": null,
+    "id": "dev-duplicate",
+    "input": {
+      "request": {
+        "account": "acct-a",
+        "accounts": [
+          "acct-a"
+        ],
+        "text": "Create a ticket for the VPN outage."
+      },
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "outcome": "PASS",
+    "output": {
+      "account": null,
+      "action": "guidance",
+      "note": "Deterministic fixture lost a required steering combination.",
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "run": "simplification/native/leave-out-conflict-b"
+  },
+  {
+    "checks": {
+      "action_matches_mutation": true,
+      "allowed_action": false,
+      "new_ticket_fields": true,
+      "new_ticket_membership": false,
+      "preserved_other_state": true,
+      "preserved_tickets": true,
+      "requested_account": false,
+      "ticket_delta": false,
+      "unique_ticket_ids": true
+    },
+    "error": null,
+    "id": "dev-closed",
+    "input": {
+      "request": {
+        "account": "acct-a",
+        "accounts": [
+          "acct-a"
+        ],
+        "text": "Please open a new ticket for today's VPN failure."
+      },
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "closed"
+          }
+        ]
+      }
+    },
+    "outcome": "FAIL",
+    "output": {
+      "account": null,
+      "action": "guidance",
+      "note": "Deterministic fixture lost a required steering combination.",
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "closed"
+          }
+        ]
+      }
+    },
+    "run": "simplification/native/leave-out-conflict-b"
+  },
+  {
+    "checks": {
+      "action_matches_mutation": true,
+      "allowed_action": false,
+      "new_ticket_fields": true,
+      "new_ticket_membership": false,
+      "preserved_other_state": true,
+      "preserved_tickets": true,
+      "requested_account": false,
+      "ticket_delta": false,
+      "unique_ticket_ids": true
+    },
+    "error": null,
+    "id": "dev-unrelated",
+    "input": {
+      "request": {
+        "account": "acct-a",
+        "accounts": [
+          "acct-a",
+          "acct-b"
+        ],
+        "text": "Create a VPN support ticket for the selected account."
+      },
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-b",
+            "id": "ticket-2",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "outcome": "FAIL",
+    "output": {
+      "account": null,
+      "action": "guidance",
+      "note": "Deterministic fixture lost a required steering combination.",
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-b",
+            "id": "ticket-2",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "run": "simplification/native/leave-out-conflict-b"
+  },
+  {
+    "checks": {
+      "action_matches_mutation": true,
+      "allowed_action": true,
+      "new_ticket_fields": true,
+      "new_ticket_membership": true,
+      "preserved_other_state": true,
+      "preserved_tickets": true,
+      "requested_account": true,
+      "ticket_delta": true,
+      "unique_ticket_ids": true
+    },
+    "error": null,
+    "id": "dev-explicit",
+    "input": {
+      "request": {
+        "account": null,
+        "accounts": [
+          "acct-a"
+        ],
+        "text": "Please open a ticket for my VPN problem."
+      },
+      "state": {
+        "tickets": []
+      }
+    },
+    "outcome": "PASS",
+    "output": {
+      "account": "acct-a",
+      "action": "create_ticket",
+      "note": "Opened the requested VPN support ticket.",
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "run": "simplification/native/leave-out-duplicate-a"
+  },
+  {
+    "checks": {
+      "action_matches_mutation": true,
+      "allowed_action": true,
+      "new_ticket_fields": true,
+      "new_ticket_membership": true,
+      "preserved_other_state": true,
+      "preserved_tickets": true,
+      "requested_account": true,
+      "ticket_delta": true,
+      "unique_ticket_ids": true
+    },
+    "error": null,
+    "id": "dev-duplicate",
+    "input": {
+      "request": {
+        "account": "acct-a",
+        "accounts": [
+          "acct-a"
+        ],
+        "text": "Create a ticket for the VPN outage."
+      },
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "outcome": "PASS",
+    "output": {
+      "account": null,
+      "action": "guidance",
+      "note": "An open VPN ticket already covers this account; use that ticket.",
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "run": "simplification/native/leave-out-duplicate-a"
+  },
+  {
+    "checks": {
+      "action_matches_mutation": true,
+      "allowed_action": true,
+      "new_ticket_fields": true,
+      "new_ticket_membership": true,
+      "preserved_other_state": true,
+      "preserved_tickets": true,
+      "requested_account": true,
+      "ticket_delta": true,
+      "unique_ticket_ids": true
+    },
+    "error": null,
+    "id": "dev-closed",
+    "input": {
+      "request": {
+        "account": "acct-a",
+        "accounts": [
+          "acct-a"
+        ],
+        "text": "Please open a new ticket for today's VPN failure."
+      },
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "closed"
+          }
+        ]
+      }
+    },
+    "outcome": "PASS",
+    "output": {
+      "account": "acct-a",
+      "action": "create_ticket",
+      "note": "Opened the requested VPN support ticket.",
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "closed"
+          },
+          {
+            "account": "acct-a",
+            "id": "ticket-2",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "run": "simplification/native/leave-out-duplicate-a"
+  },
+  {
+    "checks": {
+      "action_matches_mutation": true,
+      "allowed_action": true,
+      "new_ticket_fields": true,
+      "new_ticket_membership": true,
+      "preserved_other_state": true,
+      "preserved_tickets": true,
+      "requested_account": true,
+      "ticket_delta": true,
+      "unique_ticket_ids": true
+    },
+    "error": null,
+    "id": "dev-unrelated",
+    "input": {
+      "request": {
+        "account": "acct-a",
+        "accounts": [
+          "acct-a",
+          "acct-b"
+        ],
+        "text": "Create a VPN support ticket for the selected account."
+      },
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-b",
+            "id": "ticket-2",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "outcome": "PASS",
+    "output": {
+      "account": "acct-a",
+      "action": "create_ticket",
+      "note": "Opened the requested VPN support ticket.",
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-b",
+            "id": "ticket-2",
+            "issue": "vpn",
+            "status": "open"
+          },
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "run": "simplification/native/leave-out-duplicate-a"
+  },
+  {
+    "checks": {
+      "action_matches_mutation": true,
+      "allowed_action": true,
+      "new_ticket_fields": true,
+      "new_ticket_membership": true,
+      "preserved_other_state": true,
+      "preserved_tickets": true,
+      "requested_account": true,
+      "ticket_delta": true,
+      "unique_ticket_ids": true
+    },
+    "error": null,
+    "id": "dev-explicit",
+    "input": {
+      "request": {
+        "account": null,
+        "accounts": [
+          "acct-a"
+        ],
+        "text": "Please open a ticket for my VPN problem."
+      },
+      "state": {
+        "tickets": []
+      }
+    },
+    "outcome": "PASS",
+    "output": {
+      "account": "acct-a",
+      "action": "create_ticket",
+      "note": "Opened the requested VPN support ticket.",
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "run": "simplification/native/leave-out-duplicate-b"
+  },
+  {
+    "checks": {
+      "action_matches_mutation": true,
+      "allowed_action": true,
+      "new_ticket_fields": true,
+      "new_ticket_membership": true,
+      "preserved_other_state": true,
+      "preserved_tickets": true,
+      "requested_account": true,
+      "ticket_delta": true,
+      "unique_ticket_ids": true
+    },
+    "error": null,
+    "id": "dev-duplicate",
+    "input": {
+      "request": {
+        "account": "acct-a",
+        "accounts": [
+          "acct-a"
+        ],
+        "text": "Create a ticket for the VPN outage."
+      },
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "outcome": "PASS",
+    "output": {
+      "account": null,
+      "action": "guidance",
+      "note": "An open VPN ticket already covers this account; use that ticket.",
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "run": "simplification/native/leave-out-duplicate-b"
+  },
+  {
+    "checks": {
+      "action_matches_mutation": true,
+      "allowed_action": true,
+      "new_ticket_fields": true,
+      "new_ticket_membership": true,
+      "preserved_other_state": true,
+      "preserved_tickets": true,
+      "requested_account": true,
+      "ticket_delta": true,
+      "unique_ticket_ids": true
+    },
+    "error": null,
+    "id": "dev-closed",
+    "input": {
+      "request": {
+        "account": "acct-a",
+        "accounts": [
+          "acct-a"
+        ],
+        "text": "Please open a new ticket for today's VPN failure."
+      },
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "closed"
+          }
+        ]
+      }
+    },
+    "outcome": "PASS",
+    "output": {
+      "account": "acct-a",
+      "action": "create_ticket",
+      "note": "Opened the requested VPN support ticket.",
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "closed"
+          },
+          {
+            "account": "acct-a",
+            "id": "ticket-2",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "run": "simplification/native/leave-out-duplicate-b"
+  },
+  {
+    "checks": {
+      "action_matches_mutation": true,
+      "allowed_action": true,
+      "new_ticket_fields": true,
+      "new_ticket_membership": true,
+      "preserved_other_state": true,
+      "preserved_tickets": true,
+      "requested_account": true,
+      "ticket_delta": true,
+      "unique_ticket_ids": true
+    },
+    "error": null,
+    "id": "dev-unrelated",
+    "input": {
+      "request": {
+        "account": "acct-a",
+        "accounts": [
+          "acct-a",
+          "acct-b"
+        ],
+        "text": "Create a VPN support ticket for the selected account."
+      },
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-b",
+            "id": "ticket-2",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "outcome": "PASS",
+    "output": {
+      "account": "acct-a",
+      "action": "create_ticket",
+      "note": "Opened the requested VPN support ticket.",
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-b",
+            "id": "ticket-2",
+            "issue": "vpn",
+            "status": "open"
+          },
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "run": "simplification/native/leave-out-duplicate-b"
+  },
+  {
+    "checks": {
+      "action_matches_mutation": true,
+      "allowed_action": true,
+      "new_ticket_fields": true,
+      "new_ticket_membership": true,
+      "preserved_other_state": true,
+      "preserved_tickets": true,
+      "requested_account": true,
+      "ticket_delta": true,
+      "unique_ticket_ids": true
+    },
+    "error": null,
+    "id": "dev-explicit",
+    "input": {
+      "request": {
+        "account": null,
+        "accounts": [
+          "acct-a"
+        ],
+        "text": "Please open a ticket for my VPN problem."
+      },
+      "state": {
+        "tickets": []
+      }
+    },
+    "outcome": "PASS",
+    "output": {
+      "account": "acct-a",
+      "action": "create_ticket",
+      "note": "Opened the requested VPN support ticket.",
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "run": "simplification/native/leave-out-example"
+  },
+  {
+    "checks": {
+      "action_matches_mutation": true,
+      "allowed_action": true,
+      "new_ticket_fields": true,
+      "new_ticket_membership": true,
+      "preserved_other_state": true,
+      "preserved_tickets": true,
+      "requested_account": true,
+      "ticket_delta": true,
+      "unique_ticket_ids": true
+    },
+    "error": null,
+    "id": "dev-duplicate",
+    "input": {
+      "request": {
+        "account": "acct-a",
+        "accounts": [
+          "acct-a"
+        ],
+        "text": "Create a ticket for the VPN outage."
+      },
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "outcome": "PASS",
+    "output": {
+      "account": null,
+      "action": "guidance",
+      "note": "An open VPN ticket already covers this account; use that ticket.",
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "run": "simplification/native/leave-out-example"
+  },
+  {
+    "checks": {
+      "action_matches_mutation": true,
+      "allowed_action": true,
+      "new_ticket_fields": true,
+      "new_ticket_membership": true,
+      "preserved_other_state": true,
+      "preserved_tickets": true,
+      "requested_account": true,
+      "ticket_delta": true,
+      "unique_ticket_ids": true
+    },
+    "error": null,
+    "id": "dev-closed",
+    "input": {
+      "request": {
+        "account": "acct-a",
+        "accounts": [
+          "acct-a"
+        ],
+        "text": "Please open a new ticket for today's VPN failure."
+      },
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "closed"
+          }
+        ]
+      }
+    },
+    "outcome": "PASS",
+    "output": {
+      "account": "acct-a",
+      "action": "create_ticket",
+      "note": "Opened the requested VPN support ticket.",
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "closed"
+          },
+          {
+            "account": "acct-a",
+            "id": "ticket-2",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "run": "simplification/native/leave-out-example"
+  },
+  {
+    "checks": {
+      "action_matches_mutation": true,
+      "allowed_action": true,
+      "new_ticket_fields": true,
+      "new_ticket_membership": true,
+      "preserved_other_state": true,
+      "preserved_tickets": true,
+      "requested_account": true,
+      "ticket_delta": true,
+      "unique_ticket_ids": true
+    },
+    "error": null,
+    "id": "dev-unrelated",
+    "input": {
+      "request": {
+        "account": "acct-a",
+        "accounts": [
+          "acct-a",
+          "acct-b"
+        ],
+        "text": "Create a VPN support ticket for the selected account."
+      },
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-b",
+            "id": "ticket-2",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "outcome": "PASS",
+    "output": {
+      "account": "acct-a",
+      "action": "create_ticket",
+      "note": "Opened the requested VPN support ticket.",
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-b",
+            "id": "ticket-2",
+            "issue": "vpn",
+            "status": "open"
+          },
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "run": "simplification/native/leave-out-example"
+  },
+  {
+    "checks": {
+      "action_matches_mutation": true,
+      "allowed_action": false,
+      "new_ticket_fields": true,
+      "new_ticket_membership": false,
+      "preserved_other_state": true,
+      "preserved_tickets": true,
+      "requested_account": false,
+      "ticket_delta": false,
+      "unique_ticket_ids": true
+    },
+    "error": null,
+    "id": "dev-explicit",
+    "input": {
+      "request": {
+        "account": null,
+        "accounts": [
+          "acct-a"
+        ],
+        "text": "Please open a ticket for my VPN problem."
+      },
+      "state": {
+        "tickets": []
+      }
+    },
+    "outcome": "FAIL",
+    "output": {
+      "account": null,
+      "action": "guidance",
+      "note": "Deterministic fixture lost a required steering combination.",
+      "state": {
+        "tickets": []
+      }
+    },
+    "run": "simplification/native/leave-out-legacy-auth"
+  },
+  {
+    "checks": {
+      "action_matches_mutation": true,
+      "allowed_action": true,
+      "new_ticket_fields": true,
+      "new_ticket_membership": true,
+      "preserved_other_state": true,
+      "preserved_tickets": true,
+      "requested_account": true,
+      "ticket_delta": true,
+      "unique_ticket_ids": true
+    },
+    "error": null,
+    "id": "dev-duplicate",
+    "input": {
+      "request": {
+        "account": "acct-a",
+        "accounts": [
+          "acct-a"
+        ],
+        "text": "Create a ticket for the VPN outage."
+      },
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "outcome": "PASS",
+    "output": {
+      "account": null,
+      "action": "guidance",
+      "note": "Deterministic fixture lost a required steering combination.",
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "run": "simplification/native/leave-out-legacy-auth"
+  },
+  {
+    "checks": {
+      "action_matches_mutation": true,
+      "allowed_action": false,
+      "new_ticket_fields": true,
+      "new_ticket_membership": false,
+      "preserved_other_state": true,
+      "preserved_tickets": true,
+      "requested_account": false,
+      "ticket_delta": false,
+      "unique_ticket_ids": true
+    },
+    "error": null,
+    "id": "dev-closed",
+    "input": {
+      "request": {
+        "account": "acct-a",
+        "accounts": [
+          "acct-a"
+        ],
+        "text": "Please open a new ticket for today's VPN failure."
+      },
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "closed"
+          }
+        ]
+      }
+    },
+    "outcome": "FAIL",
+    "output": {
+      "account": null,
+      "action": "guidance",
+      "note": "Deterministic fixture lost a required steering combination.",
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "closed"
+          }
+        ]
+      }
+    },
+    "run": "simplification/native/leave-out-legacy-auth"
+  },
+  {
+    "checks": {
+      "action_matches_mutation": true,
+      "allowed_action": false,
+      "new_ticket_fields": true,
+      "new_ticket_membership": false,
+      "preserved_other_state": true,
+      "preserved_tickets": true,
+      "requested_account": false,
+      "ticket_delta": false,
+      "unique_ticket_ids": true
+    },
+    "error": null,
+    "id": "dev-unrelated",
+    "input": {
+      "request": {
+        "account": "acct-a",
+        "accounts": [
+          "acct-a",
+          "acct-b"
+        ],
+        "text": "Create a VPN support ticket for the selected account."
+      },
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-b",
+            "id": "ticket-2",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "outcome": "FAIL",
+    "output": {
+      "account": null,
+      "action": "guidance",
+      "note": "Deterministic fixture lost a required steering combination.",
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-b",
+            "id": "ticket-2",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "run": "simplification/native/leave-out-legacy-auth"
+  },
+  {
+    "checks": {
+      "action_matches_mutation": true,
+      "allowed_action": true,
+      "new_ticket_fields": true,
+      "new_ticket_membership": true,
+      "preserved_other_state": true,
+      "preserved_tickets": true,
+      "requested_account": true,
+      "ticket_delta": true,
+      "unique_ticket_ids": true
+    },
+    "error": null,
+    "id": "dev-explicit",
+    "input": {
+      "request": {
+        "account": null,
+        "accounts": [
+          "acct-a"
+        ],
+        "text": "Please open a ticket for my VPN problem."
+      },
+      "state": {
+        "tickets": []
+      }
+    },
+    "outcome": "PASS",
+    "output": {
+      "account": "acct-a",
+      "action": "create_ticket",
+      "note": "Opened the requested VPN support ticket.",
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "run": "simplification/native/leave-out-plan-detail"
+  },
+  {
+    "checks": {
+      "action_matches_mutation": true,
+      "allowed_action": true,
+      "new_ticket_fields": true,
+      "new_ticket_membership": true,
+      "preserved_other_state": true,
+      "preserved_tickets": true,
+      "requested_account": true,
+      "ticket_delta": true,
+      "unique_ticket_ids": true
+    },
+    "error": null,
+    "id": "dev-duplicate",
+    "input": {
+      "request": {
+        "account": "acct-a",
+        "accounts": [
+          "acct-a"
+        ],
+        "text": "Create a ticket for the VPN outage."
+      },
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "outcome": "PASS",
+    "output": {
+      "account": null,
+      "action": "guidance",
+      "note": "An open VPN ticket already covers this account; use that ticket.",
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "run": "simplification/native/leave-out-plan-detail"
+  },
+  {
+    "checks": {
+      "action_matches_mutation": true,
+      "allowed_action": true,
+      "new_ticket_fields": true,
+      "new_ticket_membership": true,
+      "preserved_other_state": true,
+      "preserved_tickets": true,
+      "requested_account": true,
+      "ticket_delta": true,
+      "unique_ticket_ids": true
+    },
+    "error": null,
+    "id": "dev-closed",
+    "input": {
+      "request": {
+        "account": "acct-a",
+        "accounts": [
+          "acct-a"
+        ],
+        "text": "Please open a new ticket for today's VPN failure."
+      },
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "closed"
+          }
+        ]
+      }
+    },
+    "outcome": "PASS",
+    "output": {
+      "account": "acct-a",
+      "action": "create_ticket",
+      "note": "Opened the requested VPN support ticket.",
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "closed"
+          },
+          {
+            "account": "acct-a",
+            "id": "ticket-2",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "run": "simplification/native/leave-out-plan-detail"
+  },
+  {
+    "checks": {
+      "action_matches_mutation": true,
+      "allowed_action": true,
+      "new_ticket_fields": true,
+      "new_ticket_membership": true,
+      "preserved_other_state": true,
+      "preserved_tickets": true,
+      "requested_account": true,
+      "ticket_delta": true,
+      "unique_ticket_ids": true
+    },
+    "error": null,
+    "id": "dev-unrelated",
+    "input": {
+      "request": {
+        "account": "acct-a",
+        "accounts": [
+          "acct-a",
+          "acct-b"
+        ],
+        "text": "Create a VPN support ticket for the selected account."
+      },
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-b",
+            "id": "ticket-2",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "outcome": "PASS",
+    "output": {
+      "account": "acct-a",
+      "action": "create_ticket",
+      "note": "Opened the requested VPN support ticket.",
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-b",
+            "id": "ticket-2",
+            "issue": "vpn",
+            "status": "open"
+          },
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "run": "simplification/native/leave-out-plan-detail"
+  },
+  {
+    "checks": {
+      "action_matches_mutation": true,
+      "allowed_action": true,
+      "new_ticket_fields": true,
+      "new_ticket_membership": true,
+      "preserved_other_state": true,
+      "preserved_tickets": true,
+      "requested_account": true,
+      "ticket_delta": true,
+      "unique_ticket_ids": true
+    },
+    "error": null,
+    "id": "dev-explicit",
+    "input": {
+      "request": {
+        "account": null,
+        "accounts": [
+          "acct-a"
+        ],
+        "text": "Please open a ticket for my VPN problem."
+      },
+      "state": {
+        "tickets": []
+      }
+    },
+    "outcome": "PASS",
+    "output": {
+      "account": "acct-a",
+      "action": "create_ticket",
+      "note": "Opened the requested VPN support ticket.",
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "run": "simplification/native/naive-union"
+  },
+  {
+    "checks": {
+      "action_matches_mutation": true,
+      "allowed_action": false,
+      "new_ticket_fields": false,
+      "new_ticket_membership": false,
+      "preserved_other_state": true,
+      "preserved_tickets": true,
+      "requested_account": false,
+      "ticket_delta": false,
+      "unique_ticket_ids": true
+    },
+    "error": null,
+    "id": "dev-duplicate",
+    "input": {
+      "request": {
+        "account": "acct-a",
+        "accounts": [
+          "acct-a"
+        ],
+        "text": "Create a ticket for the VPN outage."
+      },
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "outcome": "FAIL",
+    "output": {
+      "account": "acct-a",
+      "action": "create_ticket",
+      "note": "Deterministic fixture omitted duplicate steering.",
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "open"
+          },
+          {
+            "account": "acct-a",
+            "id": "fixture-1",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "run": "simplification/native/naive-union"
+  },
+  {
+    "checks": {
+      "action_matches_mutation": true,
+      "allowed_action": true,
+      "new_ticket_fields": true,
+      "new_ticket_membership": true,
+      "preserved_other_state": true,
+      "preserved_tickets": true,
+      "requested_account": true,
+      "ticket_delta": true,
+      "unique_ticket_ids": true
+    },
+    "error": null,
+    "id": "dev-closed",
+    "input": {
+      "request": {
+        "account": "acct-a",
+        "accounts": [
+          "acct-a"
+        ],
+        "text": "Please open a new ticket for today's VPN failure."
+      },
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "closed"
+          }
+        ]
+      }
+    },
+    "outcome": "PASS",
+    "output": {
+      "account": "acct-a",
+      "action": "create_ticket",
+      "note": "Opened the requested VPN support ticket.",
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "closed"
+          },
+          {
+            "account": "acct-a",
+            "id": "ticket-2",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "run": "simplification/native/naive-union"
+  },
+  {
+    "checks": {
+      "action_matches_mutation": true,
+      "allowed_action": true,
+      "new_ticket_fields": true,
+      "new_ticket_membership": true,
+      "preserved_other_state": true,
+      "preserved_tickets": true,
+      "requested_account": true,
+      "ticket_delta": true,
+      "unique_ticket_ids": true
+    },
+    "error": null,
+    "id": "dev-unrelated",
+    "input": {
+      "request": {
+        "account": "acct-a",
+        "accounts": [
+          "acct-a",
+          "acct-b"
+        ],
+        "text": "Create a VPN support ticket for the selected account."
+      },
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-b",
+            "id": "ticket-2",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "outcome": "PASS",
+    "output": {
+      "account": "acct-a",
+      "action": "create_ticket",
+      "note": "Opened the requested VPN support ticket.",
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-b",
+            "id": "ticket-2",
+            "issue": "vpn",
+            "status": "open"
+          },
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "run": "simplification/native/naive-union"
+  },
+  {
+    "checks": {
+      "action_matches_mutation": true,
+      "allowed_action": true,
+      "new_ticket_fields": true,
+      "new_ticket_membership": true,
+      "preserved_other_state": true,
+      "preserved_tickets": true,
+      "requested_account": true,
+      "ticket_delta": true,
+      "unique_ticket_ids": true
+    },
+    "error": null,
+    "id": "dev-explicit",
+    "input": {
+      "request": {
+        "account": null,
+        "accounts": [
+          "acct-a"
+        ],
+        "text": "Please open a ticket for my VPN problem."
+      },
+      "state": {
+        "tickets": []
+      }
+    },
+    "outcome": "PASS",
+    "output": {
+      "account": "acct-a",
+      "action": "create_ticket",
+      "note": "Opened the requested VPN support ticket.",
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "run": "simplification/native/new-existing"
+  },
+  {
+    "checks": {
+      "action_matches_mutation": true,
+      "allowed_action": true,
+      "new_ticket_fields": true,
+      "new_ticket_membership": true,
+      "preserved_other_state": true,
+      "preserved_tickets": true,
+      "requested_account": true,
+      "ticket_delta": true,
+      "unique_ticket_ids": true
+    },
+    "error": null,
+    "id": "dev-duplicate",
+    "input": {
+      "request": {
+        "account": "acct-a",
+        "accounts": [
+          "acct-a"
+        ],
+        "text": "Create a ticket for the VPN outage."
+      },
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "outcome": "PASS",
+    "output": {
+      "account": null,
+      "action": "guidance",
+      "note": "An open VPN ticket already covers this account; use that ticket.",
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "run": "simplification/native/new-existing"
+  },
+  {
+    "checks": {
+      "action_matches_mutation": true,
+      "allowed_action": true,
+      "new_ticket_fields": true,
+      "new_ticket_membership": true,
+      "preserved_other_state": true,
+      "preserved_tickets": true,
+      "requested_account": true,
+      "ticket_delta": true,
+      "unique_ticket_ids": true
+    },
+    "error": null,
+    "id": "dev-closed",
+    "input": {
+      "request": {
+        "account": "acct-a",
+        "accounts": [
+          "acct-a"
+        ],
+        "text": "Please open a new ticket for today's VPN failure."
+      },
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "closed"
+          }
+        ]
+      }
+    },
+    "outcome": "PASS",
+    "output": {
+      "account": "acct-a",
+      "action": "create_ticket",
+      "note": "Opened the requested VPN support ticket.",
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "closed"
+          },
+          {
+            "account": "acct-a",
+            "id": "ticket-2",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "run": "simplification/native/new-existing"
+  },
+  {
+    "checks": {
+      "action_matches_mutation": true,
+      "allowed_action": true,
+      "new_ticket_fields": true,
+      "new_ticket_membership": true,
+      "preserved_other_state": true,
+      "preserved_tickets": true,
+      "requested_account": true,
+      "ticket_delta": true,
+      "unique_ticket_ids": true
+    },
+    "error": null,
+    "id": "dev-unrelated",
+    "input": {
+      "request": {
+        "account": "acct-a",
+        "accounts": [
+          "acct-a",
+          "acct-b"
+        ],
+        "text": "Create a VPN support ticket for the selected account."
+      },
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-b",
+            "id": "ticket-2",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "outcome": "PASS",
+    "output": {
+      "account": "acct-a",
+      "action": "create_ticket",
+      "note": "Opened the requested VPN support ticket.",
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-b",
+            "id": "ticket-2",
+            "issue": "vpn",
+            "status": "open"
+          },
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "run": "simplification/native/new-existing"
+  },
+  {
+    "checks": {
+      "action_matches_mutation": true,
+      "allowed_action": true,
+      "new_ticket_fields": true,
+      "new_ticket_membership": true,
+      "preserved_other_state": true,
+      "preserved_tickets": true,
+      "requested_account": true,
+      "ticket_delta": true,
+      "unique_ticket_ids": true
+    },
+    "error": null,
+    "id": "dev-explicit",
+    "input": {
+      "request": {
+        "account": null,
+        "accounts": [
+          "acct-a"
+        ],
+        "text": "Please open a ticket for my VPN problem."
+      },
+      "state": {
+        "tickets": []
+      }
+    },
+    "outcome": "PASS",
+    "output": {
+      "account": "acct-a",
+      "action": "create_ticket",
+      "note": "Opened the requested VPN support ticket.",
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "run": "simplification/native/new-simplified"
+  },
+  {
+    "checks": {
+      "action_matches_mutation": true,
+      "allowed_action": true,
+      "new_ticket_fields": true,
+      "new_ticket_membership": true,
+      "preserved_other_state": true,
+      "preserved_tickets": true,
+      "requested_account": true,
+      "ticket_delta": true,
+      "unique_ticket_ids": true
+    },
+    "error": null,
+    "id": "dev-duplicate",
+    "input": {
+      "request": {
+        "account": "acct-a",
+        "accounts": [
+          "acct-a"
+        ],
+        "text": "Create a ticket for the VPN outage."
+      },
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "outcome": "PASS",
+    "output": {
+      "account": null,
+      "action": "guidance",
+      "note": "An open VPN ticket already covers this account; use that ticket.",
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "run": "simplification/native/new-simplified"
+  },
+  {
+    "checks": {
+      "action_matches_mutation": true,
+      "allowed_action": true,
+      "new_ticket_fields": true,
+      "new_ticket_membership": true,
+      "preserved_other_state": true,
+      "preserved_tickets": true,
+      "requested_account": true,
+      "ticket_delta": true,
+      "unique_ticket_ids": true
+    },
+    "error": null,
+    "id": "dev-closed",
+    "input": {
+      "request": {
+        "account": "acct-a",
+        "accounts": [
+          "acct-a"
+        ],
+        "text": "Please open a new ticket for today's VPN failure."
+      },
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "closed"
+          }
+        ]
+      }
+    },
+    "outcome": "PASS",
+    "output": {
+      "account": "acct-a",
+      "action": "create_ticket",
+      "note": "Opened the requested VPN support ticket.",
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "closed"
+          },
+          {
+            "account": "acct-a",
+            "id": "ticket-2",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "run": "simplification/native/new-simplified"
+  },
+  {
+    "checks": {
+      "action_matches_mutation": true,
+      "allowed_action": true,
+      "new_ticket_fields": true,
+      "new_ticket_membership": true,
+      "preserved_other_state": true,
+      "preserved_tickets": true,
+      "requested_account": true,
+      "ticket_delta": true,
+      "unique_ticket_ids": true
+    },
+    "error": null,
+    "id": "dev-unrelated",
+    "input": {
+      "request": {
+        "account": "acct-a",
+        "accounts": [
+          "acct-a",
+          "acct-b"
+        ],
+        "text": "Create a VPN support ticket for the selected account."
+      },
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-b",
+            "id": "ticket-2",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "outcome": "PASS",
+    "output": {
+      "account": "acct-a",
+      "action": "create_ticket",
+      "note": "Opened the requested VPN support ticket.",
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-b",
+            "id": "ticket-2",
+            "issue": "vpn",
+            "status": "open"
+          },
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "run": "simplification/native/new-simplified"
+  },
+  {
+    "checks": {
+      "action_matches_mutation": true,
+      "allowed_action": false,
+      "new_ticket_fields": true,
+      "new_ticket_membership": false,
+      "preserved_other_state": true,
+      "preserved_tickets": true,
+      "requested_account": false,
+      "ticket_delta": false,
+      "unique_ticket_ids": true
+    },
+    "error": null,
+    "id": "dev-explicit",
+    "input": {
+      "request": {
+        "account": null,
+        "accounts": [
+          "acct-a"
+        ],
+        "text": "Please open a ticket for my VPN problem."
+      },
+      "state": {
+        "tickets": []
+      }
+    },
+    "outcome": "FAIL",
+    "output": {
+      "account": null,
+      "action": "guidance",
+      "note": "Deterministic fixture lost a required steering combination.",
+      "state": {
+        "tickets": []
+      }
+    },
+    "run": "simplification/native/old-simplified"
+  },
+  {
+    "checks": {
+      "action_matches_mutation": true,
+      "allowed_action": true,
+      "new_ticket_fields": true,
+      "new_ticket_membership": true,
+      "preserved_other_state": true,
+      "preserved_tickets": true,
+      "requested_account": true,
+      "ticket_delta": true,
+      "unique_ticket_ids": true
+    },
+    "error": null,
+    "id": "dev-duplicate",
+    "input": {
+      "request": {
+        "account": "acct-a",
+        "accounts": [
+          "acct-a"
+        ],
+        "text": "Create a ticket for the VPN outage."
+      },
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "outcome": "PASS",
+    "output": {
+      "account": null,
+      "action": "guidance",
+      "note": "Deterministic fixture lost a required steering combination.",
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "run": "simplification/native/old-simplified"
+  },
+  {
+    "checks": {
+      "action_matches_mutation": true,
+      "allowed_action": false,
+      "new_ticket_fields": true,
+      "new_ticket_membership": false,
+      "preserved_other_state": true,
+      "preserved_tickets": true,
+      "requested_account": false,
+      "ticket_delta": false,
+      "unique_ticket_ids": true
+    },
+    "error": null,
+    "id": "dev-closed",
+    "input": {
+      "request": {
+        "account": "acct-a",
+        "accounts": [
+          "acct-a"
+        ],
+        "text": "Please open a new ticket for today's VPN failure."
+      },
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "closed"
+          }
+        ]
+      }
+    },
+    "outcome": "FAIL",
+    "output": {
+      "account": null,
+      "action": "guidance",
+      "note": "Deterministic fixture lost a required steering combination.",
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "closed"
+          }
+        ]
+      }
+    },
+    "run": "simplification/native/old-simplified"
+  },
+  {
+    "checks": {
+      "action_matches_mutation": true,
+      "allowed_action": false,
+      "new_ticket_fields": true,
+      "new_ticket_membership": false,
+      "preserved_other_state": true,
+      "preserved_tickets": true,
+      "requested_account": false,
+      "ticket_delta": false,
+      "unique_ticket_ids": true
+    },
+    "error": null,
+    "id": "dev-unrelated",
+    "input": {
+      "request": {
+        "account": "acct-a",
+        "accounts": [
+          "acct-a",
+          "acct-b"
+        ],
+        "text": "Create a VPN support ticket for the selected account."
+      },
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-b",
+            "id": "ticket-2",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "outcome": "FAIL",
+    "output": {
+      "account": null,
+      "action": "guidance",
+      "note": "Deterministic fixture lost a required steering combination.",
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-b",
+            "id": "ticket-2",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "run": "simplification/native/old-simplified"
+  },
+  {
+    "checks": {
+      "action_matches_mutation": true,
+      "allowed_action": true,
+      "new_ticket_fields": true,
+      "new_ticket_membership": true,
+      "preserved_other_state": true,
+      "preserved_tickets": true,
+      "requested_account": true,
+      "ticket_delta": true,
+      "unique_ticket_ids": true
+    },
+    "error": null,
+    "id": "dev-explicit",
+    "input": {
+      "request": {
+        "account": null,
+        "accounts": [
+          "acct-a"
+        ],
+        "text": "Please open a ticket for my VPN problem."
+      },
+      "state": {
+        "tickets": []
+      }
+    },
+    "outcome": "PASS",
+    "output": {
+      "account": "acct-a",
+      "action": "create_ticket",
+      "note": "Opened the requested VPN support ticket.",
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "run": "simplification/native/original"
+  },
+  {
+    "checks": {
+      "action_matches_mutation": true,
+      "allowed_action": true,
+      "new_ticket_fields": true,
+      "new_ticket_membership": true,
+      "preserved_other_state": true,
+      "preserved_tickets": true,
+      "requested_account": true,
+      "ticket_delta": true,
+      "unique_ticket_ids": true
+    },
+    "error": null,
+    "id": "dev-duplicate",
+    "input": {
+      "request": {
+        "account": "acct-a",
+        "accounts": [
+          "acct-a"
+        ],
+        "text": "Create a ticket for the VPN outage."
+      },
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "outcome": "PASS",
+    "output": {
+      "account": null,
+      "action": "guidance",
+      "note": "An open VPN ticket already covers this account; use that ticket.",
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "run": "simplification/native/original"
+  },
+  {
+    "checks": {
+      "action_matches_mutation": true,
+      "allowed_action": true,
+      "new_ticket_fields": true,
+      "new_ticket_membership": true,
+      "preserved_other_state": true,
+      "preserved_tickets": true,
+      "requested_account": true,
+      "ticket_delta": true,
+      "unique_ticket_ids": true
+    },
+    "error": null,
+    "id": "dev-closed",
+    "input": {
+      "request": {
+        "account": "acct-a",
+        "accounts": [
+          "acct-a"
+        ],
+        "text": "Please open a new ticket for today's VPN failure."
+      },
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "closed"
+          }
+        ]
+      }
+    },
+    "outcome": "PASS",
+    "output": {
+      "account": "acct-a",
+      "action": "create_ticket",
+      "note": "Opened the requested VPN support ticket.",
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "closed"
+          },
+          {
+            "account": "acct-a",
+            "id": "ticket-2",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "run": "simplification/native/original"
+  },
+  {
+    "checks": {
+      "action_matches_mutation": true,
+      "allowed_action": true,
+      "new_ticket_fields": true,
+      "new_ticket_membership": true,
+      "preserved_other_state": true,
+      "preserved_tickets": true,
+      "requested_account": true,
+      "ticket_delta": true,
+      "unique_ticket_ids": true
+    },
+    "error": null,
+    "id": "dev-unrelated",
+    "input": {
+      "request": {
+        "account": "acct-a",
+        "accounts": [
+          "acct-a",
+          "acct-b"
+        ],
+        "text": "Create a VPN support ticket for the selected account."
+      },
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-b",
+            "id": "ticket-2",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "outcome": "PASS",
+    "output": {
+      "account": "acct-a",
+      "action": "create_ticket",
+      "note": "Opened the requested VPN support ticket.",
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-b",
+            "id": "ticket-2",
+            "issue": "vpn",
+            "status": "open"
+          },
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "run": "simplification/native/original"
+  }
+]

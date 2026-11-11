@@ -1,0 +1,61 @@
+{
+  "id": "D",
+  "revision": 1,
+  "status": "proposed-unapproved",
+  "source_requirement": "intent-v1 plus evals/spec.json account-selection rule",
+  "family": "approved-vpn-authorization-contrast",
+  "method": "minimal factual contrast of B:2",
+  "hypothesis": "A program may guess acct-a without authorization to choose among two accounts.",
+  "request": {
+    "account": null,
+    "accounts": [
+      "acct-a",
+      "acct-b"
+    ],
+    "text": "Please create a VPN support ticket."
+  },
+  "state": {
+    "counter": 7,
+    "tickets": [
+      {
+        "account": "acct-b",
+        "id": "old",
+        "issue": "vpn",
+        "metadata": {
+          "keep": true
+        },
+        "status": "open"
+      }
+    ]
+  },
+  "differing_condition": {
+    "field": "request.account",
+    "from": "acct-a",
+    "to": null
+  },
+  "proposed_expected": {
+    "allowed_actions": [
+      "clarify"
+    ],
+    "account": null,
+    "ticket_delta": 0
+  },
+  "reason": "Explicit create request still names two available accounts; request no longer selects one. Native fixture supports clarification. This is a proposal, not owner-approved.",
+  "feasibility": "same valid native request/state shape as B; two listed accounts remain available",
+  "access": {
+    "candidate": "stdin request/state; returns JSON with local host permissions in runner; no strong containment",
+    "operator": "case construction only; no lifecycle/dependency injection armed or run"
+  },
+  "execution": {
+    "status": "not run",
+    "case_attempts": 0,
+    "armed": false,
+    "activation_count": null,
+    "activation_witness": null,
+    "resulting_state": null,
+    "score": null
+  },
+  "controls_plan": "If approved, compare unchanged B explicit account control and D absent account under clean and alternate candidates. No fault activation or observed defect is claimed.",
+  "reduction": "one changed field by construction; no executed minimization trials",
+  "next_prerequisite": "scoped approval of D:1 before adding to approved native package"
+}

@@ -1,0 +1,5 @@
+{
+  "evidence_directory": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/bitter-lesson-build/baseline-controls/hill-climb-audit",
+  "result": "Recorded wrong passes and recovery gap reproduced; repaired controls passed",
+  "scope": "Synthetic development replay, not model performance or held-out effectiveness"
+}

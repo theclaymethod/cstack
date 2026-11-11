@@ -1,0 +1,11 @@
+{
+  "native_usage": {
+    "completed": 0,
+    "reserved": 0
+  },
+  "parent_instruction": "Freeze; no additional native runs",
+  "reason": "Initial setup read global create-eval/run-eval guidance and skills-librarian before switching to installed copies. These global skill versions were outside the confirmation access boundary and cannot be unlearned. Broad filename discovery also exposed earlier-report and other-version path names, without reading their contents.",
+  "status": "access-deviated/excluded confirmation",
+  "unexecuted_artifact": "exercise.py is a draft only; it has never executed",
+  "verdict": "No candidate pass or failure assigned"
+}

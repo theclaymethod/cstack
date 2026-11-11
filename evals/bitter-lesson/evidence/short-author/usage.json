@@ -1,0 +1,66 @@
+{
+  "actual_case_attempts": 8,
+  "commands": [
+    [
+      "/Users/clayton/.local/bin/python3",
+      "evaluate.py",
+      "run",
+      "--candidate",
+      "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/bitter-lesson-build/runs/short-author/eval-runs/skill-exercise/controls/legitimate.py",
+      "--cases",
+      "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/bitter-lesson-build/runs/short-author/eval-runs/skill-exercise/author/approved-cases.jsonl",
+      "--suite",
+      "development",
+      "--out",
+      "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/bitter-lesson-build/runs/short-author/eval-runs/skill-exercise/native/legitimate"
+    ],
+    [
+      "/Users/clayton/.local/bin/python3",
+      "evaluate.py",
+      "run",
+      "--candidate",
+      "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/bitter-lesson-build/runs/short-author/eval-runs/skill-exercise/controls/alternative.py",
+      "--cases",
+      "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/bitter-lesson-build/runs/short-author/eval-runs/skill-exercise/author/approved-cases.jsonl",
+      "--suite",
+      "development",
+      "--out",
+      "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/bitter-lesson-build/runs/short-author/eval-runs/skill-exercise/native/alternative"
+    ],
+    [
+      "/Users/clayton/.local/bin/python3",
+      "evaluate.py",
+      "run",
+      "--candidate",
+      "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/bitter-lesson-build/runs/short-author/eval-runs/skill-exercise/controls/false-claim.py",
+      "--cases",
+      "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/bitter-lesson-build/runs/short-author/eval-runs/skill-exercise/author/approved-cases.jsonl",
+      "--suite",
+      "development",
+      "--out",
+      "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/bitter-lesson-build/runs/short-author/eval-runs/skill-exercise/native/false-claim"
+    ],
+    [
+      "/Users/clayton/.local/bin/python3",
+      "evaluate.py",
+      "run",
+      "--candidate",
+      "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/bitter-lesson-build/runs/short-author/support_agent.py",
+      "--cases",
+      "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/bitter-lesson-build/runs/short-author/eval-runs/skill-exercise/author/approved-cases.jsonl",
+      "--suite",
+      "development",
+      "--out",
+      "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/bitter-lesson-build/runs/short-author/eval-runs/skill-exercise/native/initial-product"
+    ]
+  ],
+  "fault_injection_attempts": 0,
+  "model_token_usage": "not exposed by this task runtime; not estimated",
+  "native_case_budget": 48,
+  "nested_agents": 0,
+  "network_provider_calls": 0,
+  "new_dependencies": 0,
+  "proposed_contrast_attempts": 0,
+  "reserved_plan": 8,
+  "test_runs": 0
+}

@@ -1,0 +1,18 @@
+{
+  "actual_native_case_executions": 2,
+  "all_checkpoints_and_prior_seed_verified": true,
+  "budget": 48,
+  "capture_active": false,
+  "core_files_unchanged": true,
+  "exact_quotations_and_source_hashes": true,
+  "exclusions.jsonl:rows": 2,
+  "exclusions.jsonl:unique_identities": true,
+  "merge2_zero_additions_and_byte_identical": true,
+  "native_versions_and_judgment_separation": true,
+  "remaining": 46,
+  "reviews.jsonl:rows": 7,
+  "reviews.jsonl:unique_identities": true,
+  "rubric.jsonl:rows": 6,
+  "rubric.jsonl:unique_identities": true,
+  "source_role_metadata_amendment_verified": true
+}

@@ -1,0 +1,90 @@
+{
+  "alternative-id": {
+    "actual_outcomes": [
+      "PASS",
+      "PASS"
+    ],
+    "expected_control_outcomes": [
+      "PASS",
+      "PASS"
+    ],
+    "matched": true
+  },
+  "claim-no-ticket": {
+    "actual_outcomes": [
+      "PASS",
+      "FAIL"
+    ],
+    "expected_control_outcomes": [
+      "PASS",
+      "FAIL"
+    ],
+    "matched": true
+  },
+  "duplicate-id": {
+    "actual_outcomes": [
+      "PASS",
+      "FAIL"
+    ],
+    "expected_control_outcomes": [
+      "PASS",
+      "FAIL"
+    ],
+    "matched": true
+  },
+  "legitimate": {
+    "actual_outcomes": [
+      "PASS",
+      "PASS"
+    ],
+    "expected_control_outcomes": [
+      "PASS",
+      "PASS"
+    ],
+    "matched": true
+  },
+  "malformed": {
+    "actual_outcomes": [
+      "ERROR",
+      "ERROR"
+    ],
+    "expected_control_outcomes": [
+      "ERROR",
+      "ERROR"
+    ],
+    "matched": true
+  },
+  "mutate-original": {
+    "actual_outcomes": [
+      "PASS",
+      "FAIL"
+    ],
+    "expected_control_outcomes": [
+      "PASS",
+      "FAIL"
+    ],
+    "matched": true
+  },
+  "mutate-preserve": {
+    "actual_outcomes": [
+      "FAIL",
+      "FAIL"
+    ],
+    "expected_control_outcomes": [
+      "FAIL",
+      "FAIL"
+    ],
+    "matched": true
+  },
+  "wrong-account": {
+    "actual_outcomes": [
+      "PASS",
+      "FAIL"
+    ],
+    "expected_control_outcomes": [
+      "PASS",
+      "FAIL"
+    ],
+    "matched": true
+  }
+}

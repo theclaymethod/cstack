@@ -1,0 +1,260 @@
+{
+  "baseline_label": "full",
+  "baseline_prompt_utf8_bytes": 4193,
+  "confirmation": {
+    "admissible": true,
+    "baseline_score": 1.0,
+    "candidate_score": 1.0,
+    "difference": 0.0,
+    "errors_or_unknown": 0,
+    "max_loss": 0.0,
+    "regressions": [],
+    "scope": "Exact outcomes on the declared finite synthetic cases only"
+  },
+  "development": {
+    "contract-only": {
+      "admissible": false,
+      "baseline_score": 1.0,
+      "candidate_score": 0.875,
+      "difference": -0.125,
+      "errors_or_unknown": 0,
+      "max_loss": 0.0,
+      "regressions": [
+        "dev-duplicate"
+      ],
+      "scope": "Exact outcomes on the declared finite synthetic cases only"
+    },
+    "no-conflicts": {
+      "admissible": true,
+      "baseline_score": 1.0,
+      "candidate_score": 1.0,
+      "difference": 0.0,
+      "errors_or_unknown": 0,
+      "max_loss": 0.0,
+      "regressions": [],
+      "scope": "Exact outcomes on the declared finite synthetic cases only"
+    },
+    "no-legacy": {
+      "admissible": true,
+      "baseline_score": 1.0,
+      "candidate_score": 1.0,
+      "difference": 0.0,
+      "errors_or_unknown": 0,
+      "max_loss": 0.0,
+      "regressions": [],
+      "scope": "Exact outcomes on the declared finite synthetic cases only"
+    },
+    "no-noise": {
+      "admissible": true,
+      "baseline_score": 1.0,
+      "candidate_score": 1.0,
+      "difference": 0.0,
+      "errors_or_unknown": 0,
+      "max_loss": 0.0,
+      "regressions": [],
+      "scope": "Exact outcomes on the declared finite synthetic cases only"
+    },
+    "one-conflict-removed": {
+      "admissible": false,
+      "baseline_score": 1.0,
+      "candidate_score": 0.5,
+      "difference": -0.5,
+      "errors_or_unknown": 0,
+      "max_loss": 0.0,
+      "regressions": [
+        "dev-explicit",
+        "dev-ambiguous",
+        "dev-closed",
+        "dev-unrelated"
+      ],
+      "scope": "Exact outcomes on the declared finite synthetic cases only"
+    },
+    "one-duplicate": {
+      "admissible": true,
+      "baseline_score": 1.0,
+      "candidate_score": 1.0,
+      "difference": 0.0,
+      "errors_or_unknown": 0,
+      "max_loss": 0.0,
+      "regressions": [],
+      "scope": "Exact outcomes on the declared finite synthetic cases only"
+    }
+  },
+  "measured_units_after": 2,
+  "measured_units_before": 9,
+  "migration_limits": "Cannot attribute reduction to model upgrade or compare to unavailable production. Synthetic cue behavior is explicitly programmed.",
+  "records": {
+    "contract-only": {
+      "config": {
+        "model": "new-fixture",
+        "retained": [
+          "contract"
+        ]
+      },
+      "outcomes": {
+        "dev-ambiguous": "PASS",
+        "dev-closed": "PASS",
+        "dev-duplicate": "FAIL",
+        "dev-explicit": "PASS",
+        "dev-generic": "PASS",
+        "dev-howto": "PASS",
+        "dev-password": "PASS",
+        "dev-unrelated": "PASS"
+      },
+      "prompt_utf8_bytes": 3584
+    },
+    "full": {
+      "config": {
+        "model": "new-fixture",
+        "retained": [
+          "conflict-a",
+          "conflict-b",
+          "contract",
+          "duplicate-a",
+          "duplicate-b",
+          "example",
+          "legacy-auth",
+          "plan",
+          "plan-detail"
+        ]
+      },
+      "outcomes": {
+        "dev-ambiguous": "PASS",
+        "dev-closed": "PASS",
+        "dev-duplicate": "PASS",
+        "dev-explicit": "PASS",
+        "dev-generic": "PASS",
+        "dev-howto": "PASS",
+        "dev-password": "PASS",
+        "dev-unrelated": "PASS"
+      },
+      "prompt_utf8_bytes": 4193
+    },
+    "no-conflicts": {
+      "config": {
+        "model": "new-fixture",
+        "retained": [
+          "contract",
+          "duplicate-a",
+          "duplicate-b"
+        ]
+      },
+      "outcomes": {
+        "dev-ambiguous": "PASS",
+        "dev-closed": "PASS",
+        "dev-duplicate": "PASS",
+        "dev-explicit": "PASS",
+        "dev-generic": "PASS",
+        "dev-howto": "PASS",
+        "dev-password": "PASS",
+        "dev-unrelated": "PASS"
+      },
+      "prompt_utf8_bytes": 3754
+    },
+    "no-legacy": {
+      "config": {
+        "model": "new-fixture",
+        "retained": [
+          "conflict-a",
+          "conflict-b",
+          "contract",
+          "duplicate-a",
+          "duplicate-b",
+          "example",
+          "plan",
+          "plan-detail"
+        ]
+      },
+      "outcomes": {
+        "dev-ambiguous": "PASS",
+        "dev-closed": "PASS",
+        "dev-duplicate": "PASS",
+        "dev-explicit": "PASS",
+        "dev-generic": "PASS",
+        "dev-howto": "PASS",
+        "dev-password": "PASS",
+        "dev-unrelated": "PASS"
+      },
+      "prompt_utf8_bytes": 4114
+    },
+    "no-noise": {
+      "config": {
+        "model": "new-fixture",
+        "retained": [
+          "conflict-a",
+          "conflict-b",
+          "contract",
+          "duplicate-a",
+          "duplicate-b"
+        ]
+      },
+      "outcomes": {
+        "dev-ambiguous": "PASS",
+        "dev-closed": "PASS",
+        "dev-duplicate": "PASS",
+        "dev-explicit": "PASS",
+        "dev-generic": "PASS",
+        "dev-howto": "PASS",
+        "dev-password": "PASS",
+        "dev-unrelated": "PASS"
+      },
+      "prompt_utf8_bytes": 3911
+    },
+    "one-conflict-removed": {
+      "config": {
+        "model": "new-fixture",
+        "retained": [
+          "conflict-b",
+          "contract",
+          "duplicate-a",
+          "duplicate-b",
+          "example",
+          "legacy-auth",
+          "plan",
+          "plan-detail"
+        ]
+      },
+      "outcomes": {
+        "dev-ambiguous": "FAIL",
+        "dev-closed": "FAIL",
+        "dev-duplicate": "PASS",
+        "dev-explicit": "FAIL",
+        "dev-generic": "PASS",
+        "dev-howto": "PASS",
+        "dev-password": "PASS",
+        "dev-unrelated": "FAIL"
+      },
+      "prompt_utf8_bytes": 4118
+    },
+    "one-duplicate": {
+      "config": {
+        "model": "new-fixture",
+        "retained": [
+          "contract",
+          "duplicate-b"
+        ]
+      },
+      "outcomes": {
+        "dev-ambiguous": "PASS",
+        "dev-closed": "PASS",
+        "dev-duplicate": "PASS",
+        "dev-explicit": "PASS",
+        "dev-generic": "PASS",
+        "dev-howto": "PASS",
+        "dev-password": "PASS",
+        "dev-unrelated": "PASS"
+      },
+      "prompt_utf8_bytes": 3667
+    }
+  },
+  "saved_prompt_utf8_bytes": 526,
+  "scope": "New-fixture simplification contrast D-C only. No A, B, D-A, model effect C-A or interaction estimate available.",
+  "selected_label": "one-duplicate",
+  "selected_prompt_utf8_bytes": 3667,
+  "unknown_costs": [
+    "model tokens",
+    "money",
+    "hosted-model latency",
+    "production cost savings"
+  ]
+}

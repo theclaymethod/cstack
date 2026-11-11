@@ -1,0 +1,34 @@
+{
+  "cross_proxy_processes": 3,
+  "dependencies_installed": 0,
+  "deployment": "unperformed",
+  "extra_adapter_probes": 5,
+  "native_breakdown": {
+    "cross_examine": 16,
+    "hill_climb": 32,
+    "judge_source": 24,
+    "run_eval": 16,
+    "simplification": 164
+  },
+  "native_case_executions": 252,
+  "native_case_limit": 300,
+  "native_counts_all_attempts": {
+    "ERROR": 0,
+    "FAIL": 54,
+    "PASS": 198,
+    "UNKNOWN": 0
+  },
+  "native_incomplete": 0,
+  "nested_agents": 0,
+  "offline_judge_worker_processes": 102,
+  "offline_worker_ceiling": 200,
+  "paid_calls": 0,
+  "provider_calls": 0,
+  "release_thresholds": null,
+  "stored_judge_response_renormalizations": 96,
+  "stored_native_regrades": 2,
+  "worker_breakdown": {
+    "fitting_and_final": 96,
+    "stability": 6
+  }
+}

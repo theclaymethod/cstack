@@ -1,0 +1,39 @@
+{
+  "approved_current": [
+    {
+      "id": "A",
+      "revision": 1,
+      "source": "source/approved-cards.json"
+    },
+    {
+      "id": "B",
+      "revision": 2,
+      "source": "source/approved-cards.json"
+    }
+  ],
+  "checks": [
+    "shape",
+    "allowed action",
+    "account",
+    "original-ticket content/order",
+    "unique IDs",
+    "ticket count/membership",
+    "new ticket account/open/vpn",
+    "action agrees with mutation",
+    "other state equality"
+  ],
+  "excluded": [
+    "A rejected creation proposal",
+    "B revision1 guidance-only proposal",
+    "C revision1 deferred",
+    "P-01 revision1 unapproved contrast"
+  ],
+  "format": "existing native JSONL; new separate author/approved-cases.jsonl",
+  "independence": "Single local author/coordinator/validator; no independent scenarios or private labels. All evidence exposed.",
+  "intent": "Differentiate guidance from authorized account-scoped VPN creation while preserving state.",
+  "intent_revision": 1,
+  "runner": "python3 evaluate.py run --candidate <control> --cases eval-runs/skill-exercise/author/approved-cases.jsonl --suite development --out <fresh-path>",
+  "semantic_limits": "Native grader requires nonempty note only; does not assess guidance helpfulness.",
+  "source_protection": "Source files outside author directory, read-only and content hashed; same-host permissions are not isolation.",
+  "valid_alternatives": "Any unique nonempty string ID and nonempty note; no exact explanatory wording requirement."
+}

@@ -1,0 +1,20 @@
+{
+  "approved_count": 2,
+  "pending": [
+    {
+      "id": "C",
+      "reason": "No urgency/escalation policy; excluded without inverse approval.",
+      "revision": 1
+    },
+    {
+      "id": "P-01",
+      "reason": "New contrast remains proposed and unapproved.",
+      "revision": 1
+    }
+  ],
+  "pending_count": 2,
+  "rejected_or_superseded": [
+    "A original ticket proposal rejected",
+    "B revision1 replaced by exact revision2 correction"
+  ]
+}

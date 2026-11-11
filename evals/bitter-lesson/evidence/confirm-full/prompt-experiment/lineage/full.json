@@ -1,0 +1,19 @@
+{
+  "hypothesis": "Recover existing-design behavior under the authorized backend",
+  "label": "full",
+  "parent": null,
+  "removed_from_full": [],
+  "removed_from_parent": [],
+  "retained": [
+    "conflict-a",
+    "conflict-b",
+    "contract",
+    "duplicate-a",
+    "duplicate-b",
+    "example",
+    "legacy-auth",
+    "plan",
+    "plan-detail"
+  ],
+  "scope": "Cumulative reduction relative to actual parent; full remains quality anchor"
+}

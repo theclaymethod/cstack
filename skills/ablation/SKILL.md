@@ -5,35 +5,22 @@ description: Remove prompt instructions, examples, context, tools, or workflow s
 
 # Ablation
 
-Find a less burdensome version of the authorized target that meets its quality contract. Deliver the best confirmed reduction found within budget, its deletion diff, and evidence.
+Find a less burdensome authorized artifact that meets its quality contract. Reuse native execution and [Hill Climb](../hill-climb/SKILL.md) for campaign mechanics; [Bitter Lesson](../bitter-lesson/SKILL.md) adds model-migration comparisons. Implement experiments in the project, keeping this skill reference-only.
 
-Put adapters, candidate generators and experiment artifacts in the consuming project. Reuse its runner and format. [Hill Climb](../hill-climb/SKILL.md) supplies bounded search, execution identity, accounting and confirmation; use the removal-specific rules here. [Bitter Lesson](../bitter-lesson/SKILL.md) adds model-migration comparisons.
+## Removal contract
 
-## Define the removal experiment
+Freeze original artifact/model, task/evaluator/gold meaning, case membership, environment and unrelated settings. Declare removal units/dependencies, protected information, burden objective, quality metric, regression constraints, acceptable loss, trial/budget/confirmation and stopping policy. Missing owner policy leaves selection unconfirmed. Quality gates always compare to the **original baseline**, preventing accumulated tolerated losses.
 
-Recover the baseline, actual assembled prompt/context or workflow, existing evals, and owner decisions.
+Run that baseline and retain actual outputs/state/errors, source/configuration and usage. Regrading stored outputs cannot measure a changed target; missing execution remains unrun. Rewriting, compression, substitution and model changes are distinct interventions requiring explicit scope.
 
-Declare the removable units and their dependencies, protected task requirements, burden objective, primary quality measure, important regression slices, acceptable loss, trial protocol, budget and confirmation rule. Quality loss is relative to the **original baseline**, throughout the campaign. A missing loss policy is not permission to invent one; prepare diagnostic candidates and report any unsupported selection as unconfirmed.
+## Test and select
 
-Keep the model, evaluator, gold meaning, case membership, tool environment and unrelated settings fixed. Changing models, rewriting instructions, compressing context or replacing a tool is a different intervention; record it separately when authorized. Preserve necessary task information and behavior even when its wording is redundant.
+Read [removal methods](references/removal.md). Conditional contribution asks what happens when one unit leaves the full configuration. Reduction requires executing a smaller combined artifact: individually harmless deletions may fail together, and useful groups may resist single deletion.
 
-## Measure, remove and test combinations
+Use attributable coarse/fine removals, valid dependency closures and selected combinations. Record exact retained sets, diffs and parentage; execute changed/merged candidates and revisit survivors where useful. Invalid structure, task failure, infrastructure error and inconclusive evidence are different outcomes. Preserve attempts and confirmation spend.
 
-Run the original artifact through the actual execution boundary before editing. Retain its complete snapshot, per-case outcomes, state/tool evidence, errors and resource measurements. Missing execution setup leaves the performance experiment unrun.
+Before selection, read [quality preservation](references/quality.md), including durable accounting and stochastic evidence. Apply original-relative quality and critical-case constraints with complete selected denominators/UNKNOWN/errors. Compare burden only among feasible candidates; measured prompt size does not establish runtime savings.
 
-Read [removal methods](references/removal.md) when choosing units, handling dependencies or investigating interactions. Distinguish two jobs:
+Freeze the chosen combined candidate before confirmation. Adaptive validation remains selection evidence; independent claims require actually independent reserved evidence. A nonsignificant difference is not preserved performance. Retain the baseline when no candidate qualifies.
 
-- **Contribution analysis:** remove a unit from the same full baseline to measure its conditional effect.
-- **Reduction:** build and execute a smaller combined candidate. A collection of harmless individual removals does not establish that their union works.
-
-Start with attributable groups where useful, then finer deletions and selected combinations. Keep each candidate's retained/removed units, parent and actual diff. Check structural validity before execution. Record an invalid intervention, infrastructure error, behavior failure and inconclusive comparison distinctly. Charge actual attempts and preserve confirmation resources under the campaign contract.
-
-Execute every changed candidate. Use the original baseline for quality gates and the current feasible candidate for the burden comparison. Test merged removals as a new candidate; revisit earlier survivors when later deletions change their contribution. Keep conditional successes and unsuccessful attempts recoverable.
-
-## Confirm the reduction
-
-Read [quality preservation](references/quality.md) for stochastic comparisons and non-inferiority. Apply the declared quality floor and critical-case constraints as well as the aggregate. Preserve UNKNOWN/errors and complete selected denominators.
-
-Freeze the selected combined artifact before confirmation and compare it with the original baseline under the same protocol. Repeatedly consulted validation is selection evidence. Reserve independent confirmation where available; disclose exposure and finite fixture limits. A nonsignificant difference alone does not establish preservation.
-
-Promote only a candidate meeting the declared quality, regression and burden rules. Otherwise retain the original or label the reduced artifact as an unconfirmed development candidate. Deliver the versioned artifact, exact deletion diff, tested combinations, per-case changes, uncertainty, measured burden, costs and stopping reason. Claim local minimality only for a completed declared sweep under its actual oracle; a budget stop establishes only the smallest confirmed candidate found.
+Deliver the artifact/diff, original identity, tested combinations, outcomes/regressions, burden/costs, uncertainty and stopping reason. Report the smallest confirmed candidate found within budget; claim local minimality only for an actually completed declared sweep, never a global minimum from a budget stop.

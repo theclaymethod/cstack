@@ -1,0 +1,163 @@
+{
+  "attempts": [
+    {
+      "candidate_hash": "0720b56482a445967ff2a98ec5cfa668c858b8a6f662da74a55c21b257393efc",
+      "evidence_hashes": {
+        "candidate.py": "0720b56482a445967ff2a98ec5cfa668c858b8a6f662da74a55c21b257393efc",
+        "cases.jsonl": "71f1d8c50f7ce2b3ca512c6f2703faa4e30d5c63237824e3a73e7a573cf4f7b2",
+        "manifest.json": "8cc48cf229ba436e530ef371bc00dd9668b8991a0a64035186f460adc906c5e7",
+        "summary.json": "3390dbc4e2513936656669116274c3c0f3faad0611e3ee934169d5c450a3d536",
+        "traces.jsonl": "1e26368899fb4fb83ebaa147662ea87f19bdf185aa3f9390c50b832e9bb89fac"
+      },
+      "executed_case_runs": 8,
+      "hypothesis": "measure original",
+      "id": 0,
+      "parent": null,
+      "path": "attempts/000-baseline",
+      "reserved_case_runs": 8,
+      "role": "baseline",
+      "status": "complete",
+      "suite": "development"
+    },
+    {
+      "candidate_hash": "5fff29e7ea1a726cc9a4a74376ea5b93662fd81269e7497d9f5aa63a0684b230",
+      "comparison": {
+        "admissible": false,
+        "baseline_score": 0.5,
+        "candidate_score": 0.75,
+        "case_ids": [
+          "dev-howto",
+          "dev-generic",
+          "dev-explicit",
+          "dev-duplicate",
+          "dev-ambiguous",
+          "dev-password",
+          "dev-closed",
+          "dev-unrelated"
+        ],
+        "errors": 0,
+        "gains": [
+          "dev-howto",
+          "dev-generic",
+          "dev-duplicate",
+          "dev-ambiguous"
+        ],
+        "regressions": [
+          "dev-closed",
+          "dev-unrelated"
+        ],
+        "strict_improvement": true
+      },
+      "decision": "reject regression",
+      "evidence_hashes": {
+        "candidate.py": "5fff29e7ea1a726cc9a4a74376ea5b93662fd81269e7497d9f5aa63a0684b230",
+        "cases.jsonl": "71f1d8c50f7ce2b3ca512c6f2703faa4e30d5c63237824e3a73e7a573cf4f7b2",
+        "manifest.json": "fad650c76b9b5ddfe8b590ef073c42314342881911236de24a02c1b905488f52",
+        "summary.json": "1d59c50d2fafb9137d53a321b0650b00094839cfd889d837bf547ea9f35055bf",
+        "traces.jsonl": "1ea8012463b77775ddd00acbafde7659f138a394bf4dbf47df7dc0c9dd1e81dc"
+      },
+      "executed_case_runs": 8,
+      "hypothesis": "Common routing fixes may improve scores but reusing any existing ticket risks closed/unrelated-account regressions",
+      "id": 1,
+      "parent": 0,
+      "path": "attempts/001-proposal",
+      "reserved_case_runs": 8,
+      "role": "proposal",
+      "status": "complete",
+      "suite": "development"
+    },
+    {
+      "candidate_hash": "d8cc818e83af4453a44e9025484ae6e23ecc7cbcf8c9e621efa56c21a179a1c3",
+      "comparison": {
+        "admissible": true,
+        "baseline_score": 0.5,
+        "candidate_score": 1.0,
+        "case_ids": [
+          "dev-howto",
+          "dev-generic",
+          "dev-explicit",
+          "dev-duplicate",
+          "dev-ambiguous",
+          "dev-password",
+          "dev-closed",
+          "dev-unrelated"
+        ],
+        "errors": 0,
+        "gains": [
+          "dev-howto",
+          "dev-generic",
+          "dev-duplicate",
+          "dev-ambiguous"
+        ],
+        "regressions": [],
+        "strict_improvement": true
+      },
+      "decision": "retain improvement",
+      "evidence_hashes": {
+        "candidate.py": "d8cc818e83af4453a44e9025484ae6e23ecc7cbcf8c9e621efa56c21a179a1c3",
+        "cases.jsonl": "71f1d8c50f7ce2b3ca512c6f2703faa4e30d5c63237824e3a73e7a573cf4f7b2",
+        "manifest.json": "74eafcfaa17dbe121a32bc5278a946c519a617ad325481603a930e836e56c593",
+        "summary.json": "0662c57be1cd1fca692f4a0e86c074e0a7b94526605e3163de23c5491db15ecf",
+        "traces.jsonl": "8079f7279f3a3c89c7ea024a5c049cffc8762c8093f6b731adc45c143914cc9f"
+      },
+      "executed_case_runs": 8,
+      "hypothesis": "Require ticket authorization and restrict duplicate checks to an open VPN ticket for the selected account",
+      "id": 2,
+      "parent": 0,
+      "path": "attempts/002-proposal",
+      "reserved_case_runs": 8,
+      "role": "proposal",
+      "status": "complete",
+      "suite": "development"
+    },
+    {
+      "candidate_hash": "0720b56482a445967ff2a98ec5cfa668c858b8a6f662da74a55c21b257393efc",
+      "evidence_hashes": {
+        "candidate.py": "0720b56482a445967ff2a98ec5cfa668c858b8a6f662da74a55c21b257393efc",
+        "cases.jsonl": "71f1d8c50f7ce2b3ca512c6f2703faa4e30d5c63237824e3a73e7a573cf4f7b2",
+        "manifest.json": "c49a452bfc6ec2363325a81c0d846a339051c17ae5fa1f211cce4b382811a387",
+        "summary.json": "c1cd1168fdef493694ff6e8abbf795b32ca8c3db271ece86e0a0945961b5888f",
+        "traces.jsonl": "6890994256c0c4f1ff861452b57a2f52b7dd944ff36c61beebe1488adfb96df6"
+      },
+      "executed_case_runs": 4,
+      "hypothesis": "confirm frozen selected artifacts",
+      "id": 3,
+      "parent": 2,
+      "path": "attempts/003-confirm-baseline",
+      "reserved_case_runs": 4,
+      "role": "confirm-baseline",
+      "status": "complete",
+      "suite": "confirmation"
+    },
+    {
+      "candidate_hash": "d8cc818e83af4453a44e9025484ae6e23ecc7cbcf8c9e621efa56c21a179a1c3",
+      "evidence_hashes": {
+        "candidate.py": "d8cc818e83af4453a44e9025484ae6e23ecc7cbcf8c9e621efa56c21a179a1c3",
+        "cases.jsonl": "71f1d8c50f7ce2b3ca512c6f2703faa4e30d5c63237824e3a73e7a573cf4f7b2",
+        "manifest.json": "168d508c0fcfb002c2567cd0a24efea0a58eae94f8aa9cb5f9ec8c7e9156e1dc",
+        "summary.json": "238b9b82856e7b64011ea2a2b28dd0c6cd4055900dec255933fb349b2c9c48a6",
+        "traces.jsonl": "f851f7dffbc40120751625210c382d4f9e435df2ff12497349dfad2ccdfbfd91"
+      },
+      "executed_case_runs": 4,
+      "hypothesis": "confirm frozen selected artifacts",
+      "id": 4,
+      "parent": 2,
+      "path": "attempts/004-confirm-incumbent",
+      "reserved_case_runs": 4,
+      "role": "confirm-incumbent",
+      "status": "complete",
+      "suite": "confirmation"
+    }
+  ],
+  "best_attempt": 2,
+  "contract_hash": "876aa86d8b217612ec6e1fba1026cf3827c56cf18d6062b5021e4af310c7702e",
+  "deliverable_hashes": {
+    "best.diff": "64c7fe69132e8165d68631639ab7414a1acc4ef4e912b8f8e04d0bce47168891",
+    "best.py": "d8cc818e83af4453a44e9025484ae6e23ecc7cbcf8c9e621efa56c21a179a1c3",
+    "selection.json": "9113b434c2c203b000f4575a1e09efaef186787e6f1dbfa8db1fc74b76a3b3d7"
+  },
+  "last_decision": "verified development improvement; confirmation checks passed",
+  "selected_attempt": 2,
+  "status": "finished",
+  "used_case_runs": 32
+}

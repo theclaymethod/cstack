@@ -1,0 +1,23 @@
+{
+  "amends": null,
+  "capture_method": "explicit synthetic seed",
+  "captured_at": "2026-11-10T23:14:36.583015+00:00",
+  "example_id": "prior-local-example",
+  "identity_key": "seed:unrelated-local-annotation:v1",
+  "input": null,
+  "judgment": {
+    "label": null,
+    "type": "annotation",
+    "wording": "Unrelated prior local annotation; retain verbatim."
+  },
+  "original_reviewed_output": null,
+  "record_id": "prior-local-annotation",
+  "replay_blockers": [
+    "Seed only, no reviewed example or external authority."
+  ],
+  "replay_ready": false,
+  "session_id": "controlled-full-capture",
+  "source": {
+    "authority": "task-authorized local seed"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "hypothesis": "Keep one duplicate reminder; test cumulative reduction as an actual combined artifact",
+  "label": "one-duplicate",
+  "parent": "no-conflicts",
+  "removed_from_full": [
+    "conflict-a",
+    "conflict-b",
+    "duplicate-a",
+    "example",
+    "legacy-auth",
+    "plan",
+    "plan-detail"
+  ],
+  "removed_from_parent": [
+    "duplicate-a"
+  ],
+  "retained": [
+    "contract",
+    "duplicate-b"
+  ],
+  "scope": "Cumulative reduction relative to actual parent; full remains quality anchor"
+}

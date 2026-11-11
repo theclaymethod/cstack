@@ -1,0 +1,133 @@
+{
+  "actual_completed": 64,
+  "calls": [
+    {
+      "candidate": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/bitter-lesson-build/runs/confirm-full/eval-runs/skill-exercise/prompt-experiment/candidates/full.py",
+      "cases": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/bitter-lesson-build/runs/confirm-full/eval-runs/skill-exercise/prompt-experiment/native/full.jsonl",
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 8,
+        "UNKNOWN": 0
+      },
+      "executed": 8,
+      "label": "full",
+      "reserved": 8,
+      "status": "complete"
+    },
+    {
+      "candidate": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/bitter-lesson-build/runs/confirm-full/eval-runs/skill-exercise/prompt-experiment/candidates/no-legacy.py",
+      "cases": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/bitter-lesson-build/runs/confirm-full/eval-runs/skill-exercise/prompt-experiment/native/no-legacy.jsonl",
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 8,
+        "UNKNOWN": 0
+      },
+      "executed": 8,
+      "label": "no-legacy",
+      "reserved": 8,
+      "status": "complete"
+    },
+    {
+      "candidate": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/bitter-lesson-build/runs/confirm-full/eval-runs/skill-exercise/prompt-experiment/candidates/no-noise.py",
+      "cases": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/bitter-lesson-build/runs/confirm-full/eval-runs/skill-exercise/prompt-experiment/native/no-noise.jsonl",
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 8,
+        "UNKNOWN": 0
+      },
+      "executed": 8,
+      "label": "no-noise",
+      "reserved": 8,
+      "status": "complete"
+    },
+    {
+      "candidate": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/bitter-lesson-build/runs/confirm-full/eval-runs/skill-exercise/prompt-experiment/candidates/no-conflicts.py",
+      "cases": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/bitter-lesson-build/runs/confirm-full/eval-runs/skill-exercise/prompt-experiment/native/no-conflicts.jsonl",
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 8,
+        "UNKNOWN": 0
+      },
+      "executed": 8,
+      "label": "no-conflicts",
+      "reserved": 8,
+      "status": "complete"
+    },
+    {
+      "candidate": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/bitter-lesson-build/runs/confirm-full/eval-runs/skill-exercise/prompt-experiment/candidates/one-duplicate.py",
+      "cases": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/bitter-lesson-build/runs/confirm-full/eval-runs/skill-exercise/prompt-experiment/native/one-duplicate.jsonl",
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 8,
+        "UNKNOWN": 0
+      },
+      "executed": 8,
+      "label": "one-duplicate",
+      "reserved": 8,
+      "status": "complete"
+    },
+    {
+      "candidate": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/bitter-lesson-build/runs/confirm-full/eval-runs/skill-exercise/prompt-experiment/candidates/contract-only.py",
+      "cases": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/bitter-lesson-build/runs/confirm-full/eval-runs/skill-exercise/prompt-experiment/native/contract-only.jsonl",
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 1,
+        "PASS": 7,
+        "UNKNOWN": 0
+      },
+      "executed": 8,
+      "label": "contract-only",
+      "reserved": 8,
+      "status": "complete"
+    },
+    {
+      "candidate": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/bitter-lesson-build/runs/confirm-full/eval-runs/skill-exercise/prompt-experiment/candidates/one-conflict-removed.py",
+      "cases": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/bitter-lesson-build/runs/confirm-full/eval-runs/skill-exercise/prompt-experiment/native/one-conflict-removed.jsonl",
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 4,
+        "PASS": 4,
+        "UNKNOWN": 0
+      },
+      "executed": 8,
+      "label": "one-conflict-removed",
+      "reserved": 8,
+      "status": "complete"
+    },
+    {
+      "candidate": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/bitter-lesson-build/runs/confirm-full/eval-runs/skill-exercise/prompt-experiment/candidates/confirm-full.py",
+      "cases": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/bitter-lesson-build/runs/confirm-full/eval-runs/skill-exercise/prompt-experiment/native/confirm-full.jsonl",
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 4,
+        "UNKNOWN": 0
+      },
+      "executed": 4,
+      "label": "confirm-full",
+      "reserved": 4,
+      "status": "complete"
+    },
+    {
+      "candidate": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/bitter-lesson-build/runs/confirm-full/eval-runs/skill-exercise/prompt-experiment/candidates/confirm-selected.py",
+      "cases": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/bitter-lesson-build/runs/confirm-full/eval-runs/skill-exercise/prompt-experiment/native/confirm-selected.jsonl",
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 4,
+        "UNKNOWN": 0
+      },
+      "executed": 4,
+      "label": "confirm-selected",
+      "reserved": 4,
+      "status": "complete"
+    }
+  ],
+  "limit": 64,
+  "reserved": 64
+}

@@ -1,0 +1,87 @@
+[
+  {
+    "argv": [
+      "/Users/clayton/.local/bin/python3",
+      "evaluate.py",
+      "run",
+      "--candidate",
+      "eval-runs/skill-exercise/controls/legitimate.py",
+      "--cases",
+      "eval-runs/skill-exercise/author/approved.jsonl",
+      "--suite",
+      "development",
+      "--out",
+      "eval-runs/skill-exercise/native-runs/legitimate"
+    ],
+    "cwd": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/bitter-lesson-build/runs/full-author",
+    "returncode": 0
+  },
+  {
+    "argv": [
+      "/Users/clayton/.local/bin/python3",
+      "evaluate.py",
+      "run",
+      "--candidate",
+      "eval-runs/skill-exercise/controls/alternative-id.py",
+      "--cases",
+      "eval-runs/skill-exercise/author/approved.jsonl",
+      "--suite",
+      "development",
+      "--out",
+      "eval-runs/skill-exercise/native-runs/alternative-id"
+    ],
+    "cwd": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/bitter-lesson-build/runs/full-author",
+    "returncode": 0
+  },
+  {
+    "argv": [
+      "/Users/clayton/.local/bin/python3",
+      "evaluate.py",
+      "run",
+      "--candidate",
+      "eval-runs/skill-exercise/controls/false-creation-claim.py",
+      "--cases",
+      "eval-runs/skill-exercise/author/approved.jsonl",
+      "--suite",
+      "development",
+      "--out",
+      "eval-runs/skill-exercise/native-runs/false-creation-claim"
+    ],
+    "cwd": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/bitter-lesson-build/runs/full-author",
+    "returncode": 0
+  },
+  {
+    "argv": [
+      "/Users/clayton/.local/bin/python3",
+      "evaluate.py",
+      "run",
+      "--candidate",
+      "eval-runs/skill-exercise/controls/original-baseline.py",
+      "--cases",
+      "eval-runs/skill-exercise/author/approved.jsonl",
+      "--suite",
+      "development",
+      "--out",
+      "eval-runs/skill-exercise/native-runs/original-baseline"
+    ],
+    "cwd": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/bitter-lesson-build/runs/full-author",
+    "returncode": 0
+  },
+  {
+    "argv": [
+      "/Users/clayton/.local/bin/python3",
+      "evaluate.py",
+      "run",
+      "--candidate",
+      "eval-runs/skill-exercise/controls/guidance-only.py",
+      "--cases",
+      "eval-runs/skill-exercise/author/approved.jsonl",
+      "--suite",
+      "development",
+      "--out",
+      "eval-runs/skill-exercise/native-runs/guidance-only"
+    ],
+    "cwd": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/bitter-lesson-build/runs/full-author",
+    "returncode": 0
+  }
+]

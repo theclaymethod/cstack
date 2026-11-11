@@ -1,0 +1,24 @@
+{
+  "hypothesis": "Remove dependent planning group and example together",
+  "label": "no-noise",
+  "parent": "no-legacy",
+  "removed_from_full": [
+    "example",
+    "legacy-auth",
+    "plan",
+    "plan-detail"
+  ],
+  "removed_from_parent": [
+    "example",
+    "plan",
+    "plan-detail"
+  ],
+  "retained": [
+    "conflict-a",
+    "conflict-b",
+    "contract",
+    "duplicate-a",
+    "duplicate-b"
+  ],
+  "scope": "Cumulative reduction relative to actual parent; full remains quality anchor"
+}

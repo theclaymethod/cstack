@@ -1,0 +1,10 @@
+{
+  "files": {
+    "capture-state.json": "c8b3fc5924fcae5b587e366089f0d81896c6653c41d518749bd109d5687f2fae",
+    "exclusions.jsonl": "70eaa87db96d36809390b4d8bac8e4b0c4f3d7697c8b744e0a32557d0e30862d",
+    "reviews.jsonl": "2cd8e95430dce94e8af845670e0894ff66655596a7a90bdc0de53461b863acaa",
+    "rubric.jsonl": "87a9c5474e8041f6da4a1a28f76a496a9763c45c4fcf980d31cb2ef77af1b230"
+  },
+  "name": "merge2",
+  "saved_at": "2026-11-10T23:15:11.283816+00:00"
+}

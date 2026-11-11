@@ -1,0 +1,9 @@
+--- full
++++ one-conflict-removed
+@@ -1,6 +1,3 @@
+-### conflict-a
+-CONFLICT A: apply the first synthetic steering convention.
+-
+ ### conflict-b
+ CONFLICT B: apply the compensating synthetic steering convention.
+ 

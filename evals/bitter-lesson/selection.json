@@ -1,0 +1,16 @@
+{
+  "decision": "retain unchanged outcome-contract rewrite",
+  "entrypoints": 11,
+  "baseline_words": 8722,
+  "selected_words": 4429,
+  "baseline_bytes": 67031,
+  "selected_bytes": 37757,
+  "matched_checks_per_variant": 28,
+  "confirmation_checks_per_variant": 8,
+  "observed_check_regressions": 0,
+  "valid_host_agent_contexts": 8,
+  "excluded_contexts": 1,
+  "host_model": "current inherited model only; exact hosted snapshot unavailable",
+  "migration_effects": "unrun",
+  "runtime_savings": "unmeasured"
+}

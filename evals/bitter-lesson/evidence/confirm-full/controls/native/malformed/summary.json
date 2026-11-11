@@ -1,0 +1,34 @@
+{
+  "candidate_hash": "539abea2626ea886ef0d5767f7a85b2326587925db7a5c493f190a9e33541c58",
+  "case_ids": [
+    "approved-a-r1",
+    "approved-b-r2"
+  ],
+  "complete": true,
+  "counts": {
+    "ERROR": 2,
+    "FAIL": 0,
+    "PASS": 0,
+    "UNKNOWN": 0
+  },
+  "executed_count": 2,
+  "identity_hash": "89a96d226443d97b3a269934961259e3fc32de1ab2358841c738e964bc6c829c",
+  "results": [
+    {
+      "checks": {},
+      "error": "malformed candidate JSON schema",
+      "id": "approved-a-r1",
+      "outcome": "ERROR",
+      "suite": "development"
+    },
+    {
+      "checks": {},
+      "error": "malformed candidate JSON schema",
+      "id": "approved-b-r2",
+      "outcome": "ERROR",
+      "suite": "development"
+    }
+  ],
+  "score": 0.0,
+  "selected_count": 2
+}

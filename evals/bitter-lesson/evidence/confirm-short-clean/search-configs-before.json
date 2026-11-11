@@ -1,0 +1,98 @@
+{
+  "combined-minimal-found": {
+    "model": "new-fixture",
+    "retained": [
+      "contract",
+      "duplicate-a"
+    ]
+  },
+  "original-full": {
+    "model": "new-fixture",
+    "retained": [
+      "conflict-a",
+      "conflict-b",
+      "contract",
+      "duplicate-a",
+      "duplicate-b",
+      "example",
+      "legacy-auth",
+      "plan",
+      "plan-detail"
+    ]
+  },
+  "remove-both-duplicates": {
+    "model": "new-fixture",
+    "retained": [
+      "conflict-a",
+      "conflict-b",
+      "contract",
+      "example",
+      "legacy-auth",
+      "plan",
+      "plan-detail"
+    ]
+  },
+  "remove-conflict-a": {
+    "model": "new-fixture",
+    "retained": [
+      "conflict-b",
+      "contract",
+      "duplicate-a",
+      "duplicate-b",
+      "example",
+      "legacy-auth",
+      "plan",
+      "plan-detail"
+    ]
+  },
+  "remove-duplicate-a": {
+    "model": "new-fixture",
+    "retained": [
+      "conflict-a",
+      "conflict-b",
+      "contract",
+      "duplicate-b",
+      "example",
+      "legacy-auth",
+      "plan",
+      "plan-detail"
+    ]
+  },
+  "remove-duplicate-b": {
+    "model": "new-fixture",
+    "retained": [
+      "conflict-a",
+      "conflict-b",
+      "contract",
+      "duplicate-a",
+      "example",
+      "legacy-auth",
+      "plan",
+      "plan-detail"
+    ]
+  },
+  "remove-legacy": {
+    "model": "new-fixture",
+    "retained": [
+      "conflict-a",
+      "conflict-b",
+      "contract",
+      "duplicate-a",
+      "duplicate-b",
+      "example",
+      "plan",
+      "plan-detail"
+    ]
+  },
+  "remove-planning-example": {
+    "model": "new-fixture",
+    "retained": [
+      "conflict-a",
+      "conflict-b",
+      "contract",
+      "duplicate-a",
+      "duplicate-b",
+      "legacy-auth"
+    ]
+  }
+}

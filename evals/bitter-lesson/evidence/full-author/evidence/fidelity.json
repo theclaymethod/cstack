@@ -1,0 +1,35 @@
+{
+  "approved_count": 2,
+  "generated_count": 2,
+  "membership_exact": true,
+  "source_frozen_unchanged": true,
+  "protected_sources_unchanged": true,
+  "rows": [
+    {
+      "card": "A:1",
+      "case": "approved-A-r1",
+      "checks": {
+        "request": true,
+        "state": true,
+        "expected": true,
+        "family": true,
+        "current_revision": true,
+        "suite": true
+      },
+      "representation": "only envelope ID/suite added; source behavior mapped to native fields; ticket ID intentionally unconstrained"
+    },
+    {
+      "card": "B:2",
+      "case": "approved-B-r2",
+      "checks": {
+        "request": true,
+        "state": true,
+        "expected": true,
+        "family": true,
+        "current_revision": true,
+        "suite": true
+      },
+      "representation": "only envelope ID/suite added; source behavior mapped to native fields; ticket ID intentionally unconstrained"
+    }
+  ]
+}

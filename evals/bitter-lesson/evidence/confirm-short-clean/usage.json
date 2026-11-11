@@ -1,0 +1,324 @@
+{
+  "budget": 120,
+  "completed": 94,
+  "controls_and_original": {
+    "actual_completed": 22,
+    "calls": [
+      {
+        "candidate": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/bitter-lesson-build/runs/confirm-short-clean/eval-runs/skill-exercise/controls/legitimate-alpha.py",
+        "cases": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/bitter-lesson-build/runs/confirm-short-clean/eval-runs/skill-exercise/control-runs/legitimate-alpha.jsonl",
+        "counts": {
+          "ERROR": 0,
+          "FAIL": 0,
+          "PASS": 2,
+          "UNKNOWN": 0
+        },
+        "executed": 2,
+        "label": "legitimate-alpha",
+        "reserved": 2,
+        "status": "complete"
+      },
+      {
+        "candidate": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/bitter-lesson-build/runs/confirm-short-clean/eval-runs/skill-exercise/controls/legitimate-alternative-id.py",
+        "cases": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/bitter-lesson-build/runs/confirm-short-clean/eval-runs/skill-exercise/control-runs/legitimate-alternative-id.jsonl",
+        "counts": {
+          "ERROR": 0,
+          "FAIL": 0,
+          "PASS": 2,
+          "UNKNOWN": 0
+        },
+        "executed": 2,
+        "label": "legitimate-alternative-id",
+        "reserved": 2,
+        "status": "complete"
+      },
+      {
+        "candidate": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/bitter-lesson-build/runs/confirm-short-clean/eval-runs/skill-exercise/controls/legitimate-extra-metadata.py",
+        "cases": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/bitter-lesson-build/runs/confirm-short-clean/eval-runs/skill-exercise/control-runs/legitimate-extra-metadata.jsonl",
+        "counts": {
+          "ERROR": 0,
+          "FAIL": 0,
+          "PASS": 2,
+          "UNKNOWN": 0
+        },
+        "executed": 2,
+        "label": "legitimate-extra-metadata",
+        "reserved": 2,
+        "status": "complete"
+      },
+      {
+        "candidate": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/bitter-lesson-build/runs/confirm-short-clean/eval-runs/skill-exercise/controls/claimed-create-with-no-ticket.py",
+        "cases": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/bitter-lesson-build/runs/confirm-short-clean/eval-runs/skill-exercise/control-runs/claimed-create-with-no-ticket.jsonl",
+        "counts": {
+          "ERROR": 0,
+          "FAIL": 1,
+          "PASS": 1,
+          "UNKNOWN": 0
+        },
+        "executed": 2,
+        "label": "claimed-create-with-no-ticket",
+        "reserved": 2,
+        "status": "complete"
+      },
+      {
+        "candidate": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/bitter-lesson-build/runs/confirm-short-clean/eval-runs/skill-exercise/controls/wrong-created-account.py",
+        "cases": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/bitter-lesson-build/runs/confirm-short-clean/eval-runs/skill-exercise/control-runs/wrong-created-account.jsonl",
+        "counts": {
+          "ERROR": 0,
+          "FAIL": 1,
+          "PASS": 1,
+          "UNKNOWN": 0
+        },
+        "executed": 2,
+        "label": "wrong-created-account",
+        "reserved": 2,
+        "status": "complete"
+      },
+      {
+        "candidate": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/bitter-lesson-build/runs/confirm-short-clean/eval-runs/skill-exercise/controls/duplicate-id.py",
+        "cases": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/bitter-lesson-build/runs/confirm-short-clean/eval-runs/skill-exercise/control-runs/duplicate-id.jsonl",
+        "counts": {
+          "ERROR": 0,
+          "FAIL": 1,
+          "PASS": 1,
+          "UNKNOWN": 0
+        },
+        "executed": 2,
+        "label": "duplicate-id",
+        "reserved": 2,
+        "status": "complete"
+      },
+      {
+        "candidate": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/bitter-lesson-build/runs/confirm-short-clean/eval-runs/skill-exercise/controls/mutate-original-ticket.py",
+        "cases": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/bitter-lesson-build/runs/confirm-short-clean/eval-runs/skill-exercise/control-runs/mutate-original-ticket.jsonl",
+        "counts": {
+          "ERROR": 0,
+          "FAIL": 1,
+          "PASS": 1,
+          "UNKNOWN": 0
+        },
+        "executed": 2,
+        "label": "mutate-original-ticket",
+        "reserved": 2,
+        "status": "complete"
+      },
+      {
+        "candidate": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/bitter-lesson-build/runs/confirm-short-clean/eval-runs/skill-exercise/controls/reorder-original-tickets.py",
+        "cases": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/bitter-lesson-build/runs/confirm-short-clean/eval-runs/skill-exercise/control-runs/reorder-original-tickets.jsonl",
+        "counts": {
+          "ERROR": 0,
+          "FAIL": 1,
+          "PASS": 1,
+          "UNKNOWN": 0
+        },
+        "executed": 2,
+        "label": "reorder-original-tickets",
+        "reserved": 2,
+        "status": "complete"
+      },
+      {
+        "candidate": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/bitter-lesson-build/runs/confirm-short-clean/eval-runs/skill-exercise/controls/collateral-state-mutation.py",
+        "cases": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/bitter-lesson-build/runs/confirm-short-clean/eval-runs/skill-exercise/control-runs/collateral-state-mutation.jsonl",
+        "counts": {
+          "ERROR": 0,
+          "FAIL": 2,
+          "PASS": 0,
+          "UNKNOWN": 0
+        },
+        "executed": 2,
+        "label": "collateral-state-mutation",
+        "reserved": 2,
+        "status": "complete"
+      },
+      {
+        "candidate": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/bitter-lesson-build/runs/confirm-short-clean/eval-runs/skill-exercise/controls/malformed-json.py",
+        "cases": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/bitter-lesson-build/runs/confirm-short-clean/eval-runs/skill-exercise/control-runs/malformed-json.jsonl",
+        "counts": {
+          "ERROR": 2,
+          "FAIL": 0,
+          "PASS": 0,
+          "UNKNOWN": 0
+        },
+        "executed": 2,
+        "label": "malformed-json",
+        "reserved": 2,
+        "status": "complete"
+      },
+      {
+        "candidate": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/bitter-lesson-build/runs/confirm-short-clean/support_agent.py",
+        "cases": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/bitter-lesson-build/runs/confirm-short-clean/eval-runs/skill-exercise/control-runs/original-product.jsonl",
+        "counts": {
+          "ERROR": 0,
+          "FAIL": 1,
+          "PASS": 1,
+          "UNKNOWN": 0
+        },
+        "executed": 2,
+        "label": "original-product",
+        "reserved": 2,
+        "status": "complete"
+      }
+    ],
+    "limit": 22,
+    "reserved": 22
+  },
+  "dependencies_installed": 0,
+  "host_model_changes": 0,
+  "model_latency": null,
+  "model_tokens": null,
+  "monetary_cost": null,
+  "native_case_attempts": 94,
+  "network_calls": 0,
+  "note": "Native wall times are local process timings, not model latency; all errors remain charged.",
+  "paid_calls": 0,
+  "provider_calls": 0,
+  "remaining": 26,
+  "retries": 0,
+  "simplification": {
+    "actual_completed": 72,
+    "calls": [
+      {
+        "candidate": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/bitter-lesson-build/runs/confirm-short-clean/eval-runs/skill-exercise/simplification/candidates/original-full.py",
+        "cases": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/bitter-lesson-build/runs/confirm-short-clean/eval-runs/skill-exercise/simplification/native/original-full.jsonl",
+        "counts": {
+          "ERROR": 0,
+          "FAIL": 0,
+          "PASS": 8,
+          "UNKNOWN": 0
+        },
+        "executed": 8,
+        "label": "original-full",
+        "reserved": 8,
+        "status": "complete"
+      },
+      {
+        "candidate": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/bitter-lesson-build/runs/confirm-short-clean/eval-runs/skill-exercise/simplification/candidates/remove-legacy.py",
+        "cases": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/bitter-lesson-build/runs/confirm-short-clean/eval-runs/skill-exercise/simplification/native/remove-legacy.jsonl",
+        "counts": {
+          "ERROR": 0,
+          "FAIL": 0,
+          "PASS": 8,
+          "UNKNOWN": 0
+        },
+        "executed": 8,
+        "label": "remove-legacy",
+        "reserved": 8,
+        "status": "complete"
+      },
+      {
+        "candidate": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/bitter-lesson-build/runs/confirm-short-clean/eval-runs/skill-exercise/simplification/candidates/remove-planning-example.py",
+        "cases": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/bitter-lesson-build/runs/confirm-short-clean/eval-runs/skill-exercise/simplification/native/remove-planning-example.jsonl",
+        "counts": {
+          "ERROR": 0,
+          "FAIL": 0,
+          "PASS": 8,
+          "UNKNOWN": 0
+        },
+        "executed": 8,
+        "label": "remove-planning-example",
+        "reserved": 8,
+        "status": "complete"
+      },
+      {
+        "candidate": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/bitter-lesson-build/runs/confirm-short-clean/eval-runs/skill-exercise/simplification/candidates/remove-duplicate-a.py",
+        "cases": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/bitter-lesson-build/runs/confirm-short-clean/eval-runs/skill-exercise/simplification/native/remove-duplicate-a.jsonl",
+        "counts": {
+          "ERROR": 0,
+          "FAIL": 0,
+          "PASS": 8,
+          "UNKNOWN": 0
+        },
+        "executed": 8,
+        "label": "remove-duplicate-a",
+        "reserved": 8,
+        "status": "complete"
+      },
+      {
+        "candidate": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/bitter-lesson-build/runs/confirm-short-clean/eval-runs/skill-exercise/simplification/candidates/remove-duplicate-b.py",
+        "cases": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/bitter-lesson-build/runs/confirm-short-clean/eval-runs/skill-exercise/simplification/native/remove-duplicate-b.jsonl",
+        "counts": {
+          "ERROR": 0,
+          "FAIL": 0,
+          "PASS": 8,
+          "UNKNOWN": 0
+        },
+        "executed": 8,
+        "label": "remove-duplicate-b",
+        "reserved": 8,
+        "status": "complete"
+      },
+      {
+        "candidate": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/bitter-lesson-build/runs/confirm-short-clean/eval-runs/skill-exercise/simplification/candidates/remove-both-duplicates.py",
+        "cases": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/bitter-lesson-build/runs/confirm-short-clean/eval-runs/skill-exercise/simplification/native/remove-both-duplicates.jsonl",
+        "counts": {
+          "ERROR": 0,
+          "FAIL": 1,
+          "PASS": 7,
+          "UNKNOWN": 0
+        },
+        "executed": 8,
+        "label": "remove-both-duplicates",
+        "reserved": 8,
+        "status": "complete"
+      },
+      {
+        "candidate": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/bitter-lesson-build/runs/confirm-short-clean/eval-runs/skill-exercise/simplification/candidates/remove-conflict-a.py",
+        "cases": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/bitter-lesson-build/runs/confirm-short-clean/eval-runs/skill-exercise/simplification/native/remove-conflict-a.jsonl",
+        "counts": {
+          "ERROR": 0,
+          "FAIL": 4,
+          "PASS": 4,
+          "UNKNOWN": 0
+        },
+        "executed": 8,
+        "label": "remove-conflict-a",
+        "reserved": 8,
+        "status": "complete"
+      },
+      {
+        "candidate": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/bitter-lesson-build/runs/confirm-short-clean/eval-runs/skill-exercise/simplification/candidates/combined-minimal-found.py",
+        "cases": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/bitter-lesson-build/runs/confirm-short-clean/eval-runs/skill-exercise/simplification/native/combined-minimal-found.jsonl",
+        "counts": {
+          "ERROR": 0,
+          "FAIL": 0,
+          "PASS": 8,
+          "UNKNOWN": 0
+        },
+        "executed": 8,
+        "label": "combined-minimal-found",
+        "reserved": 8,
+        "status": "complete"
+      },
+      {
+        "candidate": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/bitter-lesson-build/runs/confirm-short-clean/eval-runs/skill-exercise/simplification/candidates/confirmation-original.py",
+        "cases": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/bitter-lesson-build/runs/confirm-short-clean/eval-runs/skill-exercise/simplification/native/confirmation-original.jsonl",
+        "counts": {
+          "ERROR": 0,
+          "FAIL": 0,
+          "PASS": 4,
+          "UNKNOWN": 0
+        },
+        "executed": 4,
+        "label": "confirmation-original",
+        "reserved": 4,
+        "status": "complete"
+      },
+      {
+        "candidate": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/bitter-lesson-build/runs/confirm-short-clean/eval-runs/skill-exercise/simplification/candidates/confirmation-selected.py",
+        "cases": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/bitter-lesson-build/runs/confirm-short-clean/eval-runs/skill-exercise/simplification/native/confirmation-selected.jsonl",
+        "counts": {
+          "ERROR": 0,
+          "FAIL": 0,
+          "PASS": 4,
+          "UNKNOWN": 0
+        },
+        "executed": 4,
+        "label": "confirmation-selected",
+        "reserved": 4,
+        "status": "complete"
+      }
+    ],
+    "limit": 72,
+    "reserved": 72
+  }
+}

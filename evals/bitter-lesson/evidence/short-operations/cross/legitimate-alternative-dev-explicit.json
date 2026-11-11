@@ -1,0 +1,15 @@
+{
+  "account": "acct-a",
+  "action": "create_ticket",
+  "note": "Your requested VPN issue has been logged.",
+  "state": {
+    "tickets": [
+      {
+        "account": "acct-a",
+        "id": "alternative-1",
+        "issue": "vpn",
+        "status": "open"
+      }
+    ]
+  }
+}

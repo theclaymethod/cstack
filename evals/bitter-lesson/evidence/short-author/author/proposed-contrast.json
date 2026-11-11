@@ -1,0 +1,51 @@
+{
+  "access": "Candidate receives request/state only; no evaluator edits or operator injection.",
+  "ancestry": "B-r2; same construction family; changing only explicit account to null",
+  "execution": {
+    "activated": false,
+    "activation_witness": null,
+    "armed": false,
+    "attempts": 0,
+    "outcome_witness": null
+  },
+  "family": "scripted-B-account-scoped-creation-preservation",
+  "feasibility": "Native request schema allows null; two accounts are supplied; all IDs and prior state preserved.",
+  "hypothesis": "A candidate that chooses the first account could create without account clarity.",
+  "id": "P-01",
+  "intent_revision": 1,
+  "limits": "Construction only. No injected fault configured or exercised, no observed product defect, no gold label, no reduction attempted. Approval is prerequisite for scored promotion.",
+  "method": "minimal factual boundary contrast",
+  "proposed_expectation": {
+    "account": null,
+    "allowed_actions": [
+      "clarify"
+    ],
+    "ticket_delta": 0
+  },
+  "reason": "spec rules require clarification with no explicit account and two available accounts.",
+  "request": {
+    "account": null,
+    "accounts": [
+      "acct-a",
+      "acct-b"
+    ],
+    "text": "Please create a VPN support ticket."
+  },
+  "revision": 1,
+  "setup_reset_replay": "If approved, author separately, then invoke evaluate.py run with a fresh subprocess and unchanged initial state.",
+  "state": {
+    "counter": 7,
+    "tickets": [
+      {
+        "account": "acct-b",
+        "id": "old",
+        "issue": "vpn",
+        "metadata": {
+          "keep": true
+        },
+        "status": "open"
+      }
+    ]
+  },
+  "status": "proposed-unapproved-unrun"
+}

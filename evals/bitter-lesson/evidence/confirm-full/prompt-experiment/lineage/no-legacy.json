@@ -1,0 +1,22 @@
+{
+  "hypothesis": "Remove legacy authorization recipe while preserving the complete contract",
+  "label": "no-legacy",
+  "parent": "full",
+  "removed_from_full": [
+    "legacy-auth"
+  ],
+  "removed_from_parent": [
+    "legacy-auth"
+  ],
+  "retained": [
+    "conflict-a",
+    "conflict-b",
+    "contract",
+    "duplicate-a",
+    "duplicate-b",
+    "example",
+    "plan",
+    "plan-detail"
+  ],
+  "scope": "Cumulative reduction relative to actual parent; full remains quality anchor"
+}

@@ -1,0 +1,14 @@
+{
+  "excluded_added": [
+    "excluded-agent-3",
+    "excluded-agent-5"
+  ],
+  "reviews_added": [
+    "howto-scope-amendment-v1",
+    "account-scope-rule-v1"
+  ],
+  "rubric_added": [
+    "explicit-ticket-and-account-duplicate",
+    "unrelated-account-no-block"
+  ]
+}

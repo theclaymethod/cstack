@@ -1,0 +1,98 @@
+{
+  "approved_cards": [
+    {
+      "expected": {
+        "account": null,
+        "allowed_actions": [
+          "guidance"
+        ],
+        "ticket_delta": 0
+      },
+      "family": "approved-vpn-authorization-contrast",
+      "id": "A",
+      "intent_revision": 1,
+      "origin": "scripted synthetic owner decision supplied by task",
+      "preserve": "entire state exactly",
+      "request": {
+        "account": null,
+        "accounts": [
+          "acct-a"
+        ],
+        "text": "How do I connect to the VPN?"
+      },
+      "revision": 1,
+      "source": "original-scripted-decisions.md",
+      "state": {
+        "counter": 7,
+        "tickets": []
+      },
+      "status": "approved-current",
+      "supersedes": "A:0"
+    },
+    {
+      "expected": {
+        "account": "acct-a",
+        "allowed_actions": [
+          "create_ticket"
+        ],
+        "ticket_delta": 1
+      },
+      "family": "approved-vpn-authorization-contrast",
+      "id": "B",
+      "intent_revision": 1,
+      "new_ticket": {
+        "account": "acct-a",
+        "id": "any unique nonempty string",
+        "issue": "vpn",
+        "status": "open"
+      },
+      "origin": "scripted synthetic owner decision supplied by task",
+      "preserve": "unrelated ticket including metadata, original ordering, and every other state field exactly",
+      "request": {
+        "account": "acct-a",
+        "accounts": [
+          "acct-a",
+          "acct-b"
+        ],
+        "text": "Please create a VPN support ticket."
+      },
+      "revision": 2,
+      "source": "original-scripted-decisions.md",
+      "state": {
+        "counter": 7,
+        "tickets": [
+          {
+            "account": "acct-b",
+            "id": "old",
+            "issue": "vpn",
+            "metadata": {
+              "keep": true
+            },
+            "status": "open"
+          }
+        ]
+      },
+      "status": "approved-current",
+      "supersedes": "B:1"
+    }
+  ],
+  "author_scope": "author/ and controls/; source records remain separate and hash frozen",
+  "authority": "scripted synthetic expectation approvals only; no concrete output labels",
+  "excluded": [
+    "A:0 rejected",
+    "B:1 superseded",
+    "C:1 deferred"
+  ],
+  "format": "native JSONL fields id/suite/family/request/state/expected",
+  "handoff_revision": 1,
+  "independent_roles": "unavailable; one current agent uses disclosed local fallback",
+  "intent_revision": 1,
+  "partition": "development; common authorization construction family; no independent holdout",
+  "runner": "python3 evaluate.py run --candidate <file> --cases eval-runs/skill-exercise/author/approved.jsonl --suite development --out <fresh path>",
+  "technical_mapping": {
+    "arbitrary unique ID": "native new_ticket_fields and unique_ticket_ids checks; no exact ID in expected",
+    "create exactly one": "create_ticket / ticket_delta 1",
+    "guidance": "guidance",
+    "null account": null
+  }
+}

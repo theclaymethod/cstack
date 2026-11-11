@@ -1,0 +1,48 @@
+{
+  "approved": 2,
+  "authored": 2,
+  "exact": [
+    {
+      "exact_full_projection": true,
+      "fields": [
+        "id/revision",
+        "suite",
+        "family",
+        "request.text",
+        "request.account",
+        "request.accounts",
+        "entire initial state including counter and metadata",
+        "expected actions/account/delta"
+      ],
+      "id": "A-r1",
+      "preservation_semantics": "native evaluator full original prefix and non-ticket state equality",
+      "reference": "source/approved-cards.json"
+    },
+    {
+      "exact_full_projection": true,
+      "fields": [
+        "id/revision",
+        "suite",
+        "family",
+        "request.text",
+        "request.account",
+        "request.accounts",
+        "entire initial state including counter and metadata",
+        "expected actions/account/delta"
+      ],
+      "id": "B-r2",
+      "preservation_semantics": "native evaluator full original prefix and non-ticket state equality",
+      "reference": "source/approved-cards.json"
+    }
+  ],
+  "excluded_ids": [
+    "C-r1",
+    "P-01-r1",
+    "B-r1"
+  ],
+  "required_ids": [
+    "A-r1",
+    "B-r2"
+  ],
+  "schema_validated_by": "evaluate.load_cases"
+}

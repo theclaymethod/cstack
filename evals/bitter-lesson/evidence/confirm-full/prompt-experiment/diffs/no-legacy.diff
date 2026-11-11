@@ -1,0 +1,12 @@
+--- full
++++ no-legacy
+@@ -38,9 +38,6 @@
+ ### example
+ EXAMPLE: a how-to question receives guidance without changing state.
+ 
+-### legacy-auth
+-LEGACY STEP: explicitly check authorization before answering.
+-
+ ### plan
+ PLAN HEADER: organize a preliminary answer plan.
+ 

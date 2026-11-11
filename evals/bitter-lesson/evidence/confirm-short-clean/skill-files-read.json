@@ -1,0 +1,90 @@
+[
+  {
+    "path": ".agents/skills/bootstrap/SKILL.md",
+    "sha256": "00fe735356bda1f201b35d7655d0428db9c58ece2184b690cf549ceeb65a4ff5"
+  },
+  {
+    "path": ".agents/skills/create-eval/SKILL.md",
+    "sha256": "d728d3b6d422c60b358d0af50a57b788b0506b3c35f7ab8ba7b10815ddbfaf58"
+  },
+  {
+    "path": ".agents/skills/run-eval/SKILL.md",
+    "sha256": "64c7d8ac0e14fa074095be3d514e20d33cca380408664b63f79d82405da704ae"
+  },
+  {
+    "path": ".agents/skills/adversarial-cases/SKILL.md",
+    "sha256": "5556c2eda1659e4960d9d8b1d8af807909b123962445d23db3666b4250126e46"
+  },
+  {
+    "path": ".agents/skills/ablation/SKILL.md",
+    "sha256": "8fb5ca319b71b907c99c8bbd4e79526a2715d19146e772a2e954659b18cc5090"
+  },
+  {
+    "path": ".agents/skills/bitter-lesson/SKILL.md",
+    "sha256": "22c7911910e3fbb51b14f7deee3ae3b5862466acafd99ec6732c3a63c04a6e4f"
+  },
+  {
+    "path": ".agents/skills/calibrate-judge/SKILL.md",
+    "sha256": "237ac1d5f09605b2ad4890ea9aa2b9f17e035d94c8c194627db12e6aed1d8960"
+  },
+  {
+    "path": ".agents/skills/bootstrap/references/scenarios.md",
+    "sha256": "fecd4d6c67bede4ca448dbcd718b328b889c59e1746f0bd52303439a0471bf02"
+  },
+  {
+    "path": ".agents/skills/bootstrap/references/labeling.md",
+    "sha256": "fb795f316d718f0ccc9109f3f84f44545b7c3c97cf6156cc982173037487c503"
+  },
+  {
+    "path": ".agents/skills/create-eval/references/formats.md",
+    "sha256": "9eddaa75c1ac7e0e403dd7f7eea2a98942092911f8a0b45e7030e1b88e44cc6b"
+  },
+  {
+    "path": ".agents/skills/create-eval/references/judges.md",
+    "sha256": "206d0e30a90d380b4ca1fd14728f14e7ba67494bd21cc0ff38fa15b49af2803e"
+  },
+  {
+    "path": ".agents/skills/run-eval/references/package.md",
+    "sha256": "d076dfc9e6dc218887bde32c3939b4edaba89d097539d5a7862bf7caff05d042"
+  },
+  {
+    "path": ".agents/skills/adversarial-cases/references/case-contract.md",
+    "sha256": "7943a09952eb0df5ef1a50e1c8d22ffe496b732a5cd9d33fbe04efaf7f4f60af"
+  },
+  {
+    "path": ".agents/skills/adversarial-cases/references/synthetic-methods.md",
+    "sha256": "f207a283c8b487223691da3cb9a9187054711cc9460d743791ac901155e8e921"
+  },
+  {
+    "path": ".agents/skills/adversarial-cases/references/failure-methods.md",
+    "sha256": "2f8e1e2fbf133c8fc9bac9aa24139e6e07e10a81287d1b3632d1b100bd4f91e7"
+  },
+  {
+    "path": ".agents/skills/adversarial-cases/references/injection.md",
+    "sha256": "d8ae58d555513058864e6f47fcd2df74fbfe9d13e662bf04c3416601bccfd2df"
+  },
+  {
+    "path": ".agents/skills/ablation/references/removal.md",
+    "sha256": "f48ceb1889dee82a4af09d35a4cc62f07e1c3632b38514c9a158b5818dc2d955"
+  },
+  {
+    "path": ".agents/skills/ablation/references/quality.md",
+    "sha256": "a429eb02278ab27a3d13f29713a71caa6573c5e2d5472984b1c39b156f988bf9"
+  },
+  {
+    "path": ".agents/skills/bitter-lesson/references/migration.md",
+    "sha256": "1bd87521d907a46d73284630696dc9378243957f00233a36f64842bdac17c343"
+  },
+  {
+    "path": ".agents/skills/calibrate-judge/references/measurement.md",
+    "sha256": "f09b74ad7154ce28d73f5bcd7a5c0880d155cd536cc663590628ee876f87a9be"
+  },
+  {
+    "path": ".agents/skills/calibrate-judge/references/protocol.md",
+    "sha256": "d1c3b0ccc7621dc169105d1b354de829c2d7bb10975952fac090973ff1699765"
+  },
+  {
+    "path": ".agents/skills/calibrate-judge/references/backends.md",
+    "sha256": "231682e3bdd855a86f435554778c8ea9fd0c2c8b48bf3d09e2cee0f82836da0a"
+  }
+]

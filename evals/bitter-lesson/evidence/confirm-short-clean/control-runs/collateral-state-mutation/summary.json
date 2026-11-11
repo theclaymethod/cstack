@@ -1,0 +1,54 @@
+{
+  "candidate_hash": "3c393f0105df8964d9d49c8fe6b9794de60d72cc0d0603705374d1e587d77853",
+  "case_ids": [
+    "A-r1",
+    "B-r2"
+  ],
+  "complete": true,
+  "counts": {
+    "ERROR": 0,
+    "FAIL": 2,
+    "PASS": 0,
+    "UNKNOWN": 0
+  },
+  "executed_count": 2,
+  "identity_hash": "89a96d226443d97b3a269934961259e3fc32de1ab2358841c738e964bc6c829c",
+  "results": [
+    {
+      "checks": {
+        "action_matches_mutation": true,
+        "allowed_action": true,
+        "new_ticket_fields": true,
+        "new_ticket_membership": true,
+        "preserved_other_state": false,
+        "preserved_tickets": true,
+        "requested_account": true,
+        "ticket_delta": true,
+        "unique_ticket_ids": true
+      },
+      "error": null,
+      "id": "A-r1",
+      "outcome": "FAIL",
+      "suite": "development"
+    },
+    {
+      "checks": {
+        "action_matches_mutation": true,
+        "allowed_action": true,
+        "new_ticket_fields": true,
+        "new_ticket_membership": true,
+        "preserved_other_state": false,
+        "preserved_tickets": true,
+        "requested_account": true,
+        "ticket_delta": true,
+        "unique_ticket_ids": true
+      },
+      "error": null,
+      "id": "B-r2",
+      "outcome": "FAIL",
+      "suite": "development"
+    }
+  ],
+  "score": 0.0,
+  "selected_count": 2
+}

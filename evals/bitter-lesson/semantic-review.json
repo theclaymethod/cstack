@@ -1,0 +1,486 @@
+{
+  "full-capture": {
+    "status": "pass",
+    "checks": [
+      {
+        "requirement": "Actually executed native baseline and separately regenerated output are recoverable",
+        "status": "pass",
+        "evidence": [
+          "runs/full-capture/eval-runs/skill-exercise/REPORT.md",
+          "verified/full-capture.json"
+        ]
+      },
+      {
+        "requirement": "Original reviewed output/version remains distinct from regeneration",
+        "status": "pass",
+        "evidence": [
+          "runs/full-capture/eval-runs/skill-exercise/REPORT.md",
+          "verified/full-capture.json"
+        ]
+      },
+      {
+        "requirement": "Scripted source authority and source-to-output association gaps remain explicit",
+        "status": "pass",
+        "evidence": [
+          "runs/full-capture/eval-runs/skill-exercise/REPORT.md",
+          "verified/full-capture.json"
+        ]
+      },
+      {
+        "requirement": "Supported negative and criterion preserved without inventing a canonical replacement",
+        "status": "pass",
+        "evidence": [
+          "runs/full-capture/eval-runs/skill-exercise/REPORT.md",
+          "verified/full-capture.json"
+        ]
+      },
+      {
+        "requirement": "Urgency remains unresolved and assistant generalization remains unendorsed",
+        "status": "pass",
+        "evidence": [
+          "runs/full-capture/eval-runs/skill-exercise/REPORT.md",
+          "verified/full-capture.json"
+        ]
+      },
+      {
+        "requirement": "Prior annotation preserved in capture and both merge checkpoints",
+        "status": "pass",
+        "evidence": [
+          "runs/full-capture/eval-runs/skill-exercise/REPORT.md",
+          "verified/full-capture.json"
+        ]
+      },
+      {
+        "requirement": "Repeated merge adds no duplicate judgments and keeps amendment history",
+        "status": "pass",
+        "evidence": [
+          "runs/full-capture/eval-runs/skill-exercise/REPORT.md",
+          "verified/full-capture.json"
+        ]
+      },
+      {
+        "requirement": "Capture mode stopped and retrospective extraction does not activate ongoing capture",
+        "status": "pass",
+        "evidence": [
+          "runs/full-capture/eval-runs/skill-exercise/REPORT.md",
+          "verified/full-capture.json"
+        ]
+      }
+    ],
+    "review": "Coordinator semantic review of raw source/output and native validation; not independent human gold"
+  },
+  "full-author": {
+    "status": "pass",
+    "checks": [
+      {
+        "requirement": "Approved current revisions and rejected/corrected history are recoverable",
+        "status": "pass",
+        "evidence": [
+          "runs/full-author/eval-runs/skill-exercise/REPORT.md",
+          "verified/full-author.json"
+        ]
+      },
+      {
+        "requirement": "Only approved cards enter the authored scored package; deferred urgency stays pending",
+        "status": "pass",
+        "evidence": [
+          "runs/full-author/eval-runs/skill-exercise/REPORT.md",
+          "verified/full-author.json"
+        ]
+      },
+      {
+        "requirement": "Authored inputs and full initial state match approved cards exactly",
+        "status": "pass",
+        "evidence": [
+          "runs/full-author/eval-runs/skill-exercise/REPORT.md",
+          "verified/full-author.json"
+        ]
+      },
+      {
+        "requirement": "Expected outcomes preserve account scope, state preservation and valid alternatives",
+        "status": "pass",
+        "evidence": [
+          "runs/full-author/eval-runs/skill-exercise/REPORT.md",
+          "verified/full-author.json"
+        ]
+      },
+      {
+        "requirement": "Native grader actually executes legitimate, alternative-ID and false-claim controls",
+        "status": "pass",
+        "evidence": [
+          "runs/full-author/eval-runs/skill-exercise/REPORT.md",
+          "verified/full-author.json"
+        ]
+      },
+      {
+        "requirement": "Legitimate and alternate controls pass; false creation claim loses undeserved credit",
+        "status": "pass",
+        "evidence": [
+          "runs/full-author/eval-runs/skill-exercise/REPORT.md",
+          "verified/full-author.json"
+        ]
+      },
+      {
+        "requirement": "Additional contrast remains a proposal with honest activation/execution status",
+        "status": "pass",
+        "evidence": [
+          "runs/full-author/eval-runs/skill-exercise/REPORT.md",
+          "verified/full-author.json"
+        ]
+      },
+      {
+        "requirement": "Expectation authority, missing independent roles, and calibration limits remain explicit",
+        "status": "pass",
+        "evidence": [
+          "runs/full-author/eval-runs/skill-exercise/REPORT.md",
+          "verified/full-author.json"
+        ]
+      }
+    ],
+    "review": "Coordinator semantic review of raw source/output and native validation; not independent human gold"
+  },
+  "full-operations": {
+    "status": "pass",
+    "checks": [
+      {
+        "requirement": "Run Eval retains complete native original/conforming development results and errors",
+        "status": "pass",
+        "evidence": [
+          "runs/full-operations/eval-runs/skill-exercise/REPORT.md",
+          "verified/full-operations.json"
+        ]
+      },
+      {
+        "requirement": "Task scores are separate from unavailable human-label agreement",
+        "status": "pass",
+        "evidence": [
+          "runs/full-operations/eval-runs/skill-exercise/REPORT.md",
+          "verified/full-operations.json"
+        ]
+      },
+      {
+        "requirement": "Native Hill Climb rejects observed pass regressions and selects only confirmed admissible output",
+        "status": "pass",
+        "evidence": [
+          "runs/full-operations/eval-runs/skill-exercise/REPORT.md",
+          "verified/full-operations.json"
+        ]
+      },
+      {
+        "requirement": "Campaign budget/reserve and native evidence verify without evaluator/source changes",
+        "status": "pass",
+        "evidence": [
+          "runs/full-operations/eval-runs/skill-exercise/REPORT.md",
+          "verified/full-operations.json"
+        ]
+      },
+      {
+        "requirement": "Judge experiment preserves baseline/selected configuration and prediction/gold roles",
+        "status": "pass",
+        "evidence": [
+          "runs/full-operations/eval-runs/skill-exercise/REPORT.md",
+          "verified/full-operations.json"
+        ]
+      },
+      {
+        "requirement": "Judge report distinguishes kappa/error/coverage, probability semantics and undefined uncertainty",
+        "status": "pass",
+        "evidence": [
+          "runs/full-operations/eval-runs/skill-exercise/REPORT.md",
+          "verified/full-operations.json"
+        ]
+      },
+      {
+        "requirement": "Judge results remain synthetic with live calibration/release policy unestablished",
+        "status": "pass",
+        "evidence": [
+          "runs/full-operations/eval-runs/skill-exercise/REPORT.md",
+          "verified/full-operations.json"
+        ]
+      },
+      {
+        "requirement": "Ablation records actual combined deletion behavior and original-relative quality",
+        "status": "pass",
+        "evidence": [
+          "runs/full-operations/eval-runs/skill-exercise/REPORT.md",
+          "verified/full-operations.json"
+        ]
+      },
+      {
+        "requirement": "Migration uses the same simplified design and compares against original plus new-existing baseline",
+        "status": "pass",
+        "evidence": [
+          "runs/full-operations/eval-runs/skill-exercise/REPORT.md",
+          "verified/full-operations.json"
+        ]
+      },
+      {
+        "requirement": "Burden measurements are exact; model cost/latency, global minimality and production capability unclaimed",
+        "status": "pass",
+        "evidence": [
+          "runs/full-operations/eval-runs/skill-exercise/REPORT.md",
+          "verified/full-operations.json"
+        ]
+      },
+      {
+        "requirement": "Cross-Examine replays the proxy discrepancy plus a legitimate alternative through native state checks",
+        "status": "pass",
+        "evidence": [
+          "runs/full-operations/eval-runs/skill-exercise/REPORT.md",
+          "verified/full-operations.json"
+        ]
+      },
+      {
+        "requirement": "Missing independent review is unreviewed; formal finding acceptance/deployment not fabricated",
+        "status": "pass",
+        "evidence": [
+          "runs/full-operations/eval-runs/skill-exercise/REPORT.md",
+          "verified/full-operations.json"
+        ]
+      }
+    ],
+    "review": "Coordinator semantic review of raw source/output and native validation; not independent human gold"
+  },
+  "short-capture": {
+    "status": "pass",
+    "checks": [
+      {
+        "requirement": "Actually executed native baseline and separately regenerated output are recoverable",
+        "status": "pass",
+        "evidence": [
+          "runs/short-capture/eval-runs/skill-exercise/REPORT.md",
+          "verified/short-capture.json"
+        ]
+      },
+      {
+        "requirement": "Original reviewed output/version remains distinct from regeneration",
+        "status": "pass",
+        "evidence": [
+          "runs/short-capture/eval-runs/skill-exercise/REPORT.md",
+          "verified/short-capture.json"
+        ]
+      },
+      {
+        "requirement": "Scripted source authority and source-to-output association gaps remain explicit",
+        "status": "pass",
+        "evidence": [
+          "runs/short-capture/eval-runs/skill-exercise/REPORT.md",
+          "verified/short-capture.json"
+        ]
+      },
+      {
+        "requirement": "Supported negative and criterion preserved without inventing a canonical replacement",
+        "status": "pass",
+        "evidence": [
+          "runs/short-capture/eval-runs/skill-exercise/REPORT.md",
+          "verified/short-capture.json"
+        ]
+      },
+      {
+        "requirement": "Urgency remains unresolved and assistant generalization remains unendorsed",
+        "status": "pass",
+        "evidence": [
+          "runs/short-capture/eval-runs/skill-exercise/REPORT.md",
+          "verified/short-capture.json"
+        ]
+      },
+      {
+        "requirement": "Prior annotation preserved in capture and both merge checkpoints",
+        "status": "pass",
+        "evidence": [
+          "runs/short-capture/eval-runs/skill-exercise/REPORT.md",
+          "verified/short-capture.json"
+        ]
+      },
+      {
+        "requirement": "Repeated merge adds no duplicate judgments and keeps amendment history",
+        "status": "pass",
+        "evidence": [
+          "runs/short-capture/eval-runs/skill-exercise/REPORT.md",
+          "verified/short-capture.json"
+        ]
+      },
+      {
+        "requirement": "Capture mode stopped and retrospective extraction does not activate ongoing capture",
+        "status": "pass",
+        "evidence": [
+          "runs/short-capture/eval-runs/skill-exercise/REPORT.md",
+          "verified/short-capture.json"
+        ]
+      }
+    ],
+    "review": "Coordinator semantic review of raw source/output and native validation; not independent human gold"
+  },
+  "short-author": {
+    "status": "pass",
+    "checks": [
+      {
+        "requirement": "Approved current revisions and rejected/corrected history are recoverable",
+        "status": "pass",
+        "evidence": [
+          "runs/short-author/eval-runs/skill-exercise/REPORT.md",
+          "verified/short-author.json"
+        ]
+      },
+      {
+        "requirement": "Only approved cards enter the authored scored package; deferred urgency stays pending",
+        "status": "pass",
+        "evidence": [
+          "runs/short-author/eval-runs/skill-exercise/REPORT.md",
+          "verified/short-author.json"
+        ]
+      },
+      {
+        "requirement": "Authored inputs and full initial state match approved cards exactly",
+        "status": "pass",
+        "evidence": [
+          "runs/short-author/eval-runs/skill-exercise/REPORT.md",
+          "verified/short-author.json"
+        ]
+      },
+      {
+        "requirement": "Expected outcomes preserve account scope, state preservation and valid alternatives",
+        "status": "pass",
+        "evidence": [
+          "runs/short-author/eval-runs/skill-exercise/REPORT.md",
+          "verified/short-author.json"
+        ]
+      },
+      {
+        "requirement": "Native grader actually executes legitimate, alternative-ID and false-claim controls",
+        "status": "pass",
+        "evidence": [
+          "runs/short-author/eval-runs/skill-exercise/REPORT.md",
+          "verified/short-author.json"
+        ]
+      },
+      {
+        "requirement": "Legitimate and alternate controls pass; false creation claim loses undeserved credit",
+        "status": "pass",
+        "evidence": [
+          "runs/short-author/eval-runs/skill-exercise/REPORT.md",
+          "verified/short-author.json"
+        ]
+      },
+      {
+        "requirement": "Additional contrast remains a proposal with honest activation/execution status",
+        "status": "pass",
+        "evidence": [
+          "runs/short-author/eval-runs/skill-exercise/REPORT.md",
+          "verified/short-author.json"
+        ]
+      },
+      {
+        "requirement": "Expectation authority, missing independent roles, and calibration limits remain explicit",
+        "status": "pass",
+        "evidence": [
+          "runs/short-author/eval-runs/skill-exercise/REPORT.md",
+          "verified/short-author.json"
+        ]
+      }
+    ],
+    "review": "Coordinator semantic review of raw source/output and native validation; not independent human gold"
+  },
+  "short-operations": {
+    "status": "pass",
+    "checks": [
+      {
+        "requirement": "Run Eval retains complete native original/conforming development results and errors",
+        "status": "pass",
+        "evidence": [
+          "runs/short-operations/eval-runs/skill-exercise/REPORT.md",
+          "verified/short-operations.json"
+        ]
+      },
+      {
+        "requirement": "Task scores are separate from unavailable human-label agreement",
+        "status": "pass",
+        "evidence": [
+          "runs/short-operations/eval-runs/skill-exercise/REPORT.md",
+          "verified/short-operations.json"
+        ]
+      },
+      {
+        "requirement": "Native Hill Climb rejects observed pass regressions and selects only confirmed admissible output",
+        "status": "pass",
+        "evidence": [
+          "runs/short-operations/eval-runs/skill-exercise/REPORT.md",
+          "verified/short-operations.json"
+        ]
+      },
+      {
+        "requirement": "Campaign budget/reserve and native evidence verify without evaluator/source changes",
+        "status": "pass",
+        "evidence": [
+          "runs/short-operations/eval-runs/skill-exercise/REPORT.md",
+          "verified/short-operations.json"
+        ]
+      },
+      {
+        "requirement": "Judge experiment preserves baseline/selected configuration and prediction/gold roles",
+        "status": "pass",
+        "evidence": [
+          "runs/short-operations/eval-runs/skill-exercise/REPORT.md",
+          "verified/short-operations.json"
+        ]
+      },
+      {
+        "requirement": "Judge report distinguishes kappa/error/coverage, probability semantics and undefined uncertainty",
+        "status": "pass",
+        "evidence": [
+          "runs/short-operations/eval-runs/skill-exercise/REPORT.md",
+          "verified/short-operations.json"
+        ]
+      },
+      {
+        "requirement": "Judge results remain synthetic with live calibration/release policy unestablished",
+        "status": "pass",
+        "evidence": [
+          "runs/short-operations/eval-runs/skill-exercise/REPORT.md",
+          "verified/short-operations.json"
+        ]
+      },
+      {
+        "requirement": "Ablation records actual combined deletion behavior and original-relative quality",
+        "status": "pass",
+        "evidence": [
+          "runs/short-operations/eval-runs/skill-exercise/REPORT.md",
+          "verified/short-operations.json"
+        ]
+      },
+      {
+        "requirement": "Migration uses the same simplified design and compares against original plus new-existing baseline",
+        "status": "pass",
+        "evidence": [
+          "runs/short-operations/eval-runs/skill-exercise/REPORT.md",
+          "verified/short-operations.json"
+        ]
+      },
+      {
+        "requirement": "Burden measurements are exact; model cost/latency, global minimality and production capability unclaimed",
+        "status": "pass",
+        "evidence": [
+          "runs/short-operations/eval-runs/skill-exercise/REPORT.md",
+          "verified/short-operations.json"
+        ]
+      },
+      {
+        "requirement": "Cross-Examine replays the proxy discrepancy plus a legitimate alternative through native state checks",
+        "status": "pass",
+        "evidence": [
+          "runs/short-operations/eval-runs/skill-exercise/REPORT.md",
+          "verified/short-operations.json"
+        ]
+      },
+      {
+        "requirement": "Missing independent review is unreviewed; formal finding acceptance/deployment not fabricated",
+        "status": "pass",
+        "evidence": [
+          "runs/short-operations/eval-runs/skill-exercise/REPORT.md",
+          "verified/short-operations.json"
+        ]
+      }
+    ],
+    "review": "Coordinator semantic review of raw source/output and native validation; not independent human gold"
+  }
+}

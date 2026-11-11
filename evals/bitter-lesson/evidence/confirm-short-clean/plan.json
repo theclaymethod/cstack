@@ -1,0 +1,16 @@
+{
+  "burden": "Rendered prompt UTF-8 bytes; retain protected contract.",
+  "confirmation_reserve": 8,
+  "exposure": "Native cases remain readable; no independence/blindness or population inference.",
+  "maximum_planned_attempts": 94,
+  "models": [
+    "new-fixture only"
+  ],
+  "native_controls": 22,
+  "quality": "Adapter finite-case policy: zero loss and no observed original-baseline PASS regressions, no ERROR/UNKNOWN. Fixture-only selection; owner supplied no population/release threshold.",
+  "repeats": 1,
+  "search": "One baseline plus seven declared candidates on eight development cases; then full and selected on four confirmation cases.",
+  "simplification_limit": 72,
+  "stop": "Stop after declared candidate list and frozen confirmation; no further fitting.",
+  "total_limit": 120
+}

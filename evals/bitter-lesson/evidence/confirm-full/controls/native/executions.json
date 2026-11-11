@@ -1,0 +1,119 @@
+{
+  "actual_completed": 16,
+  "calls": [
+    {
+      "candidate": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/bitter-lesson-build/runs/confirm-full/eval-runs/skill-exercise/controls/legitimate.py",
+      "cases": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/bitter-lesson-build/runs/confirm-full/eval-runs/skill-exercise/controls/native/legitimate.jsonl",
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 2,
+        "UNKNOWN": 0
+      },
+      "executed": 2,
+      "label": "legitimate",
+      "reserved": 2,
+      "status": "complete"
+    },
+    {
+      "candidate": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/bitter-lesson-build/runs/confirm-full/eval-runs/skill-exercise/controls/alternative-id.py",
+      "cases": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/bitter-lesson-build/runs/confirm-full/eval-runs/skill-exercise/controls/native/alternative-id.jsonl",
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 2,
+        "UNKNOWN": 0
+      },
+      "executed": 2,
+      "label": "alternative-id",
+      "reserved": 2,
+      "status": "complete"
+    },
+    {
+      "candidate": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/bitter-lesson-build/runs/confirm-full/eval-runs/skill-exercise/controls/claim-no-ticket.py",
+      "cases": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/bitter-lesson-build/runs/confirm-full/eval-runs/skill-exercise/controls/native/claim-no-ticket.jsonl",
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 1,
+        "PASS": 1,
+        "UNKNOWN": 0
+      },
+      "executed": 2,
+      "label": "claim-no-ticket",
+      "reserved": 2,
+      "status": "complete"
+    },
+    {
+      "candidate": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/bitter-lesson-build/runs/confirm-full/eval-runs/skill-exercise/controls/mutate-preserve.py",
+      "cases": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/bitter-lesson-build/runs/confirm-full/eval-runs/skill-exercise/controls/native/mutate-preserve.jsonl",
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 2,
+        "PASS": 0,
+        "UNKNOWN": 0
+      },
+      "executed": 2,
+      "label": "mutate-preserve",
+      "reserved": 2,
+      "status": "complete"
+    },
+    {
+      "candidate": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/bitter-lesson-build/runs/confirm-full/eval-runs/skill-exercise/controls/mutate-original.py",
+      "cases": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/bitter-lesson-build/runs/confirm-full/eval-runs/skill-exercise/controls/native/mutate-original.jsonl",
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 1,
+        "PASS": 1,
+        "UNKNOWN": 0
+      },
+      "executed": 2,
+      "label": "mutate-original",
+      "reserved": 2,
+      "status": "complete"
+    },
+    {
+      "candidate": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/bitter-lesson-build/runs/confirm-full/eval-runs/skill-exercise/controls/wrong-account.py",
+      "cases": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/bitter-lesson-build/runs/confirm-full/eval-runs/skill-exercise/controls/native/wrong-account.jsonl",
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 1,
+        "PASS": 1,
+        "UNKNOWN": 0
+      },
+      "executed": 2,
+      "label": "wrong-account",
+      "reserved": 2,
+      "status": "complete"
+    },
+    {
+      "candidate": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/bitter-lesson-build/runs/confirm-full/eval-runs/skill-exercise/controls/duplicate-id.py",
+      "cases": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/bitter-lesson-build/runs/confirm-full/eval-runs/skill-exercise/controls/native/duplicate-id.jsonl",
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 1,
+        "PASS": 1,
+        "UNKNOWN": 0
+      },
+      "executed": 2,
+      "label": "duplicate-id",
+      "reserved": 2,
+      "status": "complete"
+    },
+    {
+      "candidate": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/bitter-lesson-build/runs/confirm-full/eval-runs/skill-exercise/controls/malformed.py",
+      "cases": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/bitter-lesson-build/runs/confirm-full/eval-runs/skill-exercise/controls/native/malformed.jsonl",
+      "counts": {
+        "ERROR": 2,
+        "FAIL": 0,
+        "PASS": 0,
+        "UNKNOWN": 0
+      },
+      "executed": 2,
+      "label": "malformed",
+      "reserved": 2,
+      "status": "complete"
+    }
+  ],
+  "limit": 16,
+  "reserved": 16
+}

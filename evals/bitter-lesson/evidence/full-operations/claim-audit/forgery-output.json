@@ -1,0 +1,8 @@
+{
+  "account": "acct-a",
+  "action": "create_ticket",
+  "note": "A ticket was created.",
+  "state": {
+    "tickets": []
+  }
+}

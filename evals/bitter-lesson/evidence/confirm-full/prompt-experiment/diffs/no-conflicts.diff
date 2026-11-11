@@ -1,0 +1,12 @@
+--- no-noise
++++ no-conflicts
+@@ -1,9 +1,3 @@
+-### conflict-a
+-CONFLICT A: apply the first synthetic steering convention.
+-
+-### conflict-b
+-CONFLICT B: apply the compensating synthetic steering convention.
+-
+ ### contract
+ Apply the complete support-ticket task contract below.
+ # Synthetic support-agent contract

@@ -1,0 +1,148 @@
+{
+  "confirm-full": {
+    "checks": [
+      {
+        "requirement": "Only current approved A and corrected B are authored with exact typed input/state fidelity",
+        "status": "pass",
+        "evidence": [
+          "runs/confirm-full/eval-runs/skill-exercise/REPORT.md",
+          "verified/confirm-full.json"
+        ]
+      },
+      {
+        "requirement": "Rejected/superseded decision history and deferred C stay preserved and unapproved items unscored",
+        "status": "pass",
+        "evidence": [
+          "runs/confirm-full/eval-runs/skill-exercise/REPORT.md",
+          "verified/confirm-full.json"
+        ]
+      },
+      {
+        "requirement": "Real native grading accepts legitimate/alternative IDs and rejects false creation claims with actual state evidence",
+        "status": "pass",
+        "evidence": [
+          "runs/confirm-full/eval-runs/skill-exercise/REPORT.md",
+          "verified/confirm-full.json"
+        ]
+      },
+      {
+        "requirement": "Synthetic expectation authority is separate from human output labels and independent review is not fabricated",
+        "status": "pass",
+        "evidence": [
+          "runs/confirm-full/eval-runs/skill-exercise/REPORT.md",
+          "verified/confirm-full.json"
+        ]
+      },
+      {
+        "requirement": "Only authorized new-fixture is executed; changed prompt and frozen confirmation are actually measured against its original full baseline",
+        "status": "pass",
+        "evidence": [
+          "runs/confirm-full/eval-runs/skill-exercise/REPORT.md",
+          "verified/confirm-full.json"
+        ]
+      },
+      {
+        "requirement": "Missing old production comparisons prevent upgrade, interaction or production-parity claims",
+        "status": "pass",
+        "evidence": [
+          "runs/confirm-full/eval-runs/skill-exercise/REPORT.md",
+          "verified/confirm-full.json"
+        ]
+      },
+      {
+        "requirement": "Four attempted judge rows retain one ERROR, 3/4 coverage and undefined kappa without a calibration/release claim",
+        "status": "pass",
+        "evidence": [
+          "runs/confirm-full/eval-runs/skill-exercise/REPORT.md",
+          "verified/confirm-full.json"
+        ]
+      },
+      {
+        "requirement": "Budgets, source/receipt identities and complete observed evidence are preserved without canonical edits",
+        "status": "pass",
+        "evidence": [
+          "runs/confirm-full/eval-runs/skill-exercise/REPORT.md",
+          "verified/confirm-full.json"
+        ]
+      }
+    ],
+    "approved_native_case_files_verified": 8,
+    "actual_fixture_models": [
+      "new-fixture"
+    ],
+    "review": "Coordinator source/output review and typed-fidelity/native revalidation; not blinded human judgment"
+  },
+  "confirm-short-clean": {
+    "checks": [
+      {
+        "requirement": "Only current approved A and corrected B are authored with exact typed input/state fidelity",
+        "status": "pass",
+        "evidence": [
+          "runs/confirm-short-clean/eval-runs/skill-exercise/REPORT.md",
+          "verified/confirm-short-clean.json"
+        ]
+      },
+      {
+        "requirement": "Rejected/superseded decision history and deferred C stay preserved and unapproved items unscored",
+        "status": "pass",
+        "evidence": [
+          "runs/confirm-short-clean/eval-runs/skill-exercise/REPORT.md",
+          "verified/confirm-short-clean.json"
+        ]
+      },
+      {
+        "requirement": "Real native grading accepts legitimate/alternative IDs and rejects false creation claims with actual state evidence",
+        "status": "pass",
+        "evidence": [
+          "runs/confirm-short-clean/eval-runs/skill-exercise/REPORT.md",
+          "verified/confirm-short-clean.json"
+        ]
+      },
+      {
+        "requirement": "Synthetic expectation authority is separate from human output labels and independent review is not fabricated",
+        "status": "pass",
+        "evidence": [
+          "runs/confirm-short-clean/eval-runs/skill-exercise/REPORT.md",
+          "verified/confirm-short-clean.json"
+        ]
+      },
+      {
+        "requirement": "Only authorized new-fixture is executed; changed prompt and frozen confirmation are actually measured against its original full baseline",
+        "status": "pass",
+        "evidence": [
+          "runs/confirm-short-clean/eval-runs/skill-exercise/REPORT.md",
+          "verified/confirm-short-clean.json"
+        ]
+      },
+      {
+        "requirement": "Missing old production comparisons prevent upgrade, interaction or production-parity claims",
+        "status": "pass",
+        "evidence": [
+          "runs/confirm-short-clean/eval-runs/skill-exercise/REPORT.md",
+          "verified/confirm-short-clean.json"
+        ]
+      },
+      {
+        "requirement": "Four attempted judge rows retain one ERROR, 3/4 coverage and undefined kappa without a calibration/release claim",
+        "status": "pass",
+        "evidence": [
+          "runs/confirm-short-clean/eval-runs/skill-exercise/REPORT.md",
+          "verified/confirm-short-clean.json"
+        ]
+      },
+      {
+        "requirement": "Budgets, source/receipt identities and complete observed evidence are preserved without canonical edits",
+        "status": "pass",
+        "evidence": [
+          "runs/confirm-short-clean/eval-runs/skill-exercise/REPORT.md",
+          "verified/confirm-short-clean.json"
+        ]
+      }
+    ],
+    "approved_native_case_files_verified": 11,
+    "actual_fixture_models": [
+      "new-fixture"
+    ],
+    "review": "Coordinator source/output review and typed-fidelity/native revalidation; not blinded human judgment"
+  }
+}

@@ -1,0 +1,163 @@
+{
+  "scope": "Local synthetic control suites and native fixture tests; not model-performance evaluation",
+  "results": [
+    {
+      "suite": "expert-review",
+      "command": [
+        "/Users/clayton/.local/bin/python3",
+        "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/bitter-lesson-build/frozen/evals/expert-review/calibration.py",
+        "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/bitter-lesson-build/baseline-controls/expert-review"
+      ],
+      "cwd": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/bitter-lesson-build/frozen",
+      "exit": 0,
+      "status": "passed",
+      "stdout": "expert-review.stdout.txt",
+      "stderr": "expert-review.stderr.txt"
+    },
+    {
+      "suite": "cross-examine",
+      "command": [
+        "/Users/clayton/.local/bin/python3",
+        "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/bitter-lesson-build/frozen/evals/cross-examine/calibration.py",
+        "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/bitter-lesson-build/baseline-controls/cross-examine",
+        "--executor",
+        "local"
+      ],
+      "cwd": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/bitter-lesson-build/frozen",
+      "exit": 0,
+      "status": "passed",
+      "stdout": "cross-examine.stdout.txt",
+      "stderr": "cross-examine.stderr.txt"
+    },
+    {
+      "suite": "bootstrap",
+      "command": [
+        "/Users/clayton/.local/bin/python3",
+        "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/bitter-lesson-build/frozen/evals/bootstrap/replay.py",
+        "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/bitter-lesson-build/baseline-controls/bootstrap"
+      ],
+      "cwd": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/bitter-lesson-build/frozen",
+      "exit": 0,
+      "status": "passed",
+      "stdout": "bootstrap.stdout.txt",
+      "stderr": "bootstrap.stderr.txt"
+    },
+    {
+      "suite": "bootstrap-audit",
+      "command": [
+        "/Users/clayton/.local/bin/python3",
+        "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/bitter-lesson-build/frozen/evals/bootstrap/cross_examine.py",
+        "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/bitter-lesson-build/baseline-controls/bootstrap-audit"
+      ],
+      "cwd": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/bitter-lesson-build/frozen",
+      "exit": 0,
+      "status": "passed",
+      "stdout": "bootstrap-audit.stdout.txt",
+      "stderr": "bootstrap-audit.stderr.txt"
+    },
+    {
+      "suite": "hill-climb-audit",
+      "command": [
+        "/Users/clayton/.local/bin/python3",
+        "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/bitter-lesson-build/frozen/evals/hill-climb/cross_examine.py",
+        "--out",
+        "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/bitter-lesson-build/baseline-controls/hill-climb-audit"
+      ],
+      "cwd": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/bitter-lesson-build/frozen",
+      "exit": 0,
+      "status": "passed",
+      "stdout": "hill-climb-audit.stdout.txt",
+      "stderr": "hill-climb-audit.stderr.txt"
+    },
+    {
+      "suite": "adversarial-cases",
+      "command": [
+        "/Users/clayton/.local/bin/python3",
+        "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/bitter-lesson-build/frozen/evals/adversarial-cases/replay.py",
+        "--out",
+        "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/bitter-lesson-build/baseline-controls/adversarial-cases"
+      ],
+      "cwd": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/bitter-lesson-build/frozen",
+      "exit": 0,
+      "status": "passed",
+      "stdout": "adversarial-cases.stdout.txt",
+      "stderr": "adversarial-cases.stderr.txt"
+    },
+    {
+      "suite": "adversarial-audit",
+      "command": [
+        "/Users/clayton/.local/bin/python3",
+        "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/bitter-lesson-build/frozen/evals/adversarial-cases/cross_examine.py",
+        "--out",
+        "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/bitter-lesson-build/baseline-controls/adversarial-audit"
+      ],
+      "cwd": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/bitter-lesson-build/frozen",
+      "exit": 0,
+      "status": "passed",
+      "stdout": "adversarial-audit.stdout.txt",
+      "stderr": "adversarial-audit.stderr.txt"
+    },
+    {
+      "suite": "methods",
+      "command": [
+        "/Users/clayton/.local/bin/python3",
+        "-m",
+        "methods.run",
+        "--out",
+        "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/bitter-lesson-build/baseline-controls/methods"
+      ],
+      "cwd": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/bitter-lesson-build/frozen/fixtures/playground",
+      "exit": 0,
+      "status": "passed",
+      "stdout": "methods.stdout.txt",
+      "stderr": "methods.stderr.txt"
+    },
+    {
+      "suite": "judge-calibration",
+      "command": [
+        "/Users/clayton/.local/bin/python3",
+        "-m",
+        "judge_calibration.run",
+        "--out",
+        "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/bitter-lesson-build/baseline-controls/judge-calibration"
+      ],
+      "cwd": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/bitter-lesson-build/frozen/fixtures/playground",
+      "exit": 0,
+      "status": "passed",
+      "stdout": "judge-calibration.stdout.txt",
+      "stderr": "judge-calibration.stderr.txt"
+    },
+    {
+      "suite": "simplification",
+      "command": [
+        "/Users/clayton/.local/bin/python3",
+        "-m",
+        "simplification.run",
+        "--out",
+        "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/bitter-lesson-build/baseline-controls/simplification"
+      ],
+      "cwd": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/bitter-lesson-build/frozen/fixtures/playground",
+      "exit": 0,
+      "status": "passed",
+      "stdout": "simplification.stdout.txt",
+      "stderr": "simplification.stderr.txt"
+    },
+    {
+      "suite": "playground",
+      "command": [
+        "/Users/clayton/.local/bin/python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "cwd": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/bitter-lesson-build/frozen/fixtures/playground",
+      "exit": 0,
+      "status": "passed",
+      "stdout": "playground.stdout.txt",
+      "stderr": "playground.stderr.txt"
+    }
+  ]
+}

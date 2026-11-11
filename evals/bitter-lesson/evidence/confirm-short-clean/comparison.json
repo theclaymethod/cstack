@@ -1,0 +1,226 @@
+{
+  "confirmation": {
+    "admissible": true,
+    "baseline_score": 1.0,
+    "candidate_score": 1.0,
+    "difference": 0.0,
+    "errors_or_unknown": 0,
+    "max_loss": 0.0,
+    "regressions": [],
+    "scope": "Exact outcomes on the declared finite synthetic cases only"
+  },
+  "confirmation_original": {
+    "candidate_sha256": "cfd3290663da1d5980890d655f5e00cf294c989134bea9b94eae5d4bc12c1fb1",
+    "config": {
+      "model": "new-fixture",
+      "retained": [
+        "conflict-a",
+        "conflict-b",
+        "contract",
+        "duplicate-a",
+        "duplicate-b",
+        "example",
+        "legacy-auth",
+        "plan",
+        "plan-detail"
+      ]
+    },
+    "evidence": {
+      "candidate.py": "cfd3290663da1d5980890d655f5e00cf294c989134bea9b94eae5d4bc12c1fb1",
+      "cases.jsonl": "f0e900c7f3fb1a1a1ddf94941b92ee0ee1dc8232930c00cd24a810b2b7f23a30",
+      "manifest.json": "6c3bd41a9e7d1d8157eb045cc7fc3ce460a6d9813f48329030f90e57b9133052",
+      "summary.json": "51f8048fc846ae513d541fa74e6964f38977f61795274e9e5feb84c4b8932144",
+      "traces.jsonl": "f851f7dffbc40120751625210c382d4f9e435df2ff12497349dfad2ccdfbfd91"
+    },
+    "native_wall_seconds": 0.06967774999793619,
+    "outcomes": {
+      "conf-duplicate": "PASS",
+      "conf-howto": "PASS",
+      "conf-preservation": "PASS",
+      "conf-targeted": "PASS"
+    },
+    "prompt_utf8_bytes": 4193,
+    "status": "complete",
+    "suite": "confirmation",
+    "unit_count": 9
+  },
+  "confirmation_selected": {
+    "candidate_sha256": "31bff7b18f6aea80a3a6aae8fd1dfb530567edc516509b97080f0b5097b375a8",
+    "config": {
+      "model": "new-fixture",
+      "retained": [
+        "contract",
+        "duplicate-a"
+      ]
+    },
+    "evidence": {
+      "candidate.py": "31bff7b18f6aea80a3a6aae8fd1dfb530567edc516509b97080f0b5097b375a8",
+      "cases.jsonl": "f0e900c7f3fb1a1a1ddf94941b92ee0ee1dc8232930c00cd24a810b2b7f23a30",
+      "manifest.json": "890e11e17a7a63a623149a970c067f47f60d2c41c635dd57d23453c00d8de272",
+      "summary.json": "4a7f4b06b7976c834ba430c409fd5eb99c4d02a8153489a82c0f7ad3be9f9ff1",
+      "traces.jsonl": "f851f7dffbc40120751625210c382d4f9e435df2ff12497349dfad2ccdfbfd91"
+    },
+    "native_wall_seconds": 0.06728445799672045,
+    "outcomes": {
+      "conf-duplicate": "PASS",
+      "conf-howto": "PASS",
+      "conf-preservation": "PASS",
+      "conf-targeted": "PASS"
+    },
+    "prompt_utf8_bytes": 3671,
+    "status": "complete",
+    "suite": "confirmation",
+    "unit_count": 2
+  },
+  "development": {
+    "combined-minimal-found": {
+      "admissible": true,
+      "baseline_score": 1.0,
+      "candidate_score": 1.0,
+      "difference": 0.0,
+      "errors_or_unknown": 0,
+      "max_loss": 0.0,
+      "regressions": [],
+      "scope": "Exact outcomes on the declared finite synthetic cases only"
+    },
+    "remove-both-duplicates": {
+      "admissible": false,
+      "baseline_score": 1.0,
+      "candidate_score": 0.875,
+      "difference": -0.125,
+      "errors_or_unknown": 0,
+      "max_loss": 0.0,
+      "regressions": [
+        "dev-duplicate"
+      ],
+      "scope": "Exact outcomes on the declared finite synthetic cases only"
+    },
+    "remove-conflict-a": {
+      "admissible": false,
+      "baseline_score": 1.0,
+      "candidate_score": 0.5,
+      "difference": -0.5,
+      "errors_or_unknown": 0,
+      "max_loss": 0.0,
+      "regressions": [
+        "dev-explicit",
+        "dev-ambiguous",
+        "dev-closed",
+        "dev-unrelated"
+      ],
+      "scope": "Exact outcomes on the declared finite synthetic cases only"
+    },
+    "remove-duplicate-a": {
+      "admissible": true,
+      "baseline_score": 1.0,
+      "candidate_score": 1.0,
+      "difference": 0.0,
+      "errors_or_unknown": 0,
+      "max_loss": 0.0,
+      "regressions": [],
+      "scope": "Exact outcomes on the declared finite synthetic cases only"
+    },
+    "remove-duplicate-b": {
+      "admissible": true,
+      "baseline_score": 1.0,
+      "candidate_score": 1.0,
+      "difference": 0.0,
+      "errors_or_unknown": 0,
+      "max_loss": 0.0,
+      "regressions": [],
+      "scope": "Exact outcomes on the declared finite synthetic cases only"
+    },
+    "remove-legacy": {
+      "admissible": true,
+      "baseline_score": 1.0,
+      "candidate_score": 1.0,
+      "difference": 0.0,
+      "errors_or_unknown": 0,
+      "max_loss": 0.0,
+      "regressions": [],
+      "scope": "Exact outcomes on the declared finite synthetic cases only"
+    },
+    "remove-planning-example": {
+      "admissible": true,
+      "baseline_score": 1.0,
+      "candidate_score": 1.0,
+      "difference": 0.0,
+      "errors_or_unknown": 0,
+      "max_loss": 0.0,
+      "regressions": [],
+      "scope": "Exact outcomes on the declared finite synthetic cases only"
+    }
+  },
+  "original": {
+    "candidate_sha256": "cfd3290663da1d5980890d655f5e00cf294c989134bea9b94eae5d4bc12c1fb1",
+    "config": {
+      "model": "new-fixture",
+      "retained": [
+        "conflict-a",
+        "conflict-b",
+        "contract",
+        "duplicate-a",
+        "duplicate-b",
+        "example",
+        "legacy-auth",
+        "plan",
+        "plan-detail"
+      ]
+    },
+    "evidence": {
+      "candidate.py": "cfd3290663da1d5980890d655f5e00cf294c989134bea9b94eae5d4bc12c1fb1",
+      "cases.jsonl": "e26339de4786d747ff0e1f235a2fa74df7a6245075178cfb5bf01e9538fc8ec0",
+      "manifest.json": "b0e012891624b97664af8243bf81fa2ccaece00fadc1cb4d0d658a911f0cf04b",
+      "summary.json": "c8648139a9f2fe0da81a97202fb5f529aa52ba5da586e406ac61c91a60b24953",
+      "traces.jsonl": "8079f7279f3a3c89c7ea024a5c049cffc8762c8093f6b731adc45c143914cc9f"
+    },
+    "native_wall_seconds": 0.1345797920075711,
+    "outcomes": {
+      "dev-ambiguous": "PASS",
+      "dev-closed": "PASS",
+      "dev-duplicate": "PASS",
+      "dev-explicit": "PASS",
+      "dev-generic": "PASS",
+      "dev-howto": "PASS",
+      "dev-password": "PASS",
+      "dev-unrelated": "PASS"
+    },
+    "prompt_utf8_bytes": 4193,
+    "status": "complete",
+    "suite": "development",
+    "unit_count": 9
+  },
+  "selected": "combined-minimal-found",
+  "selected_development": {
+    "candidate_sha256": "31bff7b18f6aea80a3a6aae8fd1dfb530567edc516509b97080f0b5097b375a8",
+    "config": {
+      "model": "new-fixture",
+      "retained": [
+        "contract",
+        "duplicate-a"
+      ]
+    },
+    "evidence": {
+      "candidate.py": "31bff7b18f6aea80a3a6aae8fd1dfb530567edc516509b97080f0b5097b375a8",
+      "cases.jsonl": "e26339de4786d747ff0e1f235a2fa74df7a6245075178cfb5bf01e9538fc8ec0",
+      "manifest.json": "f82f0901059dad5a55fd33d13074d776162e85c34cede21d55238f445f140bd7",
+      "summary.json": "7e5e9a4cf87bc67064596809418c0c7b541efe6ad53090196bd78ad464e9753a",
+      "traces.jsonl": "8079f7279f3a3c89c7ea024a5c049cffc8762c8093f6b731adc45c143914cc9f"
+    },
+    "native_wall_seconds": 0.12876433299970813,
+    "outcomes": {
+      "dev-ambiguous": "PASS",
+      "dev-closed": "PASS",
+      "dev-duplicate": "PASS",
+      "dev-explicit": "PASS",
+      "dev-generic": "PASS",
+      "dev-howto": "PASS",
+      "dev-password": "PASS",
+      "dev-unrelated": "PASS"
+    },
+    "prompt_utf8_bytes": 3671,
+    "status": "complete",
+    "suite": "development",
+    "unit_count": 2
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "approval_fidelity": "Exact request/account/accounts/state and expected deltas preserved; case IDs link exact revisions.",
+  "approved": [
+    "A-r1",
+    "B-r2"
+  ],
+  "excluded": [
+    "B-r1 superseded",
+    "C pending"
+  ],
+  "format": "native JSONL",
+  "independence": "Single local author; no independent reviewer/delegation; all evidence synthetic and exposed.",
+  "runner": "python3 evaluate.py run --candidate <candidate> --cases eval-runs/skill-exercise/cases.jsonl --suite development --out <fresh-output>",
+  "scope": "Deterministic action/account/state checks; note wording is nonempty, semantic helpfulness unjudged.",
+  "source": "source-decisions.md"
+}

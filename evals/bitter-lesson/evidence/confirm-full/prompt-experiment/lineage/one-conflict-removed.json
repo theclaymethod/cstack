@@ -1,0 +1,22 @@
+{
+  "hypothesis": "Contrast pair deletion with single conflicting-cue removal",
+  "label": "one-conflict-removed",
+  "parent": "full",
+  "removed_from_full": [
+    "conflict-a"
+  ],
+  "removed_from_parent": [
+    "conflict-a"
+  ],
+  "retained": [
+    "conflict-b",
+    "contract",
+    "duplicate-a",
+    "duplicate-b",
+    "example",
+    "legacy-auth",
+    "plan",
+    "plan-detail"
+  ],
+  "scope": "Cumulative reduction relative to actual parent; full remains quality anchor"
+}

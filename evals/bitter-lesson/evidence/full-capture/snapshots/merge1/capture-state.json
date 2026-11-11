@@ -1,0 +1,17 @@
+{
+  "activated_at": "2026-11-10T23:14:36.583806+00:00",
+  "active": false,
+  "invocation": "Controlled task explicitly requests Expert Mode",
+  "paths": [
+    "reviews.jsonl",
+    "rubric.jsonl"
+  ],
+  "pending_questions": [
+    "urgency policy",
+    "exact narrative/native output association"
+  ],
+  "session_id": "controlled-full-capture",
+  "stop_reason": "Controlled task explicitly requests stop before Distill Me",
+  "stopped_at": "2026-11-10T23:14:36.656337+00:00",
+  "unsaved_entries": []
+}

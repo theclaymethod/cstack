@@ -1,0 +1,34 @@
+{
+  "config_hash": "27133a5056e3bf6eb30f1cab1525db3fcc2964ddb36cf0dd6d3de13b9349c37e",
+  "ids": [
+    "item-008",
+    "item-009",
+    "item-010",
+    "item-011",
+    "item-020",
+    "item-021",
+    "item-022",
+    "item-023"
+  ],
+  "input_dataset_sha256": "5690d65ee27e16f379a541c0af97144e0b9a82087afce8a69df49149ab5cc49e",
+  "predictions_sha256": "a02bc61ef423c5436a4ad5416a01beae6009149f95399f1a52022ac30c5cefe4",
+  "role": "final",
+  "sources": {
+    "evals/cases.jsonl": "71f1d8c50f7ce2b3ca512c6f2703faa4e30d5c63237824e3a73e7a573cf4f7b2",
+    "evals/rubric.md": "cb133b50752a48098d463a562d7553ec5a5b29bfef1825b4e393e7de33d66dd8",
+    "evals/spec.json": "eb6f21266223c16708a4ed3bb4f401f3a2adb3355b9e176152665d70a665d8f6",
+    "evaluate.py": "fd1fdaa4b090852f8d0a6462303411bea5488dcc7f7a08895146e32d52b0430d",
+    "judge_calibration/__init__.py": "817d7f11ca621fe90bcd3993976e355ac211b0da33a3adec99b8195929fc603d",
+    "judge_calibration/adapters.py": "2d616ed5fa7f1483e43e5cbb6e01b4aa4cbb047042d788044aebff9efc8396f6",
+    "judge_calibration/fixture_backend.py": "2a829e0f9e9cc9636e1b72cc36d53d5b457e2a9ad9bc8793d7852e57260d3b4f",
+    "judge_calibration/run.py": "b05444d3a9b05929e16717f1b193c733e3c90f0a4d3bbc0fa7ad49798e3a6265",
+    "judge_calibration/statistics.py": "034c3bf4e537956d6388a96a640e73f6269c05486a77071d4700f0f54b5b06d7",
+    "judge_calibration/workflow.py": "43796e7f075a0e71882cfb0c0e58a8d3c817935bb93fa6cb1c041d2ab776f89f",
+    "python_runtime": {
+      "executable": "/Users/clayton/.local/share/uv/python/cpython-3.12.16-macos-aarch64-none/bin/python3.12",
+      "implementation": "CPython",
+      "platform": "macOS-27.2-arm64-arm-64bit",
+      "version": "3.12.16 (main, Oct 26 2026, 13:59:40) [Clang 23.1.3 ]"
+    }
+  }
+}

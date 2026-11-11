@@ -1,0 +1,17 @@
+{
+  "native_case_budget": 48,
+  "actual_native_case_attempts": 10,
+  "native_runs": 5,
+  "cases_per_run": 2,
+  "errors": 0,
+  "proposal_case_attempts": 0,
+  "fault_injections": 0,
+  "network_calls": 0,
+  "provider_calls": 0,
+  "paid_calls": 0,
+  "dependencies_installed": 0,
+  "nested_agents": 0,
+  "tests_run": 0,
+  "candidate_edits": "control copies under eval-runs only; canonical product unchanged",
+  "token_usage": "not available from local runtime; no invented token/cost/latency measure"
+}

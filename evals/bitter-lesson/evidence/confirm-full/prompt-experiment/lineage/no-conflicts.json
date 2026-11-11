@@ -1,0 +1,23 @@
+{
+  "hypothesis": "Remove both compensating synthetic steering cues as one group",
+  "label": "no-conflicts",
+  "parent": "no-noise",
+  "removed_from_full": [
+    "conflict-a",
+    "conflict-b",
+    "example",
+    "legacy-auth",
+    "plan",
+    "plan-detail"
+  ],
+  "removed_from_parent": [
+    "conflict-a",
+    "conflict-b"
+  ],
+  "retained": [
+    "contract",
+    "duplicate-a",
+    "duplicate-b"
+  ],
+  "scope": "Cumulative reduction relative to actual parent; full remains quality anchor"
+}

@@ -1,0 +1,57 @@
+[
+  {
+    "skill": "ablation",
+    "exit": 0,
+    "result": "Skill is valid!"
+  },
+  {
+    "skill": "adversarial-cases",
+    "exit": 0,
+    "result": "Skill is valid!"
+  },
+  {
+    "skill": "bitter-lesson",
+    "exit": 0,
+    "result": "Skill is valid!"
+  },
+  {
+    "skill": "bootstrap",
+    "exit": 0,
+    "result": "Skill is valid!"
+  },
+  {
+    "skill": "calibrate-judge",
+    "exit": 0,
+    "result": "Skill is valid!"
+  },
+  {
+    "skill": "create-eval",
+    "exit": 0,
+    "result": "Skill is valid!"
+  },
+  {
+    "skill": "cross-examine",
+    "exit": 0,
+    "result": "Skill is valid!"
+  },
+  {
+    "skill": "distill-me",
+    "exit": 0,
+    "result": "Skill is valid!"
+  },
+  {
+    "skill": "expert-mode",
+    "exit": 0,
+    "result": "Skill is valid!"
+  },
+  {
+    "skill": "hill-climb",
+    "exit": 0,
+    "result": "Skill is valid!"
+  },
+  {
+    "skill": "run-eval",
+    "exit": 0,
+    "result": "Skill is valid!"
+  }
+]

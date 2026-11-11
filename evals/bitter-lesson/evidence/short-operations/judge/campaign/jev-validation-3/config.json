@@ -1,0 +1,9 @@
+{
+  "backend": "jev",
+  "fail_at_or_above": 0.8,
+  "live_backend": false,
+  "model": "offline-response-shape-fixture",
+  "pass_below": 0.8,
+  "policy": "state-witness",
+  "question_means_failure": true
+}

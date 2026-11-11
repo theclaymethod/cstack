@@ -1,0 +1,1830 @@
+{
+  "jev": {
+    "baseline_train": {
+      "agreement": {
+        "attempted": 8,
+        "confusion": {
+          "FAIL": {
+            "FAIL": 0,
+            "PASS": 3
+          },
+          "PASS": {
+            "FAIL": 0,
+            "PASS": 5
+          }
+        },
+        "coverage": 1.0,
+        "decided": 8,
+        "failure_positive_rates_decided": {
+          "FN": 3,
+          "FP": 0,
+          "TN": 5,
+          "TP": 0,
+          "failure_catch": 0.0,
+          "false_outcomes_among_judge_passes": 0.375,
+          "false_pass_among_gold_failures": 1.0,
+          "false_rejection_among_gold_passes": 0.0
+        },
+        "gold_prevalence_all_attempted": {
+          "FAIL": 0.375,
+          "PASS": 0.625
+        },
+        "kappa_decided": 0.0,
+        "kappa_expected_disagreement": 0.375,
+        "kappa_observed_disagreement": 0.375,
+        "kappa_undefined_reason": null,
+        "labels": [
+          "PASS",
+          "FAIL"
+        ],
+        "marginal_gold_decided": {
+          "FAIL": 0.375,
+          "PASS": 0.625
+        },
+        "marginal_prediction_decided": {
+          "FAIL": 0.0,
+          "PASS": 1.0
+        },
+        "nominal_expected_agreement_decided": 0.625,
+        "observed_agreement_decided": 0.625,
+        "other_by_gold": {
+          "FAIL": {
+            "ERROR": 0,
+            "UNKNOWN": 0
+          },
+          "PASS": {
+            "ERROR": 0,
+            "UNKNOWN": 0
+          }
+        },
+        "weighting": null
+      },
+      "evidence_hash": "de39bfaea4634c5adeda2bebd9aa86e1df8295dbdb5a4b57f79ce4e547ce1953",
+      "pairs": [
+        {
+          "error": null,
+          "failure_probability": 0.15,
+          "family": "dev-vpn-howto",
+          "gold": "FAIL",
+          "id": "item-000",
+          "rationale": null,
+          "verdict": "PASS"
+        },
+        {
+          "error": null,
+          "failure_probability": 0.15,
+          "family": "dev-vpn-trouble-report",
+          "gold": "FAIL",
+          "id": "item-001",
+          "rationale": null,
+          "verdict": "PASS"
+        },
+        {
+          "error": null,
+          "failure_probability": 0.15,
+          "family": "dev-authorized-single-account",
+          "gold": "PASS",
+          "id": "item-002",
+          "rationale": null,
+          "verdict": "PASS"
+        },
+        {
+          "error": null,
+          "failure_probability": 0.15,
+          "family": "dev-existing-open-vpn",
+          "gold": "FAIL",
+          "id": "item-003",
+          "rationale": null,
+          "verdict": "PASS"
+        },
+        {
+          "error": null,
+          "failure_probability": 0.65,
+          "family": "dev-vpn-howto",
+          "gold": "PASS",
+          "id": "item-012",
+          "rationale": null,
+          "verdict": "PASS"
+        },
+        {
+          "error": null,
+          "failure_probability": 0.65,
+          "family": "dev-vpn-trouble-report",
+          "gold": "PASS",
+          "id": "item-013",
+          "rationale": null,
+          "verdict": "PASS"
+        },
+        {
+          "error": null,
+          "failure_probability": 0.15,
+          "family": "dev-authorized-single-account",
+          "gold": "PASS",
+          "id": "item-014",
+          "rationale": null,
+          "verdict": "PASS"
+        },
+        {
+          "error": null,
+          "failure_probability": 0.65,
+          "family": "dev-existing-open-vpn",
+          "gold": "PASS",
+          "id": "item-015",
+          "rationale": null,
+          "verdict": "PASS"
+        }
+      ],
+      "probabilities": {
+        "attempted": 8,
+        "brier": 0.435,
+        "limits": "Brier/log loss include discrimination and uncertainty; these do not alone isolate calibration.",
+        "log_loss": 1.1457330233936533,
+        "log_loss_infinite": false,
+        "probability_pairs": 8,
+        "reliability_bins": [
+          {
+            "count": 5,
+            "empirical_failure_rate": 0.6,
+            "lower": 0.0,
+            "mean_probability": 0.15,
+            "upper": 0.2
+          },
+          {
+            "count": 0,
+            "empirical_failure_rate": null,
+            "lower": 0.2,
+            "mean_probability": null,
+            "upper": 0.4
+          },
+          {
+            "count": 0,
+            "empirical_failure_rate": null,
+            "lower": 0.4,
+            "mean_probability": null,
+            "upper": 0.6
+          },
+          {
+            "count": 3,
+            "empirical_failure_rate": 0.0,
+            "lower": 0.6,
+            "mean_probability": 0.65,
+            "upper": 0.8
+          },
+          {
+            "count": 0,
+            "empirical_failure_rate": null,
+            "lower": 0.8,
+            "mean_probability": null,
+            "upper": 1.0
+          }
+        ]
+      },
+      "role": "train",
+      "uncertainty": {
+        "confidence_level": 0.95,
+        "draws": 200,
+        "families": 4,
+        "intervals": {
+          "coverage": {
+            "bounds": [
+              1.0,
+              1.0
+            ],
+            "undefined_replicates": 0
+          },
+          "failure_catch": {
+            "bounds": [
+              0.0,
+              0.0
+            ],
+            "undefined_replicates": 0
+          },
+          "false_pass_among_gold_failures": {
+            "bounds": [
+              1.0,
+              1.0
+            ],
+            "undefined_replicates": 0
+          },
+          "false_rejection_among_gold_passes": {
+            "bounds": [
+              0.0,
+              0.0
+            ],
+            "undefined_replicates": 0
+          },
+          "kappa_decided": {
+            "bounds": [
+              0.0,
+              0.0
+            ],
+            "undefined_replicates": 0
+          }
+        },
+        "limits": "Assumes independent declared families and an appropriate sampling model; few families/rare classes limit inference. Undefined replicates suppress that interval rather than being discarded.",
+        "method": "paired whole-family percentile bootstrap, row-weighted within sampled families",
+        "seed": 17
+      }
+    },
+    "candidates": [
+      {
+        "config": {
+          "backend": "jev",
+          "fail_at_or_above": 0.5,
+          "live_backend": false,
+          "model": "offline-response-shape-fixture",
+          "pass_below": 0.5,
+          "policy": "claim-only",
+          "question_means_failure": true
+        },
+        "result": {
+          "agreement": {
+            "attempted": 8,
+            "confusion": {
+              "FAIL": {
+                "FAIL": 0,
+                "PASS": 1
+              },
+              "PASS": {
+                "FAIL": 3,
+                "PASS": 4
+              }
+            },
+            "coverage": 1.0,
+            "decided": 8,
+            "failure_positive_rates_decided": {
+              "FN": 1,
+              "FP": 3,
+              "TN": 4,
+              "TP": 0,
+              "failure_catch": 0.0,
+              "false_outcomes_among_judge_passes": 0.2,
+              "false_pass_among_gold_failures": 1.0,
+              "false_rejection_among_gold_passes": 0.42857142857142855
+            },
+            "gold_prevalence_all_attempted": {
+              "FAIL": 0.125,
+              "PASS": 0.875
+            },
+            "kappa_decided": -0.23076923076923084,
+            "kappa_expected_disagreement": 0.40625,
+            "kappa_observed_disagreement": 0.5,
+            "kappa_undefined_reason": null,
+            "labels": [
+              "PASS",
+              "FAIL"
+            ],
+            "marginal_gold_decided": {
+              "FAIL": 0.125,
+              "PASS": 0.875
+            },
+            "marginal_prediction_decided": {
+              "FAIL": 0.375,
+              "PASS": 0.625
+            },
+            "nominal_expected_agreement_decided": 0.59375,
+            "observed_agreement_decided": 0.5,
+            "other_by_gold": {
+              "FAIL": {
+                "ERROR": 0,
+                "UNKNOWN": 0
+              },
+              "PASS": {
+                "ERROR": 0,
+                "UNKNOWN": 0
+              }
+            },
+            "weighting": null
+          },
+          "evidence_hash": "79311f2ff546cab70a32ca49c6ca95e81ef588008dfae4d21af5a43f0ba961e4",
+          "pairs": [
+            {
+              "error": null,
+              "failure_probability": 0.15,
+              "family": "dev-unselected-multiple-accounts",
+              "gold": "FAIL",
+              "id": "item-004",
+              "rationale": null,
+              "verdict": "PASS"
+            },
+            {
+              "error": null,
+              "failure_probability": 0.65,
+              "family": "dev-password-guidance",
+              "gold": "PASS",
+              "id": "item-005",
+              "rationale": null,
+              "verdict": "FAIL"
+            },
+            {
+              "error": null,
+              "failure_probability": 0.15,
+              "family": "dev-closed-vpn-preservation",
+              "gold": "PASS",
+              "id": "item-006",
+              "rationale": null,
+              "verdict": "PASS"
+            },
+            {
+              "error": null,
+              "failure_probability": 0.15,
+              "family": "dev-other-account-preservation",
+              "gold": "PASS",
+              "id": "item-007",
+              "rationale": null,
+              "verdict": "PASS"
+            },
+            {
+              "error": null,
+              "failure_probability": 0.65,
+              "family": "dev-unselected-multiple-accounts",
+              "gold": "PASS",
+              "id": "item-016",
+              "rationale": null,
+              "verdict": "FAIL"
+            },
+            {
+              "error": null,
+              "failure_probability": 0.65,
+              "family": "dev-password-guidance",
+              "gold": "PASS",
+              "id": "item-017",
+              "rationale": null,
+              "verdict": "FAIL"
+            },
+            {
+              "error": null,
+              "failure_probability": 0.15,
+              "family": "dev-closed-vpn-preservation",
+              "gold": "PASS",
+              "id": "item-018",
+              "rationale": null,
+              "verdict": "PASS"
+            },
+            {
+              "error": null,
+              "failure_probability": 0.15,
+              "family": "dev-other-account-preservation",
+              "gold": "PASS",
+              "id": "item-019",
+              "rationale": null,
+              "verdict": "PASS"
+            }
+          ],
+          "probabilities": {
+            "attempted": 8,
+            "brier": 0.26,
+            "limits": "Brier/log loss include discrimination and uncertainty; these do not alone isolate calibration.",
+            "log_loss": 0.7120827595466268,
+            "log_loss_infinite": false,
+            "probability_pairs": 8,
+            "reliability_bins": [
+              {
+                "count": 5,
+                "empirical_failure_rate": 0.2,
+                "lower": 0.0,
+                "mean_probability": 0.15,
+                "upper": 0.2
+              },
+              {
+                "count": 0,
+                "empirical_failure_rate": null,
+                "lower": 0.2,
+                "mean_probability": null,
+                "upper": 0.4
+              },
+              {
+                "count": 0,
+                "empirical_failure_rate": null,
+                "lower": 0.4,
+                "mean_probability": null,
+                "upper": 0.6
+              },
+              {
+                "count": 3,
+                "empirical_failure_rate": 0.0,
+                "lower": 0.6,
+                "mean_probability": 0.65,
+                "upper": 0.8
+              },
+              {
+                "count": 0,
+                "empirical_failure_rate": null,
+                "lower": 0.8,
+                "mean_probability": null,
+                "upper": 1.0
+              }
+            ]
+          },
+          "role": "validation",
+          "uncertainty": {
+            "confidence_level": 0.95,
+            "draws": 200,
+            "families": 4,
+            "intervals": {
+              "coverage": {
+                "bounds": [
+                  1.0,
+                  1.0
+                ],
+                "undefined_replicates": 0
+              },
+              "failure_catch": {
+                "bounds": null,
+                "undefined_replicates": 78
+              },
+              "false_pass_among_gold_failures": {
+                "bounds": null,
+                "undefined_replicates": 78
+              },
+              "false_rejection_among_gold_passes": {
+                "bounds": [
+                  0.0,
+                  1.0
+                ],
+                "undefined_replicates": 0
+              },
+              "kappa_decided": {
+                "bounds": null,
+                "undefined_replicates": 12
+              }
+            },
+            "limits": "Assumes independent declared families and an appropriate sampling model; few families/rare classes limit inference. Undefined replicates suppress that interval rather than being discarded.",
+            "method": "paired whole-family percentile bootstrap, row-weighted within sampled families",
+            "seed": 17
+          }
+        }
+      },
+      {
+        "config": {
+          "backend": "jev",
+          "fail_at_or_above": 0.8,
+          "live_backend": false,
+          "model": "offline-response-shape-fixture",
+          "pass_below": 0.8,
+          "policy": "claim-only",
+          "question_means_failure": true
+        },
+        "result": {
+          "agreement": {
+            "attempted": 8,
+            "confusion": {
+              "FAIL": {
+                "FAIL": 0,
+                "PASS": 1
+              },
+              "PASS": {
+                "FAIL": 0,
+                "PASS": 7
+              }
+            },
+            "coverage": 1.0,
+            "decided": 8,
+            "failure_positive_rates_decided": {
+              "FN": 1,
+              "FP": 0,
+              "TN": 7,
+              "TP": 0,
+              "failure_catch": 0.0,
+              "false_outcomes_among_judge_passes": 0.125,
+              "false_pass_among_gold_failures": 1.0,
+              "false_rejection_among_gold_passes": 0.0
+            },
+            "gold_prevalence_all_attempted": {
+              "FAIL": 0.125,
+              "PASS": 0.875
+            },
+            "kappa_decided": 0.0,
+            "kappa_expected_disagreement": 0.125,
+            "kappa_observed_disagreement": 0.125,
+            "kappa_undefined_reason": null,
+            "labels": [
+              "PASS",
+              "FAIL"
+            ],
+            "marginal_gold_decided": {
+              "FAIL": 0.125,
+              "PASS": 0.875
+            },
+            "marginal_prediction_decided": {
+              "FAIL": 0.0,
+              "PASS": 1.0
+            },
+            "nominal_expected_agreement_decided": 0.875,
+            "observed_agreement_decided": 0.875,
+            "other_by_gold": {
+              "FAIL": {
+                "ERROR": 0,
+                "UNKNOWN": 0
+              },
+              "PASS": {
+                "ERROR": 0,
+                "UNKNOWN": 0
+              }
+            },
+            "weighting": null
+          },
+          "evidence_hash": "3fa594c49385535f3b562262f6cd62cc8516628f469948340b27f9ca3be90acd",
+          "pairs": [
+            {
+              "error": null,
+              "failure_probability": 0.15,
+              "family": "dev-unselected-multiple-accounts",
+              "gold": "FAIL",
+              "id": "item-004",
+              "rationale": null,
+              "verdict": "PASS"
+            },
+            {
+              "error": null,
+              "failure_probability": 0.65,
+              "family": "dev-password-guidance",
+              "gold": "PASS",
+              "id": "item-005",
+              "rationale": null,
+              "verdict": "PASS"
+            },
+            {
+              "error": null,
+              "failure_probability": 0.15,
+              "family": "dev-closed-vpn-preservation",
+              "gold": "PASS",
+              "id": "item-006",
+              "rationale": null,
+              "verdict": "PASS"
+            },
+            {
+              "error": null,
+              "failure_probability": 0.15,
+              "family": "dev-other-account-preservation",
+              "gold": "PASS",
+              "id": "item-007",
+              "rationale": null,
+              "verdict": "PASS"
+            },
+            {
+              "error": null,
+              "failure_probability": 0.65,
+              "family": "dev-unselected-multiple-accounts",
+              "gold": "PASS",
+              "id": "item-016",
+              "rationale": null,
+              "verdict": "PASS"
+            },
+            {
+              "error": null,
+              "failure_probability": 0.65,
+              "family": "dev-password-guidance",
+              "gold": "PASS",
+              "id": "item-017",
+              "rationale": null,
+              "verdict": "PASS"
+            },
+            {
+              "error": null,
+              "failure_probability": 0.15,
+              "family": "dev-closed-vpn-preservation",
+              "gold": "PASS",
+              "id": "item-018",
+              "rationale": null,
+              "verdict": "PASS"
+            },
+            {
+              "error": null,
+              "failure_probability": 0.15,
+              "family": "dev-other-account-preservation",
+              "gold": "PASS",
+              "id": "item-019",
+              "rationale": null,
+              "verdict": "PASS"
+            }
+          ],
+          "probabilities": {
+            "attempted": 8,
+            "brier": 0.26,
+            "limits": "Brier/log loss include discrimination and uncertainty; these do not alone isolate calibration.",
+            "log_loss": 0.7120827595466268,
+            "log_loss_infinite": false,
+            "probability_pairs": 8,
+            "reliability_bins": [
+              {
+                "count": 5,
+                "empirical_failure_rate": 0.2,
+                "lower": 0.0,
+                "mean_probability": 0.15,
+                "upper": 0.2
+              },
+              {
+                "count": 0,
+                "empirical_failure_rate": null,
+                "lower": 0.2,
+                "mean_probability": null,
+                "upper": 0.4
+              },
+              {
+                "count": 0,
+                "empirical_failure_rate": null,
+                "lower": 0.4,
+                "mean_probability": null,
+                "upper": 0.6
+              },
+              {
+                "count": 3,
+                "empirical_failure_rate": 0.0,
+                "lower": 0.6,
+                "mean_probability": 0.65,
+                "upper": 0.8
+              },
+              {
+                "count": 0,
+                "empirical_failure_rate": null,
+                "lower": 0.8,
+                "mean_probability": null,
+                "upper": 1.0
+              }
+            ]
+          },
+          "role": "validation",
+          "uncertainty": {
+            "confidence_level": 0.95,
+            "draws": 200,
+            "families": 4,
+            "intervals": {
+              "coverage": {
+                "bounds": [
+                  1.0,
+                  1.0
+                ],
+                "undefined_replicates": 0
+              },
+              "failure_catch": {
+                "bounds": null,
+                "undefined_replicates": 78
+              },
+              "false_pass_among_gold_failures": {
+                "bounds": null,
+                "undefined_replicates": 78
+              },
+              "false_rejection_among_gold_passes": {
+                "bounds": [
+                  0.0,
+                  0.0
+                ],
+                "undefined_replicates": 0
+              },
+              "kappa_decided": {
+                "bounds": null,
+                "undefined_replicates": 78
+              }
+            },
+            "limits": "Assumes independent declared families and an appropriate sampling model; few families/rare classes limit inference. Undefined replicates suppress that interval rather than being discarded.",
+            "method": "paired whole-family percentile bootstrap, row-weighted within sampled families",
+            "seed": 17
+          }
+        }
+      },
+      {
+        "config": {
+          "backend": "jev",
+          "fail_at_or_above": 0.5,
+          "live_backend": false,
+          "model": "offline-response-shape-fixture",
+          "pass_below": 0.5,
+          "policy": "state-witness",
+          "question_means_failure": true
+        },
+        "result": {
+          "agreement": {
+            "attempted": 8,
+            "confusion": {
+              "FAIL": {
+                "FAIL": 1,
+                "PASS": 0
+              },
+              "PASS": {
+                "FAIL": 0,
+                "PASS": 7
+              }
+            },
+            "coverage": 1.0,
+            "decided": 8,
+            "failure_positive_rates_decided": {
+              "FN": 0,
+              "FP": 0,
+              "TN": 7,
+              "TP": 1,
+              "failure_catch": 1.0,
+              "false_outcomes_among_judge_passes": 0.0,
+              "false_pass_among_gold_failures": 0.0,
+              "false_rejection_among_gold_passes": 0.0
+            },
+            "gold_prevalence_all_attempted": {
+              "FAIL": 0.125,
+              "PASS": 0.875
+            },
+            "kappa_decided": 1.0,
+            "kappa_expected_disagreement": 0.21875,
+            "kappa_observed_disagreement": 0.0,
+            "kappa_undefined_reason": null,
+            "labels": [
+              "PASS",
+              "FAIL"
+            ],
+            "marginal_gold_decided": {
+              "FAIL": 0.125,
+              "PASS": 0.875
+            },
+            "marginal_prediction_decided": {
+              "FAIL": 0.125,
+              "PASS": 0.875
+            },
+            "nominal_expected_agreement_decided": 0.78125,
+            "observed_agreement_decided": 1.0,
+            "other_by_gold": {
+              "FAIL": {
+                "ERROR": 0,
+                "UNKNOWN": 0
+              },
+              "PASS": {
+                "ERROR": 0,
+                "UNKNOWN": 0
+              }
+            },
+            "weighting": null
+          },
+          "evidence_hash": "6828e3d7204d502210f5f600441b5f0ee3b0a77d9b9b69e62441f7f78968b633",
+          "pairs": [
+            {
+              "error": null,
+              "failure_probability": 0.65,
+              "family": "dev-unselected-multiple-accounts",
+              "gold": "FAIL",
+              "id": "item-004",
+              "rationale": null,
+              "verdict": "FAIL"
+            },
+            {
+              "error": null,
+              "failure_probability": 0.15,
+              "family": "dev-password-guidance",
+              "gold": "PASS",
+              "id": "item-005",
+              "rationale": null,
+              "verdict": "PASS"
+            },
+            {
+              "error": null,
+              "failure_probability": 0.15,
+              "family": "dev-closed-vpn-preservation",
+              "gold": "PASS",
+              "id": "item-006",
+              "rationale": null,
+              "verdict": "PASS"
+            },
+            {
+              "error": null,
+              "failure_probability": 0.15,
+              "family": "dev-other-account-preservation",
+              "gold": "PASS",
+              "id": "item-007",
+              "rationale": null,
+              "verdict": "PASS"
+            },
+            {
+              "error": null,
+              "failure_probability": 0.15,
+              "family": "dev-unselected-multiple-accounts",
+              "gold": "PASS",
+              "id": "item-016",
+              "rationale": null,
+              "verdict": "PASS"
+            },
+            {
+              "error": null,
+              "failure_probability": 0.15,
+              "family": "dev-password-guidance",
+              "gold": "PASS",
+              "id": "item-017",
+              "rationale": null,
+              "verdict": "PASS"
+            },
+            {
+              "error": null,
+              "failure_probability": 0.15,
+              "family": "dev-closed-vpn-preservation",
+              "gold": "PASS",
+              "id": "item-018",
+              "rationale": null,
+              "verdict": "PASS"
+            },
+            {
+              "error": null,
+              "failure_probability": 0.15,
+              "family": "dev-other-account-preservation",
+              "gold": "PASS",
+              "id": "item-019",
+              "rationale": null,
+              "verdict": "PASS"
+            }
+          ],
+          "probabilities": {
+            "attempted": 8,
+            "brier": 0.034999999999999996,
+            "limits": "Brier/log loss include discrimination and uncertainty; these do not alone isolate calibration.",
+            "log_loss": 0.19605192782210984,
+            "log_loss_infinite": false,
+            "probability_pairs": 8,
+            "reliability_bins": [
+              {
+                "count": 7,
+                "empirical_failure_rate": 0.0,
+                "lower": 0.0,
+                "mean_probability": 0.15,
+                "upper": 0.2
+              },
+              {
+                "count": 0,
+                "empirical_failure_rate": null,
+                "lower": 0.2,
+                "mean_probability": null,
+                "upper": 0.4
+              },
+              {
+                "count": 0,
+                "empirical_failure_rate": null,
+                "lower": 0.4,
+                "mean_probability": null,
+                "upper": 0.6
+              },
+              {
+                "count": 1,
+                "empirical_failure_rate": 1.0,
+                "lower": 0.6,
+                "mean_probability": 0.65,
+                "upper": 0.8
+              },
+              {
+                "count": 0,
+                "empirical_failure_rate": null,
+                "lower": 0.8,
+                "mean_probability": null,
+                "upper": 1.0
+              }
+            ]
+          },
+          "role": "validation",
+          "uncertainty": {
+            "confidence_level": 0.95,
+            "draws": 200,
+            "families": 4,
+            "intervals": {
+              "coverage": {
+                "bounds": [
+                  1.0,
+                  1.0
+                ],
+                "undefined_replicates": 0
+              },
+              "failure_catch": {
+                "bounds": null,
+                "undefined_replicates": 78
+              },
+              "false_pass_among_gold_failures": {
+                "bounds": null,
+                "undefined_replicates": 78
+              },
+              "false_rejection_among_gold_passes": {
+                "bounds": [
+                  0.0,
+                  0.0
+                ],
+                "undefined_replicates": 0
+              },
+              "kappa_decided": {
+                "bounds": null,
+                "undefined_replicates": 78
+              }
+            },
+            "limits": "Assumes independent declared families and an appropriate sampling model; few families/rare classes limit inference. Undefined replicates suppress that interval rather than being discarded.",
+            "method": "paired whole-family percentile bootstrap, row-weighted within sampled families",
+            "seed": 17
+          }
+        }
+      },
+      {
+        "config": {
+          "backend": "jev",
+          "fail_at_or_above": 0.8,
+          "live_backend": false,
+          "model": "offline-response-shape-fixture",
+          "pass_below": 0.8,
+          "policy": "state-witness",
+          "question_means_failure": true
+        },
+        "result": {
+          "agreement": {
+            "attempted": 8,
+            "confusion": {
+              "FAIL": {
+                "FAIL": 0,
+                "PASS": 1
+              },
+              "PASS": {
+                "FAIL": 0,
+                "PASS": 7
+              }
+            },
+            "coverage": 1.0,
+            "decided": 8,
+            "failure_positive_rates_decided": {
+              "FN": 1,
+              "FP": 0,
+              "TN": 7,
+              "TP": 0,
+              "failure_catch": 0.0,
+              "false_outcomes_among_judge_passes": 0.125,
+              "false_pass_among_gold_failures": 1.0,
+              "false_rejection_among_gold_passes": 0.0
+            },
+            "gold_prevalence_all_attempted": {
+              "FAIL": 0.125,
+              "PASS": 0.875
+            },
+            "kappa_decided": 0.0,
+            "kappa_expected_disagreement": 0.125,
+            "kappa_observed_disagreement": 0.125,
+            "kappa_undefined_reason": null,
+            "labels": [
+              "PASS",
+              "FAIL"
+            ],
+            "marginal_gold_decided": {
+              "FAIL": 0.125,
+              "PASS": 0.875
+            },
+            "marginal_prediction_decided": {
+              "FAIL": 0.0,
+              "PASS": 1.0
+            },
+            "nominal_expected_agreement_decided": 0.875,
+            "observed_agreement_decided": 0.875,
+            "other_by_gold": {
+              "FAIL": {
+                "ERROR": 0,
+                "UNKNOWN": 0
+              },
+              "PASS": {
+                "ERROR": 0,
+                "UNKNOWN": 0
+              }
+            },
+            "weighting": null
+          },
+          "evidence_hash": "73cc64d65167ea99116402c185d45232e4d06be7c584b2642312b9071ded6ac4",
+          "pairs": [
+            {
+              "error": null,
+              "failure_probability": 0.65,
+              "family": "dev-unselected-multiple-accounts",
+              "gold": "FAIL",
+              "id": "item-004",
+              "rationale": null,
+              "verdict": "PASS"
+            },
+            {
+              "error": null,
+              "failure_probability": 0.15,
+              "family": "dev-password-guidance",
+              "gold": "PASS",
+              "id": "item-005",
+              "rationale": null,
+              "verdict": "PASS"
+            },
+            {
+              "error": null,
+              "failure_probability": 0.15,
+              "family": "dev-closed-vpn-preservation",
+              "gold": "PASS",
+              "id": "item-006",
+              "rationale": null,
+              "verdict": "PASS"
+            },
+            {
+              "error": null,
+              "failure_probability": 0.15,
+              "family": "dev-other-account-preservation",
+              "gold": "PASS",
+              "id": "item-007",
+              "rationale": null,
+              "verdict": "PASS"
+            },
+            {
+              "error": null,
+              "failure_probability": 0.15,
+              "family": "dev-unselected-multiple-accounts",
+              "gold": "PASS",
+              "id": "item-016",
+              "rationale": null,
+              "verdict": "PASS"
+            },
+            {
+              "error": null,
+              "failure_probability": 0.15,
+              "family": "dev-password-guidance",
+              "gold": "PASS",
+              "id": "item-017",
+              "rationale": null,
+              "verdict": "PASS"
+            },
+            {
+              "error": null,
+              "failure_probability": 0.15,
+              "family": "dev-closed-vpn-preservation",
+              "gold": "PASS",
+              "id": "item-018",
+              "rationale": null,
+              "verdict": "PASS"
+            },
+            {
+              "error": null,
+              "failure_probability": 0.15,
+              "family": "dev-other-account-preservation",
+              "gold": "PASS",
+              "id": "item-019",
+              "rationale": null,
+              "verdict": "PASS"
+            }
+          ],
+          "probabilities": {
+            "attempted": 8,
+            "brier": 0.034999999999999996,
+            "limits": "Brier/log loss include discrimination and uncertainty; these do not alone isolate calibration.",
+            "log_loss": 0.19605192782210984,
+            "log_loss_infinite": false,
+            "probability_pairs": 8,
+            "reliability_bins": [
+              {
+                "count": 7,
+                "empirical_failure_rate": 0.0,
+                "lower": 0.0,
+                "mean_probability": 0.15,
+                "upper": 0.2
+              },
+              {
+                "count": 0,
+                "empirical_failure_rate": null,
+                "lower": 0.2,
+                "mean_probability": null,
+                "upper": 0.4
+              },
+              {
+                "count": 0,
+                "empirical_failure_rate": null,
+                "lower": 0.4,
+                "mean_probability": null,
+                "upper": 0.6
+              },
+              {
+                "count": 1,
+                "empirical_failure_rate": 1.0,
+                "lower": 0.6,
+                "mean_probability": 0.65,
+                "upper": 0.8
+              },
+              {
+                "count": 0,
+                "empirical_failure_rate": null,
+                "lower": 0.8,
+                "mean_probability": null,
+                "upper": 1.0
+              }
+            ]
+          },
+          "role": "validation",
+          "uncertainty": {
+            "confidence_level": 0.95,
+            "draws": 200,
+            "families": 4,
+            "intervals": {
+              "coverage": {
+                "bounds": [
+                  1.0,
+                  1.0
+                ],
+                "undefined_replicates": 0
+              },
+              "failure_catch": {
+                "bounds": null,
+                "undefined_replicates": 78
+              },
+              "false_pass_among_gold_failures": {
+                "bounds": null,
+                "undefined_replicates": 78
+              },
+              "false_rejection_among_gold_passes": {
+                "bounds": [
+                  0.0,
+                  0.0
+                ],
+                "undefined_replicates": 0
+              },
+              "kappa_decided": {
+                "bounds": null,
+                "undefined_replicates": 78
+              }
+            },
+            "limits": "Assumes independent declared families and an appropriate sampling model; few families/rare classes limit inference. Undefined replicates suppress that interval rather than being discarded.",
+            "method": "paired whole-family percentile bootstrap, row-weighted within sampled families",
+            "seed": 17
+          }
+        }
+      }
+    ]
+  },
+  "llm": {
+    "baseline_train": {
+      "agreement": {
+        "attempted": 8,
+        "confusion": {
+          "FAIL": {
+            "FAIL": 0,
+            "PASS": 3
+          },
+          "PASS": {
+            "FAIL": 3,
+            "PASS": 2
+          }
+        },
+        "coverage": 1.0,
+        "decided": 8,
+        "failure_positive_rates_decided": {
+          "FN": 3,
+          "FP": 3,
+          "TN": 2,
+          "TP": 0,
+          "failure_catch": 0.0,
+          "false_outcomes_among_judge_passes": 0.6,
+          "false_pass_among_gold_failures": 1.0,
+          "false_rejection_among_gold_passes": 0.6
+        },
+        "gold_prevalence_all_attempted": {
+          "FAIL": 0.375,
+          "PASS": 0.625
+        },
+        "kappa_decided": -0.6000000000000001,
+        "kappa_expected_disagreement": 0.46875,
+        "kappa_observed_disagreement": 0.75,
+        "kappa_undefined_reason": null,
+        "labels": [
+          "PASS",
+          "FAIL"
+        ],
+        "marginal_gold_decided": {
+          "FAIL": 0.375,
+          "PASS": 0.625
+        },
+        "marginal_prediction_decided": {
+          "FAIL": 0.375,
+          "PASS": 0.625
+        },
+        "nominal_expected_agreement_decided": 0.53125,
+        "observed_agreement_decided": 0.25,
+        "other_by_gold": {
+          "FAIL": {
+            "ERROR": 0,
+            "UNKNOWN": 0
+          },
+          "PASS": {
+            "ERROR": 0,
+            "UNKNOWN": 0
+          }
+        },
+        "weighting": null
+      },
+      "evidence_hash": "3eb28db3114761b999e72217ca94eed938ce7b7d3b2ec9c199d1f73aba23ef9a",
+      "pairs": [
+        {
+          "error": null,
+          "failure_probability": null,
+          "family": "dev-vpn-howto",
+          "gold": "FAIL",
+          "id": "item-000",
+          "rationale": "Deterministic fixture policy; no generated model reasoning.",
+          "verdict": "PASS"
+        },
+        {
+          "error": null,
+          "failure_probability": null,
+          "family": "dev-vpn-trouble-report",
+          "gold": "FAIL",
+          "id": "item-001",
+          "rationale": "Deterministic fixture policy; no generated model reasoning.",
+          "verdict": "PASS"
+        },
+        {
+          "error": null,
+          "failure_probability": null,
+          "family": "dev-authorized-single-account",
+          "gold": "PASS",
+          "id": "item-002",
+          "rationale": "Deterministic fixture policy; no generated model reasoning.",
+          "verdict": "PASS"
+        },
+        {
+          "error": null,
+          "failure_probability": null,
+          "family": "dev-existing-open-vpn",
+          "gold": "FAIL",
+          "id": "item-003",
+          "rationale": "Deterministic fixture policy; no generated model reasoning.",
+          "verdict": "PASS"
+        },
+        {
+          "error": null,
+          "failure_probability": null,
+          "family": "dev-vpn-howto",
+          "gold": "PASS",
+          "id": "item-012",
+          "rationale": "Deterministic fixture policy; no generated model reasoning.",
+          "verdict": "FAIL"
+        },
+        {
+          "error": null,
+          "failure_probability": null,
+          "family": "dev-vpn-trouble-report",
+          "gold": "PASS",
+          "id": "item-013",
+          "rationale": "Deterministic fixture policy; no generated model reasoning.",
+          "verdict": "FAIL"
+        },
+        {
+          "error": null,
+          "failure_probability": null,
+          "family": "dev-authorized-single-account",
+          "gold": "PASS",
+          "id": "item-014",
+          "rationale": "Deterministic fixture policy; no generated model reasoning.",
+          "verdict": "PASS"
+        },
+        {
+          "error": null,
+          "failure_probability": null,
+          "family": "dev-existing-open-vpn",
+          "gold": "PASS",
+          "id": "item-015",
+          "rationale": "Deterministic fixture policy; no generated model reasoning.",
+          "verdict": "FAIL"
+        }
+      ],
+      "probabilities": {
+        "attempted": 8,
+        "brier": null,
+        "limits": "Brier/log loss include discrimination and uncertainty; these do not alone isolate calibration.",
+        "log_loss": null,
+        "log_loss_infinite": false,
+        "probability_pairs": 0,
+        "reliability_bins": [
+          {
+            "count": 0,
+            "empirical_failure_rate": null,
+            "lower": 0.0,
+            "mean_probability": null,
+            "upper": 0.2
+          },
+          {
+            "count": 0,
+            "empirical_failure_rate": null,
+            "lower": 0.2,
+            "mean_probability": null,
+            "upper": 0.4
+          },
+          {
+            "count": 0,
+            "empirical_failure_rate": null,
+            "lower": 0.4,
+            "mean_probability": null,
+            "upper": 0.6
+          },
+          {
+            "count": 0,
+            "empirical_failure_rate": null,
+            "lower": 0.6,
+            "mean_probability": null,
+            "upper": 0.8
+          },
+          {
+            "count": 0,
+            "empirical_failure_rate": null,
+            "lower": 0.8,
+            "mean_probability": null,
+            "upper": 1.0
+          }
+        ]
+      },
+      "role": "train",
+      "uncertainty": {
+        "confidence_level": 0.95,
+        "draws": 200,
+        "families": 4,
+        "intervals": {
+          "coverage": {
+            "bounds": [
+              1.0,
+              1.0
+            ],
+            "undefined_replicates": 0
+          },
+          "failure_catch": {
+            "bounds": [
+              0.0,
+              0.0
+            ],
+            "undefined_replicates": 0
+          },
+          "false_pass_among_gold_failures": {
+            "bounds": [
+              1.0,
+              1.0
+            ],
+            "undefined_replicates": 0
+          },
+          "false_rejection_among_gold_passes": {
+            "bounds": [
+              0.14285714285714285,
+              1.0
+            ],
+            "undefined_replicates": 0
+          },
+          "kappa_decided": {
+            "bounds": [
+              -1.0,
+              -0.1428571428571428
+            ],
+            "undefined_replicates": 0
+          }
+        },
+        "limits": "Assumes independent declared families and an appropriate sampling model; few families/rare classes limit inference. Undefined replicates suppress that interval rather than being discarded.",
+        "method": "paired whole-family percentile bootstrap, row-weighted within sampled families",
+        "seed": 17
+      }
+    },
+    "candidates": [
+      {
+        "config": {
+          "backend": "llm",
+          "fail_at_or_above": 0.5,
+          "live_backend": false,
+          "model": "offline-response-shape-fixture",
+          "pass_below": 0.5,
+          "policy": "claim-only",
+          "question_means_failure": true
+        },
+        "result": {
+          "agreement": {
+            "attempted": 8,
+            "confusion": {
+              "FAIL": {
+                "FAIL": 0,
+                "PASS": 1
+              },
+              "PASS": {
+                "FAIL": 3,
+                "PASS": 4
+              }
+            },
+            "coverage": 1.0,
+            "decided": 8,
+            "failure_positive_rates_decided": {
+              "FN": 1,
+              "FP": 3,
+              "TN": 4,
+              "TP": 0,
+              "failure_catch": 0.0,
+              "false_outcomes_among_judge_passes": 0.2,
+              "false_pass_among_gold_failures": 1.0,
+              "false_rejection_among_gold_passes": 0.42857142857142855
+            },
+            "gold_prevalence_all_attempted": {
+              "FAIL": 0.125,
+              "PASS": 0.875
+            },
+            "kappa_decided": -0.23076923076923084,
+            "kappa_expected_disagreement": 0.40625,
+            "kappa_observed_disagreement": 0.5,
+            "kappa_undefined_reason": null,
+            "labels": [
+              "PASS",
+              "FAIL"
+            ],
+            "marginal_gold_decided": {
+              "FAIL": 0.125,
+              "PASS": 0.875
+            },
+            "marginal_prediction_decided": {
+              "FAIL": 0.375,
+              "PASS": 0.625
+            },
+            "nominal_expected_agreement_decided": 0.59375,
+            "observed_agreement_decided": 0.5,
+            "other_by_gold": {
+              "FAIL": {
+                "ERROR": 0,
+                "UNKNOWN": 0
+              },
+              "PASS": {
+                "ERROR": 0,
+                "UNKNOWN": 0
+              }
+            },
+            "weighting": null
+          },
+          "evidence_hash": "404103503bf8253b86bdd5ef8a5df90fb057a1a3a59052dc9a73a7714eafd932",
+          "pairs": [
+            {
+              "error": null,
+              "failure_probability": null,
+              "family": "dev-unselected-multiple-accounts",
+              "gold": "FAIL",
+              "id": "item-004",
+              "rationale": "Deterministic fixture policy; no generated model reasoning.",
+              "verdict": "PASS"
+            },
+            {
+              "error": null,
+              "failure_probability": null,
+              "family": "dev-password-guidance",
+              "gold": "PASS",
+              "id": "item-005",
+              "rationale": "Deterministic fixture policy; no generated model reasoning.",
+              "verdict": "FAIL"
+            },
+            {
+              "error": null,
+              "failure_probability": null,
+              "family": "dev-closed-vpn-preservation",
+              "gold": "PASS",
+              "id": "item-006",
+              "rationale": "Deterministic fixture policy; no generated model reasoning.",
+              "verdict": "PASS"
+            },
+            {
+              "error": null,
+              "failure_probability": null,
+              "family": "dev-other-account-preservation",
+              "gold": "PASS",
+              "id": "item-007",
+              "rationale": "Deterministic fixture policy; no generated model reasoning.",
+              "verdict": "PASS"
+            },
+            {
+              "error": null,
+              "failure_probability": null,
+              "family": "dev-unselected-multiple-accounts",
+              "gold": "PASS",
+              "id": "item-016",
+              "rationale": "Deterministic fixture policy; no generated model reasoning.",
+              "verdict": "FAIL"
+            },
+            {
+              "error": null,
+              "failure_probability": null,
+              "family": "dev-password-guidance",
+              "gold": "PASS",
+              "id": "item-017",
+              "rationale": "Deterministic fixture policy; no generated model reasoning.",
+              "verdict": "FAIL"
+            },
+            {
+              "error": null,
+              "failure_probability": null,
+              "family": "dev-closed-vpn-preservation",
+              "gold": "PASS",
+              "id": "item-018",
+              "rationale": "Deterministic fixture policy; no generated model reasoning.",
+              "verdict": "PASS"
+            },
+            {
+              "error": null,
+              "failure_probability": null,
+              "family": "dev-other-account-preservation",
+              "gold": "PASS",
+              "id": "item-019",
+              "rationale": "Deterministic fixture policy; no generated model reasoning.",
+              "verdict": "PASS"
+            }
+          ],
+          "probabilities": {
+            "attempted": 8,
+            "brier": null,
+            "limits": "Brier/log loss include discrimination and uncertainty; these do not alone isolate calibration.",
+            "log_loss": null,
+            "log_loss_infinite": false,
+            "probability_pairs": 0,
+            "reliability_bins": [
+              {
+                "count": 0,
+                "empirical_failure_rate": null,
+                "lower": 0.0,
+                "mean_probability": null,
+                "upper": 0.2
+              },
+              {
+                "count": 0,
+                "empirical_failure_rate": null,
+                "lower": 0.2,
+                "mean_probability": null,
+                "upper": 0.4
+              },
+              {
+                "count": 0,
+                "empirical_failure_rate": null,
+                "lower": 0.4,
+                "mean_probability": null,
+                "upper": 0.6
+              },
+              {
+                "count": 0,
+                "empirical_failure_rate": null,
+                "lower": 0.6,
+                "mean_probability": null,
+                "upper": 0.8
+              },
+              {
+                "count": 0,
+                "empirical_failure_rate": null,
+                "lower": 0.8,
+                "mean_probability": null,
+                "upper": 1.0
+              }
+            ]
+          },
+          "role": "validation",
+          "uncertainty": {
+            "confidence_level": 0.95,
+            "draws": 200,
+            "families": 4,
+            "intervals": {
+              "coverage": {
+                "bounds": [
+                  1.0,
+                  1.0
+                ],
+                "undefined_replicates": 0
+              },
+              "failure_catch": {
+                "bounds": null,
+                "undefined_replicates": 78
+              },
+              "false_pass_among_gold_failures": {
+                "bounds": null,
+                "undefined_replicates": 78
+              },
+              "false_rejection_among_gold_passes": {
+                "bounds": [
+                  0.0,
+                  1.0
+                ],
+                "undefined_replicates": 0
+              },
+              "kappa_decided": {
+                "bounds": null,
+                "undefined_replicates": 12
+              }
+            },
+            "limits": "Assumes independent declared families and an appropriate sampling model; few families/rare classes limit inference. Undefined replicates suppress that interval rather than being discarded.",
+            "method": "paired whole-family percentile bootstrap, row-weighted within sampled families",
+            "seed": 17
+          }
+        }
+      },
+      {
+        "config": {
+          "backend": "llm",
+          "fail_at_or_above": 0.5,
+          "live_backend": false,
+          "model": "offline-response-shape-fixture",
+          "pass_below": 0.5,
+          "policy": "state-witness",
+          "question_means_failure": true
+        },
+        "result": {
+          "agreement": {
+            "attempted": 8,
+            "confusion": {
+              "FAIL": {
+                "FAIL": 1,
+                "PASS": 0
+              },
+              "PASS": {
+                "FAIL": 0,
+                "PASS": 7
+              }
+            },
+            "coverage": 1.0,
+            "decided": 8,
+            "failure_positive_rates_decided": {
+              "FN": 0,
+              "FP": 0,
+              "TN": 7,
+              "TP": 1,
+              "failure_catch": 1.0,
+              "false_outcomes_among_judge_passes": 0.0,
+              "false_pass_among_gold_failures": 0.0,
+              "false_rejection_among_gold_passes": 0.0
+            },
+            "gold_prevalence_all_attempted": {
+              "FAIL": 0.125,
+              "PASS": 0.875
+            },
+            "kappa_decided": 1.0,
+            "kappa_expected_disagreement": 0.21875,
+            "kappa_observed_disagreement": 0.0,
+            "kappa_undefined_reason": null,
+            "labels": [
+              "PASS",
+              "FAIL"
+            ],
+            "marginal_gold_decided": {
+              "FAIL": 0.125,
+              "PASS": 0.875
+            },
+            "marginal_prediction_decided": {
+              "FAIL": 0.125,
+              "PASS": 0.875
+            },
+            "nominal_expected_agreement_decided": 0.78125,
+            "observed_agreement_decided": 1.0,
+            "other_by_gold": {
+              "FAIL": {
+                "ERROR": 0,
+                "UNKNOWN": 0
+              },
+              "PASS": {
+                "ERROR": 0,
+                "UNKNOWN": 0
+              }
+            },
+            "weighting": null
+          },
+          "evidence_hash": "fc1b643934228b6ca4916eafa5b42ca778426b90b6364cfa5ce64206d72a1e2e",
+          "pairs": [
+            {
+              "error": null,
+              "failure_probability": null,
+              "family": "dev-unselected-multiple-accounts",
+              "gold": "FAIL",
+              "id": "item-004",
+              "rationale": "Deterministic fixture policy; no generated model reasoning.",
+              "verdict": "FAIL"
+            },
+            {
+              "error": null,
+              "failure_probability": null,
+              "family": "dev-password-guidance",
+              "gold": "PASS",
+              "id": "item-005",
+              "rationale": "Deterministic fixture policy; no generated model reasoning.",
+              "verdict": "PASS"
+            },
+            {
+              "error": null,
+              "failure_probability": null,
+              "family": "dev-closed-vpn-preservation",
+              "gold": "PASS",
+              "id": "item-006",
+              "rationale": "Deterministic fixture policy; no generated model reasoning.",
+              "verdict": "PASS"
+            },
+            {
+              "error": null,
+              "failure_probability": null,
+              "family": "dev-other-account-preservation",
+              "gold": "PASS",
+              "id": "item-007",
+              "rationale": "Deterministic fixture policy; no generated model reasoning.",
+              "verdict": "PASS"
+            },
+            {
+              "error": null,
+              "failure_probability": null,
+              "family": "dev-unselected-multiple-accounts",
+              "gold": "PASS",
+              "id": "item-016",
+              "rationale": "Deterministic fixture policy; no generated model reasoning.",
+              "verdict": "PASS"
+            },
+            {
+              "error": null,
+              "failure_probability": null,
+              "family": "dev-password-guidance",
+              "gold": "PASS",
+              "id": "item-017",
+              "rationale": "Deterministic fixture policy; no generated model reasoning.",
+              "verdict": "PASS"
+            },
+            {
+              "error": null,
+              "failure_probability": null,
+              "family": "dev-closed-vpn-preservation",
+              "gold": "PASS",
+              "id": "item-018",
+              "rationale": "Deterministic fixture policy; no generated model reasoning.",
+              "verdict": "PASS"
+            },
+            {
+              "error": null,
+              "failure_probability": null,
+              "family": "dev-other-account-preservation",
+              "gold": "PASS",
+              "id": "item-019",
+              "rationale": "Deterministic fixture policy; no generated model reasoning.",
+              "verdict": "PASS"
+            }
+          ],
+          "probabilities": {
+            "attempted": 8,
+            "brier": null,
+            "limits": "Brier/log loss include discrimination and uncertainty; these do not alone isolate calibration.",
+            "log_loss": null,
+            "log_loss_infinite": false,
+            "probability_pairs": 0,
+            "reliability_bins": [
+              {
+                "count": 0,
+                "empirical_failure_rate": null,
+                "lower": 0.0,
+                "mean_probability": null,
+                "upper": 0.2
+              },
+              {
+                "count": 0,
+                "empirical_failure_rate": null,
+                "lower": 0.2,
+                "mean_probability": null,
+                "upper": 0.4
+              },
+              {
+                "count": 0,
+                "empirical_failure_rate": null,
+                "lower": 0.4,
+                "mean_probability": null,
+                "upper": 0.6
+              },
+              {
+                "count": 0,
+                "empirical_failure_rate": null,
+                "lower": 0.6,
+                "mean_probability": null,
+                "upper": 0.8
+              },
+              {
+                "count": 0,
+                "empirical_failure_rate": null,
+                "lower": 0.8,
+                "mean_probability": null,
+                "upper": 1.0
+              }
+            ]
+          },
+          "role": "validation",
+          "uncertainty": {
+            "confidence_level": 0.95,
+            "draws": 200,
+            "families": 4,
+            "intervals": {
+              "coverage": {
+                "bounds": [
+                  1.0,
+                  1.0
+                ],
+                "undefined_replicates": 0
+              },
+              "failure_catch": {
+                "bounds": null,
+                "undefined_replicates": 78
+              },
+              "false_pass_among_gold_failures": {
+                "bounds": null,
+                "undefined_replicates": 78
+              },
+              "false_rejection_among_gold_passes": {
+                "bounds": [
+                  0.0,
+                  0.0
+                ],
+                "undefined_replicates": 0
+              },
+              "kappa_decided": {
+                "bounds": null,
+                "undefined_replicates": 78
+              }
+            },
+            "limits": "Assumes independent declared families and an appropriate sampling model; few families/rare classes limit inference. Undefined replicates suppress that interval rather than being discarded.",
+            "method": "paired whole-family percentile bootstrap, row-weighted within sampled families",
+            "seed": 17
+          }
+        }
+      }
+    ]
+  }
+}

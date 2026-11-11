@@ -1,0 +1,3 @@
+For a generated state-changing task, observe complete resulting state through the native grader. A claimed action, status note or successful command is insufficient. Check exact membership changes, required new-record fields, unique IDs, original-record order/content and unrelated state preservation.
+
+Include a claim-only result with unchanged state, a valid alternative with different explanatory wording and unique ID convention, and malformed extra-field output. Retain actual executions and state witnesses separately from verifier declarations. The receipts in this directory reproduce the first mechanism and execute the latter two controls. This local teaching memo has no independent intent-review acceptance and was not installed into a canonical generator.

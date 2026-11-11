@@ -1,0 +1,36 @@
+{
+  "authority": "Synthetic fixture reference outcomes, not independent human gold",
+  "fitting": "not authorized and not run",
+  "native_or_live_judge_calls": 0,
+  "provenance": "Local IDs reconstruct exactly the four supplied aggregate observations; original response texts, row IDs, evaluated artifacts and parser configuration unavailable",
+  "rows": [
+    {
+      "error": null,
+      "family": "single-stored-control-source",
+      "gold": "PASS",
+      "id": "stored-1",
+      "verdict": "PASS"
+    },
+    {
+      "error": null,
+      "family": "single-stored-control-source",
+      "gold": "PASS",
+      "id": "stored-2",
+      "verdict": "PASS"
+    },
+    {
+      "error": null,
+      "family": "single-stored-control-source",
+      "gold": "PASS",
+      "id": "stored-3",
+      "verdict": "PASS"
+    },
+    {
+      "error": "Response failed parsing; raw response unavailable",
+      "family": "single-stored-control-source",
+      "gold": "PASS",
+      "id": "stored-4",
+      "verdict": "ERROR"
+    }
+  ]
+}

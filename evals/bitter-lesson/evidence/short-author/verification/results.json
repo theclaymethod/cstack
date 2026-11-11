@@ -1,0 +1,87 @@
+{
+  "actual_case_attempts": 8,
+  "frozen_after": {
+    "evals/cases.jsonl": "71f1d8c50f7ce2b3ca512c6f2703faa4e30d5c63237824e3a73e7a573cf4f7b2",
+    "evals/rubric.md": "cb133b50752a48098d463a562d7553ec5a5b29bfef1825b4e393e7de33d66dd8",
+    "evals/spec.json": "eb6f21266223c16708a4ed3bb4f401f3a2adb3355b9e176152665d70a665d8f6",
+    "evaluate.py": "fd1fdaa4b090852f8d0a6462303411bea5488dcc7f7a08895146e32d52b0430d",
+    "support_agent.py": "0720b56482a445967ff2a98ec5cfa668c858b8a6f662da74a55c21b257393efc"
+  },
+  "frozen_before_equals_after": true,
+  "native_evidence_checker": "evaluate.checked_run on all four runs; stdout, parsed output, identity, case coverage, outcomes and counts checked",
+  "outcomes": [
+    {
+      "checked_run": "passed",
+      "control": "legitimate",
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 2,
+        "UNKNOWN": 0
+      },
+      "outcomes": {
+        "A-r1": "PASS",
+        "B-r2": "PASS"
+      }
+    },
+    {
+      "checked_run": "passed",
+      "control": "alternative",
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 2,
+        "UNKNOWN": 0
+      },
+      "outcomes": {
+        "A-r1": "PASS",
+        "B-r2": "PASS"
+      }
+    },
+    {
+      "checked_run": "passed",
+      "control": "false-claim",
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 1,
+        "PASS": 1,
+        "UNKNOWN": 0
+      },
+      "outcomes": {
+        "A-r1": "PASS",
+        "B-r2": "FAIL"
+      }
+    },
+    {
+      "checked_run": "passed",
+      "control": "initial-product",
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 1,
+        "PASS": 1,
+        "UNKNOWN": 0
+      },
+      "outcomes": {
+        "A-r1": "FAIL",
+        "B-r2": "PASS"
+      }
+    }
+  ],
+  "required_controls": [
+    "legitimate",
+    "alternative",
+    "false-claim",
+    "initial-product"
+  ],
+  "required_ids": [
+    "A-r1",
+    "B-r2"
+  ],
+  "required_source_membership_and_hashes_checked": [
+    "approved-cards.json",
+    "card-history.json",
+    "frozen-before.json",
+    "inventory.json",
+    "scripted-decisions.md"
+  ]
+}

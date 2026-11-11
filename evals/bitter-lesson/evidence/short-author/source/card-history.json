@@ -1,0 +1,116 @@
+[
+  {
+    "decision": "rejected",
+    "event": "earlier-proposal",
+    "id": "A",
+    "limits": "Earlier full card text and revision number were not supplied; do not reconstruct them.",
+    "proposed_expectation": "create a ticket",
+    "source": "source/scripted-decisions.md"
+  },
+  {
+    "card": {
+      "authority": "source/scripted-decisions.md; expectation approval only, no output label",
+      "expectation_text": "Give guidance, account null, preserve all state.",
+      "expected": {
+        "account": null,
+        "allowed_actions": [
+          "guidance"
+        ],
+        "ticket_delta": 0
+      },
+      "family": "scripted-A-guidance-preservation",
+      "id": "A",
+      "intent_revision": 1,
+      "method": "supplied conditions; no independent generation",
+      "origin": "scripted-synthetic-owner-decision",
+      "rationale": "A VPN how-to question does not authorize mutation.",
+      "request": {
+        "account": null,
+        "accounts": [
+          "acct-a"
+        ],
+        "text": "How do I connect to the VPN?"
+      },
+      "revision": 1,
+      "role": "exposed development contract check",
+      "state": {
+        "counter": 7,
+        "tickets": []
+      },
+      "status": "approved-current"
+    },
+    "event": "current-approval",
+    "id": "A",
+    "revision": 1
+  },
+  {
+    "decision": "explicitly corrected",
+    "event": "prior-proposal",
+    "id": "B",
+    "limits": "Only prior proposal behavior was supplied; no fabricated full earlier card.",
+    "proposed_expectation": "guidance only",
+    "revision": 1,
+    "source": "source/scripted-decisions.md"
+  },
+  {
+    "card": {
+      "authority": "source/scripted-decisions.md; expectation approval only, no output label",
+      "expectation_text": "Create exactly one open VPN ticket for acct-a with any unique nonempty ID. Preserve the unrelated ticket and all other state.",
+      "expected": {
+        "account": "acct-a",
+        "allowed_actions": [
+          "create_ticket"
+        ],
+        "ticket_delta": 1
+      },
+      "family": "scripted-B-account-scoped-creation-preservation",
+      "id": "B",
+      "intent_revision": 1,
+      "method": "supplied conditions; no independent generation",
+      "origin": "scripted-synthetic-owner-decision",
+      "rationale": "Exact replacement approved by the scripted correction; unrelated acct-b ticket must survive.",
+      "request": {
+        "account": "acct-a",
+        "accounts": [
+          "acct-a",
+          "acct-b"
+        ],
+        "text": "Please create a VPN support ticket."
+      },
+      "revision": 2,
+      "role": "exposed development contract check",
+      "state": {
+        "counter": 7,
+        "tickets": [
+          {
+            "account": "acct-b",
+            "id": "old",
+            "issue": "vpn",
+            "metadata": {
+              "keep": true
+            },
+            "status": "open"
+          }
+        ]
+      },
+      "status": "approved-current"
+    },
+    "event": "exact-replacement-approval",
+    "id": "B",
+    "revision": 2,
+    "supersedes": "B revision1"
+  },
+  {
+    "decision": "deferred",
+    "event": "defer",
+    "id": "C",
+    "inverse_approved": false,
+    "proposal": "automatically escalate urgent VPN problems without a clear account",
+    "revision": 1,
+    "source": "source/scripted-decisions.md",
+    "unresolved": [
+      "urgency policy",
+      "escalation policy"
+    ]
+  }
+]

@@ -1,0 +1,22 @@
+{
+  "id": "dev-explicit",
+  "suite": "development",
+  "family": "dev-authorized-single-account",
+  "request": {
+    "text": "Please open a ticket for my VPN problem.",
+    "account": null,
+    "accounts": [
+      "acct-a"
+    ]
+  },
+  "state": {
+    "tickets": []
+  },
+  "expected": {
+    "allowed_actions": [
+      "create_ticket"
+    ],
+    "ticket_delta": 1,
+    "account": "acct-a"
+  }
+}

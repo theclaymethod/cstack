@@ -1,0 +1,34 @@
+{
+  "candidate_hash": "86fe3d6c8c2cde5cf20cabf7ec886e010b2cfd20b02e396f11994feab5507898",
+  "case_ids": [
+    "A-r1",
+    "B-r2"
+  ],
+  "complete": true,
+  "counts": {
+    "ERROR": 2,
+    "FAIL": 0,
+    "PASS": 0,
+    "UNKNOWN": 0
+  },
+  "executed_count": 2,
+  "identity_hash": "89a96d226443d97b3a269934961259e3fc32de1ab2358841c738e964bc6c829c",
+  "results": [
+    {
+      "checks": {},
+      "error": "Expecting value: line 1 column 1 (char 0)",
+      "id": "A-r1",
+      "outcome": "ERROR",
+      "suite": "development"
+    },
+    {
+      "checks": {},
+      "error": "Expecting value: line 1 column 1 (char 0)",
+      "id": "B-r2",
+      "outcome": "ERROR",
+      "suite": "development"
+    }
+  ],
+  "score": 0.0,
+  "selected_count": 2
+}

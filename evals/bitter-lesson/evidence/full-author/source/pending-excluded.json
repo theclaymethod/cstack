@@ -1,0 +1,21 @@
+{
+  "excluded": [
+    {
+      "card": "A:0",
+      "reason": "rejected original creation proposal"
+    },
+    {
+      "card": "B:1",
+      "reason": "explicit replacement B:2 supersedes guidance-only proposal"
+    }
+  ],
+  "pending": [
+    {
+      "card": "C:1",
+      "reason": "No urgency/escalation policy; no runnable expectation or inverse approved"
+    }
+  ],
+  "proposal_queue": [
+    "D:1 boundary contrast pending approval; defined separately after handoff"
+  ]
+}

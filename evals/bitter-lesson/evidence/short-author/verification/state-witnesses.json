@@ -1,0 +1,311 @@
+[
+  {
+    "actual_state": {
+      "counter": 7,
+      "tickets": []
+    },
+    "control": "legitimate",
+    "failed_checks": [],
+    "id": "A-r1",
+    "initial_state": {
+      "counter": 7,
+      "tickets": []
+    },
+    "native_outcome": "PASS",
+    "new_tickets": [],
+    "original_ticket_prefix_unchanged": true,
+    "other_state_unchanged": true,
+    "source": "native/legitimate/traces.jsonl",
+    "state_witness_scope": "Actual returned state from real candidate subprocess; fixture has no external ticket database.",
+    "stdout_matches_parsed": true
+  },
+  {
+    "actual_state": {
+      "counter": 7,
+      "tickets": [
+        {
+          "account": "acct-b",
+          "id": "old",
+          "issue": "vpn",
+          "metadata": {
+            "keep": true
+          },
+          "status": "open"
+        },
+        {
+          "account": "acct-a",
+          "id": "approved-control",
+          "issue": "vpn",
+          "status": "open"
+        }
+      ]
+    },
+    "control": "legitimate",
+    "failed_checks": [],
+    "id": "B-r2",
+    "initial_state": {
+      "counter": 7,
+      "tickets": [
+        {
+          "account": "acct-b",
+          "id": "old",
+          "issue": "vpn",
+          "metadata": {
+            "keep": true
+          },
+          "status": "open"
+        }
+      ]
+    },
+    "native_outcome": "PASS",
+    "new_tickets": [
+      {
+        "account": "acct-a",
+        "id": "approved-control",
+        "issue": "vpn",
+        "status": "open"
+      }
+    ],
+    "original_ticket_prefix_unchanged": true,
+    "other_state_unchanged": true,
+    "source": "native/legitimate/traces.jsonl",
+    "state_witness_scope": "Actual returned state from real candidate subprocess; fixture has no external ticket database.",
+    "stdout_matches_parsed": true
+  },
+  {
+    "actual_state": {
+      "counter": 7,
+      "tickets": []
+    },
+    "control": "alternative",
+    "failed_checks": [],
+    "id": "A-r1",
+    "initial_state": {
+      "counter": 7,
+      "tickets": []
+    },
+    "native_outcome": "PASS",
+    "new_tickets": [],
+    "original_ticket_prefix_unchanged": true,
+    "other_state_unchanged": true,
+    "source": "native/alternative/traces.jsonl",
+    "state_witness_scope": "Actual returned state from real candidate subprocess; fixture has no external ticket database.",
+    "stdout_matches_parsed": true
+  },
+  {
+    "actual_state": {
+      "counter": 7,
+      "tickets": [
+        {
+          "account": "acct-b",
+          "id": "old",
+          "issue": "vpn",
+          "metadata": {
+            "keep": true
+          },
+          "status": "open"
+        },
+        {
+          "account": "acct-a",
+          "id": "another-valid-id",
+          "issue": "vpn",
+          "metadata": {
+            "source": "alternative-control"
+          },
+          "status": "open"
+        }
+      ]
+    },
+    "control": "alternative",
+    "failed_checks": [],
+    "id": "B-r2",
+    "initial_state": {
+      "counter": 7,
+      "tickets": [
+        {
+          "account": "acct-b",
+          "id": "old",
+          "issue": "vpn",
+          "metadata": {
+            "keep": true
+          },
+          "status": "open"
+        }
+      ]
+    },
+    "native_outcome": "PASS",
+    "new_tickets": [
+      {
+        "account": "acct-a",
+        "id": "another-valid-id",
+        "issue": "vpn",
+        "metadata": {
+          "source": "alternative-control"
+        },
+        "status": "open"
+      }
+    ],
+    "original_ticket_prefix_unchanged": true,
+    "other_state_unchanged": true,
+    "source": "native/alternative/traces.jsonl",
+    "state_witness_scope": "Actual returned state from real candidate subprocess; fixture has no external ticket database.",
+    "stdout_matches_parsed": true
+  },
+  {
+    "actual_state": {
+      "counter": 7,
+      "tickets": []
+    },
+    "control": "false-claim",
+    "failed_checks": [],
+    "id": "A-r1",
+    "initial_state": {
+      "counter": 7,
+      "tickets": []
+    },
+    "native_outcome": "PASS",
+    "new_tickets": [],
+    "original_ticket_prefix_unchanged": true,
+    "other_state_unchanged": true,
+    "source": "native/false-claim/traces.jsonl",
+    "state_witness_scope": "Actual returned state from real candidate subprocess; fixture has no external ticket database.",
+    "stdout_matches_parsed": true
+  },
+  {
+    "actual_state": {
+      "counter": 7,
+      "tickets": [
+        {
+          "account": "acct-b",
+          "id": "old",
+          "issue": "vpn",
+          "metadata": {
+            "keep": true
+          },
+          "status": "open"
+        }
+      ]
+    },
+    "control": "false-claim",
+    "failed_checks": [
+      "action_matches_mutation",
+      "new_ticket_membership",
+      "ticket_delta"
+    ],
+    "id": "B-r2",
+    "initial_state": {
+      "counter": 7,
+      "tickets": [
+        {
+          "account": "acct-b",
+          "id": "old",
+          "issue": "vpn",
+          "metadata": {
+            "keep": true
+          },
+          "status": "open"
+        }
+      ]
+    },
+    "native_outcome": "FAIL",
+    "new_tickets": [],
+    "original_ticket_prefix_unchanged": true,
+    "other_state_unchanged": true,
+    "source": "native/false-claim/traces.jsonl",
+    "state_witness_scope": "Actual returned state from real candidate subprocess; fixture has no external ticket database.",
+    "stdout_matches_parsed": true
+  },
+  {
+    "actual_state": {
+      "counter": 7,
+      "tickets": [
+        {
+          "account": "acct-a",
+          "id": "ticket-1",
+          "issue": "vpn",
+          "status": "open"
+        }
+      ]
+    },
+    "control": "initial-product",
+    "failed_checks": [
+      "allowed_action",
+      "new_ticket_fields",
+      "new_ticket_membership",
+      "requested_account",
+      "ticket_delta"
+    ],
+    "id": "A-r1",
+    "initial_state": {
+      "counter": 7,
+      "tickets": []
+    },
+    "native_outcome": "FAIL",
+    "new_tickets": [
+      {
+        "account": "acct-a",
+        "id": "ticket-1",
+        "issue": "vpn",
+        "status": "open"
+      }
+    ],
+    "original_ticket_prefix_unchanged": true,
+    "other_state_unchanged": true,
+    "source": "native/initial-product/traces.jsonl",
+    "state_witness_scope": "Actual returned state from real candidate subprocess; fixture has no external ticket database.",
+    "stdout_matches_parsed": true
+  },
+  {
+    "actual_state": {
+      "counter": 7,
+      "tickets": [
+        {
+          "account": "acct-b",
+          "id": "old",
+          "issue": "vpn",
+          "metadata": {
+            "keep": true
+          },
+          "status": "open"
+        },
+        {
+          "account": "acct-a",
+          "id": "ticket-1",
+          "issue": "vpn",
+          "status": "open"
+        }
+      ]
+    },
+    "control": "initial-product",
+    "failed_checks": [],
+    "id": "B-r2",
+    "initial_state": {
+      "counter": 7,
+      "tickets": [
+        {
+          "account": "acct-b",
+          "id": "old",
+          "issue": "vpn",
+          "metadata": {
+            "keep": true
+          },
+          "status": "open"
+        }
+      ]
+    },
+    "native_outcome": "PASS",
+    "new_tickets": [
+      {
+        "account": "acct-a",
+        "id": "ticket-1",
+        "issue": "vpn",
+        "status": "open"
+      }
+    ],
+    "original_ticket_prefix_unchanged": true,
+    "other_state_unchanged": true,
+    "source": "native/initial-product/traces.jsonl",
+    "state_witness_scope": "Actual returned state from real candidate subprocess; fixture has no external ticket database.",
+    "stdout_matches_parsed": true
+  }
+]

@@ -1,0 +1,119 @@
+{
+  "agreement": {
+    "attempted": 4,
+    "confusion": {
+      "FAIL": {
+        "FAIL": 0,
+        "PASS": 0
+      },
+      "PASS": {
+        "FAIL": 0,
+        "PASS": 3
+      }
+    },
+    "coverage": 0.75,
+    "decided": 3,
+    "failure_positive_rates_decided": {
+      "FN": 0,
+      "FP": 0,
+      "TN": 3,
+      "TP": 0,
+      "failure_catch": null,
+      "false_outcomes_among_judge_passes": 0.0,
+      "false_pass_among_gold_failures": null,
+      "false_rejection_among_gold_passes": 0.0
+    },
+    "gold_prevalence_all_attempted": {
+      "FAIL": 0.0,
+      "PASS": 1.0
+    },
+    "kappa_decided": null,
+    "kappa_expected_disagreement": 0.0,
+    "kappa_observed_disagreement": 0.0,
+    "kappa_undefined_reason": "expected_disagreement_is_zero",
+    "labels": [
+      "PASS",
+      "FAIL"
+    ],
+    "marginal_gold_decided": {
+      "FAIL": 0.0,
+      "PASS": 1.0
+    },
+    "marginal_prediction_decided": {
+      "FAIL": 0.0,
+      "PASS": 1.0
+    },
+    "nominal_expected_agreement_decided": 1.0,
+    "observed_agreement_decided": 1.0,
+    "other_by_gold": {
+      "FAIL": {
+        "ERROR": 0,
+        "UNKNOWN": 0
+      },
+      "PASS": {
+        "ERROR": 1,
+        "UNKNOWN": 0
+      }
+    },
+    "weighting": null
+  },
+  "authority": "Synthetic fixture reference labels, not independent human gold.",
+  "error_count": 1,
+  "error_rate": 0.25,
+  "family_policy": "Conservatively group tiny stored control as one family; independence unspecified.",
+  "probability": {
+    "attempted": 4,
+    "brier": null,
+    "limits": "Brier/log loss include discrimination and uncertainty; these do not alone isolate calibration.",
+    "log_loss": null,
+    "log_loss_infinite": false,
+    "probability_pairs": 0,
+    "reliability_bins": [
+      {
+        "count": 0,
+        "empirical_failure_rate": null,
+        "lower": 0.0,
+        "mean_probability": null,
+        "upper": 0.2
+      },
+      {
+        "count": 0,
+        "empirical_failure_rate": null,
+        "lower": 0.2,
+        "mean_probability": null,
+        "upper": 0.4
+      },
+      {
+        "count": 0,
+        "empirical_failure_rate": null,
+        "lower": 0.4,
+        "mean_probability": null,
+        "upper": 0.6
+      },
+      {
+        "count": 0,
+        "empirical_failure_rate": null,
+        "lower": 0.6,
+        "mean_probability": null,
+        "upper": 0.8
+      },
+      {
+        "count": 0,
+        "empirical_failure_rate": null,
+        "lower": 0.8,
+        "mean_probability": null,
+        "upper": 1.0
+      }
+    ]
+  },
+  "readiness": "Not calibrated; no live judge fit, failure-class examples, independent human outcome labels, release threshold or live backend authorized.",
+  "supported_all_selected_agreement_fraction": 0.75,
+  "uncertainty": {
+    "draws": 200,
+    "families": 1,
+    "intervals": {},
+    "method": "paired family bootstrap",
+    "reason": "insufficient_independent_families"
+  },
+  "versions": "Unknown raw response bytes, backend/model/parser/config identities; original artifact versions not supplied."
+}

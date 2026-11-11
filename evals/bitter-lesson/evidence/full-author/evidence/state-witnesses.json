@@ -1,0 +1,370 @@
+[
+  {
+    "candidate": "legitimate",
+    "case": "approved-A-r1",
+    "source": "retained actual subprocess stdout, not success note",
+    "action": "guidance",
+    "account": null,
+    "initial_state": {
+      "counter": 7,
+      "tickets": []
+    },
+    "actual_resulting_state": {
+      "counter": 7,
+      "tickets": []
+    },
+    "actual_ticket_delta": 0,
+    "new_records": [],
+    "original_ticket_prefix_preserved": true,
+    "counter": 7,
+    "failed_native_checks": []
+  },
+  {
+    "candidate": "legitimate",
+    "case": "approved-B-r2",
+    "source": "retained actual subprocess stdout, not success note",
+    "action": "create_ticket",
+    "account": "acct-a",
+    "initial_state": {
+      "counter": 7,
+      "tickets": [
+        {
+          "account": "acct-b",
+          "id": "old",
+          "issue": "vpn",
+          "metadata": {
+            "keep": true
+          },
+          "status": "open"
+        }
+      ]
+    },
+    "actual_resulting_state": {
+      "counter": 7,
+      "tickets": [
+        {
+          "account": "acct-b",
+          "id": "old",
+          "issue": "vpn",
+          "metadata": {
+            "keep": true
+          },
+          "status": "open"
+        },
+        {
+          "account": "acct-a",
+          "id": "ticket-1",
+          "issue": "vpn",
+          "status": "open"
+        }
+      ]
+    },
+    "actual_ticket_delta": 1,
+    "new_records": [
+      {
+        "account": "acct-a",
+        "id": "ticket-1",
+        "issue": "vpn",
+        "status": "open"
+      }
+    ],
+    "original_ticket_prefix_preserved": true,
+    "counter": 7,
+    "failed_native_checks": []
+  },
+  {
+    "candidate": "alternative-id",
+    "case": "approved-A-r1",
+    "source": "retained actual subprocess stdout, not success note",
+    "action": "guidance",
+    "account": null,
+    "initial_state": {
+      "counter": 7,
+      "tickets": []
+    },
+    "actual_resulting_state": {
+      "counter": 7,
+      "tickets": []
+    },
+    "actual_ticket_delta": 0,
+    "new_records": [],
+    "original_ticket_prefix_preserved": true,
+    "counter": 7,
+    "failed_native_checks": []
+  },
+  {
+    "candidate": "alternative-id",
+    "case": "approved-B-r2",
+    "source": "retained actual subprocess stdout, not success note",
+    "action": "create_ticket",
+    "account": "acct-a",
+    "initial_state": {
+      "counter": 7,
+      "tickets": [
+        {
+          "account": "acct-b",
+          "id": "old",
+          "issue": "vpn",
+          "metadata": {
+            "keep": true
+          },
+          "status": "open"
+        }
+      ]
+    },
+    "actual_resulting_state": {
+      "counter": 7,
+      "tickets": [
+        {
+          "account": "acct-b",
+          "id": "old",
+          "issue": "vpn",
+          "metadata": {
+            "keep": true
+          },
+          "status": "open"
+        },
+        {
+          "account": "acct-a",
+          "id": "valid-alt-1",
+          "issue": "vpn",
+          "status": "open"
+        }
+      ]
+    },
+    "actual_ticket_delta": 1,
+    "new_records": [
+      {
+        "account": "acct-a",
+        "id": "valid-alt-1",
+        "issue": "vpn",
+        "status": "open"
+      }
+    ],
+    "original_ticket_prefix_preserved": true,
+    "counter": 7,
+    "failed_native_checks": []
+  },
+  {
+    "candidate": "false-creation-claim",
+    "case": "approved-A-r1",
+    "source": "retained actual subprocess stdout, not success note",
+    "action": "guidance",
+    "account": null,
+    "initial_state": {
+      "counter": 7,
+      "tickets": []
+    },
+    "actual_resulting_state": {
+      "counter": 7,
+      "tickets": []
+    },
+    "actual_ticket_delta": 0,
+    "new_records": [],
+    "original_ticket_prefix_preserved": true,
+    "counter": 7,
+    "failed_native_checks": []
+  },
+  {
+    "candidate": "false-creation-claim",
+    "case": "approved-B-r2",
+    "source": "retained actual subprocess stdout, not success note",
+    "action": "create_ticket",
+    "account": "acct-a",
+    "initial_state": {
+      "counter": 7,
+      "tickets": [
+        {
+          "account": "acct-b",
+          "id": "old",
+          "issue": "vpn",
+          "metadata": {
+            "keep": true
+          },
+          "status": "open"
+        }
+      ]
+    },
+    "actual_resulting_state": {
+      "counter": 7,
+      "tickets": [
+        {
+          "account": "acct-b",
+          "id": "old",
+          "issue": "vpn",
+          "metadata": {
+            "keep": true
+          },
+          "status": "open"
+        }
+      ]
+    },
+    "actual_ticket_delta": 0,
+    "new_records": [],
+    "original_ticket_prefix_preserved": true,
+    "counter": 7,
+    "failed_native_checks": [
+      "action_matches_mutation",
+      "new_ticket_membership",
+      "ticket_delta"
+    ]
+  },
+  {
+    "candidate": "original-baseline",
+    "case": "approved-A-r1",
+    "source": "retained actual subprocess stdout, not success note",
+    "action": "create_ticket",
+    "account": "acct-a",
+    "initial_state": {
+      "counter": 7,
+      "tickets": []
+    },
+    "actual_resulting_state": {
+      "counter": 7,
+      "tickets": [
+        {
+          "account": "acct-a",
+          "id": "ticket-1",
+          "issue": "vpn",
+          "status": "open"
+        }
+      ]
+    },
+    "actual_ticket_delta": 1,
+    "new_records": [
+      {
+        "account": "acct-a",
+        "id": "ticket-1",
+        "issue": "vpn",
+        "status": "open"
+      }
+    ],
+    "original_ticket_prefix_preserved": true,
+    "counter": 7,
+    "failed_native_checks": [
+      "allowed_action",
+      "new_ticket_fields",
+      "new_ticket_membership",
+      "requested_account",
+      "ticket_delta"
+    ]
+  },
+  {
+    "candidate": "original-baseline",
+    "case": "approved-B-r2",
+    "source": "retained actual subprocess stdout, not success note",
+    "action": "create_ticket",
+    "account": "acct-a",
+    "initial_state": {
+      "counter": 7,
+      "tickets": [
+        {
+          "account": "acct-b",
+          "id": "old",
+          "issue": "vpn",
+          "metadata": {
+            "keep": true
+          },
+          "status": "open"
+        }
+      ]
+    },
+    "actual_resulting_state": {
+      "counter": 7,
+      "tickets": [
+        {
+          "account": "acct-b",
+          "id": "old",
+          "issue": "vpn",
+          "metadata": {
+            "keep": true
+          },
+          "status": "open"
+        },
+        {
+          "account": "acct-a",
+          "id": "ticket-1",
+          "issue": "vpn",
+          "status": "open"
+        }
+      ]
+    },
+    "actual_ticket_delta": 1,
+    "new_records": [
+      {
+        "account": "acct-a",
+        "id": "ticket-1",
+        "issue": "vpn",
+        "status": "open"
+      }
+    ],
+    "original_ticket_prefix_preserved": true,
+    "counter": 7,
+    "failed_native_checks": []
+  },
+  {
+    "candidate": "guidance-only",
+    "case": "approved-A-r1",
+    "source": "retained actual subprocess stdout, not success note",
+    "action": "guidance",
+    "account": null,
+    "initial_state": {
+      "counter": 7,
+      "tickets": []
+    },
+    "actual_resulting_state": {
+      "counter": 7,
+      "tickets": []
+    },
+    "actual_ticket_delta": 0,
+    "new_records": [],
+    "original_ticket_prefix_preserved": true,
+    "counter": 7,
+    "failed_native_checks": []
+  },
+  {
+    "candidate": "guidance-only",
+    "case": "approved-B-r2",
+    "source": "retained actual subprocess stdout, not success note",
+    "action": "guidance",
+    "account": null,
+    "initial_state": {
+      "counter": 7,
+      "tickets": [
+        {
+          "account": "acct-b",
+          "id": "old",
+          "issue": "vpn",
+          "metadata": {
+            "keep": true
+          },
+          "status": "open"
+        }
+      ]
+    },
+    "actual_resulting_state": {
+      "counter": 7,
+      "tickets": [
+        {
+          "account": "acct-b",
+          "id": "old",
+          "issue": "vpn",
+          "metadata": {
+            "keep": true
+          },
+          "status": "open"
+        }
+      ]
+    },
+    "actual_ticket_delta": 0,
+    "new_records": [],
+    "original_ticket_prefix_preserved": true,
+    "counter": 7,
+    "failed_native_checks": [
+      "allowed_action",
+      "new_ticket_membership",
+      "requested_account",
+      "ticket_delta"
+    ]
+  }
+]

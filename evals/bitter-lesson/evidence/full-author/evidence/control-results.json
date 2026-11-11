@@ -1,0 +1,72 @@
+[
+  {
+    "candidate": "legitimate",
+    "outcomes": {
+      "approved-A-r1": "PASS",
+      "approved-B-r2": "PASS"
+    },
+    "counts": {
+      "ERROR": 0,
+      "FAIL": 0,
+      "PASS": 2,
+      "UNKNOWN": 0
+    },
+    "native_evidence_consistent": true
+  },
+  {
+    "candidate": "alternative-id",
+    "outcomes": {
+      "approved-A-r1": "PASS",
+      "approved-B-r2": "PASS"
+    },
+    "counts": {
+      "ERROR": 0,
+      "FAIL": 0,
+      "PASS": 2,
+      "UNKNOWN": 0
+    },
+    "native_evidence_consistent": true
+  },
+  {
+    "candidate": "false-creation-claim",
+    "outcomes": {
+      "approved-A-r1": "PASS",
+      "approved-B-r2": "FAIL"
+    },
+    "counts": {
+      "ERROR": 0,
+      "FAIL": 1,
+      "PASS": 1,
+      "UNKNOWN": 0
+    },
+    "native_evidence_consistent": true
+  },
+  {
+    "candidate": "original-baseline",
+    "outcomes": {
+      "approved-A-r1": "FAIL",
+      "approved-B-r2": "PASS"
+    },
+    "counts": {
+      "ERROR": 0,
+      "FAIL": 1,
+      "PASS": 1,
+      "UNKNOWN": 0
+    },
+    "native_evidence_consistent": true
+  },
+  {
+    "candidate": "guidance-only",
+    "outcomes": {
+      "approved-A-r1": "PASS",
+      "approved-B-r2": "FAIL"
+    },
+    "counts": {
+      "ERROR": 0,
+      "FAIL": 1,
+      "PASS": 1,
+      "UNKNOWN": 0
+    },
+    "native_evidence_consistent": true
+  }
+]

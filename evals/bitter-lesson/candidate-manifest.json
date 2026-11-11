@@ -1,0 +1,112 @@
+[
+  {
+    "skill": "expert-mode",
+    "intervention": "outcome-contract rewrite",
+    "original_words": 629,
+    "candidate_words": 370,
+    "original_bytes": 4536,
+    "candidate_bytes": 2861,
+    "original_sha256": "d0dbcc5e1fa457a7e4164454e8910fcb1e7ea5bf77c73ea31aabaebca72b2d02",
+    "candidate_sha256": "8d7ced83da4cf076ae4983aecca5d68ad55069d50344798144c45c70d4764132"
+  },
+  {
+    "skill": "distill-me",
+    "intervention": "outcome-contract rewrite",
+    "original_words": 613,
+    "candidate_words": 360,
+    "original_bytes": 4570,
+    "candidate_bytes": 2917,
+    "original_sha256": "6f515b138f76d39d66998d6ce4d29a8029761aa0226f9d6dec01c3d2832e7186",
+    "candidate_sha256": "5b6c65e57c721aca20d42d5813997e76d9c93c80f5006f6eb1b7c9daf276d75c"
+  },
+  {
+    "skill": "bootstrap",
+    "intervention": "outcome-contract rewrite",
+    "original_words": 1193,
+    "candidate_words": 467,
+    "original_bytes": 9265,
+    "candidate_bytes": 4049,
+    "original_sha256": "20fadd9ca7f82dadef981ea6c7a55e961faa12cc881e5f0cd5be8367caa94d1a",
+    "candidate_sha256": "00fe735356bda1f201b35d7655d0428db9c58ece2184b690cf549ceeb65a4ff5"
+  },
+  {
+    "skill": "create-eval",
+    "intervention": "outcome-contract rewrite",
+    "original_words": 740,
+    "candidate_words": 403,
+    "original_bytes": 5839,
+    "candidate_bytes": 3500,
+    "original_sha256": "c5a86934360a4b0fe8bb1916a8504e85b131c43479611e4346552d2af7a6a35c",
+    "candidate_sha256": "d728d3b6d422c60b358d0af50a57b788b0506b3c35f7ab8ba7b10815ddbfaf58"
+  },
+  {
+    "skill": "run-eval",
+    "intervention": "outcome-contract rewrite",
+    "original_words": 742,
+    "candidate_words": 403,
+    "original_bytes": 5747,
+    "candidate_bytes": 3510,
+    "original_sha256": "02779435237bd4c3501ac8f307f42bb825a7d782032c7ffb940d8b483f97237a",
+    "candidate_sha256": "64c7d8ac0e14fa074095be3d514e20d33cca380408664b63f79d82405da704ae"
+  },
+  {
+    "skill": "hill-climb",
+    "intervention": "outcome-contract rewrite",
+    "original_words": 1089,
+    "candidate_words": 436,
+    "original_bytes": 8396,
+    "candidate_bytes": 3885,
+    "original_sha256": "94519c298d98ee63f800633ff2f36df2472bd3f930adb6d974e24d02bbb1dc22",
+    "candidate_sha256": "7617adc0a8503249f1a6f6851ae833d6de45364e92806a795d02efd339c5b599"
+  },
+  {
+    "skill": "calibrate-judge",
+    "intervention": "outcome-contract rewrite",
+    "original_words": 769,
+    "candidate_words": 438,
+    "original_bytes": 6016,
+    "candidate_bytes": 3843,
+    "original_sha256": "3d048ca9465782a504cf02b5b3c8191bacfbb841d548c69b35acc3507c9003d9",
+    "candidate_sha256": "237ac1d5f09605b2ad4890ea9aa2b9f17e035d94c8c194627db12e6aed1d8960"
+  },
+  {
+    "skill": "adversarial-cases",
+    "intervention": "outcome-contract rewrite",
+    "original_words": 904,
+    "candidate_words": 416,
+    "original_bytes": 7029,
+    "candidate_bytes": 3630,
+    "original_sha256": "c2796749a7fb4e96e65868843f19236af22c2df91e8afa74020abde6e929f851",
+    "candidate_sha256": "5556c2eda1659e4960d9d8b1d8af807909b123962445d23db3666b4250126e46"
+  },
+  {
+    "skill": "cross-examine",
+    "intervention": "outcome-contract rewrite",
+    "original_words": 999,
+    "candidate_words": 459,
+    "original_bytes": 7500,
+    "candidate_bytes": 3842,
+    "original_sha256": "0ae687b4ae33f99a4fd5233b486aa3ee642b4f71ba6ad07f7aebde43b7098697",
+    "candidate_sha256": "35ea750507ca195683bea586a08db8ffceaa8c861f1b65d9e2d2838a6ac444f3"
+  },
+  {
+    "skill": "ablation",
+    "intervention": "outcome-contract rewrite",
+    "original_words": 542,
+    "candidate_words": 342,
+    "original_bytes": 4254,
+    "candidate_bytes": 2965,
+    "original_sha256": "a43baebc4431a6fed89a7e27d2d294bced21ca23c6e6813f262a4ce79a906c48",
+    "candidate_sha256": "8fb5ca319b71b907c99c8bbd4e79526a2715d19146e772a2e954659b18cc5090"
+  },
+  {
+    "skill": "bitter-lesson",
+    "intervention": "outcome-contract rewrite",
+    "original_words": 502,
+    "candidate_words": 335,
+    "original_bytes": 3879,
+    "candidate_bytes": 2755,
+    "original_sha256": "3b4b3bb99c43b319d41d7dfe00da28bfc8ab04eb89ca56030107444b56c98848",
+    "candidate_sha256": "22c7911910e3fbb51b14f7deee3ae3b5862466acafd99ec6732c3a63c04a6e4f"
+  }
+]

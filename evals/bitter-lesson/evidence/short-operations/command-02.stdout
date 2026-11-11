@@ -1,0 +1,24 @@
+{
+  "admissible": true,
+  "baseline_score": 0.5,
+  "candidate_score": 1.0,
+  "case_ids": [
+    "dev-howto",
+    "dev-generic",
+    "dev-explicit",
+    "dev-duplicate",
+    "dev-ambiguous",
+    "dev-password",
+    "dev-closed",
+    "dev-unrelated"
+  ],
+  "errors": 0,
+  "gains": [
+    "dev-howto",
+    "dev-generic",
+    "dev-duplicate",
+    "dev-ambiguous"
+  ],
+  "regressions": [],
+  "strict_improvement": true
+}

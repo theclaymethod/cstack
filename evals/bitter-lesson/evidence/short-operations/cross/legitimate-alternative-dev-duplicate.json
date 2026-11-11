@@ -1,0 +1,15 @@
+{
+  "account": null,
+  "action": "guidance",
+  "note": "An open VPN ticket already covers this account; use that ticket.",
+  "state": {
+    "tickets": [
+      {
+        "account": "acct-a",
+        "id": "ticket-1",
+        "issue": "vpn",
+        "status": "open"
+      }
+    ]
+  }
+}

@@ -1,0 +1,30 @@
+[
+  {
+    "error": null,
+    "family": "stored-synthetic-control",
+    "gold": "PASS",
+    "id": "control-1",
+    "verdict": "PASS"
+  },
+  {
+    "error": null,
+    "family": "stored-synthetic-control",
+    "gold": "PASS",
+    "id": "control-2",
+    "verdict": "PASS"
+  },
+  {
+    "error": null,
+    "family": "stored-synthetic-control",
+    "gold": "PASS",
+    "id": "control-3",
+    "verdict": "PASS"
+  },
+  {
+    "error": "parse failure (raw response not supplied)",
+    "family": "stored-synthetic-control",
+    "gold": "PASS",
+    "id": "control-4",
+    "verdict": "ERROR"
+  }
+]

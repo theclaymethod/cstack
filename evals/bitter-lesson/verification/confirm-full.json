@@ -1,0 +1,469 @@
+{
+  "workspace": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/bitter-lesson-build/runs/confirm-full",
+  "source": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/bitter-lesson-build/frozen",
+  "skills": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/bitter-lesson-build/frozen/skills",
+  "evidence": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/bitter-lesson-build/runs/confirm-full/eval-runs/skill-exercise",
+  "protected_files_unchanged": [
+    "evaluate.py",
+    "evals/spec.json",
+    "evals/rubric.md",
+    "evals/cases.jsonl",
+    "support_agent.py"
+  ],
+  "installed_skill_files_matched": [
+    "ablation/SKILL.md",
+    "ablation/references/quality.md",
+    "ablation/references/removal.md",
+    "adversarial-cases/SKILL.md",
+    "adversarial-cases/references/case-contract.md",
+    "adversarial-cases/references/failure-methods.md",
+    "adversarial-cases/references/injection.md",
+    "adversarial-cases/references/synthetic-methods.md",
+    "bitter-lesson/SKILL.md",
+    "bitter-lesson/references/migration.md",
+    "bootstrap/SKILL.md",
+    "bootstrap/references/labeling.md",
+    "bootstrap/references/research.md",
+    "bootstrap/references/scenarios.md",
+    "calibrate-judge/SKILL.md",
+    "calibrate-judge/references/backends.md",
+    "calibrate-judge/references/measurement.md",
+    "calibrate-judge/references/protocol.md",
+    "create-eval/SKILL.md",
+    "create-eval/assets/trace-review.css",
+    "create-eval/assets/trace-review.html",
+    "create-eval/assets/trace-review.js",
+    "create-eval/references/early-development.md",
+    "create-eval/references/ecosystem.md",
+    "create-eval/references/formats.md",
+    "create-eval/references/from-findings.md",
+    "create-eval/references/judges.md",
+    "create-eval/references/trace-review.md",
+    "create-eval/scripts/review_traces.py",
+    "cross-examine/SKILL.md",
+    "cross-examine/references/ledger.md",
+    "cross-examine/references/lessons.md",
+    "distill-me/SKILL.md",
+    "distill-me/agents/openai.yaml",
+    "distill-me/references/review-passes.md",
+    "expert-mode/SKILL.md",
+    "expert-mode/agents/openai.yaml",
+    "expert-mode/references/export.md",
+    "expert-mode/references/privacy-filter.md",
+    "expert-mode/references/records.md",
+    "expert-mode/scripts/export_findings.py",
+    "hill-climb/SKILL.md",
+    "hill-climb/references/campaign.md",
+    "hill-climb/references/data-handoff.md",
+    "hill-climb/references/optimizers.md",
+    "run-eval/SKILL.md",
+    "run-eval/references/package.md"
+  ],
+  "native_runs": [
+    {
+      "path": "controls/native/alternative-id",
+      "case_ids": [
+        "approved-a-r1",
+        "approved-b-r2"
+      ],
+      "executed": 2,
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 2,
+        "UNKNOWN": 0
+      },
+      "sha256": {
+        "manifest.json": "eeda7015f1ce64c0ce3a64154a78d7cc8766de3d0553bc6423596b5dbec9dea1",
+        "summary.json": "048f5d4cbe3df353ed72f2cdbf38e5d6fc323bebca05bd33d3e840859ee4fd9e",
+        "traces.jsonl": "fa2643de9409eb9006af1d37020871cfb9340f18034731453befbceb29fab137",
+        "candidate.py": "be5711f4f699be5cd4ee62f18b42c6d6ef78c8dcbe6e17069aac82b883bc3d5a",
+        "cases.jsonl": "f31b1296e4eb1ae292448240f19d7eee59575b95f10fe287b9e7e5b751014542"
+      }
+    },
+    {
+      "path": "controls/native/claim-no-ticket",
+      "case_ids": [
+        "approved-a-r1",
+        "approved-b-r2"
+      ],
+      "executed": 2,
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 1,
+        "PASS": 1,
+        "UNKNOWN": 0
+      },
+      "sha256": {
+        "manifest.json": "3fec6d70464346257ac40ebcc00c9c261a364332ed33c4dbabc59fcf7d47afdc",
+        "summary.json": "887c1fbbbaa125e34e5d41ddd3a988bbbfed939ab2e437dbe4619e96277d0918",
+        "traces.jsonl": "b3fbab0158c58a7dd17a680acf43904e2cdc8b565041d0c481594869fff94b37",
+        "candidate.py": "95cc16c8f1fe3e42c99d94a4612ca8fe3e16e5c4fa7a652fb65d6d49bd1ba836",
+        "cases.jsonl": "f31b1296e4eb1ae292448240f19d7eee59575b95f10fe287b9e7e5b751014542"
+      }
+    },
+    {
+      "path": "controls/native/duplicate-id",
+      "case_ids": [
+        "approved-a-r1",
+        "approved-b-r2"
+      ],
+      "executed": 2,
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 1,
+        "PASS": 1,
+        "UNKNOWN": 0
+      },
+      "sha256": {
+        "manifest.json": "10348a8b275b447e28342da7ab2f7434f14ea0ebd8e29081ea8519b401cf9cb9",
+        "summary.json": "300dc51bbe112e6510ea1661f81ad4b04fb5e0a147966f1de926585e453e3ea9",
+        "traces.jsonl": "555a5bbad5d77802c9f212a7d90d5a3f2d44cbc37a9a26e1760987c21db4b5b3",
+        "candidate.py": "4e2fdd96c2e0b1fc3dc0e63474376c6dcca1882c53b7c4bb1524b7557f7221ab",
+        "cases.jsonl": "f31b1296e4eb1ae292448240f19d7eee59575b95f10fe287b9e7e5b751014542"
+      }
+    },
+    {
+      "path": "controls/native/legitimate",
+      "case_ids": [
+        "approved-a-r1",
+        "approved-b-r2"
+      ],
+      "executed": 2,
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 2,
+        "UNKNOWN": 0
+      },
+      "sha256": {
+        "manifest.json": "40108f170d79a9ee41d9b8f12fc9cc4e6e78b16aa80fe02224a3cbb2e816f94d",
+        "summary.json": "5e84f4fc4791d8bf6878957fdd167af954e1d0440d7cdd51718c3898767337ba",
+        "traces.jsonl": "f3833bc5b13cfacac8ca6e4a8867143562c9cba60ab1c93b724a46cb7f2cc543",
+        "candidate.py": "840a5d57d3e579da4f1a2db4cdb88918a85ac7a3e9937adf854110ae3202a0fd",
+        "cases.jsonl": "f31b1296e4eb1ae292448240f19d7eee59575b95f10fe287b9e7e5b751014542"
+      }
+    },
+    {
+      "path": "controls/native/malformed",
+      "case_ids": [
+        "approved-a-r1",
+        "approved-b-r2"
+      ],
+      "executed": 2,
+      "counts": {
+        "ERROR": 2,
+        "FAIL": 0,
+        "PASS": 0,
+        "UNKNOWN": 0
+      },
+      "sha256": {
+        "manifest.json": "f93b9beb2cb98d74530c7f60bd975316172015756e47d1b098d7a2c6a4ebb35b",
+        "summary.json": "7b0ed46e3affe3aa28d389ca9f6011c3949aa4c818447c7bc10589a6a2a931a4",
+        "traces.jsonl": "0c064ce261d982d6fd9eadfa5a994c69200a2cac8905742d2f04dd0c8005f4a3",
+        "candidate.py": "539abea2626ea886ef0d5767f7a85b2326587925db7a5c493f190a9e33541c58",
+        "cases.jsonl": "f31b1296e4eb1ae292448240f19d7eee59575b95f10fe287b9e7e5b751014542"
+      }
+    },
+    {
+      "path": "controls/native/mutate-original",
+      "case_ids": [
+        "approved-a-r1",
+        "approved-b-r2"
+      ],
+      "executed": 2,
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 1,
+        "PASS": 1,
+        "UNKNOWN": 0
+      },
+      "sha256": {
+        "manifest.json": "bf27cf922f97e266dfdaf64e23e7b299707eeb68c9986a9c1bb6866dfb01b825",
+        "summary.json": "c8c2fcfc5840891e2748037fa571d474102c77fa73227487bcc1fee69e0c5a5f",
+        "traces.jsonl": "af3fe9f635d250b76a19090a9596b5fb1e74cb207c767449170d6a7a972a657e",
+        "candidate.py": "19025700a9a9f6f5b735d9be71a3784b3910f29a67a77de04de308024858553e",
+        "cases.jsonl": "f31b1296e4eb1ae292448240f19d7eee59575b95f10fe287b9e7e5b751014542"
+      }
+    },
+    {
+      "path": "controls/native/mutate-preserve",
+      "case_ids": [
+        "approved-a-r1",
+        "approved-b-r2"
+      ],
+      "executed": 2,
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 2,
+        "PASS": 0,
+        "UNKNOWN": 0
+      },
+      "sha256": {
+        "manifest.json": "eb73dfe3b6d23b88134057c06d3e9d3620fe7e997d2cf96576660ae635184658",
+        "summary.json": "2cecc7e1bf59060688c5f3a06ed36bd7952b5449f5617cda1c266046a720b972",
+        "traces.jsonl": "2dbdbad47ce7f6b4a3e63e80b2605afb2808f1d5070a8bb888ec981bc1d3b8c9",
+        "candidate.py": "8419233c2b60600305d9ec67c83e97f4b15bccb0b6008b911cbffcecbdf7e290",
+        "cases.jsonl": "f31b1296e4eb1ae292448240f19d7eee59575b95f10fe287b9e7e5b751014542"
+      }
+    },
+    {
+      "path": "controls/native/wrong-account",
+      "case_ids": [
+        "approved-a-r1",
+        "approved-b-r2"
+      ],
+      "executed": 2,
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 1,
+        "PASS": 1,
+        "UNKNOWN": 0
+      },
+      "sha256": {
+        "manifest.json": "88f104f53a08f546981cf68deb732c1f11d625fba8f04e9a348d210f3bb7d248",
+        "summary.json": "520e9b7d8416ac15c4de059bc211815400cdf0a5abbd1b48853edb91ff04cf95",
+        "traces.jsonl": "367b8cd08440bb882deef554ea2845227137f46ecf3767ea1af687dfc37f9fc4",
+        "candidate.py": "29173375abd68badddfb32a2e7f46461f2ae11e6c328e68d9b015c3352c1e466",
+        "cases.jsonl": "f31b1296e4eb1ae292448240f19d7eee59575b95f10fe287b9e7e5b751014542"
+      }
+    },
+    {
+      "path": "prompt-experiment/native/confirm-full",
+      "case_ids": [
+        "conf-howto",
+        "conf-targeted",
+        "conf-duplicate",
+        "conf-preservation"
+      ],
+      "executed": 4,
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 4,
+        "UNKNOWN": 0
+      },
+      "sha256": {
+        "manifest.json": "a8d71a52762783ffff96a4eef662087200eeae7571f7d168c2edaa58d0190713",
+        "summary.json": "51f8048fc846ae513d541fa74e6964f38977f61795274e9e5feb84c4b8932144",
+        "traces.jsonl": "f851f7dffbc40120751625210c382d4f9e435df2ff12497349dfad2ccdfbfd91",
+        "candidate.py": "cfd3290663da1d5980890d655f5e00cf294c989134bea9b94eae5d4bc12c1fb1",
+        "cases.jsonl": "f0e900c7f3fb1a1a1ddf94941b92ee0ee1dc8232930c00cd24a810b2b7f23a30"
+      }
+    },
+    {
+      "path": "prompt-experiment/native/confirm-selected",
+      "case_ids": [
+        "conf-howto",
+        "conf-targeted",
+        "conf-duplicate",
+        "conf-preservation"
+      ],
+      "executed": 4,
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 4,
+        "UNKNOWN": 0
+      },
+      "sha256": {
+        "manifest.json": "21ffe4a84ee239e7d5e39bfa6ce1a61226ad90f73a701b2ddb8ee6bf1b182d74",
+        "summary.json": "cefcb6ea4d0a1b730377b8b7f33bcab79c7ff4f6d039415a643bf041c12d7eb9",
+        "traces.jsonl": "f851f7dffbc40120751625210c382d4f9e435df2ff12497349dfad2ccdfbfd91",
+        "candidate.py": "c1a85f6bd9c8c5d53d51d44220eacde87043630d7dceb5b8e4625b2cbb37e570",
+        "cases.jsonl": "f0e900c7f3fb1a1a1ddf94941b92ee0ee1dc8232930c00cd24a810b2b7f23a30"
+      }
+    },
+    {
+      "path": "prompt-experiment/native/contract-only",
+      "case_ids": [
+        "dev-howto",
+        "dev-generic",
+        "dev-explicit",
+        "dev-duplicate",
+        "dev-ambiguous",
+        "dev-password",
+        "dev-closed",
+        "dev-unrelated"
+      ],
+      "executed": 8,
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 1,
+        "PASS": 7,
+        "UNKNOWN": 0
+      },
+      "sha256": {
+        "manifest.json": "c269bdcaa51cf172c631dd8cf2a6fd1a41d0070e84353c75b8827daf74b3dcef",
+        "summary.json": "542c20aeb8c42ce6220e1c463faf02666022c880d02f948a007a76cdc0652e8b",
+        "traces.jsonl": "e23bfc9b1fc39bcaf268c3857897e1a2e6ca066ce59362333fe9bf2e5cfb6dbe",
+        "candidate.py": "6d0e6ef055d3be732bc58c45a650c976045c6f3b9cda6f0616241de9fc09c69b",
+        "cases.jsonl": "e26339de4786d747ff0e1f235a2fa74df7a6245075178cfb5bf01e9538fc8ec0"
+      }
+    },
+    {
+      "path": "prompt-experiment/native/full",
+      "case_ids": [
+        "dev-howto",
+        "dev-generic",
+        "dev-explicit",
+        "dev-duplicate",
+        "dev-ambiguous",
+        "dev-password",
+        "dev-closed",
+        "dev-unrelated"
+      ],
+      "executed": 8,
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 8,
+        "UNKNOWN": 0
+      },
+      "sha256": {
+        "manifest.json": "9ab81939d3ef34f4e18eb329a54a725b65659ddf8b4cbb1e478f3987ec08d2ba",
+        "summary.json": "c8648139a9f2fe0da81a97202fb5f529aa52ba5da586e406ac61c91a60b24953",
+        "traces.jsonl": "8079f7279f3a3c89c7ea024a5c049cffc8762c8093f6b731adc45c143914cc9f",
+        "candidate.py": "cfd3290663da1d5980890d655f5e00cf294c989134bea9b94eae5d4bc12c1fb1",
+        "cases.jsonl": "e26339de4786d747ff0e1f235a2fa74df7a6245075178cfb5bf01e9538fc8ec0"
+      }
+    },
+    {
+      "path": "prompt-experiment/native/no-conflicts",
+      "case_ids": [
+        "dev-howto",
+        "dev-generic",
+        "dev-explicit",
+        "dev-duplicate",
+        "dev-ambiguous",
+        "dev-password",
+        "dev-closed",
+        "dev-unrelated"
+      ],
+      "executed": 8,
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 8,
+        "UNKNOWN": 0
+      },
+      "sha256": {
+        "manifest.json": "6de345371bd8ceb86049eb7eb5c87296f8d5136cd5d01f311bca96314b1cd6ba",
+        "summary.json": "9904c97faa7bbb06f2f21692c2200d03c7d926befb5f93942ecc2c1fad3b4fa2",
+        "traces.jsonl": "8079f7279f3a3c89c7ea024a5c049cffc8762c8093f6b731adc45c143914cc9f",
+        "candidate.py": "9d085d5f638f44fdeea1cd7eb46481c1390e967d60041eb2a7d6b7111c85b651",
+        "cases.jsonl": "e26339de4786d747ff0e1f235a2fa74df7a6245075178cfb5bf01e9538fc8ec0"
+      }
+    },
+    {
+      "path": "prompt-experiment/native/no-legacy",
+      "case_ids": [
+        "dev-howto",
+        "dev-generic",
+        "dev-explicit",
+        "dev-duplicate",
+        "dev-ambiguous",
+        "dev-password",
+        "dev-closed",
+        "dev-unrelated"
+      ],
+      "executed": 8,
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 8,
+        "UNKNOWN": 0
+      },
+      "sha256": {
+        "manifest.json": "f54ec5530889e681c61db107a48f05b7d7ad280afb89d054c238278970a7efb5",
+        "summary.json": "3005258134614977b4ab45ce80e715e2d774823061993e032195c3fc720c497a",
+        "traces.jsonl": "8079f7279f3a3c89c7ea024a5c049cffc8762c8093f6b731adc45c143914cc9f",
+        "candidate.py": "c8d283e7be5b7694ac8187f50bd1dd0a28daa85f77abb48e8e46da2dffc2d473",
+        "cases.jsonl": "e26339de4786d747ff0e1f235a2fa74df7a6245075178cfb5bf01e9538fc8ec0"
+      }
+    },
+    {
+      "path": "prompt-experiment/native/no-noise",
+      "case_ids": [
+        "dev-howto",
+        "dev-generic",
+        "dev-explicit",
+        "dev-duplicate",
+        "dev-ambiguous",
+        "dev-password",
+        "dev-closed",
+        "dev-unrelated"
+      ],
+      "executed": 8,
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 8,
+        "UNKNOWN": 0
+      },
+      "sha256": {
+        "manifest.json": "572ec7ce90731dfba352bafb57fa97049c0cb48cd86f47a38679e99f2e4fb2e8",
+        "summary.json": "50e9b4fc4861feb567c5de95db65d46b47ef9335268ebcd90229c159de1966b1",
+        "traces.jsonl": "8079f7279f3a3c89c7ea024a5c049cffc8762c8093f6b731adc45c143914cc9f",
+        "candidate.py": "2b35c7d19c6609bc70019380579eb6d8f2eb4cfb364a33280a1b6e2c5ad2846f",
+        "cases.jsonl": "e26339de4786d747ff0e1f235a2fa74df7a6245075178cfb5bf01e9538fc8ec0"
+      }
+    },
+    {
+      "path": "prompt-experiment/native/one-conflict-removed",
+      "case_ids": [
+        "dev-howto",
+        "dev-generic",
+        "dev-explicit",
+        "dev-duplicate",
+        "dev-ambiguous",
+        "dev-password",
+        "dev-closed",
+        "dev-unrelated"
+      ],
+      "executed": 8,
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 4,
+        "PASS": 4,
+        "UNKNOWN": 0
+      },
+      "sha256": {
+        "manifest.json": "9f79eb3b31aa819a05cdec5e26f44d50cacd072c74199a1de68f4c7ee3fc172b",
+        "summary.json": "63e858dcad8f1afa2ac3ba6ece08850eedc61d243aca63a5b756990da587088a",
+        "traces.jsonl": "b76ef96a6c86fda48a4320654b3d6cd42d76d3a77bfbc367b5544b9a41a29700",
+        "candidate.py": "98cdfc6d7bcea04f2a9353bc720ee7845b2371ce926129ecf7552b5363328d75",
+        "cases.jsonl": "e26339de4786d747ff0e1f235a2fa74df7a6245075178cfb5bf01e9538fc8ec0"
+      }
+    },
+    {
+      "path": "prompt-experiment/native/one-duplicate",
+      "case_ids": [
+        "dev-howto",
+        "dev-generic",
+        "dev-explicit",
+        "dev-duplicate",
+        "dev-ambiguous",
+        "dev-password",
+        "dev-closed",
+        "dev-unrelated"
+      ],
+      "executed": 8,
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 8,
+        "UNKNOWN": 0
+      },
+      "sha256": {
+        "manifest.json": "8c2aa643887528848c86225aedc721dd7c0dffdb5602023b554d8e1a47122080",
+        "summary.json": "6115b9ab69b381975111d98a002e150ddad7660fcd9ede60b7ffa66d2b87e2c8",
+        "traces.jsonl": "8079f7279f3a3c89c7ea024a5c049cffc8762c8093f6b731adc45c143914cc9f",
+        "candidate.py": "c1a85f6bd9c8c5d53d51d44220eacde87043630d7dceb5b8e4625b2cbb37e570",
+        "cases.jsonl": "e26339de4786d747ff0e1f235a2fa74df7a6245075178cfb5bf01e9538fc8ec0"
+      }
+    }
+  ],
+  "native_case_executions": 80,
+  "scope": "Source fidelity and native artifact validation; not a semantic or generalization verdict"
+}

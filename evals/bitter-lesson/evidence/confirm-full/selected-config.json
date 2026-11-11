@@ -1,0 +1,20 @@
+{
+  "artifact": "selected-candidate.py",
+  "backend": "new-fixture",
+  "configuration": {
+    "model": "new-fixture",
+    "retained": [
+      "contract",
+      "duplicate-b"
+    ]
+  },
+  "context": "Complete native task rubric embedded by protected contract unit",
+  "fallback": null,
+  "inference_settings": "Deterministic Python stand-in; no sampling/model inference settings",
+  "native_execution": "Fresh Python subprocess, -I, isolated temporary working directory per case",
+  "parser": "Native JSON and exact output schema in frozen evaluate.py",
+  "production_release": "not authorized",
+  "prompt": "selected-prompt.txt",
+  "rollback": "Recover full prompt/configuration/candidate retained in prompt-experiment",
+  "tools": []
+}

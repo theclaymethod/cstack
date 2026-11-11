@@ -1,0 +1,150 @@
+{
+  "workspace": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/bitter-lesson-build/runs/short-author",
+  "source": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/bitter-lesson-build/cstack",
+  "skills": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/bitter-lesson-build/cstack/skills",
+  "evidence": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/bitter-lesson-build/runs/short-author/eval-runs/skill-exercise",
+  "protected_files_unchanged": [
+    "evaluate.py",
+    "evals/spec.json",
+    "evals/rubric.md",
+    "evals/cases.jsonl",
+    "support_agent.py"
+  ],
+  "installed_skill_files_matched": [
+    "ablation/SKILL.md",
+    "ablation/references/quality.md",
+    "ablation/references/removal.md",
+    "adversarial-cases/SKILL.md",
+    "adversarial-cases/references/case-contract.md",
+    "adversarial-cases/references/failure-methods.md",
+    "adversarial-cases/references/injection.md",
+    "adversarial-cases/references/synthetic-methods.md",
+    "bitter-lesson/SKILL.md",
+    "bitter-lesson/references/migration.md",
+    "bootstrap/SKILL.md",
+    "bootstrap/references/labeling.md",
+    "bootstrap/references/research.md",
+    "bootstrap/references/scenarios.md",
+    "calibrate-judge/SKILL.md",
+    "calibrate-judge/references/backends.md",
+    "calibrate-judge/references/measurement.md",
+    "calibrate-judge/references/protocol.md",
+    "create-eval/SKILL.md",
+    "create-eval/assets/trace-review.css",
+    "create-eval/assets/trace-review.html",
+    "create-eval/assets/trace-review.js",
+    "create-eval/references/early-development.md",
+    "create-eval/references/ecosystem.md",
+    "create-eval/references/formats.md",
+    "create-eval/references/from-findings.md",
+    "create-eval/references/judges.md",
+    "create-eval/references/trace-review.md",
+    "create-eval/scripts/review_traces.py",
+    "cross-examine/SKILL.md",
+    "cross-examine/references/ledger.md",
+    "cross-examine/references/lessons.md",
+    "distill-me/SKILL.md",
+    "distill-me/agents/openai.yaml",
+    "distill-me/references/review-passes.md",
+    "expert-mode/SKILL.md",
+    "expert-mode/agents/openai.yaml",
+    "expert-mode/references/export.md",
+    "expert-mode/references/privacy-filter.md",
+    "expert-mode/references/records.md",
+    "expert-mode/scripts/export_findings.py",
+    "hill-climb/SKILL.md",
+    "hill-climb/references/campaign.md",
+    "hill-climb/references/data-handoff.md",
+    "hill-climb/references/optimizers.md",
+    "run-eval/SKILL.md",
+    "run-eval/references/package.md"
+  ],
+  "native_runs": [
+    {
+      "path": "native/alternative",
+      "case_ids": [
+        "A-r1",
+        "B-r2"
+      ],
+      "executed": 2,
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 2,
+        "UNKNOWN": 0
+      },
+      "sha256": {
+        "manifest.json": "8bf96ef814eb3e8cae7e26c34411d2e7a2a9793db330b50dad3e77a9c3a74516",
+        "summary.json": "9ab746ddff2061fab531b91846894334a0b10c9409388679908a49fa51ced716",
+        "traces.jsonl": "0c299b4813f1befd9f867573ad4190a664f22b2c976562b87f9d3e35351d0f88",
+        "candidate.py": "bde6cec9a91af1385dc2af5c518ed0bff6de066bf10b29e21a94493b15bd1fff",
+        "cases.jsonl": "bd1603ac0ed755d009a3039e02ca733223e37d4fa7dfda28e581817fa196dfc8"
+      }
+    },
+    {
+      "path": "native/false-claim",
+      "case_ids": [
+        "A-r1",
+        "B-r2"
+      ],
+      "executed": 2,
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 1,
+        "PASS": 1,
+        "UNKNOWN": 0
+      },
+      "sha256": {
+        "manifest.json": "066630bdb9082ee5a34914c4351ba4bcc7dc60ce3c256fa2292fb33df35a2d00",
+        "summary.json": "2b370cd4a1a95b8ae8791702a354bc65298041fbcd92986613e671cccbc8fbe6",
+        "traces.jsonl": "e717648257d8a51dbf778ddc168a3c0eb2ef9d694b0c7e4e3861b526b038389e",
+        "candidate.py": "619cc00ba0214f7606a3ec69c2820359133a046f46cb4369e54b32e2e507b80b",
+        "cases.jsonl": "bd1603ac0ed755d009a3039e02ca733223e37d4fa7dfda28e581817fa196dfc8"
+      }
+    },
+    {
+      "path": "native/initial-product",
+      "case_ids": [
+        "A-r1",
+        "B-r2"
+      ],
+      "executed": 2,
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 1,
+        "PASS": 1,
+        "UNKNOWN": 0
+      },
+      "sha256": {
+        "manifest.json": "cb77d569268cf07b842a50c6ac2ca77eff016c14920c99944d747cfb9a05d49f",
+        "summary.json": "65b171f469ad31d675e30ad09fcebe6338baf494ca6acf9608c1f9779342280c",
+        "traces.jsonl": "ddfdec8335f9e265e112eb86acefe5b88f025cc7b74e76a00c98f51c716d1d13",
+        "candidate.py": "0720b56482a445967ff2a98ec5cfa668c858b8a6f662da74a55c21b257393efc",
+        "cases.jsonl": "bd1603ac0ed755d009a3039e02ca733223e37d4fa7dfda28e581817fa196dfc8"
+      }
+    },
+    {
+      "path": "native/legitimate",
+      "case_ids": [
+        "A-r1",
+        "B-r2"
+      ],
+      "executed": 2,
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 2,
+        "UNKNOWN": 0
+      },
+      "sha256": {
+        "manifest.json": "d3ab4cb203089a3b83d5d1d9c66bbc3fe3cb677f3b6a050f76bca50004b49bf7",
+        "summary.json": "321f318f60b6bf8c1c979fbd438ee7757e1faabd79da2c0f4726c2285c779d2a",
+        "traces.jsonl": "50cbb9ca3897ea887fbe317ab93fdc2a927c0a48f80e44f97b80934929b17c8c",
+        "candidate.py": "0e709fef59bb3384e8fa8b48a7c754362741f6fc1cd08593a10f54be18f43682",
+        "cases.jsonl": "bd1603ac0ed755d009a3039e02ca733223e37d4fa7dfda28e581817fa196dfc8"
+      }
+    }
+  ],
+  "native_case_executions": 8,
+  "scope": "Source fidelity and native artifact validation; not a semantic or generalization verdict"
+}

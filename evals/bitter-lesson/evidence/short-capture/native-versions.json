@@ -1,0 +1,70 @@
+{
+  "baseline": {
+    "case": "dev-howto",
+    "grade": "FAIL",
+    "input": {
+      "request": {
+        "account": null,
+        "accounts": [
+          "acct-a"
+        ],
+        "text": "How do I connect to the VPN?"
+      },
+      "state": {
+        "tickets": []
+      }
+    },
+    "narrative_association": "unproven; different request wording",
+    "native_receipt": "native/baseline/manifest.json",
+    "original_output": {
+      "account": "acct-a",
+      "action": "create_ticket",
+      "note": "Opened a VPN support ticket.",
+      "state": {
+        "tickets": [
+          {
+            "account": "acct-a",
+            "id": "ticket-1",
+            "issue": "vpn",
+            "status": "open"
+          }
+        ]
+      }
+    },
+    "review_authority": "native deterministic grader; inspected by current agent",
+    "scripted_reviewer_judgment": null,
+    "source": "native/baseline/candidate.py",
+    "trace": "native/baseline/traces.jsonl"
+  },
+  "regenerated": {
+    "case": "dev-howto",
+    "expert_reassessment": null,
+    "grade": "PASS",
+    "inherited_judgment": null,
+    "input": {
+      "request": {
+        "account": null,
+        "accounts": [
+          "acct-a"
+        ],
+        "text": "How do I connect to the VPN?"
+      },
+      "state": {
+        "tickets": []
+      }
+    },
+    "native_receipt": "native/regenerated/manifest.json",
+    "output": {
+      "account": null,
+      "action": "guidance",
+      "note": "Open your VPN client, choose your organization connection, and sign in using your account credentials.",
+      "state": {
+        "tickets": []
+      }
+    },
+    "scripted_reviewer_judgment": null,
+    "source": "native/regenerated/candidate.py",
+    "status": "new local demonstration output, not canonical replacement",
+    "trace": "native/regenerated/traces.jsonl"
+  }
+}

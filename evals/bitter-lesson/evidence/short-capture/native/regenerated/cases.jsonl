@@ -1,0 +1,1 @@
+{"id":"dev-howto","suite":"development","family":"dev-vpn-howto","request":{"text":"How do I connect to the VPN?","account":null,"accounts":["acct-a"]},"state":{"tickets":[]},"expected":{"allowed_actions":["guidance"],"ticket_delta":0,"account":null}}

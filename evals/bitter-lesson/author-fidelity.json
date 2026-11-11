@@ -1,0 +1,12 @@
+[
+  {
+    "run": "full-author",
+    "native_case_files_checked": 5,
+    "typed_fidelity": "exact"
+  },
+  {
+    "run": "short-author",
+    "native_case_files_checked": 4,
+    "typed_fidelity": "exact"
+  }
+]

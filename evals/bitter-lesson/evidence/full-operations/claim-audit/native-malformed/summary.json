@@ -1,0 +1,82 @@
+{
+  "candidate_hash": "6ea0f923064c8e4b298f0153706962ac679a50f33bdfe6a42c22487670c1470d",
+  "case_ids": [
+    "dev-howto",
+    "dev-generic",
+    "dev-explicit",
+    "dev-duplicate",
+    "dev-ambiguous",
+    "dev-password",
+    "dev-closed",
+    "dev-unrelated"
+  ],
+  "complete": true,
+  "counts": {
+    "ERROR": 8,
+    "FAIL": 0,
+    "PASS": 0,
+    "UNKNOWN": 0
+  },
+  "executed_count": 8,
+  "identity_hash": "89a96d226443d97b3a269934961259e3fc32de1ab2358841c738e964bc6c829c",
+  "results": [
+    {
+      "checks": {},
+      "error": "malformed candidate JSON schema",
+      "id": "dev-howto",
+      "outcome": "ERROR",
+      "suite": "development"
+    },
+    {
+      "checks": {},
+      "error": "malformed candidate JSON schema",
+      "id": "dev-generic",
+      "outcome": "ERROR",
+      "suite": "development"
+    },
+    {
+      "checks": {},
+      "error": "malformed candidate JSON schema",
+      "id": "dev-explicit",
+      "outcome": "ERROR",
+      "suite": "development"
+    },
+    {
+      "checks": {},
+      "error": "malformed candidate JSON schema",
+      "id": "dev-duplicate",
+      "outcome": "ERROR",
+      "suite": "development"
+    },
+    {
+      "checks": {},
+      "error": "malformed candidate JSON schema",
+      "id": "dev-ambiguous",
+      "outcome": "ERROR",
+      "suite": "development"
+    },
+    {
+      "checks": {},
+      "error": "malformed candidate JSON schema",
+      "id": "dev-password",
+      "outcome": "ERROR",
+      "suite": "development"
+    },
+    {
+      "checks": {},
+      "error": "malformed candidate JSON schema",
+      "id": "dev-closed",
+      "outcome": "ERROR",
+      "suite": "development"
+    },
+    {
+      "checks": {},
+      "error": "malformed candidate JSON schema",
+      "id": "dev-unrelated",
+      "outcome": "ERROR",
+      "suite": "development"
+    }
+  ],
+  "score": 0.0,
+  "selected_count": 8
+}
