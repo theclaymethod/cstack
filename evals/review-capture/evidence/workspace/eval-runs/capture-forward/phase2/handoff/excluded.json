@@ -1,0 +1,23 @@
+[
+  {
+    "authority": "scripted-reviewer",
+    "human_gold_eligible": false,
+    "label": null,
+    "reason": "intent-only",
+    "record_id": "capture-forward-signal-2-v1"
+  },
+  {
+    "authority": "agent-reviewer",
+    "human_gold_eligible": false,
+    "label": "PASS",
+    "reason": "agent-only",
+    "record_id": "capture-forward-signal-3-v1"
+  },
+  {
+    "authority": "assistant",
+    "human_gold_eligible": false,
+    "label": null,
+    "reason": "unendorsed-proposal",
+    "record_id": "capture-forward-signal-5-v1"
+  }
+]

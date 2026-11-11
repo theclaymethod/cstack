@@ -1,0 +1,26 @@
+[
+  {
+    "input": {
+      "request": {
+        "account": null,
+        "accounts": [
+          "acct-a"
+        ],
+        "text": "Please open a ticket for my VPN problem."
+      },
+      "state": {
+        "tickets": []
+      }
+    },
+    "item_id": "preview-001",
+    "output": {
+      "account": "acct-a",
+      "action": "create_ticket",
+      "note": "Opened a VPN support ticket.",
+      "state": {
+        "tickets": []
+      }
+    },
+    "requirement": "For this explicit ticket-creation request, assess whether the output actually created a ticket in resulting state."
+  }
+]

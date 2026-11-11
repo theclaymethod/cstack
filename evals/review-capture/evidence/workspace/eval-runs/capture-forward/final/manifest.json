@@ -1,0 +1,54 @@
+{
+  "candidate_records": 7,
+  "current_handoff": {
+    "comparator_items": 0,
+    "eligible": 0,
+    "excluded": 6,
+    "incomplete": 1,
+    "runtime_items": 0
+  },
+  "expert_mode": "inactive",
+  "files": {
+    "finish_phases.py": "2fd869816ccc0e7953158faa43216608413678f7ed64ac820651fafe7649406a",
+    "guidance-manifest.json": "e4fa8643915149f207753c967dbb19d93496218675fbc5c2c3187b38d0c0ca6c",
+    "loaded-guidance/adversarial-cases/SKILL.md": "edaafe5ea434cf476c7ab56312f3069d7ce7b09bdfa80a23b9a25c8b67ceb06a",
+    "loaded-guidance/calibrate-judge/SKILL.md": "7e73de09c1a8bfdab1f78b5a42af84ec59099ceaf54e658d17726d5c85ed00f8",
+    "loaded-guidance/calibrate-judge/references/protocol.md": "0a9a5d3a17c47f686175fd70d648676021334fba2fc65b3af16765197561cf82",
+    "loaded-guidance/cross-examine/SKILL.md": "20aa4be6aeb00669ab1d4c5e440cdf2af9b8f2e12f70e5c9b3dd8ba0dcca8692",
+    "loaded-guidance/expert-mode/references/calibration-capture.md": "91ad849b5326d80203a3c9fe76c651dfd85a609f15801878fd85ecbac8fc0886",
+    "loaded-guidance/expert-mode/references/records.md": "85367406bac6ead9da0464417051741109124649b370282c3994057d16a3ed95",
+    "report.md": "0b344445595abc0ae8d0da3cef18f8d7e9fd68f2ee3e725d38e95bc9e476ea86",
+    "verification.json": "0179cef38fe54a8da3af80b042a9a23e9868fb2d63c184d53ca9f525d637b20d",
+    "verify_readonly.py": "1e37c0af76174463a3d1161131b27678c203edef42157120254959ec23602230"
+  },
+  "fitting": false,
+  "governance_records": 2,
+  "human_gold_rows": 0,
+  "inference_runs": 0,
+  "native_usage": {
+    "actual_cases": 2,
+    "budget": 24,
+    "remaining": 22
+  },
+  "nested_agents": 0,
+  "network_calls": 0,
+  "new_scope": "evidence-only retention; no outcome confirmation",
+  "old_scope": "stopped",
+  "phase_checkpoints": {
+    "capture-forward": "0f6ddd5379a4e183e444997b84346879f6c567af73cf58ddb1bdcd3b0eb06e93",
+    "phase2": "400a91da72b71f29d2920b88bb8227898ec71997bd2768da03cd236ffd7466bc",
+    "phase3": "cd23f93e8cb9e96e902a005448d32d701c567b731f4d1ddafd7dcc0995aa76b0",
+    "phase4": "6f2c049edb1cf2e18e4fb71d337beebb1d6b87c11301244c43288f8a2ea06fa5",
+    "phase5": "8a15141f820ebf3f4d2f06828cce2c7441a92119f3ec3c365a727e795e7b6ad7",
+    "phase6": "07009823e281582ab5b33c45e5c191204a3ecfb3d0782b147b7f874486e61b8f"
+  },
+  "provider_calls": 0,
+  "release": false,
+  "seed_records": 1,
+  "sharing": false,
+  "status": "all six synthetic fixture phases complete; no dataset release",
+  "store_path": "eval-runs/capture-existing/reviews.jsonl",
+  "store_records": 10,
+  "store_sha256": "e4fb80c532eeac4449ced0cb9caa67749b749179e091d780dec4ea1b4eb81e96",
+  "verification_command": "python3 eval-runs/capture-forward/final/verify_readonly.py"
+}

@@ -1,0 +1,3 @@
+# Post-run criterion scope clarification
+
+The pre-run intent proposal combined actual ticket creation with native account/preservation requirements. Preserve that original proposal as agent-authored development evidence. The direct scripted reviewer judgment supports actual-ticket-creation revision 1 only: “Did the output actually create a ticket?” is the narrow faithful proposed binary wording. Account selection, state preservation and field/membership checks come from the separate native fixture contract. No broader criterion is attributed to the scripted reviewer, and neither wording is a reusable approved calibration label.

@@ -1,0 +1,12 @@
+{
+  "inference_runs": 0,
+  "native_case_count_unchanged": 2,
+  "native_verdicts_not_reexecuted": true,
+  "phase1_checkpoint_verified": true,
+  "phase1_file_hashes_verified": 46,
+  "runtime_label_source_metadata_absent": true,
+  "runtime_projection_verified": true,
+  "store_before_equals_phase1_seed": true,
+  "store_history_prefix_preserved": true,
+  "total_records": 6
+}

@@ -31,3 +31,7 @@ If setup, gold, policy or evidence is insufficient, return a concrete draft plus
 Use [Run Eval](../../run-eval/SKILL.md) for faithful execution/reporting, [Hill Climb](../../hill-climb/SKILL.md) for optional search and [Cross-Examine](../../cross-examine/SKILL.md) for independent review of suspected shortcuts. Changing the evaluator during product optimization starts a new evaluation boundary and comparable baseline.
 
 Source: [grouped validation guidance](https://scikit-learn.org/stable/modules/cross_validation.html). The repository's `research/judge-calibration.md` records the primary-source investigation; these instructions work without that development note or the playground being installed.
+
+## Import review judgments
+
+Follow [review-to-calibration capture](../../expert-mode/references/calibration-capture.md) for corrections/labels collected in reviews. Audit original artifacts, criterion and authority before importing eligible outcome rows; retain intent-only, model-derived, incomplete and retracted records separately. Consent to record is not label approval. Preserve source-family connections and exposure, resolve append-only amendments, and keep captured verdicts/rationales out of runtime judge inputs. Capture alone does not authorize fitting or release.

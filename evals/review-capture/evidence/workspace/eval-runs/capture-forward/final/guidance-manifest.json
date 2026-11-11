@@ -1,0 +1,42 @@
+{
+  "files": {
+    "adversarial-cases/SKILL.md": {
+      "installed_sha256": "edaafe5ea434cf476c7ab56312f3069d7ce7b09bdfa80a23b9a25c8b67ceb06a",
+      "match": true,
+      "saved_sha256": "edaafe5ea434cf476c7ab56312f3069d7ce7b09bdfa80a23b9a25c8b67ceb06a",
+      "staged_sha256": "edaafe5ea434cf476c7ab56312f3069d7ce7b09bdfa80a23b9a25c8b67ceb06a"
+    },
+    "calibrate-judge/SKILL.md": {
+      "installed_sha256": "7e73de09c1a8bfdab1f78b5a42af84ec59099ceaf54e658d17726d5c85ed00f8",
+      "match": true,
+      "saved_sha256": "7e73de09c1a8bfdab1f78b5a42af84ec59099ceaf54e658d17726d5c85ed00f8",
+      "staged_sha256": "7e73de09c1a8bfdab1f78b5a42af84ec59099ceaf54e658d17726d5c85ed00f8"
+    },
+    "calibrate-judge/references/protocol.md": {
+      "installed_sha256": "0a9a5d3a17c47f686175fd70d648676021334fba2fc65b3af16765197561cf82",
+      "match": true,
+      "saved_sha256": "0a9a5d3a17c47f686175fd70d648676021334fba2fc65b3af16765197561cf82",
+      "staged_sha256": "0a9a5d3a17c47f686175fd70d648676021334fba2fc65b3af16765197561cf82"
+    },
+    "cross-examine/SKILL.md": {
+      "installed_sha256": "20aa4be6aeb00669ab1d4c5e440cdf2af9b8f2e12f70e5c9b3dd8ba0dcca8692",
+      "match": true,
+      "saved_sha256": "20aa4be6aeb00669ab1d4c5e440cdf2af9b8f2e12f70e5c9b3dd8ba0dcca8692",
+      "staged_sha256": "20aa4be6aeb00669ab1d4c5e440cdf2af9b8f2e12f70e5c9b3dd8ba0dcca8692"
+    },
+    "expert-mode/references/calibration-capture.md": {
+      "installed_sha256": "91ad849b5326d80203a3c9fe76c651dfd85a609f15801878fd85ecbac8fc0886",
+      "match": true,
+      "saved_sha256": "91ad849b5326d80203a3c9fe76c651dfd85a609f15801878fd85ecbac8fc0886",
+      "staged_sha256": "91ad849b5326d80203a3c9fe76c651dfd85a609f15801878fd85ecbac8fc0886"
+    },
+    "expert-mode/references/records.md": {
+      "installed_sha256": "85367406bac6ead9da0464417051741109124649b370282c3994057d16a3ed95",
+      "match": true,
+      "saved_sha256": "85367406bac6ead9da0464417051741109124649b370282c3994057d16a3ed95",
+      "staged_sha256": "85367406bac6ead9da0464417051741109124649b370282c3994057d16a3ed95"
+    }
+  },
+  "revision_boundary": "final explicit sync; prior phase guidance snapshots retained",
+  "staged_source": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/calibration-capture-build/cstack"
+}

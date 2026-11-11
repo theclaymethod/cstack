@@ -1,0 +1,7 @@
+{
+  "expert_mode": "inactive",
+  "prior_label_current": null,
+  "prior_label_status": "retracted pending review",
+  "retention_authorized": false,
+  "scope": "capture-forward-review"
+}

@@ -1,0 +1,25 @@
+[
+  {
+    "criterion": {
+      "applicability": "the exact original explicit-creation case/output",
+      "id": "actual-ticket-creation",
+      "normalization": "agent faithful binary normalization of explicitly supplied scope",
+      "passing_answer": true,
+      "question": "Did the output actually create a ticket?",
+      "revision": 1,
+      "source_wording": "actual-ticket-creation revision1",
+      "status": "supported scoped source criterion"
+    },
+    "example_id": "capture-forward-original-creation-assertion",
+    "expected_label": "FAIL",
+    "human_gold_eligible": false,
+    "item_id": "preview-001",
+    "origin": "synthetic-scripted-test",
+    "record_id": "capture-forward-signal-1-v1",
+    "source": {
+      "path": "eval-runs/capture-forward/source/FORWARD_TASK.md",
+      "sha256": "60e72889514e3f9f1b8cf82e4745aca8a27a9f51560e2fd5e5a4c224d9de399b"
+    },
+    "source_statement": "That creation verdict is wrong: this output did not create any ticket. FAIL on actual ticket creation."
+  }
+]

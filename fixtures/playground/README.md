@@ -96,3 +96,7 @@ Run `python3 -m judge_calibration.run --out eval-runs/judge-calibration` to vali
 ## Simplify with offline controls
 
 Run `python3 -m simplification.run --out eval-runs/simplification` for removal dependencies, interaction controls, original-baseline quality gates and a frozen model-by-design comparison. See [the local guide](simplification/README.md) and exercises [11](exercises/11-ablation.md) and [12](exercises/12-bitter-lesson.md). The model effects are explicitly programmed; no provider calls, real prompt-quality measurements or production changes occur.
+
+## Retain review judgments
+
+[Exercise 13](exercises/13-review-calibration-capture.md) checks a scoped capture offer, consent, authority, amendments and a label-isolated calibration handoff. It uses scripted roles only; neither agent verdicts nor expectation approvals become human outcome labels.

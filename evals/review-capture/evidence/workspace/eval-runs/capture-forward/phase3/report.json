@@ -1,0 +1,15 @@
+{
+  "appended_records": 0,
+  "eligible": 1,
+  "excluded": 3,
+  "expert_mode": "inactive",
+  "handoff_identical_to_phase2": true,
+  "incomplete": 1,
+  "native_cases_total": 2,
+  "phase": 3,
+  "reason": "same scope remains authorized; reuse consent",
+  "repeated_offer_count": 0,
+  "source_and_original_judgment_identities": "same phase2 operation; no new annotation round",
+  "store_records": 6,
+  "store_sha256": "44d09cc7c1348133f183e2a3b94fabc9427e8cf04ed69dcfd67062f086f242b0"
+}

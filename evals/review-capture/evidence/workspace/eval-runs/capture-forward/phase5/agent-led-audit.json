@@ -1,0 +1,37 @@
+{
+  "criterion": "actual ticket creation for preserved native explicit-creation case",
+  "exposure": "same exposed development evidence; no independent new samples",
+  "observations": [
+    {
+      "actual_created_tickets": 0,
+      "artifact_version": "false-claim-v1",
+      "proposed_label": "FAIL",
+      "reviewer_confirmed": false
+    },
+    {
+      "actual_created_tickets": 1,
+      "artifact_version": "legitimate-v2",
+      "proposed_label": "PASS",
+      "reviewer_confirmed": false
+    }
+  ],
+  "old_scope": {
+    "consent_inherited": false,
+    "id": "capture-forward-review",
+    "stopped": true
+  },
+  "origin": "agent-operator analysis of preserved synthetic native witnesses",
+  "review_scope": "capture-forward-agent-review-2",
+  "source_family": "dev-authorized-single-account",
+  "statement": "The original success interpretation is unsupported by actual state: original has zero created tickets, while the legitimate alternative creates one. FAIL/PASS are agent-proposed outcomes only; no user has confirmed them.",
+  "witnesses": {
+    "legitimate": {
+      "path": "eval-runs/capture-forward/artifacts/legitimate-v2/witness.json",
+      "sha256": "a5a7982a88fb7029cd07e360a12e481c9615861bacb2e19914db0352e45defcb"
+    },
+    "original": {
+      "path": "eval-runs/capture-forward/artifacts/false-claim-v1/witness.json",
+      "sha256": "1120b38d8ff0e5741a4bda05ff5dc50211da6ff6bfb7a9ef9a01b516f46000a7"
+    }
+  }
+}

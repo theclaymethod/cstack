@@ -1,0 +1,25 @@
+{
+  "artifact_version_id": "false-claim-v1",
+  "construction_family": "dev-authorized-single-account",
+  "exposure": "fully exposed development material",
+  "input_sha256": "2fbe65a92f3b22475a0b066b7312a0d8b4b7d2f311c3d69d704b9212882f5f23",
+  "native_checks": {
+    "action_matches_mutation": false,
+    "allowed_action": true,
+    "new_ticket_fields": true,
+    "new_ticket_membership": false,
+    "preserved_other_state": true,
+    "preserved_tickets": true,
+    "requested_account": true,
+    "ticket_delta": false,
+    "unique_ticket_ids": true
+  },
+  "native_outcome": "FAIL",
+  "origin": "operator inspection of native retained output state; no independent reviewer",
+  "output_sha256": "2745d68f81a833669d744b4f5a8120d6a3fc0370a5039d1e7778c6fd31376434",
+  "resulting_state_sha256": "b07fcc148b98d8867682a237d3221e2a47b02bf0426ac128438f561770644caa",
+  "stdout_sha256": "19a49d9d99604fc23eae62909e37e5da49ada23982728376c18e02be86bc055d",
+  "ticket_delta": 0,
+  "tickets_after": [],
+  "tickets_before": []
+}

@@ -1,0 +1,53 @@
+{
+  "expert_mode": "inactive",
+  "files": {
+    "capture-receipt.json": "db5956e12d11b83005670c1edc08b34e937dd95744c983cd9228297984b788b0",
+    "capture_adapter.py": "7a9e01f5dabb65a1c92bfd6567e80d14a8e095d7565b7d0381e6d879eaa6e302",
+    "consent.json": "899fae80a2edb77789a9ede5f135fca344dcc485e3f548b11ab4976b5b44a56b",
+    "guidance-revisions.json": "2b30315630db883785106feb8cf7474f5a3b7b7f9ab12e651e10ac3b0ff53634",
+    "handoff/comparator-metadata.json": "48f62a2be356b2de2b52ec7b674e73eba0ed908678b82b9c8d94ea3aef019295",
+    "handoff/eligible.json": "b507e7703db63bacc47194264d294e686e2b5f8da11efe54d212bef5d3ce3c2b",
+    "handoff/excluded.json": "2ec870507eb5a54a48f527ab3a4b04c78f4491864e092e2183236d71a61c5ac1",
+    "handoff/incomplete.json": "95fe4bc4b75ead72526e3359a6ca844303750d5de2f3a40c254e3dbb7afda726",
+    "handoff/manifest.json": "2cf0651604770d0255533cb11f84ff377c40208131d20cee1f7b786ab6241dda",
+    "handoff/runtime-preview.json": "dbe6a95d8f7d136c49c10a85e6100411012d6f4a1839819016da075815c24ee3",
+    "loaded-guidance/.agents/skills/adversarial-cases/SKILL.md": "edaafe5ea434cf476c7ab56312f3069d7ce7b09bdfa80a23b9a25c8b67ceb06a",
+    "loaded-guidance/.agents/skills/calibrate-judge/SKILL.md": "7e73de09c1a8bfdab1f78b5a42af84ec59099ceaf54e658d17726d5c85ed00f8",
+    "loaded-guidance/.agents/skills/calibrate-judge/references/protocol.md": "0a9a5d3a17c47f686175fd70d648676021334fba2fc65b3af16765197561cf82",
+    "loaded-guidance/.agents/skills/cross-examine/SKILL.md": "20aa4be6aeb00669ab1d4c5e440cdf2af9b8f2e12f70e5c9b3dd8ba0dcca8692",
+    "loaded-guidance/.agents/skills/expert-mode/references/calibration-capture.md": "91ad849b5326d80203a3c9fe76c651dfd85a609f15801878fd85ecbac8fc0886",
+    "phase2-report.md": "f5cfeb0eb1c7e80f6c9167bb5bacbdd2f508695b8028a93abec8a987e5cce0e5",
+    "policy.json": "09440464b38f4e6d55fc789cd52ca405fe3fb6aa0eeccac0e370253bc9cb0000",
+    "store-after.jsonl": "44d09cc7c1348133f183e2a3b94fabc9427e8cf04ed69dcfd67062f086f242b0",
+    "store-before.jsonl": "4e82eb3d0229ea673312a2ce951e872ac4cb51b4a8d467cf8566ee01ad635e45",
+    "verification.json": "bc35f91d56976056b17245f6fe54711b15e72b810edf9ed83e5ce9ed1c627a86"
+  },
+  "fitting": false,
+  "handoff": {
+    "eligible": 1,
+    "excluded": 3,
+    "incomplete": 1,
+    "runtime_items": 1
+  },
+  "human_gold_rows": 0,
+  "new_records": 5,
+  "phase": 2,
+  "phase1_checkpoint_sha256": "0f6ddd5379a4e183e444997b84346879f6c567af73cf58ddb1bdcd3b0eb06e93",
+  "policy": "fixture-direct-scripted-outcome-v1",
+  "release": false,
+  "retention_origin": "synthetic-scripted-test",
+  "sharing": false,
+  "status": "stopped-for-replay-and-retraction-testing",
+  "store_after_sha256": "44d09cc7c1348133f183e2a3b94fabc9427e8cf04ed69dcfd67062f086f242b0",
+  "store_before_sha256": "4e82eb3d0229ea673312a2ce951e872ac4cb51b4a8d467cf8566ee01ad635e45",
+  "store_records": 6,
+  "usage": {
+    "budget": 24,
+    "inference_runs": 0,
+    "native_cases": 2,
+    "nested_agents": 0,
+    "network_calls": 0,
+    "provider_calls": 0,
+    "remaining": 22
+  }
+}

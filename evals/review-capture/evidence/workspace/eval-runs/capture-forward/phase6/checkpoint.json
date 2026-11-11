@@ -1,0 +1,15 @@
+{
+  "files": {
+    "capture-receipt.json": "646aa4e0df44733c439d054598c62df723f1d9658e851e71ba3dbd9cd907d1b8",
+    "consent-state.json": "f1f94f957920258c432c06a1ce243e8d8ce7fe62eb1750ae8f2572dc96745fb0",
+    "handoff/comparator-metadata.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "handoff/eligible.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "handoff/excluded.json": "76bddfcbe78ca73dffc985e39b5e67eab8329698b63387bc3926f97662005a20",
+    "handoff/incomplete.json": "a545c7ff76346329b07189b0bd0a24cc30dd911e93aed7a7e99239a7047daf4a",
+    "handoff/manifest.json": "38da31b328af17fa1990ac4c7c4c847cc0e2614a0d3d8d5190913f950d5e3fe0",
+    "handoff/runtime-preview.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "store-at-checkpoint.jsonl": "e4fb80c532eeac4449ced0cb9caa67749b749179e091d780dec4ea1b4eb81e96"
+  },
+  "phase": "phase6",
+  "store_sha256": "e4fb80c532eeac4449ced0cb9caa67749b749179e091d780dec4ea1b4eb81e96"
+}

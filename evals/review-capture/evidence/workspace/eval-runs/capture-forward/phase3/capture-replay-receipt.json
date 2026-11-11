@@ -1,0 +1,7 @@
+{
+  "appended_count": 0,
+  "total_records": 6,
+  "store_sha256": "44d09cc7c1348133f183e2a3b94fabc9427e8cf04ed69dcfd67062f086f242b0",
+  "seed_preserved": true,
+  "retry_idempotency": "record identity plus exact source/artifact/criterion/assertion; different content requires amendment"
+}

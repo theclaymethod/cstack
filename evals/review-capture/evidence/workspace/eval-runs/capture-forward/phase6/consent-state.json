@@ -1,0 +1,15 @@
+{
+  "consent_id": "capture-forward-agent-scope-consent-v1",
+  "expert_mode": "inactive",
+  "fitting_authorized": false,
+  "judgment_time": null,
+  "origin": "synthetic-scripted-test",
+  "outcome_confirmation": false,
+  "release_authorized": false,
+  "retention_authorized": true,
+  "scope": "capture-forward-agent-review-2",
+  "sharing_authorized": false,
+  "source": "final fixture phase6 parent statement",
+  "source_message_id": null,
+  "statement": "Save the evidence and proposed labels for later review. I am not confirming those labels."
+}

@@ -1,0 +1,10 @@
+{
+  "files": {
+    "agent-led-audit.json": "f94d42798cb106b49e9f1ab1d2b776278d794935efa2a61b0f1605e6b23cf189",
+    "consent-state.json": "3f4be89d5bf671dbdfed6e10118ea9a33e11172a33b6e0750f14745aee7a6e45",
+    "new-offer-preview.md": "fa3e9570a771bd19587343b4b4eddc29e0467d9d86c11551cbc0c8fbec38d67e",
+    "store-at-checkpoint.jsonl": "ec10b37fea8dff2a6237e7fe4c54f93e9dcfd7323f0da95610272cc83432f3bf"
+  },
+  "phase": "phase5",
+  "store_sha256": "ec10b37fea8dff2a6237e7fe4c54f93e9dcfd7323f0da95610272cc83432f3bf"
+}

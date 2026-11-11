@@ -30,3 +30,5 @@ Pair clean and legitimate-alternative controls; add no-op/non-activation control
 Freeze scored versions before changes; preserve earlier failures and development exposure. Return intent/source, hypothesis, exact conditions/family/access, proposed expectation, setup/reset/replay commands, witnesses, score, controls, reduction history and limits. Name unexecuted and non-activated work.
 
 [Bootstrap](../bootstrap/SKILL.md) receives review cards, guesses/reasons and uncertainty; approval of expected behavior is distinct from labeling actual output. [Cross-Examine](../cross-examine/SKILL.md) receives a reproducible discrepancy and independent outcome witness for fresh intent review. No confirmed defect is a valid bounded result.
+
+Surface review signals to the parent's [calibration-capture offer](../expert-mode/references/calibration-capture.md); builders do not independently request consent or assign human labels.

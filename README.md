@@ -24,6 +24,7 @@ flowchart TD
     BL --> L
     R --> X["Challenge the scoring<br/>/cross-examine"]
     X --> C
+    X -. "Review capture offer" .-> J
     A["Construct hard cases<br/>/adversarial-cases"] -.-> B
     A -.-> X
 ```
@@ -49,6 +50,8 @@ With useful production traces, use LangChain's [eval-engineering](https://github
 Prefer [Harbor](skills/create-eval/references/formats.md) for new executable agent tasks. Existing project formats, DSPy datasets and lightweight stored-output evals remain supported.
 
 The skills reference [synthetic generation](skills/adversarial-cases/references/synthetic-methods.md), [failure injection](skills/adversarial-cases/references/failure-methods.md) and a [DSPy handoff](skills/hill-climb/references/data-handoff.md). Implementations and dependencies belong in your project. The [playground fixture](fixtures/playground/README.md) demonstrates the methods with the native runner and an optional local DSPy environment.
+
+Review corrections can become calibration candidates through a [scoped capture offer](skills/expert-mode/references/calibration-capture.md).
 
 ## Validation levels
 

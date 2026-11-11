@@ -1,0 +1,15 @@
+{
+  "files": {
+    "capture-replay-receipt.json": "3228bd5eae97f484215fbc1780c1ed02ead15cd5d64b5bfb1393646eb7ec1c0a",
+    "handoff/comparator-metadata.json": "48f62a2be356b2de2b52ec7b674e73eba0ed908678b82b9c8d94ea3aef019295",
+    "handoff/eligible.json": "b507e7703db63bacc47194264d294e686e2b5f8da11efe54d212bef5d3ce3c2b",
+    "handoff/excluded.json": "2ec870507eb5a54a48f527ab3a4b04c78f4491864e092e2183236d71a61c5ac1",
+    "handoff/incomplete.json": "95fe4bc4b75ead72526e3359a6ca844303750d5de2f3a40c254e3dbb7afda726",
+    "handoff/manifest.json": "2cf0651604770d0255533cb11f84ff377c40208131d20cee1f7b786ab6241dda",
+    "handoff/runtime-preview.json": "dbe6a95d8f7d136c49c10a85e6100411012d6f4a1839819016da075815c24ee3",
+    "report.json": "513bc0857fdd90629ef059495bb70aef0e3b01249b74bac72e86057a2b53b8b3",
+    "store-after-replay.jsonl": "44d09cc7c1348133f183e2a3b94fabc9427e8cf04ed69dcfd67062f086f242b0"
+  },
+  "phase": 3,
+  "store_sha256": "44d09cc7c1348133f183e2a3b94fabc9427e8cf04ed69dcfd67062f086f242b0"
+}

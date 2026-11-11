@@ -22,3 +22,5 @@ Test explicit hypotheses through actual execution, including combined removals. 
 Freeze model/version, prompt/context assembly, tools, settings, parser and fallback before confirmation under the exposure policy. Deliver the selected bundle/diff, recoverable original, observed comparisons/costs, missing cells and limits. A newer identifier or smaller prompt alone earns no quality claim.
 
 For authorized rollout, use the project's shadow/canary controls and rollback the complete bundle; otherwise prepare the handoff without deploying. Re-evaluate after relevant model, context, tool, distribution or evaluator changes.
+
+Offer [calibration capture](../expert-mode/references/calibration-capture.md) for corrections or user-confirmed labels surfaced during comparisons.

@@ -28,3 +28,5 @@ Follow [agreement guidance](../create-eval/references/judges.md): failure-positi
 Inspect permitted traces for hacking, broken labels, contamination and refusals without opening reserved evidence. [Cross-Examine](../cross-examine/SKILL.md) supplies bounded audits. A viewer supports discovery, not isolation; preserve annotations for Create Eval rather than editing frozen scores.
 
 Report what actually ran, paths, revisions/trial conditions, results, errors, exposure and privacy limits. Execution does not authorize changed labels, final-driven tuning, product fixes or publication. Requested sharing follows [export](../expert-mode/references/export.md).
+
+After corrections or user-confirmed outcome labels, offer [calibration capture](../expert-mode/references/calibration-capture.md) separately from run scores.

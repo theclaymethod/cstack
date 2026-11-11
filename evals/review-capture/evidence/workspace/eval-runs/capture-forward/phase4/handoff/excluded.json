@@ -1,0 +1,50 @@
+[
+  {
+    "authority": "scripted-reviewer",
+    "current_label": null,
+    "example_id": "capture-forward-original-creation-assertion",
+    "historical_label": "FAIL",
+    "human_gold_eligible": false,
+    "origin": "synthetic-scripted-test",
+    "reason": "retracted",
+    "record_id": "capture-forward-signal-1-v1",
+    "retraction_record_id": "capture-forward-retraction-v1",
+    "source_family": "dev-authorized-single-account"
+  },
+  {
+    "authority": "scripted-reviewer",
+    "example_id": "capture-forward-howto-intent",
+    "human_gold_eligible": false,
+    "origin": "synthetic-scripted-test",
+    "proposed_label": null,
+    "reason": "intent-only",
+    "record_id": "capture-forward-signal-2-v1",
+    "reviewer_confirmation": false,
+    "source_family": "synthetic-howto-intent-source-item-2",
+    "supported_label": null
+  },
+  {
+    "authority": "agent-reviewer",
+    "example_id": "capture-forward-legitimate-output-agent-review",
+    "human_gold_eligible": false,
+    "origin": "synthetic-scripted-test",
+    "proposed_label": null,
+    "reason": "agent-only",
+    "record_id": "capture-forward-signal-3-v1",
+    "reviewer_confirmation": false,
+    "source_family": "dev-authorized-single-account",
+    "supported_label": "PASS"
+  },
+  {
+    "authority": "assistant",
+    "example_id": "capture-forward-urgency-proposal",
+    "human_gold_eligible": false,
+    "origin": "synthetic-scripted-test",
+    "proposed_label": null,
+    "reason": "unendorsed-proposal",
+    "record_id": "capture-forward-signal-5-v1",
+    "reviewer_confirmation": false,
+    "source_family": "synthetic-urgency-proposal-source-item-5",
+    "supported_label": null
+  }
+]

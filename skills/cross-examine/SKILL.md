@@ -28,3 +28,5 @@ Replay from clean state on the frozen scoring path, preserving versions, raw obs
 Repair only within authority while preserving original intent/judgment; changed meaning needs a contract decision. Verification must be observational and compare complete required state, including permitted alternatives. Replay the exploit and legitimate baselines; reject blanket rejection or reference-only acceptance. Require independent intent acceptance before calling a repair validated. Review-only work returns a proposed fix; incomplete checks remain unresolved.
 
 For each confirmed root cause, update the generator's existing skill/reference, or this skill's lessons: faulty assumption, divergence, generation rule and reproducer/version. Keep conjectures in the ledger. Record original/repaired outcomes, legitimate checks, independent verdict, lesson-write failures and remaining limits. Claim only demonstrated prevention/coverage; further rounds require remaining or renewed budget.
+
+After corrections or confirmed labels, offer [scoped calibration capture](../expert-mode/references/calibration-capture.md); agent verdicts retain their own authority.

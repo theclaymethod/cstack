@@ -1,0 +1,10 @@
+{
+  "policy_id": "fixture-direct-scripted-outcome-v1",
+  "origin": "project-local synthetic test policy supplied in phase2",
+  "eligible": "complete direct scripted-outcome judgment with recoverable original artifact, applicable defined criterion, explicit supported outcome and current consent",
+  "ineligible": ["intent-only", "agent-only", "incomplete", "unendorsed-proposal", "retracted"],
+  "human_gold_eligible": false,
+  "usage": "fixture-only preview; exposed development evidence",
+  "fitting_authorized": false,
+  "release_authorized": false
+}

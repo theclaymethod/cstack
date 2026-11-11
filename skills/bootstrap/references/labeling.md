@@ -54,3 +54,7 @@ Expectation approvals can authorize deterministic contract checks before an impl
 Keep calibration labels, decision rationales, label-bearing scenario names, split metadata, and private mappings out of judge inputs. A necessary reference answer is permitted task evidence only when the actual grading task requires it; declaring a reference answer does not make a prior human verdict visible to the judge. Follow the existing [blind projection contract](../../run-eval/references/package.md) rather than passing the whole authoring checkpoint to a validator.
 
 User review of expectations need not invalidate a reserved set for evaluator fitting: keep reserved concrete artifacts and their outcome labels outside the author's context. If review examples or mismatch details are used to tune the evaluator, mark those families exposed and treat subsequent checks as development evidence. Isolation is a claim about actual inputs and access, not a directory name.
+
+## Retain decisions for later calibration
+
+Use the shared [capture-offer guidance](../../expert-mode/references/calibration-capture.md) when additional retention for judge calibration is useful. Existing authoring checkpoints need no new permission. Preserve expectation decisions as intent evidence and concrete output labels as scoped supervision; do not turn an approval batch into labels on generated outputs. The coordinator owns any new offer and reuses existing capture consent.

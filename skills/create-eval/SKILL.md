@@ -28,3 +28,5 @@ The package remains a draft until legitimate, failing, boundary and alternative 
 Use [Cross-Examine](../cross-examine/SKILL.md) for requested/needed adversarial hardening, with original intent, access and a bounded budget. Use [Run Eval](../run-eval/SKILL.md) for authorized execution. Report paths, actual checks, source limits and incomplete cases, separating judge agreement from product performance and development from independent evidence.
 
 Authoring supplies no authority for product fixes, paid calls, reserved-data access or publication. Requested sharing follows [export](../expert-mode/references/export.md).
+
+Offer [calibration capture](../expert-mode/references/calibration-capture.md) for corrections or user-confirmed outcome labels collected during authoring.

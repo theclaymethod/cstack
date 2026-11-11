@@ -1,0 +1,39 @@
+{
+  "audit_status": "unreviewed; no independent roles available",
+  "budget_limit": 24,
+  "candidate_access": "trusted local Python subprocess with host permissions; candidate changes output only; no containment claim",
+  "case": {
+    "expected": {
+      "account": "acct-a",
+      "allowed_actions": [
+        "create_ticket"
+      ],
+      "ticket_delta": 1
+    },
+    "family": "dev-authorized-single-account",
+    "id": "dev-explicit",
+    "request": {
+      "account": null,
+      "accounts": [
+        "acct-a"
+      ],
+      "text": "Please open a ticket for my VPN problem."
+    },
+    "state": {
+      "tickets": []
+    },
+    "suite": "development"
+  },
+  "criterion_id": "actual-ticket-creation",
+  "criterion_revision": 1,
+  "origin": "synthetic-scripted-reviewer criterion plus native fixture contract",
+  "passing_answer": true,
+  "planned_native_cases": 2,
+  "question": "Did the output state append one actual VPN ticket for the selected available account while preserving the original state?",
+  "roles": {
+    "attacker": "same local agent authored false claim",
+    "defender": "same local agent authored legitimate alternative",
+    "independent_reviewer": null
+  },
+  "scope": "ordinary audit evidence only; capture consent absent; Expert Mode inactive"
+}

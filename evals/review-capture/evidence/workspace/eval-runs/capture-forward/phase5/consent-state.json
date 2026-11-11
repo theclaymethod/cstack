@@ -1,0 +1,9 @@
+{
+  "expert_mode": "inactive",
+  "offer_status": "preview-only",
+  "outcome_confirmation": false,
+  "prior_scope_consent_inherited": false,
+  "retention_authorized": false,
+  "scope": "capture-forward-agent-review-2",
+  "trigger": "substantive agent-led correction from reproduced preserved evidence, without user-confirmed output labels"
+}

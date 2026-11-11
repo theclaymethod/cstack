@@ -1,0 +1,25 @@
+{
+  "files": {
+    ".agents/skills/adversarial-cases/SKILL.md": {
+      "phase1_sha256": "edaafe5ea434cf476c7ab56312f3069d7ce7b09bdfa80a23b9a25c8b67ceb06a",
+      "phase2_sha256": "edaafe5ea434cf476c7ab56312f3069d7ce7b09bdfa80a23b9a25c8b67ceb06a"
+    },
+    ".agents/skills/calibrate-judge/SKILL.md": {
+      "phase1_sha256": null,
+      "phase2_sha256": "7e73de09c1a8bfdab1f78b5a42af84ec59099ceaf54e658d17726d5c85ed00f8"
+    },
+    ".agents/skills/calibrate-judge/references/protocol.md": {
+      "phase1_sha256": "0a9a5d3a17c47f686175fd70d648676021334fba2fc65b3af16765197561cf82",
+      "phase2_sha256": "0a9a5d3a17c47f686175fd70d648676021334fba2fc65b3af16765197561cf82"
+    },
+    ".agents/skills/cross-examine/SKILL.md": {
+      "phase1_sha256": "19f0139b161aba4eb4262cd6fe4d7302ce924a07a123edc6c2d69b1cd7b71edf",
+      "phase2_sha256": "20aa4be6aeb00669ab1d4c5e440cdf2af9b8f2e12f70e5c9b3dd8ba0dcca8692"
+    },
+    ".agents/skills/expert-mode/references/calibration-capture.md": {
+      "phase1_sha256": "0f36c1785a980e21c32d88a7604d469cf0173f70b688ae4d93ebfa325d1f55b7",
+      "phase2_sha256": "91ad849b5326d80203a3c9fe76c651dfd85a609f15801878fd85ecbac8fc0886"
+    }
+  },
+  "revision_boundary": "explicit sync from same staged source before phase2; phase1 loaded copies remain unchanged"
+}

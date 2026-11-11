@@ -24,3 +24,5 @@ Before selection, read [quality preservation](references/quality.md), including 
 Freeze the chosen combined candidate before confirmation. Adaptive validation remains selection evidence; independent claims require actually independent reserved evidence. A nonsignificant difference is not preserved performance. Retain the baseline when no candidate qualifies.
 
 Deliver the artifact/diff, original identity, tested combinations, outcomes/regressions, burden/costs, uncertainty and stopping reason. Report the smallest confirmed candidate found within budget; claim local minimality only for an actually completed declared sweep, never a global minimum from a budget stop.
+
+Offer [calibration capture](../expert-mode/references/calibration-capture.md) for corrections or user-confirmed labels during the campaign.

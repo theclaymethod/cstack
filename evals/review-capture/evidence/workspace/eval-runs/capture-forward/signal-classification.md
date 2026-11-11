@@ -1,0 +1,13 @@
+# Audit-only signal classification
+
+These are ordinary task evidence, not reusable calibration rows or approved calibration labels. All supplied statements originate in the scripted synthetic task, not an actual human reviewer. Exact source is preserved in `source/FORWARD_TASK.md`; unavailable original message IDs and historical judgment times remain unknown.
+
+| Source signal | Supported meaning | Version and authority | Calibration consequence if later retention is authorized |
+| --- | --- | --- | --- |
+| 1. “That creation verdict is wrong: this output did not create any ticket. FAIL on actual ticket creation.” | Explicit scoped rejection of the exact original false claim on actual-ticket-creation revision 1. No replacement response supplied. | `false-claim-v1` only; direct synthetic scripted-outcome judgment. | Complete negative candidate for this criterion: recoverable input/output/state, explicit direction and source. No canonical replacement needed. Not human gold. No reusable capture or approved row is created now. |
+| 2. “For a how-to request, give guidance without changing tickets.” | Approved expected behavior for a new how-to scenario; no concrete output was reviewed. | Intent decision only; synthetic scripted reviewer. A distinct criterion revision/ID is unspecified and must not be invented as confirmed. | Requirement evidence; cannot label an unseen output. |
+| 3. Separate repaired/legitimate output called PASS by an agent reviewer. | Agent-authored judgment on a distinct output. | `legitimate-v2`; agent-only PASS, not assessed by the scripted reviewer. | Keep agent provenance. No inherited direct reviewer approval, no human supervision. Native PASS is separately code-derived. |
+| 4. “Fix the missing evidence” about a lost original artifact. | Correction/process concern with missing original input/output and criterion. | Original artifact/version association unknown; synthetic statement. Do not attach it to either recovered output. | Incomplete candidate only; label, criterion, applicability and passing direction unresolved. |
+| 5. Assistant suggests all urgent requests bypass clarification. | Unendorsed assistant proposal. | Agent suggestion only; no reviewer endorsement or applicable output. | No expected-answer authority and no outcome label. |
+
+Both runs are exposed development members of `dev-authorized-single-account`; retaining their family connection would be required in any later assembly. The five signal identities refer to numbered source items; the task supplies no original message IDs. Capture time, if later recorded, must not be substituted for judgment time. No partition is assigned and no fitting or release is authorized.

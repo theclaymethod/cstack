@@ -56,3 +56,7 @@ Carry the active mode, established paths, session/example/criterion IDs, pending
 Store review data in the working project's established private location. The skill records local evidence; it does not automatically commit, upload, publish, or copy identifying source data into a public skill repository.
 
 For a requested shareable handoff, use [the export workflow](export.md). Its [Privacy Filter reference](privacy-filter.md) provides optional local PII removal setup. Preserve private originals and clearly distinguish redacted evidence from the original expert wording.
+
+## Review-to-calibration capture
+
+Bounded captures from adversarial reviews share this dataset and amendment/deduplication rules. Follow [calibration capture](calibration-capture.md) for the offer, consent scope, signal authority and calibration handoff. A bounded opt-in does not start ongoing Expert Mode. Distill Me merges those records without duplicating them.

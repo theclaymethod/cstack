@@ -28,3 +28,5 @@ Compare baseline and shortlist under the quality/regression policy and available
 Promote only a confirmed admissible candidate, otherwise preserve the baseline. Stop at the budget/deadline/plateau/target. Persist reservations and evidence identity across interruptions: completed matching native evidence may reconcile without re-execution/recharge; partial/mismatched work stays incomplete and charged. Verify ledgers, source and exposure on resume; changed contracts start a new campaign.
 
 Return exact selected artifact/diff, original/candidate identities, per-case gains/regressions, observed costs/errors, stopping and uncertainty, distinguishing development from confirmation/generalization. Apply to the authorized target only if unchanged since capture. Deployment, publication and new paid scope need their own authority.
+
+Offer [calibration capture](../expert-mode/references/calibration-capture.md) for corrections or user-reviewed outcomes; candidate improvements alone supply no human labels.

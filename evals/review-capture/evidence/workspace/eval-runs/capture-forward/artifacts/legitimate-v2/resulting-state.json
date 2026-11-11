@@ -1,0 +1,10 @@
+{
+  "tickets": [
+    {
+      "account": "acct-a",
+      "id": "support-ack-1",
+      "issue": "vpn",
+      "status": "open"
+    }
+  ]
+}

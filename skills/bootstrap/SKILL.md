@@ -30,3 +30,5 @@ Protect approved source records from author edits. Check full schema and exact i
 Before completion, run legitimate, failing, boundary and alternative controls through the real grader. Synthetic controls are not human labels. Semantic judges need explicit outcome labels and [calibration](../create-eval/references/judges.md). Keep families together and exposure honest; Run Eval freezes authorized results, retaining errors and unknowns separately.
 
 Offer bounded Cross-Examine after reviewable evidence; run it when already requested. Report package/command, approved/pending counts, covered intent and execution/calibration gaps. Authoring grants no additional publication, product-change or paid-campaign authority.
+
+At decision checkpoints, offer [calibration capture](../expert-mode/references/calibration-capture.md); expectation approval remains distinct from output labeling.

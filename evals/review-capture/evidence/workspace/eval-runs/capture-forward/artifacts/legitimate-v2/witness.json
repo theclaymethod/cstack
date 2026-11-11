@@ -1,0 +1,32 @@
+{
+  "artifact_version_id": "legitimate-v2",
+  "construction_family": "dev-authorized-single-account",
+  "exposure": "fully exposed development material",
+  "input_sha256": "2fbe65a92f3b22475a0b066b7312a0d8b4b7d2f311c3d69d704b9212882f5f23",
+  "native_checks": {
+    "action_matches_mutation": true,
+    "allowed_action": true,
+    "new_ticket_fields": true,
+    "new_ticket_membership": true,
+    "preserved_other_state": true,
+    "preserved_tickets": true,
+    "requested_account": true,
+    "ticket_delta": true,
+    "unique_ticket_ids": true
+  },
+  "native_outcome": "PASS",
+  "origin": "operator inspection of native retained output state; no independent reviewer",
+  "output_sha256": "2c0d7576379310714f63fe2b33380bdc5172d24f3ac5055876aebf420b8abfd1",
+  "resulting_state_sha256": "efa6ac26f7bbe64bee51d5bdcf13cbcef29e5bdd4e3f7e95249d04102dbd589f",
+  "stdout_sha256": "36a7b4817b68b3ce5666928f8a80fed488efcad8b313bc98642ccb02afd2d894",
+  "ticket_delta": 1,
+  "tickets_after": [
+    {
+      "account": "acct-a",
+      "id": "support-ack-1",
+      "issue": "vpn",
+      "status": "open"
+    }
+  ],
+  "tickets_before": []
+}

@@ -1,0 +1,28 @@
+{
+  "counts": {
+    "eligible": 1,
+    "excluded": 3,
+    "incomplete": 1,
+    "runtime_items": 1
+  },
+  "native_cases_total": 2,
+  "policy": {
+    "eligible": "complete direct scripted-outcome judgment with recoverable original artifact, applicable defined criterion, explicit supported outcome and current consent",
+    "fitting_authorized": false,
+    "human_gold_eligible": false,
+    "ineligible": [
+      "intent-only",
+      "agent-only",
+      "incomplete",
+      "unendorsed-proposal",
+      "retracted"
+    ],
+    "origin": "project-local synthetic test policy supplied in phase2",
+    "policy_id": "fixture-direct-scripted-outcome-v1",
+    "release_authorized": false,
+    "usage": "fixture-only preview; exposed development evidence"
+  },
+  "runtime_boundary": "inspected allowlist only; host files do not enforce malicious-process containment",
+  "status": "fixture-only schema/projection preview; no client inference, fitting, final partition or release",
+  "store_sha256": "44d09cc7c1348133f183e2a3b94fabc9427e8cf04ed69dcfd67062f086f242b0"
+}

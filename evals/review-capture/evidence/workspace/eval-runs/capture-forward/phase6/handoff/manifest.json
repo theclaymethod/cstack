@@ -1,0 +1,24 @@
+{
+  "counts": {
+    "comparator_items": 0,
+    "eligible": 0,
+    "excluded": 6,
+    "incomplete": 1,
+    "runtime_items": 0
+  },
+  "human_gold_eligible": false,
+  "partition": null,
+  "policy": "fixture-direct-scripted-outcome-v1",
+  "required_candidate_record_ids": [
+    "capture-forward-signal-1-v1",
+    "capture-forward-signal-2-v1",
+    "capture-forward-signal-3-v1",
+    "capture-forward-signal-4-v1",
+    "capture-forward-signal-5-v1",
+    "capture-forward-agent-scope-candidate-1-v1",
+    "capture-forward-agent-scope-candidate-2-v1"
+  ],
+  "runtime_boundary": "inspected projection; no inference and no containment claim",
+  "status": "explicitly empty eligible inventory after retraction; proposals excluded by actual authority",
+  "store_sha256": "e4fb80c532eeac4449ced0cb9caa67749b749179e091d780dec4ea1b4eb81e96"
+}

@@ -1,0 +1,1 @@
+{"account": "acct-a", "action": "create_ticket", "note": "Opened a VPN support ticket.", "state": {"tickets": []}}

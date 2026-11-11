@@ -1,0 +1,30 @@
+{
+  "guidance_boundary": "Phase 1 used only these installed bytes. Parent reports later trigger expansion; phase 2 may sync final guidance. This is exposed development, not a frozen/held-out cross-phase claim.",
+  "loaded_guidance": {
+    ".agents/skills/adversarial-cases/SKILL.md": "edaafe5ea434cf476c7ab56312f3069d7ce7b09bdfa80a23b9a25c8b67ceb06a",
+    ".agents/skills/adversarial-cases/references/case-contract.md": "7943a09952eb0df5ef1a50e1c8d22ffe496b732a5cd9d33fbe04efaf7f4f60af",
+    ".agents/skills/adversarial-cases/references/injection.md": "d8ae58d555513058864e6f47fcd2df74fbfe9d13e662bf04c3416601bccfd2df",
+    ".agents/skills/calibrate-judge/references/protocol.md": "0a9a5d3a17c47f686175fd70d648676021334fba2fc65b3af16765197561cf82",
+    ".agents/skills/cross-examine/SKILL.md": "19f0139b161aba4eb4262cd6fe4d7302ce924a07a123edc6c2d69b1cd7b71edf",
+    ".agents/skills/cross-examine/references/ledger.md": "68c17680bef75b3e3225d7495ecf20882f8485ae19d2e4cd98d5b402d8970c95",
+    ".agents/skills/cross-examine/references/lessons.md": "bb207ad412303b961456d6c62350c305c62854001eb47a35f7e7a0968c56e8a6",
+    ".agents/skills/expert-mode/references/calibration-capture.md": "0f36c1785a980e21c32d88a7604d469cf0173f70b688ae4d93ebfa325d1f55b7",
+    ".agents/skills/expert-mode/references/records.md": "85367406bac6ead9da0464417051741109124649b370282c3994057d16a3ed95"
+  },
+  "origin": "synthetic-scripted-exercise; not human authority",
+  "source": "exact staged cstack materialized into forward-workspace",
+  "source_files": {
+    ".agents/skills/adversarial-cases/SKILL.md": "edaafe5ea434cf476c7ab56312f3069d7ce7b09bdfa80a23b9a25c8b67ceb06a",
+    ".agents/skills/calibrate-judge/references/protocol.md": "0a9a5d3a17c47f686175fd70d648676021334fba2fc65b3af16765197561cf82",
+    ".agents/skills/cross-examine/SKILL.md": "19f0139b161aba4eb4262cd6fe4d7302ce924a07a123edc6c2d69b1cd7b71edf",
+    ".agents/skills/expert-mode/references/calibration-capture.md": "0f36c1785a980e21c32d88a7604d469cf0173f70b688ae4d93ebfa325d1f55b7",
+    ".agents/skills/expert-mode/references/records.md": "85367406bac6ead9da0464417051741109124649b370282c3994057d16a3ed95",
+    "AGENTS.md": "1e463be68191e7b5edd0f9f3015f2e41ec7ab79c8c219a7cc3f992b4ade07660",
+    "evals/cases.jsonl": "71f1d8c50f7ce2b3ca512c6f2703faa4e30d5c63237824e3a73e7a573cf4f7b2",
+    "evals/rubric.md": "cb133b50752a48098d463a562d7553ec5a5b29bfef1825b4e393e7de33d66dd8",
+    "evals/spec.json": "eb6f21266223c16708a4ed3bb4f401f3a2adb3355b9e176152665d70a665d8f6",
+    "evaluate.py": "fd1fdaa4b090852f8d0a6462303411bea5488dcc7f7a08895146e32d52b0430d",
+    "methods/native.py": "df83d4b57df0ac2dc0ac6cd5b94136082c02d486478c98334a6273cb623e86bd"
+  },
+  "task_sha256": "60e72889514e3f9f1b8cf82e4745aca8a27a9f51560e2fd5e5a4c224d9de399b"
+}

@@ -30,3 +30,5 @@ Read [measurement](references/measurement.md). Report counts, nominal or predecl
 Freeze the exact judge/model/parser/calibrator/threshold/fallback bundle and final plan. Complete all planned predictions before opening final labels; final-driven edits require new evidence. Exercise alternatives, malformed/missing responses and label leakage. [Adversarial Cases](../adversarial-cases/SKILL.md) builds challenges; [Cross-Examine](../cross-examine/SKILL.md) adjudicates scoring gaps.
 
 Promote only under the declared evidence/policy; otherwise report not yet calibrated. Deliver configurations/code, invocation, original/selected identities, membership/exposure, metrics, costs and limits. Synthetic controls and response-shape mocks do not establish live backend or human-gold calibration. [Create Eval](../create-eval/SKILL.md) supplies criteria; [Run Eval](../run-eval/SKILL.md) executes frozen judges. Product optimization keeps its approved evaluator fixed.
+
+Offer [calibration capture](../expert-mode/references/calibration-capture.md) for owner adjudications; consent to save is separate from authority to change gold.

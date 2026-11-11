@@ -1,0 +1,15 @@
+{
+  "consent_id": "capture-forward-phase2-consent",
+  "origin": "synthetic-scripted-test",
+  "statement": "Yes, save this review's decisions locally as calibration candidates. Only this review; keep Expert Mode off. This does not authorize fitting or sharing.",
+  "source": "phase2 scripted parent instruction",
+  "retention_authorized": true,
+  "scope": "five supplied signals and linked native evidence from this review only",
+  "destination": "eval-runs/capture-existing/reviews.jsonl",
+  "expert_mode": "inactive",
+  "new_outcome_labels": false,
+  "fitting_authorized": false,
+  "sharing_authorized": false,
+  "judgment_time": null,
+  "source_message_id": null
+}
