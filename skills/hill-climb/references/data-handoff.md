@@ -1,6 +1,6 @@
 # Hand generated evidence to DSPy
 
-Use this when an existing DSPy program can benefit from generated examples or diagnostic feedback. Keep the adapter, dependencies, data and execution code inside the consuming project. This skill does not require DSPy, a C Stack fixture or a particular optimizer.
+Use this when an existing DSPy program can benefit from generated examples or diagnostic feedback. Keep the adapter, dependencies, data and execution code inside the consuming project. This skill does not require DSPy, a cstack fixture or a particular optimizer.
 
 ## Define the example boundary
 

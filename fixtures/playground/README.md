@@ -1,12 +1,12 @@
-# C Stack playground fixture
+# cstack playground fixture
 
-A reusable fixture inside C Stack for trying its eleven skills against a small, deliberately imperfect project. The product is a deterministic Python support agent. Its bugs, requests, conversation excerpts, expected outcomes, and candidate examples are synthetic. There is no website or model-provider setup.
+A reusable fixture inside cstack for trying its eleven skills against a small, deliberately imperfect project. The product is a deterministic Python support agent. Its bugs, requests, conversation excerpts, expected outcomes, and candidate examples are synthetic. There is no website or model-provider setup.
 
 Use Python 3.11+ on macOS or Linux. The code uses the standard library; campaign commands use a Unix advisory lock. Candidate programs run with your local permissions. Only run code you authorize: subprocesses and timeouts are not a security sandbox.
 
 ## Start here
 
-From the C Stack repository root, create a fresh disposable workspace:
+From the cstack repository root, create a fresh disposable workspace:
 
 ```sh
 python3 fixtures/playground/scripts/new_workspace.py --out eval-runs/playground
@@ -16,7 +16,7 @@ python3 -m unittest discover -s tests -v
 python3 evaluate.py run --candidate support_agent.py --suite development --out eval-runs/baseline
 ```
 
-The canonical fixture contains the product, evaluator, cases, and exercises. It has no nested Git repository or installed skill copies. The workspace command creates a local Git repository, copies the current eleven skills, and records the owning C Stack source. It refuses existing destinations; use a new directory to reset. You can use an absolute output path outside C Stack instead of `eval-runs/`.
+The canonical fixture contains the product, evaluator, cases, and exercises. It has no nested Git repository or installed skill copies. The workspace command creates a local Git repository, copies the current eleven skills, and records the owning cstack source. It refuses existing destinations; use a new directory to reset. You can use an absolute output path outside cstack instead of `eval-runs/`.
 
 In the generated workspace, the eleven skills are copied into `.agents/skills`, with relative links for Claude Code and Cursor. Syncing refreshes unchanged copies and refuses to overwrite local skill edits. Start a new coding-agent session in this repo after a sync. Invoke `$hill-climb` in Codex, `/hill-climb` in Claude Code/Cursor, or ask the agent to read the relevant `.agents/skills/<name>/SKILL.md`.
 
@@ -41,9 +41,9 @@ You can also edit your own candidate and use the same commands. The baseline is 
 
 The confirmation cases are present in this repo. Their name does not hide them from the proposer or establish unseen generalization. All example results are synthetic development/confirmation observations.
 
-## Run C Stack's existing eval controls
+## Run cstack's existing eval controls
 
-In a generated workspace, the wrapper resolves the owning C Stack checkout. Choose a fresh output directory:
+In a generated workspace, the wrapper resolves the owning cstack checkout. Choose a fresh output directory:
 
 ```sh
 python3 scripts/run_cstack_evals.py --suite all --out eval-runs/cstack-controls

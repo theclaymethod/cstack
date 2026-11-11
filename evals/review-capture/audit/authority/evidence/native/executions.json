@@ -1,0 +1,35 @@
+{
+  "actual_completed": 2,
+  "calls": [
+    {
+      "candidate": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/capture-cross-examine/attack-authority/evidence/candidates/false-claim-v1.py",
+      "cases": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/capture-cross-examine/attack-authority/evidence/native/false-claim-v1.jsonl",
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 1,
+        "PASS": 0,
+        "UNKNOWN": 0
+      },
+      "executed": 1,
+      "label": "false-claim-v1",
+      "reserved": 1,
+      "status": "complete"
+    },
+    {
+      "candidate": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/capture-cross-examine/attack-authority/evidence/candidates/legitimate-v2.py",
+      "cases": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/capture-cross-examine/attack-authority/evidence/native/legitimate-v2.jsonl",
+      "counts": {
+        "ERROR": 0,
+        "FAIL": 0,
+        "PASS": 1,
+        "UNKNOWN": 0
+      },
+      "executed": 1,
+      "label": "legitimate-v2",
+      "reserved": 1,
+      "status": "complete"
+    }
+  ],
+  "limit": 12,
+  "reserved": 2
+}

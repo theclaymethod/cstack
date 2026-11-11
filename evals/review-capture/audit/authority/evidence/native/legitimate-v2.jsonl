@@ -1,0 +1,1 @@
+{"expected": {"account": "acct-a", "allowed_actions": ["create_ticket"], "ticket_delta": 1}, "family": "dev-authorized-single-account", "id": "dev-explicit", "request": {"account": null, "accounts": ["acct-a"], "text": "Please open a ticket for my VPN problem."}, "state": {"tickets": []}, "suite": "development"}

@@ -1,0 +1,13 @@
+{
+  "argv": [
+    "/Users/clayton/.local/bin/python3",
+    "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/capture-cross-examine/attack-authority/playground/eval-runs/authority-source-append/driver.py",
+    "merge1",
+    "--base",
+    "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/capture-cross-examine/attack-authority/playground/eval-runs/authority-source-append"
+  ],
+  "cwd": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/capture-cross-examine/attack-authority/playground",
+  "exit_code": 0,
+  "stderr": "",
+  "stdout": "{\n  \"phase\": \"merge1\",\n  \"time\": \"2026-11-11T04:39:14.148370+00:00\",\n  \"source_sha256\": \"3f14e10c5d248a9175bb4f5b7aa1dfdc6ecedd5e5318623a3a993cb6668f50b8\",\n  \"added_reviews\": [\n    \"howto-negative-v1\",\n    \"urgency-unresolved-v1\",\n    \"howto-scope-amendment-v2\",\n    \"account-local-duplicate-rule-v1\"\n  ],\n  \"added_rubric\": [\n    \"rubric-howto-guidance-v1\",\n    \"rubric-howto-preserve-v1\",\n    \"rubric-urgency-proposed-v1\",\n    \"rubric-explicit-ticket-v1\",\n    \"rubric-open-duplicate-v1\",\n    \"rubric-unrelated-ticket-v1\"\n  ],\n  \"before\": {\n    \"reviews.jsonl\": \"0ff5b48329736f8df944f4e1415694bfa07efcdb81ef119d4f7bc4ccfdbae8b3\",\n    \"rubric.jsonl\": \"6ec07a6b893eccb46138b26c98b5a6a9938c49bd3073901cecc04fe6cdd1f0f4\"\n  },\n  \"after\": {\n    \"reviews.jsonl\": \"70e24bb916da3e50bacacc616495ea55ca23b9b05a2b6722e0671fe8963708cb\",\n    \"rubric.jsonl\": \"22a0a132672a518123fe4ade86f82e4d85691e03a8ce7939cc7774a61b43a114\"\n  },\n  \"capture_active\": false,\n  \"matching\": \"source hash + statement + output version + specific assertion\",\n  \"unknown_matches\": [],\n  \"source_authority\": \"scripted synthetic fixture\"\n}\n"
+}

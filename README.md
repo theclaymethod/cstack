@@ -1,72 +1,58 @@
-# C Stack
+# cstack
 
-Skills for eval-driven development. Define the behavior you want, turn expert judgments into evals, and improve your agent against them.
+Skills for eval-driven development. Turn expert judgment into evals, improve your agent against them, and simplify what no longer helps.
 
-## Choose a starting point
+## Start with the evidence you have
 
-Use `/expert-mode` to observe your judgments as you work, or `/distill-me` to extract them from a completed session. Use `/bootstrap` when you know the intended behavior and need scenarios and evaluators before you have useful traces.
+Ask `/expert-mode` to observe you working, or use `/distill-me` after a session. Start with `/bootstrap` when you know the intent and need cases before you have useful traces.
 
 ```mermaid
 flowchart TD
-    O["Observe me working<br/>/expert-mode"] --> D["Extract judgments<br/>/distill-me"]
+    O["Observe me<br/>/expert-mode"] --> D["Extract judgments<br/>/distill-me"]
     D --> C["Author evals<br/>/create-eval"]
     B["Start from intent<br/>/bootstrap"] --> C
-    P["Have useful production traces"] --> E["LangChain eval-engineering"]
-    E --> R["Measure behavior<br/>/run-eval"]
+    P["Have production traces"] --> E["LangChain eval-engineering"] --> C
+    C --> J["Align with labels<br/>/calibrate-judge"] --> R["Measure<br/>/run-eval"]
     C --> R
-    C -.-> J["Align a judge with labels<br/>/calibrate-judge"]
-    J --> R
-    R --> H["Improve the target<br/>/hill-climb"]
-    H --> R
-    R --> L["Remove complexity<br/>/ablation"]
-    L --> R
-    M["Upgrading a production model"] --> BL["Revisit prompts and context<br/>/bitter-lesson"]
-    BL --> L
-    R --> X["Challenge the scoring<br/>/cross-examine"]
-    X --> C
-    X -. "Review capture offer" .-> J
-    A["Construct hard cases<br/>/adversarial-cases"] -.-> B
+    R --> X["Challenge the scoring<br/>/cross-examine"] --> C
+    X -. "Offer to retain judgments" .-> J
+    A["Build hard cases<br/>/adversarial-cases"] -.-> B
     A -.-> X
+    R --> H["Improve<br/>/hill-climb"] --> R
+    R --> L["Remove complexity<br/>/ablation"] --> R
+    M["Upgrade a model"] --> BL["Retest prompts and context<br/>/bitter-lesson"] --> L
 ```
 
-With useful production traces, use LangChain's [eval-engineering](https://github.com/langchain-ai/langchain-skills/tree/main/config/skills/eval-engineering) to build grounded tasks, environments and verifiers. It is an external skill, referenced here rather than bundled. C Stack's [trace guidance](skills/create-eval/references/ecosystem.md) explains the handoff.
+With good production traces, use LangChain's [eval-engineering](https://github.com/langchain-ai/langchain-skills/tree/main/config/skills/eval-engineering) for grounded tasks, environments, and verifiers. It is referenced, not bundled.
 
-| Skill | Purpose |
+| Skill | Use it to |
 | --- | --- |
 | [expert-mode](skills/expert-mode/SKILL.md) | Capture explicit judgments while you work. |
-| [distill-me](skills/distill-me/SKILL.md) | Recover judgments from the session. |
+| [distill-me](skills/distill-me/SKILL.md) | Recover judgments from a session. |
 | [bootstrap](skills/bootstrap/SKILL.md) | Interview for intent and review proposed scenarios. |
 | [create-eval](skills/create-eval/SKILL.md) | Turn reviewed evidence into cases and graders. |
 | [calibrate-judge](skills/calibrate-judge/SKILL.md) | Fit and validate a judge against labeled outcomes. |
-| [run-eval](skills/run-eval/SKILL.md) | Execute and report evals. |
-| [cross-examine](skills/cross-examine/SKILL.md) | Reproduce scoring gaps and check repairs independently. |
+| [run-eval](skills/run-eval/SKILL.md) | Execute evals and report what ran. |
+| [cross-examine](skills/cross-examine/SKILL.md) | Reproduce scoring gaps and independently check repairs. |
+| [adversarial-cases](skills/adversarial-cases/SKILL.md) | Construct targeted inputs, failures, and controls. |
 | [hill-climb](skills/hill-climb/SKILL.md) | Improve a target within an eval budget. |
 | [ablation](skills/ablation/SKILL.md) | Remove complexity while preserving required performance. |
-| [bitter-lesson](skills/bitter-lesson/SKILL.md) | Retest inherited prompt complexity when upgrading models. |
-| [adversarial-cases](skills/adversarial-cases/SKILL.md) | Construct targeted cases, failures and controls. |
+| [bitter-lesson](skills/bitter-lesson/SKILL.md) | Retest inherited prompt complexity as models improve. |
 
-## Formats and methods
+Reviews [offer to retain useful corrections and labels](skills/expert-mode/references/calibration-capture.md) for later judge calibration. Saving a proposal does not confirm its label or activate Expert Mode.
 
-Prefer [Harbor](skills/create-eval/references/formats.md) for new executable agent tasks. Existing project formats, DSPy datasets and lightweight stored-output evals remain supported.
+## Name the validation
 
-The skills reference [synthetic generation](skills/adversarial-cases/references/synthetic-methods.md), [failure injection](skills/adversarial-cases/references/failure-methods.md) and a [DSPy handoff](skills/hill-climb/references/data-handoff.md). Implementations and dependencies belong in your project. The [playground fixture](fixtures/playground/README.md) demonstrates the methods with the native runner and an optional local DSPy environment.
-
-Review corrections can become calibration candidates through a [scoped capture offer](skills/expert-mode/references/calibration-capture.md).
-
-## Validation levels
-
-Report whether the target was tuned and which evidence supports its score.
-
-| Level | What it establishes |
+| Level | What it means |
 | --- | --- |
-| Untuned | The original skill or target's baseline before optimization. |
-| Synthetic injection cases | Behavior under constructed inputs and controlled failures. |
-| Adversarial cases | Behavior against targeted attempts to expose failures or scoring gaps. |
-| True labeled data | Agreement with human judgments on real examples, within their reviewed scope. |
+| Untuned | The original target's baseline before optimization. |
+| Synthetic injection cases | Constructed inputs and controlled failures. |
+| Adversarial cases | Targeted attempts to expose failures or scoring gaps. |
+| True labeled data | Human judgments on real examples, within their reviewed scope. |
 
-Playground checks use synthetic and adversarial evidence. They do not establish performance on human-labeled production data. Reserve independent labeled examples for confirmation after tuning.
+Untuned describes the target; the other rows describe evidence. Playground checks use synthetic and adversarial cases. Keep independent labeled examples outside tuning. See the [validation notes](docs/validation.md).
 
-## Install
+## Install and try it
 
 ```bash
 npx skills add theclaymethod/cstack \
@@ -74,11 +60,9 @@ npx skills add theclaymethod/cstack \
   -a codex -a claude-code -a cursor --copy
 ```
 
-Keep the skill folders together for sibling references. Start a new agent session. Codex uses `$bootstrap`; Claude Code and Cursor use `/bootstrap`. See [installation options](docs/install.md) for plugins and manual copying.
+Keep the skill folders together for shared references. Start a new agent session. Codex uses `$bootstrap`; Claude Code and Cursor use `/bootstrap`. See [installation options](docs/install.md).
 
-## Try it
-
-From this checkout:
+From this checkout, create a disposable [playground](fixtures/playground/README.md):
 
 ```bash
 python3 fixtures/playground/scripts/new_workspace.py --out eval-runs/playground
@@ -86,6 +70,8 @@ cd eval-runs/playground
 python3 -m methods.run --out eval-runs/methods
 ```
 
-Capture stays local unless you request an export. Installing a skill does not activate capture or upload data. The [validation notes](docs/validation.md) distinguish synthetic fixture checks from model performance and production evidence.
+Prefer [Harbor](skills/create-eval/references/formats.md) for new executable agent tasks; existing formats remain supported. [Synthetic generation](skills/adversarial-cases/references/synthetic-methods.md), [failure injection](skills/adversarial-cases/references/failure-methods.md), and [DSPy handoffs](skills/hill-climb/references/data-handoff.md) are references. Implementations stay in your project.
 
-[Sources and repository history](SOURCES.md). MIT [license](LICENSE).
+Capture stays local unless you request an export. Installing skills does not activate capture or upload data.
+
+[Sources](SOURCES.md) · [MIT license](LICENSE)

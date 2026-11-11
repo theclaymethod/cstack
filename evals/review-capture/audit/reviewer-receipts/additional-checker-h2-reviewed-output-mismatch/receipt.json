@@ -1,0 +1,15 @@
+{
+  "all_archive_files_unchanged": true,
+  "checker_sha256": "37ca8fdf0c8b6fc6e911c895150f746fba60c6b758f33bea8c7bb86f743b7f23",
+  "command": [
+    "/Users/clayton/.local/bin/python3",
+    "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/capture-cross-examine/review-packet-repaired/h2-reviewed-output-mismatch/verify_archive.py"
+  ],
+  "cwd": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want",
+  "exit_code": 1,
+  "native_candidate_invocations": 0,
+  "run_kind": "additional read-only checker rerun for receipt preservation",
+  "stderr_sha256": "29103faec8c890bea315eba8afd347e8dbb42c6ceb7d5ae3b11fa9de4d321545",
+  "stdin": "inherited; checker consumes no stdin",
+  "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

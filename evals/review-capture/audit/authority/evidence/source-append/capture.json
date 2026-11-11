@@ -1,0 +1,13 @@
+{
+  "argv": [
+    "/Users/clayton/.local/bin/python3",
+    "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/capture-cross-examine/attack-authority/playground/eval-runs/authority-source-append/driver.py",
+    "capture",
+    "--base",
+    "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/capture-cross-examine/attack-authority/playground/eval-runs/authority-source-append"
+  ],
+  "cwd": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/capture-cross-examine/attack-authority/playground",
+  "exit_code": 0,
+  "stderr": "",
+  "stdout": ""
+}

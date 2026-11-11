@@ -1,0 +1,66 @@
+[
+  {
+    "all_archive_files_unchanged": true,
+    "archive": "archive-baseline",
+    "checker_sha256": "37ca8fdf0c8b6fc6e911c895150f746fba60c6b758f33bea8c7bb86f743b7f23",
+    "command": [
+      "/Users/clayton/.local/bin/python3",
+      "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/capture-cross-examine/review-packet-repaired/archive-baseline/verify_archive.py"
+    ],
+    "cwd": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want",
+    "exit_code": 0,
+    "native_candidate_invocations": 0,
+    "run_kind": "additional read-only checker rerun for receipt preservation",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdin": "inherited; checker consumes no stdin",
+    "stdout_sha256": "39523584d09f19c44356234cce0626f5edcd4babbf1a2ff029031ab6985707aa"
+  },
+  {
+    "all_archive_files_unchanged": true,
+    "archive": "h1-initial-state-mismatch",
+    "checker_sha256": "37ca8fdf0c8b6fc6e911c895150f746fba60c6b758f33bea8c7bb86f743b7f23",
+    "command": [
+      "/Users/clayton/.local/bin/python3",
+      "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/capture-cross-examine/review-packet-repaired/h1-initial-state-mismatch/verify_archive.py"
+    ],
+    "cwd": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want",
+    "exit_code": 1,
+    "native_candidate_invocations": 0,
+    "run_kind": "additional read-only checker rerun for receipt preservation",
+    "stderr_sha256": "d39fff38ce7dd12255146c5f7ada2f0b65aad5c2a104717075000850f5d8bdae",
+    "stdin": "inherited; checker consumes no stdin",
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "all_archive_files_unchanged": true,
+    "archive": "h2-reviewed-output-mismatch",
+    "checker_sha256": "37ca8fdf0c8b6fc6e911c895150f746fba60c6b758f33bea8c7bb86f743b7f23",
+    "command": [
+      "/Users/clayton/.local/bin/python3",
+      "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/capture-cross-examine/review-packet-repaired/h2-reviewed-output-mismatch/verify_archive.py"
+    ],
+    "cwd": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want",
+    "exit_code": 1,
+    "native_candidate_invocations": 0,
+    "run_kind": "additional read-only checker rerun for receipt preservation",
+    "stderr_sha256": "29103faec8c890bea315eba8afd347e8dbb42c6ceb7d5ae3b11fa9de4d321545",
+    "stdin": "inherited; checker consumes no stdin",
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "all_archive_files_unchanged": true,
+    "archive": "h3-unsupported-source-quote",
+    "checker_sha256": "37ca8fdf0c8b6fc6e911c895150f746fba60c6b758f33bea8c7bb86f743b7f23",
+    "command": [
+      "/Users/clayton/.local/bin/python3",
+      "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/capture-cross-examine/review-packet-repaired/h3-unsupported-source-quote/verify_archive.py"
+    ],
+    "cwd": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want",
+    "exit_code": 1,
+    "native_candidate_invocations": 0,
+    "run_kind": "additional read-only checker rerun for receipt preservation",
+    "stderr_sha256": "b765249bb5e6ffb08a604fbe4a36159c1fcbdb2ff809abfe0a2b0d4970323f9a",
+    "stdin": "inherited; checker consumes no stdin",
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+]

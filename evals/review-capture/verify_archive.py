@@ -57,6 +57,29 @@ def verify():
         assert json.loads(trace['stdout'])==trace['output']
         assert len(trace['output']['state']['tickets'])-len(trace['input']['state']['tickets'])==delta
         assert sha(native/'candidate.py')==manifest['candidate_hash']
+    # Verify semantic bindings, not just hashes within serializer-produced captures.
+    for version in ['false-claim-v1','legitimate-v2']:
+        native=lines(OUT/'native'/version/'traces.jsonl')[0]
+        artifact=OUT/'artifacts'/version
+        assert read(artifact/'input.json')==native['input'], ('native-input-mismatch',version)
+        assert read(artifact/'output.json')==native['output'], ('native-output-mismatch',version)
+        assert read(artifact/'initial-state.json')==native['input']['state'], ('initial-state-mismatch',version)
+        assert read(artifact/'resulting-state.json')==native['output']['state'], ('resulting-state-mismatch',version)
+        assert (artifact/'stdout.txt').read_text()==native['stdout'], ('stdout-mismatch',version)
+    stores=[STORE,OUT/'initial-reviews.jsonl']
+    stores.extend(OUT.rglob('store-*.jsonl'))
+    for store in stores:
+        for row in lines(store):
+            artifact=row.get('artifact')
+            if artifact:
+                version=artifact['version_id']
+                assert version in ['false-claim-v1','legitimate-v2'], ('unknown-native-version',version)
+                for name,ref in artifact['files'].items():
+                    assert (ROOT/ref['path']).read_bytes()==(OUT/'artifacts'/version/name).read_bytes(), ('record-artifact-mismatch',row['record_id'],name)
+            if row.get('statement_kind')=='verbatim-scripted-quote':
+                source=row['source']
+                assert sha(ROOT/source['path'])==source['sha256'], ('source-hash-mismatch',row['record_id'])
+                assert row['statement'] in (ROOT/source['path']).read_text(), ('verbatim-source-mismatch',row['record_id'])
     preview=read(phase2/'handoff/runtime-preview.json')
     assert len(preview)==1 and set(preview[0])=={'item_id','input','output','requirement'}
     assert preview[0]['output']==read(OUT/'artifacts/false-claim-v1/output.json')

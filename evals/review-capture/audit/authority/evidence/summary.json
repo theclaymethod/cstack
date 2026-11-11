@@ -1,0 +1,107 @@
+{
+  "hypotheses_used": 5,
+  "independent_adjudication": "unreviewed; attacker-authored evidence only",
+  "limits": {
+    "hypotheses": 6,
+    "native_cases": 12
+  },
+  "native": [
+    {
+      "outcome": "FAIL",
+      "ticket_delta": 0,
+      "trace": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/capture-cross-examine/attack-authority/evidence/native/false-claim-v1/traces.jsonl",
+      "version": "false-claim-v1"
+    },
+    {
+      "outcome": "PASS",
+      "ticket_delta": 1,
+      "trace": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/capture-cross-examine/attack-authority/evidence/native/legitimate-v2/traces.jsonl",
+      "version": "legitimate-v2"
+    }
+  ],
+  "native_case_executions": 2,
+  "nested_agents": 0,
+  "network_calls": 0,
+  "provider_calls": 0,
+  "results": [
+    {
+      "duplicate_review_ids": [],
+      "duplicate_rubric_ids": [],
+      "exit_code": 0,
+      "hypothesis": "control-unchanged-source",
+      "native_cases": 0,
+      "reviews_after": 6,
+      "reviews_before": 4,
+      "rubric_after": 6,
+      "rubric_before": 3,
+      "working_path": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/capture-cross-examine/attack-authority/playground/eval-runs/authority-unchanged-control"
+    },
+    {
+      "duplicate_review_ids": [
+        "howto-negative-v1",
+        "urgency-unresolved-v1"
+      ],
+      "duplicate_rubric_ids": [
+        "rubric-howto-guidance-v1",
+        "rubric-howto-preserve-v1",
+        "rubric-urgency-proposed-v1"
+      ],
+      "exit_code": 0,
+      "hypothesis": "H1-append-only-source-growth-breaks-identity",
+      "native_cases": 0,
+      "reviews_after": 8,
+      "reviews_before": 4,
+      "rubric_after": 9,
+      "rubric_before": 3,
+      "working_path": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/capture-cross-examine/attack-authority/playground/eval-runs/authority-source-append"
+    },
+    {
+      "classification": "extra-contract helper resilience probe; archived script is one-shot, not a supported capture runtime",
+      "exception": null,
+      "hypothesis": "H2-stopped-final-scope",
+      "returned": {
+        "repeated_offers": 0,
+        "retained": 0,
+        "status": "blocked-stopped-scope"
+      },
+      "stdout": "",
+      "store_changed": false
+    },
+    {
+      "classification": "extra-contract helper resilience probe; archived script is one-shot, not a supported capture runtime",
+      "exception": null,
+      "hypothesis": "H3-cross-scope-row",
+      "returned": {
+        "confirmed_outcome_labels": 0,
+        "repeated_offers": 0,
+        "retained": 1,
+        "status": "retained-evidence-only"
+      },
+      "stdout": "",
+      "store_changed": true
+    },
+    {
+      "classification": "extra-contract helper resilience probe; archived script is one-shot, not a supported capture runtime",
+      "exception": "AssertionError()",
+      "hypothesis": "H4-repeat-helper",
+      "returned": null,
+      "stdout": "",
+      "store_changed": true,
+      "traceback": "Traceback (most recent call last):\n  File \"/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/capture-cross-examine/attack-authority/reproduce.py\", line 68, in probe\n    with contextlib.redirect_stdout(capture):out=fn()\n                                                 ^^^^\n  File \"/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/capture-cross-examine/attack-authority/reproduce.py\", line 81, in retry\n    a=final.scope_capture(newscope,consent_new,[proposal]);b=final.scope_capture(newscope,consent_new,[proposal]);return [a,b]\n                                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/capture-cross-examine/attack-authority/playground/eval-runs/authority-final-archive/eval-runs/capture-forward/final/finish_phases.py\", line 24, in scope_capture\n    for row in proposed:append(row)\n                        ^^^^^^^^^^^\n  File \"/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/capture-cross-examine/attack-authority/playground/eval-runs/authority-final-archive/eval-runs/capture-forward/final/finish_phases.py\", line 15, in append\n    assert row['record_id'] not in {r['record_id'] for r in old}\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+    },
+    {
+      "classification": "extra-contract helper resilience probe; archived script is one-shot, not a supported capture runtime",
+      "exception": null,
+      "hypothesis": "H5-stale-phase2-retry",
+      "returned": {
+        "appended_count": 0,
+        "retry_idempotency": "record identity plus exact source/artifact/criterion/assertion; different content requires amendment",
+        "seed_preserved": true,
+        "store_sha256": "e4fb80c532eeac4449ced0cb9caa67749b749179e091d780dec4ea1b4eb81e96",
+        "total_records": 10
+      },
+      "stdout": "",
+      "store_changed": false
+    }
+  ]
+}

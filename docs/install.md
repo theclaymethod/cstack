@@ -1,4 +1,4 @@
-# Install C Stack
+# Install cstack
 
 
 Run the [Skills CLI](https://github.com/vercel-labs/skills) in the project where you want the skills:
@@ -45,4 +45,4 @@ All eleven plugin commands use the `cstack` prefix, such as `/cstack:create-eval
 
 ### Cursor plugin
 
-The root `plugin.json` follows the Agent Plugins standard. `.cursor-plugin/plugin.json` defines the Cursor plugin, as it does in [Pstack](https://github.com/cursor/plugins/tree/main/pstack). C Stack has not been submitted to the public Cursor marketplace. Install the skills with the commands above, or import the repo into a team marketplace with [Cursor's plugin instructions](https://cursor.com/docs/plugins).
+The root `plugin.json` follows the Agent Plugins standard. `.cursor-plugin/plugin.json` defines the Cursor plugin, as it does in [Pstack](https://github.com/cursor/plugins/tree/main/pstack). cstack has not been submitted to the public Cursor marketplace. Install the skills with the commands above, or import the repo into a team marketplace with [Cursor's plugin instructions](https://cursor.com/docs/plugins).

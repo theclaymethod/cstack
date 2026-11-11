@@ -1,0 +1,14 @@
+[
+  {
+    "outcome": "FAIL",
+    "ticket_delta": 0,
+    "trace": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/capture-cross-examine/attack-authority/evidence/native/false-claim-v1/traces.jsonl",
+    "version": "false-claim-v1"
+  },
+  {
+    "outcome": "PASS",
+    "ticket_delta": 1,
+    "trace": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/capture-cross-examine/attack-authority/evidence/native/legitimate-v2/traces.jsonl",
+    "version": "legitimate-v2"
+  }
+]

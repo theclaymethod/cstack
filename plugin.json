@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "cstack",
-  "version": "0.10.0",
+  "version": "0.10.1",
   "description": "Skills for eval-driven development: capture judgments, build evals, calibrate judges, and improve or simplify agents.",
   "author": {
     "name": "Clayton Kim"
