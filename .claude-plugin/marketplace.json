@@ -4,13 +4,13 @@
     "name": "Clayton Kim"
   },
   "metadata": {
-    "description": "C Stack: skills for eval-driven development."
+    "description": "cstack: skills for eval-driven development."
   },
   "plugins": [
     {
       "name": "cstack",
       "source": "./",
-      "description": "Capture judgments, bootstrap evals, calibrate judges, and improve agents against them."
+      "description": "Capture judgments, bootstrap evals, calibrate judges, improve agents against them, and learn the workflow with help and tutor."
     }
   ]
 }

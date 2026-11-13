@@ -33,7 +33,7 @@ Origin is independent of judgment type: a scripted “user” in a fixture is sy
 
 ## Save an auditable candidate
 
-After capture is authorized, preserve the recoverable original input/context/state, actual reviewed output or immutable artifact/version/hash, criterion ID/revision/passing direction and applicability, the user's words/source, supported label or unresolved value, authority/origin, construction family/lineage and exposure. Record capture consent scope separately from label authority. Keep unknowns explicit.
+After capture is authorized, preserve the recoverable original input/context/state, actual reviewed output or immutable artifact/version/hash, criterion ID/revision/passing direction and applicability, the user's words/source, supported label or unresolved value, authority/origin, construction family/lineage and exposure. Record capture consent scope separately from label authority. Keep unknowns explicit. Cross-check captured input/output/state against the original execution and declared verbatim judgments against their cited source; self-consistent capture hashes alone do not establish those bindings.
 
 Use stable example, artifact-version, criterion and judgment-source identities. Read existing captures first, append amendments/retractions, and deduplicate retries or later Distill Me passes. A repaired/regenerated output gets a new version with no inherited label. Verify saved content; disclose failures and retain unsaved work. Keep originals in the project's approved private location and follow [export review](export.md) for any later sharing.
 

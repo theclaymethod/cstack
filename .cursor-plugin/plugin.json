@@ -1,8 +1,8 @@
 {
   "name": "cstack",
-  "displayName": "C Stack",
-  "version": "0.11.0",
-  "description": "Skills for eval-driven development: capture judgments, build evals, calibrate judges, and improve or simplify agents.",
+  "displayName": "cstack",
+  "version": "0.12.0",
+  "description": "Skills for eval-driven development: capture judgments, build evals, calibrate judges, improve or simplify agents, and teach the workflow.",
   "author": {
     "name": "Clayton Kim"
   },

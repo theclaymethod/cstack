@@ -1,0 +1,23 @@
+python3 - <<'PY'
+from pathlib import Path
+import hashlib,json,subprocess,sys
+base=Path('work/capture-cross-examine')
+comparisons=[]
+for name in ['archive-baseline','h1-initial-state-mismatch','h2-reviewed-output-mismatch','h3-unsupported-source-quote']:
+    old=base/'review-packet-original'/name
+    new=base/'review-packet-repaired'/name
+    changed=[]
+    for p in old.rglob('*'):
+        if p.is_file():
+            rel=p.relative_to(old);q=new/rel
+            if not q.exists() or p.read_bytes()!=q.read_bytes():changed.append(str(rel))
+    comparisons.append({'archive':name,'changed_files':changed})
+print(json.dumps({'archive_comparisons':comparisons},indent=2))
+root=base/'review-packet-repaired/archive-baseline/evidence/workspace/eval-runs/capture-forward'
+for version in ['false-claim-v1','legitimate-v2']:
+    native=root/'native'/version
+    trace=json.loads((native/'traces.jsonl').read_text().splitlines()[0])
+    run=subprocess.run([sys.executable,str(native/'candidate.py')],input=json.dumps(trace['input']),capture_output=True,text=True,check=True)
+    output=json.loads(run.stdout)
+    print(json.dumps({'version':version,'candidate_exit_code':run.returncode,'output_matches_preserved_native_trace':output==trace['output'],'ticket_delta':len(output['state']['tickets'])-len(trace['input']['state']['tickets']),'preserved_native_outcome':trace['outcome']},sort_keys=True))
+PY

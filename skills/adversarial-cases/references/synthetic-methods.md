@@ -1,6 +1,6 @@
 # Choose a synthetic generation method
 
-Use project evidence and its native case schema. Implement any needed generator in the consuming project. These recipes require no C Stack runtime, fixture, or shared dependency.
+Use project evidence and its native case schema. Implement any needed generator in the consuming project. These recipes require no cstack runtime, fixture, or shared dependency.
 
 | Gap | Method | Evidence that earns adoption |
 | --- | --- | --- |
@@ -27,6 +27,6 @@ Group connected source/construction ancestry, transformations, reductions and ex
 
 For DSPy use the [data handoff](../../hill-climb/references/data-handoff.md). Execution errors and operator-only fault receipts need their own reporting; they are not automatically training labels.
 
-The C Stack checkout validates these recipes in `fixtures/playground/methods`. It uses explicit enumeration, structured record/step reduction and a frozen fault catalog. Consumers adapt the recipe to their project rather than depend on that demonstration.
+The cstack checkout validates these recipes in `fixtures/playground/methods`. It uses explicit enumeration, structured record/step reduction and a frozen fault catalog. Consumers adapt the recipe to their project rather than depend on that demonstration.
 
 Sources: [Hypothesis stateful testing](https://hypothesis.readthedocs.io/en/latest/stateful.html), [delta debugging](https://www.st.cs.uni-saarland.de/publications/files/zeller-tse-2002.pdf), [mutation testing](https://pitest.org/), [Z3 guide](https://microsoft.github.io/z3guide/programming/Z3%20Python/Introduction/).

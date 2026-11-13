@@ -1,17 +1,17 @@
-# Install C Stack
+# Install cstack
 
 
 Run the [Skills CLI](https://github.com/vercel-labs/skills) in the project where you want the skills:
 
 ```bash
 npx skills add theclaymethod/cstack \
-  --skill expert-mode distill-me bootstrap create-eval run-eval cross-examine hill-climb co-climb adversarial-cases calibrate-judge ablation bitter-lesson \
+  --skill expert-mode distill-me bootstrap create-eval run-eval cross-examine hill-climb co-climb adversarial-cases calibrate-judge ablation bitter-lesson help tutor \
   -a codex -a claude-code -a cursor --copy
 ```
 
-Keep the twelve skill folders together because they link to each other's references. Start a new agent session after installation. In Codex, invoke `$expert-mode`, `$distill-me`, `$bootstrap`, `$create-eval`, `$run-eval`, `$cross-examine`, `$hill-climb`, `$co-climb`, `$adversarial-cases`, `$calibrate-judge`, `$ablation`, or `$bitter-lesson`. Direct skill installations in Claude Code and Cursor use the corresponding slash commands.
+Keep the skill folders together because they link to each other's references. Start a new agent session after installation. In Codex, invoke `$expert-mode`, `$distill-me`, `$bootstrap`, `$create-eval`, `$run-eval`, `$cross-examine`, `$hill-climb`, `$co-climb`, `$adversarial-cases`, `$calibrate-judge`, `$ablation`, `$bitter-lesson`, `$help`, or `$tutor`. Direct skill installations in Claude Code and Cursor use the corresponding slash commands.
 
-To install without Node, clone the repo and copy the twelve folders into your agent's skill directory. For a Codex project, run:
+To install without Node, clone the repo and copy the skill folders into your agent's skill directory. For a Codex project, run:
 
 ```bash
 git clone https://github.com/theclaymethod/cstack.git /path/to/cstack
@@ -28,6 +28,8 @@ cp -R /path/to/cstack/skills/expert-mode \
   /path/to/cstack/skills/calibrate-judge \
   /path/to/cstack/skills/ablation \
   /path/to/cstack/skills/bitter-lesson \
+  /path/to/cstack/skills/help \
+  /path/to/cstack/skills/tutor \
   /path/to/project/.agents/skills/
 ```
 
@@ -42,8 +44,8 @@ To install the Claude Code plugin:
 /plugin install cstack@cstack
 ```
 
-All twelve plugin commands use the `cstack` prefix, such as `/cstack:create-eval` and `/cstack:run-eval`. See the [Claude Code plugin documentation](https://code.claude.com/docs/en/plugins-reference).
+Plugin commands use the `cstack` prefix, such as `/cstack:create-eval`, `/cstack:run-eval`, `/cstack:help`, and `/cstack:tutor`. See the [Claude Code plugin documentation](https://code.claude.com/docs/en/plugins-reference).
 
 ### Cursor plugin
 
-The root `plugin.json` follows the Agent Plugins standard. `.cursor-plugin/plugin.json` defines the Cursor plugin, as it does in [Pstack](https://github.com/cursor/plugins/tree/main/pstack). C Stack has not been submitted to the public Cursor marketplace. Install the skills with the commands above, or import the repo into a team marketplace with [Cursor's plugin instructions](https://cursor.com/docs/plugins).
+The root `plugin.json` follows the Agent Plugins standard. `.cursor-plugin/plugin.json` defines the Cursor plugin, as it does in [Pstack](https://github.com/cursor/plugins/tree/main/pstack). cstack has not been submitted to the public Cursor marketplace. Install the skills with the commands above, or import the repo into a team marketplace with [Cursor's plugin instructions](https://cursor.com/docs/plugins).

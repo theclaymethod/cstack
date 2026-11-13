@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/capture-cross-examine/review-packet-repaired/h1-initial-state-mismatch/verify_archive.py", line 106, in <module>
+    if __name__=='__main__':print(json.dumps(verify(),indent=2,sort_keys=True))
+                                             ^^^^^^^^
+  File "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/capture-cross-examine/review-packet-repaired/h1-initial-state-mismatch/verify_archive.py", line 66, in verify
+    assert read(artifact/'initial-state.json')==native['input']['state'], ('initial-state-mismatch',version)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ('initial-state-mismatch', 'false-claim-v1')

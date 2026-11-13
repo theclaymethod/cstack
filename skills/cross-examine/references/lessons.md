@@ -73,3 +73,11 @@ Why: Completeness of a golden replacement was substituted for the actual observa
 Generate instead: Define readiness for the specific judgment being replayed. Accept a supported binary rejection criterion without requiring an unrelated complete replacement. Keep separate uncertainties visible and review whether the proposed criterion actually distinguishes acceptable and unacceptable outcomes.
 
 Evidence: `evals/expert-review/evidence/final-validation/readiness-before-after.json` records the unchanged v3 candidate rejected by grader v3 and accepted by grader v4 / fixture v3 after independent adjudication. Calibration still rejects incomplete confirmed criteria, while both complete replacements and criterion-only negative examples pass. This establishes only the scoped source-naming check, not numerical correctness or the validity of a replacement source.
+
+## Bind captures to original evidence
+
+Failure: A review-capture archive accepted altered saved state, a substituted output and an invented verbatim quote after capture-local hashes were refreshed.
+
+Generate instead: Compare captured input/output/state with the retained original execution, and declared verbatim judgments with their actual cited source. Hash consistency within derived records does not establish those relations. Preserve native/source anchors separately and report operator-corruption probes without claiming candidate write access or malicious-writer containment.
+
+Evidence: The [capture audit](../../../evals/review-capture/CROSS_EXAMINE_LEDGER.md) retains original/repaired checker outcomes, legitimate native controls and independent acceptance for the three demonstrated faults.

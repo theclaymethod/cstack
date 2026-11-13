@@ -1,0 +1,9 @@
+{
+  "classification": "extra-contract helper resilience probe; archived script is one-shot, not a supported capture runtime",
+  "exception": "AssertionError()",
+  "hypothesis": "H4-repeat-helper",
+  "returned": null,
+  "stdout": "",
+  "store_changed": true,
+  "traceback": "Traceback (most recent call last):\n  File \"/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/capture-cross-examine/attack-authority/reproduce.py\", line 68, in probe\n    with contextlib.redirect_stdout(capture):out=fn()\n                                                 ^^^^\n  File \"/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/capture-cross-examine/attack-authority/reproduce.py\", line 81, in retry\n    a=final.scope_capture(newscope,consent_new,[proposal]);b=final.scope_capture(newscope,consent_new,[proposal]);return [a,b]\n                                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/capture-cross-examine/attack-authority/playground/eval-runs/authority-final-archive/eval-runs/capture-forward/final/finish_phases.py\", line 24, in scope_capture\n    for row in proposed:append(row)\n                        ^^^^^^^^^^^\n  File \"/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/capture-cross-examine/attack-authority/playground/eval-runs/authority-final-archive/eval-runs/capture-forward/final/finish_phases.py\", line 15, in append\n    assert row['record_id'] not in {r['record_id'] for r in old}\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+}

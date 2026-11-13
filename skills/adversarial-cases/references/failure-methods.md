@@ -29,6 +29,6 @@ For subprocess tests, observe the flushed prefix before claiming that boundary w
 
 Task inputs and program-visible dependency failures may support better behavior when the target can observe and respond to them. Evaluator crashes, unavailable infrastructure and operator-only receipts usually test the execution system instead. Keep those results in reliability checks unless an explicit task contract makes them actionable program evidence. Do not label every failed execution as bad model behavior.
 
-The C Stack playground demonstrates owned process stops, subprocess output failures and scoped fsync/rename errors. It has no network service, so proxy experiments remain deferred. Its named trace mappings are version-sensitive demonstrations, not a portable hook API.
+The cstack playground demonstrates owned process stops, subprocess output failures and scoped fsync/rename errors. It has no network service, so proxy experiments remain deferred. Its named trace mappings are version-sensitive demonstrations, not a portable hook API.
 
 Sources: [Python tracing](https://docs.python.org/3/library/sys.html#sys.settrace), [subprocess timeouts](https://docs.python.org/3/library/subprocess.html), [SQLite anomaly testing](https://www.sqlite.org/testing.html), [Toxiproxy](https://github.com/Shopify/toxiproxy).

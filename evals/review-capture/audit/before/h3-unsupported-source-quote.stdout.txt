@@ -1,0 +1,32 @@
+{
+  "archived_guidance_files_verified": 6,
+  "candidate_records": 7,
+  "comparator_items": 0,
+  "eligible": 0,
+  "excluded": 6,
+  "governance_records": 2,
+  "human_gold_rows": 0,
+  "incomplete": 1,
+  "inference_runs": 0,
+  "native_case_budget": 24,
+  "native_cases_total": 2,
+  "native_runs_during_verification": 0,
+  "nested_agents": 0,
+  "network_calls": 0,
+  "phase_checkpoints": {
+    "capture-forward": "0f6ddd5379a4e183e444997b84346879f6c567af73cf58ddb1bdcd3b0eb06e93",
+    "phase2": "447ceef6333fc34fb4c27a3e46c56b78884c230473dae9bdc4e6c3202b2d693d",
+    "phase3": "076a0beb3a131c07fc662420094a3b325c1fd2235c6a1127bcb3f82e1b865c46",
+    "phase4": "097d7bdaac920ed8602f70474e3d83307679363e34883c3554dd423ea183393e",
+    "phase5": "647cce245bc9a41ca880d5386e2dd74fe65846a084c66144c0ea48f166b5c12f",
+    "phase6": "11f7ea7368e165c0cb1a4090fdd5663697c2af9b70d642a9e11b121295271174"
+  },
+  "phase_file_hashes_verified": 99,
+  "prior_seed_records": 1,
+  "provider_calls": 0,
+  "remaining": 22,
+  "runtime_items": 0,
+  "store_records": 10,
+  "store_sha256": "c1dae5f95effbb9d830342770f3d1d70ab7dad9ec295c4ee25f64317ec2b307d",
+  "verified": true
+}

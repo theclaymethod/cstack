@@ -1,0 +1,10 @@
+{
+  "capture_guide_sha256": "91ad849b5326d80203a3c9fe76c651dfd85a609f15801878fd85ecbac8fc0886",
+  "final_driver_sha256": "2fd869816ccc0e7953158faa43216608413678f7ed64ac820651fafe7649406a",
+  "hypotheses_executed": 3,
+  "native_executions": 2,
+  "network_calls": 0,
+  "phase2_adapter_sha256": "7a9e01f5dabb65a1c92bfd6567e80d14a8e095d7565b7d0381e6d879eaa6e302",
+  "provider_calls": 0,
+  "verifier_sha256": "d7345a4b2754e507ea4b17036c861bf7138c8b44b1e56be83c6f306e2c5d71ad"
+}

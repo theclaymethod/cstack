@@ -1,0 +1,80 @@
+{
+  "results": [
+    {
+      "case": "baseline",
+      "checker": "before",
+      "exit": 0,
+      "expected_exit": 0,
+      "matches": true,
+      "checker_sha256": "d7345a4b2754e507ea4b17036c861bf7138c8b44b1e56be83c6f306e2c5d71ad",
+      "native_trace_unchanged": true
+    },
+    {
+      "case": "baseline",
+      "checker": "after",
+      "exit": 0,
+      "expected_exit": 0,
+      "matches": true,
+      "checker_sha256": "37ca8fdf0c8b6fc6e911c895150f746fba60c6b758f33bea8c7bb86f743b7f23",
+      "native_trace_unchanged": true
+    },
+    {
+      "case": "h1-initial-state-mismatch",
+      "checker": "before",
+      "exit": 0,
+      "expected_exit": 0,
+      "matches": true,
+      "checker_sha256": "d7345a4b2754e507ea4b17036c861bf7138c8b44b1e56be83c6f306e2c5d71ad",
+      "native_trace_unchanged": true
+    },
+    {
+      "case": "h1-initial-state-mismatch",
+      "checker": "after",
+      "exit": 1,
+      "expected_exit": 1,
+      "matches": true,
+      "checker_sha256": "37ca8fdf0c8b6fc6e911c895150f746fba60c6b758f33bea8c7bb86f743b7f23",
+      "native_trace_unchanged": true
+    },
+    {
+      "case": "h2-reviewed-output-mismatch",
+      "checker": "before",
+      "exit": 0,
+      "expected_exit": 0,
+      "matches": true,
+      "checker_sha256": "d7345a4b2754e507ea4b17036c861bf7138c8b44b1e56be83c6f306e2c5d71ad",
+      "native_trace_unchanged": true
+    },
+    {
+      "case": "h2-reviewed-output-mismatch",
+      "checker": "after",
+      "exit": 1,
+      "expected_exit": 1,
+      "matches": true,
+      "checker_sha256": "37ca8fdf0c8b6fc6e911c895150f746fba60c6b758f33bea8c7bb86f743b7f23",
+      "native_trace_unchanged": true
+    },
+    {
+      "case": "h3-unsupported-source-quote",
+      "checker": "before",
+      "exit": 0,
+      "expected_exit": 0,
+      "matches": true,
+      "checker_sha256": "d7345a4b2754e507ea4b17036c861bf7138c8b44b1e56be83c6f306e2c5d71ad",
+      "native_trace_unchanged": true
+    },
+    {
+      "case": "h3-unsupported-source-quote",
+      "checker": "after",
+      "exit": 1,
+      "expected_exit": 1,
+      "matches": true,
+      "checker_sha256": "37ca8fdf0c8b6fc6e911c895150f746fba60c6b758f33bea8c7bb86f743b7f23",
+      "native_trace_unchanged": true
+    }
+  ],
+  "all_expected": true,
+  "native_executions": 0,
+  "model_calls": 0,
+  "scope": "operator corruption resilience; no native candidate write-access claim"
+}

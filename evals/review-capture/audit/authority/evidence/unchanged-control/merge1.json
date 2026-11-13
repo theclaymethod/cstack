@@ -1,0 +1,13 @@
+{
+  "argv": [
+    "/Users/clayton/.local/bin/python3",
+    "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/capture-cross-examine/attack-authority/playground/eval-runs/authority-unchanged-control/driver.py",
+    "merge1",
+    "--base",
+    "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/capture-cross-examine/attack-authority/playground/eval-runs/authority-unchanged-control"
+  ],
+  "cwd": "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/capture-cross-examine/attack-authority/playground",
+  "exit_code": 0,
+  "stderr": "",
+  "stdout": "{\n  \"phase\": \"merge1\",\n  \"time\": \"2026-11-11T04:39:14.078853+00:00\",\n  \"source_sha256\": \"ccfb4e35afe2317701d09d010ee52c13e3088cc22fccd5ce2c98a98d5344769d\",\n  \"added_reviews\": [\n    \"howto-scope-amendment-v2\",\n    \"account-local-duplicate-rule-v1\"\n  ],\n  \"added_rubric\": [\n    \"rubric-explicit-ticket-v1\",\n    \"rubric-open-duplicate-v1\",\n    \"rubric-unrelated-ticket-v1\"\n  ],\n  \"before\": {\n    \"reviews.jsonl\": \"c119b8495f27ae9314059d0e753d4d816a1a1e7758093d9b9c454dd52a7f9fe6\",\n    \"rubric.jsonl\": \"7b6aaffd8fa1cbda425cc9e76fdea5a9893e64d7444c30b843031d72baaebce2\"\n  },\n  \"after\": {\n    \"reviews.jsonl\": \"9350f5989d9ce22823abcb4db74898df58313de10ff4fab5bc765409f3e1b16d\",\n    \"rubric.jsonl\": \"72fac44290b66828e67c58b5550806d0e867f4787e7fd22a9202c1514b4444bd\"\n  },\n  \"capture_active\": false,\n  \"matching\": \"source hash + statement + output version + specific assertion\",\n  \"unknown_matches\": [],\n  \"source_authority\": \"scripted synthetic fixture\"\n}\n"
+}

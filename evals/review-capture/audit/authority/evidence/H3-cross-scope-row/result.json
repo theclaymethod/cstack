@@ -1,0 +1,13 @@
+{
+  "classification": "extra-contract helper resilience probe; archived script is one-shot, not a supported capture runtime",
+  "exception": null,
+  "hypothesis": "H3-cross-scope-row",
+  "returned": {
+    "confirmed_outcome_labels": 0,
+    "repeated_offers": 0,
+    "retained": 1,
+    "status": "retained-evidence-only"
+  },
+  "stdout": "",
+  "store_changed": true
+}

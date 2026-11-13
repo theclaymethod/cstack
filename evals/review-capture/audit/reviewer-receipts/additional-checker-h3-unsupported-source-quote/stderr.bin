@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/capture-cross-examine/review-packet-repaired/h3-unsupported-source-quote/verify_archive.py", line 106, in <module>
+    if __name__=='__main__':print(json.dumps(verify(),indent=2,sort_keys=True))
+                                             ^^^^^^^^
+  File "/Users/clayton/Documents/Codex/2026-11-10/in-my-cstack-repo-i-want/work/capture-cross-examine/review-packet-repaired/h3-unsupported-source-quote/verify_archive.py", line 82, in verify
+    assert row['statement'] in (ROOT/source['path']).read_text(), ('verbatim-source-mismatch',row['record_id'])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ('verbatim-source-mismatch', 'capture-forward-signal-1-v1')

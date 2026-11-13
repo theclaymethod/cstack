@@ -150,7 +150,7 @@
     "evidence/workspace/eval-runs/capture-forward/source/loaded-guidance/.agents/skills/cross-examine/references/lessons.md": "bb207ad412303b961456d6c62350c305c62854001eb47a35f7e7a0968c56e8a6",
     "evidence/workspace/eval-runs/capture-forward/source/loaded-guidance/.agents/skills/expert-mode/references/calibration-capture.md": "0f36c1785a980e21c32d88a7604d469cf0173f70b688ae4d93ebfa325d1f55b7",
     "evidence/workspace/eval-runs/capture-forward/source/loaded-guidance/.agents/skills/expert-mode/references/records.md": "85367406bac6ead9da0464417051741109124649b370282c3994057d16a3ed95",
-    "verify_archive.py": "d7345a4b2754e507ea4b17036c861bf7138c8b44b1e56be83c6f306e2c5d71ad"
+    "verify_archive.py": "37ca8fdf0c8b6fc6e911c895150f746fba60c6b758f33bea8c7bb86f743b7f23"
   },
   "original_baseline": "9e9efd6668a374398fd3601c47e422aa93d27dd7",
   "nature": "synthetic exposed development; original phase artifacts preserved byte-for-byte"

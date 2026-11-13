@@ -1,0 +1,30 @@
+{
+  "archive_comparisons": [
+    {
+      "archive": "archive-baseline",
+      "changed_files": [
+        "verify_archive.py"
+      ]
+    },
+    {
+      "archive": "h1-initial-state-mismatch",
+      "changed_files": [
+        "verify_archive.py"
+      ]
+    },
+    {
+      "archive": "h2-reviewed-output-mismatch",
+      "changed_files": [
+        "verify_archive.py"
+      ]
+    },
+    {
+      "archive": "h3-unsupported-source-quote",
+      "changed_files": [
+        "verify_archive.py"
+      ]
+    }
+  ]
+}
+{"candidate_exit_code": 0, "output_matches_preserved_native_trace": true, "preserved_native_outcome": "FAIL", "ticket_delta": 0, "version": "false-claim-v1"}
+{"candidate_exit_code": 0, "output_matches_preserved_native_trace": true, "preserved_native_outcome": "PASS", "ticket_delta": 1, "version": "legitimate-v2"}

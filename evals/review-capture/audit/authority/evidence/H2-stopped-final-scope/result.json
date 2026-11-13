@@ -1,0 +1,12 @@
+{
+  "classification": "extra-contract helper resilience probe; archived script is one-shot, not a supported capture runtime",
+  "exception": null,
+  "hypothesis": "H2-stopped-final-scope",
+  "returned": {
+    "repeated_offers": 0,
+    "retained": 0,
+    "status": "blocked-stopped-scope"
+  },
+  "stdout": "",
+  "store_changed": false
+}

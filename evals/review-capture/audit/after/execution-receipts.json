@@ -1,0 +1,22 @@
+[
+  {
+    "case": "archive-baseline",
+    "exit": 0,
+    "checker_sha256": "37ca8fdf0c8b6fc6e911c895150f746fba60c6b758f33bea8c7bb86f743b7f23"
+  },
+  {
+    "case": "h1-initial-state-mismatch",
+    "exit": 1,
+    "checker_sha256": "37ca8fdf0c8b6fc6e911c895150f746fba60c6b758f33bea8c7bb86f743b7f23"
+  },
+  {
+    "case": "h2-reviewed-output-mismatch",
+    "exit": 1,
+    "checker_sha256": "37ca8fdf0c8b6fc6e911c895150f746fba60c6b758f33bea8c7bb86f743b7f23"
+  },
+  {
+    "case": "h3-unsupported-source-quote",
+    "exit": 1,
+    "checker_sha256": "37ca8fdf0c8b6fc6e911c895150f746fba60c6b758f33bea8c7bb86f743b7f23"
+  }
+]

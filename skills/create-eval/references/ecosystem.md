@@ -1,6 +1,6 @@
 # Reuse existing eval skills
 
-[AI Evals Course's Evals Skills](https://github.com/ai-evals-course/evals-skills) supplies established workflows for learning from model traces. Reference these for both production traces and locally generated development traces. C Stack adds session capture, a small local handoff, early-feature execution guidance, and Cross-Examine; it does not replace their error-analysis methodology.
+[AI Evals Course's Evals Skills](https://github.com/ai-evals-course/evals-skills) supplies established workflows for learning from model traces. Reference these for both production traces and locally generated development traces. cstack adds session capture, a small local handoff, early-feature execution guidance, and Cross-Examine; it does not replace their error-analysis methodology.
 
 | Need | Upstream skill |
 | --- | --- |
@@ -29,4 +29,4 @@ Inspected upstream revision: `80d5f7b0127c7572ed9e9339937adbfd7240ffeb`. Links a
 
 ## Production-trace task engineering
 
-With recoverable production traces and repository context, use LangChain's [eval-engineering](https://github.com/langchain-ai/langchain-skills/tree/main/config/skills/eval-engineering) for reviewed task specs, controlled environments, independent verifiers and Harbor runs. It also supports optional traces; this is C Stack's recommended production handoff. Read the actual installed/upstream workflow when applying it. Do not vendor or install it merely because it is referenced.
+With recoverable production traces and repository context, use LangChain's [eval-engineering](https://github.com/langchain-ai/langchain-skills/tree/main/config/skills/eval-engineering) for reviewed task specs, controlled environments, independent verifiers and Harbor runs. It also supports optional traces; this is cstack's recommended production handoff. Read the actual installed/upstream workflow when applying it. Do not vendor or install it merely because it is referenced.
