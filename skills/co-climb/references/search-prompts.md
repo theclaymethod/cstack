@@ -4,7 +4,7 @@ Fill from the ledger after reading [the protocol](protocol.md). These prompts do
 
 ## Shared envelope
 
-Supply goal/original criteria, owners/paths, complete target/judge hashes, case/family/corpus hashes, trial policy, constraints/promotion rule, parent archive and receipts, remaining spend/reserve, and sealed-access restrictions. Missing fields remain unresolved; labels stay outside runtime evidence.
+Supply the frozen protocol contract, artifact/data identities, parent archive/receipts, remaining spend/reserve and sealed restrictions. Missing fields stay unresolved; labels stay outside runtime evidence.
 
 ## Coordinator
 

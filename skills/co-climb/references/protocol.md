@@ -1,12 +1,12 @@
 # Co-climb protocol
 
-[Hill Climb's contract](../../hill-climb/references/campaign.md) supplies execution, budgets and recovery. [Calibrate Judge's protocol](../../calibrate-judge/references/protocol.md) supplies fitting and label authority. Use [block handoffs](search-prompts.md) with project-local artifacts.
+Use [Hill Climb](../../hill-climb/references/campaign.md) for execution/recovery, [Calibrate Judge](../../calibrate-judge/references/protocol.md) for fitting/authority, and [block handoffs](search-prompts.md) for delegation.
 
 ## Identity, authority and spend
 
-Record original goal/criteria, owners, editable paths, objective/direction/aggregation, regression constraints, branch cap, trial/seed/cache policy, total budget, confirmation reserve and stop rule. Snapshot the original target and judge. Hash target dependencies and the complete judge bundle: model, rubric/prompt, evidence adapter, parser, thresholds, fallback, retries and cache. Unknown versions stay unknown. Each block freezes both snapshots; only its declared side may change between candidates.
+Record original goal/criteria, owners, editable paths, objective/direction/aggregation, regression constraints, branch cap, trial/seed/cache policy, total budget, confirmation reserve and stop rule. Snapshot/hash the original target, dependencies and judge bundle: model, rubric/prompt, evidence adapter, parser, thresholds, fallback, retries and cache. Unknown versions stay unknown. Each block freezes both snapshots; only its declared side may change between candidates.
 
-Group originals, repairs and derivatives by source family. Use a climb set, a second working set from different families/authors, and a sealed final set. Both working sets are adaptive selection evidence, not unseen validation. Keep sealed inputs/results/labels out of development.
+Group originals/repairs/derivatives by source family. Separate climb, fresh-family working, and sealed final sets. Working sets are adaptive evidence, not unseen validation. Exclude sealed inputs/results/labels from development.
 
 Reserve full spend before attempts: generation, proposer/tool work, in-loop and final judging, retries, controls, regrading, replication and confirmation. Preserve partial/error attempts and unknown costs. Resume from matching snapshots and reconciled receipts, not re-execution or duplicate charging. Changed contracts start a new campaign. Stop without spending the final reserve on another branch.
 
@@ -22,7 +22,7 @@ Model/deterministic findings are not human gold. Exclude uncertain rows from fit
 
 Freeze judge, cases and trial policy. Execute at least two identical controls on each working set; predeclare the spread calculation. Two scalar controls can supply an observed range, not a confidence interval or statistical significance.
 
-Snapshot candidates with parentage, hypotheses and expected nearby regressions. Execute each changed target through the native runner on both sets; regrading old outputs cannot measure new code/prompts. Keep per-case outputs, judgments, errors and cost. Isolate concurrent writes and test merged candidates anew.
+Snapshot candidate parents, hypotheses and nearby regressions. Execute changed targets natively on both sets; old-output regrading cannot test changes. Keep per-case outputs/judgments/errors/costs. Isolate writes and test merges anew.
 
 Retain complementary branches under a declared family/objective policy and archive cap; protect costly errors and original constraints before aggregate gains. Retention is not promotion. Partial screens nominate further experiments only. Promote only when improvement exceeds control spread on both sets, satisfies constraints and replicates. A tie/loss on either set or insufficient repetitions means no confirmed gain. Keep the original baseline and record dead ends.
 
@@ -42,4 +42,4 @@ Saved-output regrading isolates scoring only. A changed in-loop judge needs fres
 
 Freeze the final target, judge and evaluation plan before opening sealed evidence. Execute selected target and original baseline once each under the final judge; complete all planned outputs/predictions before opening labels. Record consumption. Further tuning needs new evidence for an unseen-final claim.
 
-Deliver branch decisions and receipts, retained/dropped edits and replication, judge changelog, calibration rows/retractions, per-output latency/cost, expert questions and limits. Identify judge version and synthetic/model/human source for every number. A one-shot comparison alone proves neither significance nor production readiness.
+Deliver branch receipts/decisions, retained/dropped edits, replication, judge changelog, calibration amendments, latency/cost, questions and limits. Name judge/version and synthetic/model/human source per number. One-shot results do not prove significance or readiness.

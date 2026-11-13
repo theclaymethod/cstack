@@ -34,6 +34,8 @@ def main():
     command=['codex','exec','--ignore-user-config','--ephemeral','--skip-git-repo-check','--sandbox','read-only','--model',MODEL,'-c','model_reasoning_effort="high"','-c','features.shell_tool=false','-c','web_search="disabled"','--json','-C',str(runtime)]
     manifest={'model':MODEL,'reasoning':'high','versions':versions,'repetitions':args.repetitions,'unit':'16 decisions in one fresh-context batch; repeated batches are not independent cases','command':command,'frozen_eval_hashes':{name:hashlib.sha256((HERE/name).read_bytes()).hexdigest() for name in ['cases.jsonl','expected.json','prompt.md','evaluate.py']},'promotion_gate': ('At least two additional correct cases overall, positive paired gain in at least two of three repetitions, no newly failing case that passed all baseline repetitions. A tie does not support merge.' if args.gate=='accuracy' else 'All 48 candidate decisions pass, no baseline-case regression, at least 20% fewer skill-bundle characters than original and fewer measured input tokens in each paired run. This demonstrates efficiency, not improved accuracy.'), 'skill_bundle_characters': {name:len(skill_at(rev)) for name,rev in versions.items()}}
     (out/'manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
+    if args.gate == 'efficiency' and manifest['skill_bundle_characters']['candidate'] > 0.8 * manifest['skill_bundle_characters']['baseline']:
+        raise SystemExit('Candidate fails the preregistered size gate; no model calls started')
     results=[]
     for repeat in range(args.repetitions):
         order=['baseline','candidate'] if repeat%2==0 else ['candidate','baseline']
