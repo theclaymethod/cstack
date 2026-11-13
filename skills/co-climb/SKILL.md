@@ -35,6 +35,8 @@ Confirmed target errors and judge gaps become condition-present calibration rows
 
 ## Revise the judge
 
+Selecting a judge is an evidence-backed decision, not a placeholder for the next step. If the acceptance policy or comparative calibration results are missing, leave the selected judge unresolved and recover that evidence first. Naming an available judge does not make it the approved evaluator. Separate proposed actions from completed selection in every handoff.
+
 Change criteria narrowly, and only for confirmed cases, an evidence fix or an owner instruction. Before each rebuild, diff the criteria against the original judge and trace every loosening to its cause. After each rebuild, plant known defects in finished outputs and confirm that the judge catches them and the target's loop repairs them.
 
 When the judge runs inside the target's loop, saved-output re-judging isolates scoring, not changed generation behavior. Run fresh target executions before claiming end-to-end gains. Count failures with a clean last in-loop judgment, check output/evidence/bundle identity, then repeat frozen judgments before attributing disagreement to noise. Test any proposed extra passes or consensus gating; do not assume they fix it.

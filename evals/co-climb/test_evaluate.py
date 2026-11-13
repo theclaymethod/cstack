@@ -23,6 +23,8 @@ class DecisionEvalTests(unittest.TestCase):
         row = next(a for a in answers if a['case_id']=='rank-reversal')
         row['archive'] = ['A']
         self.assertEqual(evaluate(answers)['counts']['PASS'],16)
+        next(a for a in answers if a['case_id']=='judge-version-switch')['archive'] = ['A']
+        self.assertEqual(evaluate(answers)['counts']['PASS'],16)
         case = next(c for c in self.cases if c['id']=='errors-not-success')
         answer = next(a for a in answers if a['case_id']==case['id'])
         answer['actions'].reverse()

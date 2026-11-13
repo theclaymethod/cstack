@@ -10,7 +10,7 @@ Use these prompts with the project's runner and artifacts. Fill them from the ca
 >
 > Nominate distinct, evidence-backed hypotheses within the budget. Record each parent, changed artifact, intended mechanism, nearby regression, immutable evaluator/data references and reserved cost. Keep multiple promising branches when justified; prune dominated or invalid branches and preserve their evidence. Retention is not promotion. Do not compare scores across judge versions or change both sides in one block.
 >
-> Return the next block contract, archive changes with reasons, execution receipts or explicit unrun status, and remaining budget. If the judge changed, invalidate old rankings and schedule saved-output re-judging before further target selection. If the judge participates in generation, also schedule fresh target executions before an end-to-end claim. Select the final pair using the declared policy before opening the sealed set.
+> Return the next block contract, archive changes with reasons, execution receipts or explicit unrun status, and remaining budget. Keep artifact selections unresolved when policy or comparative evidence is missing. A plan to select an evaluator is not a selected evaluator; do not fill an empty slot with the first available configuration. If the judge changed, invalidate old rankings and schedule saved-output re-judging before further target selection. If the judge participates in generation, also schedule fresh target executions before an end-to-end claim. Select the final pair using the declared policy before opening the sealed set.
 
 ## Target search
 

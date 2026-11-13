@@ -41,7 +41,11 @@
     "archive": [],
     "promote": [],
     "judge": null,
-    "alternative_archives": [],
+    "alternative_archives": [
+      [
+        "A"
+      ]
+    ],
     "before": [
       [
         "invalidate_old_ranks",
