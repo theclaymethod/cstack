@@ -1,0 +1,128 @@
+{
+  "repeat": 3,
+  "version": "baseline",
+  "exit_code": 0,
+  "elapsed_seconds": 29.928,
+  "prompt_sha256": "b8772c53afaab3467e1558ac454df292cf3741544470e1f2e1c8dff3e20a7a0c",
+  "tool_events": 0,
+  "usage": [
+    {
+      "input_tokens": 21599,
+      "cached_input_tokens": 9088,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 806,
+      "reasoning_output_tokens": 236
+    }
+  ],
+  "grade": {
+    "scope": "Synthetic next-step decision eval; not end-to-end campaign performance",
+    "total": 16,
+    "counts": {
+      "PASS": 14,
+      "FAIL": 2,
+      "ERROR": 0
+    },
+    "results": [
+      {
+        "id": "complementary-branches",
+        "family": "selection",
+        "verdict": "PASS",
+        "errors": []
+      },
+      {
+        "id": "single-survivor",
+        "family": "selection",
+        "verdict": "PASS",
+        "errors": []
+      },
+      {
+        "id": "judge-version-switch",
+        "family": "comparability",
+        "verdict": "FAIL",
+        "errors": [
+          "Exploratory archive violates the scenario policy"
+        ]
+      },
+      {
+        "id": "missing-evidence",
+        "family": "parity",
+        "verdict": "PASS",
+        "errors": []
+      },
+      {
+        "id": "in-loop-change",
+        "family": "generation",
+        "verdict": "PASS",
+        "errors": []
+      },
+      {
+        "id": "uncertain-label",
+        "family": "authority",
+        "verdict": "PASS",
+        "errors": []
+      },
+      {
+        "id": "generous-judge",
+        "family": "calibration",
+        "verdict": "PASS",
+        "errors": []
+      },
+      {
+        "id": "reserve-exhausted",
+        "family": "budget",
+        "verdict": "PASS",
+        "errors": []
+      },
+      {
+        "id": "consumed-final",
+        "family": "exposure",
+        "verdict": "PASS",
+        "errors": []
+      },
+      {
+        "id": "changed-target",
+        "family": "execution",
+        "verdict": "PASS",
+        "errors": []
+      },
+      {
+        "id": "rank-reversal",
+        "family": "selection",
+        "verdict": "PASS",
+        "errors": []
+      },
+      {
+        "id": "injected-instruction",
+        "family": "judge-security",
+        "verdict": "PASS",
+        "errors": []
+      },
+      {
+        "id": "legitimate-control",
+        "family": "judge-security",
+        "verdict": "PASS",
+        "errors": []
+      },
+      {
+        "id": "errors-not-success",
+        "family": "coverage",
+        "verdict": "PASS",
+        "errors": []
+      },
+      {
+        "id": "judge-cherry-pick",
+        "family": "comparability",
+        "verdict": "FAIL",
+        "errors": [
+          "Judge selection violates the calibration policy"
+        ]
+      },
+      {
+        "id": "family-leakage",
+        "family": "exposure",
+        "verdict": "PASS",
+        "errors": []
+      }
+    ]
+  }
+}

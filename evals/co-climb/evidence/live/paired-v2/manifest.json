@@ -1,0 +1,37 @@
+{
+  "model": "gpt-6-astra",
+  "reasoning": "high",
+  "versions": {
+    "baseline": "03eeb4bc95ad89d805b008a8165a89cceafc9cc1",
+    "candidate": "3aafc8c48c3b1982f805f125fa438f5d9333eb25"
+  },
+  "repetitions": 3,
+  "unit": "16 decisions in one fresh-context batch; repeated batches are not independent cases",
+  "command": [
+    "codex",
+    "exec",
+    "--ignore-user-config",
+    "--ephemeral",
+    "--skip-git-repo-check",
+    "--sandbox",
+    "read-only",
+    "--model",
+    "gpt-6-astra",
+    "-c",
+    "model_reasoning_effort=\"high\"",
+    "-c",
+    "features.shell_tool=false",
+    "-c",
+    "web_search=\"disabled\"",
+    "--json",
+    "-C",
+    "{isolated_runtime_directory}"
+  ],
+  "frozen_eval_hashes": {
+    "cases.jsonl": "cbdf6e1a7e9a201cfae898932d274c661fda2cdd782d42122f80e38a38304def",
+    "expected.json": "d2178fbec26728ce01707f721ef1bcf20e5522524d4c4293097636cd62cb6b64",
+    "prompt.md": "3e4a42eff852154e8d22e36e503c39175e206d72313c129b0aeb6b0e002d3c24",
+    "evaluate.py": "44aa8b0b7fe3abaeaa238fccafeb4097038a0fe9331e9ec7dc3b10a3924d7714"
+  },
+  "promotion_gate": "At least two additional correct cases overall, positive paired gain in at least two of three repetitions, no newly failing case that passed all baseline repetitions. A tie does not support merge."
+}

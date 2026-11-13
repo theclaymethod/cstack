@@ -9,6 +9,6 @@ test_repair_must_precede_regrade (test_evaluate.DecisionEvalTests.test_repair_mu
 test_required_actions_cannot_be_omitted (test_evaluate.DecisionEvalTests.test_required_actions_cannot_be_omitted) ... ok
 
 ----------------------------------------------------------------------
-Ran 9 tests in 0.043s
+Ran 9 tests in 0.057s
 
 OK

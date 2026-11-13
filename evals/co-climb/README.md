@@ -42,3 +42,17 @@ The answer key is an authored interpretation of the skill contract, not human-go
 `test_evaluate.py` executes all reference decisions, a legitimate archive alternative and independent action reordering. It rejects every offered unsafe action, every omitted required action, premature promotion, a greedy archive, reversed evidence dependencies, malformed output, duplicate/unknown cases and partial submissions. It also exercises the CLI and checks prepared inputs for answer-key leakage. Passing these tests validates the grader controls, not an agent's performance.
 
 Keep related cases in the same family when creating new partitions. All current cases are already exposed development fixtures. New frontier or final tasks need fresh source families and their own exposure record.
+
+## Live paired benchmark
+
+With authorized model access and the Codex CLI installed:
+
+```sh
+python3 evals/co-climb/live_benchmark.py --out eval-runs/co-climb-live/run --gate accuracy
+```
+
+The runner freezes Git revisions and eval hashes, uses GPT-6 Astra at high reasoning, alternates baseline/candidate ordering across three fresh-context pairs, and preserves prompts, raw final responses, events, usage and grading receipts. Each context answers all 16 cases; repeated batches are not independent source cases. User configuration is ignored, shell and web search are disabled, and observed tool use invalidates the run. The model sees no answer key, but this is a decision task rather than an adversarial host-isolation test.
+
+The default accuracy gate requires positive paired gains in at least two repetitions, two additional correct decisions overall, and no new failing case that passed all baseline repetitions. `--gate efficiency` instead preregisters perfect candidate accuracy, no regressions, a 20% skill-bundle character reduction and lower measured input tokens in every pair. It checks the size threshold before launching any model calls. An accuracy tie is not an accuracy improvement. A shorter prompt with preserved scores can support only the stated efficiency result.
+
+Each call has a ten-minute timeout. Budget six model calls for the default run. Provider pricing is not estimated by this script. Keep raw event logs local; publish final decisions and measured usage without internal reasoning or environment logs. Inspect the frozen report before promotion; the runner does not merge or deploy anything.

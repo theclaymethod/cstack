@@ -9,16 +9,16 @@
   "unit_tests": 9,
   "playground_tests": 56,
   "playground_skipped": 1,
-  "model_calls": 0,
-  "live_before_after": "not run",
+  "model_calls": 20,
+  "live_before_after": "See live/summary.json: efficiency gate passed; no accuracy gain claimed",
   "source_hashes": {
-    "skills/co-climb/SKILL.md": "0c1180ab18453478864c9cb7c25fd936d38e336226d894e6a22adfb34fc8295f",
-    "skills/co-climb/references/protocol.md": "e86ec72a7449d2d5c7e6655f1281b3339810029a1b5bf9cea38935503d3ae4c5",
-    "skills/co-climb/references/search-prompts.md": "3bb3ca2dca18743104845984ed0e1570dbfa58eeb31182a6bdaddf4173cf0951",
+    "skills/co-climb/SKILL.md": "143962d21e5462c0e41a125404834eef8540081d4bbb0ac90442bba935a11eb7",
+    "skills/co-climb/references/protocol.md": "c5545ad1f42633963027b0654bd5970e7f134a63583514a61a4d3544cb349289",
+    "skills/co-climb/references/search-prompts.md": "276a40f060276ba55c7d439f6d7bf83649610e114ebf9f8623ee519169ad3d8f",
     "evals/co-climb/prompt.md": "3e4a42eff852154e8d22e36e503c39175e206d72313c129b0aeb6b0e002d3c24",
-    "evals/co-climb/cases.jsonl": "ce6b0a23eb1bb0eeef847e5c2c324d0007fc34113d79545b789fad04213afb07",
-    "evals/co-climb/expected.json": "86e747f81b5e32fb59dff71fb7f1ec46ebe57e9a5d6c976c0a810260e04698c6",
+    "evals/co-climb/cases.jsonl": "cbdf6e1a7e9a201cfae898932d274c661fda2cdd782d42122f80e38a38304def",
+    "evals/co-climb/expected.json": "d2178fbec26728ce01707f721ef1bcf20e5522524d4c4293097636cd62cb6b64",
     "evals/co-climb/evaluate.py": "44aa8b0b7fe3abaeaa238fccafeb4097038a0fe9331e9ec7dc3b10a3924d7714",
-    "evals/co-climb/test_evaluate.py": "b47b82eaa1a06c8d132a8f49acc661d2da6528050ad7113d58a5647a9770ae17"
+    "evals/co-climb/test_evaluate.py": "38b9ab424a76711038eb3a974acff4e5371ed89419d35b08821c71ab6a42f9f0"
   }
 }
