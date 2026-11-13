@@ -10,7 +10,7 @@
     {
       "name": "cstack",
       "source": "./",
-      "description": "Capture judgments, bootstrap evals, calibrate judges, and improve agents against them."
+      "description": "Capture judgments, bootstrap evals, calibrate judges, improve agents against them, and learn the workflow with help and tutor."
     }
   ]
 }

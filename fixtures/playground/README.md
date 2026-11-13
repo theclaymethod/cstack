@@ -1,6 +1,6 @@
 # cstack playground fixture
 
-A reusable fixture inside cstack for trying its eleven skills against a small, deliberately imperfect project. The product is a deterministic Python support agent. Its bugs, requests, conversation excerpts, expected outcomes, and candidate examples are synthetic. There is no website or model-provider setup.
+A reusable fixture inside cstack for trying the current skills against a small, deliberately imperfect project. The generated workspace copies every skill in the owning checkout, including help and tutor. The product is a deterministic Python support agent. Its bugs, requests, conversation excerpts, expected outcomes, and candidate examples are synthetic. There is no website or model-provider setup.
 
 Use Python 3.11+ on macOS or Linux. The code uses the standard library; campaign commands use a Unix advisory lock. Candidate programs run with your local permissions. Only run code you authorize: subprocesses and timeouts are not a security sandbox.
 
@@ -16,9 +16,9 @@ python3 -m unittest discover -s tests -v
 python3 evaluate.py run --candidate support_agent.py --suite development --out eval-runs/baseline
 ```
 
-The canonical fixture contains the product, evaluator, cases, and exercises. It has no nested Git repository or installed skill copies. The workspace command creates a local Git repository, copies the current eleven skills, and records the owning cstack source. It refuses existing destinations; use a new directory to reset. You can use an absolute output path outside cstack instead of `eval-runs/`.
+The canonical fixture contains the product, evaluator, cases, and exercises. It has no nested Git repository or installed skill copies. The workspace command creates a local Git repository, copies the current skills, and records the owning cstack source. It refuses existing destinations; use a new directory to reset. You can use an absolute output path outside cstack instead of `eval-runs/`.
 
-In the generated workspace, the eleven skills are copied into `.agents/skills`, with relative links for Claude Code and Cursor. Syncing refreshes unchanged copies and refuses to overwrite local skill edits. Start a new coding-agent session in this repo after a sync. Invoke `$hill-climb` in Codex, `/hill-climb` in Claude Code/Cursor, or ask the agent to read the relevant `.agents/skills/<name>/SKILL.md`.
+In the generated workspace, the skills are copied into `.agents/skills`, with relative links for Claude Code and Cursor. Syncing refreshes unchanged copies and refuses to overwrite local skill edits. Start a new coding-agent session in this repo after a sync. Invoke `$hill-climb` in Codex, `/hill-climb` in Claude Code/Cursor, or ask the agent to read the relevant `.agents/skills/<name>/SKILL.md`.
 
 The baseline passes four of eight development cases. That is an intentional fixture result, not an estimate of AI-agent performance. Every eval run executes the candidate file in a fresh subprocess for each selected case and saves its actual outputs, errors, traces, and identity under the chosen output directory.
 
@@ -51,7 +51,9 @@ python3 scripts/run_cstack_evals.py --suite all --out eval-runs/cstack-controls
 
 This invokes the existing Expert Review and Cross-Examine calibration scripts, Bootstrap's replay and recorded audit, Hill Climb's recorded audit, the Adversarial Cases replay and recorded audit, project-local method, judge-calibration and simplification experiments, and the workspace's native tests. It saves each command's actual exit, stdout, and stderr. Use `--suite expert-review`, `cross-examine`, `bootstrap`, `bootstrap-audit`, `hill-climb-audit`, `adversarial-cases`, `adversarial-audit`, `methods`, `judge-calibration`, `simplification`, or `playground` for one suite. Use `--source /path/to/cstack` to override the recorded owner. These check the known synthetic controls; they do not launch models or establish that an agent followed every skill.
 
-## Exercises for all eleven skills
+## Exercises
+
+`/tutor` walks exercises 01–13 in order. `/help` reads this workspace and names one next skill. The table below is the eleven product skills. Exercises 09 and 13 are part of the same curriculum.
 
 | Skill | Exercise |
 | --- | --- |

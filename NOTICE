@@ -13,6 +13,11 @@ Cross-Examine and its historical evaluation evidence originated in
 https://github.com/theclaymethod/cross-examine.
 Frozen evidence is retained as development provenance, not a current reliability claim.
 
+The tutor skill adapts the teaching procedure of the Aili Bootcamp tutor
+from Clayton Kim's personal site (teaching/skill-evals). The playground
+exercises are the curriculum. The original hotel-analysis lesson is not
+bundled. See SOURCES.md.
+
 OpenAI Privacy Filter is referenced as an optional external dependency. Its
 weights and source are not included; consult its own repository and model card
 for licensing and usage details.
