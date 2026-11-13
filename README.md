@@ -2,6 +2,10 @@
 
 Skills for eval-driven development. Turn expert judgment into evals, improve your agent against them, and simplify what no longer helps.
 
+[One-page cheat sheet](docs/cstack-cheatsheet.pdf) — each skill, when to reach for it, the usual order, and the install command.
+
+Not sure which skill fits the files you already have? Use [`/help`](skills/help/SKILL.md). Learning the pack on the playground? Use [`/course`](skills/course/SKILL.md). It walks exercises 01–13, one question at a time, and resumes from a checkpoint.
+
 ## Start with the evidence you have
 
 Ask `/expert-mode` to observe you working, or use `/distill-me` after a session. Start with `/bootstrap` when you know the intent and need cases before you have useful traces.
@@ -38,6 +42,8 @@ With good production traces, use LangChain's [eval-engineering](https://github.c
 | [hill-climb](skills/hill-climb/SKILL.md) | Improve a target within an eval budget. |
 | [ablation](skills/ablation/SKILL.md) | Remove complexity while preserving required performance. |
 | [bitter-lesson](skills/bitter-lesson/SKILL.md) | Retest inherited prompt complexity as models improve. |
+| [help](skills/help/SKILL.md) | Read the workspace and name the single next skill. |
+| [course](skills/course/SKILL.md) | Practice exercises 01–13 with evidence, one question, and a checkpoint. |
 
 Reviews [offer to retain useful corrections and labels](skills/expert-mode/references/calibration-capture.md) for later judge calibration. Saving a proposal does not confirm its label or activate Expert Mode.
 
@@ -56,7 +62,7 @@ Untuned describes the target; the other rows describe evidence. Playground check
 
 ```bash
 npx skills add theclaymethod/cstack \
-  --skill expert-mode distill-me bootstrap create-eval run-eval cross-examine hill-climb adversarial-cases calibrate-judge ablation bitter-lesson \
+  --skill expert-mode distill-me bootstrap create-eval run-eval cross-examine hill-climb adversarial-cases calibrate-judge ablation bitter-lesson help course \
   -a codex -a claude-code -a cursor --copy
 ```
 

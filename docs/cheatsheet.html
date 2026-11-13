@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>CStack cheat sheet</title>
+<style>
+  @page { size: letter; margin: 0.42in 0.46in 0.38in 0.46in; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body {
+    background: #fff;
+    color: #161616;
+    font-family: Inter, "Liberation Sans", sans-serif;
+    font-size: 10pt;
+    line-height: 1.35;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  body {
+    min-height: 10.05in;
+    display: flex;
+    flex-direction: column;
+  }
+  header {
+    padding-bottom: 9px;
+    border-bottom: 1.5px solid #161616;
+  }
+  .mark {
+    font-size: 8pt;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    font-weight: 650;
+  }
+  h1 {
+    font-size: 26pt;
+    font-weight: 650;
+    letter-spacing: -0.03em;
+    line-height: 1;
+    margin-top: 3px;
+  }
+  .lede { margin-top: 6px; max-width: 68ch; color: #222; font-size: 10.5pt; }
+  .install {
+    margin-top: 12px;
+    background: #f3f3f1;
+    border: 1px solid #e2e2de;
+    padding: 8px 10px 9px;
+  }
+  .label {
+    font-size: 8pt;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    font-weight: 650;
+    margin-bottom: 4px;
+  }
+  pre, code, .mono {
+    font-family: "JetBrains Mono", "Liberation Mono", monospace;
+  }
+  pre {
+    font-size: 8pt;
+    line-height: 1.4;
+    white-space: pre-wrap;
+    word-break: break-word;
+  }
+  .flow { margin-top: 12px; }
+  .steps {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+  }
+  .step {
+    border-top: 1.5px solid #161616;
+    padding-top: 6px;
+  }
+  .step b {
+    display: block;
+    font-size: 9.5pt;
+    margin-bottom: 3px;
+  }
+  .step p { color: #222; font-size: 9pt; line-height: 1.35; }
+  .step em { font-style: normal; font-weight: 650; }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 12px;
+  }
+  th {
+    text-align: left;
+    font-size: 8pt;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    font-weight: 650;
+    padding: 0 8px 5px 0;
+    border-bottom: 1px solid #161616;
+  }
+  td {
+    vertical-align: top;
+    padding: 8px 10px 8px 0;
+    border-bottom: 1px solid #e4e4e0;
+    font-size: 9.5pt;
+    line-height: 1.32;
+  }
+  td.skill {
+    width: 138px;
+    font-family: "JetBrains Mono", "Liberation Mono", monospace;
+    font-size: 8.3pt;
+    font-weight: 560;
+    white-space: nowrap;
+    padding-top: 9px;
+  }
+  tr.meta td { background: #f7f7f5; }
+  footer {
+    margin-top: auto;
+    display: grid;
+    grid-template-columns: 1.15fr 0.85fr;
+    gap: 16px;
+    border-top: 1.5px solid #161616;
+    padding-top: 8px;
+  }
+  footer p { font-size: 9pt; line-height: 1.38; color: #222; }
+  footer strong { font-weight: 650; color: #161616; }
+  .cmd {
+    font-family: "JetBrains Mono", "Liberation Mono", monospace;
+    font-size: 7.6pt;
+    line-height: 1.45;
+    margin-top: 4px;
+  }
+</style>
+</head>
+<body>
+  <header>
+    <div>
+      <div class="mark">CStack · Clayton Kim · one page</div>
+      <h1>Cheat sheet</h1>
+      <p class="lede">Turn expert judgment into evals, improve an agent against them, and remove complexity that no longer helps.</p>
+    </div>
+  </header>
+
+  <section class="install">
+    <div class="label">Install</div>
+    <pre>npx skills add theclaymethod/cstack \
+  --skill expert-mode distill-me bootstrap create-eval run-eval cross-examine \
+  hill-climb adversarial-cases calibrate-judge ablation bitter-lesson help course \
+  -a codex -a claude-code -a cursor --copy</pre>
+  </section>
+
+  <section class="flow">
+    <div class="label">Typical order</div>
+    <div class="steps">
+      <div class="step">
+        <b>1 · Capture</b>
+        <p><em>expert-mode</em> while you work, or <em>distill-me</em> after the session. <em>bootstrap</em> when you know the behavior and have no useful traces yet.</p>
+      </div>
+      <div class="step">
+        <b>2 · Author</b>
+        <p><em>create-eval</em> turns reviewed evidence into cases and graders. <em>calibrate-judge</em> when a semantic judge must agree with authoritative labels.</p>
+      </div>
+      <div class="step">
+        <b>3 · Measure</b>
+        <p><em>run-eval</em> executes and keeps the receipt. <em>cross-examine</em> challenges the score. <em>adversarial-cases</em> builds the hard inputs and controls.</p>
+      </div>
+      <div class="step">
+        <b>4 · Change</b>
+        <p><em>hill-climb</em> improves against a fixed eval. <em>ablation</em> removes parts. <em>bitter-lesson</em> revisits old steering after a model change. Then measure again.</p>
+      </div>
+    </div>
+  </section>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Skill</th>
+        <th>Reach for it when</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td class="skill">expert-mode</td><td>You are about to work and can say what is wrong, acceptable, or still uncertain.</td></tr>
+      <tr><td class="skill">distill-me</td><td>This session already contains judgments that are not saved as records.</td></tr>
+      <tr><td class="skill">bootstrap</td><td>You can describe the behavior and need the first reviewed scenarios before traces exist.</td></tr>
+      <tr><td class="skill">create-eval</td><td>Reviewed judgments or approved scenarios should become cases and graders.</td></tr>
+      <tr><td class="skill">calibrate-judge</td><td>A judge will score meaning, and you have authoritative labels to fit it against.</td></tr>
+      <tr><td class="skill">run-eval</td><td>Cases exist and you need a fresh execution receipt, not a remembered score.</td></tr>
+      <tr><td class="skill">cross-examine</td><td>A pass or fail may be crediting the wrong outcome or rejecting a legitimate one.</td></tr>
+      <tr><td class="skill">adversarial-cases</td><td>You need a small constructed challenge, fault, or control. Approval stays with the parent skill.</td></tr>
+      <tr><td class="skill">hill-climb</td><td>A fixed evaluator shows failures and you may edit only the authorized target.</td></tr>
+      <tr><td class="skill">ablation</td><td>The target meets the quality bar and you want to delete instructions, tools, or steps.</td></tr>
+      <tr><td class="skill">bitter-lesson</td><td>A model change may make inherited prompt or scaffolding unnecessary. Removal still has to clear the old bar.</td></tr>
+      <tr class="meta"><td class="skill">help</td><td>You are unsure which skill fits. It reads the files you already have and names one next step.</td></tr>
+      <tr class="meta"><td class="skill">course</td><td>You want to practice the pack. It teaches playground exercises 01–13, one question at a time.</td></tr>
+    </tbody>
+  </table>
+
+  <footer>
+    <div>
+      <div class="label">Invoke</div>
+      <p><strong>Codex</strong> <span class="mono">$name</span> · <strong>Claude Code and Cursor</strong> <span class="mono">/name</span> · <strong>Claude plugin</strong> <span class="mono">/cstack:name</span></p>
+      <p class="cmd">python3 fixtures/playground/scripts/new_workspace.py \<br>--out eval-runs/playground</p>
+    </div>
+    <div>
+      <div class="label">What a result is</div>
+      <p><strong>Untuned</strong> is the original target. <strong>Synthetic</strong> and <strong>adversarial</strong> cases are constructed. <strong>True labeled data</strong> is a human judgment on a real example, only inside the scope that was reviewed.</p>
+    </div>
+  </footer>
+</body>
+</html>
