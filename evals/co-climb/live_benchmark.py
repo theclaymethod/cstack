@@ -22,6 +22,7 @@ def main():
     p.add_argument('--out',type=Path,required=True)
     p.add_argument('--candidate',default='HEAD')
     p.add_argument('--repetitions',type=int,default=3)
+    p.add_argument('--gate',choices=['accuracy','efficiency'],default='accuracy')
     args=p.parse_args()
     out=args.out.resolve();out.mkdir(parents=True,exist_ok=False)
     runtime=out/'runtime';runtime.mkdir()
@@ -31,7 +32,7 @@ def main():
     instruction=(HERE/'prompt.md').read_text()
     instruction+='\nFor this batch, apply the response schema to every situation and return {"answers": [one response object per case]}. Do not call tools. Use only the supplied evidence.\n'
     command=['codex','exec','--ignore-user-config','--ephemeral','--skip-git-repo-check','--sandbox','read-only','--model',MODEL,'-c','model_reasoning_effort="high"','-c','features.shell_tool=false','-c','web_search="disabled"','--json','-C',str(runtime)]
-    manifest={'model':MODEL,'reasoning':'high','versions':versions,'repetitions':args.repetitions,'unit':'16 decisions in one fresh-context batch; repeated batches are not independent cases','command':command,'frozen_eval_hashes':{name:hashlib.sha256((HERE/name).read_bytes()).hexdigest() for name in ['cases.jsonl','expected.json','prompt.md','evaluate.py']},'promotion_gate':'At least two additional correct cases overall, positive paired gain in at least two of three repetitions, no newly failing case that passed all baseline repetitions. A tie does not support merge.'}
+    manifest={'model':MODEL,'reasoning':'high','versions':versions,'repetitions':args.repetitions,'unit':'16 decisions in one fresh-context batch; repeated batches are not independent cases','command':command,'frozen_eval_hashes':{name:hashlib.sha256((HERE/name).read_bytes()).hexdigest() for name in ['cases.jsonl','expected.json','prompt.md','evaluate.py']},'promotion_gate': ('At least two additional correct cases overall, positive paired gain in at least two of three repetitions, no newly failing case that passed all baseline repetitions. A tie does not support merge.' if args.gate=='accuracy' else 'All 48 candidate decisions pass, no baseline-case regression, at least 20% fewer skill-bundle characters than original and fewer measured input tokens in each paired run. This demonstrates efficiency, not improved accuracy.'), 'skill_bundle_characters': {name:len(skill_at(rev)) for name,rev in versions.items()}}
     (out/'manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     results=[]
     for repeat in range(args.repetitions):
