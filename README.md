@@ -4,7 +4,7 @@ Skills for eval-driven development. Turn expert judgment into evals, improve you
 
 [One-page cheat sheet](docs/cstack-cheatsheet.pdf) — each skill, when to reach for it, the usual order, and the install command.
 
-Not sure which skill fits the files you already have? Use [`/help`](skills/help/SKILL.md). Learning the pack on the playground? Use [`/course`](skills/course/SKILL.md). It walks exercises 01–13, one question at a time, and resumes from a checkpoint.
+Not sure which skill fits the files you already have? Use [`/help`](skills/help/SKILL.md). Learning the pack on the playground? Use [`/tutor`](skills/tutor/SKILL.md). It walks exercises 01–13, one question at a time, and resumes from a checkpoint.
 
 ## Start with the evidence you have
 
@@ -43,7 +43,7 @@ With good production traces, use LangChain's [eval-engineering](https://github.c
 | [ablation](skills/ablation/SKILL.md) | Remove complexity while preserving required performance. |
 | [bitter-lesson](skills/bitter-lesson/SKILL.md) | Retest inherited prompt complexity as models improve. |
 | [help](skills/help/SKILL.md) | Read the workspace and name the single next skill. |
-| [course](skills/course/SKILL.md) | Practice exercises 01–13 with evidence, one question, and a checkpoint. |
+| [tutor](skills/tutor/SKILL.md) | Practice exercises 01–13 with evidence, one question, and a checkpoint. |
 
 Reviews [offer to retain useful corrections and labels](skills/expert-mode/references/calibration-capture.md) for later judge calibration. Saving a proposal does not confirm its label or activate Expert Mode.
 
@@ -62,7 +62,7 @@ Untuned describes the target; the other rows describe evidence. Playground check
 
 ```bash
 npx skills add theclaymethod/cstack \
-  --skill expert-mode distill-me bootstrap create-eval run-eval cross-examine hill-climb adversarial-cases calibrate-judge ablation bitter-lesson help course \
+  --skill expert-mode distill-me bootstrap create-eval run-eval cross-examine hill-climb adversarial-cases calibrate-judge ablation bitter-lesson help tutor \
   -a codex -a claude-code -a cursor --copy
 ```
 

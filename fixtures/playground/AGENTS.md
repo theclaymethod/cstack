@@ -1,6 +1,6 @@
 # cstack playground
 
-This is the reusable fixture for practicing the current cstack skills, including help and course. In the cstack checkout it lives under `fixtures/playground`. Materialize a disposable workspace with `scripts/new_workspace.py --out <new-directory>` before running agent-led experiments. The support agent and every supplied conversation, case, expected result, and candidate are synthetic fixtures. They establish no human calibration or model-performance claim.
+This is the reusable fixture for practicing the current cstack skills, including help and tutor. In the cstack checkout it lives under `fixtures/playground`. Materialize a disposable workspace with `scripts/new_workspace.py --out <new-directory>` before running agent-led experiments. The support agent and every supplied conversation, case, expected result, and candidate are synthetic fixtures. They establish no human calibration or model-performance claim.
 
 Start with README.md and the relevant exercise. Generated workspaces have copied skills under `.agents/skills`; `.claude/skills` and `.cursor/skills` link to them. Keep their sibling references intact. `scripts/sync_skills.py` updates unchanged installed copies from the owning checkout and refuses to overwrite local skill edits. Canonical fixture source does not contain nested Git metadata or installed skill copies.
 

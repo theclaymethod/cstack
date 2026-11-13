@@ -24,7 +24,7 @@ Override the script only in two cases, and say that you are overriding it:
 - The current session has explicit user judgments that are not in the saved records. Recommend `/distill-me`. File inspection cannot see unsaved chat.
 - You opened a record the script called incomplete and it actually ties a judgment, an input, an output, and a criterion together. Follow the next rule in [the order](references/next-step.md).
 
-An incomplete course checkpoint outranks a failing playground baseline. It does not outrank a stale measurement contract, an active or incompatible campaign, an open ledger, or pending scenario cards.
+An incomplete tutor checkpoint outranks a failing playground baseline. It does not outrank a stale measurement contract, an active or incompatible campaign, an open ledger, or pending scenario cards.
 
 ## Limits
 

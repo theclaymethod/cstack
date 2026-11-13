@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Checks that course progress appends, resumes, and refuses to erase work."""
+"""Checks that tutor progress appends, resumes, and refuses to erase work."""
 
 import json
 import subprocess
@@ -47,9 +47,9 @@ class ProgressTests(unittest.TestCase):
             conflict = run(root, "checkpoint", "--record", str(draft), "--expected", "0")
             self.assertNotEqual(conflict.returncode, 0)
             self.assertIn("Do not overwrite", conflict.stderr)
-            self.assertTrue((root / "eval-runs/course/progress/events/000001.json").is_file())
+            self.assertTrue((root / "eval-runs/tutor/progress/events/000001.json").is_file())
             (root / "evals/spec.json").write_text("changed\n")
-            (root / "eval-runs/course/progress/state.json").unlink()
+            (root / "eval-runs/tutor/progress/state.json").unlink()
             status = json.loads(run(root, "status").stdout)
             self.assertEqual(status["revision"], 1)
             self.assertEqual(status["last_learner_response"], "For this output, guidance without a ticket.")
@@ -78,7 +78,7 @@ class ProgressTests(unittest.TestCase):
             self.assertEqual(status["completed"], ["01-expert-mode"])
             self.assertEqual(status["decisions"]["how_to"], "guidance")
             self.assertEqual(status["decisions"]["urgency"], "unresolved")
-            self.assertFalse((root / "eval-runs/course/progress/events/000003.json").exists())
+            self.assertFalse((root / "eval-runs/tutor/progress/events/000003.json").exists())
 
     def test_canonical_fixture_is_not_a_progress_store(self):
         with tempfile.TemporaryDirectory() as temp:

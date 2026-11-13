@@ -5,11 +5,11 @@ Run the [Skills CLI](https://github.com/vercel-labs/skills) in the project where
 
 ```bash
 npx skills add theclaymethod/cstack \
-  --skill expert-mode distill-me bootstrap create-eval run-eval cross-examine hill-climb adversarial-cases calibrate-judge ablation bitter-lesson help course \
+  --skill expert-mode distill-me bootstrap create-eval run-eval cross-examine hill-climb adversarial-cases calibrate-judge ablation bitter-lesson help tutor \
   -a codex -a claude-code -a cursor --copy
 ```
 
-Keep the skill folders together because they link to each other's references. Start a new agent session after installation. In Codex, invoke `$expert-mode`, `$distill-me`, `$bootstrap`, `$create-eval`, `$run-eval`, `$cross-examine`, `$hill-climb`, `$adversarial-cases`, `$calibrate-judge`, `$ablation`, `$bitter-lesson`, `$help`, or `$course`. Direct skill installations in Claude Code and Cursor use the corresponding slash commands.
+Keep the skill folders together because they link to each other's references. Start a new agent session after installation. In Codex, invoke `$expert-mode`, `$distill-me`, `$bootstrap`, `$create-eval`, `$run-eval`, `$cross-examine`, `$hill-climb`, `$adversarial-cases`, `$calibrate-judge`, `$ablation`, `$bitter-lesson`, `$help`, or `$tutor`. Direct skill installations in Claude Code and Cursor use the corresponding slash commands.
 
 To install without Node, clone the repo and copy the skill folders into your agent's skill directory. For a Codex project, run:
 
@@ -28,7 +28,7 @@ cp -R /path/to/cstack/skills/expert-mode \
   /path/to/cstack/skills/ablation \
   /path/to/cstack/skills/bitter-lesson \
   /path/to/cstack/skills/help \
-  /path/to/cstack/skills/course \
+  /path/to/cstack/skills/tutor \
   /path/to/project/.agents/skills/
 ```
 
@@ -43,7 +43,7 @@ To install the Claude Code plugin:
 /plugin install cstack@cstack
 ```
 
-Plugin commands use the `cstack` prefix, such as `/cstack:create-eval`, `/cstack:run-eval`, `/cstack:help`, and `/cstack:course`. See the [Claude Code plugin documentation](https://code.claude.com/docs/en/plugins-reference).
+Plugin commands use the `cstack` prefix, such as `/cstack:create-eval`, `/cstack:run-eval`, `/cstack:help`, and `/cstack:tutor`. See the [Claude Code plugin documentation](https://code.claude.com/docs/en/plugins-reference).
 
 ### Cursor plugin
 

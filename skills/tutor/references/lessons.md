@@ -166,4 +166,4 @@ Checkpoint: consent, eligible rows, and excluded rows are separate. A repeated d
 
 ## Handoff
 
-After 13, ask them to finish, in their words: “I checked ___. The run ___ showed ___. That does not yet show ___. The next test I want is ___.” Write `eval-runs/course/progress/handoff.md` from that answer. One part at a time is fine. Do not fill in the blanks for them.
+After 13, ask them to finish, in their words: “I checked ___. The run ___ showed ___. That does not yet show ___. The next test I want is ___.” Write `eval-runs/tutor/progress/handoff.md` from that answer. One part at a time is fine. Do not fill in the blanks for them.

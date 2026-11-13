@@ -170,7 +170,7 @@ def blank():
         "records": [], "replay_ready": 0, "bootstrap_pending": [], "ledgers": [],
         "open_ledgers": [], "judge_needed": [], "judge_done": [], "adversarial": [],
         "ablation": [], "migration_incomplete": [], "migration_complete": [],
-        "loose_traces": [], "course": None, "user_work": False,
+        "loose_traces": [], "tutor": None, "user_work": False,
     }
 
 
@@ -223,13 +223,13 @@ def consider_campaign(root, directory, found):
     found["campaigns"].append({"path": rel(root, directory), "match": match, "active": active, "status": state.get("status")})
 
 
-def consider_course(root, found):
-    progress = root / "eval-runs/course/progress"
+def consider_tutor(root, found):
+    progress = root / "eval-runs/tutor/progress"
     state_path = progress / "state.json"
     events = sorted(progress.joinpath("events").glob("*.json")) if progress.joinpath("events").is_dir() else []
     if state_path.is_file():
         state = load_json(state_path) or {}
-        found["course"] = {
+        found["tutor"] = {
             "path": rel(root, state_path),
             "revision": state.get("revision") or 0,
             "stage": state.get("stage"),
@@ -237,7 +237,7 @@ def consider_course(root, found):
             "next_action": state.get("next_action") or "",
         }
     elif events:
-        found["course"] = {"path": rel(root, events[-1]), "revision": len(events), "stage": "unknown", "completed": [], "next_action": "", "journal_only": True}
+        found["tutor"] = {"path": rel(root, events[-1]), "revision": len(events), "stage": "unknown", "completed": [], "next_action": "", "journal_only": True}
 
 
 def scan(root):
@@ -304,11 +304,11 @@ def scan(root):
                 found["migration_incomplete"].append(relative)
             elif status == "complete":
                 found["migration_complete"].append(relative)
-    consider_course(root, found)
+    consider_tutor(root, found)
     found["user_work"] = any(found[key] for key in (
         "user_cases", "receipts", "campaigns", "records", "bootstrap_pending", "ledgers",
         "judge_needed", "judge_done", "adversarial", "ablation", "migration_incomplete", "migration_complete", "loose_traces"))
-    if found["course"] and (found["course"].get("revision") or 0) > 0:
+    if found["tutor"] and (found["tutor"].get("revision") or 0) > 0:
         found["user_work"] = True
     for key in ("specs", "user_cases", "records", "bootstrap_pending", "ledgers", "open_ledgers", "judge_needed", "judge_done", "adversarial", "ablation", "migration_incomplete", "loose_traces"):
         found[key] = sorted(set(found[key]))
@@ -343,14 +343,14 @@ def passing(receipt):
     return (counts.get("PASS") or 0) > 0 or receipt["summary"].get("complete") is True
 
 
-def course_open(found):
-    course = found.get("course")
-    if not course or not (course.get("revision") or 0):
+def tutor_open(found):
+    tutor = found.get("tutor")
+    if not tutor or not (tutor.get("revision") or 0):
         return False
-    if course.get("journal_only") or course.get("stage") == "unknown":
+    if tutor.get("journal_only") or tutor.get("stage") == "unknown":
         return True
-    completed = course.get("completed") or []
-    return not (course.get("stage") == "handoff" and len(completed) >= EXERCISES)
+    completed = tutor.get("completed") or []
+    return not (tutor.get("stage") == "handoff" and len(completed) >= EXERCISES)
 
 
 def recommendation(kind, found):
@@ -358,9 +358,9 @@ def recommendation(kind, found):
         return {"skill": skill, "why": why, "evidence": [item for item in evidence if item]}
 
     if kind == "cstack-checkout":
-        return answer("course", "This folder is the CStack pack. Its evals/ history is pack evidence, not your campaign. Materialize the playground and start the course.", ["fixtures/playground/exercises/01-expert-mode.md"])
+        return answer("tutor", "This folder is the CStack pack. Its evals/ history is pack evidence, not your campaign. Materialize the playground and start the tutor.", ["fixtures/playground/exercises/01-expert-mode.md"])
     if kind == "canonical-playground":
-        return answer("course", "This is the canonical playground fixture. Materialize a disposable workspace with scripts/new_workspace.py, then start the course there.", ["exercises/01-expert-mode.md"])
+        return answer("tutor", "This is the canonical playground fixture. Materialize a disposable workspace with scripts/new_workspace.py, then start the tutor there.", ["exercises/01-expert-mode.md"])
 
     active = [item for item in found["campaigns"] if item["active"] and item["match"] == "compatible"]
     if active:
@@ -385,13 +385,13 @@ def recommendation(kind, found):
     if found["bootstrap_pending"]:
         path = found["bootstrap_pending"][0]
         return answer("bootstrap", f"Scenario review is unfinished at {path}. Keep pending cards out of authoring.", [path])
-    if course_open(found):
-        course = found["course"]
-        stage = course.get("stage") or "the saved exercise"
-        action = course.get("next_action") or "Resume from the saved checkpoint."
-        return answer("course", f"Course progress is at {stage}. {action}", [course.get("path")])
+    if tutor_open(found):
+        tutor = found["tutor"]
+        stage = tutor.get("stage") or "the saved exercise"
+        action = tutor.get("next_action") or "Resume from the saved checkpoint."
+        return answer("tutor", f"Tutor progress is at {stage}. {action}", [tutor.get("path")])
     if kind == "playground" and not found["user_work"]:
-        return answer("course", "This playground has the shipped fixture and no saved exercise work. The course walks exercises 01–13.", ["exercises/01-expert-mode.md"])
+        return answer("tutor", "This playground has the shipped fixture and no saved exercise work. The tutor walks exercises 01–13.", ["exercises/01-expert-mode.md"])
     if found["records"] and found["replay_ready"] == 0 and not found["user_cases"] and not found["receipts"]:
         return answer("expert-mode", f"Review records at {found['records'][0]} have no row that ties an explicit judgment to an input, an output, and a criterion.", [found["records"][0]])
     if found["replay_ready"] and not found["user_cases"]:
@@ -457,7 +457,7 @@ def inspect(root):
         "ablation": found["ablation"],
         "migration_incomplete": found["migration_incomplete"],
         "loose_traces": found["loose_traces"],
-        "course": found["course"],
+        "tutor": found["tutor"],
         "user_work": found["user_work"],
         "recommendation": recommendation(kind, found),
     }

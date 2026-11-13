@@ -41,7 +41,7 @@ def campaign(root, folder, case_hash, status="active"):
 
 
 class InventoryTests(unittest.TestCase):
-    def test_checkout_and_canonical_fixture_recommend_course_without_scanning_pack_history(self):
+    def test_checkout_and_canonical_fixture_recommend_tutor_without_scanning_pack_history(self):
         with tempfile.TemporaryDirectory() as temp:
             root = Path(temp)
             write(root / "plugin.json", json.dumps({"name": "cstack"}))
@@ -50,10 +50,10 @@ class InventoryTests(unittest.TestCase):
             write(root / "evals/huge/manifest.json", "{}")
             report = inventory.inspect(root)
             self.assertEqual(report["workspace_kind"], "cstack-checkout")
-            self.assertEqual(report["recommendation"]["skill"], "course")
+            self.assertEqual(report["recommendation"]["skill"], "tutor")
             self.assertEqual(report["receipts"], [])
 
-    def test_empty_playground_starts_the_course_and_a_saved_checkpoint_resumes_it(self):
+    def test_empty_playground_starts_the_tutor_and_a_saved_checkpoint_resumes_it(self):
         with tempfile.TemporaryDirectory() as temp:
             root = Path(temp)
             write(root / "evaluate.py", "")
@@ -63,15 +63,15 @@ class InventoryTests(unittest.TestCase):
             write(root / "evals/cases.jsonl", json.dumps({"id": "how-to", "expected": {}}) + "\n")
             write(root / "evals/spec.json", "{}\n")
             report = inventory.inspect(root)
-            self.assertEqual(report["recommendation"]["skill"], "course")
+            self.assertEqual(report["recommendation"]["skill"], "tutor")
             self.assertEqual(report["user_cases"], [])
             case_hash = sha(root / "evals/cases.jsonl")
             receipt(root, "eval-runs/expert-baseline", case_hash, {"PASS": 4, "FAIL": 4, "ERROR": 0, "UNKNOWN": 0})
-            write(root / "eval-runs/course/progress/state.json", json.dumps({
+            write(root / "eval-runs/tutor/progress/state.json", json.dumps({
                 "revision": 2, "stage": "02-distill-me", "completed": ["01-expert-mode"],
                 "next_action": "Ask which sentence was theirs."}))
             resumed = inventory.inspect(root)
-            self.assertEqual(resumed["recommendation"]["skill"], "course")
+            self.assertEqual(resumed["recommendation"]["skill"], "tutor")
             self.assertIn("02-distill-me", resumed["recommendation"]["why"])
 
     def test_contract_and_receipt_states_pick_one_skill(self):

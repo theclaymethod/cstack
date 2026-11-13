@@ -21,6 +21,6 @@ The inspector reads the working tree and skips `.git`, `.agents`, `.claude`, `.c
 | Adversarial set | An `eval-runs` directory named `case-build`, or JSON there with both `activation` and `outcome`. |
 | Ablation | An `eval-runs` directory named `ablation` or `simplification` containing `state.json`, `results.json`, or a `selected*` file. |
 | Model migration | JSON under `eval-runs` with `old_model` and `new_model`, or both the strings `old-fixture` and `new-fixture`. Incomplete when `complete` is false, `missing_cells` is non-empty, or neither `complete: true` nor a `selected`/`selection` field is present. |
-| Course | `eval-runs/course/progress/state.json`, or event files when the summary is missing. |
+| Tutor | `eval-runs/tutor/progress/state.json`, or event files when the summary is missing. |
 
 The playground's shipped spec, rubric, and core cases are the fixture. User work is anything in the table above that is not that shipped case file. `workspace_kind` is `cstack-checkout`, `canonical-playground` (no `.cstack-source.json`), `playground`, or `project`.

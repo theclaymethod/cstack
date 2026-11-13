@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Append-only progress for the CStack course. The tutor runs this; the learner decides."""
+"""Append-only progress for the CStack tutor. The tutor runs this; the learner decides."""
 
 import argparse
 import hashlib
@@ -31,7 +31,7 @@ ASSISTANCE = {"independent", "hinted", "worked"}
 
 
 def progress_dir(workspace):
-    return workspace / "eval-runs" / "course" / "progress"
+    return workspace / "eval-runs" / "tutor" / "progress"
 
 
 def events_dir(workspace):
@@ -87,7 +87,7 @@ def require_workspace(workspace):
     if not workspace.is_dir():
         raise SystemExit(f"Workspace does not exist: {workspace}")
     if (workspace / "exercises/01-expert-mode.md").is_file() and not materialized(workspace):
-        raise SystemExit("This is the canonical playground fixture. Materialize a workspace with scripts/new_workspace.py. Course progress is not written here.")
+        raise SystemExit("This is the canonical playground fixture. Materialize a workspace with scripts/new_workspace.py. Tutor progress is not written here.")
     return workspace
 
 
@@ -122,7 +122,7 @@ def journal(workspace):
 
 def notes(workspace):
     found = []
-    for relative in ("eval-runs/course/checkpoint-draft.json", "eval-runs/course/progress/manual-notes.md"):
+    for relative in ("eval-runs/tutor/checkpoint-draft.json", "eval-runs/tutor/progress/manual-notes.md"):
         if (workspace / relative).exists():
             found.append(relative)
     return found

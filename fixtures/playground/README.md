@@ -1,6 +1,6 @@
 # cstack playground fixture
 
-A reusable fixture inside cstack for trying the current skills against a small, deliberately imperfect project. The generated workspace copies every skill in the owning checkout, including help and course. The product is a deterministic Python support agent. Its bugs, requests, conversation excerpts, expected outcomes, and candidate examples are synthetic. There is no website or model-provider setup.
+A reusable fixture inside cstack for trying the current skills against a small, deliberately imperfect project. The generated workspace copies every skill in the owning checkout, including help and tutor. The product is a deterministic Python support agent. Its bugs, requests, conversation excerpts, expected outcomes, and candidate examples are synthetic. There is no website or model-provider setup.
 
 Use Python 3.11+ on macOS or Linux. The code uses the standard library; campaign commands use a Unix advisory lock. Candidate programs run with your local permissions. Only run code you authorize: subprocesses and timeouts are not a security sandbox.
 
@@ -53,7 +53,7 @@ This invokes the existing Expert Review and Cross-Examine calibration scripts, B
 
 ## Exercises
 
-`/course` walks exercises 01–13 in order. `/help` reads this workspace and names one next skill. The table below is the eleven product skills. Exercises 09 and 13 are part of the same curriculum.
+`/tutor` walks exercises 01–13 in order. `/help` reads this workspace and names one next skill. The table below is the eleven product skills. Exercises 09 and 13 are part of the same curriculum.
 
 | Skill | Exercise |
 | --- | --- |

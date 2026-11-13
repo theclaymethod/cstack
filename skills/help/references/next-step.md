@@ -4,16 +4,16 @@ Use the first matching row. Evidence paths come from the inventory. Do not add a
 
 | Order | When this is true | Skill | Why, in substance |
 | --- | --- | --- | --- |
-| 1 | The folder is a cstack checkout | course | The checkout is the pack. Historical `evals/` files are development evidence. Practice happens in a materialized playground. |
-| 2 | The folder is the canonical playground fixture | course | Materialize a disposable workspace, then teach there. Do not write course progress into the fixture source. |
+| 1 | The folder is a cstack checkout | tutor | The checkout is the pack. Historical `evals/` files are development evidence. Practice happens in a materialized playground. |
+| 2 | The folder is the canonical playground fixture | tutor | Materialize a disposable workspace, then teach there. Do not write tutor progress into the fixture source. |
 | 3 | A campaign is active and its contract still matches | hill-climb | Resume it. Pending attempts stay charged. |
 | 4 | A campaign is active but its contract files are not in this workspace | hill-climb | Reconcile identity before new trials. |
 | 5 | A campaign contract no longer matches the evaluator or cases | hill-climb | Preserve that directory and start a new campaign and baseline. |
 | 6 | The newest receipt is stale, incomplete, or has unknown outcomes | run-eval | Re-execute before trusting the score. Older stale receipts do not override a newer matching receipt. |
 | 7 | A ledger still has an open or unreviewed item | cross-examine | Finish that audit before a new optimization. |
 | 8 | Scenario cards are pending or deferred | bootstrap | Keep unreviewed cards out of authoring. |
-| 9 | Course progress exists and is not a finished handoff | course | Resume the saved exercise. A failing fixture baseline is expected during the course. |
-| 10 | A playground has no user work and no course journal | course | Start at exercise 01. |
+| 9 | Tutor progress exists and is not a finished handoff | tutor | Resume the saved exercise. A failing fixture baseline is expected during the tutor. |
+| 10 | A playground has no user work and no tutor journal | tutor | Start at exercise 01. |
 | 11 | Review records exist, none are replay-ready, and there are no user cases or receipts | expert-mode | Capture the missing input, output, or criterion. Do not invent the judgment. |
 | 12 | At least one replay-ready judgment and no user cases | create-eval | Author cases from those rows. Expectation approval is not an output label. |
 | 13 | User cases exist and nothing has been executed | run-eval | A case file is not a result. |
