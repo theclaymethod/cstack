@@ -23,6 +23,9 @@ flowchart TD
     A["Build hard cases<br/>/adversarial-cases"] -.-> B
     A -.-> X
     R --> H["Improve<br/>/hill-climb"] --> R
+    R --> CC["Improve target and judge<br/>/co-climb"]
+    CC --> H
+    CC --> J
     R --> L["Remove complexity<br/>/ablation"] --> R
     M["Upgrade a model"] --> BL["Retest prompts and context<br/>/bitter-lesson"] --> L
 ```
@@ -40,12 +43,15 @@ With good production traces, use LangChain's [eval-engineering](https://github.c
 | [cross-examine](skills/cross-examine/SKILL.md) | Reproduce scoring gaps and independently check repairs. |
 | [adversarial-cases](skills/adversarial-cases/SKILL.md) | Construct targeted inputs, failures, and controls. |
 | [hill-climb](skills/hill-climb/SKILL.md) | Improve a target within an eval budget. |
+| [co-climb](skills/co-climb/SKILL.md) | Alternate target improvements and judge calibration in frozen blocks. |
 | [ablation](skills/ablation/SKILL.md) | Remove complexity while preserving required performance. |
 | [bitter-lesson](skills/bitter-lesson/SKILL.md) | Retest inherited prompt complexity as models improve. |
 | [help](skills/help/SKILL.md) | Read the workspace and name the single next skill. |
 | [tutor](skills/tutor/SKILL.md) | Practice exercises 01–13 with evidence, one question, and a checkpoint. |
 
 Reviews [offer to retain useful corrections and labels](skills/expert-mode/references/calibration-capture.md) for later judge calibration. Saving a proposal does not confirm its label or activate Expert Mode.
+
+Use [Co-Climb](skills/co-climb/SKILL.md) when apparent target failures may be judge errors. Alternate target changes and judge calibration in separate blocks, re-score saved outputs after judge changes, and reserve a sealed final comparison.
 
 ## Name the validation
 
@@ -62,7 +68,7 @@ Untuned describes the target; the other rows describe evidence. Playground check
 
 ```bash
 npx skills add theclaymethod/cstack \
-  --skill expert-mode distill-me bootstrap create-eval run-eval cross-examine hill-climb adversarial-cases calibrate-judge ablation bitter-lesson help tutor \
+  --skill expert-mode distill-me bootstrap create-eval run-eval cross-examine hill-climb co-climb adversarial-cases calibrate-judge ablation bitter-lesson help tutor \
   -a codex -a claude-code -a cursor --copy
 ```
 

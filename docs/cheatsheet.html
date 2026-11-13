@@ -93,7 +93,7 @@
   }
   td {
     vertical-align: top;
-    padding: 8px 10px 8px 0;
+    padding: 6px 10px 6px 0;
     border-bottom: 1px solid #e4e4e0;
     font-size: 9.5pt;
     line-height: 1.32;
@@ -104,7 +104,7 @@
     font-size: 8.3pt;
     font-weight: 560;
     white-space: nowrap;
-    padding-top: 9px;
+    padding-top: 7px;
   }
   tr.meta td { background: #f7f7f5; }
   footer {
@@ -138,7 +138,7 @@
     <div class="label">Install</div>
     <pre>npx skills add theclaymethod/cstack \
   --skill expert-mode distill-me bootstrap create-eval run-eval cross-examine \
-  hill-climb adversarial-cases calibrate-judge ablation bitter-lesson help tutor \
+  hill-climb co-climb adversarial-cases calibrate-judge ablation bitter-lesson help tutor \
   -a codex -a claude-code -a cursor --copy</pre>
   </section>
 
@@ -181,6 +181,7 @@
       <tr><td class="skill">cross-examine</td><td>A pass or fail may be crediting the wrong outcome or rejecting a legitimate one.</td></tr>
       <tr><td class="skill">adversarial-cases</td><td>You need a small constructed challenge, fault, or control. Approval stays with the parent skill.</td></tr>
       <tr><td class="skill">hill-climb</td><td>A fixed evaluator shows failures and you may edit only the authorized target.</td></tr>
+      <tr><td class="skill">co-climb</td><td>Failures may come from the judge. Alternate target improvements and judge calibration, keeping one fixed while changing the other.</td></tr>
       <tr><td class="skill">ablation</td><td>The target meets the quality bar and you want to delete instructions, tools, or steps.</td></tr>
       <tr><td class="skill">bitter-lesson</td><td>A model change may make inherited prompt or scaffolding unnecessary. Removal still has to clear the old bar.</td></tr>
       <tr class="meta"><td class="skill">help</td><td>You are unsure which skill fits. It reads the files you already have and names one next step.</td></tr>

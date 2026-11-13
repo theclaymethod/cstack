@@ -92,3 +92,7 @@ Help is original cstack guidance. On invocation it inventories local eval artifa
 Tutor teaches `fixtures/playground/exercises` 01–13. Its teaching procedure is adapted from Clayton Kim's Aili Bootcamp tutor (`teaching/skill-evals` on the personal site): `learner/course/TUTOR.md`, `LESSONS.md`, `RECOVERY.md`, `EXAMPLE-CONVERSATIONS.md`, `WORKERS.md`, `learner/tools/workshop.py`, `FACILITATOR.md`, and `DESIGN.md`. That material was supplied as a context archive for this change; no upstream revision is recorded in this checkout.
 
 The adaptation keeps one-question turns, evidence beside claims, hints that point at evidence, append-only checkpoints, and a refusal to erase learner work. The hotel-analysis lesson, booking data, instructor reserve files, and the original workshop runner are not included. Playground progress stays in the learner's materialized workspace.
+
+## Co-Climb
+
+[Co-Climb](skills/co-climb/SKILL.md) was supplied by the owner on 2026-11-11 for inclusion in C Stack. Its entrypoint preserves that text with Markdown paste escapes removed. The [protocol](skills/co-climb/references/protocol.md) expands its execution steps and applies the existing Hill Climb, Calibrate Judge and calibration-capture boundaries. The [lessons reference](skills/co-climb/references/lessons.md) distinguishes supplied guidance from confirmed campaign evidence. No campaign measurements or empirical validation accompanied this addition; no runners, adapters or datasets are bundled with the skill.

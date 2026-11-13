@@ -5,11 +5,11 @@ Run the [Skills CLI](https://github.com/vercel-labs/skills) in the project where
 
 ```bash
 npx skills add theclaymethod/cstack \
-  --skill expert-mode distill-me bootstrap create-eval run-eval cross-examine hill-climb adversarial-cases calibrate-judge ablation bitter-lesson help tutor \
+  --skill expert-mode distill-me bootstrap create-eval run-eval cross-examine hill-climb co-climb adversarial-cases calibrate-judge ablation bitter-lesson help tutor \
   -a codex -a claude-code -a cursor --copy
 ```
 
-Keep the skill folders together because they link to each other's references. Start a new agent session after installation. In Codex, invoke `$expert-mode`, `$distill-me`, `$bootstrap`, `$create-eval`, `$run-eval`, `$cross-examine`, `$hill-climb`, `$adversarial-cases`, `$calibrate-judge`, `$ablation`, `$bitter-lesson`, `$help`, or `$tutor`. Direct skill installations in Claude Code and Cursor use the corresponding slash commands.
+Keep the skill folders together because they link to each other's references. Start a new agent session after installation. In Codex, invoke `$expert-mode`, `$distill-me`, `$bootstrap`, `$create-eval`, `$run-eval`, `$cross-examine`, `$hill-climb`, `$co-climb`, `$adversarial-cases`, `$calibrate-judge`, `$ablation`, `$bitter-lesson`, `$help`, or `$tutor`. Direct skill installations in Claude Code and Cursor use the corresponding slash commands.
 
 To install without Node, clone the repo and copy the skill folders into your agent's skill directory. For a Codex project, run:
 
@@ -23,6 +23,7 @@ cp -R /path/to/cstack/skills/expert-mode \
   /path/to/cstack/skills/run-eval \
   /path/to/cstack/skills/cross-examine \
   /path/to/cstack/skills/hill-climb \
+  /path/to/cstack/skills/co-climb \
   /path/to/cstack/skills/adversarial-cases \
   /path/to/cstack/skills/calibrate-judge \
   /path/to/cstack/skills/ablation \

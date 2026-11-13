@@ -18,6 +18,7 @@ PDF = ROOT / "cstack-cheatsheet.pdf"
 # Prefer the browser binary. A PATH wrapper may add a debugging port and then
 # stay running, which never finishes a print.
 BROWSERS = (
+    "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
     "/opt/google/chrome/chrome",
     "/usr/bin/google-chrome-stable",
     "/usr/bin/chromium",
