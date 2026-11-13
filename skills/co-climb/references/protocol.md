@@ -1,59 +1,45 @@
 # Co-climb protocol
 
-Use this alongside [Co-Climb](../SKILL.md). [Hill Climb's campaign contract](../../hill-climb/references/campaign.md) owns execution, budgets and recovery; [Calibrate Judge's protocol](../../calibrate-judge/references/protocol.md) owns fitting and label authority. Keep snapshots, runners, adapters and datasets in the project, not in the installed skill.
+Use [Hill Climb](../../hill-climb/references/campaign.md) for execution/recovery, [Calibrate Judge](../../calibrate-judge/references/protocol.md) for fitting/authority, and [block handoffs](search-prompts.md) for delegation.
 
-## Establish the boundary
+## Identity, authority and spend
 
-Record the owner's goal, editable target and judge components, their owners, original criterion meaning, metric direction and aggregation, regression constraints, budget and stopping rule. Preserve the original target and judge as recoverable snapshots.
+Record original goal/criteria, owners, editable paths, objective/direction/aggregation, regression constraints, branch cap, trial/seed/cache policy, total budget, confirmation reserve and stop rule. Snapshot/hash the original target, dependencies and judge bundle: model, rubric/prompt, evidence adapter, parser, thresholds, fallback, retries and cache. Unknown versions stay unknown. Each block freezes both snapshots; only its declared side may change between candidates.
 
-Identify the climb set, a fresh second set from another author or family, and a sealed final set. Keep dependent originals, repairs and derivatives in the same source family. Record exposure: the two working sets support adaptive selection, not unseen-performance claims. Do not inspect sealed outputs, labels or findings during development.
+Group originals/repairs/derivatives by source family. Separate climb, fresh-family working, and sealed final sets. Working sets are adaptive evidence, not unseen validation. Exclude sealed inputs/results/labels from development.
 
-Record content/configuration hashes for the target and the entire judge bundle: model, rubric, prompt, evidence adapter, parser, thresholds, fallback and retry/cache settings. State unavailable versions rather than guessing them. A block begins from frozen snapshots of both. Evaluate frozen candidates; only the declared side may change between candidates. Never silently replace the bundle that produced a score.
+Reserve full spend before attempts: generation, proposer/tool work, in-loop and final judging, retries, controls, regrading, replication and confirmation. Preserve partial/error attempts and unknown costs. Resume from matching snapshots and reconciled receipts, not re-execution or duplicate charging. Changed contracts start a new campaign. Stop without spending the final reserve on another branch.
 
-Budget target calls and all judge calls, including generation-loop judgments, controls, re-judging, repetitions and final confirmation. Reserve final work before searching. Preserve partial attempts, errors and unknown costs.
+## Evidence and triage
 
-## Check evidence parity
+Compare actual target input with actual judge payload: values, units, ranges, statuses, demographics, free-text qualifiers, nulls and transformations. An adapter summary is insufficient. Supply the same permitted task record, not hidden reasoning, gold, annotation rationales or label-bearing metadata. Repair/version an evidence omission before rewarding a target for omitting the affected claim.
 
-Compare the actual target input with the actual judge payload on representative records before interpreting scores. Check values, units, ranges, statuses, demographics and free-text qualifiers, including null, omitted and transformed fields. An adapter summary is not evidence that every relevant field survived.
+Review major findings and abstentions; scan passed outputs for the same defects. Deterministically check a claimed cluster against source records before bulk labeling. Classify target error, judge gap, false positive, evidence mismatch or uncertain. Define each row's condition; condition-present does not automatically mean product PASS. Confirmed defects supply condition-present rows and false positives condition-absent rows. Keep exact record/output, criterion, bundle, finding and adjudication authority.
 
-Give the judge the same permitted task record, not the target's hidden reasoning or calibration labels. Keep outcome labels, annotation rationales and label-bearing metadata outside runtime payloads. If a missing field explains a disagreement, classify it as evidence mismatch and fix/version the judge adapter before optimizing the target around the omission.
+Model/deterministic findings are not human gold. Exclude uncertain rows from fitting and ask the owner/expert concrete questions while continuing confirmed work. [Calibration capture](../../expert-mode/references/calibration-capture.md) separates retention consent from label authority. Retract invalid rows without erasing the amendment history.
 
-## Target block
+## Target search
 
-1. Freeze the judge bundle, case membership, metric and trial policy. Run at least two identical controls on each working set. Preserve per-case outputs and judgments, not just aggregates.
-2. Declare how the control spread is computed in the chosen metric. With two scalar control scores, the observed range is a simple spread. This is an empirical noise floor, not a confidence interval or evidence of statistical significance.
-3. Change only the target. Execute it on both working sets under the same judge; saved-output regrading cannot measure a target change.
-4. Retain a candidate only if its improvement exceeds the control spread on both sets and satisfies the original constraints. A tie or loss on either set makes the overall result a tie. Preserve regressions and errors in the comparison.
-5. Replicate a retained candidate before making it the next base. Stop as inconclusive if repetitions or budget cannot separate it from controls. Keep the original baseline for final confirmation.
+Freeze judge, cases and trial policy. Execute at least two identical controls on each working set; predeclare the spread calculation. Two scalar controls can supply an observed range, not a confidence interval or statistical significance.
 
-Pool only observations from the same judge build and comparable trial policy. Do not compare a new-judge score directly with an old-judge score.
+Snapshot candidate parents, hypotheses and nearby regressions. Execute changed targets natively on both sets; old-output regrading cannot test changes. Keep per-case outputs/judgments/errors/costs. Isolate writes and test merges anew.
 
-## Triage and calibration
+Retain complementary branches under a declared family/objective policy and archive cap; protect costly errors and original constraints before aggregate gains. Retention is not promotion. Partial screens nominate further experiments only. Promote only when improvement exceeds control spread on both sets, satisfies constraints and replicates. A tie/loss on either set or insufficient repetitions means no confirmed gain. Keep the original baseline and record dead ends.
 
-Review every major finding and abstention. Scan passed outputs for the same defect classes. Assign each item one of: target error, judge gap, judge false positive, evidence mismatch or uncertain. Validate a proposed cluster against the source records with a deterministic scan before producing calibration rows in bulk.
+## Judge search and reconciliation
 
-Define the condition named by each calibration row explicitly; condition-present is not automatically a product PASS. Confirmed target errors and judge gaps supply condition-present examples; confirmed false positives supply condition-absent examples. Preserve the original record, exact output, criterion, judge version, finding and adjudication authority.
+Freeze target and saved-output corpus. Search only authorized judge components and confirmed calibration rows. Narrow criterion changes need confirmed evidence, a parity repair or owner instruction; semantic changes need owner adjudication. Diff every rebuild against the original rubric and trace each loosening to its cause.
 
-Agent or deterministic findings keep that provenance; they do not become human gold. Uncertain items stay outside fitting and go to the owner or domain expert as concrete questions with answer options. Use the existing [calibration capture guide](../../expert-mode/references/calibration-capture.md) for retention consent and label authority. Retract invalid rows from active fitting while retaining the amendment and reason.
+Select by authoritative-label agreement, costly class errors and coverage, never by target success score. Multiple judge configurations may remain alternatives, but each target comparison uses one exact frozen evaluator. Do not cherry-pick judges per target. An ensemble is a new bundle needing calibration and budget. Without policy or comparative evidence, leave the selection unresolved.
 
-## Judge block
+Version the rebuilt bundle and re-judge the identical saved corpus, including baseline, controls and all archived candidates. Invalidate old rankings. Re-measure both sets under the new judge; revoke promotions that no longer separate from controls. Restore an admissible base only within the authorized snapshot, preserving unrelated edits. Such branches may remain exploratory within budget, but old wins cannot justify selection.
 
-Freeze the target and saved output corpus. Change only the authorized judge components and calibration data. Narrow changes must trace to confirmed cases, an evidence fix or owner instruction. Changes to criterion meaning need owner adjudication; an easier scoring rule is not a target improvement.
+Plant known defects and include legitimate controls after rebuilds. Check detection and the target loop's actual repair with before/after outputs; blanket rejection is not success. Label injections synthetic and keep them out of final evidence.
 
-Before each rebuild, diff the criteria against the original judge, not only the previous revision. Trace every loosening to its evidence or decision. Version the complete rebuilt bundle and re-judge the same saved outputs, including controls and retained candidates, to isolate the scoring change.
+Saved-output regrading isolates scoring only. A changed in-loop judge needs fresh target execution before an end-to-end claim. When final failures follow clean in-loop judgments, first match output identity, criterion, payload and bundle, then repeat frozen judgments to measure instability. Counts alone do not prove noise. Test extra passes or consensus gating rather than assuming they fix it.
 
-Re-measure every retained target change under the new judge on both working sets. If it no longer separates from controls, drop/revert it within the authorized target snapshot and record why. Do not overwrite unrelated live edits. If the judge also participates in generation, saved-output re-judging isolates scoring only: fresh target execution under the new in-loop judge is needed before claiming end-to-end improvement.
+## Final handoff
 
-After rebuilding, inject known defects into finished outputs. Check both detection and the target loop's actual repair, preserving before/after outputs and judgments. Include legitimate controls so blanket rejection cannot pass this check. Keep synthetic injections labeled as such and out of the sealed set.
+Freeze the final target, judge and evaluation plan before opening sealed evidence. Execute selected target and original baseline once each under the final judge; complete all planned outputs/predictions before opening labels. Record consumption. Further tuning needs new evidence for an unseen-final claim.
 
-## In-loop versus final disagreement
-
-Count final failures whose last in-loop judgment was clean. Use this as a diagnostic for final-judgment noise, not proof from the count alone. First verify identical output identity, criterion, evidence payload and judge bundle at the two stages; then re-judge frozen outputs to measure instability. A parity gap, systematic missed defect or changed output needs its own repair.
-
-Do not assume more passes or consensus gating fixes disagreement. Report what the repeated measurements support and whether any proposed gating change was actually tested.
-
-## Final confirmation and handoff
-
-Freeze the final target, judge and evaluation plan before opening the sealed set. Run the selected target and original baseline once each on that set under the final judge. Complete the planned outputs and predictions before opening any held-out labels. Record the sealed set as consumed; do not use its failures for another tuning pass while retaining an unseen-final claim.
-
-Deliver the decision ledger, retained/dropped target changes and replication evidence, judge changelog, calibration rows and retractions, per-output cost/latency, open expert questions and limits. Every number must identify its judge version and evidence source. Separate synthetic, agent-derived and human-reviewed evidence. A one-shot sealed comparison does not by itself establish statistical significance or production readiness.
+Deliver branch receipts/decisions, retained/dropped edits, replication, judge changelog, calibration amendments, latency/cost, questions and limits. Name judge/version and synthetic/model/human source per number. One-shot results do not prove significance or readiness.

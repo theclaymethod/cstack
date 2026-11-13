@@ -1,0 +1,14 @@
+test_answer_keys_and_label_metadata_stay_out_of_prepared_inputs (test_evaluate.DecisionEvalTests.test_answer_keys_and_label_metadata_stay_out_of_prepared_inputs) ... ok
+test_cli_reports_actual_denominator_and_exits_nonzero_for_incomplete_run (test_evaluate.DecisionEvalTests.test_cli_reports_actual_denominator_and_exits_nonzero_for_incomplete_run) ... ok
+test_duplicate_json_fields_cannot_overwrite_bad_decisions (test_evaluate.DecisionEvalTests.test_duplicate_json_fields_cannot_overwrite_bad_decisions) ... ok
+test_every_bad_action_is_rejected_even_with_all_good_actions (test_evaluate.DecisionEvalTests.test_every_bad_action_is_rejected_even_with_all_good_actions) ... ok
+test_legitimate_controls_and_exploratory_alternative (test_evaluate.DecisionEvalTests.test_legitimate_controls_and_exploratory_alternative) ... ok
+test_missing_duplicate_unknown_and_malformed_answers (test_evaluate.DecisionEvalTests.test_missing_duplicate_unknown_and_malformed_answers) ... ok
+test_premature_promotion_and_greedy_archive_fail (test_evaluate.DecisionEvalTests.test_premature_promotion_and_greedy_archive_fail) ... ok
+test_repair_must_precede_regrade (test_evaluate.DecisionEvalTests.test_repair_must_precede_regrade) ... ok
+test_required_actions_cannot_be_omitted (test_evaluate.DecisionEvalTests.test_required_actions_cannot_be_omitted) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.057s
+
+OK
