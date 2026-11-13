@@ -51,7 +51,7 @@ With good production traces, use LangChain's [eval-engineering](https://github.c
 
 Reviews [offer to retain useful corrections and labels](skills/expert-mode/references/calibration-capture.md) for later judge calibration. Saving a proposal does not confirm its label or activate Expert Mode.
 
-Use [Co-Climb](skills/co-climb/SKILL.md) when apparent target failures may be judge errors. Alternate target changes and judge calibration in separate blocks, re-score saved outputs after judge changes, and reserve a sealed final comparison.
+Use [Co-Climb](skills/co-climb/SKILL.md) when apparent target failures may be judge errors. Keep multiple promising branches within a budget, alternate target changes and judge calibration in separate blocks, and re-score saved outputs after judge changes. Exploratory retention is separate from confirmed promotion. Reserve a sealed final comparison. The [co-climb decision eval](evals/co-climb/README.md) covers branch selection, evidence boundaries and judge handoffs.
 
 ## Name the validation
 

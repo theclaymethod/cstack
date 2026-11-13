@@ -23,8 +23,10 @@ Give the judge the same permitted task record, not the target's hidden reasoning
 1. Freeze the judge bundle, case membership, metric and trial policy. Run at least two identical controls on each working set. Preserve per-case outputs and judgments, not just aggregates.
 2. Declare how the control spread is computed in the chosen metric. With two scalar control scores, the observed range is a simple spread. This is an empirical noise floor, not a confidence interval or evidence of statistical significance.
 3. Change only the target. Execute it on both working sets under the same judge; saved-output regrading cannot measure a target change.
-4. Retain a candidate only if its improvement exceeds the control spread on both sets and satisfies the original constraints. A tie or loss on either set makes the overall result a tie. Preserve regressions and errors in the comparison.
-5. Replicate a retained candidate before making it the next base. Stop as inconclusive if repetitions or budget cannot separate it from controls. Keep the original baseline for final confirmation.
+4. Promote a candidate only if its improvement exceeds the control spread on both sets and satisfies the original constraints. A tie or loss on either set makes the overall result a tie. Preserve regressions and errors in the comparison.
+5. Replicate a promotion candidate before making it the next base. Stop as inconclusive if repetitions or budget cannot separate it from controls. Keep the original baseline for final confirmation.
+
+Before each block, use the [handoff prompts](search-prompts.md) to record the active side, immutable evidence and allowed output. Bound the archive size and expansion count. Record parentage and mechanisms, including unsuccessful branches. Partial screens may allocate remaining search budget but cannot confirm a candidate. Retain a tradeoff as exploratory only under the declared family/objective and regression policy; no improvement is established until the promotion gate above passes. Keep several hypotheses when evidence and budget support them, not a fixed quota.
 
 Pool only observations from the same judge build and comparable trial policy. Do not compare a new-judge score directly with an old-judge score.
 
@@ -40,9 +42,11 @@ Agent or deterministic findings keep that provenance; they do not become human g
 
 Freeze the target and saved output corpus. Change only the authorized judge components and calibration data. Narrow changes must trace to confirmed cases, an evidence fix or owner instruction. Changes to criterion meaning need owner adjudication; an easier scoring rule is not a target improvement.
 
+Search judge variants against adjudicated-label agreement, costly class errors and coverage, never the target's product score. Keep complementary judge configurations as alternatives if the policy permits, but select one exact frozen evaluator per target comparison. Do not let candidates choose the judge that scores them best. An ensemble is a new evaluator bundle with its own calibration and budget, not a way to pool incompatible scores.
+
 Before each rebuild, diff the criteria against the original judge, not only the previous revision. Trace every loosening to its evidence or decision. Version the complete rebuilt bundle and re-judge the same saved outputs, including controls and retained candidates, to isolate the scoring change.
 
-Re-measure every retained target change under the new judge on both working sets. If it no longer separates from controls, drop/revert it within the authorized target snapshot and record why. Do not overwrite unrelated live edits. If the judge also participates in generation, saved-output re-judging isolates scoring only: fresh target execution under the new in-loop judge is needed before claiming end-to-end improvement.
+Re-measure every retained target change under the new judge on both working sets. If it no longer separates from controls, revoke promotion and restore the previous admissible base within the authorized target snapshot. Mark old ranks stale. A branch can remain exploratory under the archive cap, but its old win cannot authorize selection. Record pruning, retention and rollback reasons. Do not overwrite unrelated live edits. If the judge also participates in generation, saved-output re-judging isolates scoring only: fresh target execution under the new in-loop judge is needed before claiming end-to-end improvement.
 
 After rebuilding, inject known defects into finished outputs. Check both detection and the target loop's actual repair, preserving before/after outputs and judgments. Include legitimate controls so blanket rejection cannot pass this check. Keep synthetic injections labeled as such and out of the sealed set.
 
