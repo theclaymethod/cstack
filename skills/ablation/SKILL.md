@@ -25,4 +25,6 @@ Freeze the chosen combined candidate before confirmation. Adaptive validation re
 
 Deliver the artifact/diff, original identity, tested combinations, outcomes/regressions, burden/costs, uncertainty and stopping reason. Report the smallest confirmed candidate found within budget; claim local minimality only for an actually completed declared sweep, never a global minimum from a budget stop.
 
+Before making a removal permanent, explain what each removed component used to do, what happened without it, and which cases remain uncertain. Ask the user which removals to keep and wait for explicit approval. Recheck any newly selected combination against the original baseline.
+
 Offer [calibration capture](../expert-mode/references/calibration-capture.md) for corrections or user-confirmed labels during the campaign.

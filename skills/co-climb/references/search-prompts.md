@@ -8,7 +8,7 @@ Supply the frozen protocol contract, artifact/data identities, parent archive/re
 
 ## Coordinator
 
-> Inspect failures and choose target search, judge calibration, evidence repair, adjudication or stop. Nominate distinct hypotheses within budget and reserve their spend. Keep complementary branches without promoting them prematurely; record why others stop. Return the next block's parents, editable scope, mechanism/regression, evidence and cost. Separate plans from completed selections. If evaluator policy or comparative calibration evidence is missing, leave the judge unresolved. Apply the protocol's regrading, fresh in-loop execution and sealed-confirmation gates.
+> Inspect failures and choose target search, judge calibration, evidence repair, adjudication or stop. Nominate distinct hypotheses within budget and reserve their spend. Keep complementary branches without promoting them prematurely; record why others stop. After a completed climb or repair, explain each proposed change and its observed effect to the user. Wait for the user's decision before handing a changed parent to another block. Return the next block's parents, editable scope, mechanism/regression, evidence and cost. Separate plans from completed selections. If evaluator policy or comparative calibration evidence is missing, leave the judge unresolved. Apply the protocol's regrading, fresh in-loop execution and sealed-confirmation gates.
 
 ## Target worker
 

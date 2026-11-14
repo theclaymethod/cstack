@@ -15,7 +15,7 @@ The reviewer must be fresh/non-forked and separate from authors, attackers, repa
 
 ## Bounded attacks
 
-Map actual candidate access, scoring, reset and a legitimate baseline. Bound attack/repair work. Attackers work in separate resettable scratch states with independent initial hypotheses; the defender owns canonical repairs and may be the coordinator. Disclose unavailable separation, serializing writes when necessary.
+Map actual candidate access, scoring, reset and a legitimate baseline. Bound attack/repair work. Attackers work in separate resettable scratch states with independent initial hypotheses; the defender owns the candidate repair and may be the coordinator. Disclose unavailable separation, serializing writes when necessary.
 
 Ask for the cheapest reproducible undeserved pass or environment/verifier defect, including violated intent, actual permissions, reproducer/scoring command and independently observed outcome. Use [Adversarial Cases](../adversarial-cases/SKILL.md) for construction; it returns witnesses/controls, not adjudication. [Synthetic methods](../adversarial-cases/references/synthetic-methods.md) and [failure methods](../adversarial-cases/references/failure-methods.md) support project-local experiments.
 
@@ -27,6 +27,8 @@ Replay from clean state on the frozen scoring path, preserving versions, raw obs
 
 Repair only within authority while preserving original intent/judgment; changed meaning needs a contract decision. Verification must be observational and compare complete required state, including permitted alternatives. Replay the exploit and legitimate baselines; reject blanket rejection or reference-only acceptance. Require independent intent acceptance before calling a repair validated. Review-only work returns a proposed fix; incomplete checks remain unresolved.
 
-For each confirmed root cause, update the generator's existing skill/reference, or this skill's lessons: faulty assumption, divergence, generation rule and reproducer/version. Keep conjectures in the ledger. Record original/repaired outcomes, legitimate checks, independent verdict, lesson-write failures and remaining limits. Claim only demonstrated prevention/coverage; further rounds require remaining or renewed budget.
+For each confirmed root cause, propose an update to the generator's existing skill/reference, or this skill's lessons: faulty assumption, divergence, generation rule and reproducer/version. Keep conjectures in the ledger. Record original/repaired outcomes, legitimate checks, independent verdict, lesson-write failures and remaining limits. Claim only demonstrated prevention/coverage; further rounds require remaining or renewed budget.
+
+Before adopting any repair or lesson, show the user what each change does: which case fooled the old grader, how the proposed rule judges it, and what happened to a legitimate alternative on replay. Flag untested behavior. Ask which changes to keep and wait for explicit approval. Independent intent review validates a candidate; only the user authorizes adoption. Keep pending or declined edits out of the active grader, evals and skills. If there is no change to adopt, report the findings.
 
 After corrections or confirmed labels, offer [scoped calibration capture](../expert-mode/references/calibration-capture.md); agent verdicts retain their own authority.
