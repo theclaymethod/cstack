@@ -1,4 +1,9 @@
-# cstack
+<h1>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="docs/brand/cstack-dark.svg">
+    <img src="docs/brand/cstack-light.svg" width="280" alt="CSTACK">
+  </picture>
+</h1>
 
 Skills for eval-driven development. Turn expert judgment into evals, improve your agent against them, and simplify what no longer helps.
 
