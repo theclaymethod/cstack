@@ -28,3 +28,5 @@ Deliver the artifact/diff, original identity, tested combinations, outcomes/regr
 Before making a removal permanent, explain what each removed component used to do, what happened without it, and which cases remain uncertain. Ask the user which removals to keep and wait for explicit approval. Recheck any newly selected combination against the original baseline.
 
 Offer [calibration capture](../expert-mode/references/calibration-capture.md) for corrections or user-confirmed labels during the campaign.
+
+At an automated change checkpoint, offer review now, continue to the agreed stop, or continue for N more rounds. Follow the [change review](../hill-climb/references/change-review.md) rules for inherited cadence and uncommitted experiments. Obtain explicit user acceptance of the proposed changes before any Git commit, including local or worker commits.

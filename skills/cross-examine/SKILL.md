@@ -32,3 +32,5 @@ For each confirmed root cause, propose an update to the generator's existing ski
 Before adopting any repair or lesson, show the user what each change does: which case fooled the old grader, how the proposed rule judges it, and what happened to a legitimate alternative on replay. Flag untested behavior. Ask which changes to keep and wait for explicit approval. Independent intent review validates a candidate; only the user authorizes adoption. Keep pending or declined edits out of the active grader, evals and skills. If there is no change to adopt, report the findings.
 
 After corrections or confirmed labels, offer [scoped calibration capture](../expert-mode/references/calibration-capture.md); agent verdicts retain their own authority.
+
+At an automated change checkpoint, offer review now, continue to the agreed stop, or continue for N more rounds. Follow the [change review](../hill-climb/references/change-review.md) rules for inherited cadence and uncommitted experiments. Obtain explicit user acceptance of the proposed changes before any Git commit, including local or worker commits.

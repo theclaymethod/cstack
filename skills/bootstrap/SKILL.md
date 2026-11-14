@@ -32,3 +32,5 @@ Before completion, run legitimate, failing, boundary and alternative controls th
 Offer bounded Cross-Examine after reviewable evidence; run it when already requested. Bring any proposed repairs back to the user for a behavior-level decision before incorporating them into the approved package. Report package/command, approved/pending counts, covered intent and execution/calibration gaps. Authoring grants no additional publication, product-change or paid-campaign authority.
 
 At decision checkpoints, offer [calibration capture](../expert-mode/references/calibration-capture.md); expectation approval remains distinct from output labeling.
+
+At an automated change checkpoint, offer review now, continue to the agreed stop, or continue for N more rounds. Follow the [change review](../hill-climb/references/change-review.md) rules for inherited cadence and uncommitted experiments. Obtain explicit user acceptance of the proposed changes before any Git commit, including local or worker commits.

@@ -24,3 +24,5 @@ Freeze model/version, prompt/context assembly, tools, settings, parser and fallb
 Before adopting a simplified bundle, tell the user what each removal changes in practice, show a tested example and any regressions, and wait for explicit approval of that bundle. For authorized rollout, use the project's shadow/canary controls and rollback the complete bundle; otherwise prepare the handoff without deploying. Re-evaluate after relevant model, context, tool, distribution or evaluator changes.
 
 Offer [calibration capture](../expert-mode/references/calibration-capture.md) for corrections or user-confirmed labels surfaced during comparisons.
+
+At an automated change checkpoint, offer review now, continue to the agreed stop, or continue for N more rounds. Follow the [change review](../hill-climb/references/change-review.md) rules for inherited cadence and uncommitted experiments. Obtain explicit user acceptance of the proposed changes before any Git commit, including local or worker commits.
