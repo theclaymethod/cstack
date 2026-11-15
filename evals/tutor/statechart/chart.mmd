@@ -25,8 +25,16 @@ stateDiagram-v2
     s15: Active
     s16: Paused
   }
-  state "Finished" as s17 {
+  state "Choose next skill" as s17 {
     s18: Active
+    s19: Paused
+  }
+  state "Discuss workflow" as s20 {
+    s21: Active
+    s22: Paused
+  }
+  state "Finished" as s23 {
+    s24: Active
   }
   [*] --> s1
   s1 --> s4: Next
@@ -48,5 +56,14 @@ stateDiagram-v2
   s15 --> s12: Next
   s15 --> s7: Next
   s15 --> s16: Pause
+  s18 --> s21: Next
+  s18 --> s24: Next
+  s18 --> s7: Next
+  s18 --> s19: Pause
   s13 --> s12: Pause
+  s21 --> s18: Next
+  s21 --> s7: Next
+  s21 --> s22: Pause
   s16 --> s15: Pause
+  s19 --> s18: Pause
+  s22 --> s21: Pause

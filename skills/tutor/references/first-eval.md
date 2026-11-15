@@ -1,6 +1,6 @@
 # Choose a behavior and check it
 
-The learner leaves with one approved scenario linked to a runnable case and can explain a verdict from a trace. Allow 45–55 minutes including a retry. The learner chooses the behavior; the tutor handles commands, case syntax, and receipts.
+Start from a feature promise: “Support can explain how to connect or open a ticket when asked.” The learner needs no prior runs, traces or implementation. Supply this example if they have no project ready. Their first trace will come from the exercise. With an unbuilt product, label the checked result as a playground demonstration and keep their own product execution marked unrun. Allow 45–55 minutes including a retry. The learner chooses the behavior; the tutor handles commands, case syntax, and receipts.
 
 ## Choose the slice · 5 minutes
 
@@ -33,6 +33,12 @@ Make a fresh development case under the approved guidance scenario: “Where can
 
 If the learner needs help, point to the before/after ticket count. If they want the answer, explain it and record that attempt as worked. For a fresh independent attempt change the request to “Please create a ticket for this VPN outage” under the approved explicit-action scenario. Both worked and hinted attempts need fresh evidence before counting as independent. If time runs out, preserve partial progress.
 
+## Choose the next workflow · 5 minutes
+
+Teach the choices first. Use /bootstrap when the expected behavior is still open, /cross-examine when a grader might accept a wrong result, and /hill-climb when the check is trusted and the agent fails it. Keep this three-choice key visible. Work one example: if nobody has decided what to do for two matching accounts, use /bootstrap to settle that boundary.
+
+Now give a fresh situation: “The response says a ticket was opened. The grader passes it. The ticket list is empty.” Ask which workflow they would use and what evidence led them there. Wait. Look for challenging the grader that accepted the unsupported claim. Accept the reasoning in ordinary language. If they need a hint or the worked answer, use a different situation for the independent retry: “The grader correctly flags an unwanted ticket on each run. You have approval to improve the agent against this fixed suite.” Look for /hill-climb. Record their choice and reason; running a second workflow is outside this sitting.
+
 ## Finish or resume · 5 minutes
 
-After a decision, update progress.md beside the index with the chosen suite, scenario revisions, cases seen, learner's own words, assistance level, receipt paths, and the exact pending question. On resume inspect the referenced evidence and ask that question. Finish when the learner has approved a scenario, run a real check with the tutor, and independently explained a fresh verdict. Leave them the index and receipt that support their conclusion.
+After a decision, update progress.md beside the index with the chosen suite, scenario revisions, cases seen, learner's own words, assistance level, receipt paths, and the exact pending question. On resume inspect the referenced evidence and ask that question. Finish when the learner has approved a scenario, run a real check with the tutor, independently explained a fresh verdict, and then independently selected a suitable next workflow with a reason. Leave them the index and receipt that support their conclusion.

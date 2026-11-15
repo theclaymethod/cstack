@@ -15,13 +15,19 @@ Help == /\ phase = "Read fresh trace" /\ phase' = "Discuss attempt"
 Fresh == /\ phase = "Discuss attempt" /\ phase' = "Read fresh trace"
          /\ UNCHANGED <<scope,approved,checked,independent>>
 Explain == /\ phase = "Read fresh trace" /\ checked /\ independent' = TRUE
-           /\ phase' = "Finished" /\ UNCHANGED <<scope,approved,checked>>
+           /\ phase' = "Choose next skill" /\ UNCHANGED <<scope,approved,checked>>
+Choose == /\ phase = "Choose next skill" /\ independent /\ phase' = "Finished"
+          /\ UNCHANGED <<scope,approved,checked,independent>>
+Coach == /\ phase = "Choose next skill" /\ phase' = "Discuss workflow"
+         /\ UNCHANGED <<scope,approved,checked,independent>>
+Retry == /\ phase = "Discuss workflow" /\ phase' = "Choose next skill"
+         /\ UNCHANGED <<scope,approved,checked,independent>>
 Active == phase \notin {"Finished","Partial"}
 TimeUp == /\ Active /\ phase' = "Partial" /\ UNCHANGED <<scope,approved,checked,independent>>
 Pause == /\ Active /\ paused' = ~paused /\ UNCHANGED <<phase,scope,approved,checked,independent>>
 Done == /\ ~Active /\ UNCHANGED v
-Next == (~paused /\ UNCHANGED paused /\ (Select \/ Approve \/ Run \/ Help \/ Fresh \/ Explain \/ TimeUp)) \/ Pause \/ Done
+Next == (~paused /\ UNCHANGED paused /\ (Select \/ Approve \/ Run \/ Help \/ Fresh \/ Explain \/ Choose \/ Coach \/ Retry \/ TimeUp)) \/ Pause \/ Done
 ApprovalFirst == checked => approved
 SupportedFinish == phase = "Finished" => approved /\ checked /\ independent
-HonestPartial == phase = "Partial" => ~independent
+WorkflowAfterEval == phase \in {"Choose next skill","Discuss workflow","Finished"} => independent
 ====
