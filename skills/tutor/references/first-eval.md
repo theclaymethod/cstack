@@ -42,3 +42,13 @@ Now give a fresh situation: “The response says a ticket was opened. The grader
 ## Finish or resume · 5 minutes
 
 After a decision, update progress.md beside the index with the chosen suite, scenario revisions, cases seen, learner's own words, assistance level, receipt paths, and the exact pending question. On resume inspect the referenced evidence and ask that question. Finish when the learner has approved a scenario, run a real check with the tutor, independently explained a fresh verdict, and then independently selected a suitable next workflow with a reason. Leave them the index and receipt that support their conclusion.
+
+At the first sitting’s handoff, tell the learner what to bring back: one real request where the product did something they would change, and the evidence showing what happened. They can finish this sitting before their product has any traces.
+
+## Review a real failure
+
+On a return visit, show one actual request beside its observed outcome. Ask “What should have happened here?” Wait for the learner’s judgment. Find the closest approved scenario in SCENARIOS.md and inspect what its grader checks. If possible, replay the observed failure against that check.
+
+For example, suppose a trace shows a second open ticket for the same outage. If the suite only covers opening a first ticket, propose a case that starts with an open ticket and checks the resulting ticket count. If the existing duplicate-ticket case already catches the failure, link the trace to that case and investigate the agent. If that case passes despite the duplicate, inspect the grader. This is a worked example; use the learner’s trace for the actual decision.
+
+For several failures, group those with the same underlying behavior. Ask which gap matters most, using impact and recurrence where the traces support them. Record the chosen failure, trace reference, and coverage decision in the index. Derive a regression case from the approved expectation and run it against the failing behavior. If replay is unavailable, record what still needs checking.
