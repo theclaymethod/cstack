@@ -1,0 +1,52 @@
+---
+title: "CStack first sitting"
+---
+stateDiagram-v2
+  state "Choose workflow" as s0 {
+    s1: Active
+    s2: Paused
+  }
+  state "Review scenario" as s3 {
+    s4: Active
+    s5: Paused
+  }
+  state "Partial" as s6 {
+    s7: Active
+  }
+  state "Run case" as s8 {
+    s9: Active
+    s10: Paused
+  }
+  state "Read fresh trace" as s11 {
+    s12: Active
+    s13: Paused
+  }
+  state "Discuss attempt" as s14 {
+    s15: Active
+    s16: Paused
+  }
+  state "Finished" as s17 {
+    s18: Active
+  }
+  [*] --> s1
+  s1 --> s4: Next
+  s1 --> s7: Next
+  s1 --> s2: Pause
+  s4 --> s7: Next
+  s4 --> s9: Next
+  s4 --> s5: Pause
+  s2 --> s1: Pause
+  s9 --> s7: Next
+  s9 --> s10: Pause
+  s9 --> s12: Next
+  s5 --> s4: Pause
+  s10 --> s9: Pause
+  s12 --> s15: Next
+  s12 --> s7: Next
+  s12 --> s18: Next
+  s12 --> s13: Pause
+  s15 --> s12: Next
+  s15 --> s7: Next
+  s15 --> s16: Pause
+  s13 --> s12: Pause
+  s16 --> s15: Pause

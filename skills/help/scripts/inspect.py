@@ -391,7 +391,7 @@ def recommendation(kind, found):
         action = tutor.get("next_action") or "Resume from the saved checkpoint."
         return answer("tutor", f"Tutor progress is at {stage}. {action}", [tutor.get("path")])
     if kind == "playground" and not found["user_work"]:
-        return answer("tutor", "This playground has the shipped fixture and no saved exercise work. The tutor walks exercises 01–13.", ["exercises/01-expert-mode.md"])
+        return answer("tutor", "This playground has the shipped fixture and no saved exercise work. Start the short course, or ask for the full playground.", ["exercises/01-expert-mode.md"])
     if found["records"] and found["replay_ready"] == 0 and not found["user_cases"] and not found["receipts"]:
         return answer("expert-mode", f"Review records at {found['records'][0]} have no row that ties an explicit judgment to an input, an output, and a criterion.", [found["records"][0]])
     if found["replay_ready"] and not found["user_cases"]:

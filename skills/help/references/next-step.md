@@ -13,7 +13,7 @@ Use the first matching row. Evidence paths come from the inventory. Do not add a
 | 7 | A ledger still has an open or unreviewed item | cross-examine | Finish that audit before a new optimization. |
 | 8 | Scenario cards are pending or deferred | bootstrap | Keep unreviewed cards out of authoring. |
 | 9 | Tutor progress exists and is not a finished handoff | tutor | Resume the saved exercise. A failing fixture baseline is expected during the tutor. |
-| 10 | A playground has no user work and no tutor journal | tutor | Start at exercise 01. |
+| 10 | A playground has no user work and no tutor journal | tutor | Start the short course or request the full playground. |
 | 11 | Review records exist, none are replay-ready, and there are no user cases or receipts | expert-mode | Capture the missing input, output, or criterion. Do not invent the judgment. |
 | 12 | At least one replay-ready judgment and no user cases | create-eval | Author cases from those rows. Expectation approval is not an output label. |
 | 13 | User cases exist and nothing has been executed | run-eval | A case file is not a result. |

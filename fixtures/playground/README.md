@@ -53,7 +53,7 @@ This invokes the existing Expert Review and Cross-Examine calibration scripts, B
 
 ## Exercises
 
-`/tutor` walks exercises 01–13 in order. `/help` reads this workspace and names one next skill. The table below is the eleven product skills. Exercises 09 and 13 are part of the same curriculum.
+`/tutor` starts with a short course on choosing and checking an eval. Ask for the full playground to walk exercises 01–13 in order. `/help` reads this workspace and names one next skill. The table below is the eleven product skills. Exercises 09 and 13 are part of the same curriculum.
 
 | Skill | Exercise |
 | --- | --- |

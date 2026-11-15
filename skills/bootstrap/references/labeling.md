@@ -1,6 +1,18 @@
 # Labeling and resumable checkpoints
 
-Use this when presenting scenarios, collecting decisions, resuming a run, or handing approved cases to evaluator authors. Reuse the project's annotation tools and records. A short chat batch is enough for intent review; the existing [trace reviewer](../../create-eval/references/trace-review.md) can help when judging actual traces, but is not required for scenario approval.
+Use this when presenting scenarios, collecting decisions, resuming a run, or handing approved cases to evaluator authors. Reuse the project's annotation tools and records. Review the scenario index a section at a time in chat; preserve the reviewed revision in the workspace. The existing [trace reviewer](../../create-eval/references/trace-review.md) can help when judging actual traces, but is not required for scenario approval.
+
+## What the owner reviews
+
+For example, a support assistant can answer how-to questions or open tickets for requested work. After confirming that product boundary, show an index excerpt like this:
+
+| ID / revision | Situation | Expected behavior and reason | Status |
+| --- | --- | --- | --- |
+| VPN-01 / 1 | Employee asks how to set up VPN | Give setup guidance. A request for instructions alone does not authorize opening a ticket. | Proposed |
+| VPN-02 / 1 | Employee explicitly asks IT to fix a broken VPN | Open a repair ticket. The employee has requested action. | Proposed |
+| VPN-03 / 1 | “VPN again” with no further context | Clarify whether the employee wants instructions or a repair. The owner still needs to settle this boundary. | Pending |
+
+These expectations are illustrative. After review, the index might show VPN-01 / 1 approved and linked to cases `vpn-setup` and `vpn-setup-paraphrase`, VPN-02 / 1 approved and awaiting authoring, and VPN-03 / 1 deferred. Preserve the same distinctions in saved review records.
 
 ## Review cards
 
