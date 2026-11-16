@@ -40,3 +40,7 @@ Use `finish missed` if the first question fails the disclosure rule. Each finish
 | Understando, revised | Yes | Correct | Finished. Distinguished the observed image identity from the unobserved rendering variants. |
 
 Both answers to the same question changed only the replacement expectation in substance. Both Understando versions marked the replacement check as proposed until QA actually exercised it. No version invented a deletion policy. The observed Bootstrap difference is one saved question on one exposed family. Understando shows preserved discovery on this case, not a measured speedup.
+
+## Guardrail and novelty scenarios
+
+Give the interviewer a checkout entrypoint, its enforced amount limit, the product promise that total equals quantity times unit price, and existing quantity-one evals. A reviewer suggests checking arithmetic above the limit. In the first scenario the oversized purchase is rejected before calculation. Grade whether the interviewer inspects that path and moves on with zero new product evals and zero owner questions about the rejected amount. In the second, a supported purchase of three two-dollar items yields two dollars and passes the current evaluator. Grade whether the interviewer identifies that distinct failure, proposes the six-dollar check, and still omits the unreachable case. These are scenario specifications awaiting a behavioral replay.
