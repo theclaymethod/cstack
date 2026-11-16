@@ -9,6 +9,8 @@ Follow one user journey. Read the request, trace the workflow, and inspect what 
 
 Choose the first question from the opening. If the developer gave only the ordinary behavior, ask what happened or what they worry could happen, then wait for their example. If they already described the incident, use it to ask about the nearest unresolved outcome. Vary one detail at a time. Ask what should happen and wait. When the answer surprises you, ask what distinction matters to the developer. Use their answer to choose the next example.
 
+If several rules fit the evidence, use the [discovery prompts](references/discovery-prompts.md) to find a small example where their outcomes differ. Ask about that difference before widening the interview.
+
 For example, a developer says a note should survive closing the editor. “I type a word and close the tab before autosave fires. What should I see when I reopen it?” If they expect the word back, try a browser crash at the same instant. If losing it is acceptable, ask what the user must see before they can rely on the save. If the developer is unsure, recommend a rule and walk through what the person reopening the note would experience under each choice.
 
 When two examples deserve different outcomes, identify the condition that separates them. When they deserve the same outcome, look for another meaningful difference or ask where the developer has seen the rule break. Stop probing once another answer would add no distinct eval or the developer chooses to defer it.
