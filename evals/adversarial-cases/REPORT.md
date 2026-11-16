@@ -50,3 +50,17 @@ Parallel investigations produced [synthetic-generation pilots](../../research/sy
 ## Subsequent Cross-Examine
 
 The [2026-11-10 audit](CROSS_EXAMINE_REPORT.md) independently confirmed and repaired one native ticket-schema false rejection and one fixed-replay evidence-validation mechanism. Its ledger distinguishes operator calibration from candidate exploits. Historical construction evidence and initial results above remain the original 0.6.0 observations. Current 0.6.1 validation uses eight combined groups and 23 native tests.
+
+## Archive situations and shared-ledger handoff
+
+Two fresh GPT-6 Astra sessions shared a synthetic archive project. The first ran Adversarial Cases in brainstorming mode with one passing singleton case, developer decisions, an existing runner and an existing ledger named `release-history.tsv`. The second ran Create Eval using the files left by the first. The first produced no scored row. The second preserved the initial row and all prior ledger entries and appended its authoring result to the same ledger.
+
+| Situation | Decision and downstream result |
+| --- | --- |
+| Archive a subset of active notes | Supported by the promise to preserve unselected notes. Create Eval added one native row, `archive-mixed-selection`. Selecting A and C from A, B, C and D must leave B and D. |
+| Pin the order of remaining notes | Rejected because order is a user preference. Both valid orders passed through the runner. |
+| Archive an already archived note | Open because the developer had deferred the outcome. It received no scored row. |
+
+The author ran six controls. A separate replay of the new row accepted both orders and rejected clearing every note, keeping a selected note, and returning the right count with the wrong identities. These observations exercise the grader and disk handoff. The fixture contained no archive product implementation.
+
+The existing construction replay also passed 103 checks on its synthetic fixture. That replay exercises construction and fault attribution separately from the cross-skill handoff.

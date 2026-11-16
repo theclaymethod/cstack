@@ -53,6 +53,8 @@ Hill Climb is original cstack orchestration for bounded candidate search, actual
 
 The [research note](research/hill-climb.md) records inspected DSPy, Ax, GEPA, and Halo source revisions. The installed skill's [optimizer reference](skills/hill-climb/references/optimizers.md) retains the source links and integration boundaries. These projects inform methods and optional integrations; their code is not copied into the skill and their advertised results are not cstack performance claims. The deterministic support-agent fixture and native campaign runner under `fixtures/playground/` are original test-project code. Disposable workspaces receive current skill copies rather than maintaining a second canonical pack.
 
+The shared eval decision ledger adapts P-Stack’s Show Me Your Work convention: one canonical decision trail, short rationale and evidence pointers, append-only corrections, and reuse by other skills. Figure It Out delegates its trail to that convention. CStack keeps its eval rows and detailed receipts in their native formats.
+
 ## Adversarial Cases
 
 Adversarial Cases is original shared cstack guidance for constructing controlled challenges and fault-injection cases. Bootstrap keeps expectation approval and Cross-Examine keeps independent adjudication. The skill's activation/outcome distinction and controls draw on this project's reproduced schema and lifecycle cases, not a claim that a generic fault name proves execution.

@@ -9,6 +9,8 @@ Start with one decision the eval will inform and one case where a wrong answer w
 
 ## Evidence and cases
 
+Read the [shared decision ledger](references/decision-ledger.md) on entry and append the authored row IDs and evidence at handoff. When [Adversarial Cases](../adversarial-cases/SKILL.md) supplies `situations.md`, author rows for supported situations and carry their stable IDs into the row or case mapping. Reuse an existing row when it already covers that situation. Keep open, rejected and merged entries out of new scored rows. Write the row IDs and actual control results back beside the situation so downstream runs can trace the expectation.
+
 For interviewing and scenario approval, use [Bootstrap](../bootstrap/SKILL.md). Resolve capture amendments/retractions through [findings-to-cases](references/from-findings.md), retaining the original reviewed output. Privacy/meaning review supplies no label authority.
 
 Use [early development](references/early-development.md) when traces are absent: execute realistic feature inputs and review actual evidence where available. Label synthetic, hypothetical and mocked material; missing setup remains unrun. [Existing eval workflows](references/ecosystem.md) are optional tools for discovery and calibration.

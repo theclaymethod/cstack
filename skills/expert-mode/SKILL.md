@@ -9,7 +9,7 @@ When the expert corrects an output, capture the specific behavior they judged an
 
 ## Capture contract
 
-Use the project's dataset or local JSONL. Read [record guidance](references/records.md) before writing; preserve session/path/record identities and pending or unsaved work through compaction. Observe only supplied or authorized conversation/artifacts.
+When handing an authorized capture to another skill, put its permitted record pointer in the [shared decision ledger](../create-eval/references/decision-ledger.md). Keep the reviewed data in its capture store. Use the project's dataset or local JSONL. Read [record guidance](references/records.md) before writing; preserve session/path/record identities and pending or unsaved work through compaction. Observe only supplied or authorized conversation/artifacts.
 
 Save the recoverable input, original reviewed output/version, expert's exact words and source before any repair. Keep interpretation separate. Missing originals stay missing; a regenerated output is a new item with no inherited approval.
 

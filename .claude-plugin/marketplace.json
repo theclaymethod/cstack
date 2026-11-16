@@ -10,7 +10,7 @@
     {
       "name": "cstack",
       "source": "./",
-      "description": "Capture judgments, bootstrap evals, calibrate judges, improve agents against them, and learn the workflow with help and tutor."
+      "description": "Small, composable skills to brainstorm evals, refine their criteria, challenge them with harder cases, and hill-climb generators and judges."
     }
   ]
 }

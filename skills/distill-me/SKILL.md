@@ -13,6 +13,8 @@ Use available conversation, supplied artifacts and authorized current-session hi
 
 Read [shared records](../expert-mode/references/records.md) and merge into the existing dataset, including live captures. For substantial reviews, [independent review prompts](references/review-passes.md) can help find candidates; the coordinator writes and only expert statements establish authority.
 
+At handoff, append the permitted pointers to new or amended decisions in the [shared decision ledger](../create-eval/references/decision-ledger.md).
+
 Pair judgments chronologically with the output actually reviewed. Preserve exact words, scope, corrections, alternatives and later retractions. Explicit errors are useful without replacements. Uncertainty, preferences, agent proposals and regenerated outputs retain their distinct status; silence or code changes do not label them.
 
 Normalize stated criteria into versioned binary questions with passing direction and applicability. Preserve conditions/exceptions and assign item answers only where supported. Explicit general rules can be saved immediately; inferred rules remain proposed.

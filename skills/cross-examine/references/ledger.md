@@ -1,8 +1,8 @@
 # Maintain the reward-hacking ledger
 
-Keep a project-owned record of the mechanisms encountered and the evidence that a prevention works. Use an existing eval ledger when present; otherwise create `CROSS_EXAMINE_LEDGER.md` beside the eval. Keep reusable generation rules in the generator skill or lessons reference, linking to ledger evidence rather than duplicating the incident history.
+Keep a project-owned record of the mechanisms encountered and the evidence that a prevention works. Use the [shared decision ledger](../../create-eval/references/decision-ledger.md). If an audit already uses `CROSS_EXAMINE_LEDGER.md`, keep its evidence and pass its path forward. Keep reusable generation rules in the generator skill or lessons reference, linking to ledger evidence rather than duplicating the incident history.
 
-Use Markdown on local disk by default; no database or service is required for this ledger. Record the chosen runtime, storage, isolation boundary, and why any heavier tool is necessary. Distinguish enforced access restrictions from instructions given to a host process.
+Keep detailed audit evidence in its native format and link it from the decision entry. Record the chosen runtime, storage, isolation boundary, and why any heavier tool is necessary. Distinguish enforced access restrictions from instructions given to a host process.
 
 Before a run, read the relevant records and write the intended capability independently of the current verifier. Preserve the original row, source judgment, contract, and artifact versions. Identify the attacker, defender, and independent reviewer; record unavailable roles. For a scored run, record commit IDs or content hashes for the grader, request, and provided guidance, plus whether the run is development, calibration, or held out. Keep operator receipts outside both competitors' access.
 

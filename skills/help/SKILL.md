@@ -19,7 +19,9 @@ If the script cannot run, follow [the same order](references/next-step.md) by re
 
 Lead with the one skill and the reason, naming the evidence paths. Use `/name` in Claude Code and Cursor, and `$name` in Codex. Mention at most one extra stale fact when `stale` is non-empty and the recommendation is not already about it. Do not offer a menu of skills.
 
-Override the script only in two cases, and say that you are overriding it:
+If a [shared decision ledger](../create-eval/references/decision-ledger.md) names a pending handoff, follow its evidence link. Recommend the receiving skill when the artifact still needs that work. Leave the ledger untouched during routing.
+
+Explain any override. Two other observations can change the recommendation.
 
 - The current session has explicit user judgments that are not in the saved records. Recommend `/distill-me`. File inspection cannot see unsaved chat.
 - You opened a record the script called incomplete and it actually ties a judgment, an input, an output, and a criterion together. Follow the next rule in [the order](references/next-step.md).

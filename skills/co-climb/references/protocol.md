@@ -20,7 +20,7 @@ Model/deterministic findings are not human gold. Exclude uncertain rows from fit
 
 ## Campaign ledger
 
-Use the project’s existing ledger, or create one in the campaign directory. Give each experiment and challenge a stable ID and cycle. Link each trial to its hypothesis, change, baseline and candidate versions, case IDs, observed results, cost and decision. Retain failed trials, ties and abandoned attempts. Link a retry to the earlier entry.
+Follow the [shared decision ledger](../../create-eval/references/decision-ledger.md) across skill handoffs. Give each experiment and challenge a stable ID and cycle. Link each trial to its hypothesis, change, baseline and candidate versions, case IDs, observed results, cost and decision. Retain failed trials, ties and abandoned attempts. Link a retry to the earlier entry.
 
 For each adversarial case, save its source, the promise it probes, the input, a wrong output, a nearby acceptable alternative, and the current evaluator’s judgments. Before scoring it, record a disposition and rationale:
 

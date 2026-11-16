@@ -9,7 +9,7 @@ Name one workaround the old model needed and the failure it prevented. That fail
 
 ## Contract and comparisons
 
-Recover the actual model/version, assembled prompt/context, tools, orchestration, task contract, evals and operational policy. Identify why steering was added where history supports it; missing rationale remains unknown. Preserve task meaning, business rules and unavailable private/current facts while testing compensatory recipes, examples or scaffolding.
+Link the old workaround and its migration trial in the [shared decision ledger](../create-eval/references/decision-ledger.md). Recover the actual model/version, assembled prompt/context, tools, orchestration, task contract, evals and operational policy. Identify why steering was added where history supports it; missing rationale remains unknown. Preserve task meaning, business rules and unavailable private/current facts while testing compensatory recipes, examples or scaffolding.
 
 Establish authorized model(s), editable scope, quality/regression/resource policy and confirmation/release authority. Read [migration comparisons](references/migration.md). Compare original model/existing design, candidate model/existing design and candidate model/simplified design; where available use the **same** simplified design on the original model too. Record supported settings, source hashes, exact membership and reproducibility limits.
 

@@ -9,7 +9,7 @@ Before deleting a unit, name the burden it removes and the previously passing be
 
 ## Removal contract
 
-Freeze original artifact/model, task/evaluator/gold meaning, case membership, environment and unrelated settings. Declare removal units/dependencies, protected information, burden objective, quality metric, regression constraints, acceptable loss, trial/budget/confirmation and stopping policy. Missing owner policy leaves selection unconfirmed. Quality gates always compare to the **original baseline**, preventing accumulated tolerated losses.
+Carry deletion trials and their restore decisions forward in the [shared decision ledger](../create-eval/references/decision-ledger.md). Freeze original artifact/model, task/evaluator/gold meaning, case membership, environment and unrelated settings. Declare removal units/dependencies, protected information, burden objective, quality metric, regression constraints, acceptable loss, trial/budget/confirmation and stopping policy. Missing owner policy leaves selection unconfirmed. Quality gates always compare to the **original baseline**, preventing accumulated tolerated losses.
 
 Run that baseline and retain actual outputs/state/errors, source/configuration and usage. Regrading stored outputs cannot measure a changed target; missing execution remains unrun. Rewriting, compression, substitution and model changes are distinct interventions requiring explicit scope.
 

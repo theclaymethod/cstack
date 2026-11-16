@@ -5,7 +5,7 @@ description: Improve a selected prompt, skill, program, or agent harness against
 
 # Hill Climb
 
-Start a trial with a failing case, a proposed change, and a prediction about which observable result should move. Compare against the fixed evaluator. Deliver a confirmed artifact/diff or an honest no-improvement result. [Bootstrap](../bootstrap/SKILL.md)/[Create Eval](../create-eval/SKILL.md) establish missing evals; [Run Eval](../run-eval/SKILL.md) owns faithful execution; [Cross-Examine](../cross-examine/SKILL.md) investigates scoring gaps. [Calibrate Judge](../calibrate-judge/SKILL.md) owns judge-target fitting. Use [Ablation](../ablation/SKILL.md) for removal and [Bitter Lesson](../bitter-lesson/SKILL.md) for model-migration simplification.
+Use the [shared decision ledger](../create-eval/references/decision-ledger.md) to pick up the failing rows and append each experiment’s decision and receipt. Start a trial with a failing case, a proposed change, and a prediction about which observable result should move. Compare against the fixed evaluator. Deliver a confirmed artifact/diff or an honest no-improvement result. [Bootstrap](../bootstrap/SKILL.md)/[Create Eval](../create-eval/SKILL.md) establish missing evals; [Run Eval](../run-eval/SKILL.md) owns faithful execution; [Cross-Examine](../cross-examine/SKILL.md) investigates scoring gaps. [Calibrate Judge](../calibrate-judge/SKILL.md) owns judge-target fitting. Use [Ablation](../ablation/SKILL.md) for removal and [Bitter Lesson](../bitter-lesson/SKILL.md) for model-migration simplification.
 
 ## Campaign contract
 

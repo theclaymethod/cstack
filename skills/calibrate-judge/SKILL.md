@@ -5,7 +5,7 @@ description: Fit and validate an automated judge against authoritative labeled e
 
 # Calibrate Judge
 
-Start with the decision this judge will make. Describe a costly false pass and a costly false rejection in the owner's terms. Keep label agreement, threshold selection, probability calibration and repeated-input stability distinct. Implement adapters/data/experiments in the project, reusing its runner and format.
+Follow the [shared decision ledger](../create-eval/references/decision-ledger.md) from the disputed rows to their evidence, then append the calibration decision and receipt. Start with the decision this judge will make. Describe a costly false pass and a costly false rejection in the owner's terms. Keep label agreement, threshold selection, probability calibration and repeated-input stability distinct. Implement adapters/data/experiments in the project, reusing its runner and format.
 
 ## Gold and backend contract
 

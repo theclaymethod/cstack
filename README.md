@@ -5,7 +5,7 @@
   </picture>
 </h1>
 
-Skills for eval-driven development. Turn expert judgment into evals, improve your agent against them, and simplify what no longer helps.
+CStack is a network of small skills for eval-driven development. Use them to brainstorm what to test, refine what counts as success, challenge the evals with harder situations, and hill-climb the generator against them.
 
 [One-page cheat sheet](docs/cstack-cheatsheet.pdf) — each skill, when to reach for it, the usual order, and the install command.
 
@@ -13,7 +13,7 @@ Not sure which skill fits the files you already have? Use [`/help`](skills/help/
 
 ## Start with the evidence you have
 
-Ask `/expert-mode` to observe you working, or use `/distill-me` after a session. Start with `/bootstrap` when you know the intent and need cases before you have useful traces.
+Enter wherever you have evidence. An idea can go to `/bootstrap` for an interview. An existing green eval can go straight to `/adversarial-cases` to find a meaningful failure it misses. A failing row with a sound grader can go straight to `/hill-climb`. Skills working on the same eval share one decision ledger. Each reads the prior decision, follows links to the actual artifacts, and appends its result for the next skill. See the [handoff convention](skills/create-eval/references/decision-ledger.md).
 
 ```mermaid
 flowchart TD
@@ -25,10 +25,13 @@ flowchart TD
     C --> R
     R --> X["Challenge the scoring<br/>/cross-examine"] --> C
     X -. "Offer to retain judgments" .-> J
-    A["Build hard cases<br/>/adversarial-cases"] -.-> B
+    R --> A["Challenge existing cases<br/>/adversarial-cases"]
+    A -->|"situations.md"| C
+    A -. "Open expectations" .-> B
     A -.-> X
     R --> H["Improve<br/>/hill-climb"] --> R
     R --> CC["Improve target and judge<br/>/co-climb"]
+    CC --> A
     CC --> H
     CC --> J
     R --> L["Remove complexity<br/>/ablation"] --> R
@@ -46,7 +49,7 @@ With good production traces, use LangChain's [eval-engineering](https://github.c
 | [calibrate-judge](skills/calibrate-judge/SKILL.md) | Fit and validate a judge against labeled outcomes. |
 | [run-eval](skills/run-eval/SKILL.md) | Execute evals and report what ran. |
 | [cross-examine](skills/cross-examine/SKILL.md) | Reproduce scoring gaps and independently check repairs. |
-| [adversarial-cases](skills/adversarial-cases/SKILL.md) | Construct targeted inputs, failures, and controls. |
+| [adversarial-cases](skills/adversarial-cases/SKILL.md) | Challenge existing evals, review harder situations in `situations.md`, and pass supported entries to Create Eval. |
 | [hill-climb](skills/hill-climb/SKILL.md) | Improve a target within an eval budget. |
 | [co-climb](skills/co-climb/SKILL.md) | Challenge the evals and improve the generator against them over bounded cycles. |
 | [ablation](skills/ablation/SKILL.md) | Remove complexity while preserving required performance. |
