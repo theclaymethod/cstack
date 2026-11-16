@@ -106,3 +106,5 @@ This stage checks near transfer: both tasks update two-row SQLite state. It does
 Review the transcript, findings, replay evidence, repairs, and revised generator skill together. Confirm that the report identifies the actual root cause, separates reproduction from conjecture, and respects the evaluated agent's permissions. Check that any repair addresses the mechanism while preserving legitimate alternatives. The lesson should explain what failed, why the measured signal was misleading, what future generators should construct instead, and where its evidence lives.
 
 Also verify that a swarm actually ran within the declared bounds and that the report describes untested surfaces honestly. Clean and access-limited cases should preserve the supplied generator skill and avoid unsupported hardening. Record executable results and reviewer judgments separately; neither should be presented as a complete result without the other.
+
+The [cross-skill handoff eval](../skill-handoffs/README.md) exercises a review-only dispute after an owner correction in a shared project ledger.

@@ -5,7 +5,7 @@ description: Challenge eval tasks, environments, and verifiers with an attacker,
 
 # Cross-Examine
 
-Start with the developer's acceptance rule. Pick a wrong outcome the grader might accept and a legitimate alternative it might reject. Use an attacker, a defender and a fresh independent intent reviewer. Read [confirmed lessons](references/lessons.md) and keep a project ledger under [ledger guidance](references/ledger.md).
+Pick up the disputed row from the [shared decision ledger](../create-eval/references/decision-ledger.md). Follow its situation ID to the developer’s latest applicable decision, including superseded and still-open expectations. Start with that acceptance rule. Pick a wrong outcome the grader might accept and a legitimate alternative it might reject. Use an attacker, a defender and a fresh independent intent reviewer. Read [confirmed lessons](references/lessons.md) and keep a project ledger under [ledger guidance](references/ledger.md).
 
 ## Intent and independent review
 
@@ -26,6 +26,8 @@ Reproduce through actual candidate permissions. Operator faults and extra-access
 Replay from clean state on the frozen scoring path, preserving versions, raw observations and actual complete state. A score or competitor's claim is not audit acceptance. Check the audit's own grader: discovery, collaboration and learning require evidence of candidate work, not artifacts or operator reproduction alone. Seed labels cannot dismiss supported new findings.
 
 Repair only within authority while preserving original intent/judgment; changed meaning needs a contract decision. Verification must be observational and compare complete required state, including permitted alternatives. Replay the exploit and legitimate baselines; reject blanket rejection or reference-only acceptance. Require independent intent acceptance before calling a repair validated. Review-only work returns a proposed fix; incomplete checks remain unresolved.
+
+Append the row and grader version, reproducer, wrong and valid outcomes, and review status to the same ledger. Route missing coverage to [Adversarial Cases](../adversarial-cases/SKILL.md) and [Create Eval](../create-eval/SKILL.md), a confirmed generator failure to [Hill Climb](../hill-climb/SKILL.md), and an unsettled expectation to its owner. Keep the audit evidence linked to the original situation.
 
 For each confirmed root cause, propose an update to the generator's existing skill/reference, or this skill's lessons: faulty assumption, divergence, generation rule and reproducer/version. Keep conjectures in the ledger. Record original/repaired outcomes, legitimate checks, independent verdict, lesson-write failures and remaining limits. Claim only demonstrated prevention/coverage; further rounds require remaining or renewed budget.
 

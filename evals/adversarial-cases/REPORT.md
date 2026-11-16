@@ -64,3 +64,5 @@ Two fresh GPT-6 Astra sessions shared a synthetic archive project. The first ran
 The author ran six controls. A separate replay of the new row accepted both orders and rejected clearing every note, keeping a selected note, and returning the right count with the wrong identities. These observations exercise the grader and disk handoff. The fixture contained no archive product implementation.
 
 The existing construction replay also passed 103 checks on its synthetic fixture. That replay exercises construction and fault attribution separately from the cross-skill handoff.
+
+The [cross-skill handoff eval](../skill-handoffs/README.md) also checks whether a fresh authoring session can act on challenged and deferred situations.
