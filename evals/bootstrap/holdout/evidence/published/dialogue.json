@@ -1,0 +1,10 @@
+[
+  {
+    "developer": "Our Kanban welcome demo played in VS Code. We changed the video to fix a blank player in JetBrains. Help me work out the acceptance scenarios for shipping this change. Keep SCENARIOS.md as we go.",
+    "assistant": "I started [SCENARIOS.md](./SCENARIOS.md) with two scenarios for review. There are no existing playback checks in this directory.\n\n- **KAN-001 \u00b7 VS Code.** I open the Kanban welcome view and start the updated demo as before. I expect to see the board actions play in the welcome view.\n- **KAN-002 \u00b7 JetBrains.** I follow the same steps. My reading is that I should now see those same actions play inside the IDE.\n\n**Would you ship KAN-002 if the welcome view showed a \u201cWatch demo\u201d link that played the full video in my browser, or is playback inside JetBrains part of the promise?**"
+  },
+  {
+    "developer": "We tried the new build. JetBrains plays the demo, but now VS Code shows a still frame. Both hosts must play moving video after the change. What we show on an unsupported host is undecided. Wrap up the index.",
+    "assistant": "**The VS Code regression blocks shipping this build.** Both supported hosts must play moving video in the Kanban welcome view. I updated [SCENARIOS.md](./SCENARIOS.md) with the results you reported.\n\n| Scenario | Host | Result |\n| --- | --- | --- |\n| KAN-001 | VS Code | Fails. The demo stays on a still frame. |\n| KAN-002 | JetBrains | Passes. The demo plays moving video. |\n\nWhat the welcome view should show on an unsupported host remains undecided."
+  }
+]

@@ -1,0 +1,18 @@
+[
+  {
+    "developer": "Our Kanban welcome demo played in VS Code. We changed the video to fix a blank player in JetBrains. Help me work out the acceptance scenarios for shipping this change. Keep SCENARIOS.md as we go.",
+    "assistant": "My reading is that someone opening the Kanban welcome screen should be able to watch the demo in either editor. I started [SCENARIOS.md](./SCENARIOS.md) with two entries for review. This directory has no existing playback checks.\n\n| ID | Starting situation | Expected outcome |\n| --- | --- | --- |\n| KAN-001 | Someone opens the welcome screen in JetBrains. | When playback should begin, they see the Kanban demo in motion. |\n| KAN-002 | Someone follows the same flow in VS Code, where the previous video played. | They can still watch the demo in motion. |\n\n**What happened in the JetBrains report?** Walk me through what the person did from opening the welcome screen to seeing the blank player, and what they expected to see at that moment."
+  },
+  {
+    "developer": "Our Kanban welcome demo played in VS Code. We changed the video to fix a blank player in JetBrains.",
+    "assistant": "When someone opened the Kanban welcome screen in JetBrains, was the demo supposed to start playing on its own, or did they press Play and the player stayed blank?"
+  },
+  {
+    "developer": "I haven\u2019t decided that.",
+    "assistant": "I\u2019d leave the trigger open for this video change. For both KAN-001 (JetBrains) and KAN-002 (VS Code), I\u2019d accept either experience: the person opens the welcome screen and sees the demo moving, or they see a Play control, press it, and see the demo moving. I recorded the trigger as undecided in [SCENARIOS.md](./SCENARIOS.md).\n\nWould a visible Play control that works on the first press resolve the original JetBrains complaint?"
+  },
+  {
+    "developer": "We tried the new build. JetBrains plays the demo, but now VS Code shows a still frame. Both hosts must play moving video after the change. What we show on an unsupported host is undecided. Wrap up the index.",
+    "assistant": "**The VS Code still frame blocks shipping.** Both hosts must show the Kanban welcome demo in motion. [SCENARIOS.md](./SCENARIOS.md) records the two acceptance scenarios and your results from the new build.\n\n| Scenario | Required outcome | Reported result |\n| --- | --- | --- |\n| KAN-001 \u00b7 JetBrains | The welcome demo plays as moving video. | Pass. The demo plays. |\n| KAN-002 \u00b7 VS Code | The welcome demo continues to play as moving video. | Fail. The player shows a still frame. |\n\nTwo decisions remain open: how playback starts and what the welcome screen shows on an unsupported host."
+  }
+]

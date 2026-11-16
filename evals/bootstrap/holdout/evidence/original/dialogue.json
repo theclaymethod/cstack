@@ -1,0 +1,10 @@
+[
+  {
+    "developer": "Our Kanban welcome demo played in VS Code. We changed the video to fix a blank player in JetBrains. Help me work out the acceptance scenarios for shipping this change. Keep SCENARIOS.md as we go.",
+    "assistant": "I recorded the reported JetBrains failure and the VS Code behavior to preserve in [SCENARIOS.md](./SCENARIOS.md). This directory has no video, implementation, or playback checks, so playback of the changed video is unverified in both IDEs.\n\n**Whose playback experience should gate release, and what should they see?** My proposed scope is someone opening the Kanban welcome screen in either IDE. I\u2019d require the demo to visibly advance through its final step in both. Seeing the first frame would catch the reported blank player but would also pass a video that immediately freezes.\n\nDoes that match your audience and release bar? Should playback start when the welcome screen opens or when the user presses Play?"
+  },
+  {
+    "developer": "We tried the new build. JetBrains plays the demo, but now VS Code shows a still frame. Both hosts must play moving video after the change. What we show on an unsupported host is undecided. Wrap up the index.",
+    "assistant": "**Hold this build.** Both hosts must play moving video. In your new-build check, JetBrains passed and VS Code failed because the demo stayed on a still frame.\n\n[SCENARIOS.md](./SCENARIOS.md) records both approved acceptance scenarios and leaves unsupported-host behavior undecided. Recheck playback in both hosts on the next release candidate."
+  }
+]
