@@ -1,0 +1,53 @@
+{
+  "skill": "bootstrap",
+  "artifact": "SCENARIOS.md",
+  "columns": [
+    "Outcome"
+  ],
+  "situations": {
+    "A": "Organizer cancels a single workshop",
+    "B": "Host cancels one date of a series",
+    "C": "Organizer cancels an entire series",
+    "D": "Co-host tries to cancel one date"
+  },
+  "values": {
+    "Outcome": [
+      "notify",
+      "silent",
+      "open"
+    ]
+  },
+  "initial": {
+    "A": [
+      "notify"
+    ],
+    "B": [
+      "notify"
+    ],
+    "C": [
+      "silent"
+    ],
+    "D": [
+      "open"
+    ]
+  },
+  "turn_one": "We are specifying cancellation messages. Today I want a message when an organizer cancels a single workshop or a host cancels one date of a series. Whole-series cancellations stay silent. I haven\u2019t decided the co-host case. Record my decisions in our scenario index and ask me about a consequential boundary.",
+  "branches": {
+    "one-date": {
+      "reply": "Correction: a host canceling a single date in a series should be silent. Please update the index. I\u2019m still thinking about co-hosts.",
+      "patch": {
+        "B": [
+          "silent"
+        ]
+      }
+    },
+    "series": {
+      "reply": "Correction: notify people when the organizer cancels the whole series. Please update the index. I\u2019m still thinking about co-hosts.",
+      "patch": {
+        "C": [
+          "notify"
+        ]
+      }
+    }
+  }
+}
