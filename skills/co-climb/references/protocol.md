@@ -4,7 +4,7 @@ Use [Hill Climb](../../hill-climb/references/campaign.md) for execution/recovery
 
 ## Identity, authority and spend
 
-Record original goal/criteria, owners, editable paths, objective/direction/aggregation, regression constraints, branch cap, trial/seed/cache policy, total budget, confirmation reserve and stop rule. Snapshot/hash the original target, dependencies and judge bundle: model, rubric/prompt, evidence adapter, parser, thresholds, fallback, retries and cache. Unknown versions stay unknown. Each block freezes both snapshots; only its declared side may change between candidates.
+Record original goal/criteria, owners, editable paths, objective/direction/aggregation, regression constraints, branch cap, trial/seed/cache policy, total budget, confirmation reserve and cycle limit. A cycle may span several search blocks. Record the starting challenge, eval version, generator replay, remaining gap and cycles left. Carry confirmed challenges forward as working regressions. If the eval suite changes, version the cases and compare the baseline and changed generator on the same updated suite. Snapshot/hash the original target, dependencies and judge bundle: model, rubric/prompt, evidence adapter, parser, thresholds, fallback, retries and cache. Unknown versions stay unknown. Each block freezes both snapshots; only its declared side may change between candidates.
 
 Group originals/repairs/derivatives by source family. Separate climb, fresh-family working, and sealed final sets. Working sets are adaptive evidence, not unseen validation. Exclude sealed inputs/results/labels from development.
 
@@ -17,6 +17,18 @@ Compare actual target input with actual judge payload: values, units, ranges, st
 Review major findings and abstentions; scan passed outputs for the same defects. Deterministically check a claimed cluster against source records before bulk labeling. Classify target error, judge gap, false positive, evidence mismatch or uncertain. Define each row's condition; condition-present does not automatically mean product PASS. Confirmed defects supply condition-present rows and false positives condition-absent rows. Keep exact record/output, criterion, bundle, finding and adjudication authority.
 
 Model/deterministic findings are not human gold. Exclude uncertain rows from fitting and ask the owner/expert concrete questions while continuing confirmed work. [Calibration capture](../../expert-mode/references/calibration-capture.md) separates retention consent from label authority. Retract invalid rows without erasing the amendment history.
+
+## Campaign ledger
+
+Use the project’s existing ledger, or create one in the campaign directory. Give each experiment and challenge a stable ID and cycle. Link each trial to its hypothesis, change, baseline and candidate versions, case IDs, observed results, cost and decision. Retain failed trials, ties and abandoned attempts. Link a retry to the earlier entry.
+
+For each adversarial case, save its source, the promise it probes, the input, a wrong output, a nearby acceptable alternative, and the current evaluator’s judgments. Before scoring it, record a disposition and rationale:
+
+- **Admit** when the expectation is supported and the case exposes a meaningful failure or protects a distinct boundary. Say who would experience the difference or which explicit contract would break. Link the approved case to the repair and subsequent replay.
+- **Reject or merge** when it imposes a harmless preference, describes an impossible situation under the contract, or duplicates an existing check. Record the case even if it caught the current generator.
+- **Defer** when impact or intent is unclear. Record the question and who can settle it. Keep it outside the scored suite until resolved.
+
+A low-frequency case can matter. For example, a display-only trailing zero can be harmless while the same character in a fixed-width export can determine whether the customer can import the file. Judge the consequence under the actual contract. Reopen earlier dispositions when new evidence changes them and preserve the prior rationale.
 
 ## Target search
 

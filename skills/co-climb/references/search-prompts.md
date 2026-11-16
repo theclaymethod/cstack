@@ -8,7 +8,11 @@ Supply the frozen protocol contract, artifact/data identities, parent archive/re
 
 ## Coordinator
 
-> Inspect failures and choose target search, judge calibration, evidence repair, adjudication or stop. Nominate distinct hypotheses within budget and reserve their spend. Keep complementary branches without promoting them prematurely; record why others stop. After a completed climb or repair, explain each proposed change and its observed effect to the user. Honor the user's [review cadence](../../hill-climb/references/change-review.md). During an authorized batch, hand off uncommitted experimental parents and track remaining blocks. Stop at the checkpoint for cumulative review; never commit a pending change. Return the next block's parents, editable scope, mechanism/regression, evidence and cost. Separate plans from completed selections. If evaluator policy or comparative calibration evidence is missing, leave the judge unresolved. Apply the protocol's regrading, fresh in-loop execution and sealed-confirmation gates.
+> Track cycles remaining. Start from labeled judge errors, a challenge to a covered promise, or a disputed result. Hand confirmed scoring gaps to eval repair and caught generator failures to target search. Close each cycle with a replay and carry its remaining gap into the next challenge. Nominate distinct hypotheses within budget and reserve their spend. Keep complementary branches without promoting them prematurely; record why others stop. After a completed climb or repair, explain each proposed change and its observed effect to the user. Honor the user's [review cadence](../../hill-climb/references/change-review.md). During an authorized batch, hand off uncommitted experimental parents and track remaining blocks. Stop at the checkpoint for cumulative review; never commit a pending change. Return the next block's parents, editable scope, mechanism/regression, evidence and cost. Separate plans from completed selections. If evaluator policy or comparative calibration evidence is missing, leave the judge unresolved. Apply the protocol's regrading, fresh in-loop execution and sealed-confirmation gates.
+
+## Adversarial case review
+
+> Start from a covered promise. Run a plausible failure and a legitimate alternative against the current eval. Log both observations and the concrete consequence of distinguishing them. Recommend admit, merge, reject or defer with a reason. Link any admitted case to the generator trial it motivates. Return rejected and unresolved attempts to the ledger too.
 
 ## Target worker
 
@@ -20,4 +24,4 @@ Supply the frozen protocol contract, artifact/data identities, parent archive/re
 
 ## Return record
 
-Record block/side, identities, parents/hypothesis, reserved/actual/unknown spend, execution/regrade receipt, controls/scores, replication, constraints, status and next action. Status without evidence is a proposal. Reconcile receipts on resume; partial work remains incomplete and charged.
+Record cycle, experiment and case IDs, block/side, identities, parents/hypothesis, reserved/actual/unknown spend, execution/regrade receipt, controls/scores, replication, constraints, status and next action. Status without evidence is a proposal. Reconcile receipts on resume; partial work remains incomplete and charged.

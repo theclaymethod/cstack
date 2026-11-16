@@ -48,7 +48,7 @@ With good production traces, use LangChain's [eval-engineering](https://github.c
 | [cross-examine](skills/cross-examine/SKILL.md) | Reproduce scoring gaps and independently check repairs. |
 | [adversarial-cases](skills/adversarial-cases/SKILL.md) | Construct targeted inputs, failures, and controls. |
 | [hill-climb](skills/hill-climb/SKILL.md) | Improve a target within an eval budget. |
-| [co-climb](skills/co-climb/SKILL.md) | Alternate target improvements and judge calibration in frozen blocks. |
+| [co-climb](skills/co-climb/SKILL.md) | Challenge the evals and improve the generator against them over bounded cycles. |
 | [ablation](skills/ablation/SKILL.md) | Remove complexity while preserving required performance. |
 | [bitter-lesson](skills/bitter-lesson/SKILL.md) | Retest inherited prompt complexity as models improve. |
 | [help](skills/help/SKILL.md) | Read the workspace and name the single next skill. |
@@ -57,7 +57,7 @@ With good production traces, use LangChain's [eval-engineering](https://github.c
 
 Reviews [offer to retain useful corrections and labels](skills/expert-mode/references/calibration-capture.md) for later judge calibration. Saving a proposal does not confirm its label or activate Expert Mode.
 
-Use [Co-Climb](skills/co-climb/SKILL.md) when apparent target failures may be judge errors. Keep multiple promising branches within a budget, alternate target changes and judge calibration in separate blocks, and re-score saved outputs after judge changes. Exploratory retention is separate from confirmed promotion. Reserve a sealed final comparison. The [co-climb decision eval](evals/co-climb/README.md) covers branch selection, evidence boundaries and judge handoffs.
+Use [Co-Climb](skills/co-climb/SKILL.md) to improve eval coverage and generator behavior together. Start with judge calibration, an adversarial challenge to a covered promise, or a disputed result. Keep multiple promising branches within a budget, alternate target changes and judge calibration in separate blocks, and re-score saved outputs after judge changes. Exploratory retention is separate from confirmed promotion. Reserve a sealed final comparison. The [co-climb decision eval](evals/co-climb/README.md) covers branch selection, evidence boundaries and judge handoffs.
 
 ## Name the validation
 

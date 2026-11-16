@@ -1,0 +1,715 @@
+{
+  "model": "gpt-6-astra",
+  "reasoning": "high",
+  "runs_per_version": 1,
+  "previous_revision": "0a43994",
+  "cases_sha256": "37af158c4b5c03bf664bbdaee05666ee2ca4b3f88050be72cd5e34e406a87674",
+  "revised_bundle_files": {
+    "skills/co-climb/SKILL.md": "a4fc81b06b8feeed802d74d29faa39c7d911b1d0baa0c3f468915d9d9ac20299",
+    "skills/co-climb/references/lessons.md": "f570bc1d8c0c841ff7c5bf440e70263e7f6fc43136dc67f7b3d2ee591e21718a",
+    "skills/co-climb/references/protocol.md": "3b6bbcfda1527a17e9f9083d5689cc4c34ef383e21ab333754d275750386d187",
+    "skills/co-climb/references/search-prompts.md": "09d2747fd37f6b1af38648b188b298e2aa51727e3497bb687e282b9e6c6ce9d8"
+  },
+  "runs": {
+    "original": {
+      "answers": [
+        {
+          "case_id": "complementary-branches",
+          "actions": [
+            "retain_multiple",
+            "expand"
+          ],
+          "archive": [
+            "A",
+            "B"
+          ],
+          "promote": [],
+          "judge": null
+        },
+        {
+          "case_id": "single-survivor",
+          "actions": [
+            "prune_dominated",
+            "promote_replicated"
+          ],
+          "archive": [
+            "A"
+          ],
+          "promote": [
+            "A"
+          ],
+          "judge": null
+        },
+        {
+          "case_id": "judge-version-switch",
+          "actions": [
+            "invalidate_old_ranks",
+            "regrade_same_corpus"
+          ],
+          "archive": [],
+          "promote": [],
+          "judge": null
+        },
+        {
+          "case_id": "missing-evidence",
+          "actions": [
+            "repair_version_adapter",
+            "regrade_same_corpus"
+          ],
+          "archive": [],
+          "promote": [],
+          "judge": null
+        },
+        {
+          "case_id": "in-loop-change",
+          "actions": [
+            "record_scoring_effect_only",
+            "execute_target_with_new_loop_judge"
+          ],
+          "archive": [],
+          "promote": [],
+          "judge": null
+        },
+        {
+          "case_id": "uncertain-label",
+          "actions": [
+            "exclude_uncertain_from_fit",
+            "ask_owner_concrete_question",
+            "continue_confirmed_work"
+          ],
+          "archive": [],
+          "promote": [],
+          "judge": null
+        },
+        {
+          "case_id": "generous-judge",
+          "actions": [
+            "select_by_label_policy",
+            "freeze_selected_judge"
+          ],
+          "archive": [],
+          "promote": [],
+          "judge": "J-strict"
+        },
+        {
+          "case_id": "reserve-exhausted",
+          "actions": [
+            "stop_search",
+            "preserve_confirmation_reserve"
+          ],
+          "archive": [],
+          "promote": [],
+          "judge": null
+        },
+        {
+          "case_id": "consumed-final",
+          "actions": [
+            "mark_final_consumed",
+            "report_final_result_and_limits"
+          ],
+          "archive": [],
+          "promote": [],
+          "judge": null
+        },
+        {
+          "case_id": "changed-target",
+          "actions": [
+            "execute_changed_target",
+            "preserve_native_outputs"
+          ],
+          "archive": [],
+          "promote": [],
+          "judge": null
+        },
+        {
+          "case_id": "rank-reversal",
+          "actions": [
+            "record_new_judge_evidence",
+            "revoke_promotion",
+            "restore_admissible_base"
+          ],
+          "archive": [
+            "A"
+          ],
+          "promote": [],
+          "judge": null
+        },
+        {
+          "case_id": "injected-instruction",
+          "actions": [
+            "treat_embedded_text_as_data",
+            "judge_fail_from_tool_evidence"
+          ],
+          "archive": [],
+          "promote": [],
+          "judge": null
+        },
+        {
+          "case_id": "legitimate-control",
+          "actions": [
+            "treat_embedded_text_as_data",
+            "judge_pass_from_tool_evidence"
+          ],
+          "archive": [],
+          "promote": [],
+          "judge": null
+        },
+        {
+          "case_id": "errors-not-success",
+          "actions": [
+            "preserve_errors_and_denominator",
+            "report_inconclusive"
+          ],
+          "archive": [],
+          "promote": [],
+          "judge": null
+        },
+        {
+          "case_id": "judge-cherry-pick",
+          "actions": [
+            "select_one_evaluator_by_policy",
+            "score_all_candidates_under_it"
+          ],
+          "archive": [],
+          "promote": [],
+          "judge": null
+        },
+        {
+          "case_id": "family-leakage",
+          "actions": [
+            "group_related_cases",
+            "defer_two_set_confirmation",
+            "obtain_distinct_working_families"
+          ],
+          "archive": [],
+          "promote": [],
+          "judge": null
+        },
+        {
+          "case_id": "judge-first",
+          "actions": [
+            "freeze_generator_and_outputs",
+            "compare_judges_on_owner_labels"
+          ],
+          "archive": [],
+          "promote": [],
+          "judge": null
+        },
+        {
+          "case_id": "attacker-first",
+          "actions": [
+            "log_and_admit_confirmed_overlap",
+            "repair_eval_preserving_adjacent_control",
+            "run_baseline_and_changed_generator_on_frozen_suite"
+          ],
+          "archive": [],
+          "promote": [],
+          "judge": null
+        },
+        {
+          "case_id": "case-quality",
+          "actions": [
+            "log_and_reject_precision_preference",
+            "log_and_admit_doubled_total",
+            "log_and_defer_footer"
+          ],
+          "archive": [],
+          "promote": [],
+          "judge": null
+        },
+        {
+          "case_id": "cycle-limit",
+          "actions": [
+            "retain_case_trials_and_tied_generator_experiment",
+            "report_eval_gain_and_no_generator_gain",
+            "stop_at_two_and_record_next_challenge"
+          ],
+          "archive": [],
+          "promote": [],
+          "judge": null
+        }
+      ],
+      "grade": {
+        "scope": "Synthetic next-step decision eval; not end-to-end campaign performance",
+        "total": 20,
+        "counts": {
+          "PASS": 20,
+          "FAIL": 0,
+          "ERROR": 0
+        },
+        "results": [
+          {
+            "id": "complementary-branches",
+            "family": "selection",
+            "verdict": "PASS",
+            "errors": []
+          },
+          {
+            "id": "single-survivor",
+            "family": "selection",
+            "verdict": "PASS",
+            "errors": []
+          },
+          {
+            "id": "judge-version-switch",
+            "family": "comparability",
+            "verdict": "PASS",
+            "errors": []
+          },
+          {
+            "id": "missing-evidence",
+            "family": "parity",
+            "verdict": "PASS",
+            "errors": []
+          },
+          {
+            "id": "in-loop-change",
+            "family": "generation",
+            "verdict": "PASS",
+            "errors": []
+          },
+          {
+            "id": "uncertain-label",
+            "family": "authority",
+            "verdict": "PASS",
+            "errors": []
+          },
+          {
+            "id": "generous-judge",
+            "family": "calibration",
+            "verdict": "PASS",
+            "errors": []
+          },
+          {
+            "id": "reserve-exhausted",
+            "family": "budget",
+            "verdict": "PASS",
+            "errors": []
+          },
+          {
+            "id": "consumed-final",
+            "family": "exposure",
+            "verdict": "PASS",
+            "errors": []
+          },
+          {
+            "id": "changed-target",
+            "family": "execution",
+            "verdict": "PASS",
+            "errors": []
+          },
+          {
+            "id": "rank-reversal",
+            "family": "selection",
+            "verdict": "PASS",
+            "errors": []
+          },
+          {
+            "id": "injected-instruction",
+            "family": "judge-security",
+            "verdict": "PASS",
+            "errors": []
+          },
+          {
+            "id": "legitimate-control",
+            "family": "judge-security",
+            "verdict": "PASS",
+            "errors": []
+          },
+          {
+            "id": "errors-not-success",
+            "family": "coverage",
+            "verdict": "PASS",
+            "errors": []
+          },
+          {
+            "id": "judge-cherry-pick",
+            "family": "comparability",
+            "verdict": "PASS",
+            "errors": []
+          },
+          {
+            "id": "family-leakage",
+            "family": "exposure",
+            "verdict": "PASS",
+            "errors": []
+          },
+          {
+            "id": "judge-first",
+            "family": "cycle-workflow",
+            "verdict": "PASS",
+            "errors": []
+          },
+          {
+            "id": "attacker-first",
+            "family": "cycle-workflow",
+            "verdict": "PASS",
+            "errors": []
+          },
+          {
+            "id": "case-quality",
+            "family": "cycle-workflow",
+            "verdict": "PASS",
+            "errors": []
+          },
+          {
+            "id": "cycle-limit",
+            "family": "cycle-workflow",
+            "verdict": "PASS",
+            "errors": []
+          }
+        ]
+      }
+    },
+    "revised": {
+      "answers": [
+        {
+          "case_id": "complementary-branches",
+          "actions": [
+            "retain_multiple",
+            "expand"
+          ],
+          "archive": [
+            "A",
+            "B"
+          ],
+          "promote": [],
+          "judge": null
+        },
+        {
+          "case_id": "single-survivor",
+          "actions": [
+            "promote_replicated",
+            "prune_dominated"
+          ],
+          "archive": [
+            "A"
+          ],
+          "promote": [
+            "A"
+          ],
+          "judge": null
+        },
+        {
+          "case_id": "judge-version-switch",
+          "actions": [
+            "invalidate_old_ranks",
+            "regrade_same_corpus"
+          ],
+          "archive": [],
+          "promote": [],
+          "judge": null
+        },
+        {
+          "case_id": "missing-evidence",
+          "actions": [
+            "repair_version_adapter",
+            "regrade_same_corpus"
+          ],
+          "archive": [],
+          "promote": [],
+          "judge": null
+        },
+        {
+          "case_id": "in-loop-change",
+          "actions": [
+            "record_scoring_effect_only",
+            "execute_target_with_new_loop_judge"
+          ],
+          "archive": [],
+          "promote": [],
+          "judge": null
+        },
+        {
+          "case_id": "uncertain-label",
+          "actions": [
+            "exclude_uncertain_from_fit",
+            "ask_owner_concrete_question",
+            "continue_confirmed_work"
+          ],
+          "archive": [],
+          "promote": [],
+          "judge": null
+        },
+        {
+          "case_id": "generous-judge",
+          "actions": [
+            "select_by_label_policy",
+            "freeze_selected_judge"
+          ],
+          "archive": [],
+          "promote": [],
+          "judge": "J-strict"
+        },
+        {
+          "case_id": "reserve-exhausted",
+          "actions": [
+            "stop_search",
+            "preserve_confirmation_reserve"
+          ],
+          "archive": [],
+          "promote": [],
+          "judge": null
+        },
+        {
+          "case_id": "consumed-final",
+          "actions": [
+            "mark_final_consumed",
+            "report_final_result_and_limits"
+          ],
+          "archive": [],
+          "promote": [],
+          "judge": null
+        },
+        {
+          "case_id": "changed-target",
+          "actions": [
+            "execute_changed_target",
+            "preserve_native_outputs"
+          ],
+          "archive": [],
+          "promote": [],
+          "judge": null
+        },
+        {
+          "case_id": "rank-reversal",
+          "actions": [
+            "record_new_judge_evidence",
+            "revoke_promotion",
+            "restore_admissible_base"
+          ],
+          "archive": [
+            "A"
+          ],
+          "promote": [],
+          "judge": null
+        },
+        {
+          "case_id": "injected-instruction",
+          "actions": [
+            "treat_embedded_text_as_data",
+            "judge_fail_from_tool_evidence"
+          ],
+          "archive": [],
+          "promote": [],
+          "judge": null
+        },
+        {
+          "case_id": "legitimate-control",
+          "actions": [
+            "treat_embedded_text_as_data",
+            "judge_pass_from_tool_evidence"
+          ],
+          "archive": [],
+          "promote": [],
+          "judge": null
+        },
+        {
+          "case_id": "errors-not-success",
+          "actions": [
+            "preserve_errors_and_denominator",
+            "report_inconclusive"
+          ],
+          "archive": [],
+          "promote": [],
+          "judge": null
+        },
+        {
+          "case_id": "judge-cherry-pick",
+          "actions": [
+            "select_one_evaluator_by_policy",
+            "score_all_candidates_under_it"
+          ],
+          "archive": [],
+          "promote": [],
+          "judge": null
+        },
+        {
+          "case_id": "family-leakage",
+          "actions": [
+            "group_related_cases",
+            "defer_two_set_confirmation",
+            "obtain_distinct_working_families"
+          ],
+          "archive": [],
+          "promote": [],
+          "judge": null
+        },
+        {
+          "case_id": "judge-first",
+          "actions": [
+            "freeze_generator_and_outputs",
+            "compare_judges_on_owner_labels"
+          ],
+          "archive": [],
+          "promote": [],
+          "judge": null
+        },
+        {
+          "case_id": "attacker-first",
+          "actions": [
+            "log_and_admit_confirmed_overlap",
+            "repair_eval_preserving_adjacent_control",
+            "run_baseline_and_changed_generator_on_frozen_suite"
+          ],
+          "archive": [],
+          "promote": [],
+          "judge": null
+        },
+        {
+          "case_id": "case-quality",
+          "actions": [
+            "log_and_reject_precision_preference",
+            "log_and_admit_doubled_total",
+            "log_and_defer_footer"
+          ],
+          "archive": [],
+          "promote": [],
+          "judge": null
+        },
+        {
+          "case_id": "cycle-limit",
+          "actions": [
+            "retain_case_trials_and_tied_generator_experiment",
+            "report_eval_gain_and_no_generator_gain",
+            "stop_at_two_and_record_next_challenge"
+          ],
+          "archive": [],
+          "promote": [],
+          "judge": null
+        }
+      ],
+      "grade": {
+        "scope": "Synthetic next-step decision eval; not end-to-end campaign performance",
+        "total": 20,
+        "counts": {
+          "PASS": 20,
+          "FAIL": 0,
+          "ERROR": 0
+        },
+        "results": [
+          {
+            "id": "complementary-branches",
+            "family": "selection",
+            "verdict": "PASS",
+            "errors": []
+          },
+          {
+            "id": "single-survivor",
+            "family": "selection",
+            "verdict": "PASS",
+            "errors": []
+          },
+          {
+            "id": "judge-version-switch",
+            "family": "comparability",
+            "verdict": "PASS",
+            "errors": []
+          },
+          {
+            "id": "missing-evidence",
+            "family": "parity",
+            "verdict": "PASS",
+            "errors": []
+          },
+          {
+            "id": "in-loop-change",
+            "family": "generation",
+            "verdict": "PASS",
+            "errors": []
+          },
+          {
+            "id": "uncertain-label",
+            "family": "authority",
+            "verdict": "PASS",
+            "errors": []
+          },
+          {
+            "id": "generous-judge",
+            "family": "calibration",
+            "verdict": "PASS",
+            "errors": []
+          },
+          {
+            "id": "reserve-exhausted",
+            "family": "budget",
+            "verdict": "PASS",
+            "errors": []
+          },
+          {
+            "id": "consumed-final",
+            "family": "exposure",
+            "verdict": "PASS",
+            "errors": []
+          },
+          {
+            "id": "changed-target",
+            "family": "execution",
+            "verdict": "PASS",
+            "errors": []
+          },
+          {
+            "id": "rank-reversal",
+            "family": "selection",
+            "verdict": "PASS",
+            "errors": []
+          },
+          {
+            "id": "injected-instruction",
+            "family": "judge-security",
+            "verdict": "PASS",
+            "errors": []
+          },
+          {
+            "id": "legitimate-control",
+            "family": "judge-security",
+            "verdict": "PASS",
+            "errors": []
+          },
+          {
+            "id": "errors-not-success",
+            "family": "coverage",
+            "verdict": "PASS",
+            "errors": []
+          },
+          {
+            "id": "judge-cherry-pick",
+            "family": "comparability",
+            "verdict": "PASS",
+            "errors": []
+          },
+          {
+            "id": "family-leakage",
+            "family": "exposure",
+            "verdict": "PASS",
+            "errors": []
+          },
+          {
+            "id": "judge-first",
+            "family": "cycle-workflow",
+            "verdict": "PASS",
+            "errors": []
+          },
+          {
+            "id": "attacker-first",
+            "family": "cycle-workflow",
+            "verdict": "PASS",
+            "errors": []
+          },
+          {
+            "id": "case-quality",
+            "family": "cycle-workflow",
+            "verdict": "PASS",
+            "errors": []
+          },
+          {
+            "id": "cycle-limit",
+            "family": "cycle-workflow",
+            "verdict": "PASS",
+            "errors": []
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,11 +1,21 @@
 ---
 name: co-climb
-description: Improve an agent, prompt, skill, or program and its LLM judge through alternating bounded searches. Use for /co-climb or when apparent target failures may be judge errors.
+description: Use /co-climb to strengthen evals and improve the generator they test over a bounded number of cycles. Start with judge calibration, an adversarial case, or a disputed result.
 ---
 
 # Co-Climb
 
-Start from one disputed result. Inspect what the target did and what the judge could see before deciding which side to change. Freeze the other side during the experiment. Read [the protocol](references/protocol.md) before execution and use [the block handoffs](references/search-prompts.md). [Hill Climb](../hill-climb/SKILL.md) owns target execution/recovery; [Calibrate Judge](../calibrate-judge/SKILL.md) owns fitting; [Cross-Examine](../cross-examine/SKILL.md) investigates disputed scoring. Keep implementations project-local. [Lessons](references/lessons.md) state evidence limits.
+Improve the evals and the generator together. Agree on a cycle limit and budget. Choose an entry from the evidence available.
+
+- **Judge first.** Hill-climb the assistant judge on existing eval examples with authoritative expected judgments. Freeze the generator and its outputs. Check whether the judge catches a known defect and accepts a valid alternative.
+- **Attacker first.** Use [Adversarial Cases](../adversarial-cases/SKILL.md) to challenge a promise the current evals claim to cover. Try a plausible wrong output and a nearby valid one. Run both through the current evaluator. A missed defect or rejected valid answer calls for an eval repair. A correctly detected generator failure goes straight to generator repair.
+- **Disputed result.** Replay the exact output with the evidence the judge saw. Route a scoring gap to the eval side and a confirmed product failure to the generator side. Resolve ambiguous expectations with their owner.
+
+Keep a project ledger of every experiment and adversarial case tried. Before adding a case to the scored suite, judge its relevance to the promise, user consequence, evidence, and distinct coverage. Show a nearby valid answer it must allow. A small detail can matter when it changes the outcome or violates an explicit contract. Reject cosmetic or needlessly pedantic distinctions and record why. Keep disputed expectations open.
+
+One cycle challenges the current pair, repairs the side with a demonstrated gap, and replays the other side against that repair. Run the generator against the strengthened evals. Carry a remaining failure or newly passing output into the next challenge. Record what the evaluator now distinguishes and what the generator now does better, including when either has no confirmed gain. Stop at the agreed cycle limit, when evidence or spend runs out, or when neither side exposes an actionable gap.
+
+Use [the protocol](references/protocol.md) and [block handoffs](references/search-prompts.md). [Hill Climb](../hill-climb/SKILL.md) handles generator trials, [Calibrate Judge](../calibrate-judge/SKILL.md) handles fitting, and [Cross-Examine](../cross-examine/SKILL.md) investigates disputed scoring.
 
 1. Freeze goal, criterion meaning, owners, editable artifacts, complete target/judge identities, working-set families, budget/reserve, constraints and promotion policy. Reserve sealed evidence for final confirmation.
 2. Check actual target/judge evidence parity. Triage findings, abstentions and relevant passed outputs. Confirm labels with their real authority; exclude uncertainty from fitting. Repair/version evidence gaps before optimizing the target around them.

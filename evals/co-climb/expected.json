@@ -222,5 +222,66 @@
     "judge": null,
     "alternative_archives": [],
     "before": []
+  },
+  "judge-first": {
+    "actions": [
+      "freeze_generator_and_outputs",
+      "compare_judges_on_owner_labels"
+    ],
+    "archive": [],
+    "promote": [],
+    "judge": null,
+    "alternative_archives": [],
+    "before": [
+      [
+        "freeze_generator_and_outputs",
+        "compare_judges_on_owner_labels"
+      ]
+    ]
+  },
+  "attacker-first": {
+    "actions": [
+      "log_and_admit_confirmed_overlap",
+      "repair_eval_preserving_adjacent_control",
+      "run_baseline_and_changed_generator_on_frozen_suite"
+    ],
+    "archive": [],
+    "promote": [],
+    "judge": null,
+    "alternative_archives": [],
+    "before": [
+      [
+        "log_and_admit_confirmed_overlap",
+        "repair_eval_preserving_adjacent_control"
+      ],
+      [
+        "repair_eval_preserving_adjacent_control",
+        "run_baseline_and_changed_generator_on_frozen_suite"
+      ]
+    ]
+  },
+  "case-quality": {
+    "actions": [
+      "log_and_reject_precision_preference",
+      "log_and_admit_doubled_total",
+      "log_and_defer_footer"
+    ],
+    "archive": [],
+    "promote": [],
+    "judge": null,
+    "alternative_archives": [],
+    "before": []
+  },
+  "cycle-limit": {
+    "actions": [
+      "retain_case_trials_and_tied_generator_experiment",
+      "report_eval_gain_and_no_generator_gain",
+      "stop_at_two_and_record_next_challenge"
+    ],
+    "archive": [],
+    "promote": [],
+    "judge": null,
+    "alternative_archives": [],
+    "before": []
   }
 }

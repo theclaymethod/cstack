@@ -1,6 +1,6 @@
 # Co-climb decision eval
 
-Evaluate the decisions that keep alternating target/judge search valid. This package has 16 synthetic development scenarios, an answer-free task prompt, a deterministic decision grader, and adversarial grader controls. It does not execute a target campaign or measure live model quality.
+Evaluate the decisions that keep alternating target/judge search valid. This package has 20 synthetic development scenarios, an answer-free task prompt, a deterministic decision grader, and adversarial grader controls. It does not execute a target campaign or measure live model quality.
 
 ## Run
 
@@ -29,6 +29,7 @@ The cases ask for next actions, an exploratory target archive, confirmed promoti
 
 | Mechanism | Cases |
 | --- | --- |
+| Campaign loop | Judge-first opening, attacker-first repair and replay, adversarial case quality, cycle limit and ledger |
 | Branch retention versus promotion | Complementary candidates, one genuine survivor, rank reversal |
 | Comparable evidence | Judge switch, changed target, in-loop judge change, cherry-picked judges |
 | Judge quality | Missing evidence, generous judge, uncertain labels |
@@ -51,7 +52,7 @@ With authorized model access and the Codex CLI installed:
 python3 evals/co-climb/live_benchmark.py --out eval-runs/co-climb-live/run --gate accuracy
 ```
 
-The runner freezes Git revisions and eval hashes, uses GPT-6 Astra at high reasoning, alternates baseline/candidate ordering across three fresh-context pairs, and preserves prompts, raw final responses, events, usage and grading receipts. Each context answers all 16 cases; repeated batches are not independent source cases. User configuration is ignored, shell and web search are disabled, and observed tool use invalidates the run. The model sees no answer key, but this is a decision task rather than an adversarial host-isolation test.
+The runner freezes Git revisions and eval hashes, uses GPT-6 Astra at high reasoning, alternates baseline/candidate ordering across three fresh-context pairs, and preserves prompts, raw final responses, events, usage and grading receipts. Each context answers all 20 cases; repeated batches are not independent source cases. User configuration is ignored, shell and web search are disabled, and observed tool use invalidates the run. The model sees no answer key, but this is a decision task rather than an adversarial host-isolation test.
 
 The default accuracy gate requires positive paired gains in at least two repetitions, two additional correct decisions overall, and no new failing case that passed all baseline repetitions. `--gate efficiency` instead preregisters perfect candidate accuracy, no regressions, a 20% skill-bundle character reduction and lower measured input tokens in every pair. It checks the size threshold before launching any model calls. An accuracy tie is not an accuracy improvement. A shorter prompt with preserved scores can support only the stated efficiency result.
 

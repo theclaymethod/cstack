@@ -18,13 +18,13 @@ class DecisionEvalTests(unittest.TestCase):
         cls.answers = [{'case_id': c['id'], **{k: cls.gold[c['id']][k] for k in ['actions','archive','promote','judge']}} for c in cls.cases]
 
     def test_legitimate_controls_and_exploratory_alternative(self):
-        self.assertEqual(evaluate(self.answers)['counts'], {'PASS':16,'FAIL':0,'ERROR':0})
+        self.assertEqual(evaluate(self.answers)['counts'], {'PASS':len(self.cases),'FAIL':0,'ERROR':0})
         answers = copy.deepcopy(self.answers)
         row = next(a for a in answers if a['case_id']=='rank-reversal')
         row['archive'] = ['A']
-        self.assertEqual(evaluate(answers)['counts']['PASS'],16)
+        self.assertEqual(evaluate(answers)['counts']['PASS'],len(self.cases))
         next(a for a in answers if a['case_id']=='judge-version-switch')['archive'] = ['A']
-        self.assertEqual(evaluate(answers)['counts']['PASS'],16)
+        self.assertEqual(evaluate(answers)['counts']['PASS'],len(self.cases))
         case = next(c for c in self.cases if c['id']=='errors-not-success')
         answer = next(a for a in answers if a['case_id']==case['id'])
         answer['actions'].reverse()
@@ -81,7 +81,7 @@ class DecisionEvalTests(unittest.TestCase):
     def test_answer_keys_and_label_metadata_stay_out_of_prepared_inputs(self):
         with tempfile.TemporaryDirectory() as tmp:
             out=Path(tmp)/'prompts';prepare(out)
-            self.assertEqual(len(list(out.glob('*.txt'))),16)
+            self.assertEqual(len(list(out.glob('*.txt'))),len(self.cases))
             text=(out/'generous-judge.txt').read_text()
             self.assertNotIn('alternative_archives',text)
             self.assertNotIn('expected.json',text)
@@ -96,11 +96,11 @@ class DecisionEvalTests(unittest.TestCase):
             path.write_text('\n'.join(json.dumps(a) for a in self.answers))
             good=subprocess.run([sys.executable,str(HERE/'evaluate.py'),'--answers',str(path)],capture_output=True,text=True)
             self.assertEqual(good.returncode,0,good.stderr)
-            self.assertEqual(json.loads(good.stdout)['total'],16)
+            self.assertEqual(json.loads(good.stdout)['total'],len(self.cases))
             path.write_text(json.dumps(self.answers[0])+'\n')
             partial=subprocess.run([sys.executable,str(HERE/'evaluate.py'),'--answers',str(path)],capture_output=True,text=True)
             self.assertEqual(partial.returncode,1)
-            self.assertEqual(json.loads(partial.stdout)['counts']['ERROR'],15)
+            self.assertEqual(json.loads(partial.stdout)['counts']['ERROR'],len(self.cases)-1)
 
 
 if __name__=='__main__':
