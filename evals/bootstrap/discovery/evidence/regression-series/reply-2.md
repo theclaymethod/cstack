@@ -1,0 +1,1 @@
+Updated scenario C from `silent` to `notify` for an organizer canceling the entire series. Scenarios A and B still say `notify`, and the co-host case (D) remains `open`. [SCENARIOS.md](./SCENARIOS.md)

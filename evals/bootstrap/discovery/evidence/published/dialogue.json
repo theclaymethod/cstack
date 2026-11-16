@@ -1,0 +1,22 @@
+[
+  {
+    "developer": "Undo should work on our shared whiteboard. When I draw a line and immediately undo, it disappears. Help me figure out what else we need to specify. Keep SCENARIOS.md as we go.",
+    "assistant": "I started the index in [SCENARIOS.md](./SCENARIOS.md). The README describes the first case. I found no automated checks in this directory.\n\n**UNDO-001** \u2014 I draw a blue line on an empty board and immediately press Undo. The blue line disappears, and I see an empty board.\n\n**UNDO-002 \u00b7 Open** \u2014 I draw the same blue line. Before I press Undo, Sam draws a red line. I can see both when I press Undo. **Which lines should I see afterward?**"
+  },
+  {
+    "developer": "My undo applies to my marks only.",
+    "assistant": "Updated [SCENARIOS.md](./SCENARIOS.md).\n\n| Scenario | Expected outcome |\n| --- | --- |\n| UNDO-001 | You draw a blue line and immediately undo. The board is empty again. |\n| UNDO-002 | You draw blue, Sam draws red, and you undo. Your blue line disappears and Sam\u2019s red line stays. |\n| UNDO-003 \u00b7 Open | Same two lines, same Undo. Sam is watching from another device. **Should your blue line disappear from Sam\u2019s screen too?** |"
+  },
+  {
+    "developer": "There is no decision on that yet.",
+    "assistant": "I marked **UNDO-003** as deferred in [SCENARIOS.md](./SCENARIOS.md). The first two decisions still hold. Undo removes your single line, even if Sam has since drawn a line of their own. What Sam sees afterward remains undecided.\n\n**UNDO-004 \u00b7 Open** \u2014 You draw a blue line, lift the pen, then draw a green line. You press Undo once. **Should just the blue line remain?**"
+  },
+  {
+    "developer": "There is no decision on that yet.",
+    "assistant": "I marked **UNDO-004** as deferred alongside **UNDO-003**. Both questions remain open in [SCENARIOS.md](./SCENARIOS.md).\n\n**UNDO-005** \u2014 You join a board where Sam has drawn a red line. You haven\u2019t drawn anything, so your ownership rule already tells us Sam\u2019s line stays. **Do you care whether Undo is disabled, or is leaving the board unchanged enough for the eval?**"
+  },
+  {
+    "developer": "There is no decision on that yet. Wrap up the current index with the decisions we have.",
+    "assistant": "**Your Undo applies only to your marks.** If you draw one line and undo, it disappears from your view, even when Sam has drawn a line since. The current index is saved in [SCENARIOS.md](./SCENARIOS.md).\n\n| ID | Scenario | Decision |\n| --- | --- | --- |\n| UNDO-001 | You draw a line on an empty board and immediately undo. | You see an empty board. |\n| UNDO-002 | You draw blue, Sam draws red, and you undo. | Blue disappears from your view. Red stays. |\n| UNDO-003 | Sam watches from another device as you undo. | You see only red. What Sam sees is **deferred**. |\n| UNDO-004 | You draw two separate strokes and undo once. | Which strokes remain is **deferred**. |\n| UNDO-005 | Sam has drawn a line and you have drawn nothing. You try to undo. | Sam\u2019s line stays. How the interface handles an empty undo history is **deferred**. |"
+  }
+]

@@ -1,0 +1,1 @@
+Updated [SCENARIOS.md](./SCENARIOS.md). Scenario B now reads `silent` when a host cancels one date of a series. The co-host case (D) is still `open`.

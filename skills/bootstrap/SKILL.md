@@ -7,7 +7,7 @@ description: Use a Socratic interview to discover the boundaries of a product sp
 
 Follow one user journey. Read the request, trace the workflow, and inspect what existing checks observe. Start the interview with an ordinary example and your best reading of what the user expects to happen.
 
-Change one detail. Pick the variation whose answer would settle the most consequential uncertainty. Ask what should happen in that situation and wait. When the answer surprises you, ask what distinction matters to the developer. Use their answer to choose the next example.
+Before proposing variations, ask what happened, or could happen, that made the developer want this behavior specified. Use that story to vary one detail at a time. Ask what should happen and wait. When the answer surprises you, ask what distinction matters to the developer. Use their answer to choose the next example.
 
 For example, a developer says a note should survive closing the editor. “I type a word and close the tab before autosave fires. What should I see when I reopen it?” If they expect the word back, try a browser crash at the same instant. If losing it is acceptable, ask what the user must see before they can rely on the save. If the developer is unsure, recommend a rule and walk through what the person reopening the note would experience under each choice.
 

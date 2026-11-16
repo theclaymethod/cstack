@@ -1,0 +1,22 @@
+[
+  {
+    "developer": "Undo should work on our shared whiteboard. When I draw a line and immediately undo, it disappears. Help me figure out what else we need to specify. Keep SCENARIOS.md as we go.",
+    "assistant": "I recorded your starting rule in [SCENARIOS.md](./SCENARIOS.md). The README gives the same example, and this directory has no implementation or runnable checks.\n\n**Whose action should Undo reverse?** Alice draws a red line, Bob draws a blue line, then Alice selects Undo. I recommend **personal undo**: both people see the red line disappear and the blue line stay. That lets Alice take back her own mark even after Bob contributes. With **board-wide undo**, both people would see Bob\u2019s blue line disappear because he drew last.\n\nWhich result should Alice and Bob see on your whiteboard?"
+  },
+  {
+    "developer": "My undo applies to my marks only.",
+    "assistant": "Recorded in [SCENARIOS.md](./SCENARIOS.md). If you draw a line and Bob draws another, your Undo removes your line. Bob\u2019s stays.\n\n**Should each Undo remove one completed stroke, newest first?** Say you draw a rectangle with four separate strokes. I recommend that one Undo removes the fourth side and a second Undo removes the third. Would you expect that, or should one Undo remove the whole rectangle?"
+  },
+  {
+    "developer": "There is no decision on that yet.",
+    "assistant": "[SCENARIOS.md](./SCENARIOS.md) now records stroke grouping and undo order as undecided.\n\n**When you undo your only line while Bob is watching, should it disappear from his board automatically?** I recommend that it disappear on his next live update. Would that match your expectation, or is it acceptable for Bob to keep seeing the line until he refreshes?"
+  },
+  {
+    "developer": "There is no decision on that yet.",
+    "assistant": "I recorded collaborator update timing as undecided in [SCENARIOS.md](./SCENARIOS.md), alongside stroke grouping and undo order.\n\nI suggest the first review cover two outcomes from your view of the board:\n\n- You draw one line and select Undo. Your line disappears.\n- You draw one line, Bob draws another, and you select Undo. Your line disappears and Bob\u2019s stays.\n\n**Does that capture the behavior you want to review first?**"
+  },
+  {
+    "developer": "Wrap up the current index with the decisions we have.",
+    "assistant": "[SCENARIOS.md](./SCENARIOS.md) records two expectations from the perspective of the person selecting Undo:\n\n- **WB-01 r1** \u2014 You draw one line and immediately undo. Your line disappears.\n- **WB-02 r1** \u2014 You draw a line, Bob draws another, and you undo. Your line disappears and Bob\u2019s stays.\n\nStroke grouping, undo order across multiple marks, and when collaborators see an undo remain undecided. Both scenarios are documented and untested."
+  }
+]

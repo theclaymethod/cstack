@@ -1,0 +1,10 @@
+[
+  {
+    "developer": "Undo should work on our shared whiteboard. When I draw a line and immediately undo, it disappears. Help me figure out what else we need to specify. Keep SCENARIOS.md as we go.",
+    "assistant": "**UNDO-001** is the first entry in [SCENARIOS.md](./SCENARIOS.md). I draw a line, see it on the board, and immediately choose Undo. I expect that line to disappear from my view.\n\nWhat happened on the shared board, or what are you worried could happen, that made you want to specify Undo more precisely?"
+  },
+  {
+    "developer": "If someone else has since edited my line, leave that line exactly as they edited it. Returning after I leave the board is a different issue; I haven\u2019t decided it. My undo applies to my marks only. Wrap up the current index.",
+    "assistant": "[SCENARIOS.md](/private./SCENARIOS.md) now records three scenarios.\n\n| ID | When I choose Undo | Expected outcome |\n| --- | --- | --- |\n| UNDO-001 | I\u2019ve just drawn a line. | My line disappears. |\n| UNDO-002 | I drew a line, then someone else drew a separate line. | My line disappears. Their line stays as drawn. |\n| UNDO-003 | I drew a line, then someone else moved one endpoint. | My line stays exactly as they edited it, including the endpoint\u2019s new position. |\n\n**Deferred:** Whether I can undo an earlier mark after leaving the board and returning remains undecided."
+  }
+]

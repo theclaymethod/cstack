@@ -1,0 +1,49 @@
+{
+  "turns": [
+    {
+      "rows": {
+        "A": [
+          "notify"
+        ],
+        "B": [
+          "notify"
+        ],
+        "C": [
+          "silent"
+        ],
+        "D": [
+          "open"
+        ]
+      },
+      "issues": []
+    },
+    {
+      "rows": {
+        "A": [
+          "notify"
+        ],
+        "B": [
+          "silent"
+        ],
+        "C": [
+          "silent"
+        ],
+        "D": [
+          "open"
+        ]
+      },
+      "issues": []
+    }
+  ],
+  "delta": {
+    "B": [
+      [
+        "notify"
+      ],
+      [
+        "silent"
+      ]
+    ]
+  },
+  "pass": true
+}
