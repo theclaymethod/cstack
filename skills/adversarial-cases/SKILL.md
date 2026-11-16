@@ -5,7 +5,7 @@ description: Construct controlled adversarial scenarios and executable fault-inj
 
 # Adversarial Cases
 
-Construct the smallest useful challenge to a specific requirement. The parent owns expectation approval and finding/repair adjudication; construction itself creates neither human labels nor accepted findings.
+Choose one failure the evidence suggests. Change one condition in a passing case so the expected difference has a cause you can inspect. The parent owns expectation approval and finding/repair adjudication; construction itself creates neither human labels nor accepted findings.
 
 ## Case contract
 

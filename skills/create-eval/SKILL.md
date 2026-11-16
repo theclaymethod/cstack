@@ -5,7 +5,7 @@ description: Create repeatable evals from expert findings, model traces, or a ne
 
 # Create Eval
 
-Define the capability and decision this eval supports. Establish source authority, judged unit, observable success and legitimate alternatives. Separate assertion correctness, preferences, process and missing evidence; one bad assertion does not label its neighbors. Keep ambiguous cases provisional while other work continues.
+Start with one decision the eval will inform and one case where a wrong answer would change that decision. Establish source authority, judged unit, observable success and legitimate alternatives. Separate assertion correctness, preferences, process and missing evidence; one bad assertion does not label its neighbors. Keep ambiguous cases provisional while other work continues.
 
 ## Evidence and cases
 

@@ -5,7 +5,7 @@ description: Execute an eval package, freeze verdicts before comparing expert la
 
 # Run Eval
 
-Execute the frozen eval through the project's trusted runner and preserve actual observations. [Hill Climb](../hill-climb/SKILL.md) owns product optimization; [Calibrate Judge](../calibrate-judge/SKILL.md) owns judge fitting. Keep both separate from this run.
+Run the frozen eval through the project's entrypoint. Inspect an actual result alongside its input before summarizing the run. [Hill Climb](../hill-climb/SKILL.md) owns product optimization; [Calibrate Judge](../calibrate-judge/SKILL.md) owns judge fitting. Keep both separate from this run.
 
 ## Freeze the run and inputs
 

@@ -5,7 +5,7 @@ description: Improve an agent, prompt, skill, or program and its LLM judge throu
 
 # Co-Climb
 
-Search one side while freezing the other. Read [the protocol](references/protocol.md) before execution and use [the block handoffs](references/search-prompts.md). [Hill Climb](../hill-climb/SKILL.md) owns target execution/recovery; [Calibrate Judge](../calibrate-judge/SKILL.md) owns fitting; [Cross-Examine](../cross-examine/SKILL.md) investigates disputed scoring. Keep implementations project-local. [Lessons](references/lessons.md) state evidence limits.
+Start from one disputed result. Inspect what the target did and what the judge could see before deciding which side to change. Freeze the other side during the experiment. Read [the protocol](references/protocol.md) before execution and use [the block handoffs](references/search-prompts.md). [Hill Climb](../hill-climb/SKILL.md) owns target execution/recovery; [Calibrate Judge](../calibrate-judge/SKILL.md) owns fitting; [Cross-Examine](../cross-examine/SKILL.md) investigates disputed scoring. Keep implementations project-local. [Lessons](references/lessons.md) state evidence limits.
 
 1. Freeze goal, criterion meaning, owners, editable artifacts, complete target/judge identities, working-set families, budget/reserve, constraints and promotion policy. Reserve sealed evidence for final confirmation.
 2. Check actual target/judge evidence parity. Triage findings, abstentions and relevant passed outputs. Confirm labels with their real authority; exclude uncertainty from fitting. Repair/version evidence gaps before optimizing the target around them.

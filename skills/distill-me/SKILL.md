@@ -5,7 +5,7 @@ description: On explicit /distill-me invocation, recover expert judgments, corre
 
 # Distill Me
 
-On explicit invocation, extract supported judgments once from the current session. Discussion is not invocation. Leave [Expert Mode](../expert-mode/SKILL.md) active or inactive as it was.
+On explicit invocation, find the corrections and decisions that changed what counts as acceptable. Recover each judgment alongside the output the expert actually reviewed. Discussion is not invocation. Leave [Expert Mode](../expert-mode/SKILL.md) active or inactive as it was.
 
 ## Source and authority
 

@@ -5,7 +5,7 @@ description: Capture expert judgments, corrections, and binary rubric criteria a
 
 # Expert Mode
 
-Capture explicit judgments during the authorized work. Activate only on explicit request; discussion/configuration is not activation. Stay active through compaction until stopped. A new session needs a new invocation. [Distill Me](../distill-me/SKILL.md) is retrospective and leaves this mode unchanged.
+When the expert corrects an output, capture the specific behavior they judged and the reason they gave. Leave unstated reasons open. Activate only on explicit request; discussion/configuration is not activation. Stay active through compaction until stopped. A new session needs a new invocation. [Distill Me](../distill-me/SKILL.md) is retrospective and leaves this mode unchanged.
 
 ## Capture contract
 

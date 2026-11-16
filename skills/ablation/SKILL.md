@@ -5,7 +5,7 @@ description: Remove prompt instructions, examples, context, tools, or workflow s
 
 # Ablation
 
-Find a less burdensome authorized artifact that meets its quality contract. Reuse native execution and [Hill Climb](../hill-climb/SKILL.md) for campaign mechanics; [Bitter Lesson](../bitter-lesson/SKILL.md) adds model-migration comparisons. Implement experiments in the project, keeping this skill reference-only.
+Before deleting a unit, name the burden it removes and the previously passing behavior that would make you put it back. Reuse native execution and [Hill Climb](../hill-climb/SKILL.md) for campaign mechanics; [Bitter Lesson](../bitter-lesson/SKILL.md) adds model-migration comparisons. Implement experiments in the project, keeping this skill reference-only.
 
 ## Removal contract
 

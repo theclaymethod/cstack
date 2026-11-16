@@ -5,7 +5,7 @@ description: On explicit /help invocation, inspect the workspace's CStack artifa
 
 # Help
 
-On explicit invocation, look at the workspace and name one next skill. Discussion is not invocation. Do not start that skill, edit the product, or run candidates unless the user asks.
+On explicit invocation, answer with the next skill and the workspace observation that made it the next step. Discussion is not invocation. Do not start that skill, edit the product, or run candidates unless the user asks.
 
 ## Inspect
 

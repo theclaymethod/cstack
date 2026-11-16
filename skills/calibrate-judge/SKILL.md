@@ -5,7 +5,7 @@ description: Fit and validate an automated judge against authoritative labeled e
 
 # Calibrate Judge
 
-Fit a versioned judge to authoritative labeled outcomes. Keep label agreement, threshold selection, probability calibration and repeated-input stability distinct. Implement adapters/data/experiments in the project, reusing its runner and format.
+Start with the decision this judge will make. Describe a costly false pass and a costly false rejection in the owner's terms. Keep label agreement, threshold selection, probability calibration and repeated-input stability distinct. Implement adapters/data/experiments in the project, reusing its runner and format.
 
 ## Gold and backend contract
 

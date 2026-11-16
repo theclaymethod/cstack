@@ -5,7 +5,7 @@ description: Revisit production prompts and context when upgrading models, testi
 
 # Bitter Lesson
 
-Revisit inherited production prompt/context or workflow complexity when model capability changes. Use [Ablation](../ablation/SKILL.md) for removal and original-baseline quality gates, and [Hill Climb](../hill-climb/SKILL.md) for bounded experiments. Keep adapters and artifacts project-local.
+Name one workaround the old model needed and the failure it prevented. That failure becomes a comparison case on the new model. Use [Ablation](../ablation/SKILL.md) for removal and original-baseline quality gates, and [Hill Climb](../hill-climb/SKILL.md) for bounded experiments. Keep adapters and artifacts project-local.
 
 ## Contract and comparisons
 

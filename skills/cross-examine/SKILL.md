@@ -5,7 +5,7 @@ description: Challenge eval tasks, environments, and verifiers with an attacker,
 
 # Cross-Examine
 
-Find wrong outcomes earning credit or legitimate outcomes rejected by an eval. Use an attacker, a defender and a fresh independent intent reviewer. Read [confirmed lessons](references/lessons.md) and keep a project ledger under [ledger guidance](references/ledger.md).
+Start with the developer's acceptance rule. Pick a wrong outcome the grader might accept and a legitimate alternative it might reject. Use an attacker, a defender and a fresh independent intent reviewer. Read [confirmed lessons](references/lessons.md) and keep a project ledger under [ledger guidance](references/ledger.md).
 
 ## Intent and independent review
 
