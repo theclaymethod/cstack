@@ -9,7 +9,7 @@ On explicit invocation, look at the workspace and name one next skill. Discussio
 
 ## Inspect
 
-Run this skill's `scripts/inspect.py` with `--root` set to the working project. The script is read-only. It prints one JSON object: what it found, what is stale, and `recommendation.skill` plus `recommendation.why`.
+Run this skill's `scripts/inspect_workspace.py` with `--root` set to the working project. The script is read-only. It prints one JSON object: what it found, what is stale, and `recommendation.skill` plus `recommendation.why`.
 
 Read [what the scan counts](references/inspection.md) before treating a missing path as absence. Historical files inside a cstack checkout's `evals/` directory are pack evidence, not the user's campaign. A materialized playground keeps user work under `eval-runs/` and `evals/generated/`.
 

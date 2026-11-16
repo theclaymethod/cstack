@@ -85,7 +85,7 @@ The [capture Cross-Examine audit](evals/review-capture/CROSS_EXAMINE_LEDGER.md) 
 
 ## Help
 
-Help is original cstack guidance. On invocation it inventories local eval artifacts and names one next skill. `skills/help/scripts/inspect.py` is read-only. It does not start capture, execute a candidate, or upload the workspace. The decision order is the skill text; a session can override it only when an explicit judgment is present in the conversation and absent from the files.
+Help is original cstack guidance. On invocation it inventories local eval artifacts and names one next skill. `skills/help/scripts/inspect_workspace.py` is read-only. It does not start capture, execute a candidate, or upload the workspace. The decision order is the skill text; a session can override it only when an explicit judgment is present in the conversation and absent from the files.
 
 ## Tutor
 
