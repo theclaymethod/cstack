@@ -1,0 +1,14 @@
+[
+  {
+    "developer": "Undo should work on our shared whiteboard. When I draw a line and immediately undo, it disappears. Help me figure out what else we need to specify. Keep SCENARIOS.md as we go.",
+    "assistant": "I started [SCENARIOS.md](./SCENARIOS.md) with two entries:\n\n- **UNDO-001 \u2014 established:** You draw a line and immediately press Undo. The line disappears from your view.\n- **UNDO-002 \u2014 open:** You draw a blue line. Before you press Undo, Sam draws a red line. You can see both.\n\nMy reading is that Undo still removes your blue line, leaving Sam\u2019s red line on the board. Is that what you expect to see?"
+  },
+  {
+    "developer": "My undo applies to my marks only.",
+    "assistant": "I recorded your rule in **UNDO-002**. When Sam draws a separate red line after your blue one, your Undo removes the blue line and leaves Sam\u2019s red line visible. **UNDO-001** still covers undoing immediately after drawing. [SCENARIOS.md](/private./SCENARIOS.md)\n\n**UNDO-003 is open.** You draw a blue line. This time, Sam moves your line. You see it in its new position and press Undo. Should the line disappear because you drew it, or stay where Sam put it?"
+  },
+  {
+    "developer": "If someone else has since edited my line, leave that line exactly as they edited it. Returning after I leave the board is a different issue; I haven\u2019t decided it. Wrap up the current index.",
+    "assistant": "While you stay on the board, your Undo applies only to your own marks. If someone has since edited your line, Undo leaves it exactly as they edited it. [SCENARIOS.md](/private./SCENARIOS.md)\n\n| ID | When you press Undo | Expected result |\n| --- | --- | --- |\n| UNDO-001 | You just drew a line. | Your line disappears. |\n| UNDO-002 | You drew a blue line, then Sam drew a separate red line. | Your blue line disappears. Sam\u2019s red line stays. |\n| UNDO-003 | You drew a blue line, then Sam moved it. | The line stays exactly where Sam put it, with its appearance intact. |\n| UNDO-004 | You drew a line, left the board, and returned. | **Deferred.** Whether you can undo a mark from a previous visit is undecided. |"
+  }
+]

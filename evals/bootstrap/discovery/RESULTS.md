@@ -15,3 +15,9 @@ Compare the revised [opening index](evidence/candidate/turn-1.md) with its [fina
 The existing correction replay also passed both branches with this revision. Only B changed from notify to silent in [one date](evidence/regression-one-date/result.json). Only C changed from silent to notify in [whole series](evidence/regression-series/result.json). D stayed open in both.
 
 The revision was selected after inspecting the two misses. This is a regression case for that failure and one observation per version, not a held-out estimate of interview quality.
+
+## Conditional opening question
+
+The [first wording](evidence/conditional/dialogue.json) found the hidden concern in round two by asking about someone moving the same mark. It began by proposing ownership semantics. We tightened the instruction to distinguish an opening that gives only ordinary behavior from one that supplies an incident.
+
+The [shipped wording](evidence/conditional-final/dialogue.json) asked for the motivating concern in round one and waited. Its [final index](evidence/conditional-final/turn-2.md) retains immediate Undo, distinguishes separate marks from another person's edit to the same mark, and leaves rejoining open. No settled question was repeated. Both existing correction branches also passed with this wording. Only the corrected row changed in [one date](../correction/results/conditional-final/one-date/result.json) and [whole series](../correction/results/conditional-final/series/result.json).

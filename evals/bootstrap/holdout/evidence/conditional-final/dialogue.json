@@ -1,0 +1,18 @@
+[
+  {
+    "developer": "Our Kanban welcome demo played in VS Code. We changed the video to fix a blank player in JetBrains. Help me work out the acceptance scenarios for shipping this change. Keep SCENARIOS.md as we go.",
+    "assistant": "I started [SCENARIOS.md](./SCENARIOS.md) with two proposed shipping scenarios.\n\n| ID | What the user should experience |\n| --- | --- |\n| KAN-001 | In VS Code, I open the Kanban welcome screen and can watch the updated demo, as I could before. |\n| KAN-002 | In JetBrains, I open the welcome screen where the player used to be blank and can now watch the demo. |\n\nFor KAN-002, suppose I open the screen in JetBrains and see a still frame with a Play button. I click it and the demo plays. **Would that pass, or should the demo already be playing before I click?**"
+  },
+  {
+    "developer": "I haven\u2019t decided that.",
+    "assistant": "I\u2019d accept either automatic playback or a visible preview with a working Play button. Both let the person who saw a blank player in JetBrains watch the demo. I recorded that recommendation as open under KAN-002. KAN-001 still calls for playback in VS Code. [SCENARIOS.md](./SCENARIOS.md)\n\nPicture someone opening the JetBrains welcome screen and pausing to read it. With autoplay, they see the board move right away. With click-to-play, they see the opening frame and can start the demo when they\u2019re ready. **Would you hold the release if that person had to click Play?**"
+  },
+  {
+    "developer": "I haven\u2019t decided that.",
+    "assistant": "Autoplay is still open. The draft scenarios cover continued playback in VS Code (KAN-001) and visible playback in JetBrains (KAN-002). [SCENARIOS.md](./SCENARIOS.md)\n\nSuppose the updated demo plays in a JetBrains development build. **Before shipping, do you also need to see it play after installing the plugin package users will receive?**"
+  },
+  {
+    "developer": "We tried the new build. JetBrains plays the demo, but now VS Code shows a still frame. Both hosts must play moving video after the change. What we show on an unsupported host is undecided. Wrap up the index.",
+    "assistant": "**The current build fails the shipping requirement.** Both hosts must show moving video. Your build check found that VS Code shows a still frame (KAN-001 fails), while JetBrains plays the demo (KAN-002 passes).\n\n[SCENARIOS.md](./SCENARIOS.md) records both outcomes and leaves two decisions open: how playback starts and what users see on unsupported hosts."
+  }
+]
