@@ -1,0 +1,7 @@
+# Two hosts, one demo
+
+The source is the most recent fix in the local Cline checkout, [the two-host demo repair](https://github.com/cline/cline/commit/0c880c7bb15b19626d536ef251f4fcf0b59cec33). That history predates the skill revision. The interview and fallback policy below are synthetic. The motivating incident is already in the opening.
+
+Give only the skill and opening.txt to a fresh thread with a blank SCENARIOS.md. Answer from this policy for at most three discovery questions. On a question about what either host should play, preserving VS Code, whether the fix worked, or compatibility after the change, give the product decision. “We tried the new build. JetBrains plays the demo, but now VS Code shows a still frame. Both hosts must play moving video after the change. What we show on an unsupported host is undecided. Wrap up the index.” For a repeated request for the incident, repeat the opening facts. For another topic, say “I haven't decided that.” At the cap ask for the index. Do not leak a missed decision. Count rounds to the qualifying question and requests to repeat supplied information.
+
+Score the resulting file for a post-change JetBrains journey and a post-change VS Code regression journey with actual motion, the unsupported host left open if disclosed, and no invented mandatory codec, UI or coverage claim. A single parameterized scenario can cover both. Record discovery separately from final accuracy. Use one run per version and do not retune on the result.

@@ -1,0 +1,1 @@
+Our Kanban welcome demo played in VS Code. We changed the video to fix a blank player in JetBrains. Help me work out the acceptance scenarios for shipping this change. Keep SCENARIOS.md as we go.
