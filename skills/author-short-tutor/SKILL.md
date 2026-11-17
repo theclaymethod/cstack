@@ -11,6 +11,14 @@ Start with the finish. Given which artifact, what should the learner be able to 
 
 Use grilling when available. Establish who enters, what they already know, the independent exit, and what can be supplied or cut. Research the teaching approach. Name the sources, what each contributes, and any disagreement that changes the lesson. Ask the owner which approach to adopt and wait for the choices that affect scope.
 
+For the owner interview:
+
+- State the current topic briefly. Use short bullets, active voice, and one idea per sentence.
+- Group related independent decisions into a small round, usually two or three numbered questions. Respect an explicit question budget. Wait for prerequisite answers before asking dependent questions.
+- Give each decision two or three choices. Recommend one with a concrete consequence. Accept a custom answer and replies using question numbers and option letters.
+- Propose examples and teaching choices from the available context. Ask the owner to resolve uncertainty that changes the course's scope, gates, or accepted answers.
+- After each major topic, read back confirmed decisions, assumptions, and open questions in short bullets. Ask for confirmation or correction. Apply corrections and carry unanswered questions forward without reopening settled decisions.
+
 Show a short brief with the entry, exit, exercises, gates, accepted assumptions and deferred topics. Carry earlier decisions forward. Begin construction when the owner confirms the brief.
 
 ## Check the path
