@@ -5,6 +5,8 @@ description: Revisit production prompts and context when upgrading models, testi
 
 # Bitter Lesson
 
+Lead user-facing replies with the result or decision needed. For several points, put each in its own short, plain-language bullet. A single answer can be one sentence. Link detailed evidence. Preserve open questions, approval gates and any requested artifact format.
+
 Name one workaround the old model needed and the failure it prevented. That failure becomes a comparison case on the new model. Use [Ablation](../ablation/SKILL.md) for removal and original-baseline quality gates, and [Hill Climb](../hill-climb/SKILL.md) for bounded experiments. Keep adapters and artifacts project-local.
 
 ## Contract and comparisons

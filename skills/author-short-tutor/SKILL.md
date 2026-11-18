@@ -5,6 +5,8 @@ description: Design a one-hour agent-led course around a decision the learner ca
 
 # Author a short tutor
 
+Lead user-facing replies with the result or decision needed. For several points, put each in its own short, plain-language bullet. A single answer can be one sentence. Link detailed evidence. Preserve open questions, approval gates and any requested artifact format.
+
 Start with the finish. Given which artifact, what should the learner be able to decide or do unaided? Inspect the existing course and try a representative exercise. Bring the owner a plausible example and a nearby case that changes the answer.
 
 ## Agree on the lesson

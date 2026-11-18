@@ -5,6 +5,8 @@ description: On explicit /help invocation, inspect the workspace's CStack artifa
 
 # Help
 
+Lead user-facing replies with the result or decision needed. For several points, put each in its own short, plain-language bullet. A single answer can be one sentence. Link detailed evidence. Preserve open questions, approval gates and any requested artifact format.
+
 On explicit invocation, answer with the next skill and the workspace observation that made it the next step. Discussion is not invocation. Do not start that skill, edit the product, or run candidates unless the user asks.
 
 ## Inspect

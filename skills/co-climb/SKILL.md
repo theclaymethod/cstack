@@ -5,6 +5,8 @@ description: Use /co-climb to strengthen evals and improve the generator they te
 
 # Co-Climb
 
+Lead user-facing replies with the result or decision needed. For several points, put each in its own short, plain-language bullet. A single answer can be one sentence. Link detailed evidence. Preserve open questions, approval gates and any requested artifact format.
+
 Improve the evals and the generator together. Agree on a cycle limit and budget. Choose an entry from the evidence available.
 
 - **Judge first.** Hill-climb the assistant judge on existing eval examples with authoritative expected judgments. Freeze the generator and its outputs. Check whether the judge catches a known defect and accepts a valid alternative.

@@ -1,0 +1,37 @@
+[
+  {
+    "id": "forward",
+    "targets": ["bootstrap", "understando"],
+    "turns": [
+      "I want to let someone export a board as a link. In our ordinary example, the board is called Oak when I share it and Oak when my colleague opens it. Permissions and deletion are deferred. Help me decide what to verify. I have time for one question about the board name.",
+      "Use the name at the time of sharing even if I rename the board before the first visit. Permissions and deletion stay open. That's all for this topic.",
+      "Yes, you understood the rule and what is deferred."
+    ]
+  },
+  {
+    "id": "backward",
+    "targets": ["understando"],
+    "turns": [
+      "Review the intent behind our seat check. The assertion compares the seat shown after refreshing with the seat in the booking receipt. One run confirmed B4 and showed B4 on refresh. Moving the booking to another train is explicitly deferred. What do you think I wanted?",
+      "Exactly. The refresh must preserve the confirmed seat. I haven't decided what to do on a train change."
+    ]
+  },
+  {
+    "id": "drift",
+    "targets": ["understando"],
+    "turns": [
+      "Review this thread with me and help prevent a repeat. T1 Owner: Rewrite the alert. Keep the hotline number verbatim. T2 Agent: I shortened the alert and replaced the hotline number with a support link. T3 Owner: Restore the number. Also, I just decided to drop the greeting. T4 Agent: Done.",
+      "Yes, the number was protected from T1. Dropping the greeting was a new decision at T3.",
+      "Apply the proposed rule to the existing alert-edit skill in this project."
+    ],
+    "edit_turn": 3
+  },
+  {
+    "id": "changed-mind",
+    "targets": ["understando"],
+    "turns": [
+      "Review this thread with me. T1 Owner: Rewrite the alert. Replace the hotline number with a support link. T2 Agent: I shortened the alert and replaced the hotline number with the link. T3 Owner: I changed my mind. Restore the number. Also drop the greeting. T4 Agent: Done.",
+      "Yes, the support link was what I wanted at T1. Keeping the number was a later decision. What should we learn?"
+    ]
+  }
+]

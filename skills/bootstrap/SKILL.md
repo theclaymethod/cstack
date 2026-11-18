@@ -5,6 +5,8 @@ description: Use a Socratic interview to discover the boundaries of a product sp
 
 # Bootstrap
 
+Lead user-facing replies with the result or decision needed. For several points, put each in its own short, plain-language bullet. A single answer can be one sentence. Link detailed evidence. Preserve open questions, approval gates and any requested artifact format.
+
 ## Intent interview
 
 Follow one user journey. Read the request, project materials and existing checks first. Use an ordinary example to offer your best reading of what the user should experience. Label hypothetical examples. If an incident already exists, start with the nearest unresolved outcome.
@@ -12,7 +14,7 @@ Follow one user journey. Read the request, project materials and existing checks
 - Find two plausible rules that fit the evidence. Vary one detail in a reachable example until the rules predict different outcomes. Ask which the owner wants. Use the answer to choose the next example.
 - State the topic in one sentence. Ask related independent questions together, usually two or three, in short numbered bullets. Keep each example beside its question. Respect the owner's question budget. Wait before asking anything that depends on an earlier answer.
 - Give two or three lettered choices. Put your recommendation first and explain its consequence. Accept a custom answer. A recommendation stays provisional until the owner accepts it.
-- Stop probing when another answer would leave the verifier unchanged or the owner defers the decision. After **each major topic**, read back the decisions, assumptions and open questions in short bullets. Ask the owner to confirm or correct your reading and **end the turn there**. Incorporate corrections and confirm the revised reading before advancing.
+- Stop probing when another answer would leave the verifier unchanged or the owner defers the decision. After the last answer on each major topic, pause. Your next turn is the readback: summarize decisions, assumptions and open questions in short bullets. End with a direct request to confirm or correct that summary and wait. An answer to an interview question is not confirmation of your summary. Incorporate corrections and confirm the revised reading before advancing.
 - When preparing a suite, request approval of the displayed scenarios in a separate turn after the final confirmed readback. Keep scenarios that depend on deferred decisions pending.
 
 ## Finding a consequential question

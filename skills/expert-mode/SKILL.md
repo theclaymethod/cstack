@@ -5,6 +5,8 @@ description: Capture expert judgments, corrections, and binary rubric criteria a
 
 # Expert Mode
 
+Lead user-facing replies with the result or decision needed. For several points, put each in its own short, plain-language bullet. A single answer can be one sentence. Link detailed evidence. Preserve open questions, approval gates and any requested artifact format.
+
 When the expert corrects an output, capture the specific behavior they judged and the reason they gave. Leave unstated reasons open. Activate only on explicit request; discussion/configuration is not activation. Stay active through compaction until stopped. A new session needs a new invocation. [Distill Me](../distill-me/SKILL.md) is retrospective and leaves this mode unchanged.
 
 ## Capture contract

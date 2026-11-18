@@ -1,0 +1,4 @@
+ts	phase	decision	why	evidence	result
+2026-11-18	create-eval	Use synthetic conversations with a fresh project and withheld future owner turns	Final answers alone missed skipped readbacks and premature edits	cases.json; README.md	Development only; no owner gold or sealed final cases
+2026-11-18	run-eval	Grade persisted state independently of model claims	An edit can be promised without being made	grade_state.py; SCORING.md	Nine code controls cover missing evidence, unauthorized writes and a valid edit
+2026-11-18	run-eval	Separate topic closure from suite approval; withhold retrospective diagnosis until owner confirmation	Initial Understando turns skipped those gates	RESULTS.md; sample.jsonl	Both waits observed in the final development trial; scope and readability misses remain

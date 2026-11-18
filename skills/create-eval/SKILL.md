@@ -5,6 +5,8 @@ description: Create repeatable evals from expert findings, model traces, or a ne
 
 # Create Eval
 
+Lead user-facing replies with the result or decision needed. For several points, put each in its own short, plain-language bullet. A single answer can be one sentence. Link detailed evidence. Preserve open questions, approval gates and any requested artifact format.
+
 Start with one decision the eval will inform and one case where a wrong answer would change that decision. Establish source authority, judged unit, observable success and legitimate alternatives. Separate assertion correctness, preferences, process and missing evidence; one bad assertion does not label its neighbors. Keep ambiguous cases provisional while other work continues.
 
 ## Evidence and cases

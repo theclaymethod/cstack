@@ -5,6 +5,8 @@ description: Remove prompt instructions, examples, context, tools, or workflow s
 
 # Ablation
 
+Lead user-facing replies with the result or decision needed. For several points, put each in its own short, plain-language bullet. A single answer can be one sentence. Link detailed evidence. Preserve open questions, approval gates and any requested artifact format.
+
 Before deleting a unit, name the burden it removes and the previously passing behavior that would make you put it back. Reuse native execution and [Hill Climb](../hill-climb/SKILL.md) for campaign mechanics; [Bitter Lesson](../bitter-lesson/SKILL.md) adds model-migration comparisons. Implement experiments in the project, keeping this skill reference-only.
 
 ## Removal contract

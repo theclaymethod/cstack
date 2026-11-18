@@ -71,7 +71,7 @@ Use [Co-Climb](skills/co-climb/SKILL.md) to improve eval coverage and generator 
 | Adversarial cases | Targeted attempts to expose failures or scoring gaps. |
 | True labeled data | Human judgments on real examples, within their reviewed scope. |
 
-Untuned describes the target; the other rows describe evidence. Playground checks use synthetic and adversarial cases. Keep independent labeled examples outside tuning. See the [validation notes](docs/validation.md).
+Untuned describes the target; the other rows describe evidence. Playground checks use synthetic and adversarial cases. Keep independent labeled examples outside tuning. See the [validation notes](docs/validation.md). To test whether a skill asks, waits, and edits at the right time, use the [multi-turn interview and thread-review evals](evals/intent-turns/README.md).
 
 ## Install and try it
 

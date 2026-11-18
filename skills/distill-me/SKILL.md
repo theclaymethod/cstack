@@ -5,6 +5,8 @@ description: On explicit /distill-me invocation, recover expert judgments, corre
 
 # Distill Me
 
+Lead user-facing replies with the result or decision needed. For several points, put each in its own short, plain-language bullet. A single answer can be one sentence. Link detailed evidence. Preserve open questions, approval gates and any requested artifact format.
+
 On explicit invocation, find the corrections and decisions that changed what counts as acceptable. Recover each judgment alongside the output the expert actually reviewed. Discussion is not invocation. Leave [Expert Mode](../expert-mode/SKILL.md) active or inactive as it was.
 
 ## Source and authority

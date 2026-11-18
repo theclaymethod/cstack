@@ -5,6 +5,8 @@ description: Fit and validate an automated judge against authoritative labeled e
 
 # Calibrate Judge
 
+Lead user-facing replies with the result or decision needed. For several points, put each in its own short, plain-language bullet. A single answer can be one sentence. Link detailed evidence. Preserve open questions, approval gates and any requested artifact format.
+
 Follow the [shared decision ledger](../create-eval/references/decision-ledger.md) from the disputed rows to their evidence, then append the calibration decision and receipt. Start with the decision this judge will make. Describe a costly false pass and a costly false rejection in the owner's terms. Keep label agreement, threshold selection, probability calibration and repeated-input stability distinct. Implement adapters/data/experiments in the project, reusing its runner and format.
 
 ## Gold and backend contract

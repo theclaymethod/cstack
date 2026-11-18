@@ -5,6 +5,8 @@ description: Challenge existing evals with harder situations implied by the prod
 
 # Adversarial Cases
 
+Lead user-facing replies with the result or decision needed. For several points, put each in its own short, plain-language bullet. A single answer can be one sentence. Link detailed evidence. Preserve open questions, approval gates and any requested artifact format.
+
 Start with what the current evals let through. Read their inputs, assertions and observed results alongside the developer’s decisions, product examples and approved scenario index. Identify a promise that a generator could break while still passing. Cite the evidence for that reading and label any inference.
 
 Before proposing a situation, trace it through the relevant product entrypoint. Check which guard actually runs and what existing evals already distinguish. If the guard prevents the outcome or the case duplicates coverage, move on without a new row or owner question. Retain a brief evidence pointer for an attempted challenge in the campaign ledger.

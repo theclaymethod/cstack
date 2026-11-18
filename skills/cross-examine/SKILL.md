@@ -5,6 +5,8 @@ description: Challenge eval tasks, environments, and verifiers with an attacker,
 
 # Cross-Examine
 
+Lead user-facing replies with the result or decision needed. For several points, put each in its own short, plain-language bullet. A single answer can be one sentence. Link detailed evidence. Preserve open questions, approval gates and any requested artifact format.
+
 Pick up the disputed row from the [shared decision ledger](../create-eval/references/decision-ledger.md). Follow its situation ID to the developer’s latest applicable decision, including superseded and still-open expectations. Start with that acceptance rule. Pick a wrong outcome the grader might accept and a legitimate alternative it might reject. Use an attacker, a defender and a fresh independent intent reviewer. Read [confirmed lessons](references/lessons.md) and keep a project ledger under [ledger guidance](references/ledger.md).
 
 ## Intent and independent review

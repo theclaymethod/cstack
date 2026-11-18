@@ -5,6 +5,8 @@ description: Execute an eval package, freeze verdicts before comparing expert la
 
 # Run Eval
 
+Lead user-facing replies with the result or decision needed. For several points, put each in its own short, plain-language bullet. A single answer can be one sentence. Link detailed evidence. Preserve open questions, approval gates and any requested artifact format.
+
 Read the [shared decision ledger](../create-eval/references/decision-ledger.md) for the case revisions in scope and append the run receipt there. Run the frozen eval through the project's entrypoint. Inspect an actual result alongside its input before summarizing the run. [Hill Climb](../hill-climb/SKILL.md) owns product optimization; [Calibrate Judge](../calibrate-judge/SKILL.md) owns judge fitting. Keep both separate from this run.
 
 ## Freeze the run and inputs
