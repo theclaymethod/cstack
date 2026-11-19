@@ -1,6 +1,6 @@
 # Reviewing automated changes
 
-At a checkpoint, summarize what each proposed change does, give a before/after case, and flag regressions or uncertainty. Offer these choices:
+Open the review with 3–5 plain lines on what the end user will experience differently. Group before/after cases, checks, regressions, and uncertainty under those lines, with one adoption decision per item. Put spec changes, assertions, diffs, and receipts one click down. At a checkpoint, offer these choices:
 
 - **Review now.** The user can accept named changes, request revisions, or decline.
 - **Continue.** Keep exploring until the current campaign’s agreed stopping condition, then return for review.
