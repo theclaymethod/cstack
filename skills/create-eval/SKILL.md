@@ -29,7 +29,11 @@ Keep labels/rationales and label-bearing metadata outside allowlisted judge inpu
 
 The package remains a draft until legitimate, failing, boundary and alternative controls execute through its real grading path. Preserve earlier evidence when checks change. Use [judge guidance](references/judges.md) and [Calibrate Judge](../calibrate-judge/SKILL.md) for semantic fitting to authoritative labels; freeze criteria, parser, model/config, runner, sampling and budget before comparison.
 
-Use [Cross-Examine](../cross-examine/SKILL.md) for requested/needed adversarial hardening, with original intent, access and a bounded budget. Use [Run Eval](../run-eval/SKILL.md) for authorized execution. Report paths, actual checks, source limits and incomplete cases, separating judge agreement from product performance and development from independent evidence.
+Before owner review, use [Cross-Examine](../cross-examine/SKILL.md) with original intent, access and a bounded budget. Run two plausible wrong products through the real verifier: one returns the right artifact with wrong content, and one always emits the artifact. Include at least one negative-space guard where the behavior must not occur, and verify that the always-emit product fails it. Record what ran and what the verifier missed; a hypothetical control is not evidence.
+
+To prove a code check offline, replay the failing capture through the real check twice: once with the smallest change that should pass, and once with a plausible near miss that should still fail. Record both observed outcomes as evidence about the check, not the product.
+
+Use [Run Eval](../run-eval/SKILL.md) for authorized execution. Report paths, actual checks, source limits and incomplete cases, separating judge agreement from product performance and development from independent evidence.
 
 Authoring supplies no authority for product fixes, paid calls, reserved-data access or publication. Requested sharing follows [export](../expert-mode/references/export.md).
 
