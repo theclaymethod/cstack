@@ -34,7 +34,7 @@ A low-frequency case can matter. For example, a display-only trailing zero can b
 
 Freeze judge, cases and trial policy. Execute at least two identical controls on each working set; predeclare the spread calculation. Two scalar controls can supply an observed range, not a confidence interval or statistical significance.
 
-Snapshot candidate parents, hypotheses and nearby regressions. Execute changed targets natively on both sets; old-output regrading cannot test changes. Keep per-case outputs/judgments/errors/costs. Isolate writes and test merges anew.
+Snapshot candidate parents, hypotheses and nearby regressions. Execute changed targets natively on both sets in isolated Git worktrees (returning uncommitted patches, or sequential snapshots when worktrees are unavailable; see [harness mapping](../../run-eval/references/harnesses.md)); old-output regrading cannot test changes. Keep per-case outputs/judgments/errors/costs. Isolate writes and test merges anew.
 
 Retain complementary branches under a declared family/objective policy and archive cap; protect costly errors and original constraints before aggregate gains. Retention is not promotion. Partial screens nominate further experiments only. Promote only when improvement exceeds control spread on both sets, satisfies constraints and replicates. A tie/loss on either set or insufficient repetitions means no confirmed gain. Keep the original baseline and record dead ends.
 
@@ -44,7 +44,7 @@ Freeze target and saved-output corpus. Search only authorized judge components a
 
 Select by authoritative-label agreement, costly class errors and coverage, never by target success score. Multiple judge configurations may remain alternatives, but each target comparison uses one exact frozen evaluator. Do not cherry-pick judges per target. An ensemble is a new bundle needing calibration and budget. Without policy or comparative evidence, leave the selection unresolved.
 
-Version the rebuilt bundle and re-judge the identical saved corpus, including baseline, controls and all archived candidates. Invalidate old rankings. Re-measure both sets under the new judge; revoke promotions that no longer separate from controls. Restore an admissible base only within the authorized snapshot, preserving unrelated edits. Such branches may remain exploratory within budget, but old wins cannot justify selection.
+Version the rebuilt bundle and re-judge the identical saved corpus—including baseline, controls and all archived candidates—in a fresh, non-forked, read-only judge context receiving allowlisted runtime payloads only (with deterministic code freezing predictions/hashes before label comparison). Invalidate old rankings. Re-measure both sets under the new judge; revoke promotions that no longer separate from controls. Restore an admissible base only within the authorized snapshot, preserving unrelated edits. Such branches may remain exploratory within budget, but old wins cannot justify selection.
 
 Plant known defects and include legitimate controls after rebuilds. Check detection and the target loop's actual repair with before/after outputs; blanket rejection is not success. Label injections synthetic and keep them out of final evidence.
 

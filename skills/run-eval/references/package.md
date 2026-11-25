@@ -60,9 +60,9 @@ Incomplete inputs, unresolved check applicability, uncertain labels, and missing
 
 ## Blind projection and results
 
-Emit only `{id, input, output, context, reference, checks}` with a fresh opaque run ID, and the selected check definitions. Omit absent optional fields. Keep original IDs, gold, source, family, suite, slice, lane, notes, and all unselected rows private. A contextual clue can still leak a label even after structural projection; inspect the permitted view.
+Have a narrow script emit only `{id, input, output, context, reference, checks}` with a fresh opaque run ID, and the selected check definitions. Omit absent optional fields. Keep original IDs, gold, source, family, suite, slice, lane, notes, and all unselected rows private. A contextual clue can still leak a label even after structural projection; inspect the permitted view.
 
-Per-criterion result: run ID, check ID, route, short evidence observation, concise rationale, and PASS/FAIL/UNKNOWN/ERROR. Code results come from code, with any exception recorded as ERROR. Missing required evidence or unresolved applicability is UNKNOWN, not a fabricated answer.
+Dispatch semantic criteria to a **fresh, non-forked, read-only judge subagent** (or parallel batches over independent cases) given only that blind payload—never generator reasoning or gold files; see [harness mapping](harnesses.md). Where subagents are unavailable, fall back to the active agent and disclose any prior exposure to generator reasoning or gold labels. Per-criterion result: run ID, check ID, route, short evidence observation, concise rationale, and PASS/FAIL/UNKNOWN/ERROR. Code results come from code, with any exception recorded as ERROR. Missing required evidence or unresolved applicability is UNKNOWN, not a fabricated answer.
 
 For a case whose required criteria were all evaluated: any decisive FAIL makes the case FAIL; otherwise ERROR or UNKNOWN leaves it incomplete; all PASS makes it PASS. Preserve errors and unknowns even alongside a decisive failure. An unjudged human-only criterion prevents all-PASS completion.
 

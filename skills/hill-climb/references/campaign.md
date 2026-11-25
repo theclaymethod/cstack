@@ -26,7 +26,7 @@ Write an attempt reservation before starting work and its result afterward. Inte
 
 Distinguish incomplete execution from a completed run whose ledger commit was interrupted. Recover the latter only by validating full case coverage, candidate/source/configuration identity, actual output evidence, and score/constraint results against the original reservation. Persist recovered completion and retention/promotion decisions without rerunning the artifact or changing charged spend. Leave partial or unverifiable evidence visibly pending; a convenient completion flag is insufficient.
 
-Preserve failed or timed-out attempts and partial artifacts. Candidate code executes with the actual runner's permissions; a scratch directory or timeout is not containment. Run only code within the project's authorized execution boundary. Stateful targets need reset and complete resulting-state/preservation observations.
+Preserve failed or timed-out attempts and partial artifacts. For parallel candidate trials, edit and execute each candidate in its own Git worktree (returning uncommitted patches, or isolated snapshot directories when worktrees are unavailable) and reserve the full batch spend *before* fan-out under one coordinator or deterministic workflow loop; see [harness mapping](../../run-eval/references/harnesses.md). Candidate code executes with the actual runner's permissions; a scratch directory, worktree, or timeout is not containment. Run only code within the project's authorized execution boundary. Stateful targets need reset and complete resulting-state/preservation observations.
 
 ## Budget and stopping
 

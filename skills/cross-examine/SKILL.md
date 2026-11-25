@@ -1,13 +1,20 @@
 ---
 name: cross-examine
-description: Challenge eval tasks, environments, and verifiers with an attacker, defender, and independent intent reviewer. Find undeserved passes or rejected legitimate solutions, then feed confirmed flaws back into eval-generation guidance.
+description: Audit eval tasks, environments, and verifiers using isolated attacker, defender, and fresh independent intent-reviewer roles to uncover undeserved passes or rejected legitimate solutions, then feed confirmed root causes back into generator guidance. Use to harden or challenge an eval's scoring integrity.
 ---
 
 # Cross-Examine
 
 Lead user-facing replies with the result or decision needed. For several points, put each in its own short, plain-language bullet. A single answer can be one sentence. Link detailed evidence. Preserve open questions, approval gates and any requested artifact format.
 
-Pick up the disputed row from the [shared decision ledger](../create-eval/references/decision-ledger.md). Follow its situation ID to the developer’s latest applicable decision, including superseded and still-open expectations. Start with that acceptance rule. Pick a wrong outcome the grader might accept and a legitimate alternative it might reject. Use an attacker, a defender and a fresh independent intent reviewer. Read [confirmed lessons](references/lessons.md) and keep a project ledger under [ledger guidance](references/ledger.md).
+Pick up the disputed row from the [shared decision ledger](../create-eval/references/decision-ledger.md). Follow its situation ID to the developer’s latest applicable decision, including superseded and still-open expectations. Start with that acceptance rule. Pick a wrong outcome the grader might accept and a legitimate alternative it might reject. Separate attacker, defender, and fresh independent intent-reviewer roles. Read [confirmed lessons](references/lessons.md) and keep a project ledger under [ledger guidance](references/ledger.md).
+
+## Execution architecture
+
+- **Parallel isolated attackers:** Run independent attack hypotheses in separate resettable scratch states or Git worktrees with candidate-equivalent tool permissions; keep operator receipts and hidden oracles out of attacker access.
+- **Strictly fresh, non-forked intent reviewer:** Dispatch a read-only subagent with zero shared history from authors, attackers, repairers, or coordinators (optionally on an authorized distinct model/provider). Supply original intent first, then frozen source and raw replay evidence—never persuasion or prior verdicts.
+- **Isolated defender & workflow:** Author candidate repairs in an isolated worktree (returning uncommitted patches until explicit user acceptance), replay exploits and legitimate baselines from clean state, and keep pending edits out of the active grader until post-repair intent acceptance and user approval. Deterministic workflow scripts may coordinate rounds without leaking verdicts across roles.
+- **Fallback:** Disclose missing separation, serialize scratch writes, and mark formal adjudication **unreviewed**—sequential self-review supplies no independence; see [harness mapping](../run-eval/references/harnesses.md).
 
 ## Intent and independent review
 

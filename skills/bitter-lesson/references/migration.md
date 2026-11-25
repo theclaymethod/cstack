@@ -9,7 +9,7 @@ Use this reference for attribution, provider guidance and production release evi
 | Production model | Production baseline A | Simplification on production model B |
 | Candidate model | Upgrade with design held fixed C | Proposed bundle D |
 
-Run each available cell through the actual project execution boundary. Preserve per-case and repeated-trial membership, actual outputs/state, full configuration and costs. Reuse a recorded cell only when its artifact, inputs, evaluator, conditions and trial protocol satisfy the current comparison; regrading old outputs cannot measure a changed model or prompt.
+Run each available cell through the actual project execution boundary, preferably in parallel isolated Git worktrees or separate run directories so pinned model versions, assembled prompts, tools, and settings never bleed across cells (returning uncommitted candidates; see [harness mapping](../../run-eval/references/harnesses.md)). Preserve per-case and repeated-trial membership, actual outputs/state, full configuration and costs. Reuse a recorded cell only when its artifact, inputs, evaluator, conditions and trial protocol satisfy the current comparison; regrading old outputs cannot measure a changed model or prompt.
 
 `C − A` estimates the model change with the existing design. `D − C` estimates simplification on the candidate model. `D − A` compares the proposed release to production. `B − A` estimates simplification on the production model; `(D − C) − (B − A)` describes the interaction on the chosen outcome scale. These interpretations require comparable conditions and a credible sampling design. Do not attach causal certainty to an uncontrolled historical comparison. [NIST full-factorial design](https://www.itl.nist.gov/div898/handbook/pri/section3/pri333.htm).
 
@@ -27,7 +27,7 @@ Start with the project's identified workarounds and failure history. Use [Ablati
 
 ## Production evidence
 
-Offline evals should cover representative traffic and consequential behavior, including malformed outputs, failure/review paths and relevant tool state. When a model-based judge is used, keep its approved version fixed; do not tune it to reward the new prompt. Preserve actual error and unknown counts and check critical slices separately from averages.
+Offline evals should cover representative traffic and consequential behavior, including malformed outputs, failure/review paths and relevant tool state. When a model-based judge is used, keep its approved version fixed and run it in a fresh isolated context (ideally an authorized distinct provider/family) blind to which model or design cell produced each output; do not tune it to reward the new prompt. Preserve actual error and unknown counts and check critical slices separately from averages. Replacing fragile prose guardrails with deterministic hooks, tool bounds, or verifier scripts can also be evaluated as an explicit, separately scoped simplification candidate.
 
 Measure full execution costs and latency, including output/reasoning work, retries and tools. Cache policy, concurrency, rate limits and model effort can materially affect those measurements. Mark unknowns. Pin model versions when available and retain bundle content hashes and the original baseline. [Official prompt-version guidance](https://developers.openai.com/api/docs/guides/prompt-engineering).
 

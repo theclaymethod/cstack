@@ -1,6 +1,6 @@
 ---
 name: bitter-lesson
-description: Revisit production prompts and context when upgrading models, testing which legacy steering and scaffolding can be removed. Use for model-migration simplification and retiring workarounds whose value may have changed with model capability.
+description: Revisit production prompts, context, and scaffolding when upgrading models, testing which legacy steering and workarounds can be removed across model-by-design comparisons. Use for model-migration simplification—not for same-model deletion alone (ablation).
 ---
 
 # Bitter Lesson
@@ -8,6 +8,12 @@ description: Revisit production prompts and context when upgrading models, testi
 Lead user-facing replies with the result or decision needed. For several points, put each in its own short, plain-language bullet. A single answer can be one sentence. Link detailed evidence. Preserve open questions, approval gates and any requested artifact format.
 
 Name one workaround the old model needed and the failure it prevented. That failure becomes a comparison case on the new model. Use [Ablation](../ablation/SKILL.md) for removal and original-baseline quality gates, and [Hill Climb](../hill-climb/SKILL.md) for bounded experiments. Keep adapters and artifacts project-local.
+
+## Execution architecture
+
+- **Parallel worktree cells:** Run each authorized Model × Design cell (A: old/existing, B: old/simplified, C: new/existing, D: new/simplified) in its own isolated Git worktree or run directory with pinned model/version, assembled prompt, tools, and settings, returning uncommitted candidates until explicit user approval.
+- **Blind fixed judge:** Keep the approved evaluator fixed across all cells; when semantic judging is used, run a fresh isolated judge (ideally an authorized distinct provider/family) blind to which model or design produced each output.
+- **Harness-aware candidates & fallback:** Treat replacing fragile prose reminders with deterministic hooks, tool bounds, or code verifiers as a separately scoped simplification candidate. Without parallel worktrees or subagents, run available cells sequentially, leaving missing old-model cells explicitly unrun and disclosing any shared judging context; see [harness mapping](../run-eval/references/harnesses.md).
 
 ## Contract and comparisons
 

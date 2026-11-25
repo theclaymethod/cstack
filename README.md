@@ -42,18 +42,18 @@ With good production traces, use LangChain's [eval-engineering](https://github.c
 
 | Skill | Use it to |
 | --- | --- |
-| [expert-mode](skills/expert-mode/SKILL.md) | Capture explicit judgments while you work. |
-| [distill-me](skills/distill-me/SKILL.md) | Recover judgments from a session. |
-| [bootstrap](skills/bootstrap/SKILL.md) | Interview for intent and review proposed scenarios. |
-| [create-eval](skills/create-eval/SKILL.md) | Turn reviewed evidence into cases and graders. |
-| [calibrate-judge](skills/calibrate-judge/SKILL.md) | Fit and validate a judge against labeled outcomes. |
-| [run-eval](skills/run-eval/SKILL.md) | Execute evals and report what ran. |
-| [cross-examine](skills/cross-examine/SKILL.md) | Reproduce scoring gaps and independently check repairs. |
-| [adversarial-cases](skills/adversarial-cases/SKILL.md) | Challenge existing evals, review harder situations in `situations.md`, and pass supported entries to Create Eval. |
-| [hill-climb](skills/hill-climb/SKILL.md) | Improve a target within an eval budget. |
-| [co-climb](skills/co-climb/SKILL.md) | Challenge the evals and improve the generator against them over bounded cycles. |
-| [ablation](skills/ablation/SKILL.md) | Remove complexity while preserving required performance. |
-| [bitter-lesson](skills/bitter-lesson/SKILL.md) | Retest inherited prompt complexity as models improve. |
+| [expert-mode](skills/expert-mode/SKILL.md) | Capture explicit judgments locally while you work, with optional session-gated hooks. |
+| [distill-me](skills/distill-me/SKILL.md) | Recover judgments from a session via parallel read-only lenses without duplicates. |
+| [bootstrap](skills/bootstrap/SKILL.md) | Interview for intent, confirm spec boundaries, and index reviewed scenarios. |
+| [create-eval](skills/create-eval/SKILL.md) | Turn reviewed evidence into native or Harbor cases and verify controls in isolation. |
+| [calibrate-judge](skills/calibrate-judge/SKILL.md) | Fit and validate a judge with separated proposer, blind judge, and code comparator roles. |
+| [run-eval](skills/run-eval/SKILL.md) | Execute frozen evals with code-owned mechanics and fresh blind judge subagents. |
+| [cross-examine](skills/cross-examine/SKILL.md) | Audit scoring with isolated attackers, worktree repairs, and a fresh intent reviewer. |
+| [adversarial-cases](skills/adversarial-cases/SKILL.md) | Challenge existing evals, review harder situations in `situations.md`, and build isolated fault cases for Create Eval and audits. |
+| [hill-climb](skills/hill-climb/SKILL.md) | Improve a target in parallel worktrees under a pre-reserved eval budget. |
+| [co-climb](skills/co-climb/SKILL.md) | Challenge evals and improve the generator across isolated target worktrees and blind judge cycles. |
+| [ablation](skills/ablation/SKILL.md) | Remove complexity in parallel worktrees anchored to the original baseline. |
+| [bitter-lesson](skills/bitter-lesson/SKILL.md) | Retest prompts and scaffolding across isolated model-by-design cells on upgrades. |
 | [help](skills/help/SKILL.md) | Read the workspace and name the single next skill. |
 | [tutor](skills/tutor/SKILL.md) | Turn one product boundary into a checked eval, or practice the full playground. |
 | [author-short-tutor](skills/author-short-tutor/SKILL.md) | Interview the course owner, agree on exercise gates, and build a one-hour tutor. |
@@ -61,6 +61,10 @@ With good production traces, use LangChain's [eval-engineering](https://github.c
 Reviews [offer to retain useful corrections and labels](skills/expert-mode/references/calibration-capture.md) for later judge calibration. Saving a proposal does not confirm its label or activate Expert Mode.
 
 Use [Co-Climb](skills/co-climb/SKILL.md) to improve eval coverage and generator behavior together. Start with judge calibration, an adversarial challenge to a covered promise, or a disputed result. Keep multiple promising branches within a budget, alternate target changes and judge calibration in separate blocks, and re-score saved outputs after judge changes. Exploratory retention is separate from confirmed promotion. Reserve a sealed final comparison. The [co-climb decision eval](evals/co-climb/README.md) covers branch selection, evidence boundaries and judge handoffs.
+
+## Agent architecture
+
+Skills keep human judgment, Socratic interviews, and change-review gates inline while isolating everything that benefits from clean context or concurrency: fresh non-forked subagents for blind judging and intent review, parallel fan-out for extraction/scenario/attack slices, Git worktrees returning uncommitted diffs for candidate edits and model-comparison cells, code-owned mechanics for projection/hashing/comparison, Harbor container/verifier separation for executable tasks, optional authorized cross-provider judge diversity, and opt-in session-gated hooks (reference-only) for `expert-mode`. Every skill degrades gracefully on single-agent harnesses with explicit isolation disclosures. See the [agent architecture guide](docs/agent-architecture.md) and [per-harness mapping](skills/run-eval/references/harnesses.md).
 
 ## Name the validation
 

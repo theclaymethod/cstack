@@ -1,11 +1,17 @@
 ---
 name: bootstrap
-description: Use a Socratic interview to discover the boundaries of a product spec and index the scenarios its evals should cover.
+description: Use a Socratic interview to discover the boundaries of a product spec, confirm topic readbacks, and index the reviewed scenarios its evals should cover. Use for /bootstrap, $bootstrap, or starting evals from intent before useful traces exist.
 ---
 
 # Bootstrap
 
 Lead user-facing replies with the result or decision needed. For several points, put each in its own short, plain-language bullet. A single answer can be one sentence. Link detailed evidence. Preserve open questions, approval gates and any requested artifact format.
+
+## Execution architecture
+
+- **Inline Socratic interview:** Keep owner interviews, contrast questions, topic readback confirmations, and `SCENARIOS.md` approvals interactive in the main session.
+- **Optional parallel scenario expansion:** When expanding confirmed boundaries into broader scenario proposals under [scenario generation](references/scenarios.md), fan out independent scenario authors by coverage slice (read-only on repo, scratch-only writes) returning proposed expectations only—never gold labels or evaluator code—for the coordinator to merge before owner review.
+- **Handoff & fallback:** Hand approved scenarios to [Create Eval](../create-eval/SKILL.md) for authoring and isolated validation. Without subagents, generate expansion slices inline and disclose local-only coverage; see [harness mapping](../run-eval/references/harnesses.md).
 
 ## Intent interview
 

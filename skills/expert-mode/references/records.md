@@ -51,7 +51,7 @@ Record capture provenance when useful, including live versus retrospective captu
 
 Use ordinary Markdown/JSONL and project-relative references where practical. The skill should work through Claude, Codex, Cursor, or another agent's normal file tools without depending on a particular transcript database, API, plugin, or subagent feature. Do not assume access to another application's conversation history.
 
-Carry the active mode, established paths, session/example/criterion IDs, pending questions, and unsaved entries in the current session's handoff or compaction summary. Read only history already provided or explicitly authorized for this workflow. A new session still requires explicit activation.
+Carry the active mode, established paths, session/example/criterion IDs, pending questions, and unsaved entries in the current session's handoff or compaction summary. Projects that want deterministic compaction or turn-end reminders may opt into session-gated local hooks under [hook guidance](hooks.md); installing skills never activates hooks automatically. Read only history already provided or explicitly authorized for this workflow. A new session still requires explicit activation.
 
 Store review data in the working project's established private location. The skill records local evidence; it does not automatically commit, upload, publish, or copy identifying source data into a public skill repository.
 

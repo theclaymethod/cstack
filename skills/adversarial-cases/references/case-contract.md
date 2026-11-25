@@ -19,7 +19,7 @@ Use the project's existing schema. These are required meanings where applicable,
 | Reduction | Changes attempted, retained mechanism, controls rechecked, rejected reductions and budget used. |
 | Limits | Unsupported assumptions, execution/access limits, non-activation, unresolved intent, exposure and excluded claims. |
 
-Keep construction status separate from parent adjudication. Useful construction states include proposed, runnable, executed, not activated, and incomplete. The parent owns expectation approval, confirmed-finding status, and repair acceptance; preserve its source if it later supplies a decision.
+Keep construction status separate from parent adjudication. Useful construction states include proposed, runnable, executed, not activated, and incomplete. When dispatched as an isolated worker (in a disposable scratch directory or Git worktree; see [harness mapping](../../run-eval/references/harnesses.md)), keep canonical evals, gold labels, and production targets read-only and drive mechanical activation, control, and shrinking loops with deterministic local scripts. The parent owns expectation approval, confirmed-finding status, user consent offers, and repair acceptance; preserve its source if it later supplies a decision.
 
 ## Scenario-only handoff
 

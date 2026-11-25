@@ -1,6 +1,6 @@
 # Retrospective review passes
 
-These prompts adapt Reflect's locate, independent review, synthesis, and routing pattern to eval data rather than skill edits. Supply the actual active transcript path or bounded conversation excerpt, the existing dataset/rubric references, and any known coverage gaps. Do not substitute an unsupported interpretation for the source. Use only as much source material as needed within the established access boundary.
+These prompts adapt Reflect's locate, independent review, synthesis, and routing pattern to eval data rather than skill edits. Dispatch the three lenses in parallel as **fresh read-only subagents** (see [harness mapping](../../run-eval/references/harnesses.md)), passing the bounded current-session transcript path or excerpt, the existing dataset/rubric references, and any known coverage gaps explicitly. Do not run them in a history-less fork without supplying that bounded source. Without subagents, run the three lenses sequentially in the main session and disclose sequential extraction. Do not substitute an unsupported interpretation for the source. Use only as much source material as needed within the established access boundary.
 
 ## Common reviewer instructions
 

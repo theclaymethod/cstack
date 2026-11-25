@@ -1,6 +1,6 @@
 # Block handoff prompts
 
-Fill from the ledger after reading [the protocol](protocol.md). These prompts do not authorize workers, paid scope or protected-file edits. Use actual budgets and evidence, not the website animation's fixed counts.
+Fill from the ledger after reading [the protocol](protocol.md). These prompts do not authorize workers, paid scope or protected-file edits. Run target workers in isolated Git worktrees returning uncommitted patches, run semantic judge scoring in fresh non-forked read-only contexts, and disclose sequential fallbacks when unavailable (see [harness mapping](../../run-eval/references/harnesses.md)). Use actual budgets and evidence, not the website animation's fixed counts.
 
 ## Shared envelope
 
