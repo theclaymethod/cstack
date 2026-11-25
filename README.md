@@ -40,23 +40,23 @@ flowchart TD
 
 With good production traces, use LangChain's [eval-engineering](https://github.com/langchain-ai/langchain-skills/tree/main/config/skills/eval-engineering) for grounded tasks, environments, and verifiers. It is referenced, not bundled.
 
-| Skill | Use it to |
-| --- | --- |
-| [expert-mode](skills/expert-mode/SKILL.md) | Capture explicit judgments locally while you work, with optional session-gated hooks. |
-| [distill-me](skills/distill-me/SKILL.md) | Recover judgments from a session via parallel read-only lenses without duplicates. |
-| [bootstrap](skills/bootstrap/SKILL.md) | Interview for intent, confirm spec boundaries, and index reviewed scenarios. |
-| [create-eval](skills/create-eval/SKILL.md) | Turn reviewed evidence into native or Harbor cases and verify controls in isolation. |
-| [calibrate-judge](skills/calibrate-judge/SKILL.md) | Fit and validate a judge with separated proposer, blind judge, and code comparator roles. |
-| [run-eval](skills/run-eval/SKILL.md) | Execute frozen evals with code-owned mechanics and fresh blind judge subagents. |
-| [cross-examine](skills/cross-examine/SKILL.md) | Audit scoring with isolated attackers, worktree repairs, and a fresh intent reviewer. |
-| [adversarial-cases](skills/adversarial-cases/SKILL.md) | Challenge existing evals, review harder situations in `situations.md`, and build isolated fault cases for Create Eval and audits. |
-| [hill-climb](skills/hill-climb/SKILL.md) | Improve a target in parallel worktrees under a pre-reserved eval budget. |
-| [co-climb](skills/co-climb/SKILL.md) | Challenge evals and improve the generator across isolated target worktrees and blind judge cycles. |
-| [ablation](skills/ablation/SKILL.md) | Remove complexity in parallel worktrees anchored to the original baseline. |
-| [bitter-lesson](skills/bitter-lesson/SKILL.md) | Retest prompts and scaffolding across isolated model-by-design cells on upgrades. |
-| [help](skills/help/SKILL.md) | Read the workspace and name the single next skill. |
-| [tutor](skills/tutor/SKILL.md) | Turn one product boundary into a checked eval, or practice the full playground. |
-| [author-short-tutor](skills/author-short-tutor/SKILL.md) | Interview the course owner, agree on exercise gates, and build a one-hour tutor. |
+| | Skill | Use it to |
+| --- | --- | --- |
+| <img src="skills/expert-mode/assets/icon.svg" width="22" height="22" alt=""> | [expert-mode](skills/expert-mode/SKILL.md) | Capture explicit judgments locally while you work, with optional session-gated hooks. |
+| <img src="skills/distill-me/assets/icon.svg" width="22" height="22" alt=""> | [distill-me](skills/distill-me/SKILL.md) | Recover judgments from a session via parallel read-only lenses without duplicates. |
+| <img src="skills/bootstrap/assets/icon.svg" width="22" height="22" alt=""> | [bootstrap](skills/bootstrap/SKILL.md) | Interview for intent, confirm spec boundaries, and index reviewed scenarios. |
+| <img src="skills/create-eval/assets/icon.svg" width="22" height="22" alt=""> | [create-eval](skills/create-eval/SKILL.md) | Turn reviewed evidence into native or Harbor cases and verify controls in isolation. |
+| <img src="skills/calibrate-judge/assets/icon.svg" width="22" height="22" alt=""> | [calibrate-judge](skills/calibrate-judge/SKILL.md) | Fit and validate a judge with separated proposer, blind judge, and code comparator roles. |
+| <img src="skills/run-eval/assets/icon.svg" width="22" height="22" alt=""> | [run-eval](skills/run-eval/SKILL.md) | Execute frozen evals with code-owned mechanics and fresh blind judge subagents. |
+| <img src="skills/cross-examine/assets/icon.svg" width="22" height="22" alt=""> | [cross-examine](skills/cross-examine/SKILL.md) | Audit scoring with isolated attackers, worktree repairs, and a fresh intent reviewer. |
+| <img src="skills/adversarial-cases/assets/icon.svg" width="22" height="22" alt=""> | [adversarial-cases](skills/adversarial-cases/SKILL.md) | Challenge existing evals, review harder situations in `situations.md`, and build isolated fault cases for Create Eval and audits. |
+| <img src="skills/hill-climb/assets/icon.svg" width="22" height="22" alt=""> | [hill-climb](skills/hill-climb/SKILL.md) | Improve a target in parallel worktrees under a pre-reserved eval budget. |
+| <img src="skills/co-climb/assets/icon.svg" width="22" height="22" alt=""> | [co-climb](skills/co-climb/SKILL.md) | Challenge evals and improve the generator across isolated target worktrees and blind judge cycles. |
+| <img src="skills/ablation/assets/icon.svg" width="22" height="22" alt=""> | [ablation](skills/ablation/SKILL.md) | Remove complexity in parallel worktrees anchored to the original baseline. |
+| <img src="skills/bitter-lesson/assets/icon.svg" width="22" height="22" alt=""> | [bitter-lesson](skills/bitter-lesson/SKILL.md) | Retest prompts and scaffolding across isolated model-by-design cells on upgrades. |
+| <img src="skills/help/assets/icon.svg" width="22" height="22" alt=""> | [help](skills/help/SKILL.md) | Read the workspace and name the single next skill. |
+| <img src="skills/tutor/assets/icon.svg" width="22" height="22" alt=""> | [tutor](skills/tutor/SKILL.md) | Turn one product boundary into a checked eval, or practice the full playground. |
+| <img src="skills/author-short-tutor/assets/icon.svg" width="22" height="22" alt=""> | [author-short-tutor](skills/author-short-tutor/SKILL.md) | Interview the course owner, agree on exercise gates, and build a one-hour tutor. |
 
 Reviews [offer to retain useful corrections and labels](skills/expert-mode/references/calibration-capture.md) for later judge calibration. Saving a proposal does not confirm its label or activate Expert Mode.
 
@@ -98,5 +98,7 @@ python3 -m methods.run --out eval-runs/methods
 Prefer [Harbor](skills/create-eval/references/formats.md) for new executable agent tasks; existing formats remain supported. [Synthetic generation](skills/adversarial-cases/references/synthetic-methods.md), [failure injection](skills/adversarial-cases/references/failure-methods.md), and [DSPy handoffs](skills/hill-climb/references/data-handoff.md) are references. Implementations stay in your project.
 
 Capture stays local unless you request an export. Installing skills does not activate capture or upload data.
+
+Skill icons from [game-icons.net](https://game-icons.net) (CC BY 3.0); see [NOTICE](NOTICE).
 
 [Sources](SOURCES.md) · [MIT license](LICENSE)

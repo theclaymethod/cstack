@@ -100,7 +100,7 @@
     line-height: 1.28;
   }
   td.skill {
-    width: 138px;
+    width: 156px;
     font-family: "JetBrains Mono", "Liberation Mono", monospace;
     font-size: 8.3pt;
     font-weight: 560;
@@ -108,6 +108,7 @@
     padding-top: 5px;
   }
   tr.meta td { background: #f7f7f5; }
+  td.skill img { width: 13px; height: 13px; vertical-align: -2px; margin-right: 6px; }
   footer {
     margin-top: auto;
     display: grid;
@@ -173,20 +174,20 @@
       </tr>
     </thead>
     <tbody>
-      <tr><td class="skill">expert-mode</td><td>You are about to work and can say what is wrong, acceptable, or still uncertain.</td></tr>
-      <tr><td class="skill">distill-me</td><td>This session already contains judgments that are not saved as records.</td></tr>
-      <tr><td class="skill">bootstrap</td><td>You can describe the behavior and need the first reviewed scenarios before traces exist.</td></tr>
-      <tr><td class="skill">create-eval</td><td>Reviewed judgments or approved scenarios should become cases and graders.</td></tr>
-      <tr><td class="skill">calibrate-judge</td><td>A judge will score meaning, and you have authoritative labels to fit it against.</td></tr>
-      <tr><td class="skill">run-eval</td><td>Cases exist and you need a fresh execution receipt, not a remembered score.</td></tr>
-      <tr><td class="skill">cross-examine</td><td>A pass or fail may be crediting the wrong outcome or rejecting a legitimate one.</td></tr>
-      <tr><td class="skill">adversarial-cases</td><td>You need a small constructed challenge, fault, or control. Approval stays with the parent skill.</td></tr>
-      <tr><td class="skill">hill-climb</td><td>A fixed evaluator shows failures and you may edit only the authorized target.</td></tr>
-      <tr><td class="skill">co-climb</td><td>Failures may come from the judge. Alternate target improvements and judge calibration, keeping one fixed while changing the other.</td></tr>
-      <tr><td class="skill">ablation</td><td>The target meets the quality bar and you want to delete instructions, tools, or steps.</td></tr>
-      <tr><td class="skill">bitter-lesson</td><td>A model change may make inherited prompt or scaffolding unnecessary. Removal still has to clear the old bar.</td></tr>
-      <tr class="meta"><td class="skill">help</td><td>You are unsure which skill fits. It reads the files you already have and names one next step.</td></tr>
-      <tr class="meta"><td class="skill">tutor</td><td>You want to practice the pack. Start with one checked eval, or ask for the full playground.</td></tr>
+      <tr><td class="skill"><img src="../skills/expert-mode/assets/icon.svg" alt="">expert-mode</td><td>You are about to work and can say what is wrong, acceptable, or still uncertain.</td></tr>
+      <tr><td class="skill"><img src="../skills/distill-me/assets/icon.svg" alt="">distill-me</td><td>This session already contains judgments that are not saved as records.</td></tr>
+      <tr><td class="skill"><img src="../skills/bootstrap/assets/icon.svg" alt="">bootstrap</td><td>You can describe the behavior and need the first reviewed scenarios before traces exist.</td></tr>
+      <tr><td class="skill"><img src="../skills/create-eval/assets/icon.svg" alt="">create-eval</td><td>Reviewed judgments or approved scenarios should become cases and graders.</td></tr>
+      <tr><td class="skill"><img src="../skills/calibrate-judge/assets/icon.svg" alt="">calibrate-judge</td><td>A judge will score meaning, and you have authoritative labels to fit it against.</td></tr>
+      <tr><td class="skill"><img src="../skills/run-eval/assets/icon.svg" alt="">run-eval</td><td>Cases exist and you need a fresh execution receipt, not a remembered score.</td></tr>
+      <tr><td class="skill"><img src="../skills/cross-examine/assets/icon.svg" alt="">cross-examine</td><td>A pass or fail may be crediting the wrong outcome or rejecting a legitimate one.</td></tr>
+      <tr><td class="skill"><img src="../skills/adversarial-cases/assets/icon.svg" alt="">adversarial-cases</td><td>You need a small constructed challenge, fault, or control. Approval stays with the parent skill.</td></tr>
+      <tr><td class="skill"><img src="../skills/hill-climb/assets/icon.svg" alt="">hill-climb</td><td>A fixed evaluator shows failures and you may edit only the authorized target.</td></tr>
+      <tr><td class="skill"><img src="../skills/co-climb/assets/icon.svg" alt="">co-climb</td><td>Failures may come from the judge. Alternate target improvements and judge calibration, keeping one fixed while changing the other.</td></tr>
+      <tr><td class="skill"><img src="../skills/ablation/assets/icon.svg" alt="">ablation</td><td>The target meets the quality bar and you want to delete instructions, tools, or steps.</td></tr>
+      <tr><td class="skill"><img src="../skills/bitter-lesson/assets/icon.svg" alt="">bitter-lesson</td><td>A model change may make inherited prompt or scaffolding unnecessary. Removal still has to clear the old bar.</td></tr>
+      <tr class="meta"><td class="skill"><img src="../skills/help/assets/icon.svg" alt="">help</td><td>You are unsure which skill fits. It reads the files you already have and names one next step.</td></tr>
+      <tr class="meta"><td class="skill"><img src="../skills/tutor/assets/icon.svg" alt="">tutor</td><td>You want to practice the pack. Start with one checked eval, or ask for the full playground.</td></tr>
     </tbody>
   </table>
 
