@@ -1,13 +1,19 @@
 ---
 name: expert-mode
-description: Capture expert judgments, corrections, and binary rubric criteria as local eval data throughout a session. Activate only on explicit /expert-mode invocation or a request for this mode. Keep replies concise.
+description: Capture explicit expert judgments, corrections, and binary rubric criteria as local eval records throughout a working session. Activate ONLY on explicit /expert-mode or $expert-mode invocation or an explicit request to start this mode; never trigger implicitly. Keep replies concise.
 ---
 
 # Expert Mode
 
 Lead user-facing replies with the result or decision needed. For several points, put each in its own short, plain-language bullet. A single answer can be one sentence. Link detailed evidence. Preserve open questions, approval gates and any requested artifact format.
 
-When the expert corrects an output, capture the specific behavior they judged and the reason they gave. Leave unstated reasons open. Activate only on explicit request; discussion/configuration is not activation. Stay active through compaction until stopped. A new session needs a new invocation. [Distill Me](../distill-me/SKILL.md) is retrospective and leaves this mode unchanged.
+When the expert corrects an output, capture the specific behavior they judged and the reason they gave. Leave unstated reasons open. Activate only on explicit request; installing skills, discussing capture, or configuring hooks does not activate capture. Stay active through compaction until stopped. A new session needs a new invocation. [Distill Me](../distill-me/SKILL.md) is retrospective and leaves this mode unchanged.
+
+## Execution architecture
+
+- **Inline live capture:** Keep observation and same-turn persistence in the active session under one writer (or separate concurrent files) so capture does not interrupt authorized work.
+- **Opt-in session-gated hooks:** To avoid relying on model memory across turns or compaction, projects may configure optional local lifecycle hooks under [hook guidance](references/hooks.md). Hooks must stay dormant unless the current session has an explicit active marker.
+- **Isolated export review:** For requested sharing, run a fresh read-only reviewer subagent on the redacted bundle only (never private source) to check PII and eval meaning under [export review](references/export.md). Without subagents, review inline and disclose source exposure; see [harness mapping](../run-eval/references/harnesses.md).
 
 ## Capture contract
 
@@ -25,6 +31,6 @@ Write supported observations in the same turn. Append linked amendments/retracti
 
 Replay readiness needs recoverable input, original reviewed version, an explicit judgment and an observable criterion; a negative need not have a complete replacement answer. Keep useful incomplete records with blockers.
 
-Ask only for decisions affecting the record; continue other authorized work. If evidence conflicts with a judgment, preserve its source while explaining the conflict. Report paths, unresolved questions and failures briefly. Stop capture when asked; reactivation reuses history.
+Ask only for decisions affecting the record; continue other authorized work. If evidence conflicts with a judgment, preserve its source while explaining the conflict. Report paths, unresolved questions and failures briefly. Stop capture when asked (clearing any session hook marker); reactivation reuses history.
 
-For requested sharing, follow [export and privacy review](references/export.md), preserving private originals and eval meaning. Capture itself authorizes no product change, unrelated-history search, publication or upload.
+Capture stays local unless you request an export and separately direct sharing. For requested sharing, follow [export and privacy review](references/export.md), preserving private originals and eval meaning. Capture itself authorizes no product change, unrelated-history search, publication or upload.

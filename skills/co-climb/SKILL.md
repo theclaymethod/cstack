@@ -9,6 +9,8 @@ Lead user-facing replies with the result or decision needed. For several points,
 
 Improve the evals and the generator together. Agree on a cycle limit and budget. Choose an entry from the evidence available.
 
+Run candidate branches in isolated worktrees and judging in a fresh read-only context, following [roles and isolation](references/protocol.md#roles-and-isolation).
+
 - **Judge first.** Hill-climb the assistant judge on existing eval examples with authoritative expected judgments. Freeze the generator and its outputs. Check whether the judge catches a known defect and accepts a valid alternative.
 - **Attacker first.** Use [Adversarial Cases](../adversarial-cases/SKILL.md) to challenge a promise the current evals claim to cover. Try a plausible wrong output and a nearby valid one. Run both through the current evaluator. For new coverage, follow the situation ID from `situations.md` to the [Create Eval](../create-eval/SKILL.md) rows and freeze the updated suite for generator trials. A missed defect or rejected valid answer calls for an eval repair. A correctly detected generator failure goes straight to generator repair.
 - **Disputed result.** Replay the exact output with the evidence the judge saw. Route a scoring gap to the eval side and a confirmed product failure to the generator side. Resolve ambiguous expectations with their owner.

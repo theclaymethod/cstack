@@ -4,7 +4,7 @@ Keep a project-owned record of the mechanisms encountered and the evidence that 
 
 Keep detailed audit evidence in its native format and link it from the decision entry. Record the chosen runtime, storage, isolation boundary, and why any heavier tool is necessary. Distinguish enforced access restrictions from instructions given to a host process.
 
-Before a run, read the relevant records and write the intended capability independently of the current verifier. Preserve the original row, source judgment, contract, and artifact versions. Identify the attacker, defender, and independent reviewer; record unavailable roles. For a scored run, record commit IDs or content hashes for the grader, request, and provided guidance, plus whether the run is development, calibration, or held out. Keep operator receipts outside both competitors' access.
+Before a run, read the relevant records and write the intended capability independently of the current verifier. Preserve the original row, source judgment, contract, and artifact versions. Identify the attacker(s), defender, and fresh non-forked independent reviewer (including model/provider identity and any worktree/scratch/tool isolation or deterministic workflow runner used); record unavailable roles. For a scored run, record commit IDs or content hashes for the grader, request, and provided guidance, plus whether the run is development, calibration, or held out. Keep operator receipts outside both competitors' access.
 
 For each distinct mechanism, record:
 

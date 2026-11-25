@@ -1,6 +1,6 @@
 ---
 name: calibrate-judge
-description: Fit and validate an automated judge against authoritative labeled eval outcomes. Use for judge alignment, agreement measurement, or tuning Jev-style decision questions and traditional LLM judges. Keep judge implementations and model dependencies project-local.
+description: Fit, align, and validate an automated judge (typed Jev-style decision model or LLM judge) against authoritative labeled eval outcomes. Use for agreement measurement, threshold/probability calibration, or judge tuning—not for optimizing the evaluated product itself. Keep judge implementations and model dependencies project-local.
 ---
 
 # Calibrate Judge
@@ -8,6 +8,14 @@ description: Fit and validate an automated judge against authoritative labeled e
 Lead user-facing replies with the result or decision needed. For several points, put each in its own short, plain-language bullet. A single answer can be one sentence. Link detailed evidence. Preserve open questions, approval gates and any requested artifact format.
 
 Follow the [shared decision ledger](../create-eval/references/decision-ledger.md) from the disputed rows to their evidence, then append the calibration decision and receipt. Start with the decision this judge will make. Describe a costly false pass and a costly false rejection in the owner's terms. Keep label agreement, threshold selection, probability calibration and repeated-input stability distinct. Implement adapters/data/experiments in the project, reusing its runner and format.
+
+## Execution architecture
+
+Separate three roles so tuning never contaminates blind judging (see [harness mapping](../run-eval/references/harnesses.md)):
+
+- **Proposer / tuner:** Sees only exposed development disagreements to refine LLM instructions/examples or typed questions/options.
+- **Blinded judge executor (fresh subagent or isolated backend):** Receives only allowlisted runtime payloads—never gold labels, rationales, split names, or tuning history. Fan out parallel candidate/repeat batches under a pre-reserved budget. Where authorized, prefer a distinct model family/provider from the evaluated generator to reduce self-preference bias.
+- **Deterministic comparator (code):** Freezes complete predictions and hashes before reading gold, computes agreement/error/probability metrics, and enforces final-exposure guards. Without isolated contexts, disclose any prior gold exposure instead of claiming blindness.
 
 ## Gold and backend contract
 

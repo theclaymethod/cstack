@@ -1,6 +1,6 @@
 ---
 name: hill-climb
-description: Improve a selected prompt, skill, program, or agent harness against an existing eval through bounded experiments. Use for /hill-climb or a requested optimization campaign with a defined editable target and evaluator.
+description: Improve an authorized prompt, skill, program, or agent harness against a fixed evaluator through bounded, worktree-isolated experiments with pre-reserved budgets and regression-aware confirmation. Use for /hill-climb, $hill-climb, or a target optimization campaign—not for deleting complexity (ablation) or fitting a judge (calibrate-judge).
 ---
 
 # Hill Climb
@@ -8,6 +8,12 @@ description: Improve a selected prompt, skill, program, or agent harness against
 Lead user-facing replies with the result or decision needed. For several points, put each in its own short, plain-language bullet. A single answer can be one sentence. Link detailed evidence. Preserve open questions, approval gates and any requested artifact format.
 
 Use the [shared decision ledger](../create-eval/references/decision-ledger.md) to pick up the failing rows and append each experiment’s decision and receipt. Start a trial with a failing case, a proposed change, and a prediction about which observable result should move. Compare against the fixed evaluator. Deliver a confirmed artifact/diff or an honest no-improvement result. [Bootstrap](../bootstrap/SKILL.md)/[Create Eval](../create-eval/SKILL.md) establish missing evals; [Run Eval](../run-eval/SKILL.md) owns faithful execution; [Cross-Examine](../cross-examine/SKILL.md) investigates scoring gaps. [Calibrate Judge](../calibrate-judge/SKILL.md) owns judge-target fitting. Use [Ablation](../ablation/SKILL.md) for removal and [Bitter Lesson](../bitter-lesson/SKILL.md) for model-migration simplification.
+
+## Execution architecture
+
+- **Worktree isolation per candidate:** Edit and execute parallel hypothesis-driven candidates in separate Git worktrees (or isolated snapshot copies) so concurrent trials never collide or dirty the live checkout. Workers return uncommitted patches or snapshots—never create Git commits before explicit user acceptance.
+- **Deterministic coordinator loop:** Code enforces immutable evaluator hashes, reserves full batch and confirmation spend *before* parallel fan-out, reconciles native execution receipts into the durable ledger, and runs long campaigns in the background.
+- **Role separation & fallback:** Proposers see only permitted development failures; evaluator and judge execution stays isolated from proposer reasoning. Without worktrees or subagents, evaluate snapshotted candidates sequentially under the same budget and isolation disclosures; see [harness mapping](../run-eval/references/harnesses.md).
 
 ## Campaign contract
 

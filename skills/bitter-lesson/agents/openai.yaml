@@ -1,0 +1,4 @@
+interface:
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"
+  brand_color: "#D88E51"

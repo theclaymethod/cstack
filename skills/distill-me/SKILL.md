@@ -1,6 +1,6 @@
 ---
 name: distill-me
-description: On explicit /distill-me invocation, recover expert judgments, corrections, and binary rubric criteria from the current session into local eval records. Merge prior captures without duplicates. Keep replies concise.
+description: Recover expert judgments, corrections, and binary rubric criteria once from the current session into local eval records, merging prior captures without duplicates. Activate ONLY on explicit /distill-me or $distill-me invocation; never trigger implicitly. Keep replies concise.
 ---
 
 # Distill Me
@@ -8,6 +8,12 @@ description: On explicit /distill-me invocation, recover expert judgments, corre
 Lead user-facing replies with the result or decision needed. For several points, put each in its own short, plain-language bullet. A single answer can be one sentence. Link detailed evidence. Preserve open questions, approval gates and any requested artifact format.
 
 On explicit invocation, find the corrections and decisions that changed what counts as acceptable. Recover each judgment alongside the output the expert actually reviewed. Discussion is not invocation. Leave [Expert Mode](../expert-mode/SKILL.md) active or inactive as it was.
+
+## Execution architecture
+
+- **Parallel read-only extraction:** Read [shared records](../expert-mode/references/records.md) and [review passes](references/review-passes.md). For substantial sessions, dispatch three parallel fresh read-only subagents—Corrections, Rubric, and Evidence-quality—passing only the bounded current-session source and existing dataset references (never run in a history-less fork without supplying the session excerpt).
+- **Single-coordinator verification and merge:** Only the coordinator verifies every candidate quote and output association against the original source and performs the single serialized write. Child-agent agreement is not expert endorsement.
+- **Fallback:** Without subagents, run the three lenses sequentially in the current session and disclose sequential extraction; see [harness mapping](../run-eval/references/harnesses.md).
 
 ## Source and authority
 

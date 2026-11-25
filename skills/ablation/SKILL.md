@@ -1,6 +1,6 @@
 ---
 name: ablation
-description: Remove prompt instructions, examples, context, tools, or workflow steps while preserving required eval performance. Use for deletion experiments, component contribution analysis, or simplifying an existing system against a fixed evaluator.
+description: Systematically remove prompt instructions, examples, context, tools, or workflow steps while preserving required eval performance anchored to the original baseline. Use for deletion experiments, component contribution analysis, or simplifying an artifact against a fixed evaluator—not for cross-model upgrades (bitter-lesson).
 ---
 
 # Ablation
@@ -8,6 +8,12 @@ description: Remove prompt instructions, examples, context, tools, or workflow s
 Lead user-facing replies with the result or decision needed. For several points, put each in its own short, plain-language bullet. A single answer can be one sentence. Link detailed evidence. Preserve open questions, approval gates and any requested artifact format.
 
 Before deleting a unit, name the burden it removes and the previously passing behavior that would make you put it back. Reuse native execution and [Hill Climb](../hill-climb/SKILL.md) for campaign mechanics; [Bitter Lesson](../bitter-lesson/SKILL.md) adds model-migration comparisons. Implement experiments in the project, keeping this skill reference-only.
+
+## Execution architecture
+
+- **Agent defines structure; code drives sweeps:** The agent defines semantically coherent removal units, protected meaning, and dependency closures; a deterministic project-local driver schedules coarse groups, leave-one-out diagnostics, and combined deletions, enforces budget reservations, and binds ledgers to traces.
+- **Parallel worktree evaluation:** Run independent deletion subsets and combined candidates concurrently in isolated Git worktrees (or disposable snapshots) against the frozen evaluator and original baseline, returning uncommitted patches until explicit user approval.
+- **Isolated judging & fallback:** Keep any semantic judge fresh and blind to which units were removed. Without worktrees or subagents, run subsets sequentially from snapshotted baselines under the same accounting rules; see [harness mapping](../run-eval/references/harnesses.md).
 
 ## Removal contract
 

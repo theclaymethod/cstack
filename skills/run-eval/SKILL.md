@@ -1,6 +1,6 @@
 ---
 name: run-eval
-description: Execute an eval package, freeze verdicts before comparing expert labels, and report results with errors and source limits. Use the project's runner or local checks and the active agent as a judge.
+description: Execute a frozen eval package through the project runner or local checks, judge semantic criteria in an isolated blind context, freeze verdicts before comparing expert labels, and report results with errors, coverage, and exposure limits. Use to measure an existing eval—not to tune the product or judge.
 ---
 
 # Run Eval
@@ -8,6 +8,12 @@ description: Execute an eval package, freeze verdicts before comparing expert la
 Lead user-facing replies with the result or decision needed. For several points, put each in its own short, plain-language bullet. A single answer can be one sentence. Link detailed evidence. Preserve open questions, approval gates and any requested artifact format.
 
 Read the [shared decision ledger](../create-eval/references/decision-ledger.md) for the case revisions in scope and append the run receipt there. Run the frozen eval through the project's entrypoint. Inspect an actual result alongside its input before summarizing the run. [Hill Climb](../hill-climb/SKILL.md) owns product optimization; [Calibrate Judge](../calibrate-judge/SKILL.md) owns judge fitting. Keep both separate from this run.
+
+## Execution architecture
+
+- **Code owns mechanics:** Deterministic scripts handle schema validation, allowlisted blind payload projection, code checks, content/verdict hashing, and post-freeze gold comparison.
+- **Fresh isolated judge subagent(s):** Run semantic binary criteria in a fresh, non-forked, read-only subagent receiving only the allowlisted blind payload—never generator reasoning, edit history, or gold labels. Fan out parallel case/criterion batches or run long suites in the background when supported; use an authorized distinct model family/provider when configured for judge diversity.
+- **Fallback:** If subagents are unavailable, fall back to the active agent only with explicit disclosure of any prior exposure to generator context or gold labels; see [harness mapping](references/harnesses.md).
 
 ## Freeze the run and inputs
 

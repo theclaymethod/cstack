@@ -1,6 +1,6 @@
 # Block handoff prompts
 
-Fill from the ledger after reading [the protocol](protocol.md). These prompts do not authorize workers, paid scope or protected-file edits. Use actual budgets and evidence, not the website animation's fixed counts.
+Fill from the ledger after reading [the protocol](protocol.md). These prompts do not authorize workers, paid scope or protected-file edits. Workers follow [roles and isolation](protocol.md#roles-and-isolation). Use actual budgets and evidence, not the website animation's fixed counts.
 
 ## Shared envelope
 

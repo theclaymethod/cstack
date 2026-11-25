@@ -10,6 +10,10 @@ Group originals/repairs/derivatives by source family. Separate climb, fresh-fami
 
 Reserve full spend before attempts: generation, proposer/tool work, in-loop and final judging, retries, controls, regrading, replication and confirmation. Preserve partial/error attempts and unknown costs. Resume from matching snapshots and reconciled receipts, not re-execution or duplicate charging. Changed contracts start a new campaign. Stop without spending the final reserve on another branch.
 
+## Roles and isolation
+
+One coordinator owns the ledger, spend reservations, archive cap, change reviews and final confirmation. Target workers run candidate branches in isolated worktrees against one frozen evaluator and return uncommitted patches. Semantic judging and post-rebuild regrading run in a fresh, non-forked, read-only context that sees only allowlisted payloads; code freezes predictions and hashes before reading labels. Adversarial probes stay in scratch state until the coordinator admits them to `situations.md`. Without worktrees or subagents, run blocks sequentially from snapshots and disclose the lost independence. See [harness mapping](../../run-eval/references/harnesses.md).
+
 ## Evidence and triage
 
 Compare actual target input with actual judge payload: values, units, ranges, statuses, demographics, free-text qualifiers, nulls and transformations. An adapter summary is insufficient. Supply the same permitted task record, not hidden reasoning, gold, annotation rationales or label-bearing metadata. Repair/version an evidence omission before rewarding a target for omitting the affected claim.

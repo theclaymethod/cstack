@@ -1,6 +1,6 @@
 ---
 name: create-eval
-description: Create repeatable evals from expert findings, model traces, or a new feature's task contract. Use for early trace collection, case and rubric authoring, or grader calibration.
+description: Author repeatable eval cases, deterministic checks, and binary judge rubrics from expert findings, model traces, or approved scenarios in the project's native format or Harbor. Use for early trace collection, findings-to-cases conversion, or building an executable eval package—not for running an already-frozen suite or fitting judge weights.
 ---
 
 # Create Eval
@@ -8,6 +8,12 @@ description: Create repeatable evals from expert findings, model traces, or a ne
 Lead user-facing replies with the result or decision needed. For several points, put each in its own short, plain-language bullet. A single answer can be one sentence. Link detailed evidence. Preserve open questions, approval gates and any requested artifact format.
 
 Start with one decision the eval will inform and one case where a wrong answer would change that decision. Establish source authority, judged unit, observable success and legitimate alternatives. Separate assertion correctness, preferences, process and missing evidence; one bad assertion does not label its neighbors. Keep ambiguous cases provisional while other work continues.
+
+## Execution architecture
+
+- **Inline authoring & review:** Keep evidence triage, [local trace review](references/trace-review.md), verifier modality matching, and unresolved clarifications with the user.
+- **Parallel trace collection (optional):** When traces are absent, collect early-development runs across independent scenario slices in isolated scratch or worktree states under [early development](references/early-development.md).
+- **Fresh control validator:** Before leaving draft status, dispatch a fresh, non-forked subagent to execute legitimate, failing, boundary, alternative, and wrong-product controls plus offline code-check replays through the real grading path, and inspect allowlisted judge payloads for label leakage. Without subagents, run deterministic control scripts inline and disclose self-checking; see [harness mapping](../run-eval/references/harnesses.md).
 
 ## Evidence and cases
 

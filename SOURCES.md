@@ -98,3 +98,25 @@ The adaptation keeps one-question turns, evidence beside claims, hints that poin
 ## Co-Climb
 
 [Co-Climb](skills/co-climb/SKILL.md) was supplied by the owner on 2026-11-11 for inclusion in C Stack. The owner subsequently clarified its judge-first and attacker-first starts, bounded cycles, and ledger review of adversarial case quality. The [protocol](skills/co-climb/references/protocol.md) expands its execution steps and applies the existing Hill Climb, Calibrate Judge and calibration-capture boundaries. The [lessons reference](skills/co-climb/references/lessons.md) distinguishes supplied guidance from confirmed campaign evidence. No campaign measurements or empirical validation accompanied this addition; no runners, adapters or datasets are bundled with the skill.
+
+## Skill icons
+
+Each `skills/<name>/assets/icon.svg` is a [game-icons.net](https://game-icons.net) glyph ([CC BY 3.0](https://creativecommons.org/licenses/by/3.0/), [source repo](https://github.com/game-icons/icons)), recolored to the cstack palette, scaled to 75%, and placed on a rounded tile. Codex reads them through `agents/openai.yaml`; Claude Code and Cursor have no per-skill icon field.
+
+| Skill | Icon | Author |
+| --- | --- | --- |
+| expert-mode | [owl](https://game-icons.net/1x1/lorc/owl.html) | Lorc |
+| distill-me | [round-bottom-flask](https://game-icons.net/1x1/lorc/round-bottom-flask.html) | Lorc |
+| bootstrap | [leather-boot](https://game-icons.net/1x1/lorc/leather-boot.html) | Lorc |
+| create-eval | [anvil](https://game-icons.net/1x1/lorc/anvil.html) | Lorc |
+| calibrate-judge | [scales](https://game-icons.net/1x1/lorc/scales.html) | Lorc |
+| run-eval | [sprint](https://game-icons.net/1x1/lorc/sprint.html) | Lorc |
+| cross-examine | [crossed-swords](https://game-icons.net/1x1/lorc/crossed-swords.html) | Lorc |
+| adversarial-cases | [trojan-horse](https://game-icons.net/1x1/delapouite/trojan-horse.html) | Delapouite |
+| hill-climb | [mountain-climbing](https://game-icons.net/1x1/caro-asercion/mountain-climbing.html) | Caro Asercion |
+| co-climb | [rope-bridge](https://game-icons.net/1x1/delapouite/rope-bridge.html) | Delapouite |
+| ablation | [scalpel](https://game-icons.net/1x1/lorc/scalpel.html) | Lorc |
+| bitter-lesson | [pill](https://game-icons.net/1x1/lorc/pill.html) | Lorc |
+| help | [compass](https://game-icons.net/1x1/lorc/compass.html) | Lorc |
+| tutor | [teacher](https://game-icons.net/1x1/delapouite/teacher.html) | Delapouite |
+| author-short-tutor | [scroll-quill](https://game-icons.net/1x1/delapouite/scroll-quill.html) | Delapouite |

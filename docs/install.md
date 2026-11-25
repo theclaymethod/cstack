@@ -9,7 +9,7 @@ npx skills add theclaymethod/cstack \
   -a codex -a claude-code -a cursor --copy
 ```
 
-Keep the skill folders together because they link to each other's references. Start a new agent session after installation. In Codex, invoke `$expert-mode`, `$distill-me`, `$bootstrap`, `$create-eval`, `$run-eval`, `$cross-examine`, `$hill-climb`, `$co-climb`, `$adversarial-cases`, `$calibrate-judge`, `$ablation`, `$bitter-lesson`, `$help`, or `$tutor`. Direct skill installations in Claude Code and Cursor use the corresponding slash commands.
+Keep the skill folders together because they link to each other's references (including the shared [harness mapping](../skills/run-eval/references/harnesses.md) and opt-in [Expert Mode hooks](../skills/expert-mode/references/hooks.md)). Installing the skills does not install or activate capture hooks; capture stays local unless you request an export. See the [agent architecture guide](agent-architecture.md) for per-harness subagent, worktree, and hook details. Start a new agent session after installation. In Codex, invoke `$expert-mode`, `$distill-me`, `$bootstrap`, `$create-eval`, `$run-eval`, `$cross-examine`, `$hill-climb`, `$co-climb`, `$adversarial-cases`, `$calibrate-judge`, `$ablation`, `$bitter-lesson`, `$help`, or `$tutor`. Direct skill installations in Claude Code and Cursor use the corresponding slash commands.
 
 To install without Node, clone the repo and copy the skill folders into your agent's skill directory. For a Codex project, run:
 

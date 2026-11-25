@@ -1,11 +1,17 @@
 ---
 name: adversarial-cases
-description: Challenge existing evals with harder situations implied by the product spec. Review for over-specification and drift, maintain situations.md, and hand supported cases to Create Eval. Also construct reproducible fault cases for scoped audits.
+description: Challenge existing evals with harder situations implied by the product spec, review for over-specification and drift, maintain situations.md, and hand supported cases to Create Eval. Also acts as an isolated worker constructing minimal reproducible fault-injection and boundary cases with witnesses for Bootstrap, Cross-Examine, or Co-Climb.
 ---
 
 # Adversarial Cases
 
 Lead user-facing replies with the result or decision needed. For several points, put each in its own short, plain-language bullet. A single answer can be one sentence. Link detailed evidence. Preserve open questions, approval gates and any requested artifact format.
+
+## Execution architecture
+
+- **Isolated worker role:** Run as a scoped worker (parallelizable per boundary or fault hypothesis) inside a disposable scratch directory or Git worktree; stay read-only on canonical evals, gold labels, and production targets.
+- **Deterministic drivers:** Use narrow project-local code to drive entrypoint checks, fault activation, clean/no-op/alternative controls, and delta-debugging reduction loops rather than manual turn-by-turn shrinking.
+- **Parent-owned checkpoints:** When invoked as a worker, return structured witnesses, situation proposals, and capture candidates to the parent coordinator—never independently assign human labels or commit changes. Without delegation, serialize under the coordinator's scratch state; see [harness mapping](../run-eval/references/harnesses.md).
 
 Start with what the current evals let through. Read their inputs, assertions and observed results alongside the developer’s decisions, product examples and approved scenario index. Identify a promise that a generator could break while still passing. Cite the evidence for that reading and label any inference.
 

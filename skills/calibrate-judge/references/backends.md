@@ -20,7 +20,7 @@ Sources: [TypeSafe System One](https://docs.typesafe.ai/concepts/system-one), [C
 
 ## Generative judges and optimizers
 
-Use the project's declared schema, including explicit uncertain/error outcomes. Keep output length and evidence style out of correctness unless the task actually requires them. Parse deterministically and preserve malformed output, refusals and incomplete calls. Do not ask for private chain-of-thought or treat a plausible rationale as an independent correctness witness.
+Use the project's declared schema, including explicit uncertain/error outcomes. Keep output length and evidence style out of correctness unless the task actually requires them. Parse deterministically and preserve malformed output, refusals and incomplete calls. Do not ask for private chain-of-thought or treat a plausible rationale as an independent correctness witness. When evaluating outputs from one model family and authorized cross-provider access exists, prefer a distinct provider/model family (or typed decision backend) as judge to reduce self-preference bias, recording exact model versions without triggering unconfigured paid calls.
 
 DSPy/GEPA can optimize judge instructions against authoritative development labels. Its proposer may receive observed-versus-expected decisions and approved expert explanations from exposed fitting cases. An adapter executes the proposed questions against a typed target; the target need not generate feedback text. Keep gold outside runtime inputs and count proposer, target, retry and confirmation work separately. See the [project-local data handoff](../../hill-climb/references/data-handoff.md).
 

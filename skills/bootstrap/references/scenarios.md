@@ -32,7 +32,7 @@ After rejecting infeasible or repetitive cases, recompute any claimed interactio
 
 ## Worker brief
 
-Give each scenario author a bounded assignment with:
+Dispatch independent scenario authors in parallel as isolated workers (read-only on repo files, writing only to their assigned scratch path; see [harness mapping](../../run-eval/references/harnesses.md)). Give each scenario author a bounded assignment with:
 
 - The intent revision, requirements, confirmed alternatives, and open questions.
 - Its coverage slice and proposed output count/budget; other authors' initial answers remain withheld.

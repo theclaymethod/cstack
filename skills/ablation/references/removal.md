@@ -12,7 +12,7 @@ Literal deletion, masking, disabled execution, summarization and replacement hav
 
 ## Search and interactions
 
-A practical bounded search can try coarse groups, leave-one-out diagnostics, sequential accepted deletions and selected pairs/groups. Delta debugging tests subsets and complements against a chosen predicate. Hierarchical reduction uses structure, but later changes can enable earlier deletions, so revisit survivors if the budget permits. These are methods to adapt, not mandatory dependencies. [Original ddmin paper](https://www.st.cs.uni-saarland.de/publications/files/zeller-tse-2002.pdf), [Original HDD paper](https://www.cs.purdue.edu/homes/xyzhang/fall07/Papers/hdd.pdf).
+A practical bounded search can try coarse groups, leave-one-out diagnostics, sequential accepted deletions and selected pairs/groups. Have the agent define coherent removal units and dependency closures, while a deterministic project-local driver dispatches independent subsets and combined candidates concurrently across isolated Git worktrees (returning uncommitted patches, or sequential snapshots when worktrees are unavailable; see [harness mapping](../../run-eval/references/harnesses.md)). Delta debugging tests subsets and complements against a chosen predicate. Hierarchical reduction uses structure, but later changes can enable earlier deletions, so revisit survivors if the budget permits. These are methods to adapt, not mandatory dependencies. [Original ddmin paper](https://www.st.cs.uni-saarland.de/publications/files/zeller-tse-2002.pdf), [Original HDD paper](https://www.cs.purdue.edu/homes/xyzhang/fall07/Papers/hdd.pdf).
 
 Two examples explain why single-unit diagnostics are insufficient:
 

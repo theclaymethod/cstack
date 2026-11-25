@@ -10,7 +10,7 @@ An approved reference answer is task content that may be necessary to judge corr
 
 Judge each applicable criterion independently. Write a short source-bound observation, a concise rationale, and then PASS, FAIL, or UNKNOWN. These are audit summaries, not private chain-of-thought. Missing evidence, scope ambiguity, and execution errors must remain visible. Do not let the length or confidence of the output substitute for the criterion.
 
-Freeze verdicts before computing agreement. If labels or prior comparisons were already read in the judging context, report contamination. A protected store can enforce access; a scratch directory and an instruction cannot. A fresh reviewing context improves separation only when its actual inputs exclude the labels.
+Freeze verdicts before computing agreement. Run semantic judging in a **fresh, non-forked, read-only subagent** (or isolated judge backend) that receives only allowlisted runtime payloads—never generator reasoning, tuning history, or gold labels; see [harness mapping](../../run-eval/references/harnesses.md). Where the project has authorized access to multiple providers, prefer a distinct model family/provider from the evaluated generator to reduce self-preference bias, and pin that identity in the run manifest. If labels or prior comparisons were already read in the judging context, report contamination. A protected store or container can enforce access; a scratch directory and an instruction cannot. A fresh reviewing context improves separation only when its actual inputs exclude the labels.
 
 Use **failure present** as the positive class:
 

@@ -26,3 +26,10 @@ for licensing and usage details.
 AI Evals Course's Evals Skills is referenced for established trace-analysis,
 synthetic-input, review-interface, and evaluator workflows. Its skills and code
 are not bundled here. See SOURCES.md for the inspected revision and links.
+
+Skill icons (skills/*/assets/icon.svg) are recolored, padded versions of
+game-icons.net icons, licensed CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/).
+Source: https://github.com/game-icons/icons
+- Lorc: owl (expert-mode), round-bottom-flask (distill-me), leather-boot (bootstrap), anvil (create-eval), scales (calibrate-judge), sprint (run-eval), crossed-swords (cross-examine), scalpel (ablation), pill (bitter-lesson), compass (help)
+- Delapouite: trojan-horse (adversarial-cases), rope-bridge (co-climb), teacher (tutor), scroll-quill (author-short-tutor)
+- Caro Asercion: mountain-climbing (hill-climb)
