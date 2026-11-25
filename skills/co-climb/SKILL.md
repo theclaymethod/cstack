@@ -1,6 +1,6 @@
 ---
 name: co-climb
-description: Strengthen evals and improve the generator they test over bounded cycles using isolated target worktrees, blind judge execution, and a shared decision ledger. Use for /co-climb or $co-climb starting from judge calibration, an adversarial case, or a disputed result.
+description: Use /co-climb to strengthen evals and improve the generator they test over a bounded number of cycles. Start with judge calibration, an adversarial case, or a disputed result.
 ---
 
 # Co-Climb
@@ -9,12 +9,7 @@ Lead user-facing replies with the result or decision needed. For several points,
 
 Improve the evals and the generator together. Agree on a cycle limit and budget. Choose an entry from the evidence available.
 
-## Execution architecture
-
-- **Single coordinator:** Owns cycle limits, pre-reserved spend and confirmation reserve, the shared decision ledger, branch archive caps, cumulative change-review checkpoints, and sealed final confirmation.
-- **Parallel worktree target workers:** Execute competing target branches in isolated Git worktrees against one frozen evaluator, returning uncommitted patches/snapshots—never worker Git commits before explicit user acceptance.
-- **Blind judge & deterministic comparator:** Run semantic judging and post-rebuild saved-corpus regrading in a fresh, non-forked, read-only context receiving allowlisted payloads only (with optional authorized cross-provider diversity); code freezes predictions/hashes before reading gold and invalidates stale ranks.
-- **Isolated adversarial probes & fallback:** Run adversarial challenges in disposable scratch/worktree state before coordinator admission to `situations.md`. Without worktrees or subagents, run blocks sequentially from snapshotted baselines with explicit exposure and non-independence disclosures; see [harness mapping](../run-eval/references/harnesses.md).
+Run candidate branches in isolated worktrees and judging in a fresh read-only context, following [roles and isolation](references/protocol.md#roles-and-isolation).
 
 - **Judge first.** Hill-climb the assistant judge on existing eval examples with authoritative expected judgments. Freeze the generator and its outputs. Check whether the judge catches a known defect and accepts a valid alternative.
 - **Attacker first.** Use [Adversarial Cases](../adversarial-cases/SKILL.md) to challenge a promise the current evals claim to cover. Try a plausible wrong output and a nearby valid one. Run both through the current evaluator. For new coverage, follow the situation ID from `situations.md` to the [Create Eval](../create-eval/SKILL.md) rows and freeze the updated suite for generator trials. A missed defect or rejected valid answer calls for an eval repair. A correctly detected generator failure goes straight to generator repair.
